@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "outDir": "build",
+    "types": []
+  },
+  "lib": [
+    "es5",
+    "dom"
+  ],
+  "formatCodeOptions": {
+    "indentSize": 2,
+    "tabSize": 2
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": true
+  },
+  "files": [
+    "custom-typings/pure-random.d.ts",
+    "src/index.ts"
+  ],
+  "filesGlob": [    
+    "src/**/*.ts",
+    "custom-typings/**/*.d.ts",
+    "!node_modules/**",
+    "!jspm_packages/**"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}

@@ -1,52 +1,60 @@
 
+type uuid = string;
+
 enum ERandomOption {
   random = 'ramdom', // Generate a new Element
   all = 'all', // Choose an existing Element or generate a new one
   exists = 'exists', // Choose only existing Element
 }
 
-interface IRelatedOptions {
-  random?: ERandomOption
-}
-
 interface IRelatedDefinition {
   type: string;
-  options?: IRelatedOptions
+  random?: ERandomOption;
+}
+
+interface IRelatedElement {
+  search: IRelatedDefinition[];
+  result?: IElementDefinition; // Here is save the result
 }
 
 interface IRelatedElements {
-  [details: string] : Array<IRelatedDefinition>;
+  [details: string]: IRelatedElement;
 }
 
 interface IElementDefinition {
   type: string;
+  text: string;
   description?: string;
-  options?: Array<IElementDefinition>;
+  options?: IElementDefinition[];
   related?: IRelatedElements;
 }
 
 interface IElement {
-  guid: string;
+  guid: uuid;
   type: string;
   description?: string;
   related?: {
-    [details: string] : string; // Related to a IElement.GUID
+    [details: string]: string; // Related to a IElement.GUID
   };
 }
 
-interface IWorldDefinition {
-  definitions: Array<IElementDefinition>;
-  alias: {
-    [details: string] : Array<string>;
-  }
-  existing: Array<IElement>;    
+interface IAliasDefinition {
+  [details: string]: string[];
 }
 
-export { 
-  ERandomOption, 
-  IElementDefinition, 
-  IWorldDefinition, 
+interface IWorldDefinition {
+  definitions: IElementDefinition[];
+  alias: IAliasDefinition;
+  existing: IElement[];
+}
+
+export {
+  ERandomOption,
+  IElementDefinition,
+  IWorldDefinition,
   IRelatedDefinition,
-  IRelatedOptions,
+  IRelatedElement,
+  IRelatedElements,
   IElement,
+  IAliasDefinition,
 };

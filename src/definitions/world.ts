@@ -1,13 +1,15 @@
-import { IElementDefinition, IWorldDefinition } from '../typings';
-import { 
+import { IWorldDefinition } from '../typings';
+import {
   miscellaneousItemsDef,
-  wornItemsDef,
-  weaponItemsDef,
   toolItemsDef,
-  treasureItemsDef
+  treasureItemsDef,
+  weaponItemsDef,
+  wornItemsDef,
 } from './items';
-import { 
-  npcGoalsDef
+import {
+  npc,
+  npcFemaleNames,
+  npcGoalsDef,
 } from './npc';
 
 export const worldDefinition: IWorldDefinition = {
@@ -17,16 +19,18 @@ export const worldDefinition: IWorldDefinition = {
     weaponItemsDef,
     toolItemsDef,
     treasureItemsDef,
-    npcGoalsDef      
-  ],
+    npc,
+    npcFemaleNames,
+    npcGoalsDef,
+    ],
   alias: {
-    items: [
+    item: [
       'miscellaneous_items',
       'worn_items',
       'weapon_items',
       'tool_items',
       'treasure_items',
-    ]
+    ],
   },
-  existing: []
+  existing: [],
 };

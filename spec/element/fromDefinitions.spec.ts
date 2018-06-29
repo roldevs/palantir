@@ -1,14 +1,8 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import * as R from 'ramda';
 import element from '../../src/element';
 import {
-  ERandomOption,
-  IAliasDefinition,
-  IElement,
   IElementDefinition,
-  IRelatedDefinition,
-  IWorldDefinition,
 } from '../../src/typings';
 
 describe('Element#fromDefinitions', () => {

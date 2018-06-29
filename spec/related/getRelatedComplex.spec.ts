@@ -1,17 +1,11 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import * as R from 'ramda';
 import uuidv1 from 'uuid/v1';
 import related from '../../src/related';
 import {
-  ERandomOption,
   IAliasDefinition,
   IElement,
   IElementDefinition,
-  IRelatedDefinition,
-  IRelatedElement,
-  IRelatedElements,
-  IWorldDefinition,
 } from '../../src/typings';
 
 describe('Related#get recursive related', () => {

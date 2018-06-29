@@ -2,16 +2,13 @@ import * as R from 'ramda';
 import aliasCreator from './alias';
 import elementCreator from './element';
 import optionsCreator from './options';
-import randomCreator from './random';
 import {
-  ERandomOption,
   IAliasDefinition,
   IElement,
   IElementDefinition,
   IRelatedDefinition,
   IRelatedElement,
   IRelatedElements,
-  IWorldDefinition,
 } from './typings';
 
 const related: (

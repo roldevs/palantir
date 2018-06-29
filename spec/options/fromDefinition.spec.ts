@@ -1,14 +1,8 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import * as R from 'ramda';
 import options from '../../src/options';
 import {
-  ERandomOption,
-  IAliasDefinition,
-  IElement,
   IElementDefinition,
-  IRelatedDefinition,
-  IWorldDefinition,
 } from '../../src/typings';
 
 describe('Options#fromDefinition', () => {
@@ -51,7 +45,7 @@ describe('Options#fromDefinition', () => {
     });
   });
   describe('without type', () => {
-    it('trhow an error', () => {
+    it('returns empty array', () => {
       const item1: IElementDefinition = {
         type: 'item1',
         text: 'item2',
@@ -64,8 +58,7 @@ describe('Options#fromDefinition', () => {
         }],
       };
       const definitions: IElementDefinition[] = [item1];
-      expect(options(definitions, []).fromDefinition.bind('item2')).to.throw(TypeError);
+      expect(options(definitions, []).fromDefinition('item2')).to.eql([]);
     });
-
   });
 });

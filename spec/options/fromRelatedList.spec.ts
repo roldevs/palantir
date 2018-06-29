@@ -5,11 +5,8 @@ import uuidv1 from 'uuid/v1';
 import options from '../../src/options';
 import {
   ERandomOption,
-  IAliasDefinition,
   IElement,
   IElementDefinition,
-  IRelatedDefinition,
-  IWorldDefinition,
 } from '../../src/typings';
 
 describe('Options#fromRelatedList', () => {
@@ -36,10 +33,10 @@ describe('Options#fromRelatedList', () => {
         text: 'item_2_2',
       }],
     };
-    const existing1: IElement = { type: 'item1', guid: uuidv1() };
-    const existing2: IElement = { type: 'item1', guid: uuidv1() };
-    const existing3: IElement = { type: 'item2', guid: uuidv1() };
-    const existing4: IElement = { type: 'item1', guid: uuidv1() };
+    const existing1: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_1' };
+    const existing2: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_2' };
+    const existing3: IElement = { type: 'item2', guid: uuidv1(), text: 'item2_1' };
+    const existing4: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_3' };
 
     it('with random option', () => {
       const subject: Array<IElement | IElementDefinition> = options(
@@ -136,8 +133,8 @@ describe('Options#fromRelatedList', () => {
           text: 'item_1_2',
         }],
       };
-      const existing1: IElement = { type: 'item1', guid: uuidv1() };
-      const existing2: IElement = { type: 'item1', guid: uuidv1() };
+      const existing1: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_1' };
+      const existing2: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_2' };
 
       const definitions: IElementDefinition[] = [item1];
       expect(
@@ -168,8 +165,8 @@ describe('Options#fromRelatedList', () => {
           text: 'item_1_2',
         }],
       };
-      const existing1: IElement = { type: 'item1', guid: uuidv1() };
-      const existing2: IElement = { type: 'item1', guid: uuidv1() };
+      const existing1: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_1' };
+      const existing2: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_2' };
 
       const definitions: IElementDefinition[] = [item1];
       const subject = options(

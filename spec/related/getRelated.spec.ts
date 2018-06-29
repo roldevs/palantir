@@ -1,6 +1,5 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import * as R from 'ramda';
 import uuidv1 from 'uuid/v1';
 import related from '../../src/related';
 import {
@@ -8,10 +7,6 @@ import {
   IAliasDefinition,
   IElement,
   IElementDefinition,
-  IRelatedDefinition,
-  IRelatedElement,
-  IRelatedElements,
-  IWorldDefinition,
 } from '../../src/typings';
 
 describe('Related#get related', () => {
@@ -57,13 +52,13 @@ describe('Related#get related', () => {
         }],
       }];
       const existing: IElement[] = [{
-        type: 'item1', guid: uuidv1(),
+        type: 'item1', guid: uuidv1(), text: 'item1_1',
       }, {
-        type: 'item1', guid: uuidv1(),
+        type: 'item1', guid: uuidv1(), text: 'item1_2',
       }, {
-        type: 'item2', guid,
+        type: 'item2', guid, text: 'item2_1',
       }, {
-        type: 'item3', guid: uuidv1(),
+        type: 'item3', guid: uuidv1(), text: 'item1_3',
       }];
       const service = related(aliasDefinition, definitions, existing);
 

@@ -1,11 +1,9 @@
 import * as R from 'ramda';
 import {
   ERandomOption,
-  IAliasDefinition,
   IElement,
   IElementDefinition,
   IRelatedDefinition,
-  IWorldDefinition,
 } from './typings';
 
 const options: (definitions: IElementDefinition[], existing: IElement[]) => {
@@ -21,7 +19,8 @@ const options: (definitions: IElementDefinition[], existing: IElement[]) => {
     const definition = R.find(R.propEq('type', type), definitions);
     if (!definition) {
       // TODO: Left/Rigth ?
-      throw new TypeError(`Type: ${type} definition not found`);
+      // throw new TypeError(`Type: ${type} definition not found`);
+      return [];
     }
 
     // At least return an empty array

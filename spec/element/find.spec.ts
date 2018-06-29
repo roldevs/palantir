@@ -4,17 +4,13 @@ import * as R from 'ramda';
 import uuidv1 from 'uuid/v1';
 import element from '../../src/element';
 import {
-  ERandomOption,
-  IAliasDefinition,
   IElement,
   IElementDefinition,
-  IRelatedDefinition,
-  IWorldDefinition,
 } from '../../src/typings';
 
 describe('Element#find', () => {
   const guid1: string = uuidv1();
-  const existing1: IElement = { type: 'item1', guid: guid1 };
+  const existing1: IElement = { type: 'item1', guid: guid1, text: 'item1' };
   const item1: IElementDefinition = {
     type: 'item1',
     text: 'item1',

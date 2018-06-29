@@ -1,14 +1,9 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import * as R from 'ramda';
 import alias from '../../src/alias';
 import {
-  ERandomOption,
   IAliasDefinition,
-  IElement,
-  IElementDefinition,
   IRelatedDefinition,
-  IWorldDefinition,
 } from '../../src/typings';
 
 describe('Alias#toRelated', () => {

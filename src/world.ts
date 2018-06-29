@@ -1,11 +1,8 @@
 
-import * as R from 'ramda';
 import relatedCreator from './related';
 import {
-  ERandomOption,
   IElement,
   IElementDefinition,
-  IRelatedDefinition,
   IWorldDefinition,
 } from './typings';
 

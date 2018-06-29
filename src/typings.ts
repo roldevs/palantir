@@ -31,6 +31,7 @@ interface IElementDefinition {
 
 interface IElement {
   guid: uuid;
+  text: string;
   type: string;
   description?: string;
   related?: {
@@ -48,6 +49,12 @@ interface IWorldDefinition {
   existing: IElement[];
 }
 
+interface ILocalizeOptions {
+  locale?: string;
+  debug?: boolean;
+  translations: {};
+}
+
 export {
   ERandomOption,
   IElementDefinition,
@@ -57,4 +64,5 @@ export {
   IRelatedElements,
   IElement,
   IAliasDefinition,
+  ILocalizeOptions,
 };

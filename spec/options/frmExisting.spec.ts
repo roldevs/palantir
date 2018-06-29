@@ -1,24 +1,18 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import * as R from 'ramda';
 import uuidv1 from 'uuid/v1';
 import options from '../../src/options';
 import {
-  ERandomOption,
-  IAliasDefinition,
   IElement,
-  IElementDefinition,
-  IRelatedDefinition,
-  IWorldDefinition,
 } from '../../src/typings';
 
 describe('Options#fromExisting', () => {
   describe('with type', () => {
     it('return expected options', () => {
-      const existing1: IElement = { type: 'item1', guid: uuidv1() };
-      const existing2: IElement = { type: 'item1', guid: uuidv1() };
-      const existing3: IElement = { type: 'item2', guid: uuidv1() };
-      const existing4: IElement = { type: 'item1', guid: uuidv1() };
+      const existing1: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_1' };
+      const existing2: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_2' };
+      const existing3: IElement = { type: 'item2', guid: uuidv1(), text: 'item2_1' };
+      const existing4: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_3' };
       expect(
         options(
           [],
@@ -29,8 +23,8 @@ describe('Options#fromExisting', () => {
   });
   describe('without type', () => {
     it('trhow an error', () => {
-      const existing1: IElement = { type: 'item1', guid: uuidv1() };
-      const existing2: IElement = { type: 'item1', guid: uuidv1() };
+      const existing1: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_1' };
+      const existing2: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_2' };
       expect(
         options(
           [],

@@ -4,12 +4,8 @@ import * as R from 'ramda';
 import uuidv1 from 'uuid/v1';
 import options from '../../src/options';
 import {
-  ERandomOption,
-  IAliasDefinition,
   IElement,
   IElementDefinition,
-  IRelatedDefinition,
-  IWorldDefinition,
 } from '../../src/typings';
 
 describe('Options#fromAll', () => {
@@ -37,10 +33,10 @@ describe('Options#fromAll', () => {
           text: 'item_2_2',
         }],
       };
-      const existing1: IElement = { type: 'item1', guid: uuidv1() };
-      const existing2: IElement = { type: 'item1', guid: uuidv1() };
-      const existing3: IElement = { type: 'item2', guid: uuidv1() };
-      const existing4: IElement = { type: 'item1', guid: uuidv1() };
+      const existing1: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_1' };
+      const existing2: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_2' };
+      const existing3: IElement = { type: 'item2', guid: uuidv1(), text: 'item2_1' };
+      const existing4: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_3' };
 
       const subject: Array<IElement | IElementDefinition> = options(
         [
@@ -61,7 +57,7 @@ describe('Options#fromAll', () => {
     });
   });
   describe('without type', () => {
-    it('throw an error', () => {
+    it('returns empty array', () => {
       const item1: IElementDefinition = {
         type: 'item1',
         text: 'item1',
@@ -73,8 +69,8 @@ describe('Options#fromAll', () => {
           text: 'item_1_2',
         }],
       };
-      const existing1: IElement = { type: 'item1', guid: uuidv1() };
-      const existing2: IElement = { type: 'item1', guid: uuidv1() };
+      const existing1: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_1' };
+      const existing2: IElement = { type: 'item1', guid: uuidv1(), text: 'item1_2' };
 
       const definitions: IElementDefinition[] = [item1];
       expect(
@@ -83,8 +79,8 @@ describe('Options#fromAll', () => {
             existing1,
             existing2,
           ],
-        ).fromAll.bind('item2'),
-      ).to.throw(TypeError);
+        ).fromAll('item2'),
+      ).to.eql([]);
     });
   });
 });

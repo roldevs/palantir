@@ -1,11 +1,7 @@
 import * as R from 'ramda';
 import {
-  ERandomOption,
-  IAliasDefinition,
   IElement,
   IElementDefinition,
-  IRelatedDefinition,
-  IWorldDefinition,
 } from './typings';
 
 const element: (definitions: IElementDefinition[], existing: IElement[]) => {

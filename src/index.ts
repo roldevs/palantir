@@ -8,18 +8,18 @@ import worldCreator from './world';
 const debug: (obj: any) => void = (obj: any) => console.log(JSON.stringify(obj, null, 2));
 /* tslint:enable no-console */
 
-// const world = worldCreator(worldDefinition);
+const world = worldCreator(worldDefinition);
 
-// debug(world.getElement('npc'));
+debug(world.getElement('pj'));
 
-const translations = requireDir('./translations', {recurse: true});
+// const translations = requireDir('./translations', {recurse: true});
 
-debug(translations);
-​
-const localize = localizeCreator({
-  locale: 'en',
-  debug: false,
-  translations,
-});
+// debug(translations);
+// ​
+// const localize = localizeCreator({
+//   locale: 'en',
+//   debug: false,
+//   translations,
+// });
 
-console.log(localize.t({type: 'item', text: 'key'}));
+// console.log(localize.t({type: 'item', text: 'key'}));

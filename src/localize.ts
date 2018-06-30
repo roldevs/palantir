@@ -36,11 +36,10 @@ const localize: (options: ILocalizeOptions) => {
         return acc;
       }, {}, R.keys(element.related) );
 
-      const ret = R.merge(element, {
+      return R.merge(element, {
         text: t(element),
         related: newRels,
       });
-      return ret;
     }
 
     return R.merge(element, {text: t(element)});

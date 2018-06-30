@@ -55,6 +55,11 @@ interface ILocalizeOptions {
   translations: {};
 }
 
+interface IPersistanceSave {
+  element: IElement;
+  existing: IElement[];
+}
+
 export {
   ERandomOption,
   IElementDefinition,
@@ -65,4 +70,5 @@ export {
   IElement,
   IAliasDefinition,
   ILocalizeOptions,
+  IPersistanceSave,
 };

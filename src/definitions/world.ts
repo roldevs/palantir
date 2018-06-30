@@ -11,6 +11,15 @@ import {
   npcFemaleNames,
   npcGoalsDef,
 } from './npc';
+import {
+  pj,
+  pjAppearance,
+  pjBackground,
+  pjClothes,
+  pjMannerism,
+  pjPersonality,
+  pjPhysical,
+} from './pj';
 
 export const worldDefinition: IWorldDefinition = {
   definitions: [
@@ -22,7 +31,14 @@ export const worldDefinition: IWorldDefinition = {
     npc,
     npcFemaleNames,
     npcGoalsDef,
-    ],
+    pj,
+    pjAppearance,
+    pjBackground,
+    pjClothes,
+    pjMannerism,
+    pjPersonality,
+    pjPhysical,
+  ],
   alias: {
     item: [
       'miscellaneous_items',

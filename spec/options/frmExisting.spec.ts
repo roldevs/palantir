@@ -1,10 +1,10 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import uuidv1 from 'uuid/v1';
-import options from '../../src/options';
+import options from '../../lib/options';
 import {
   IElement,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Options#fromExisting', () => {
   describe('with type', () => {

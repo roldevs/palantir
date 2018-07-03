@@ -2,12 +2,12 @@
 import { expect } from 'chai';
 import * as R from 'ramda';
 import uuidv1 from 'uuid/v1';
-import options from '../../src/options';
+import options from '../../lib/options';
 import {
   ERandomOption,
   IElement,
   IElementDefinition,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Options#fromRelatedList', () => {
   describe('with type', () => {

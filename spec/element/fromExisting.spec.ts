@@ -1,10 +1,10 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import uuidv1 from 'uuid/v1';
-import element from '../../src/element';
+import element from '../../lib/element';
 import {
   IElement,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Element#fromExisting', () => {
   const guid1: string = uuidv1();

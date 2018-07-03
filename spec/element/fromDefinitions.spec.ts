@@ -1,9 +1,9 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import element from '../../src/element';
+import element from '../../lib/element';
 import {
   IElementDefinition,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Element#fromDefinitions', () => {
   const item1: IElementDefinition = {

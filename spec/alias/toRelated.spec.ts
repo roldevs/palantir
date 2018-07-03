@@ -1,10 +1,10 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import alias from '../../src/alias';
+import alias from '../../lib/alias';
 import {
   IAliasDefinition,
   IRelatedDefinition,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Alias#toRelated', () => {
   describe('without alias', () => {

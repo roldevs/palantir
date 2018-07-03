@@ -1,13 +1,13 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import uuidv1 from 'uuid/v1';
-import related from '../../src/related';
+import related from '../../lib/related';
 import {
   ERandomOption,
   IAliasDefinition,
   IElement,
   IElementDefinition,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Related#get related', () => {
   describe('without alias', () => {

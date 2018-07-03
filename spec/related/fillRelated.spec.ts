@@ -1,13 +1,13 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import uuidv1 from 'uuid/v1';
-import related from '../../src/related';
+import related from '../../lib/related';
 import {
   IAliasDefinition,
   IElement,
   IElementDefinition,
   IRelatedElements,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Related#fillRelated', () => {
   describe('related', () => {

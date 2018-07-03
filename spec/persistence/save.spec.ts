@@ -1,11 +1,11 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import persistenceCreator from '../../src/persistence';
+import persistenceCreator from '../../lib/persistence';
 import {
   IElement,
   IElementDefinition,
   IPersistanceSave,
-} from '../../src/typings';
+} from '../../lib/typings';
 import { expectElementEqualDef } from '../support';
 
 describe('Persistence#save', () => {

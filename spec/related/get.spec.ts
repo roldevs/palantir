@@ -2,13 +2,13 @@
 import { expect } from 'chai';
 import * as R from 'ramda';
 import uuidv1 from 'uuid/v1';
-import related from '../../src/related';
+import related from '../../lib/related';
 import {
   ERandomOption,
   IAliasDefinition,
   IElement,
   IElementDefinition,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Related#get simple', () => {
   describe('without alias', () => {

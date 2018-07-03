@@ -1,9 +1,9 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import options from '../../src/options';
+import options from '../../lib/options';
 import {
   IElementDefinition,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Options#fromDefinition', () => {
   describe('with type', () => {

@@ -2,11 +2,11 @@
 import { expect } from 'chai';
 import * as R from 'ramda';
 import uuidv1 from 'uuid/v1';
-import element from '../../src/element';
+import element from '../../lib/element';
 import {
   IElement,
   IElementDefinition,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Element#find', () => {
   const guid1: string = uuidv1();

@@ -2,14 +2,14 @@
 import { expect } from 'chai';
 import * as R from 'ramda';
 import uuidv1 from 'uuid/v1';
-import localizeCreator from '../../src/localize';
-import relatedCreator from '../../src/related';
+import localizeCreator from '../../lib/localize';
+import relatedCreator from '../../lib/related';
 import {
   ERandomOption,
   IAliasDefinition,
   IElement,
   IElementDefinition,
-} from '../../src/typings';
+} from '../../lib/typings';
 
 describe('Localize#tElement', () => {
   const translations = {

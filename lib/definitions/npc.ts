@@ -1,3 +1,4 @@
+import * as R from 'ramda';
 import { ERandomOption, IElementDefinition } from '../typings';
 
 const npc: IElementDefinition = {
@@ -5,68 +6,120 @@ const npc: IElementDefinition = {
   text: 'npc',
   options: [{
     type: 'npc',
-    text: 'upperclass_male',
+    text: 'npc_civilized',
     related: {
-      upperclass_male: {
+      civilized: {
         search: [{
-          type: 'npc_upperclass_male',
+          type: 'npc_civilized',
         }],
       },
     },
   }, {
     type: 'npc',
-    text: 'lowerclass_male',
+    text: 'npc_underworld',
     related: {
-      lowerclass_male: {
+      underworld: {
         search: [{
-          type: 'npc_lowerclass_male',
+          type: 'npc_underworld',
         }],
       },
     },
   }, {
     type: 'npc',
-    text: 'upperclass_female',
+    text: 'npc_wilderness',
     related: {
-      upperclass_female: {
+      wilderness: {
         search: [{
-          type: 'npc_upperclass_female',
-        }],
-      },
-    },
-  }, {
-    type: 'npc',
-    text: 'lowerclass_female',
-    related: {
-      lowerclass_female: {
-        search: [{
-          type: 'npc_lowerclass_female',
+          type: 'npc_wilderness',
         }],
       },
     },
   }],
 };
 
-const npcUpperclassMale: IElementDefinition = {
-  type: 'npc_upperclass_male',
-  text: 'npc_upperclass_male',
+const npcCivilized: IElementDefinition = {
+  type: 'npc_civilized',
+  text: 'npc_civilized',
+  options: [{
+    type: 'npc_civilized',
+    text: 'npc_civilized_male',
+    related: {
+      male: {
+        search: [{
+          type: 'npc_civilized_male',
+        }],
+      },
+    },
+  }, {
+    type: 'npc_civilized',
+    text: 'npc_civilized_female',
+    related: {
+      female: {
+        search: [{
+          type: 'npc_civilized_female',
+        }],
+      },
+    },
+  }],
+};
+
+const npcUnderworld: IElementDefinition = {
+  type: 'npc_underworld',
+  text: 'npc_underworld',
+  options: [{
+    type: 'npc_underworld',
+    text: 'npc_underworld_male',
+    related: {
+      male: {
+        search: [{
+          type: 'npc_underworld_male',
+        }],
+      },
+    },
+  }, {
+    type: 'npc_underworld',
+    text: 'npc_underworld_female',
+    related: {
+      female: {
+        search: [{
+          type: 'npc_underworld_female',
+        }],
+      },
+    },
+  }],
+};
+
+const npcWilderness: IElementDefinition = {
+  type: 'npc_wilderness',
+  text: 'npc_wilderness',
+  options: [{
+    type: 'npc_wilderness',
+    text: 'npc_wilderness_male',
+    related: {
+      male: {
+        search: [{
+          type: 'npc_wilderness_male',
+        }],
+      },
+    },
+  }, {
+    type: 'npc_underworld',
+    text: 'npc_underworld_female',
+    related: {
+      female: {
+        search: [{
+          type: 'npc_wilderness_female',
+        }],
+      },
+    },
+  }],
+};
+
+const setCommonNpc: (element: IElementDefinition) => IElementDefinition =
+R.mergeDeepRight({
+  type: '',
+  text: '',
   related: {
-    male_name: {
-      search: [{
-        type: 'male_name',
-      }],
-    },
-    male_surname: {
-      search: [{
-        type: 'upperclass_surname',
-      }],
-    },
-    occupation: {
-      search: [{
-        type: 'civilized_npc',
-      }, {
-        type: 'underground_npc',
-      }],
-    },
     asset: {
       search: [{
         type: 'npc_asset',
@@ -143,9 +196,165 @@ const npcUpperclassMale: IElementDefinition = {
       }],
     },
   },
-};
+});
 
-const npcLowerclassMale: IElementDefinition = {
+const npcCivilizedMale: IElementDefinition = setCommonNpc({
+  type: 'npc_civilized_male',
+  text: 'npc_civilized_male',
+  related: {
+    male_name: {
+      search: [{
+        type: 'male_name',
+      }],
+    },
+    male_surname: {
+      search: [{
+        type: 'upperclass_surname',
+      }],
+    },
+    occupation: {
+      search: [{
+        type: 'civilized_npc',
+      }],
+    },
+  },
+});
+
+const npcCivilizedFemale: IElementDefinition = setCommonNpc({
+  type: 'npc_civilized_female',
+  text: 'npc_civilized_female',
+  related: {
+    male_name: {
+      search: [{
+        type: 'female_name',
+      }],
+    },
+    male_surname: {
+      search: [{
+        type: 'upperclass_surname',
+      }],
+    },
+    occupation: {
+      search: [{
+        type: 'civilized_npc',
+      }],
+    },
+  },
+});
+
+const npcUnderworldMale: IElementDefinition = setCommonNpc({
+  type: 'npc_underworld_male',
+  text: 'npc_underworld_male',
+  related: {
+    male_name: {
+      search: [{
+        type: 'male_name',
+      }],
+    },
+    male_surname: {
+      search: [{
+        type: 'upperclass_surname',
+      }],
+    },
+    occupation: {
+      search: [{
+        type: 'underworld_npc',
+      }],
+    },
+  },
+});
+
+const npcUnderworldFemale: IElementDefinition = setCommonNpc({
+  type: 'npc_underworld_female',
+  text: 'npc_underworld_female',
+  related: {
+    male_name: {
+      search: [{
+        type: 'female_name',
+      }],
+    },
+    male_surname: {
+      search: [{
+        type: 'upperclass_surname',
+      }],
+    },
+    occupation: {
+      search: [{
+        type: 'underworld_npc',
+      }],
+    },
+  },
+});
+
+const npcWildernessMale: IElementDefinition = setCommonNpc({
+  type: 'npc_wilderness_male',
+  text: 'npc_wilderness_male',
+  related: {
+    male_name: {
+      search: [{
+        type: 'male_name',
+      }],
+    },
+    male_surname: {
+      search: [{
+        type: 'lowerclass_surname',
+      }],
+    },
+    occupation: {
+      search: [{
+        type: 'wilderness_npc',
+      }],
+    },
+  },
+});
+
+const npcWildernessFemale: IElementDefinition = setCommonNpc({
+  type: 'npc_wilderness_female',
+  text: 'npc_wilderness_female',
+  related: {
+    male_name: {
+      search: [{
+        type: 'female_name',
+      }],
+    },
+    male_surname: {
+      search: [{
+        type: 'lowerclass_surname',
+      }],
+    },
+    occupation: {
+      search: [{
+        type: 'wilderness_npc',
+      }],
+    },
+  },
+});
+
+const npcUpperclassMale: IElementDefinition = setCommonNpc({
+  type: 'npc_upperclass_male',
+  text: 'npc_upperclass_male',
+  related: {
+    male_name: {
+      search: [{
+        type: 'male_name',
+      }],
+    },
+    male_surname: {
+      search: [{
+        type: 'upperclass_surname',
+      }],
+    },
+    occupation: {
+      search: [{
+        type: 'civilized_npc',
+      }, {
+        type: 'underworld_npc',
+      }],
+    },
+  },
+});
+
+const npcLowerclassMale: IElementDefinition = setCommonNpc({
   type: 'npc_lowerclass_male',
   text: 'npc_lowerclass_male',
   related: {
@@ -168,80 +377,10 @@ const npcLowerclassMale: IElementDefinition = {
         type: 'wilderness_npc',
       }],
     },
-    asset: {
-      search: [{
-        type: 'npc_asset',
-      }],
-    },
-    liability: {
-      search: [{
-        type: 'npc_liability',
-      }],
-    },
-    misfortune: {
-      search: [{
-        type: 'npc_misfortune',
-      }],
-    },
-    goal: {
-      search: [{
-        type: 'npc_goal',
-      }],
-    },
-    appearance: {
-      search: [{
-        type: 'appearance',
-      }],
-    },
-    physical: {
-      search: [{
-        type: 'pj_physical',
-      }],
-    },
-    clothes: {
-      search: [{
-        type: 'clothes',
-      }],
-    },
-    personality: {
-      search: [{
-        type: 'personality',
-      }],
-    },
-    mannerism: {
-      search: [{
-        type: 'mannerism',
-      }],
-    },
-    background: {
-      search: [{
-        type: 'background',
-      }],
-    },
-    secret: {
-      search: [{
-        type: 'npc_secret',
-      }],
-    },
-    reputation: {
-      search: [{
-        type: 'npc_reputation',
-      }],
-    },
-    relation: {
-      search: [{
-        type: 'npc_relation',
-      }],
-    },
-    divinity_domain: {
-      search: [{
-        type: 'divinity_domain',
-      }],
-    },
   },
-};
+});
 
-const npcUpperclassFemale: IElementDefinition = {
+const npcUpperclassFemale: IElementDefinition = setCommonNpc({
   type: 'npc_upperclass_female',
   text: 'npc_upperclass_female',
   related: {
@@ -259,83 +398,13 @@ const npcUpperclassFemale: IElementDefinition = {
       search: [{
         type: 'civilized_npc',
       }, {
-        type: 'wilderness_npc',
-      }],
-    },
-    asset: {
-      search: [{
-        type: 'npc_asset',
-      }],
-    },
-    liability: {
-      search: [{
-        type: 'npc_liability',
-      }],
-    },
-    misfortune: {
-      search: [{
-        type: 'npc_misfortune',
-      }],
-    },
-    goal: {
-      search: [{
-        type: 'npc_goal',
-      }],
-    },
-    appearance: {
-      search: [{
-        type: 'appearance',
-      }],
-    },
-    physical: {
-      search: [{
-        type: 'pj_physical',
-      }],
-    },
-    clothes: {
-      search: [{
-        type: 'clothes',
-      }],
-    },
-    personality: {
-      search: [{
-        type: 'personality',
-      }],
-    },
-    mannerism: {
-      search: [{
-        type: 'mannerism',
-      }],
-    },
-    background: {
-      search: [{
-        type: 'background',
-      }],
-    },
-    secret: {
-      search: [{
-        type: 'npc_secret',
-      }],
-    },
-    reputation: {
-      search: [{
-        type: 'npc_reputation',
-      }],
-    },
-    relation: {
-      search: [{
-        type: 'npc_relation',
-      }],
-    },
-    divinity_domain: {
-      search: [{
-        type: 'divinity_domain',
+        type: 'underworld_npc',
       }],
     },
   },
-};
+});
 
-const npcLowerclassFemale: IElementDefinition = {
+const npcLowerclassFemale: IElementDefinition = setCommonNpc({
   type: 'npc_lowerclass_female',
   text: 'npc_lowerclass_female',
   related: {
@@ -353,83 +422,13 @@ const npcLowerclassFemale: IElementDefinition = {
       search: [{
         type: 'civilized_npc',
       }, {
-        type: 'underground_npc',
+        type: 'underworld_npc',
       }, {
         type: 'wilderness_npc',
       }],
     },
-    asset: {
-      search: [{
-        type: 'npc_asset',
-      }],
-    },
-    liability: {
-      search: [{
-        type: 'npc_liability',
-      }],
-    },
-    misfortune: {
-      search: [{
-        type: 'npc_misfortune',
-      }],
-    },
-    goal: {
-      search: [{
-        type: 'npc_goal',
-      }],
-    },
-    appearance: {
-      search: [{
-        type: 'appearance',
-      }],
-    },
-    physical: {
-      search: [{
-        type: 'pj_physical',
-      }],
-    },
-    clothes: {
-      search: [{
-        type: 'clothes',
-      }],
-    },
-    personality: {
-      search: [{
-        type: 'personality',
-      }],
-    },
-    mannerism: {
-      search: [{
-        type: 'mannerism',
-      }],
-    },
-    background: {
-      search: [{
-        type: 'background',
-      }],
-    },
-    secret: {
-      search: [{
-        type: 'npc_secret',
-      }],
-    },
-    reputation: {
-      search: [{
-        type: 'npc_reputation',
-      }],
-    },
-    relation: {
-      search: [{
-        type: 'npc_relation',
-      }],
-    },
-    divinity_domain: {
-      search: [{
-        type: 'divinity_domain',
-      }],
-    },
   },
-};
+});
 
 const maleNames: IElementDefinition = {
   type: 'male_name',
@@ -1515,6 +1514,7 @@ const npcLiability: IElementDefinition = {
   }, {
     type: 'npc_liability',
     text: 'npc_liability_13',
+    related: { insanity: { search: [{ type: 'insanity' }] } },
   }, {
     type: 'npc_liability',
     text: 'npc_liability_14',
@@ -1816,116 +1816,116 @@ const mission: IElementDefinition = {
 };
 
 const npcMethod: IElementDefinition = {
-  type: 'npc_reputation',
-  text: 'npc_reputation',
+  type: 'npc_method',
+  text: 'npc_method',
   options: [{
-    type: 'npc_reputation',
-    text: 'npc_reputation_1',
+    type: 'npc_method',
+    text: 'npc_method_1',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_2',
+    type: 'npc_method',
+    text: 'npc_method_2',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_3',
+    type: 'npc_method',
+    text: 'npc_method_3',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_4',
+    type: 'npc_method',
+    text: 'npc_method_4',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_5',
+    type: 'npc_method',
+    text: 'npc_method_5',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_6',
+    type: 'npc_method',
+    text: 'npc_method_6',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_7',
+    type: 'npc_method',
+    text: 'npc_method_7',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_8',
+    type: 'npc_method',
+    text: 'npc_method_8',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_9',
+    type: 'npc_method',
+    text: 'npc_method_9',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_10',
+    type: 'npc_method',
+    text: 'npc_method_10',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_11',
+    type: 'npc_method',
+    text: 'npc_method_11',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_12',
+    type: 'npc_method',
+    text: 'npc_method_12',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_13',
+    type: 'npc_method',
+    text: 'npc_method_13',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_14',
+    type: 'npc_method',
+    text: 'npc_method_14',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_15',
+    type: 'npc_method',
+    text: 'npc_method_15',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_16',
+    type: 'npc_method',
+    text: 'npc_method_16',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_17',
+    type: 'npc_method',
+    text: 'npc_method_17',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_18',
+    type: 'npc_method',
+    text: 'npc_method_18',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_19',
+    type: 'npc_method',
+    text: 'npc_method_19',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_20',
+    type: 'npc_method',
+    text: 'npc_method_20',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_21',
+    type: 'npc_method',
+    text: 'npc_method_21',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_22',
+    type: 'npc_method',
+    text: 'npc_method_22',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_23',
+    type: 'npc_method',
+    text: 'npc_method_23',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_24',
+    type: 'npc_method',
+    text: 'npc_method_24',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_25',
+    type: 'npc_method',
+    text: 'npc_method_25',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_26',
+    type: 'npc_method',
+    text: 'npc_method_26',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_27',
+    type: 'npc_method',
+    text: 'npc_method_27',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_28',
+    type: 'npc_method',
+    text: 'npc_method_28',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_29',
+    type: 'npc_method',
+    text: 'npc_method_29',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_30',
+    type: 'npc_method',
+    text: 'npc_method_30',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_31',
+    type: 'npc_method',
+    text: 'npc_method_31',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_32',
+    type: 'npc_method',
+    text: 'npc_method_32',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_33',
+    type: 'npc_method',
+    text: 'npc_method_33',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_34',
+    type: 'npc_method',
+    text: 'npc_method_34',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_35',
+    type: 'npc_method',
+    text: 'npc_method_35',
   }, {
-    type: 'npc_reputation',
-    text: 'npc_reputation_36',
+    type: 'npc_method',
+    text: 'npc_method_36',
   }],
 };
 
@@ -2392,6 +2392,15 @@ const divinityDomain: IElementDefinition = {
 
 export {
   npc,
+  npcCivilized,
+  npcUnderworld,
+  npcWilderness,
+  npcUnderworldFemale,
+  npcUnderworldMale,
+  npcWildernessFemale,
+  npcWildernessMale,
+  npcCivilizedFemale,
+  npcCivilizedMale,
   npcUpperclassMale,
   npcUpperclassFemale,
   npcLowerclassMale,

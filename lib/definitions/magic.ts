@@ -894,6 +894,367 @@ const etherealForm: IElementDefinition = {
   }],
 };
 
+const mutation: IElementDefinition = {
+  type: 'mutation',
+  text: 'mutation',
+  options: [{
+    type: 'mutation',
+    text: 'mutation_1',
+  }, {
+    type: 'mutation',
+    text: 'mutation_2',
+  }, {
+    type: 'mutation',
+    text: 'mutation_3',
+  }, {
+    type: 'mutation',
+    text: 'mutation_4',
+  }, {
+    type: 'mutation',
+    text: 'mutation_5',
+    related: { animal: { search: [{ type: 'animal' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_6',
+  }, {
+    type: 'mutation',
+    text: 'mutation_7',
+    related: { animal: { search: [{ type: 'animal' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_8',
+    related: { animal: { search: [{ type: 'animal' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_9',
+    related: { animal: { search: [{ type: 'animal' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_10',
+    related: { animal: { search: [{ type: 'animal' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_11',
+    related: { animal: { search: [{ type: 'animal' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_12',
+    related: { animal: { search: [{ type: 'animal' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_13',
+  }, {
+    type: 'mutation',
+    text: 'mutation_14',
+  }, {
+    type: 'mutation',
+    text: 'mutation_15',
+  }, {
+    type: 'mutation',
+    text: 'mutation_16',
+  }, {
+    type: 'mutation',
+    text: 'mutation_17',
+  }, {
+    type: 'mutation',
+    text: 'mutation_18',
+  }, {
+    type: 'mutation',
+    text: 'mutation_19',
+  }, {
+    type: 'mutation',
+    text: 'mutation_20',
+    related: { item: { search: [{ type: 'item' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_21',
+  }, {
+    type: 'mutation',
+    text: 'mutation_22',
+  }, {
+    type: 'mutation',
+    text: 'mutation_23',
+  }, {
+    type: 'mutation',
+    text: 'mutation_24',
+    related: { monster_feature: { search: [{ type: 'monster_feature' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_25',
+    related: { monster_trait: { search: [{ type: 'monster_trait' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_26',
+  }, {
+    type: 'mutation',
+    text: 'mutation_27',
+    related: { physical_effect: { search: [{ type: 'physical_effect' }] } },
+  }, {
+    type: 'mutation',
+    text: 'mutation_28',
+  }, {
+    type: 'mutation',
+    text: 'mutation_29',
+  }, {
+    type: 'mutation',
+    text: 'mutation_30',
+  }, {
+    type: 'mutation',
+    text: 'mutation_31',
+  }, {
+    type: 'mutation',
+    text: 'mutation_32',
+  }, {
+    type: 'mutation',
+    text: 'mutation_33',
+  }, {
+    type: 'mutation',
+    text: 'mutation_34',
+  }, {
+    type: 'mutation',
+    text: 'mutation_35',
+  }, {
+    type: 'mutation',
+    text: 'mutation_36',
+  }],
+};
+
+const insanity: IElementDefinition = {
+  type: 'insanity',
+  text: 'insanity',
+  options: [{
+    type: 'insanity',
+    text: 'insanity_1',
+  }, {
+    type: 'insanity',
+    text: 'insanity_2',
+  }, {
+    type: 'insanity',
+    text: 'insanity_3',
+    related: { animal: { search: [{ type: 'animal' }] } },
+  }, {
+    type: 'insanity',
+    text: 'insanity_4',
+  }, {
+    type: 'insanity',
+    text: 'insanity_5',
+  }, {
+    type: 'insanity',
+    text: 'insanity_6',
+  }, {
+    type: 'insanity',
+    text: 'insanity_7',
+  }, {
+    type: 'insanity',
+    text: 'insanity_8',
+  }, {
+    type: 'insanity',
+    text: 'insanity_9',
+  }, {
+    type: 'insanity',
+    text: 'insanity_10',
+  }, {
+    type: 'insanity',
+    text: 'insanity_11',
+  }, {
+    type: 'insanity',
+    text: 'insanity_12',
+  }, {
+    type: 'insanity',
+    text: 'insanity_13',
+  }, {
+    type: 'insanity',
+    text: 'insanity_14',
+  }, {
+    type: 'insanity',
+    text: 'insanity_15',
+  }, {
+    type: 'insanity',
+    text: 'insanity_16',
+  }, {
+    type: 'insanity',
+    text: 'insanity_17',
+  }, {
+    type: 'insanity',
+    text: 'insanity_18',
+  }, {
+    type: 'insanity',
+    text: 'insanity_19',
+  }, {
+    type: 'insanity',
+    text: 'insanity_20',
+  }, {
+    type: 'insanity',
+    text: 'insanity_21',
+  }, {
+    type: 'insanity',
+    text: 'insanity_22',
+  }, {
+    type: 'insanity',
+    text: 'insanity_23',
+  }, {
+    type: 'insanity',
+    text: 'insanity_24',
+  }, {
+    type: 'insanity',
+    text: 'insanity_25',
+  }, {
+    type: 'insanity',
+    text: 'insanity_26',
+  }, {
+    type: 'insanity',
+    text: 'insanity_27',
+  }, {
+    type: 'insanity',
+    text: 'insanity_28',
+  }, {
+    type: 'insanity',
+    text: 'insanity_29',
+  }, {
+    type: 'insanity',
+    text: 'insanity_30',
+    related: { monster_ability: { search: [{ type: 'monster_ability' }] } },
+  }, {
+    type: 'insanity',
+    text: 'insanity_31',
+    related: { monster_feature: { search: [{ type: 'monster_feature' }] } },
+  }, {
+    type: 'insanity',
+    text: 'insanity_32',
+    related: { monster_trait: { search: [{ type: 'monster_trait' }] } },
+  }, {
+    type: 'insanity',
+    text: 'insanity_33',
+  }, {
+    type: 'insanity',
+    text: 'insanity_34',
+    related: { personality: { search: [{ type: 'personality' }] } },
+  }, {
+    type: 'insanity',
+    text: 'insanity_35',
+  }, {
+    type: 'insanity',
+    text: 'insanity_36',
+  }],
+};
+
+const catastrophe: IElementDefinition = {
+  type: 'catastrophe',
+  text: 'catastrophe',
+  options: [{
+    type: 'catastrophe',
+    text: 'catastrophe_1',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_2',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_3',
+    related: { mutation: { search: [{ type: 'mutation' }] } },
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_4',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_5',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_6',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_7',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_8',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_9',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_10',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_11',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_12',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_13',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_14',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_15',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_16',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_17',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_18',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_19',
+    related: { insanity: { search: [{ type: 'insanity' }] } },
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_20',
+    related: { mutation: { search: [{ type: 'mutation' }] } },
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_21',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_22',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_23',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_24',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_25',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_26',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_27',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_28',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_29',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_30',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_31',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_32',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_33',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_34',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_35',
+  }, {
+    type: 'catastrophe',
+    text: 'catastrophe_36',
+  }],
+};
+
 export {
   magic,
   etherealEffect,
@@ -902,4 +1263,7 @@ export {
   physicalEffect,
   physicalElement,
   physicalForm,
+  mutation,
+  insanity,
+  catastrophe,
 };

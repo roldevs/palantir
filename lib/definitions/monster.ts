@@ -34,6 +34,12 @@ const monster: IElementDefinition = {
         random: ERandomOption.random,
       }],
     },
+    weakness: {
+      search: [{
+        type: 'monster_weakness',
+        random: ERandomOption.random,
+      }],
+    },
   },
 };
 
@@ -639,6 +645,160 @@ const monsterPersonality: IElementDefinition = {
   }],
 };
 
+const monsterWeakness: IElementDefinition = {
+  type: 'monster_weakness',
+  text: 'monster_weakness',
+  options: [{
+    type: 'monster_weakness',
+    text: 'monster_weakness_1',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_2',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_3',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_4',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_5',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_6',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_7',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_8',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_9',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_10',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_11',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_12',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_13',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_14',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_15',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_16',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_17',
+    related: {
+      insanity: {
+        search: [{
+          type: 'insanity',
+          random: ERandomOption.random,
+        }],
+      },
+    },
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_18',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_19',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_20',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_21',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_22',
+    related: {
+      npc_method: {
+        search: [{
+          type: 'npc_method',
+          random: ERandomOption.random,
+        }],
+      },
+    },
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_23',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_24',
+    related: {
+      physical_element: {
+        search: [{
+          type: 'physical_element',
+          random: ERandomOption.random,
+        }],
+      },
+    },
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_25',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_26',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_27',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_28',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_29',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_30',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_31',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_32',
+    related: {
+      valuable_material: {
+        search: [{
+          type: 'valuable_material',
+          random: ERandomOption.random,
+        }],
+      },
+    },
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_33',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_34',
+    related: {
+      weapon_item: {
+        search: [{
+          type: 'weapon_item',
+          random: ERandomOption.random,
+        }],
+      },
+    },
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_35',
+  }, {
+    type: 'monster_weakness',
+    text: 'monster_weakness_36',
+  }],
+};
+
 export {
   monster,
   monsterAbility,
@@ -646,4 +806,5 @@ export {
   monsterTrait,
   monsterTactic,
   monsterPersonality,
+  monsterWeakness,
 };

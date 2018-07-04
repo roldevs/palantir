@@ -32,7 +32,7 @@ const elementTexts: (texts: string[], element: IElementDefinition | undefined, d
 };
 
 R.times(() => {
-  const e: any = world.getElement('npc');
+  const e: any = world.getElement('dungeon');
   const t: string[] = [];
   elementTexts(t, e, 0);
   debug(t);

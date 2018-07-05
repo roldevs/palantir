@@ -797,6 +797,120 @@ const treasureTrait: IElementDefinition = {
   }],
 };
 
+const bookTheme: IElementDefinition = {
+  type: 'book_theme',
+  text: 'book_theme',
+  options: [{
+    type: 'book_theme',
+    text: 'book_theme_1',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_2',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_3',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_4',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_5',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_6',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_7',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_8',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_9',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_10',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_11',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_12',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_13',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_14',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_15',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_16',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_17',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_18',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_19',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_20',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_21',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_22',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_23',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_24',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_25',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_26',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_27',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_28',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_29',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_30',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_31',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_32',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_33',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_34',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_35',
+  }, {
+    type: 'book_theme',
+    text: 'book_theme_36',
+  }],
+};
+
 export {
   miscellaneousItem,
   wornItem,
@@ -806,4 +920,5 @@ export {
   treasureItem,
   treasureTrait,
   valuableMaterial,
+  bookTheme,
 };

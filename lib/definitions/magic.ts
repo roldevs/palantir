@@ -1255,8 +1255,256 @@ const catastrophe: IElementDefinition = {
   }],
 };
 
+const potion: IElementDefinition = {
+  type: 'potion',
+  text: 'potion',
+  options: [{
+    type: 'potion',
+    text: 'potion_1',
+    related: { animal: { search: [{ type: 'animal' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_2',
+  }, {
+    type: 'potion',
+    text: 'potion_3',
+  }, {
+    type: 'potion',
+    text: 'potion_4',
+  }, {
+    type: 'potion',
+    text: 'potion_5',
+    related: { element: { search: [{ type: 'element' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_6',
+  }, {
+    type: 'potion',
+    text: 'potion_7',
+  }, {
+    type: 'potion',
+    text: 'potion_8',
+  }, {
+    type: 'potion',
+    text: 'potion_9',
+  }, {
+    type: 'potion',
+    text: 'potion_10',
+  }, {
+    type: 'potion',
+    text: 'potion_11',
+    related: { insanity: { search: [{ type: 'insanity' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_12',
+    related: { element: { search: [{ type: 'element' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_13',
+  }, {
+    type: 'potion',
+    text: 'potion_14',
+  }, {
+    type: 'potion',
+    text: 'potion_15',
+  }, {
+    type: 'potion',
+    text: 'potion_16',
+  }, {
+    type: 'potion',
+    text: 'potion_17',
+    related: { element: { search: [{ type: 'element' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_18',
+  }, {
+    type: 'potion',
+    text: 'potion_19',
+    related: { item: { search: [{ type: 'item' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_20',
+  }, {
+    type: 'potion',
+    text: 'potion_21',
+    related: { magic: { search: [{ type: 'magic' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_22',
+  }, {
+    type: 'potion',
+    text: 'potion_23',
+  }, {
+    type: 'potion',
+    text: 'potion_24',
+    related: { monster_feature: { search: [{ type: 'monster_feature' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_25',
+    related: { monster_trait: { search: [{ type: 'monster_trait' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_26',
+    related: { mutation: { search: [{ type: 'mutation' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_27',
+  }, {
+    type: 'potion',
+    text: 'potion_28',
+  }, {
+    type: 'potion',
+    text: 'potion_29',
+  }, {
+    type: 'potion',
+    text: 'potion_30',
+  }, {
+    type: 'potion',
+    text: 'potion_31',
+  }, {
+    type: 'potion',
+    text: 'potion_32',
+  }, {
+    type: 'potion',
+    text: 'potion_33',
+  }, {
+    type: 'potion',
+    text: 'potion_34',
+  }, {
+    type: 'potion',
+    text: 'potion_35',
+    related: { monster_ability: { search: [{ type: 'monster_ability' }] } },
+  }, {
+    type: 'potion',
+    text: 'potion_36',
+  }],
+};
+
+const magicIngredient: IElementDefinition = {
+  type: 'magic_ingredient',
+  text: 'magic_ingredient',
+  options: [{
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_1',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_2',
+    related: { animal: { search: [{ type: 'animal' }] } },
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_3',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_4',
+    related: { plant: { search: [{ type: 'plant' }] } },
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_5',
+    related: { book: { search: [{ type: 'book' }] } },
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_6',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_7',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_8',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_9',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_10',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_11',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_12',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_13',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_14',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_15',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_16',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_17',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_18',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_19',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_20',
+    related: { monster_feature: { search: [{ type: 'monster_feature' }] } },
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_21',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_22',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_23',
+    related: { physical_element: { search: [{ type: 'physical_element' }] } },
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_24',
+    related: { poisonous_plant: { search: [{ type: 'poisonous_plant' }] } },
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_25',
+    related: { potion: { search: [{ type: 'potion' }] } },
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_26',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_27',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_28',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_29',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_30',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_31',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_32',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_33',
+    related: { valuable_material: { search: [{ type: 'valuable_material' }] } },
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_34',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_35',
+  }, {
+    type: 'magic_ingredient',
+    text: 'magic_ingredient_36',
+  }],
+};
+
 export {
   magic,
+  magicIngredient,
   etherealEffect,
   etherealElement,
   etherealForm,
@@ -1266,4 +1514,5 @@ export {
   mutation,
   insanity,
   catastrophe,
+  potion,
 };

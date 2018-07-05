@@ -32,7 +32,7 @@ const elementTexts: (texts: string[], element: IElementDefinition | undefined, d
 };
 
 R.times(() => {
-  const e: any = world.getElement('dungeon');
+  const e: any = world.getElement('magic_ingredient');
   const t: string[] = [];
   elementTexts(t, e, 0);
   debug(t);
@@ -49,3 +49,6 @@ R.times(() => {
 // });
 
 // console.log(localize.t({type: 'item', text: 'key'}));
+
+// TODO: Get a count of elements
+// GIve a name to the saved elements

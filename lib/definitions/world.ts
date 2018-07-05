@@ -6,6 +6,7 @@ import {
 } from './animals';
 import {
   cityActivity,
+  cityBuilding,
   cityBuildingRoom,
   cityDistrictTheme,
   cityEvent,
@@ -34,7 +35,9 @@ import {
   factionTrait,
   factionType,
 } from './faction';
+import { inn, innAdjective, innName, innQuirk } from './inn';
 import {
+  bookTheme,
   miscellaneousItem,
   toolItem,
   treasure,
@@ -51,10 +54,12 @@ import {
   etherealForm,
   insanity,
   magic,
+  magicIngredient,
   mutation,
   physicalEffect,
   physicalElement,
   physicalForm,
+  potion,
 } from './magic';
 import {
   monster,
@@ -107,6 +112,17 @@ import {
   pj,
   pjPhysical,
 } from './pj';
+import { ediblePlant, plant, poisonousPlant } from './plant';
+import { trap, trapEffect, trapTrigger } from './trap';
+import {
+  wildActivity,
+  wildDiscovery,
+  wildHazard,
+  wildLandmark,
+  wildRegion,
+  wildStructure,
+  wildTrait,
+} from './wild';
 
 export const worldDefinition: IWorldDefinition = {
   definitions: [
@@ -157,6 +173,7 @@ export const worldDefinition: IWorldDefinition = {
     personality,
     pjPhysical,
     magic,
+    magicIngredient,
     etherealEffect,
     etherealElement,
     etherealForm,
@@ -166,6 +183,7 @@ export const worldDefinition: IWorldDefinition = {
     mutation,
     insanity,
     catastrophe,
+    potion,
     animalAerial,
     animalAquatic,
     animalTerrestrial,
@@ -183,6 +201,7 @@ export const worldDefinition: IWorldDefinition = {
     cityTheme,
     cityEvent,
     cityDistrictTheme,
+    cityBuilding,
     cityUpperclassBuilding,
     cityLowerclassBuilding,
     cityActivity,
@@ -200,7 +219,25 @@ export const worldDefinition: IWorldDefinition = {
     dungeonRoomDetail,
     dungeonHazard,
     dungeonActivity,
-    ],
+    trap,
+    trapEffect,
+    trapTrigger,
+    wildRegion,
+    wildLandmark,
+    wildStructure,
+    wildTrait,
+    wildDiscovery,
+    wildActivity,
+    wildHazard,
+    plant,
+    ediblePlant,
+    poisonousPlant,
+    inn,
+    innAdjective,
+    innName,
+    innQuirk,
+    bookTheme,
+  ],
   alias: {
     item: [
       'miscellaneous_item',

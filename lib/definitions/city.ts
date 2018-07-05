@@ -1,5 +1,23 @@
 import { ERandomOption, IElementDefinition } from '../typings';
 
+const cityBuilding: IElementDefinition = {
+  type: 'city_building',
+  text: 'city_building',
+  options: [{
+    type: 'city_building',
+    text: 'city_lowerclass_building',
+    related: {
+      city_lowerclass_building: { search: [{ type: 'city_lowerclass_building' }] },
+    },
+  }, {
+    type: 'city_building',
+    text: 'city_upperclass_building',
+    related: {
+      city_upperclass_building: { search: [{ type: 'city_upperclass_building' }] },
+    },
+  }],
+};
+
 const cityTheme: IElementDefinition = {
   type: 'city_theme',
   text: 'city_theme',
@@ -1054,6 +1072,7 @@ export {
   cityTheme,
   cityEvent,
   cityDistrictTheme,
+  cityBuilding,
   cityUpperclassBuilding,
   cityLowerclassBuilding,
   cityActivity,

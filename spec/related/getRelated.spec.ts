@@ -63,19 +63,19 @@ describe('Related#get related', () => {
       const service = related(aliasDefinition, definitions, existing);
 
       it('get related only element', () => {
-        const subject: IElementDefinition = service.get([{type: 'npc'}]);
+        const subject: IElementDefinition = service.getOne([{type: 'npc'}]);
 
         expect(subject.related).to.not.be.undefined;
 
-        const result1: IElement | IElementDefinition = subject.related!.item1.result!;
-        const result2: any = subject.related!.item2.result!;
+        const result1: Array<IElementDefinition | IElement> = subject.related!.item1.results!;
+        const result2: any = subject.related!.item2.results!;
 
-        expect(result1).to.not.be.undefined;
-        expect(result1.type).to.eql('item1');
-        expect(result1.text).to.be.oneOf(['item_1_1', 'item_1_2']);
-        expect(result2).to.not.be.undefined;
-        expect(result2.type).to.eql('item2');
-        expect(result2.guid).to.eql(guid);
+        expect(result1[0]).to.not.be.undefined;
+        expect(result1[0].type).to.eql('item1');
+        expect(result1[0].text).to.be.oneOf(['item_1_1', 'item_1_2']);
+        expect(result2[0]).to.not.be.undefined;
+        expect(result2[0].type).to.eql('item2');
+        expect(result2[0].guid).to.eql(guid);
       });
     });
   });

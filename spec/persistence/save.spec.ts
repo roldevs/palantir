@@ -21,21 +21,21 @@ describe('Persistence#save', () => {
       };
 
       let service = persistenceCreator([]);
-      let subject: IPersistanceSave = service.save(element1);
-      expect(subject.element.guid).to.not.be.null;
-      expectElementEqualDef(subject.element, element1);
-      expect(subject.existing.length).to.eql(1);
-      expectElementEqualDef(subject.existing[0], element1);
-      expect(subject.existing[0].guid).to.eql(subject.element.guid);
+      let subject: IPersistanceSave[] = service.save([element1]);
+      expect(subject[0].element.guid).to.not.be.null;
+      expectElementEqualDef(subject[0].element, element1);
+      expect(subject[0].existing.length).to.eql(1);
+      expectElementEqualDef(subject[0].existing[0], element1);
+      expect(subject[0].existing[0].guid).to.eql(subject[0].element.guid);
 
       // Add second element
-      service = persistenceCreator(subject.existing);
-      subject = service.save(element2);
-      expect(subject.element.guid).to.not.be.null;
-      expectElementEqualDef(subject.element, element2);
-      expect(subject.existing.length).to.eql(2);
-      expectElementEqualDef(subject.existing[1], element2);
-      expect(subject.existing[1].guid).to.eql(subject.element.guid);
+      service = persistenceCreator(subject[0].existing);
+      subject = service.save([element2]);
+      expect(subject[0].element.guid).to.not.be.null;
+      expectElementEqualDef(subject[0].element, element2);
+      expect(subject[0].existing.length).to.eql(2);
+      expectElementEqualDef(subject[0].existing[1], element2);
+      expect(subject[0].existing[1].guid).to.eql(subject[0].element.guid);
     });
   });
 
@@ -51,24 +51,24 @@ describe('Persistence#save', () => {
         related: {
           item2: {
             search: [],
-            result: element2,
+            results: [element2],
           },
         },
       };
 
       const service = persistenceCreator([]);
-      const subject: IPersistanceSave = service.save(element1);
-      expect(subject.element.guid).to.not.be.null;
-      expectElementEqualDef(subject.element, element1);
+      const subject: IPersistanceSave[] = service.save([element1]);
+      expect(subject[0].element.guid).to.not.be.null;
+      expectElementEqualDef(subject[0].element, element1);
 
       // Element 1 related to second
-      expect(subject.element.related).to.not.be.undefined;
-      expect(subject.element.related!.item2, subject.existing[1].guid);
+      expect(subject[0].element.related).to.not.be.undefined;
+      expect(subject[0].element.related!.item2, subject[0].existing[1].guid);
 
       // Two new existing elements
-      expect(subject.existing.length).to.eql(2);
-      expectElementEqualDef(subject.existing[1], element1);
-      expectElementEqualDef(subject.existing[0], element2);
+      expect(subject[0].existing.length).to.eql(2);
+      expectElementEqualDef(subject[0].existing[1], element1);
+      expectElementEqualDef(subject[0].existing[0], element2);
     });
     it('save three elements', () => {
       const element3: IElementDefinition = {
@@ -81,7 +81,7 @@ describe('Persistence#save', () => {
         related: {
           item3: {
             search: [],
-            result: element3,
+            results: [element3],
           },
         },
       };
@@ -91,26 +91,26 @@ describe('Persistence#save', () => {
         related: {
           item2: {
             search: [],
-            result: element2,
+            results: [element2],
           },
         },
       };
 
       const service = persistenceCreator([]);
-      const subject: IPersistanceSave = service.save(element1);
-      expect(subject.element.guid).to.not.be.null;
-      expectElementEqualDef(subject.element, element1);
+      const subject: IPersistanceSave[] = service.save([element1]);
+      expect(subject[0].element.guid).to.not.be.null;
+      expectElementEqualDef(subject[0].element, element1);
 
       // Element 1 related to second
-      expect(subject.element.related).to.not.be.undefined;
-      expect(subject.element.related!.item2, subject.existing[1].guid);
-      expect(subject.existing[1].related!.item3, subject.existing[0].guid);
+      expect(subject[0].element.related).to.not.be.undefined;
+      expect(subject[0].element.related!.item2, subject[0].existing[1].guid);
+      expect(subject[0].existing[1].related!.item3, subject[0].existing[0].guid);
 
       // Two new existing elements
-      expect(subject.existing.length).to.eql(3);
-      expectElementEqualDef(subject.existing[2], element1);
-      expectElementEqualDef(subject.existing[1], element2);
-      expectElementEqualDef(subject.existing[0], element3);
+      expect(subject[0].existing.length).to.eql(3);
+      expectElementEqualDef(subject[0].existing[2], element1);
+      expectElementEqualDef(subject[0].existing[1], element2);
+      expectElementEqualDef(subject[0].existing[0], element3);
     });
   });
 });

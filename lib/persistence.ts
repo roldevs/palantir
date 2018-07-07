@@ -8,7 +8,7 @@ import {
 } from './typings';
 
 const persistence: (existing: IElement[]) => {
-  save: (element: IElementDefinition) => IPersistanceSave,
+  save: (element: IElementDefinition[]) => IPersistanceSave[],
 } =
 (existing) => {
   const createNewElement: (element: IElementDefinition) => IElement =
@@ -27,7 +27,7 @@ const persistence: (existing: IElement[]) => {
     return existing;
   };
 
-  const save: (element: IElementDefinition) => IPersistanceSave =
+  const saveElement: (elements: IElementDefinition) => IPersistanceSave =
   (element) => {
     const newGuid: string = uuidv1();
     let newElement: IElement;
@@ -36,8 +36,8 @@ const persistence: (existing: IElement[]) => {
       const rels: IRelatedElements = element.related as IRelatedElements;
 
       const newRels = R.reduce(function(acc: {}, key: string) {
-        if (rels[key].result) {
-          return R.set(R.lensPath([key]), save(rels[key].result!).element, acc);
+        if (rels[key].results) {
+          return R.set(R.lensPath([key]), save(rels[key].results! as IElementDefinition[]), acc);
         }
         return acc;
       }, {}, R.keys(element.related) );
@@ -51,6 +51,11 @@ const persistence: (existing: IElement[]) => {
       element: newElement,
       existing: addElementToExisting(newElement),
     };
+  };
+
+  const save: (elements: IElementDefinition[]) => IPersistanceSave[] =
+  (elements) => {
+    return R.map(saveElement, elements);
   };
 
   return { save };

@@ -149,6 +149,7 @@ R.mergeDeepRight({
       search: [{
         type: 'appearance',
       }],
+      count: 3,
     },
     physical: {
       search: [{

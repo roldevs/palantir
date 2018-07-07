@@ -7,6 +7,11 @@ const expectElementEqualDef: (element: IElement, definition: IElementDefinition)
   expect(element.text).to.eql(definition.text);
 };
 
+/* tslint:disable no-console */
+const debugObject: (obj: any) => void = (obj: any) => console.log(JSON.stringify(obj, null, 2));
+/* tslint:enable no-console */
+
 export {
   expectElementEqualDef,
+  debugObject,
 };

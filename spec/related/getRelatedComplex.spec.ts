@@ -8,7 +8,7 @@ import {
   IElementDefinition,
 } from '../../lib/typings';
 
-describe('Related#get recursive related', () => {
+describe('Related#getOne recursive related', () => {
   describe('without alias', () => {
     const aliasDefinition: IAliasDefinition = {};
     const guid: string = uuidv1();
@@ -56,25 +56,25 @@ describe('Related#get recursive related', () => {
       const service = related(aliasDefinition, definitions, []);
 
       it('get related only element', () => {
-        const subject: IElementDefinition = service.get([{type: 'npc'}]);
+        const subject: IElementDefinition = service.getOne([{type: 'npc'}]);
 
         expect(subject.related).to.not.be.undefined;
 
-        const resultName: IElement | IElementDefinition = subject.related!.name.result!;
-        const resultGoal: any = subject.related!.goal.result!;
+        const resultName: Array<IElementDefinition | IElement> = subject.related!.name.results!;
+        const resultGoal: any = subject.related!.goal.results!;
 
-        expect(resultName).to.not.be.undefined;
-        expect(resultName.type).to.eql('name');
-        expect(resultName.text).to.be.oneOf(['Juan', 'Ernesto']);
+        expect(resultName[0]).to.not.be.undefined;
+        expect(resultName[0].type).to.eql('name');
+        expect(resultName[0].text).to.be.oneOf(['Juan', 'Ernesto']);
 
-        expect(resultGoal).to.not.be.undefined;
-        expect(resultGoal.type).to.eql('goal');
-        expect(resultGoal.text).to.eql('change_name');
+        expect(resultGoal[0]).to.not.be.undefined;
+        expect(resultGoal[0].type).to.eql('goal');
+        expect(resultGoal[0].text).to.eql('change_name');
 
-        const resultGoalName: any = resultGoal.related!.name.result!;
+        const resultGoalName: any = resultGoal[0].related!.name.results!;
 
-        expect(resultGoalName.type).to.eql('name');
-        expect(resultGoalName.text).to.be.oneOf(['Juan', 'Ernesto']);
+        expect(resultGoalName[0].type).to.eql('name');
+        expect(resultGoalName[0].text).to.be.oneOf(['Juan', 'Ernesto']);
       });
     });
   });

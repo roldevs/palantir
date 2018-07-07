@@ -16,7 +16,8 @@ const related: (
   definitions: IElementDefinition[],
   existing: IElement[],
 ) => {
-  get: (relatedList: IRelatedDefinition[]) => any,
+  get: (relatedElement: IRelatedElement) => IRelatedElement,
+  getOne: (relatedList: IRelatedDefinition[]) => any,
   fillRelated: (relatedElements: IRelatedElements) => IRelatedElements,
 } =
 (aliasDefinitions, definitions, existing) => {
@@ -24,13 +25,20 @@ const related: (
   const options = optionsCreator(definitions, existing);
   const element = elementCreator(definitions, existing);
 
-  const setResponse: (item: IRelatedElement) => IRelatedElement =
-  (item) => R.set(R.lensProp('result'), get(item.search), item);
+  const get: (relatedElement: IRelatedElement) => IRelatedElement =
+  (relatedElement) => {
+    return R.merge(relatedElement, {
+      results: R.times(() => getOne(relatedElement.search), optionCount(relatedElement)),
+    });
+  };
 
   const fillRelated: (relatedElements: any) => any =
-  R.map<IRelatedElement, IRelatedElement>(setResponse);
+  R.map<IRelatedElement, IRelatedElement>(get);
 
-  const get: (relatedList: IRelatedDefinition[]) => any =
+  const optionCount: (relatedElement: IRelatedElement) => any =
+  R.compose(R.defaultTo(1), R.view(R.lensProp('count')));
+
+  const getOne: (relatedList: IRelatedDefinition[]) => IElementDefinition | IElement | undefined =
   (relatedList) => {
     relatedList = alias.toRelated(relatedList);
     const optionList: Array<IElementDefinition | IElement> = options.fromRelatedList(relatedList);
@@ -55,6 +63,7 @@ const related: (
 
   return {
     fillRelated,
+    getOne,
     get,
   };
 };

@@ -8,8 +8,7 @@ import {
 } from './typings';
 
 const localize: (options: ILocalizeOptions) => {
-  t: (element: IElementDefinition) => string;
-  tElement: (element: IElement | IElementDefinition) => IElement | IElementDefinition;
+  t: (element: IElement | IElementDefinition) => string;
 } =
 (options) => {
   const lib = i18next.init({
@@ -22,30 +21,7 @@ const localize: (options: ILocalizeOptions) => {
   const t: (element: IElement | IElementDefinition) => string =
     (element) => lib.t(`${element.type}.${element.text}`);
 
-  const tElement: (element: IElement | IElementDefinition) => IElement | IElementDefinition =
-  (element) => {
-    let newRels: IRelatedElements | undefined;
-
-    if (element.related) {
-      const rels: IRelatedElements = element.related as IRelatedElements;
-
-      newRels = R.reduce(function(acc: IRelatedElements, key: string) {
-        if (rels[key].result) {
-          return R.set(R.lensPath([key]), R.merge(rels[key], { result: tElement(rels[key].result!) }), acc);
-        }
-        return acc;
-      }, {}, R.keys(element.related) );
-
-      return R.merge(element, {
-        text: t(element),
-        related: newRels,
-      });
-    }
-
-    return R.merge(element, {text: t(element)});
-  };
-
-  return { t, tElement };
+  return { t };
 };
 
 export = localize;

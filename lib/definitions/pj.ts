@@ -9,6 +9,7 @@ const pj: IElementDefinition = {
         type: 'appearance',
         random: ERandomOption.random,
       }],
+      count: 3,
     },
     physical: {
       search: [{

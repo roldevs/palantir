@@ -14,7 +14,8 @@ interface IRelatedDefinition {
 
 interface IRelatedElement {
   search: IRelatedDefinition[];
-  result?: IElementDefinition; // Here is save the result
+  results?: Array<IElementDefinition | IElement>; // Here is save the result
+  count?: number;
 }
 
 interface IRelatedElements {

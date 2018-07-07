@@ -60,15 +60,15 @@ describe('Related#fillRelated', () => {
 
       expect(subject).to.not.be.undefined;
 
-      const result1: IElementDefinition = subject.item1.result!;
-      const result2: IElementDefinition = subject.item2.result!;
+      const result1: IElementDefinition[] = subject.item1.results! as IElementDefinition[];
+      const result2: IElementDefinition[] = subject.item2.results! as IElementDefinition[];
 
-      expect(result1).to.not.be.undefined;
-      expect(result1.type).to.eql('item1');
-      expect(result1.text).to.be.oneOf(['item_1_1', 'item_1_2']);
-      expect(result2).to.not.be.undefined;
-      expect(result2.type).to.eql('item2');
-      expect(result2.text).to.be.oneOf(['item_2_1', 'item_2_2']);
+      expect(result1[0]).to.not.be.undefined;
+      expect(result1[0].type).to.eql('item1');
+      expect(result1[0].text).to.be.oneOf(['item_1_1', 'item_1_2']);
+      expect(result2[0]).to.not.be.undefined;
+      expect(result2[0].type).to.eql('item2');
+      expect(result2[0].text).to.be.oneOf(['item_2_1', 'item_2_2']);
     });
   });
 });

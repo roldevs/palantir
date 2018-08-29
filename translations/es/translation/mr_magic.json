@@ -1,0 +1,14 @@
+{
+  "mr_magic": "Magia",
+  "mr_physical_effect_ethereal_form": "Elemento físico, Efecto etéreo",
+  "mr_ethereal_effect_physical_form": "Efecto etéreo, Forma física",
+  "mr_ethereal_effect_ethereal_form": "Efecto etéreo, Forma física",
+  "mr_physical_element_physical_form": "Elemento físico, Forma física",
+  "mr_physical_element_ethereal_form": "Elemento físico, Forma etérea",
+  "mr_ethereal_element_physical_form": "Elemento etéreo, Forma física",
+  "mr_ethereal_element_ethereal_form": "Elemento etéreo, Forma etérea",
+  "mr_physical_effect_physical_element": "Elemento físico, Elemento físico",
+  "mr_physical_effect_ethereal_element": "Elemento físico, Elemento etéreo",
+  "mr_ethereal_effect_physical_element": "Efecto etéreo, Elemento físico",
+  "mr_ethereal_effect_ethereal_element": "Efecto etéreo, Elemento etéreo"
+}

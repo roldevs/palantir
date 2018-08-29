@@ -11,34 +11,6 @@ const world = worldCreator(worldDefinition);
 
 const slashN: (i: number) => string = R.compose(R.join(''), R.times(() => '-'));
 
-// const elementText: (texts: string[], element: IElementDefinition, depth: number ) => void =
-// (texts, element, depth) => {
-//   if (element) {
-//     texts.push(`${slashN(depth)} (${element.type}): ${element.text}`);
-//   }
-
-//   if (element!.related) {
-//     R.forEach((key: string) => {
-//       const results: IElementDefinition[] | undefined = element!.related![key].results;
-//       if (results) {
-//         return elementsTexts(texts, results, depth + 1);
-//       }
-//       return null;
-//     }, R.keys(element!.related));
-//   }
-// };
-
-// const elementsTexts: (texts: string[], elements: IElementDefinition[] | undefined, depth: number ) => void =
-// (texts, elements, depth) => {
-//   if (!elements) {
-//     return;
-//   }
-
-//   R.forEach(function(element: IElementDefinition) {
-//     elementText(texts, element, depth);
-//   }, elements);
-// };
-
 const translations = requireDir('./translations', {recurse: true});
 const localize = localizeCreator({locale: 'es', debug: false, translations});
 
@@ -49,6 +21,7 @@ const elementsTexts: (texts: string[], element: IRelatedElement, depth: number )
   }
 
   R.forEach((result: IElementDefinition | IElement) => {
+    // console.log(result)
     texts.push(`${slashN(depth)} (${result.type}): ${localize.t(result)}`);
     if (result.related) {
       R.forEach((key: string) => {
@@ -60,27 +33,16 @@ const elementsTexts: (texts: string[], element: IRelatedElement, depth: number )
 };
 
 const e: any = world.get({
-  search: [{type: 'pj'}],
-  count: 5,
+  search: [{type: 'mr_magic'}],
+  count: 2,
 });
 
 const ts: string[] = [];
 elementsTexts(ts, e, 0);
 debugObject(ts);
 
-// const translations = requireDir('./translations', {recurse: true});
-
-// debug(translations);
-// ​
-// const localize = localizeCreator({
-//   locale: 'en',
-//   debug: false,
-//   translations,
-// });
-
-// console.log(localize.t({type: 'item', text: 'key'}));
-
 // TODO:
+// Add namespace to definitions
 // GIve a name to the saved elements (optional)
 // Categorize definitions
 // Add an icon of definitions

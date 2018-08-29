@@ -155,125 +155,127 @@ La siguiente tabla muestra todos los elemntos que se pueden obtener:
 
 ### Utilizando datos de MazeRats
 
-||Key||Descripcion||
-|mr_miscellaneous_item||
-|mr_tool_item||
-|mr_treasure||
-|mr_treasure_item||
-|mr_treasure_trait||
-|mr_weapon_item||
-|mr_worn_item||
-|mr_valuable_material||
-|mr_civilized_npc||
-|mr_divinity_domain||
-|mr_female_name||
-|mr_lowerclass_surname||
-|mr_male_name||
-|mr_mission||
-|mr_npc||
-|mr_npc_asset||
-|mr_npc_civilized||
-|mr_npc_civilized_female||
-|mr_npc_civilized_male||
-|mr_npc_goal||
-|mr_npc_liability||
-|mr_npc_lowerclass_female||
-|mr_npc_lowerclass_male||
-|mr_npc_method||
-|mr_npc_misfortune||
-|mr_npc_relation||
-|mr_npc_reputation||
-|mr_npc_secret||
-|mr_npc_underworld||
-|mr_npc_underworld_female||
-|mr_npc_underworld_male||
-|mr_npc_upperclass_female||
-|mr_npc_upperclass_male||
-|mr_npc_wilderness||
-|mr_npc_wilderness_female||
-|mr_npc_wilderness_male||
-|mr_underworld_npc||
-|mr_upperclass_surname||
-|mr_wilderness_npc||
-|mr_appearance||
-|mr_background||
-|mr_clothes||
-|mr_mannerism||
-|mr_personality||
-|mr_pj||
-|mr_pj_physical||
-|mr_catastrophe||
-|mr_ethereal_effect||
-|mr_ethereal_element||
-|mr_ethereal_form||
-|mr_insanity||
-|mr_magic||
-|mr_magic_ingredient||
-|mr_mutation||
-|mr_physical_effect||
-|mr_physical_element||
-|mr_physical_form||
-|mr_potion||
-|mr_animal_aerial||
-|mr_animal_aquatic||
-|mr_animal_terrestrial||
-|mr_monster||
-|mr_monster_ability||
-|mr_monster_feature||
-|mr_monster_personality||
-|mr_monster_tactic||
-|mr_monster_trait||
-|mr_monster_weakness||
-|mr_faction||
-|mr_faction_type||
-|mr_faction_trait||
-|mr_faction_goal||
-|mr_city_theme||
-|mr_city_event||
-|mr_city_district_theme||
-|mr_city_building||
-|mr_city_upperclass_building||
-|mr_city_lowerclass_building||
-|mr_city_activity||
-|mr_city_building_room||
-|mr_city_tactical_street_feature||
-|mr_city_tactical_building_feature||
-|mr_dungeon||
-|mr_dungeon_entrance||
-|mr_dungeon_form||
-|mr_dungeon_layout||
-|mr_dungeon_ruination||
-|mr_dungeon_reward||
-|mr_dungeon_trick||
-|mr_dungeon_room||
-|mr_dungeon_room_detail||
-|mr_dungeon_hazard||
-|mr_dungeon_activity||
-|mr_trap||
-|mr_trap_effect||
-|mr_trap_trigger||
-|mr_wild_activity||
-|mr_wild_discovery||
-|mr_wild_hazard||
-|mr_wild_landmark||
-|mr_wild_region||
-|mr_wild_structure||
-|mr_wild_trait||
-|mr_edible_plant||
-|mr_plant||
-|mr_poisonous_plant||
-|mr_inn||
-|mr_inn_adjective||
-|mr_inn_name||
-|mr_inn_quirk||
-|mr_book_theme||
+| Key | Descripción |
+| - | - |
+|mr_miscellaneous_item            |           |
+|mr_tool_item                     |           |
+|mr_treasure                      |           |
+|mr_treasure_item                 |           |
+|mr_treasure_trait                |           |
+|mr_weapon_item                   |           |
+|mr_worn_item                     |           |
+|mr_valuable_material             |           |
+|mr_civilized_npc                 |           |
+|mr_divinity_domain               |           |
+|mr_female_name                   |           |
+|mr_lowerclass_surname            |           |
+|mr_male_name                     |           |
+|mr_mission                       |           |
+|mr_npc                           |           |
+|mr_npc_asset                     |           |
+|mr_npc_civilized                 |           |
+|mr_npc_civilized_female          |           |
+|mr_npc_civilized_male            |           |
+|mr_npc_goal                      |           |
+|mr_npc_liability                 |           |
+|mr_npc_lowerclass_female         |           |
+|mr_npc_lowerclass_male           |           |
+|mr_npc_method                    |           |
+|mr_npc_misfortune                |           |
+|mr_npc_relation                  |           |
+|mr_npc_reputation                |           |
+|mr_npc_secret                    |           |
+|mr_npc_underworld                |           |
+|mr_npc_underworld_female         |           |
+|mr_npc_underworld_male           |           |
+|mr_npc_upperclass_female         |           |
+|mr_npc_upperclass_male           |           |
+|mr_npc_wilderness                |           |
+|mr_npc_wilderness_female         |           |
+|mr_npc_wilderness_male           |           |
+|mr_underworld_npc                |           |
+|mr_upperclass_surname            |           |
+|mr_wilderness_npc                |           |
+|mr_appearance                    |           |
+|mr_background                    |           |
+|mr_clothes                       |           |
+|mr_mannerism                     |           |
+|mr_personality                   |           |
+|mr_pj                            |           |
+|mr_pj_physical                   |           |
+|mr_catastrophe                   |           |
+|mr_ethereal_effect               |           |
+|mr_ethereal_element              |           |
+|mr_ethereal_form                 |           |
+|mr_insanity                      |           |
+|mr_magic                         |           |
+|mr_magic_ingredient              |           |
+|mr_mutation                      |           |
+|mr_physical_effect               |           |
+|mr_physical_element              |           |
+|mr_physical_form                 |           |
+|mr_potion                        |           |
+|mr_animal_aerial                 |           |
+|mr_animal_aquatic                |           |
+|mr_animal_terrestrial            |           |
+|mr_monster                       |           |
+|mr_monster_ability               |           |
+|mr_monster_feature               |           |
+|mr_monster_personality           |           |
+|mr_monster_tactic                |           |
+|mr_monster_trait                 |           |
+|mr_monster_weakness              |           |
+|mr_faction                       |           |
+|mr_faction_type                  |           |
+|mr_faction_trait                 |           |
+|mr_faction_goal                  |           |
+|mr_city_theme                    |           |
+|mr_city_event                    |           |
+|mr_city_district_theme           |           |
+|mr_city_building                 |           |
+|mr_city_upperclass_building      |           |
+|mr_city_lowerclass_building      |           |
+|mr_city_activity                 |           |
+|mr_city_building_room            |           |
+|mr_city_tactical_street_feature  |           |
+|mr_city_tactical_building_feature|           |
+|mr_dungeon                       |           |
+|mr_dungeon_entrance              |           |
+|mr_dungeon_form                  |           |
+|mr_dungeon_layout                |           |
+|mr_dungeon_ruination             |           |
+|mr_dungeon_reward                |           |
+|mr_dungeon_trick                 |           |
+|mr_dungeon_room|           |
+|mr_dungeon_room_detail|           |
+|mr_dungeon_hazard|           |
+|mr_dungeon_activity|           |
+|mr_trap|           |
+|mr_trap_effect|           |
+|mr_trap_trigger|           |
+|mr_wild_activity|           |
+|mr_wild_discovery|           |
+|mr_wild_hazard|           |
+|mr_wild_landmark|           |
+|mr_wild_region|           |
+|mr_wild_structure|           |
+|mr_wild_trait|           |
+|mr_edible_plant|           |
+|mr_plant|           |
+|mr_poisonous_plant|           |
+|mr_inn|           |
+|mr_inn_adjective|           |
+|mr_inn_name|           |
+|mr_inn_quirk|           |
+|mr_book_theme|           |
 
 ### Utilizando datos de Mythic
 
-||Key||Descripcion||
-|mythic_event||
-|mythic_event_focus||
-|mythic_event_meaning||
+| Key                  | Descripción |
+| -------------------- | ----------- |
+| mythic_event         |             |
+| mythic_event_focus   |             |
+| mythic_event_meaning |             |
 
 ## Instalación y ejecución
 

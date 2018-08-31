@@ -1,0 +1,29 @@
+{
+  "text": "faction.faction",
+  "related": {
+    "type": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "faction_type"
+        }
+      ]
+    },
+    "trait": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "faction_trait"
+        }
+      ]
+    },
+    "goal": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "faction_goal"
+        }
+      ]
+    }
+  }
+}

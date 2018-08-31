@@ -1,0 +1,135 @@
+{
+  "text": "monster_ability.monster_ability",
+  "options": [
+    {
+      "text": "Absorbente"
+    },
+    {
+      "text": "Sangre ácida"
+    },
+    {
+      "text": "Anti-magia"
+    },
+    {
+      "text": "Cegador"
+    },
+    {
+      "text": "Arma aliento"
+    },
+    {
+      "text": "Camuflaje"
+    },
+    {
+      "text": "Duplicante"
+    },
+    {
+      "text": "Eléctrico"
+    },
+    {
+      "text": "Enreda"
+    },
+    {
+      "text": "${ethereal_effect}",
+      "related": {
+        "ethereal_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_effect",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Explosivo"
+    },
+    {
+      "text": "Volador"
+    },
+    {
+      "text": "Arma de mirada"
+    },
+    {
+      "text": "Hipnotizante"
+    },
+    {
+      "text": "Impermeable"
+    },
+    {
+      "text": "Invisible"
+    },
+    {
+      "text": "Drena-vida"
+    },
+    {
+      "text": "Magnético"
+    },
+    {
+      "text": "Mímico"
+    },
+    {
+      "text": "Telépata"
+    },
+    {
+      "text": "Paralizante"
+    },
+    {
+      "text": "Fase (planos)"
+    },
+    {
+      "text": "${physical_effect}",
+      "related": {
+        "physical_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_effect",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Venenoso"
+    },
+    {
+      "text": "Radioactivo/a"
+    },
+    {
+      "text": "Reflectante"
+    },
+    {
+      "text": "Regenera"
+    },
+    {
+      "text": "Cambiaformas"
+    },
+    {
+      "text": "Lanza conjuros"
+    },
+    {
+      "text": "Sigiloso"
+    },
+    {
+      "text": "Estrangulante"
+    },
+    {
+      "text": "Super fuerza"
+    },
+    {
+      "text": "Telequinético"
+    },
+    {
+      "text": "Teleportador"
+    },
+    {
+      "text": "Vampírico"
+    },
+    {
+      "text": "Trepamuros"
+    }
+  ]
+}

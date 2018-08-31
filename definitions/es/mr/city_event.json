@@ -1,0 +1,124 @@
+{
+  "text": "city_event.city_event",
+  "options": [
+    {
+      "text": "Asesinato"
+    },
+    {
+      "text": "Carnaval"
+    },
+    {
+      "text": "Conscripción"
+    },
+    {
+      "text": "Coronación"
+    },
+    {
+      "text": "Gope estado"
+    },
+    {
+      "text": "Actividad culto"
+    },
+    {
+      "text": "Toque queda"
+    },
+    {
+      "text": "Descubrimiento"
+    },
+    {
+      "text": "Terremoto"
+    },
+    {
+      "text": "Guerra %{faction}",
+      "related": {
+        "faction": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "faction",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Histeria"
+    },
+    {
+      "text": "Fuego"
+    },
+    {
+      "text": "Inundación"
+    },
+    {
+      "text": "Niebla pesada"
+    },
+    {
+      "text": "Altos impuestos"
+    },
+    {
+      "text": "Día sagrado"
+    },
+    {
+      "text": "Tendencia moda"
+    },
+    {
+      "text": "Inquisición"
+    },
+    {
+      "text": "Insurrección"
+    },
+    {
+      "text": "Invasión"
+    },
+    {
+      "text": "Fuga prisión"
+    },
+    {
+      "text": "Juegos públicos"
+    },
+    {
+      "text": "Perdón masivo"
+    },
+    {
+      "text": "Negociaciones"
+    },
+    {
+      "text": "Plaga"
+    },
+    {
+      "text": "Proclamación"
+    },
+    {
+      "text": "Prohibición"
+    },
+    {
+      "text": "Escasez"
+    },
+    {
+      "text": "Refugiados"
+    },
+    {
+      "text": "Disturbios"
+    },
+    {
+      "text": "Arresto político"
+    },
+    {
+      "text": "Escándalo"
+    },
+    {
+      "text": "Asesino serie"
+    },
+    {
+      "text": "Desalojo masivo"
+    },
+    {
+      "text": "Torneo"
+    },
+    {
+      "text": "Juicio"
+    }
+  ]
+}

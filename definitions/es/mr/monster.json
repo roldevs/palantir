@@ -1,0 +1,59 @@
+{
+  "text": "monster.monster",
+  "related": {
+    "feature": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "monster_feature",
+          "random": "ramdom"
+        }
+      ]
+    },
+    "trait": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "monster_trait",
+          "random": "ramdom"
+        }
+      ]
+    },
+    "ability": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "monster_ability",
+          "random": "ramdom"
+        }
+      ]
+    },
+    "tactic": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "monster_tactic",
+          "random": "ramdom"
+        }
+      ]
+    },
+    "personality": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "monster_personality",
+          "random": "ramdom"
+        }
+      ]
+    },
+    "weakness": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "monster_weakness",
+          "random": "ramdom"
+        }
+      ]
+    }
+  }
+}

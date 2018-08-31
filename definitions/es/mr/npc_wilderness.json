@@ -1,0 +1,31 @@
+{
+  "text": "npc_wilderness.npc_wilderness",
+  "options": [
+    {
+      "text": "npc_wilderness.npc_wilderness_male",
+      "related": {
+        "male": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "npc_wilderness_male"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "npc_underworld.npc_underworld_female",
+      "related": {
+        "female": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "npc_wilderness_female"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

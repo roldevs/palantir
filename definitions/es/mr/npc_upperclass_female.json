@@ -1,0 +1,154 @@
+{
+  "text": "npc_upperclass_female.npc_upperclass_female",
+  "related": {
+    "asset": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "npc_asset"
+        }
+      ]
+    },
+    "liability": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "npc_liability"
+        }
+      ]
+    },
+    "misfortune": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "npc_misfortune"
+        }
+      ]
+    },
+    "goal": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "npc_goal"
+        }
+      ]
+    },
+    "method": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "npc_reputation"
+        }
+      ]
+    },
+    "appearance": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "appearance"
+        }
+      ],
+      "count": 3
+    },
+    "physical": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "pc_physical"
+        }
+      ]
+    },
+    "clothes": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "clothes"
+        }
+      ]
+    },
+    "personality": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "personality"
+        }
+      ]
+    },
+    "mannerism": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "mannerism"
+        }
+      ]
+    },
+    "hobby": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "hobby"
+        }
+      ]
+    },
+    "secret": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "npc_secret"
+        }
+      ]
+    },
+    "reputation": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "npc_reputation"
+        }
+      ]
+    },
+    "relation": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "npc_relation"
+        }
+      ]
+    },
+    "divinity_domain": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "divinity_domain"
+        }
+      ]
+    },
+    "female_name": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "female_name"
+        }
+      ]
+    },
+    "female_surname": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "upperclass_surname"
+        }
+      ]
+    },
+    "occupation": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "civilized_npc"
+        },
+        {
+          "ns": "mr",
+          "type": "underworld_npc"
+        }
+      ]
+    }
+  }
+}

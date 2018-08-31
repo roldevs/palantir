@@ -1,17 +1,17 @@
 import * as R from 'ramda';
 import {
   IAliasDefinition,
-  IRelatedDefinition,
+  ISearchDefinition,
 } from './typings';
 
 const alias: (aliasDefinition: IAliasDefinition) => {
-  toRelated: (relatedList: IRelatedDefinition[]) => IRelatedDefinition[],
+  toRelated: (relatedList: ISearchDefinition[]) => ISearchDefinition[],
 } =
 (aliasDefinition) => {
-  const setType: (type: string) => (related: IRelatedDefinition) => IRelatedDefinition = (type) =>
+  const setType: (type: string) => (related: ISearchDefinition) => ISearchDefinition = (type) =>
   R.set(R.lensProp('type'), type);
 
-  const expandRelated: (related: IRelatedDefinition) => IRelatedDefinition[] =
+  const expandRelated: (related: ISearchDefinition) => ISearchDefinition[] =
   (related) => {
     if (aliasDefinition[related.type]) {
       return R.map(function(t: string) {
@@ -21,9 +21,9 @@ const alias: (aliasDefinition: IAliasDefinition) => {
     return [related];
   };
 
-  const toRelated: (relatedList: IRelatedDefinition[]) => IRelatedDefinition[] =
+  const toRelated: (relatedList: ISearchDefinition[]) => ISearchDefinition[] =
   (relatedList) => {
-    return R.flatten<IRelatedDefinition>(R.map(expandRelated, relatedList));
+    return R.flatten<ISearchDefinition>(R.map(expandRelated, relatedList));
   };
 
   return {

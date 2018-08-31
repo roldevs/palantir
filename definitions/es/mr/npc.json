@@ -1,0 +1,44 @@
+{
+  "text": "npc.npc",
+  "options": [
+    {
+      "text": "npc.npc_civilized",
+      "related": {
+        "civilized": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "npc_civilized"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "npc.npc_underworld",
+      "related": {
+        "underworld": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "npc_underworld"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "npc.npc_wilderness",
+      "related": {
+        "wilderness": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "npc_wilderness"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

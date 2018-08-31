@@ -1,0 +1,113 @@
+{
+  "text": "mission.mission",
+  "options": [
+    {
+      "text": "Arrestar"
+    },
+    {
+      "text": "Asesinar"
+    },
+    {
+      "text": "Chantajear"
+    },
+    {
+      "text": "Allanamiento"
+    },
+    {
+      "text": "Cartografiar"
+    },
+    {
+      "text": "Convencer"
+    },
+    {
+      "text": "Destrozar"
+    },
+    {
+      "text": "Defraudar"
+    },
+    {
+      "text": "Entregar"
+    },
+    {
+      "text": "Destruir"
+    },
+    {
+      "text": "Desacreditar"
+    },
+    {
+      "text": "Excoltar"
+    },
+    {
+      "text": "Retirar"
+    },
+    {
+      "text": "Extorsionar"
+    },
+    {
+      "text": "Seguir"
+    },
+    {
+      "text": "Inculpar"
+    },
+    {
+      "text": "Hacerse pasar"
+    },
+    {
+      "text": "Impresionar"
+    },
+    {
+      "text": "Infiltrarse"
+    },
+    {
+      "text": "Interrogar"
+    },
+    {
+      "text": "Investigar"
+    },
+    {
+      "text": "Paranóico"
+    },
+    {
+      "text": "Secuestrar"
+    },
+    {
+      "text": "Localizar"
+    },
+    {
+      "text": "Proteger"
+    },
+    {
+      "text": "Saquear"
+    },
+    {
+      "text": "Reemplazar"
+    },
+    {
+      "text": "Rutinario"
+    },
+    {
+      "text": "Recuperar"
+    },
+    {
+      "text": "Robar"
+    },
+    {
+      "text": "Sabotear"
+    },
+    {
+      "text": "Traficar"
+    },
+    {
+      "text": "Vulnerable"
+    },
+    {
+      "text": "Vigilar"
+    },
+    {
+      "text": "Tomar control de"
+    },
+    {
+      "text": "Amenazar"
+    }
+  ]
+}

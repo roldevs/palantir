@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import alias from '../../lib/alias';
 import {
   IAliasDefinition,
-  IRelatedDefinition,
+  ISearchDefinition,
 } from '../../lib/typings';
 
 describe('Alias#toRelated', () => {
@@ -11,7 +11,7 @@ describe('Alias#toRelated', () => {
     const aliasDefinition: IAliasDefinition = {};
 
     it('should return the same related element', () => {
-      const related: IRelatedDefinition[] = [{
+      const related: ISearchDefinition[] = [{
         type: 'item1',
       }, {
         type: 'item2',
@@ -28,7 +28,7 @@ describe('Alias#toRelated', () => {
       };
 
       it('should return the same related element', () => {
-        const expected: IRelatedDefinition[] = [{
+        const expected: ISearchDefinition[] = [{
           type: 'item1',
         }, {
           type: 'item2',
@@ -47,7 +47,7 @@ describe('Alias#toRelated', () => {
       };
 
       it('should return the same related element', () => {
-        const expected: IRelatedDefinition[] = [{
+        const expected: ISearchDefinition[] = [{
           type: 'item11',
         }, {
           type: 'item12',

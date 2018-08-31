@@ -1,0 +1,113 @@
+{
+  "text": "underworld_npc.underworld_npc",
+  "options": [
+    {
+      "text": "Alquimista"
+    },
+    {
+      "text": "Criador"
+    },
+    {
+      "text": "Asesino"
+    },
+    {
+      "text": "Acróbata"
+    },
+    {
+      "text": "Mendigo"
+    },
+    {
+      "text": "Ladrón"
+    },
+    {
+      "text": "Deshollinador"
+    },
+    {
+      "text": "Convicto"
+    },
+    {
+      "text": "Cultista"
+    },
+    {
+      "text": "Ratero"
+    },
+    {
+      "text": "Desertor"
+    },
+    {
+      "text": "Cavazanjas"
+    },
+    {
+      "text": "Esgrimista"
+    },
+    {
+      "text": "Falsificador"
+    },
+    {
+      "text": "Vidente"
+    },
+    {
+      "text": "Esclavo de galera"
+    },
+    {
+      "text": "Jugador"
+    },
+    {
+      "text": "Gladiador"
+    },
+    {
+      "text": "Enterrador"
+    },
+    {
+      "text": "Verdugo"
+    },
+    {
+      "text": "Informante"
+    },
+    {
+      "text": "Carcelero"
+    },
+    {
+      "text": "Farolero"
+    },
+    {
+      "text": "Mercenario"
+    },
+    {
+      "text": "Poeta"
+    },
+    {
+      "text": "Envenenador"
+    },
+    {
+      "text": "Corsario"
+    },
+    {
+      "text": "Caza-ratas"
+    },
+    {
+      "text": "Marinero"
+    },
+    {
+      "text": "Esclavo"
+    },
+    {
+      "text": "Contrabandista"
+    },
+    {
+      "text": "Espía"
+    },
+    {
+      "text": "Pilluelo"
+    },
+    {
+      "text": "Usurero"
+    },
+    {
+      "text": "Vagabundo"
+    },
+    {
+      "text": "Mago"
+    }
+  ]
+}

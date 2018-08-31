@@ -7,13 +7,14 @@ enum ERandomOption {
   exists = 'exists', // Choose only existing Element
 }
 
-interface IRelatedDefinition {
+interface ISearchDefinition {
+  ns: string;
   type: string;
   random?: ERandomOption;
 }
 
 interface IRelatedElement {
-  search: IRelatedDefinition[];
+  search: ISearchDefinition[];
   results?: Array<IElementDefinition | IElement>; // Here is save the result
   count?: number;
 }
@@ -61,15 +62,34 @@ interface IPersistanceSave {
   existing: IElement[];
 }
 
+interface ITable {
+  type: string;
+  options?: IElementDefinition[];
+  related?: IRelatedElements;
+}
+
+interface ITableLocator {
+  locale: string;
+  ns: string;
+  type: string;
+}
+
+interface IConnectorOptions {
+  rootPath: string;
+}
+
 export {
   ERandomOption,
   IElementDefinition,
   IWorldDefinition,
-  IRelatedDefinition,
+  ISearchDefinition,
   IRelatedElement,
   IRelatedElements,
   IElement,
   IAliasDefinition,
   ILocalizeOptions,
   IPersistanceSave,
+  ITable,
+  ITableLocator,
+  IConnectorOptions,
 };

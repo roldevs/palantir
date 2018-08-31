@@ -1,0 +1,53 @@
+{
+  "text": "Mazmorra",
+  "related": {
+    "entrance": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "dungeon_entrance"
+        }
+      ]
+    },
+    "form": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "dungeon_form"
+        }
+      ]
+    },
+    "layout": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "dungeon_layout"
+        }
+      ]
+    },
+    "ruination": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "dungeon_ruination"
+        }
+      ]
+    },
+    "reward": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "dungeon_reward"
+        }
+      ]
+    },
+    "tirck": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "dungeon_trick"
+        }
+      ]
+    }
+  }
+}

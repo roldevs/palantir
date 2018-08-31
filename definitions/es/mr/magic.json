@@ -1,0 +1,281 @@
+{
+  "text": "Magia",
+  "options": [
+    {
+      "text": "magic.physical_effect_physical_form",
+      "related": {
+        "physical_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_effect",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "physical_form": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_form",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Elemento físico, Efecto etéreo",
+      "related": {
+        "physical_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_effect",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "ethereal_form": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_form",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Efecto etéreo, Forma física",
+      "related": {
+        "ethereal_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_effect",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "physical_form": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_form",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Efecto etéreo, Forma física",
+      "related": {
+        "ethereal_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_effect",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "ethereal_form": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_form",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Elemento físico, Forma física",
+      "related": {
+        "physical_element": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_element",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "physical_form": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_form",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Elemento físico, Forma etérea",
+      "related": {
+        "physical_element": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_element",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "ethereal_form": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_form",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Elemento etéreo, Forma física",
+      "related": {
+        "ethereal_element": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_element",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "physical_form": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_form",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Elemento etéreo, Forma etérea",
+      "related": {
+        "ethereal_element": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_element",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "ethereal_form": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_form",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Elemento físico, Elemento físico",
+      "related": {
+        "physical_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_effect",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "physical_element": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_element",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Elemento físico, Elemento etéreo",
+      "related": {
+        "physical_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_effect",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "ethereal_element": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_element",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Efecto etéreo, Elemento físico",
+      "related": {
+        "ethereal_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_effect",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "physical_element": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_element",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Efecto etéreo, Elemento etéreo",
+      "related": {
+        "ethereal_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_effect",
+              "random": "ramdom"
+            }
+          ]
+        },
+        "ethereal_element": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_element",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

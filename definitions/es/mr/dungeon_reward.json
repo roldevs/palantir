@@ -1,0 +1,164 @@
+{
+  "text": "dungeon_reward.dungeon_reward",
+  "options": [
+    {
+      "text": "Saber arcano"
+    },
+    {
+      "text": "Aliado animal"
+    },
+    {
+      "text": "Ejército"
+    },
+    {
+      "text": "Bendición"
+    },
+    {
+      "text": "Planos"
+    },
+    {
+      "text": "Objeto cultural"
+    },
+    {
+      "text": "Instrucciones"
+    },
+    {
+      "text": "Aliado %{faction}",
+      "related": {
+        "faction": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "faction",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Premonición"
+    },
+    {
+      "text": "Guía"
+    },
+    {
+      "text": "Reliquia Santa"
+    },
+    {
+      "text": "%{item} mágico",
+      "related": {
+        "item": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "item"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Debilidad enemigo"
+    },
+    {
+      "text": "Joyas"
+    },
+    {
+      "text": "Llave"
+    },
+    {
+      "text": "Fórmula perdida"
+    },
+    {
+      "text": "Máquina"
+    },
+    {
+      "text": "Aliado influyente"
+    },
+    {
+      "text": "Aliado mágico"
+    },
+    {
+      "text": "Obra arte"
+    },
+    {
+      "text": "Aliado %{monster}",
+      "related": {
+        "monster": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "monster"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Oráculo"
+    },
+    {
+      "text": "Tesoro"
+    },
+    {
+      "text": "Portal planar"
+    },
+    {
+      "text": "Profecía"
+    },
+    {
+      "text": "Renombre"
+    },
+    {
+      "text": "Conjuro"
+    },
+    {
+      "text": "Transformación"
+    },
+    {
+      "text": "Transporte"
+    },
+    {
+      "text": "%{treasure}",
+      "related": {
+        "treasure": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "treasure"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Muestra complot"
+    },
+    {
+      "text": "%{valuable_material}",
+      "related": {
+        "valuable_material": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "valuable_material"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Visión"
+    },
+    {
+      "text": "Arma"
+    },
+    {
+      "text": "Mapa"
+    },
+    {
+      "text": "Aliado marital"
+    }
+  ]
+}

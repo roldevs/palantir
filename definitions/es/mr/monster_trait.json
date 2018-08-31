@@ -1,0 +1,135 @@
+{
+  "text": "monster_trait.monster_trait",
+  "options": [
+    {
+      "text": "Anfibio"
+    },
+    {
+      "text": "Hinchado"
+    },
+    {
+      "text": "Frágil"
+    },
+    {
+      "text": "Canibal"
+    },
+    {
+      "text": "Arcilloso"
+    },
+    {
+      "text": "Colosal"
+    },
+    {
+      "text": "Cristales"
+    },
+    {
+      "text": "Pútrido"
+    },
+    {
+      "text": "${ethereal_effect}",
+      "related": {
+        "ethereal_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_effect",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Etéreo"
+    },
+    {
+      "text": "Siempre joven"
+    },
+    {
+      "text": "Sin ojos"
+    },
+    {
+      "text": "Sin miedo"
+    },
+    {
+      "text": "Mullido"
+    },
+    {
+      "text": "Hongo"
+    },
+    {
+      "text": "Gelatinoso"
+    },
+    {
+      "text": "Geométrico"
+    },
+    {
+      "text": "Duro"
+    },
+    {
+      "text": "Ilusorio"
+    },
+    {
+      "text": "Inteligente"
+    },
+    {
+      "text": "Irisdicente"
+    },
+    {
+      "text": "Luminoso"
+    },
+    {
+      "text": "Muchas cabezas"
+    },
+    {
+      "text": "Mecánico"
+    },
+    {
+      "text": "${physical_effect}",
+      "related": {
+        "physical_effect": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_effect",
+              "random": "ramdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Planar"
+    },
+    {
+      "text": "Reflectante"
+    },
+    {
+      "text": "Gomoso"
+    },
+    {
+      "text": "Sombrío"
+    },
+    {
+      "text": "Miembro afilado"
+    },
+    {
+      "text": "Esquelético"
+    },
+    {
+      "text": "Gelatinoso"
+    },
+    {
+      "text": "Pegajoso"
+    },
+    {
+      "text": "Apestoso"
+    },
+    {
+      "text": "Diminuto"
+    },
+    {
+      "text": "Traslúcido"
+    }
+  ]
+}

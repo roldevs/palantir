@@ -3,14 +3,14 @@ import {
   ERandomOption,
   IElement,
   IElementDefinition,
-  IRelatedDefinition,
+  ISearchDefinition,
 } from './typings';
 
 const options: (definitions: IElementDefinition[], existing: IElement[]) => {
   fromDefinition: (type: string) => IElementDefinition[],
   fromExisting: (type: string) => IElement[],
   fromAll: (type: string) => Array<IElement | IElementDefinition>,
-  fromRelatedList: (relatedList: IRelatedDefinition[]) => Array<IElement | IElementDefinition>,
+  fromRelatedList: (relatedList: ISearchDefinition[]) => Array<IElement | IElementDefinition>,
 } =
 (definitions, existing) => {
   const fromDefinition: (type: string) => IElementDefinition[] =
@@ -51,10 +51,10 @@ const options: (definitions: IElementDefinition[], existing: IElement[]) => {
   const defaultRandom: (random: ERandomOption | undefined ) => ERandomOption =
   R.defaultTo(ERandomOption.random);
 
-  const optionsByRelated: (related: IRelatedDefinition) => Array<IElement | IElementDefinition> =
+  const optionsByRelated: (related: ISearchDefinition) => Array<IElement | IElementDefinition> =
   (related) => mapFn[defaultRandom(related.random)](related.type);
 
-  const fromRelatedList: (relatedList: IRelatedDefinition[]) => Array<IElement | IElementDefinition> =
+  const fromRelatedList: (relatedList: ISearchDefinition[]) => Array<IElement | IElementDefinition> =
   (relatedList) => {
     return R.flatten<IElement | IElementDefinition>(R.map(optionsByRelated, relatedList));
   };

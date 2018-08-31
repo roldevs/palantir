@@ -6,9 +6,9 @@ import {
   IAliasDefinition,
   IElement,
   IElementDefinition,
-  IRelatedDefinition,
   IRelatedElement,
   IRelatedElements,
+  ISearchDefinition,
 } from './typings';
 
 const related: (
@@ -17,7 +17,7 @@ const related: (
   existing: IElement[],
 ) => {
   get: (relatedElement: IRelatedElement) => IRelatedElement,
-  getOne: (relatedList: IRelatedDefinition[]) => any,
+  getOne: (relatedList: ISearchDefinition[]) => any,
   fillRelated: (relatedElements: IRelatedElements) => IRelatedElements,
 } =
 (aliasDefinitions, definitions, existing) => {
@@ -38,7 +38,7 @@ const related: (
   const optionCount: (relatedElement: IRelatedElement) => any =
   R.compose(R.defaultTo(1), R.view(R.lensProp('count')));
 
-  const getOne: (relatedList: IRelatedDefinition[]) => IElementDefinition | IElement | undefined =
+  const getOne: (relatedList: ISearchDefinition[]) => IElementDefinition | IElement | undefined =
   (relatedList) => {
     relatedList = alias.toRelated(relatedList);
     const optionList: Array<IElementDefinition | IElement> = options.fromRelatedList(relatedList);
@@ -47,7 +47,7 @@ const related: (
     if (!R.isEmpty(optionList)) {
       elementFound = optionList[Math.floor(Math.random() * optionList.length)];
     } else {
-      const firstRelated: IRelatedDefinition | undefined = R.head(relatedList);
+      const firstRelated: ISearchDefinition | undefined = R.head(relatedList);
       elementFound = element.find(firstRelated!.type);
     }
 

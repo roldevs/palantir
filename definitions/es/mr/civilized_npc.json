@@ -1,0 +1,113 @@
+{
+  "text": "civilized_npc.civilized_npc",
+  "options": [
+    {
+      "text": "Acólito"
+    },
+    {
+      "text": "Actor"
+    },
+    {
+      "text": "Apotecario"
+    },
+    {
+      "text": "Cocinero"
+    },
+    {
+      "text": "Barbero"
+    },
+    {
+      "text": "Herrero"
+    },
+    {
+      "text": "Destilero"
+    },
+    {
+      "text": "Burócrata"
+    },
+    {
+      "text": "Carnicero"
+    },
+    {
+      "text": "Carpintero"
+    },
+    {
+      "text": "Relojero"
+    },
+    {
+      "text": "Mensajero"
+    },
+    {
+      "text": "Cortesano"
+    },
+    {
+      "text": "Diplomático"
+    },
+    {
+      "text": "Pescadero"
+    },
+    {
+      "text": "Guardia"
+    },
+    {
+      "text": "Camisero"
+    },
+    {
+      "text": "Tabernero"
+    },
+    {
+      "text": "Almacenero"
+    },
+    {
+      "text": "Joyero"
+    },
+    {
+      "text": "Caballero"
+    },
+    {
+      "text": "Cerrajero"
+    },
+    {
+      "text": "Constructor"
+    },
+    {
+      "text": "Molinero"
+    },
+    {
+      "text": "Músico"
+    },
+    {
+      "text": "Noble"
+    },
+    {
+      "text": "Pintor"
+    },
+    {
+      "text": "Sacerdote"
+    },
+    {
+      "text": "Erudito"
+    },
+    {
+      "text": "Escriba"
+    },
+    {
+      "text": "Escultor"
+    },
+    {
+      "text": "Marinero"
+    },
+    {
+      "text": "Soldado"
+    },
+    {
+      "text": "Sastre"
+    },
+    {
+      "text": "Tasidermista"
+    },
+    {
+      "text": "Peluqeuro"
+    }
+  ]
+}

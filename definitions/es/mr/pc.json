@@ -1,0 +1,60 @@
+{
+  "text": "Personaje Jugador",
+  "related": {
+    "appearance": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "appearance",
+          "random": "ramdom"
+        }
+      ],
+      "count": 3
+    },
+    "physical": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "pc_physical",
+          "random": "ramdom"
+        }
+      ]
+    },
+    "clothes": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "clothes",
+          "random": "ramdom"
+        }
+      ]
+    },
+    "hobby": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "hobby",
+          "random": "ramdom"
+        }
+      ]
+    },
+    "mannerism": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "mannerism",
+          "random": "ramdom"
+        }
+      ]
+    },
+    "personality": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "personality",
+          "random": "ramdom"
+        }
+      ]
+    }
+  }
+}

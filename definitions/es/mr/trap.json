@@ -1,0 +1,21 @@
+{
+  "text": "trap.trap",
+  "related": {
+    "effect": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "trap_effect"
+        }
+      ]
+    },
+    "trigger": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "trap_trigger"
+        }
+      ]
+    }
+  }
+}

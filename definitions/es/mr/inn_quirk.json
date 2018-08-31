@@ -1,0 +1,175 @@
+{
+  "text": "inn_quirk.inn_quirk",
+  "options": [
+    {
+      "text": "100 años"
+    },
+    {
+      "text": "Siempre noche"
+    },
+    {
+      "text": "Pelea animales"
+    },
+    {
+      "text": "Duelo bardos"
+    },
+    {
+      "text": "Interior más grande"
+    },
+    {
+      "text": "Mercado negro"
+    },
+    {
+      "text": "Nueva"
+    },
+    {
+      "text": "Caníbales"
+    },
+    {
+      "text": "%{city_activity}",
+      "related": {
+        "city_activity": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "city_activity"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Fiesta constante"
+    },
+    {
+      "text": "Duelo de baile"
+    },
+    {
+      "text": "Jefe duende"
+    },
+    {
+      "text": "%{dungeon_layout}",
+      "related": {
+        "dungeon_layout": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "dungeon_layout"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Cara"
+    },
+    {
+      "text": "Lugar de %{faction}",
+      "related": {
+        "faction": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "faction",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{faction_trait}",
+      "related": {
+        "faction_trait": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "faction_trait"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Chef famoso"
+    },
+    {
+      "text": "Oculta cadáveres"
+    },
+    {
+      "text": "Club lucha"
+    },
+    {
+      "text": "Cinco plantas"
+    },
+    {
+      "text": "Mercenarios"
+    },
+    {
+      "text": "Embrujada"
+    },
+    {
+      "text": "Escondite"
+    },
+    {
+      "text": "%{city_building}",
+      "related": {
+        "city_building": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "city_building"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Espada mágica"
+    },
+    {
+      "text": "Cuadro habla"
+    },
+    {
+      "text": "Sótano"
+    },
+    {
+      "text": "%{npc}",
+      "related": {
+        "npc": {
+          "search": [
+            {
+              "ns": "mr",
+              "type": "npc",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Predicadores"
+    },
+    {
+      "text": "Almacén"
+    },
+    {
+      "text": "Personal infantil"
+    },
+    {
+      "text": "Se mueve (magia)"
+    },
+    {
+      "text": "Personal fantasma"
+    },
+    {
+      "text": "Lugar VIP"
+    },
+    {
+      "text": "Voz en pozo"
+    },
+    {
+      "text": "Sólo mujeres"
+    }
+  ]
+}

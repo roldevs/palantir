@@ -1,0 +1,35 @@
+{
+  "text": "Foco del evento",
+  "options": [
+    {
+      "text": "Evento remoto"
+    },
+    {
+      "text": "Acción de un personaje"
+    },
+    {
+      "text": "Meter un nuevo personaje"
+    },
+    {
+      "text": "Event relacionado con el hilo"
+    },
+    {
+      "text": "Cerrar o abrir un hilo"
+    },
+    {
+      "text": "Personaje jugador negativo"
+    },
+    {
+      "text": "Personaje jugador positivo"
+    },
+    {
+      "text": "Evento neutral"
+    },
+    {
+      "text": "NPC negativo"
+    },
+    {
+      "text": "NPC positivo"
+    }
+  ]
+}

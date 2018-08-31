@@ -1,0 +1,21 @@
+{
+  "text": "treasure.treasure",
+  "related": {
+    "item": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "treasure_item"
+        }
+      ]
+    },
+    "trait": {
+      "search": [
+        {
+          "ns": "mr",
+          "type": "treasure_trait"
+        }
+      ]
+    }
+  }
+}

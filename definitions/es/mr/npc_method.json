@@ -1,0 +1,113 @@
+{
+  "text": "npc_method.npc_method",
+  "options": [
+    {
+      "text": "Alquimia"
+    },
+    {
+      "text": "Chantaje"
+    },
+    {
+      "text": "Fanfarronear"
+    },
+    {
+      "text": "Sobornos"
+    },
+    {
+      "text": "Acoso"
+    },
+    {
+      "text": "Burocracia"
+    },
+    {
+      "text": "Encanto"
+    },
+    {
+      "text": "Comercio"
+    },
+    {
+      "text": "Esbirros"
+    },
+    {
+      "text": "Debate"
+    },
+    {
+      "text": "Maquinación"
+    },
+    {
+      "text": "Deducción"
+    },
+    {
+      "text": "Elocuencia"
+    },
+    {
+      "text": "Espionaje"
+    },
+    {
+      "text": "Labia"
+    },
+    {
+      "text": "Favores"
+    },
+    {
+      "text": "Trabajo duro"
+    },
+    {
+      "text": "Humor"
+    },
+    {
+      "text": "Investigación"
+    },
+    {
+      "text": "Leyes"
+    },
+    {
+      "text": "Manipulación"
+    },
+    {
+      "text": "Distracción"
+    },
+    {
+      "text": "Dinero"
+    },
+    {
+      "text": "Quejas"
+    },
+    {
+      "text": "Negociación"
+    },
+    {
+      "text": "Persistencia"
+    },
+    {
+      "text": "Piedad"
+    },
+    {
+      "text": "Preparación"
+    },
+    {
+      "text": "Perspicacia"
+    },
+    {
+      "text": "Estudio"
+    },
+    {
+      "text": "Rumores"
+    },
+    {
+      "text": "Sabotaje"
+    },
+    {
+      "text": "Trabajo equipo"
+    },
+    {
+      "text": "Robo"
+    },
+    {
+      "text": "Amenazas"
+    },
+    {
+      "text": "Violencia"
+    }
+  ]
+}

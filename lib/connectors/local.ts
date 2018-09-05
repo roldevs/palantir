@@ -1,26 +1,27 @@
+import Bluebird from 'bluebird';
 import fs from 'fs';
 import * as R from 'ramda';
 import {
-  IConnectorOptions,
-  ITable,
+  IConnectorFactory,
+  ILocalConnectorOptions,
+  IOptionalElementDefinition,
   ITableLocator,
 } from '../typings';
 
-const localConnector: (options: IConnectorOptions) => {
-  get: (locator: ITableLocator) => Promise<ITable>,
-} =
+const localConnector: (options: ILocalConnectorOptions) => IConnectorFactory =
 (options) => {
   const filePath: (locator: ITableLocator) => string =
   (locator) => `${options.rootPath}/${locator.locale}/${locator.ns}/${locator.type}.json`;
 
-  const get: (locator: ITableLocator) => Promise<ITable> =
+  const get: (locator: ITableLocator) => Bluebird<IOptionalElementDefinition> =
   (locator) => {
-    return new Promise((resolve: any, reject: any) => {
+    return new Bluebird((resolve: any, reject: any) => {
       fs.readFile(filePath(locator), 'utf8', (err, data) => {
         if (err) {
           reject(err);
         } else {
-          resolve(JSON.parse(data));
+          const element: IOptionalElementDefinition = JSON.parse(data);
+          resolve(element);
         }
       });
     });
@@ -31,4 +32,4 @@ const localConnector: (options: IConnectorOptions) => {
   };
 };
 
-export = localConnector;
+export default localConnector;

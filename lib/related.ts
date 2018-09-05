@@ -1,71 +1,70 @@
+import Bluebird from 'bluebird';
 import * as R from 'ramda';
-import aliasCreator from './alias';
-import elementCreator from './element';
-import optionsCreator from './options';
+import elementModule from './element';
+import searchModule from './search';
 import {
-  IAliasDefinition,
-  IElement,
   IElementDefinition,
+  IOptionalElementDefinition,
+  IOptionsModule,
   IRelatedElement,
   IRelatedElements,
+  IRelatedModule,
   ISearchDefinition,
 } from './typings';
 
-const related: (
-  aliasDefinitions: IAliasDefinition,
-  definitions: IElementDefinition[],
-  existing: IElement[],
-) => {
-  get: (relatedElement: IRelatedElement) => IRelatedElement,
-  getOne: (relatedList: ISearchDefinition[]) => any,
-  fillRelated: (relatedElements: IRelatedElements) => IRelatedElements,
-} =
-(aliasDefinitions, definitions, existing) => {
-  const alias = aliasCreator(aliasDefinitions);
-  const options = optionsCreator(definitions, existing);
-  const element = elementCreator(definitions, existing);
+const relatedModule: IRelatedModule =
+(world) => {
+  const optionCount: (relatedElement: IRelatedElement) => any =
+    R.compose(R.defaultTo(1), R.view(R.lensProp('count')));
 
-  const get: (relatedElement: IRelatedElement) => IRelatedElement =
-  (relatedElement) => {
-    return R.merge(relatedElement, {
-      results: R.times(() => getOne(relatedElement.search), optionCount(relatedElement)),
+  const hasRelated: (element: IOptionalElementDefinition) => boolean =
+    (element) => !!(element && element!.related);
+
+  const searchElement: (search: ISearchDefinition[]) => Bluebird<IOptionalElementDefinition> =
+    (search) => searchModule(world).find(search).then(elementModule(world).get);
+
+  const oneRelated: (related: IRelatedElement) => Bluebird<IRelatedElement> =
+  (related) => {
+    return Bluebird.all(
+      R.times(() => searchElement(related.search), optionCount(related)),
+    ).then((results: IOptionalElementDefinition[]) => {
+      return R.set(R.lensProp('results'), results, related);
     });
   };
 
-  const fillRelated: (relatedElements: any) => any =
-  R.map<IRelatedElement, IRelatedElement>(get);
+  const processRelated: (relatedMap: IRelatedElements) => Bluebird<IRelatedElements> =
+  (relatedMap) => {
+    return Bluebird.map(
+      R.keys(relatedMap),
+      (key: string) => {
+        return oneRelated(relatedMap[key]).then((related: IRelatedElement) => {
+          return R.set(R.lensProp(key), related, relatedMap);
+        });
+      },
+    ).then((results: IRelatedElements[]) => {
+      return R.mergeAll(results);
+    });
+  };
 
-  const optionCount: (relatedElement: IRelatedElement) => any =
-  R.compose(R.defaultTo(1), R.view(R.lensProp('count')));
+  const getElement: (element: IElementDefinition) => Bluebird<IElementDefinition> =
+  (element) => {
+    return processRelated(element!.related!).then((related: IRelatedElements) => {
+      return R.set(R.lensProp('related'), related, element);
+    });
+  };
 
-  const getOne: (relatedList: ISearchDefinition[]) => IElementDefinition | IElement | undefined =
-  (relatedList) => {
-    relatedList = alias.toRelated(relatedList);
-    const optionList: Array<IElementDefinition | IElement> = options.fromRelatedList(relatedList);
-    let elementFound: IElement | IElementDefinition | undefined;
-
-    if (!R.isEmpty(optionList)) {
-      elementFound = optionList[Math.floor(Math.random() * optionList.length)];
-    } else {
-      const firstRelated: ISearchDefinition | undefined = R.head(relatedList);
-      elementFound = element.find(firstRelated!.type);
+  const fetch: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition> =
+  (element) => {
+    if (hasRelated(element)) {
+      return getElement(element!);
     }
-
-    if (elementFound && elementFound!.related) {
-      return R.set(
-        R.lensProp('related'),
-        fillRelated(elementFound!.related),
-        elementFound,
-      );
-    }
-    return elementFound;
+    return Bluebird.resolve(element);
   };
 
   return {
-    fillRelated,
-    getOne,
-    get,
+    hasRelated,
+    fetch, // Returns a random element from the passed options
   };
 };
 
-export = related;
+export default relatedModule;

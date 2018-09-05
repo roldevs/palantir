@@ -1,4 +1,6 @@
 
+import Bluebird from 'bluebird';
+
 type uuid = string;
 
 enum ERandomOption {
@@ -6,6 +8,70 @@ enum ERandomOption {
   all = 'all', // Choose an existing Element or generate a new one
   exists = 'exists', // Choose only existing Element
 }
+
+interface ITableLocator {
+  locale: string;
+  ns: string;
+  type: string;
+}
+
+interface ILocalConnectorOptions {
+  rootPath: string;
+}
+
+interface ITestConnectorOptions {
+  elements: {
+    [locale: string]: {
+      [ns: string]: {
+        [type: string]: IOptionalElementDefinition;
+      };
+    };
+  };
+}
+
+interface ITestRepositoryOptions {
+  elements: {
+    [locale: string]: {
+      [ns: string]: {
+        [type: string]: IElementDefinition; // Mybe SavedDefinition
+      };
+    };
+  };
+}
+
+interface IConnectorFactory {
+  get: (locator: ITableLocator) => Bluebird<IOptionalElementDefinition>;
+}
+
+interface IRepositoryFactory {
+  get: (/* TODO */) => Bluebird<IOptionalElementDefinition>;
+}
+
+interface IWorldDefinition {
+  locale: string;
+  connector: IConnectorFactory;
+  repository: IRepositoryFactory;
+}
+
+type IElementModule = (world: IWorldDefinition) => {
+  get: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
+};
+
+type IOptionsModule = (world: IWorldDefinition) => {
+  hasOptions: (element: IOptionalElementDefinition) => boolean,
+  random: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
+};
+
+type IRelatedModule = (world: IWorldDefinition) => {
+  hasRelated: (element: IOptionalElementDefinition) => boolean,
+  fetch: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
+};
+
+type ISearchModule = (world: IWorldDefinition) => {
+  find: (search: ISearchDefinition[]) => Bluebird<IOptionalElementDefinition>;
+};
+
+/////////////////////////////////////////////////////////
 
 interface ISearchDefinition {
   ns: string;
@@ -15,7 +81,7 @@ interface ISearchDefinition {
 
 interface IRelatedElement {
   search: ISearchDefinition[];
-  results?: Array<IElementDefinition | IElement>; // Here is save the result
+  results?: Array<IOptionalElementDefinition | IElement>; // Here is save the result
   count?: number;
 }
 
@@ -24,12 +90,12 @@ interface IRelatedElements {
 }
 
 interface IElementDefinition {
-  type: string;
   text: string;
-  description?: string;
   options?: IElementDefinition[];
   related?: IRelatedElements;
 }
+
+type IOptionalElementDefinition = IElementDefinition | null;
 
 interface IElement {
   guid: uuid;
@@ -45,12 +111,6 @@ interface IAliasDefinition {
   [details: string]: string[];
 }
 
-interface IWorldDefinition {
-  definitions: IElementDefinition[];
-  alias: IAliasDefinition;
-  existing: IElement[];
-}
-
 interface ILocalizeOptions {
   locale?: string;
   debug?: boolean;
@@ -62,24 +122,19 @@ interface IPersistanceSave {
   existing: IElement[];
 }
 
-interface ITable {
-  type: string;
-  options?: IElementDefinition[];
-  related?: IRelatedElements;
-}
-
-interface ITableLocator {
-  locale: string;
-  ns: string;
-  type: string;
-}
-
-interface IConnectorOptions {
-  rootPath: string;
-}
-
 export {
-  ERandomOption,
+  IOptionalElementDefinition,
+  ITableLocator,
+  IConnectorFactory,
+  IRepositoryFactory,
+  ILocalConnectorOptions,
+  ITestConnectorOptions,
+  ITestRepositoryOptions,
+  IElementModule,
+  IOptionsModule,
+  IRelatedModule,
+  ISearchModule,
+  ERandomOption, //
   IElementDefinition,
   IWorldDefinition,
   ISearchDefinition,
@@ -89,7 +144,4 @@ export {
   IAliasDefinition,
   ILocalizeOptions,
   IPersistanceSave,
-  ITable,
-  ITableLocator,
-  IConnectorOptions,
 };

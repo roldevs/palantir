@@ -1,35 +1,27 @@
-import * as R from 'ramda';
+import Bluebird from 'bluebird';
+import optionsModule from './options';
+import relatedModule from './related';
 import {
-  IElement,
-  IElementDefinition,
+  IElementModule,
+  IOptionalElementDefinition,
 } from './typings';
 
-const element: (definitions: IElementDefinition[], existing: IElement[]) => {
-  fromDefinitions: (type: string) => IElementDefinition | undefined,
-  fromExisting: (guid: string) => IElement | undefined,
-  find: (typeOrGuid: string) =>  IElementDefinition | IElement | undefined,
-} =
-(definitions, existing) => {
-  const fromDefinitions: (type: string) => IElementDefinition | undefined =
-  (type) => {
-    return R.find(R.propEq('type', type), definitions);
-  };
+const elementModule: IElementModule =
+(world) => {
+  const options = optionsModule(world);
+  const related = relatedModule(world);
 
-  const fromExisting: (guid: string) => IElement | undefined =
-  (guid) => {
-    return R.find(R.propEq('guid', guid), existing);
-  };
-
-  const find: (typeOrGuid: string) =>  IElementDefinition | IElement | undefined =
-  (typeOrGuid) => {
-    return fromDefinitions(typeOrGuid) || fromExisting(typeOrGuid);
+  const get: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition> =
+  (element) => {
+    if (related.hasRelated(element)) {
+      return related.fetch(element);
+    }
+    return options.random(element);
   };
 
   return {
-    fromDefinitions,
-    fromExisting,
-    find,
+    get, // Returns a random element from the passed options
   };
 };
 
-export = element;
+export default elementModule;

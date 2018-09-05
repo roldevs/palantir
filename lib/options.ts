@@ -1,70 +1,26 @@
-import * as R from 'ramda';
+import Bluebird from 'bluebird';
 import {
-  ERandomOption,
-  IElement,
   IElementDefinition,
-  ISearchDefinition,
+  IOptionalElementDefinition,
+  IOptionsModule,
 } from './typings';
+import { randomFromArray } from './utils';
 
-const options: (definitions: IElementDefinition[], existing: IElement[]) => {
-  fromDefinition: (type: string) => IElementDefinition[],
-  fromExisting: (type: string) => IElement[],
-  fromAll: (type: string) => Array<IElement | IElementDefinition>,
-  fromRelatedList: (relatedList: ISearchDefinition[]) => Array<IElement | IElementDefinition>,
-} =
-(definitions, existing) => {
-  const fromDefinition: (type: string) => IElementDefinition[] =
-  (type) => {
-    // Search the type from definitions
-    const definition = R.find(R.propEq('type', type), definitions);
-    if (!definition) {
-      // TODO: Left/Rigth ?
-      // throw new TypeError(`Type: ${type} definition not found`);
-      return [];
-    }
+const optionsModule: IOptionsModule =
+(_) => {
+  const hasOptions: (element: IOptionalElementDefinition) => boolean =
+    (element) => !!(element && element!.options);
 
-    // At least return an empty array
-    return R.compose(
-      R.defaultTo<IElementDefinition[]>([]),
-      R.view(R.lensProp('options')),
-    )(definition) as IElementDefinition[];
-  };
+  const getElement: (element: IOptionalElementDefinition) => IElementDefinition =
+    (element) => randomFromArray(element!.options!);
 
-  const fromExisting: (type: string) => IElement[] =
-  (type) => {
-    return R.filter(R.propEq('type', type), existing);
-  };
-
-  const fromAll: (type: string) => Array<IElement | IElementDefinition> =
-  (type) => {
-    return R.concat<IElement | IElementDefinition>(
-      fromDefinition(type),
-      fromExisting(type),
-    );
-  };
-
-  const mapFn: any = {};
-  mapFn[ERandomOption.all] = fromAll;
-  mapFn[ERandomOption.exists] = fromExisting;
-  mapFn[ERandomOption.random] = fromDefinition;
-
-  const defaultRandom: (random: ERandomOption | undefined ) => ERandomOption =
-  R.defaultTo(ERandomOption.random);
-
-  const optionsByRelated: (related: ISearchDefinition) => Array<IElement | IElementDefinition> =
-  (related) => mapFn[defaultRandom(related.random)](related.type);
-
-  const fromRelatedList: (relatedList: ISearchDefinition[]) => Array<IElement | IElementDefinition> =
-  (relatedList) => {
-    return R.flatten<IElement | IElementDefinition>(R.map(optionsByRelated, relatedList));
-  };
+  const random: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition> =
+    (element) => Bluebird.resolve(hasOptions(element) ? getElement(element) : null);
 
   return {
-    fromDefinition,
-    fromExisting,
-    fromAll,
-    fromRelatedList,
+    hasOptions,
+    random, // Returns a random element from the passed options
   };
 };
 
-export = options;
+export default optionsModule;

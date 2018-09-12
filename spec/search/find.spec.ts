@@ -1,7 +1,7 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import testConnector from '../../lib/connectors/test';
-import testRepository from '../../lib/repository/test';
+import testRepository from '../../lib/repository/memory';
 import searchModule from '../../lib/search';
 import {
   IElementDefinition, IOptionalElementDefinition, ISearchDefinition,
@@ -9,6 +9,7 @@ import {
 
 describe('Search#find', () => {
   const repository = testRepository({
+    locale: 'es',
     elements: {},
   });
 

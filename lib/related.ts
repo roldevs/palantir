@@ -5,7 +5,6 @@ import searchModule from './search';
 import {
   IElementDefinition,
   IOptionalElementDefinition,
-  IOptionsModule,
   IRelatedElement,
   IRelatedElements,
   IRelatedModule,

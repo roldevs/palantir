@@ -65,7 +65,6 @@
     "**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "spec/**/*.spec.ts"
+    "node_modules"
   ]
 }

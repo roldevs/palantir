@@ -6,7 +6,14 @@
 // import { mythicEvent, mythicEventFocus, mythicEventMeaning } from './lib/definitions/mythic/random_event';
 // import { worldDefinition } from './lib/definitions/world';
 // import localizeCreator from './lib/localize';
-// import { IElement, IElementDefinition, IRelatedElement, IRelatedElements, ITable, ITableLocator } from './lib/typings';
+// import {
+//   IElement,
+//   IElementDefinition,
+//   IRelatedElement,
+//   IRelatedElements,
+//   ITable,
+//   ITableLocator
+// } from './lib/typings';
 // import worldCreator from './lib/world';
 
 // import { debugObject } from './spec/support';
@@ -100,3 +107,28 @@
 // // Categorize definitions
 // // Add an icon of definitions
 // // Get a list of definitions also by category
+
+import memoryRepository from './lib/repository/memory';
+import { uuid } from './lib/typings';
+import { getUUID } from './lib/utils';
+
+const guid: uuid = getUUID();
+const text: string = 'Test';
+const repository = memoryRepository({
+  locale: 'es',
+  elements: {
+    es: [{
+      ns: 'ns',
+      type: 'item1',
+      guid,
+      text,
+    }, {
+      ns: 'ns',
+      type: 'item2',
+      guid: getUUID(),
+      text: 'Test2',
+    }],
+  },
+});
+
+repository.get(guid).then(console.log);

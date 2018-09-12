@@ -2,7 +2,7 @@
 import { expect } from 'chai';
 import testConnector from '../../lib/connectors/test';
 import optionsModule from '../../lib/options';
-import testRepository from '../../lib/repository/test';
+import testRepository from '../../lib/repository/memory';
 import {
   IElementDefinition,
   IOptionalElementDefinition,
@@ -16,6 +16,7 @@ describe('Options#random', () => {
       elements: {},
     }),
     repository: testRepository({
+      locale: 'es',
       elements: {},
     }),
   };
@@ -32,7 +33,7 @@ describe('Options#random', () => {
     };
 
     it('should return a randome existant element', (done) => {
-      options.random(element).then((data: IElementDefinition | null) => {
+      options.random(element).then((data: IOptionalElementDefinition) => {
         expect(data).to.not.be.null;
         expect(data!.text).to.not.be.null;
         done();
@@ -46,7 +47,7 @@ describe('Options#random', () => {
     };
 
     it('should return null', (done) => {
-      options.random(element).then((data: IElementDefinition | null) => {
+      options.random(element).then((data: IOptionalElementDefinition) => {
         expect(data).to.be.null;
         done();
       });

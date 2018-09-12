@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "node_modules/.bin/mocha -r ts-node/register spec/**/*.spec.ts",
+    "test": "node_modules/.bin/mocha -r ts-node/register spec/**/*.spec.ts spec/**/**/*.spec.ts",
     "run": "node_modules/.bin/ts-node index.ts",
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json",
     "prebuild": "npm run lint",

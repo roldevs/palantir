@@ -5,11 +5,50 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Program",
       "type": "node",
       "request": "launch",
-      "name": "Iniciar programa",
-      "program": "${file}",
+      "program": "${workspaceRoot}/dist/index.js",
+      "stopOnEntry": false,
+      "args": [],
+      "cwd": "${workspaceRoot}",
+      "preLaunchTask": null,
+      "runtimeExecutable": null,
+      "runtimeArgs": [
+          "--nolazy"
+      ],
+      "env": {
+          "NODE_ENV": "development"
+      },
+      "sourceMaps": true,
       "outFiles": []
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Mocha All",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+          "-r",
+          "ts-node/register",
+          "'${workspaceFolder}/{,!(node_modules)/}spec/**/*.spec.ts'",
+          "'${workspaceFolder}/{,!(node_modules)/}spec/**/**/*.spec.ts'"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Mocha Current File",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "-r",
+        "ts-node/register",
+        "${file}"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
     },
     {
       "type": "node",

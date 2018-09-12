@@ -2,15 +2,16 @@
 import { expect } from 'chai';
 import testConnector from '../../lib/connectors/test';
 import relatedModule from '../../lib/related';
-import testRepository from '../../lib/repository/test';
+import testRepository from '../../lib/repository/memory';
 import {
   IOptionalElementDefinition,
   IWorldDefinition,
 } from '../../lib/typings';
 
-describe('Search#find', () => {
+describe('Related#fetch', () => {
   describe('with repository empty', () => {
     const repository = testRepository({
+      locale: 'es',
       elements: {},
     });
 

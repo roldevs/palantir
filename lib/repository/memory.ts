@@ -8,34 +8,39 @@ import {
   ISearchDefinition,
   uuid,
 } from '../typings';
-import { defaultToNull, getUUID } from '../utils';
+import {
+  defaultToEmptyArray,
+  defaultToNull,
+  randomFromArray,
+} from '../utils';
 
 const memoryRepository: (options: IRepositoryOptions) => IRepositoryFactory =
 (options) => {
 
   const elementsByLocale: () => IElement[] =
-  () => R.defaultTo([], R.prop(options.locale, options.elements));
+  () => defaultToEmptyArray(R.prop(options.locale, options.elements));
 
   const guidEq: (guid: string) => (element: IElement) => boolean =
   (guid) => R.propEq('guid', guid);
 
-  const getByGuid: (guid: uuid) => (elements: IElement[]) => IOptionalElement =
+  const nsAndTypeEq: (ns: string, type: string) => (element: IElement) => boolean =
+  (ns, type) => R.allPass([R.propEq('ns', ns), R.propEq('type', type)]);
+
+  const byGuid: (guid: uuid) => (elements: IElement[]) => IOptionalElement =
   (guid) => R.find(guidEq(guid));
 
-  const get: (guid: uuid) => Bluebird<IOptionalElement> =
-  (guid) => Bluebird.resolve(defaultToNull(getByGuid(guid)(elementsByLocale())));
+  const filterByTypeEq: (search: ISearchDefinition, elements: IElement[]) => IElement[] =
+  (s, elements) => R.filter(nsAndTypeEq(s.ns, s.type), elements);
 
-  const random: (search: ISearchDefinition[]) => Bluebird<IOptionalElement> =
-  (_) => Bluebird.resolve({
-    ns: 'ns',
-    type: 'type',
-    guid: getUUID(),
-    text: 'Test',
-  });
+  const getByGuid: (guid: uuid) => Bluebird<IOptionalElement> =
+  (guid) => Bluebird.resolve(defaultToNull(byGuid(guid)(elementsByLocale())));
+
+  const search: (search: ISearchDefinition) => Bluebird<IElement[]> =
+  (s) => Bluebird.resolve(filterByTypeEq(s, elementsByLocale()));
 
   return {
-    get,
-    random,
+    getByGuid,
+    search,
   };
 };
 

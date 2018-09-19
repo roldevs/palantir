@@ -1,7 +1,7 @@
 import Bluebird from 'bluebird';
 import * as R from 'ramda';
 import elementModule from './element';
-import searchModule from './search';
+import randomModule from './random';
 import {
   IElementDefinition,
   IOptionalElementDefinition,
@@ -20,7 +20,7 @@ const relatedModule: IRelatedModule =
     (element) => !!(element && element!.related);
 
   const searchElement: (search: ISearchDefinition[]) => Bluebird<IOptionalElementDefinition> =
-    (search) => searchModule(world).find(search).then(elementModule(world).get);
+    (search) => randomModule(world).random(search).then(elementModule(world).get);
 
   const oneRelated: (related: IRelatedElement) => Bluebird<IRelatedElement> =
   (related) => {

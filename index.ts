@@ -1,6 +1,48 @@
-
+// tslint:disable:no-console
 // import fs from 'fs';
-// import * as R from 'ramda';
+import * as R from 'ramda';
+import connectorCreator from './lib/connectors/local';
+import elementCreator from './lib/element';
+import repositoryCreator from './lib/repository/memory';
+import searchCreator from './lib/search';
+import {
+  IElement,
+  IElementDefinition,
+  IOptionalElementDefinition,
+  ISearchDefinition,
+  ISearchResult,
+  IWorldDefinition,
+} from './lib/typings';
+
+const debug: (obj: any) => void =
+(obj) => console.log(JSON.stringify(obj, null, 2));
+
+const world: IWorldDefinition = {
+  locale: 'es',
+  connector: connectorCreator({
+    rootPath: './definitions',
+  }),
+  repository: repositoryCreator({
+    locale: 'es',
+    elements: {},
+  }),
+};
+
+const searchObject = searchCreator(world);
+const elementObject = elementCreator(world);
+const search: ISearchDefinition[] = [{
+  ns: 'mr',
+  type: 'pc',
+}];
+
+searchObject.find(search).then((elements: ISearchResult) => {
+  R.forEach((element: IElement | IElementDefinition) => {
+    elementObject.get(element).then((data: IOptionalElementDefinition) => {
+      debug(data);
+    });
+  }, elements);
+});
+
 // import requireDir from 'require-dir';
 // import localConnector from './lib/connectors/local';
 // import { mythicEvent, mythicEventFocus, mythicEventMeaning } from './lib/definitions/mythic/random_event';
@@ -108,27 +150,27 @@
 // // Add an icon of definitions
 // // Get a list of definitions also by category
 
-import memoryRepository from './lib/repository/memory';
-import { uuid } from './lib/typings';
-import { getUUID } from './lib/utils';
+// import memoryRepository from './lib/repository/memory';
+// import { uuid, IWorldDefinition, ISearchDefinition, ISearchResult } from './lib/typings';
+// import { getUUID } from './lib/utils';
 
-const guid: uuid = getUUID();
-const text: string = 'Test';
-const repository = memoryRepository({
-  locale: 'es',
-  elements: {
-    es: [{
-      ns: 'ns',
-      type: 'item1',
-      guid,
-      text,
-    }, {
-      ns: 'ns',
-      type: 'item2',
-      guid: getUUID(),
-      text: 'Test2',
-    }],
-  },
-});
+// const guid: uuid = getUUID();
+// const text: string = 'Test';
+// const repository = memoryRepository({
+//   locale: 'es',
+//   elements: {
+//     es: [{
+//       ns: 'ns',
+//       type: 'item1',
+//       guid,
+//       text,
+//     }, {
+//       ns: 'ns',
+//       type: 'item2',
+//       guid: getUUID(),
+//       text: 'Test2',
+//     }],
+//   },
+// });
 
-repository.get(guid).then(console.log);
+// repository.get(guid).then(console.log);

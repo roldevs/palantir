@@ -2,17 +2,15 @@
 import { expect } from 'chai';
 import * as R from 'ramda';
 import testConnector from '../../lib/connectors/test';
+import randomModule from '../../lib/random';
 import testRepository from '../../lib/repository/memory';
-import searchModule from '../../lib/search';
 import {
-  IElement,
-  IElementDefinition,
+  IOptionalElement,
   IOptionalElementDefinition,
   ISearchDefinition,
-  ISearchResult,
 } from '../../lib/typings';
 
-describe('Search#find', () => {
+describe('Random#random', () => {
   const repository = testRepository({
     locale: 'es',
     elements: {},
@@ -43,7 +41,7 @@ describe('Search#find', () => {
   });
 
   describe('with es locale', () => {
-    const search = searchModule({
+    const random = randomModule({
       locale: 'es',
       connector,
       repository,
@@ -56,10 +54,9 @@ describe('Search#find', () => {
           type: 'item2',
         }];
 
-        search.find(searchDef).then((data: ISearchResult) => {
-          const element: IElement | IElementDefinition = R.nth(0, data)!;
-          expect(element).to.not.be.null;
-          expect(element!.text).to.eql('ns1.item2');
+        random.random(searchDef).then((data: IOptionalElement | IOptionalElementDefinition) => {
+          expect(data).to.not.be.null;
+          expect(data!.text).to.eql('ns1.item2');
           done();
         });
       });
@@ -70,10 +67,9 @@ describe('Search#find', () => {
           type: 'item1',
         }];
 
-        search.find(searchDef).then((data: ISearchResult) => {
-          const element: IElement | IElementDefinition = R.nth(0, data)!;
-          expect(element).to.not.be.null;
-          expect(element!.text).to.eql('ns2.item1');
+        random.random(searchDef).then((data: IOptionalElement | IOptionalElementDefinition) => {
+          expect(data).to.not.be.null;
+          expect(data!.text).to.eql('ns2.item1');
           done();
         });
       });
@@ -84,8 +80,8 @@ describe('Search#find', () => {
           type: 'item1',
         }];
 
-        search.find(searchDef).then((data: ISearchResult) => {
-          expect(data).to.be.empty;
+        random.random(searchDef).then((data: IOptionalElement | IOptionalElementDefinition) => {
+          expect(data).to.be.null;
           done();
         });
       });
@@ -96,8 +92,8 @@ describe('Search#find', () => {
           type: 'item4',
         }];
 
-        search.find(searchDef).then((data: ISearchResult) => {
-          expect(data).to.be.empty;
+        random.random(searchDef).then((data: IOptionalElement | IOptionalElementDefinition) => {
+          expect(data).to.be.null;
           done();
         });
       });
@@ -113,11 +109,9 @@ describe('Search#find', () => {
           type: 'item1',
         }];
 
-        search.find(searchDef).then((data: ISearchResult) => {
-          R.forEach((element: IElement | IElementDefinition) => {
-            expect(element).to.not.be.null;
-            expect(element!.text).to.oneOf(['ns1.item2', 'ns2.item1']);
-          }, data);
+        random.random(searchDef).then((element: IOptionalElement | IOptionalElementDefinition) => {
+          expect(element).to.not.be.null;
+          expect(element!.text).to.oneOf(['ns1.item2', 'ns2.item1']);
           done();
         });
       });
@@ -132,32 +126,12 @@ describe('Search#find', () => {
             type: 'item4',
           }];
 
-          search.find(searchDef).then((data: ISearchResult) => {
-            const element: IElement | IElementDefinition = R.nth(0, data)!;
+          random.random(searchDef).then((element: IOptionalElement | IOptionalElementDefinition) => {
             expect(element).to.not.be.null;
             expect(element!.text).to.eql('ns1.item2');
             done();
           });
         });
-      });
-    });
-  });
-
-  describe('with en locale', () => {
-    const search = searchModule({
-      locale: 'en',
-      connector,
-      repository,
-    });
-    it('should return empty array', (done) => {
-      const searchDef: ISearchDefinition[] = [{
-        ns: 'ns1',
-        type: 'item3',
-      }];
-
-      search.find(searchDef).then((data: ISearchResult) => {
-        expect(data).to.be.empty;
-        done();
       });
     });
   });

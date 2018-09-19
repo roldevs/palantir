@@ -3,6 +3,7 @@ import optionsModule from './options';
 import relatedModule from './related';
 import {
   IElementModule,
+  IOptionalElement,
   IOptionalElementDefinition,
 } from './typings';
 
@@ -11,12 +12,13 @@ const elementModule: IElementModule =
   const options = optionsModule(world);
   const related = relatedModule(world);
 
-  const get: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition> =
+  const get: (element: IOptionalElementDefinition | IOptionalElement) => Bluebird<IOptionalElementDefinition> =
   (element) => {
-    if (related.hasRelated(element)) {
-      return related.fetch(element);
+    // TODO: IOptionalElement
+    if (related.hasRelated(element as IOptionalElementDefinition)) {
+      return related.fetch(element as IOptionalElementDefinition);
     }
-    return options.random(element);
+    return options.random(element as IOptionalElementDefinition);
   };
 
   return {

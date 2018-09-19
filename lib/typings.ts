@@ -4,9 +4,9 @@ import Bluebird from 'bluebird';
 type uuid = string;
 
 enum ERandomOption {
-  random = 'ramdom', // Generate a new Element
+  definition = 'definition', // Generate a new Element
   all = 'all', // Choose an existing Element or generate a new one
-  exists = 'exists', // Choose only existing Element
+  existing = 'existing', // Choose only existing Element
 }
 
 interface ISearchDefinition {
@@ -31,7 +31,7 @@ interface IElementDefinition {
   related?: IRelatedElements;
 }
 
-type IOptionalElementDefinition = IElementDefinition | null;
+type IOptionalElementDefinition = IElementDefinition | null | undefined;
 
 interface IElement {
   ns: string;
@@ -44,6 +44,8 @@ interface IElement {
 }
 
 type IOptionalElement = IElement | null | undefined;
+
+type ISearchResult = Array<IElement | IElementDefinition>;
 
 interface ITableLocator {
   locale: string;
@@ -77,8 +79,8 @@ interface IConnectorFactory {
 }
 
 interface IRepositoryFactory {
-  get: (guid: uuid) => Bluebird<IOptionalElement>;
-  random: (search: ISearchDefinition[]) => Bluebird<IOptionalElement>;
+  getByGuid: (guid: uuid) => Bluebird<IOptionalElement>;
+  search: (search: ISearchDefinition) => Bluebird<IElement[]>;
 }
 
 interface IWorldDefinition {
@@ -88,7 +90,7 @@ interface IWorldDefinition {
 }
 
 type IElementModule = (world: IWorldDefinition) => {
-  get: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
+  get: (element: IOptionalElementDefinition | IOptionalElement) => Bluebird<IOptionalElementDefinition>;
 };
 
 type IOptionsModule = (world: IWorldDefinition) => {
@@ -102,7 +104,15 @@ type IRelatedModule = (world: IWorldDefinition) => {
 };
 
 type ISearchModule = (world: IWorldDefinition) => {
-  find: (search: ISearchDefinition[]) => Bluebird<IOptionalElementDefinition>;
+  find: (search: ISearchDefinition[]) => Bluebird<ISearchResult>;
+};
+
+type ISearchByTypeModule = (world: IWorldDefinition) => {
+  find: (search: ISearchDefinition) => Bluebird<ISearchResult>;
+};
+
+type IRandomModule = (world: IWorldDefinition) => {
+  random: (search: ISearchDefinition[]) => Bluebird<IOptionalElement | IOptionalElementDefinition>;
 };
 
 /////////////////////////////////////////////////////////
@@ -135,10 +145,13 @@ export {
   IOptionsModule,
   IRelatedModule,
   ISearchModule,
+  ISearchByTypeModule,
+  IRandomModule,
   ERandomOption, //
   IElementDefinition,
   IWorldDefinition,
   ISearchDefinition,
+  ISearchResult,
   IRelatedElement,
   IRelatedElements,
   IElement,

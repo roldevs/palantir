@@ -32,8 +32,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_effect",
-              "random": "ramdom"
+              "type": "ethereal_effect"
             }
           ]
         }
@@ -91,8 +90,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_effect",
-              "random": "ramdom"
+              "type": "physical_effect"
             }
           ]
         }

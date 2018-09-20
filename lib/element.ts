@@ -1,6 +1,6 @@
 import Bluebird from 'bluebird';
-import optionsModule from './options';
-import relatedModule from './related';
+import optionsModule from './element/options';
+import relatedModule from './element/related';
 import {
   IElementModule,
   IOptionalElement,
@@ -18,7 +18,10 @@ const elementModule: IElementModule =
     if (related.hasRelated(element as IOptionalElementDefinition)) {
       return related.fetch(element as IOptionalElementDefinition);
     }
-    return options.random(element as IOptionalElementDefinition);
+    if (options.hasOptions(element as IOptionalElementDefinition)) {
+      return options.random(element as IOptionalElementDefinition);
+    }
+    return Bluebird.resolve(element as IOptionalElementDefinition);
   };
 
   return {

@@ -13,9 +13,7 @@ import {
   ISearchResult,
   IWorldDefinition,
 } from './lib/typings';
-
-const debug: (obj: any) => void =
-(obj) => console.log(JSON.stringify(obj, null, 2));
+import { JSONprettify } from './lib/utils';
 
 const world: IWorldDefinition = {
   locale: 'es',
@@ -32,13 +30,13 @@ const searchObject = searchCreator(world);
 const elementObject = elementCreator(world);
 const search: ISearchDefinition[] = [{
   ns: 'mr',
-  type: 'pc',
+  type: 'magic',
 }];
 
 searchObject.find(search).then((elements: ISearchResult) => {
   R.forEach((element: IElement | IElementDefinition) => {
     elementObject.get(element).then((data: IOptionalElementDefinition) => {
-      debug(data);
+      console.log(JSONprettify(data));
     });
   }, elements);
 });

@@ -56,8 +56,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "insanity",
-              "random": "ramdom"
+              "type": "insanity"
             }
           ]
         }
@@ -82,8 +81,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "npc_method",
-              "random": "ramdom"
+              "type": "npc_method"
             }
           ]
         }
@@ -99,8 +97,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_element",
-              "random": "ramdom"
+              "type": "physical_element"
             }
           ]
         }
@@ -134,8 +131,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "valuable_material",
-              "random": "ramdom"
+              "type": "valuable_material"
             }
           ]
         }
@@ -151,8 +147,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "weapon_item",
-              "random": "ramdom"
+              "type": "weapon_item"
             }
           ]
         }

@@ -5,23 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Program",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceRoot}/dist/index.js",
-      "stopOnEntry": false,
-      "args": [],
-      "cwd": "${workspaceRoot}",
-      "preLaunchTask": null,
-      "runtimeExecutable": null,
-      "runtimeArgs": [
-          "--nolazy"
-      ],
-      "env": {
-          "NODE_ENV": "development"
-      },
-      "sourceMaps": true,
-      "outFiles": []
+      "name": "Debug TypeScript in Node.js",
+      "preLaunchTask": "typescript",
+      "program": "${workspaceFolder}/index.ts",
+      "cwd": "${workspaceFolder}",
+      "protocol": "inspector",
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"
+      ]
     },
     {
       "type": "node",

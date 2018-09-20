@@ -8,8 +8,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_effect",
-              "random": "ramdom"
+              "type": "physical_effect"
             }
           ]
         },
@@ -17,8 +16,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_form",
-              "random": "ramdom"
+              "type": "physical_form"
             }
           ]
         }
@@ -31,8 +29,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_effect",
-              "random": "ramdom"
+              "type": "physical_effect"
             }
           ]
         },
@@ -40,8 +37,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_form",
-              "random": "ramdom"
+              "type": "ethereal_form"
             }
           ]
         }
@@ -54,8 +50,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_effect",
-              "random": "ramdom"
+              "type": "ethereal_effect"
             }
           ]
         },
@@ -63,8 +58,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_form",
-              "random": "ramdom"
+              "type": "physical_form"
             }
           ]
         }
@@ -77,8 +71,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_effect",
-              "random": "ramdom"
+              "type": "ethereal_effect"
             }
           ]
         },
@@ -86,8 +79,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_form",
-              "random": "ramdom"
+              "type": "ethereal_form"
             }
           ]
         }
@@ -100,8 +92,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_element",
-              "random": "ramdom"
+              "type": "physical_element"
             }
           ]
         },
@@ -109,8 +100,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_form",
-              "random": "ramdom"
+              "type": "physical_form"
             }
           ]
         }
@@ -123,8 +113,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_element",
-              "random": "ramdom"
+              "type": "physical_element"
             }
           ]
         },
@@ -132,8 +121,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_form",
-              "random": "ramdom"
+              "type": "ethereal_form"
             }
           ]
         }
@@ -146,8 +134,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_element",
-              "random": "ramdom"
+              "type": "ethereal_element"
             }
           ]
         },
@@ -155,8 +142,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_form",
-              "random": "ramdom"
+              "type": "physical_form"
             }
           ]
         }
@@ -169,8 +155,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_element",
-              "random": "ramdom"
+              "type": "ethereal_element"
             }
           ]
         },
@@ -178,8 +163,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_form",
-              "random": "ramdom"
+              "type": "ethereal_form"
             }
           ]
         }
@@ -192,8 +176,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_effect",
-              "random": "ramdom"
+              "type": "physical_effect"
             }
           ]
         },
@@ -201,8 +184,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_element",
-              "random": "ramdom"
+              "type": "physical_element"
             }
           ]
         }
@@ -215,8 +197,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_effect",
-              "random": "ramdom"
+              "type": "physical_effect"
             }
           ]
         },
@@ -224,8 +205,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_element",
-              "random": "ramdom"
+              "type": "ethereal_element"
             }
           ]
         }
@@ -238,8 +218,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_effect",
-              "random": "ramdom"
+              "type": "ethereal_effect"
             }
           ]
         },
@@ -247,8 +226,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "physical_element",
-              "random": "ramdom"
+              "type": "physical_element"
             }
           ]
         }
@@ -261,8 +239,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_effect",
-              "random": "ramdom"
+              "type": "ethereal_effect"
             }
           ]
         },
@@ -270,8 +247,7 @@
           "search": [
             {
               "ns": "mr",
-              "type": "ethereal_element",
-              "random": "ramdom"
+              "type": "ethereal_element"
             }
           ]
         }

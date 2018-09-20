@@ -1,15 +1,17 @@
 import Bluebird from 'bluebird';
 import * as R from 'ramda';
-import elementModule from './element';
-import randomModule from './random';
+import elementModule from '../element';
+import randomModule from '../random';
 import {
+  IElement,
   IElementDefinition,
   IOptionalElementDefinition,
   IRelatedElement,
   IRelatedElements,
   IRelatedModule,
   ISearchDefinition,
-} from './typings';
+} from '../typings';
+import { compactArray, deepMerge } from '../utils';
 
 const relatedModule: IRelatedModule =
 (world) => {
@@ -27,7 +29,7 @@ const relatedModule: IRelatedModule =
     return Bluebird.all(
       R.times(() => searchElement(related.search), optionCount(related)),
     ).then((results: IOptionalElementDefinition[]) => {
-      return R.set(R.lensProp('results'), results, related);
+      return R.set(R.lensProp('results'), compactArray(results), related);
     });
   };
 
@@ -40,9 +42,7 @@ const relatedModule: IRelatedModule =
           return R.set(R.lensProp(key), related, relatedMap);
         });
       },
-    ).then((results: IRelatedElements[]) => {
-      return R.mergeAll(results);
-    });
+    ).then(deepMerge);
   };
 
   const getElement: (element: IElementDefinition) => Bluebird<IElementDefinition> =

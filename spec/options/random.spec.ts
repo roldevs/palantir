@@ -1,7 +1,7 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import testConnector from '../../lib/connectors/test';
-import optionsModule from '../../lib/options';
+import optionsModule from '../../lib/element/options';
 import testRepository from '../../lib/repository/memory';
 import {
   IElementDefinition,

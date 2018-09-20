@@ -145,6 +145,7 @@
           "type": "civilized_npc"
         },
         {
+          "ns": "mr",
           "type": "underworld_npc"
         }
       ]

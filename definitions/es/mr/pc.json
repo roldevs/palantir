@@ -5,8 +5,7 @@
       "search": [
         {
           "ns": "mr",
-          "type": "appearance",
-          "random": "ramdom"
+          "type": "appearance"
         }
       ],
       "count": 3
@@ -15,8 +14,7 @@
       "search": [
         {
           "ns": "mr",
-          "type": "pc_physical",
-          "random": "ramdom"
+          "type": "pc_physical"
         }
       ]
     },
@@ -24,8 +22,7 @@
       "search": [
         {
           "ns": "mr",
-          "type": "clothes",
-          "random": "ramdom"
+          "type": "clothes"
         }
       ]
     },
@@ -33,8 +30,7 @@
       "search": [
         {
           "ns": "mr",
-          "type": "hobby",
-          "random": "ramdom"
+          "type": "hobby"
         }
       ]
     },
@@ -42,8 +38,7 @@
       "search": [
         {
           "ns": "mr",
-          "type": "mannerism",
-          "random": "ramdom"
+          "type": "mannerism"
         }
       ]
     },
@@ -51,8 +46,7 @@
       "search": [
         {
           "ns": "mr",
-          "type": "personality",
-          "random": "ramdom"
+          "type": "personality"
         }
       ]
     }

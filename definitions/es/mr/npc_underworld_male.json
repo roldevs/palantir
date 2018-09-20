@@ -141,6 +141,7 @@
     "occupation": {
       "search": [
         {
+          "ns": "mr",
           "type": "underworld_npc"
         }
       ]

@@ -1,0 +1,54 @@
+
+{
+  "text": "One Shot Creador de Aventuras",
+  "related": {
+    "exploring": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "exploring"
+        }
+      ]
+    },
+    "lies": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "lies"
+        }
+      ]
+    },
+    "seeking": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "seeking"
+        }
+      ]
+    },
+    "we_are_here": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "we_are_here"
+        }
+      ]
+    },
+    "and": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "and"
+        }
+      ]
+    },
+    "guarded": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "guarded"
+        }
+      ]
+    }
+  }
+}

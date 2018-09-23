@@ -1,0 +1,54 @@
+
+{
+  "text": "One Shot Dungeon Starter",
+  "related": {
+    "control": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "control"
+        }
+      ]
+    },
+    "happen": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "happen"
+        }
+      ]
+    },
+    "happened": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "happened"
+        }
+      ]
+    },
+    "useful": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "useful"
+        }
+      ]
+    },
+    "lookout": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "lookout"
+        }
+      ]
+    },
+    "not_appear": {
+      "search": [
+        {
+          "ns": "osdw",
+          "type": "not_appear"
+        }
+      ]
+    }
+  }
+}

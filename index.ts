@@ -29,8 +29,8 @@ const world: IWorldDefinition = {
 const searchObject = searchCreator(world);
 const elementObject = elementCreator(world);
 const search: ISearchDefinition[] = [{
-  ns: 'mr',
-  type: 'magic',
+  ns: 'osdw',
+  type: 'dungeon_adventure',
 }];
 
 searchObject.find(search).then((elements: ISearchResult) => {

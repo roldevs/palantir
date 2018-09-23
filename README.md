@@ -466,6 +466,16 @@ La siguiente tabla muestra todos los elemntos que se pueden obtener:
 | event_focus   |             |
 | event_meaning |             |
 
+
+### Utilizando datos de One Shot World (osdw namespace)
+[One Shot World](https://www.drivethrurpg.com/product/242339/One-Shot-World-Beta)
+
+| Key                  | Descripción |
+| -------------------- | ----------- |
+| dungeon_starter         |             |
+| dungeon_adventure   |             |
+
+
 ## Instalación y ejecución
 
 Teniendo instalado [NodeJS](https://nodejs.org/es/) en el sistema, basta con hacer en la carpeta raíz del proyecto:

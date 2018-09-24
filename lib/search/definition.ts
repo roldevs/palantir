@@ -9,8 +9,6 @@ import {
 } from '../typings';
 import {
   compactArray,
-  defaultToNull,
-  randomFromArray,
 } from '../utils';
 import {
   isSearchType,

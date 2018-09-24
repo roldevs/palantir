@@ -3,7 +3,6 @@ import * as R from 'ramda';
 import elementModule from '../element';
 import randomModule from '../random';
 import {
-  IElement,
   IElementDefinition,
   IOptionalElementDefinition,
   IRelatedElement,
@@ -62,7 +61,7 @@ const relatedModule: IRelatedModule =
 
   return {
     hasRelated,
-    fetch, // Returns a random element from the passed options
+    fetch,
   };
 };
 

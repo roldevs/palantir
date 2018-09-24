@@ -19,11 +19,13 @@
   "author": "Roberto M. Oliva",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "bluebird": "^3.5.1",
     "ramda": "^0.25.0",
     "uuid": "^3.2.1"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/bluebird": "^3.5.20",
     "@types/chai": "^4.1.4",
     "@types/mocha": "^5.2.2",

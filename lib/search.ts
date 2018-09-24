@@ -7,16 +7,12 @@ import {
   searchType,
 } from './search/util';
 import {
-  ERandomOption,
-  IOptionalElementDefinition,
   ISearchDefinition,
   ISearchModule,
   ISearchResult,
 } from './typings';
 import {
   compactArray,
-  defaultToNull,
-  randomFromArray,
 } from './utils';
 
 const searchModule: ISearchModule =
@@ -30,7 +26,7 @@ const searchModule: ISearchModule =
   };
 
   const oneSearch: (search: ISearchDefinition) => Bluebird<ISearchResult> =
-  (search) => searchDefinitionModule(world).find(search); // fnByType[searchType(search)](search);
+  (search) => fnByType[searchType(search)](search);
 
   const find: (search: ISearchDefinition[]) => Bluebird<ISearchResult> =
   (search) => {

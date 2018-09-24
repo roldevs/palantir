@@ -11,7 +11,6 @@ import {
 import {
   defaultToEmptyArray,
   defaultToNull,
-  randomFromArray,
 } from '../utils';
 
 const memoryRepository: (options: IRepositoryOptions) => IRepositoryFactory =

@@ -57,6 +57,11 @@ interface ILocalConnectorOptions {
   rootPath: string;
 }
 
+interface IRemoteConnectorOptions {
+  debug?: boolean;
+  baseURL: string;
+}
+
 interface ITestConnectorOptions {
   elements: {
     [locale: string]: {
@@ -88,6 +93,10 @@ interface IWorldDefinition {
   connector: IConnectorFactory;
   repository: IRepositoryFactory;
 }
+
+type IWorldModule = (world: IWorldDefinition) => {
+  get: (search: ISearchDefinition[]) => Bluebird<IOptionalElementDefinition | IOptionalElement>;
+};
 
 type IElementModule = (world: IWorldDefinition) => {
   get: (element: IOptionalElementDefinition | IOptionalElement) => Bluebird<IOptionalElementDefinition>;
@@ -139,6 +148,7 @@ export {
   IConnectorFactory,
   IRepositoryFactory,
   ILocalConnectorOptions,
+  IRemoteConnectorOptions,
   ITestConnectorOptions,
   IRepositoryOptions,
   IElementModule,
@@ -147,6 +157,7 @@ export {
   ISearchModule,
   ISearchByTypeModule,
   IRandomModule,
+  IWorldModule,
   ERandomOption, //
   IElementDefinition,
   IWorldDefinition,

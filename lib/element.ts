@@ -25,7 +25,7 @@ const elementModule: IElementModule =
   };
 
   return {
-    get, // Returns a random element from the passed options
+    get,
   };
 };
 

@@ -1,45 +1,31 @@
 // tslint:disable:no-console
 // import fs from 'fs';
 import * as R from 'ramda';
-import connectorCreator from './lib/connectors/local';
-import elementCreator from './lib/element';
+import connectorCreator from './lib/connectors/remote';
 import repositoryCreator from './lib/repository/memory';
-import searchCreator from './lib/search';
 import {
-  IElement,
-  IElementDefinition,
-  IOptionalElementDefinition,
   ISearchDefinition,
-  ISearchResult,
-  IWorldDefinition,
 } from './lib/typings';
 import { JSONprettify } from './lib/utils';
+import worldCreator from './lib/world';
 
-const world: IWorldDefinition = {
+const world = worldCreator({
   locale: 'es',
   connector: connectorCreator({
-    rootPath: './definitions',
+    baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
   }),
   repository: repositoryCreator({
     locale: 'es',
     elements: {},
   }),
-};
+});
 
-const searchObject = searchCreator(world);
-const elementObject = elementCreator(world);
 const search: ISearchDefinition[] = [{
-  ns: 'osdw',
-  type: 'dungeon_adventure',
+  ns: 'mr',
+  type: 'npc',
 }];
 
-searchObject.find(search).then((elements: ISearchResult) => {
-  R.forEach((element: IElement | IElementDefinition) => {
-    elementObject.get(element).then((data: IOptionalElementDefinition) => {
-      console.log(JSONprettify(data));
-    });
-  }, elements);
-});
+world.get(search).then(R.compose(console.log, JSONprettify));
 
 // import requireDir from 'require-dir';
 // import localConnector from './lib/connectors/local';

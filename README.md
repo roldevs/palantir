@@ -31,7 +31,7 @@ const world: IWorldDefinition = {
 ```
 
 El conector es el lugar desde el que se recibe la definición de las tablas y sus relaciones.
-Por ahora puede ser desde un fichero json local `./lib/connectors/local` o definiendo la tabla directamente con el conector: `./lib/connectors/test`.
+Por ahora puede ser desde un fichero json local `./lib/connectors/local`, definiendo la tabla directamente con el conector: `./lib/connectors/test` o accediendo a un servidor con los ficheros json: `./lib/connectors/remote`.
 
 El repositorio es el lugar donde se van a almacenar los elementos que se quieran guardar, actualmente está disponible el repositorio memoria: `./lib/repository/memory`
 
@@ -39,28 +39,26 @@ En un futuro se desarrollará un conector para obtener las definiciones desde se
 
 ### Generar elementos
 
-Buscar un elemento con el sistema de búsqueda y procesar sus relaciones o sus posibles opciones:
+Llamar al closure: `world` para generar resultados
 
 ```typescript
-const searchObject = searchCreator(world);
-const elementObject = elementCreator(world);
-
 const search: ISearchDefinition[] = [{
   ns: 'mr',
   type: 'npc_underworld',
 }];
 
-// Buscar elementos segun el criterio de busqueda
-searchObject.find(search).then((elements: ISearchResult) => {
-  // Para cada elemento...
-  R.forEach((element: IElement | IElementDefinition) => {
-    // ... procesar sus opciones y sus relaciones
-    elementObject.get(element).then((data: IOptionalElementDefinition) => {
-      // Mostrar el resultado en la consola
-      console.log(JSONprettify(data));
-    });
-  }, elements);
+const world = worldCreator({
+  locale: 'es',
+  connector: connectorCreator({
+    baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
+  }),
+  repository: repositoryCreator({
+    locale: 'es',
+    elements: {},
+  }),
 });
+
+world.get(search).then(R.compose(console.log, JSONprettify));
 ```
 
 El anterior codigo permite obtener un npc generado con los datos de MazeRats.

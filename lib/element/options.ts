@@ -2,7 +2,6 @@ import Bluebird from 'bluebird';
 import * as R from 'ramda';
 import elementModule from '../element';
 import {
-  IElementDefinition,
   IOptionalElementDefinition,
   IOptionsModule,
 } from '../typings';

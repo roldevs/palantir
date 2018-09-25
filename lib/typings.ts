@@ -95,7 +95,7 @@ interface IWorldDefinition {
 }
 
 type IWorldModule = (world: IWorldDefinition) => {
-  get: (search: ISearchDefinition[]) => Bluebird<IOptionalElementDefinition | IOptionalElement>;
+  get: (search: IRelatedElement) => Bluebird<Array<IOptionalElementDefinition | IOptionalElement>>;
 };
 
 type IElementModule = (world: IWorldDefinition) => {
@@ -122,6 +122,10 @@ type ISearchByTypeModule = (world: IWorldDefinition) => {
 
 type IRandomModule = (world: IWorldDefinition) => {
   random: (search: ISearchDefinition[]) => Bluebird<IOptionalElement | IOptionalElementDefinition>;
+};
+
+type ICliModule = (args: string[]) => {
+  get: () => Bluebird<Array<IOptionalElement | IOptionalElementDefinition>>;
 };
 
 /////////////////////////////////////////////////////////
@@ -158,6 +162,7 @@ export {
   ISearchByTypeModule,
   IRandomModule,
   IWorldModule,
+  ICliModule,
   ERandomOption, //
   IElementDefinition,
   IWorldDefinition,

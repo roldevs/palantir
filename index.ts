@@ -4,7 +4,7 @@ import * as R from 'ramda';
 import connectorCreator from './lib/connectors/remote';
 import repositoryCreator from './lib/repository/memory';
 import {
-  ISearchDefinition,
+  IRelatedElement,
 } from './lib/typings';
 import { JSONprettify } from './lib/utils';
 import worldCreator from './lib/world';
@@ -20,10 +20,13 @@ const world = worldCreator({
   }),
 });
 
-const search: ISearchDefinition[] = [{
-  ns: 'mr',
-  type: 'npc',
-}];
+const search: IRelatedElement = {
+  search: [{
+    ns: 'mr',
+    type: 'trap',
+  }],
+  count: 2,
+};
 
 world.get(search).then(R.compose(console.log, JSONprettify));
 

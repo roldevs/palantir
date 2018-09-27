@@ -1,4 +1,8 @@
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/d5f52e978c0e15daacc4/maintainability)](https://codeclimate.com/github/rmoliva/orion/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d5f52e978c0e15daacc4/test_coverage)](https://codeclimate.com/github/rmoliva/orion/test_coverage) [![CircleCI](https://circleci.com/gh/rmoliva/orion.svg?style=svg)](https://circleci.com/gh/rmoliva/orion)
+
+
+
 ## Introducción
 
 Orion es una libería de Node para generar datos aleatorios para partidas de Rol.
@@ -280,3 +284,13 @@ Inicialmente genera un jugador NPC aleatorio, pero basta con cambiar la clave de
 * Terminar la implementacion de la persistencia en repositorio
 * Dar un nombre a los elementos guardados
 * Categorizar las definiciones, añadirles iconos y tener una API para acceder a ellas y así generar la UI dinámicamente.
+* Seleccion aleatoria con pesos
+
+## Rebuild semantic
+
+`gulp` should be globally installed
+
+```
+cd semantic
+gulp build
+```

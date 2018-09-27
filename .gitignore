@@ -1,2 +1,6 @@
-dist
-node_modules
+/log
+/dist
+/node_modules
+/coverage
+/semantic
+.env

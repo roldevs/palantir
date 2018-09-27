@@ -11,7 +11,6 @@ import {
   ISearchDefinition,
   ISearchResult,
 } from '../../lib/typings';
-import { JSONprettify } from '../../lib/utils';
 
 describe('Element#get', () => {
   const repository = testRepository({
@@ -68,7 +67,7 @@ describe('Element#get', () => {
           expect(trigger.text).is.not.undefined;
           done();
         });
-      });
+      }).catch(done);
     });
   });
   describe('pc', () => {
@@ -87,7 +86,7 @@ describe('Element#get', () => {
           }, R.keys(value!.related!));
           done();
         });
-      });
+      }).catch(done);
     });
   });
   describe('npc_underworld', () => {
@@ -99,14 +98,14 @@ describe('Element#get', () => {
     it('fills related', (done) => {
       search.find(s).then((result: ISearchResult) => {
         element.get(result![0]).then((value: IOptionalElementDefinition) => {
-          const key: string = R.keys(value!.related!)[0];
+          const key: any = R.keys(value!.related!)[0];
           expect(value!.related![key]!.results).is.not.undefined;
           const related: any = value!.related![key]!.results![0]!;
           expect(related).is.not.undefined;
           expect(related.text).is.not.undefined;
           done();
         });
-      });
+      }).catch(done);
     });
   });
 });

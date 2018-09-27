@@ -2,6 +2,7 @@
   "text": "Trap",
   "related": {
     "effect": {
+      "text": "Efecto",
       "search": [
         {
           "ns": "mr",
@@ -10,6 +11,7 @@
       ]
     },
     "trigger": {
+      "text": "Disparador",
       "search": [
         {
           "ns": "mr",

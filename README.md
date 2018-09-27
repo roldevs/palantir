@@ -66,202 +66,128 @@ Devolveria algo así (como es aleatorio, cada vez devuelve algo diferente):
 
 ```
 {
-  "text": "npc_underworld.npc_underworld_female",
-  "related": {
-    "female": {
-      "search": [{
-          "ns": "mr",
-          "type": "npc_underworld_female"
-      }],
-      "results": [{
-          "text": "npc_underworld_female.npc_underworld_female",
+    "text": "npc.npc_underworld",
+    "related": {
+      "underworld": {
+        "results": [{
+          "text": "npc_underworld.npc_underworld_male",
           "related": {
-            "asset": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "npc_asset"
-                }],
+            "male": {
               "results": [{
-                  "text": "Imitador"
-                }]
-            },
-            "liability": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "npc_liability"
-                }],
-              "results": [{
-                  "text": "Hereje"
-                }]
-            },
-            "misfortune": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "npc_misfortune"
-                }],
-              "results": {
-                  "text": "Chantajeado"
-                }]
-            },
-            "goal": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "npc_goal"
-                }
-              ],
-              "results": [{
-                  "text": "Forjar %{item}",
-                  "related": {
-                    "item": {
-                      "search": [{
-                          "ns": "mr",
-                          "type": "item",
-                          "random": "all"
-                        }],
-                      "results": []
-                    }
+                "text": "npc_underworld_male.npc_underworld_male",
+                "related": {
+                  "asset": {
+                    "results": [{
+                      "text": "Lider %{faction}",
+                      "related": {
+                        "faction": {}
+                      }
+                    }]
+                  },
+                  "liability": {
+                    "results": [{
+                      "text": "Rastro dinero"
+                    }]
+                  },
+                  "misfortune": {
+                    "results": [{
+                      "text": "Despedido"
+                    }]
+                  },
+                  "goal": {
+                    "results": [{
+                      "text": "Tener %{item}",
+                      "related": {
+                        "item": {}
+                      }
+                    }]
+                  },
+                  "method": {
+                    "results": [{
+                      "text": "Líder"
+                    }]
+                  },
+                  "appearance": {
+                    "results": [{
+                      "text": "Estatutario"
+                    }, {
+                      "text": "Cincelado"
+                    }, {
+                      "text": "Brutal"
+                    }]
+                  },
+                  "physical": {
+                    "results": [{
+                      "text": "Cicatriz ácido"
+                    }]
+                  },
+                  "clothes": {
+                    "results": [{
+                      "text": "Perfumada"
+                    }]
+                  },
+                  "personality": {
+                    "results": [{
+                      "text": "Cobarde"
+                    }]
+                  },
+                  "mannerism": {
+                    "results": [{
+                      "text": "Ruidoso"
+                    }]
+                  },
+                  "hobby": {
+                    "results": [{
+                      "text": "Coleccionista"
+                    }]
+                  },
+                  "secret": {
+                    "results": [{
+                      "text": "%{npc}",
+                      "related": {
+                        "npc": {}
+                      }
+                    }]
+                  },
+                  "reputation": {
+                    "results": [{
+                      "text": "Terrorífico"
+                    }]
+                  },
+                  "relation": {
+                    "results": [{
+                      "text": "Cliente"
+                    }]
+                  },
+                  "divinity_domain": {
+                    "results": [{
+                      "text": "Tormentas"
+                    }]
+                  },
+                  "male_name": {
+                    "results": [{
+                      "text": "Fitz"
+                    }]
+                  },
+                  "male_surname": {
+                    "results": [{
+                      "text": "Grimeson"
+                    }]
+                  },
+                  "occupation": {
+                    "results": [{
+                      "text": "Esclavo de galera"
+                    }]
                   }
                 }
-              ]
-            },
-            "method": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "npc_reputation"
-                }],
-              "results": [{
-                  "text": "Influyente"
-                }]
-            },
-            "appearance": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "appearance"
-                }],
-              "count": 3,
-              "results": [{
-                  "text": "Elegante"
-                }, {
-                  "text": "Sonrojado"
-                }, {
-                  "text": "Avejentado"
-                }]
-            },
-            "physical": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "pc_physical"
-                }],
-              "results": [{
-                  "text": "Piel cobriza"
-                }]
-            },
-            "clothes": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "clothes"
-                }],
-              "results": [{
-                  "text": "Talla grande"
-                }]
-            },
-            "personality": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "personality"
-                }],
-              "results": [{
-                  "text": "Desconfiado"
-                }]
-            },
-            "mannerism": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "mannerism"
-                }],
-              "results": [{
-                  "text": "Habla florido"
-                }]
-            },
-            "hobby": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "hobby"
-                }],
-              "results": [{
-                  "text": "Dibujar"
-                }]
-            },
-            "secret": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "npc_secret"
-                }],
-              "results": [{
-                  "text": "Ilusión"
-                }]
-            },
-            "reputation": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "npc_reputation"
-                }],
-              "results": [{
-                  "text": "Fiestero"
-                }]
-            },
-            "relation": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "npc_relation"
-                }],
-              "results": [{
-                  "text": "Cliente"
-                }]
-            },
-            "divinity_domain": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "divinity_domain"
-                }],
-              "results": [{
-                  "text": "La forja"
-                }]
-            },
-            "male_name": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "female_name"
-                }],
-              "results": [{
-                  "text": "Démona"
-                }]
-            },
-            "male_surname": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "upperclass_surname"
-                }],
-              "results": [{
-                  "text": "Philliphent"
-                }]
-            },
-            "occupation": {
-              "search": [{
-                  "ns": "mr",
-                  "type": "underworld_npc"
-                }],
-              "results": [{
-                  "text": "Ratero"
-                }]
+              }]
             }
           }
-        }
-      ]
+        }]
+      }
     }
   }
-}
-```
+  ```
 
 Como se puede ver, genera automáticamente también los datos relaciones.
 
@@ -276,25 +202,17 @@ const search: ISearchDefinition[] = [{
 
 ```
 {
-  "text": "Elemento físico, Forma física",
+  "text": "Elemento físico, Elemento etéreo",
   "related": {
-    "physical_element": {
-      "search": [{
-          "ns": "mr",
-          "type": "physical_element"
-        }],
+    "physical_effect": {
       "results": [{
-          "text": "Obsidiana"
-        }]
+        "text": "Perforante"
+      }]
     },
-    "physical_form": {
-      "search": [{
-          "ns": "mr",
-          "type": "physical_form"
-        }],
+    "ethereal_element": {
       "results": [{
-          "text": "Ojo"
-        }]
+        "text": "Luz"
+      }]
     }
   }
 }

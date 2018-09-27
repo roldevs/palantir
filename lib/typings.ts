@@ -16,8 +16,9 @@ interface ISearchDefinition {
 }
 
 interface IRelatedElement {
+  text?: string;
   search: ISearchDefinition[];
-  results?: Array<IOptionalElementDefinition | IElement>; // Here is save the result
+  results?: Array<IElementDefinition | IElement>; // Here is save the result
   count?: number;
 }
 
@@ -29,6 +30,16 @@ interface IElementDefinition {
   text: string;
   options?: IElementDefinition[];
   related?: IRelatedElements;
+}
+
+interface IFormattedResults {
+  [key: string]: IFormattedResult;
+}
+
+interface IFormattedResult {
+  text?: string;
+  related?: IFormattedResults;
+  results?: IFormattedResult[];
 }
 
 type IOptionalElementDefinition = IElementDefinition | null | undefined;
@@ -125,7 +136,11 @@ type IRandomModule = (world: IWorldDefinition) => {
 };
 
 type ICliModule = (args: string[]) => {
-  get: () => Bluebird<Array<IOptionalElement | IOptionalElementDefinition>>;
+  get: () => Bluebird<IFormattedResult[]>;
+};
+
+type IFormatterModule = () => {
+  format: (elements: IElementDefinition[]) => Bluebird<IFormattedResult[]>;
 };
 
 /////////////////////////////////////////////////////////
@@ -163,6 +178,9 @@ export {
   IRandomModule,
   IWorldModule,
   ICliModule,
+  IFormatterModule,
+  IFormattedResult,
+  IFormattedResults,
   ERandomOption, //
   IElementDefinition,
   IWorldDefinition,

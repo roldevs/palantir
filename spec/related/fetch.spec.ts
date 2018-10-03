@@ -1,12 +1,12 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import testConnector from '../../lib/connectors/test';
-import relatedModule from '../../lib/element/related';
-import testRepository from '../../lib/repository/memory';
+import testConnector from '../../src/lib/connectors/test';
+import relatedModule from '../../src/lib/element/related';
+import testRepository from '../../src/lib/repository/memory';
 import {
   IOptionalElementDefinition,
   IWorldDefinition,
-} from '../../lib/typings';
+} from '../../src/lib/typings';
 
 describe('Related#fetch', () => {
   describe('with repository empty', () => {

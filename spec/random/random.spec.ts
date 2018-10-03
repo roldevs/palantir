@@ -1,14 +1,14 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import * as R from 'ramda';
-import testConnector from '../../lib/connectors/test';
-import randomModule from '../../lib/random';
-import testRepository from '../../lib/repository/memory';
+import testConnector from '../../src/lib/connectors/test';
+import randomModule from '../../src/lib/random';
+import testRepository from '../../src/lib/repository/memory';
 import {
   IOptionalElement,
   IOptionalElementDefinition,
   ISearchDefinition,
-} from '../../lib/typings';
+} from '../../src/lib/typings';
 
 describe('Random#random', () => {
   const repository = testRepository({

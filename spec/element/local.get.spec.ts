@@ -2,15 +2,15 @@
 import { expect } from 'chai';
 import path from 'path';
 import * as R from 'ramda';
-import localConnector from '../../lib/connectors/local';
-import elementModule from '../../lib/element';
-import testRepository from '../../lib/repository/memory';
-import searchModule from '../../lib/search';
+import localConnector from '../../src/lib/connectors/local';
+import elementModule from '../../src/lib/element';
+import testRepository from '../../src/lib/repository/memory';
+import searchModule from '../../src/lib/search';
 import {
   IOptionalElementDefinition,
   ISearchDefinition,
   ISearchResult,
-} from '../../lib/typings';
+} from '../../src/lib/typings';
 
 describe('Element#get', () => {
   const repository = testRepository({

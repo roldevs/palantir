@@ -77,7 +77,7 @@ interface ITestConnectorOptions {
   elements: {
     [locale: string]: {
       [ns: string]: {
-        [type: string]: IOptionalElementDefinition;
+        [type: string]: IElementDefinition;
       };
     };
   };

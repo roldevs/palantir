@@ -278,13 +278,6 @@ npm run run
 
 Inicialmente genera un jugador NPC aleatorio, pero basta con cambiar la clave de la linea `33` (actualmente: `magic`) por otra de las listas de posibles elementos a generar para obtener otros datos.
 
-## Mejoras
-
-* Implementar otros repositorios: Base de datos, LocalStorage, etc
-* Terminar la implementacion de la persistencia en repositorio
-* Dar un nombre a los elementos guardados
-* Categorizar las definiciones, añadirles iconos y tener una API para acceder a ellas y así generar la UI dinámicamente.
-* Seleccion aleatoria con pesos
 
 ## Rebuild semantic
 

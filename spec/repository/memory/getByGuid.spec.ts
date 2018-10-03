@@ -1,11 +1,11 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import memoryRepository from '../../../lib/repository/memory';
+import memoryRepository from '../../../src/lib/repository/memory';
 import {
   IOptionalElement,
   uuid,
-} from '../../../lib/typings';
-import { getUUID } from '../../../lib/utils';
+} from '../../../src/lib/typings';
+import { getUUID } from '../../../src/lib/utils';
 
 describe('Repository::Memory#get', () => {
   describe('with repository empty', () => {

@@ -1,12 +1,11 @@
 
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import cliFormatterModuleConnector from '../../../lib/formatter/cli';
+import cliFormatterModuleConnector from '../../../src/lib/formatter/cli';
 import {
   IElementDefinition,
   IFormattedResult,
-} from '../../../lib/typings';
-import { JSONprettify } from '../../../lib/utils';
+} from '../../../src/lib/typings';
 
 describe('Formatter::Cli#format', () => {
   describe('given an element definition', () => {

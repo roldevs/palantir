@@ -3,12 +3,9 @@ import * as R from 'ramda';
 import elementCreator from './element';
 import randomCreator from './random';
 import {
-  IElement,
-  IElementDefinition,
   IOptionalElement,
   IOptionalElementDefinition,
   IRelatedElement,
-  ISearchDefinition,
   IWorldModule,
 } from './typings';
 

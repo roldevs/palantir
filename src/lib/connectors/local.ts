@@ -1,6 +1,5 @@
 import Bluebird from 'bluebird';
 import fs from 'fs';
-import * as R from 'ramda';
 import {
   IConnectorFactory,
   ILocalConnectorOptions,

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { IElement, IElementDefinition } from '../lib/typings';
+import { IElement, IElementDefinition } from '../src/lib/typings';
 
 const expectElementEqualDef: (element: IElement, definition: IElementDefinition) => void =
 (element, definition) => {

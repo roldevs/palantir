@@ -1,13 +1,12 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import testConnector from '../../lib/connectors/test';
-import optionsModule from '../../lib/element/options';
-import testRepository from '../../lib/repository/memory';
+import testConnector from '../../src/lib/connectors/test';
+import optionsModule from '../../src/lib/element/options';
+import testRepository from '../../src/lib/repository/memory';
 import {
-  IElementDefinition,
   IOptionalElementDefinition,
   IWorldDefinition,
-} from '../../lib/typings';
+} from '../../src/lib/typings';
 
 describe('Options#random', () => {
   const world: IWorldDefinition = {

@@ -1,10 +1,10 @@
 #!/usr/bin/env ts-node
 import * as R from 'ramda';
-import cliCreator from './lib/cli';
+import cliCreator from './src/lib/cli';
 import {
   IRelatedElement,
-} from './lib/typings';
-import { JSONprettify } from './lib/utils';
+} from './src/lib/typings';
+import { JSONprettify } from './src/lib/utils';
 
 const cli = cliCreator(process.argv);
 

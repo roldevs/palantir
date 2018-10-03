@@ -1,13 +1,13 @@
 // tslint:disable:no-console
 // import fs from 'fs';
 import * as R from 'ramda';
-import connectorCreator from './lib/connectors/remote';
-import repositoryCreator from './lib/repository/memory';
+import connectorCreator from './src/lib/connectors/remote';
+import repositoryCreator from './src/lib/repository/memory';
 import {
   IRelatedElement,
-} from './lib/typings';
-import { JSONprettify } from './lib/utils';
-import worldCreator from './lib/world';
+} from './src/lib/typings';
+import { JSONprettify } from './src/lib/utils';
+import worldCreator from './src/lib/world';
 
 const world = worldCreator({
   locale: 'es',

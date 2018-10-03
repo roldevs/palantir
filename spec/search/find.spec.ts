@@ -1,16 +1,15 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import * as R from 'ramda';
-import testConnector from '../../lib/connectors/test';
-import testRepository from '../../lib/repository/memory';
-import searchModule from '../../lib/search';
+import testConnector from '../../src/lib/connectors/test';
+import testRepository from '../../src/lib/repository/memory';
+import searchModule from '../../src/lib/search';
 import {
   IElement,
   IElementDefinition,
-  IOptionalElementDefinition,
   ISearchDefinition,
   ISearchResult,
-} from '../../lib/typings';
+} from '../../src/lib/typings';
 
 describe('Search#find', () => {
   const repository = testRepository({

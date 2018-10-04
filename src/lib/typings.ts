@@ -143,6 +143,10 @@ type IFormatterModule = () => {
   format: (elements: IElementDefinition[]) => Bluebird<IFormattedResult[]>;
 };
 
+type IFolderModule = (rootPath: string) => {
+  folders: () => Bluebird<string[]>;
+};
+
 /////////////////////////////////////////////////////////
 
 interface IAliasDefinition {
@@ -179,6 +183,7 @@ export {
   IWorldModule,
   ICliModule,
   IFormatterModule,
+  IFolderModule,
   IFormattedResult,
   IFormattedResults,
   ERandomOption, //

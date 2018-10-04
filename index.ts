@@ -9,26 +9,32 @@ import {
 import { JSONprettify } from './src/lib/utils';
 import worldCreator from './src/lib/world';
 
-const world = worldCreator({
-  locale: 'es',
-  connector: connectorCreator({
-    baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
-  }),
-  repository: repositoryCreator({
-    locale: 'es',
-    elements: {},
-  }),
-});
+import { join } from 'path';
+import folders from './src/lib/file/folders';
 
-const search: IRelatedElement = {
-  search: [{
-    ns: 'mr',
-    type: 'trap',
-  }],
-  count: 2,
-};
+const f = folders(join(__dirname, 'definitions'));
+f.folders().then(console.log);
 
-world.get(search).then(R.compose(console.log, JSONprettify));
+// const world = worldCreator({
+//   locale: 'es',
+//   connector: connectorCreator({
+//     baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
+//   }),
+//   repository: repositoryCreator({
+//     locale: 'es',
+//     elements: {},
+//   }),
+// });
+
+// const search: IRelatedElement = {
+//   search: [{
+//     ns: 'mr',
+//     type: 'trap',
+//   }],
+//   count: 2,
+// };
+
+// world.get(search).then(R.compose(console.log, JSONprettify));
 
 // import requireDir from 'require-dir';
 // import localConnector from './lib/connectors/local';

@@ -1,9 +1,7 @@
 
 ## Mejoras
 
-* Unficar IElementDefinition y IElement
-* Crear servicio de generacion de datos
-* Crear servicio de estructura dinamica (ns y types en base a carpetas y ficheros)
+* Uglify client javascript
 
 
 * Implementar otros repositorios: Base de datos, LocalStorage, etc

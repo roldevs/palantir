@@ -58,7 +58,7 @@ const initRouter: (config: {
   const init: () => any =
   () => {
     addRoute('', randomPage({core: config.core}).page);
-    addRoute('/random/:locale:/:ns:/:type:', randomPage(config.core).page);
+    addRoute('/random/:locale:/:ns:/:type:', randomPage({core: config.core}).page);
 
     initHasher();
     initHasherSubscriptions();

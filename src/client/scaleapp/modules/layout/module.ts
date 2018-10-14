@@ -1,4 +1,3 @@
-// tslint:disable:no-console
 import snabbdomPatch from '../../../snabbdom_renderer';
 import viewFn from './view';
 

@@ -39,6 +39,7 @@
     "errorhandler": "^1.5.0",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
+    "flyd": "^0.2.8",
     "hasher": "^1.2.0",
     "i18n-js": "^3.0.11",
     "lusca": "^1.6.1",

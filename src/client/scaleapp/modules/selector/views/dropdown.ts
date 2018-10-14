@@ -3,7 +3,7 @@ import {h} from 'snabbdom';
 import {VNode} from 'snabbdom/vnode';
 
 interface IDropdownItem {
-  id: number;
+  id: string;
   text: string;
   value: any;
 }
@@ -15,30 +15,25 @@ interface IDropdownConfig {
     name: string;
     disabled: boolean;
     options: IDropdownItem[];
+    callback: (option: IDropdownItem) => void;
 }
 
 type TDropdown = (config: IDropdownConfig) => {
   render: () => VNode,
 };
 
-// const _do_event: (
-//   action: string,
-//   config: any,
-// ) => (
-//   el: any,
-// ) => void =
-// function(action, config) {
-//   return function(e) {
-//     if (!config.disabled && config.event$) {
-//       config.event$({
-//         id: config.id,
-//         action: action,
-//         type: 'input',
-//         event: e,
-//       });
-//     }
-//   };
-// };
+const findOption: (options: IDropdownItem[], value: string) => IDropdownItem | undefined =
+(options, value) => R.find(R.propEq('value', value), options);
+
+const doEvent: (config: IDropdownConfig) => (value: any, text: any, $selectedItem: any) => void =
+(config) => (value) => {
+  if (!config.disabled) {
+    const option: IDropdownItem | undefined = findOption(config.options, value);
+    if (option) {
+      config.callback(option);
+    }
+  }
+};
 
 const items: (
   config: {
@@ -68,7 +63,6 @@ const dropdown: TDropdown =
       class: {
         ui: true,
         fluid: true,
-        search: true,
         selection: true,
         dropdown: true,
         disabled: config.disabled,
@@ -78,32 +72,18 @@ const dropdown: TDropdown =
           const $elm: any = $(vnode.elm!);
           $elm.dropdown({
             action: 'hide',
-            onChange: () => {
-              // onChange: (value: any, text: any, $selectedItem: any) => {
-              // custom action
-            },
+            onChange: doEvent(config),
           });
         },
         update: (vnode: VNode) => {
-          const elm: any = vnode.elm;
+          const $elm: any = $(vnode.elm!);
+          $elm.dropdown({
+            action: 'hide',
+            onChange: doEvent(config),
+          });
         },
       },
     }, [
-      h('input', {
-        key: config.id,
-        class: {
-          search: true,
-        },
-        props: {
-          id: config.id,
-          type: 'input',
-          name: config.name,
-        },
-        on: {
-          // input: _do_event('input', config),
-          // keydown: _do_event('keydown', config),
-        },
-      }),
       h('i', {
         class: {
           dropdown: true,

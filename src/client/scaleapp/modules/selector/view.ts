@@ -1,6 +1,9 @@
 import {h} from 'snabbdom';
 import {VNode} from 'snabbdom/vnode';
-import { dropdown, IDropdownConfig, IDropdownItem } from './views/dropdown';
+import { ISelectorController } from './controller';
+import { ISelectorModel } from './model';
+import { mapDropboxItems } from './util';
+import { dropdown, IDropdownItem } from './views/dropdown';
 
 const formView: (fields: VNode[]) => VNode =
 (fields) => {
@@ -46,6 +49,8 @@ const dropdownView: (config: {
   placeholder: string,
   value: string | null,
   options: IDropdownItem[],
+  callback: (option: IDropdownItem) => void,
+  disabled: boolean,
 }) => VNode =
 (config) => {
   return dropdown({
@@ -53,67 +58,94 @@ const dropdownView: (config: {
     placeholder: config.placeholder,
     value: config.value,
     name: config.id,
-    disabled: false,
+    disabled: config.disabled,
     options: config.options,
+    callback: config.callback,
   }).render();
 };
 
 const dropdownLocale: (config: {
   value: string | null,
   options: IDropdownItem[],
+  controller: ISelectorController,
+  disabled: boolean,
 }) => VNode =
 (config) => dropdownView({
   id: 'dropdown_locale',
   placeholder: 'Idioma',
   value: config.value,
   options: config.options,
+  callback: (option: IDropdownItem) => {
+    config.controller.setLocale(option.value);
+  },
+  disabled: config.disabled,
 });
 
 const dropdownNs: (config: {
   value: string | null,
   options: IDropdownItem[],
+  controller: ISelectorController,
+  disabled: boolean,
 }) => VNode =
 (config) => dropdownView({
   id: 'dropdown_ns',
   placeholder: 'Sistema',
   value: config.value,
   options: config.options,
+  callback: (option: IDropdownItem) => {
+    config.controller.setNs(option.value);
+  },
+  disabled: config.disabled,
 });
 
 const dropdownType: (config: {
   value: string | null,
   options: IDropdownItem[],
+  controller: ISelectorController,
+  disabled: boolean,
 }) => VNode =
 (config) => dropdownView({
   id: 'dropdown_type',
   placeholder: 'Tabla',
   value: config.value,
   options: config.options,
+  callback: (option: IDropdownItem) => {
+    config.controller.setType(option.value);
+  },
+  disabled: config.disabled,
 });
 
-const viewFn: () => VNode =
-() => formView([
-  fieldView({
-    label: 'Idioma',
-    content: dropdownLocale({
-      value: null,
-      options: [],
+const viewFn: (model: ISelectorModel, controller: ISelectorController) => VNode =
+(model, controller) => {
+  return formView([
+    fieldView({
+      label: 'Idioma',
+      content: dropdownLocale({
+        value: model.locale,
+        options: mapDropboxItems(model.localeList),
+        controller,
+        disabled: model.localeDisabled,
+      }),
     }),
-  }),
-  fieldView({
-    label: 'Sistema',
-    content: dropdownNs({
-      value: null,
-      options: [],
+    fieldView({
+      label: 'Sistema',
+      content: dropdownNs({
+        value: model.ns,
+        options: mapDropboxItems(model.nsList),
+        controller,
+        disabled: model.nsDisabled,
+      }),
     }),
-  }),
-  fieldView({
-    label: 'Tabla',
-    content: dropdownType({
-      value: null,
-      options: [],
+    fieldView({
+      label: 'Tabla',
+      content: dropdownType({
+        value: model.type,
+        options: mapDropboxItems(model.typeList),
+        controller,
+        disabled: model.typeDisabled,
+      }),
     }),
-  }),
-]);
+  ]);
+};
 
 export default viewFn;

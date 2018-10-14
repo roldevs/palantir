@@ -25,8 +25,8 @@ const app: IApplication =
     const core: any = new scaleApp.Core();
 
     // Inicializar plugins de scaleApp
-    initModules(core);
     initPlugins(core);
+    initModules(core);
 
     // Inicializar el core
     core.boot();

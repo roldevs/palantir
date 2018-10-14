@@ -51,7 +51,6 @@ const layoutModule = (sb: any) => {
     sb.hasher.setHashWithoutNavigate(hash.join('/'));
   };
 
-
   return {
     init: onModuleInit,
     destroy: onModuleDestroy,

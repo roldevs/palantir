@@ -26,7 +26,9 @@ const searchModule: ISearchModule =
   };
 
   const oneSearch: (search: ISearchDefinition) => Bluebird<ISearchResult> =
-  (search) => fnByType[searchType(search)](search);
+  (search) => {
+    return fnByType[searchType(search)](search);
+  };
 
   const find: (search: ISearchDefinition[]) => Bluebird<ISearchResult> =
   (search) => {

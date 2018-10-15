@@ -30,10 +30,13 @@ const searchDefinitionModule: ISearchByTypeModule =
 
   const find: (search: ISearchDefinition) => Bluebird<ISearchResult> =
   (search) => {
-    if (!isSearchType(search, ERandomOption.definition)) {
-      return Bluebird.resolve([]);
+    if (
+      isSearchType(search, ERandomOption.definition) ||
+      isSearchType(search, ERandomOption.all)
+    ) {
+      return doSearch(search);
     }
-    return doSearch(search);
+    return Bluebird.resolve([]);
   };
 
   return {

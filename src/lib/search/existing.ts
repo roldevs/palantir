@@ -24,10 +24,13 @@ const searchExistingModule: ISearchByTypeModule =
 
   const find: (search: ISearchDefinition) => Bluebird<ISearchResult> =
   (search) => {
-    if (!isSearchType(search, ERandomOption.existing)) {
-      return Bluebird.resolve([]);
+    if (
+      isSearchType(search, ERandomOption.existing) ||
+      isSearchType(search, ERandomOption.all)
+    ) {
+      return doSearch(search);
     }
-    return doSearch(search);
+    return Bluebird.resolve([]);
   };
 
   return {

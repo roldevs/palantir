@@ -53,6 +53,7 @@
       "text": "%{dungeon_activity}",
       "related": {
         "dungeon_activity": {
+          "text": "Actividad en Mazmorra",
           "search": [
             {
               "ns": "mr",
@@ -72,6 +73,7 @@
       "text": "%{mission}",
       "related": {
         "mission": {
+          "text": "Misión",
           "search": [
             {
               "ns": "mr",

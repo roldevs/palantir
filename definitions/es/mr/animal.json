@@ -1,0 +1,47 @@
+{
+  "text": "Animal",
+  "options": [
+    {
+      "text": "Animal Aéreo",
+      "related": {
+        "animal_aerial": {
+          "text": "Animal Aéreo",
+          "search": [
+            {
+              "ns": "mr",
+              "type": "animal_aerial"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Animal Acuático",
+      "related": {
+        "animal_aquatic": {
+          "text": "Animal Acuático",
+          "search": [
+            {
+              "ns": "mr",
+              "type": "animal_aquatic"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Animal Terrestre",
+      "related": {
+        "animal_terrestrial": {
+          "text": "Animal Terrestre",
+          "search": [
+            {
+              "ns": "mr",
+              "type": "animal_terrestrial"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

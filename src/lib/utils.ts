@@ -1,4 +1,4 @@
-
+// tslint:disable:no-console
 import * as R from 'ramda';
 import uuidv1 from 'uuid/v1';
 import { uuid } from './typings';
@@ -20,6 +20,16 @@ const getUUID: () => uuid = uuidv1;
 const JSONprettify: (obj: any) => string =
 (obj) => JSON.stringify(obj, null, 2);
 
+const dg: (group: string, obj: any) => void =
+(group, obj) => {
+  console.group(group);
+  console.log(obj);
+  console.groupEnd();
+};
+
+const removeExtension: (filename: string) => string =
+(filename) => filename.substr(0, filename.lastIndexOf('.'));
+
 export {
   compactArray,
   defaultToEmptyArray,
@@ -28,4 +38,6 @@ export {
   deepMerge,
   getUUID,
   JSONprettify,
+  dg,
+  removeExtension,
 };

@@ -1,0 +1,33 @@
+{
+  "text": "Elemento",
+  "options": [
+    {
+      "text": "Elemento Etéreo",
+      "related": {
+        "animal_aerial": {
+          "text": "Elemento Etéreo",
+          "search": [
+            {
+              "ns": "mr",
+              "type": "ethereal_element"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Elemento Físico",
+      "related": {
+        "animal_aquatic": {
+          "text": "Elemento Físico",
+          "search": [
+            {
+              "ns": "mr",
+              "type": "physical_element"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

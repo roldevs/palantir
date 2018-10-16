@@ -1,9 +1,9 @@
 import {h} from 'snabbdom';
 import {VNode} from 'snabbdom/vnode';
+import { dropdown, IDropdownItem } from '../../../ui/dropdown';
 import { ISelectorController } from './controller';
 import { ISelectorModel } from './model';
-import { mapDropboxItems } from './util';
-import { dropdown, IDropdownItem } from './views/dropdown';
+import { mapDropboxItems, mapTypeDropboxItems } from './util';
 
 const formView: (fields: VNode[]) => VNode =
 (fields) => {
@@ -140,7 +140,7 @@ const viewFn: (model: ISelectorModel, controller: ISelectorController) => VNode 
       label: 'Tabla',
       content: dropdownType({
         value: model.type,
-        options: mapDropboxItems(model.typeList),
+        options: mapTypeDropboxItems(model.typeList),
         controller,
         disabled: model.typeDisabled,
       }),

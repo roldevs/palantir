@@ -1,10 +1,11 @@
 {
-  "text": "npc.npc",
+  "text": "PNJ",
   "options": [
     {
-      "text": "npc.npc_civilized",
+      "text": "PNJ Civilizado",
       "related": {
         "civilized": {
+          "text": "PNJ Civilizado",
           "search": [
             {
               "ns": "mr",
@@ -15,9 +16,10 @@
       }
     },
     {
-      "text": "npc.npc_underworld",
+      "text": "PNJ Bajos Fondos",
       "related": {
         "underworld": {
+          "text": "PNJ Bajos Fondos",
           "search": [
             {
               "ns": "mr",
@@ -28,9 +30,10 @@
       }
     },
     {
-      "text": "npc.npc_wilderness",
+      "text": "PNJ Naturaleza",
       "related": {
         "wilderness": {
+          "text": "PNJ Naturaleza",
           "search": [
             {
               "ns": "mr",

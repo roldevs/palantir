@@ -1,8 +1,8 @@
 import flyd from 'flyd';
-import { IFormattedResult } from '../../../../lib/typings';
+import { IElementDefinition, IFormattedResult } from '../../../../lib/typings';
 import snabbdomPatch from '../../../snabbdom_renderer';
 import { ISelectorOptions } from '../selector/controller';
-import { controller, IResultsController } from './controller';
+import { controller, IResultsController, IResultsState } from './controller';
 import { actions, IResultsModel } from './model';
 import viewFn from './view';
 
@@ -31,7 +31,7 @@ const layoutModule = (sb: any) => {
     done();
   };
 
-  const render: (model: IFormattedResult | null) => void =
+  const render: (model: IResultsState) => void =
   (model) => {
     vdom = snabbdomPatch(vdom, viewFn(model, controllerHandler));
   };

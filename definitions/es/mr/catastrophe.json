@@ -12,6 +12,7 @@
       "text": "Animales %{mutation}",
       "related": {
         "mutation": {
+          "text": "Mutación",
           "search": [
             {
               "ns": "mr",
@@ -70,6 +71,7 @@
       "text": "%{insanity} global",
       "related": {
         "insanity": {
+          "text": "Insanidad",
           "search": [
             {
               "ns": "mr",
@@ -83,6 +85,7 @@
       "text": "%{mutation} masiva",
       "related": {
         "mutation": {
+          "text": "Mutación",
           "search": [
             {
               "ns": "mr",

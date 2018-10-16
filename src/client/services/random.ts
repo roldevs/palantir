@@ -12,7 +12,7 @@ function(_) {
     },
   ) => any =
   function(options) {
-    return axios.get(`/api/random/${options.locale}/${options.ns}/${options.type}`);
+    return axios.get(`/api/random/${options.locale}/${options.ns}/${options.type}.json`);
    };
 
   return {

@@ -1,5 +1,4 @@
 import * as R from 'ramda';
-import { IDropdownItem } from './views/dropdown';
 
 interface ISelectorModel {
   locale: string | null;

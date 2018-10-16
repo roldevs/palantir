@@ -1,4 +1,5 @@
 // tslint:disable:no-console
+import Bluebird from 'bluebird';
 import * as R from 'ramda';
 
 // Esta page es llamada con /random[/:locale[/:ns[/:type]]]:
@@ -27,22 +28,25 @@ const randomPage: (
     console.log(parseOptions(locale, ns, type));
     console.groupEnd();
 
-    return options.core.scaleApp.moduleStart('layout', {
-      options: R.merge({
-        el: 'application',
-      }, parseOptions(locale, ns, type)),
+    const moduleOptions = parseOptions(locale, ns, type);
+
+    return startModule(
+      'layout', 'application', moduleOptions,
+    ).then(() => {
+      return startModule('selector', 'selector', moduleOptions);
     }).then(() => {
-      return options.core.scaleApp.moduleStart('selector', {
-        options: R.merge({
-          el: 'selector',
-        }, parseOptions(locale, ns, type)),
-      });
-    }).then(() => {
-      return options.core.scaleApp.moduleStart('results', {
-        options: R.merge({
-          el: 'results',
-        }, parseOptions(locale, ns, type)),
-      });
+      return startModule('results', 'results', moduleOptions);
+    });
+  };
+
+  const startModule: (name: string, el: string, moduleOptions: any) => Bluebird<void> =
+  (name, el, moduleOptions) => {
+    if (options.core.scaleApp.isModuleRunning(name)) {
+      return Bluebird.resolve();
+    }
+
+    return options.core.scaleApp.moduleStart(name, {
+      options: R.merge({el}, moduleOptions),
     });
   };
 

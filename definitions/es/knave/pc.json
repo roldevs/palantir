@@ -1,0 +1,110 @@
+{
+  "text": "PC",
+  "related": {
+    "physique": {
+      "text": "Físico",
+      "search": [{
+        "ns": "knave",
+        "type": "physique"
+      }]
+    },
+    "face": {
+      "text": "Cara",
+      "search": [{
+        "ns": "knave",
+        "type": "face"
+      }]
+    },
+    "skin": {
+      "text": "Piel",
+      "search": [{
+        "ns": "knave",
+        "type": "skin"
+      }]
+    },
+    "hair": {
+      "text": "Pelo",
+      "search": [{
+        "ns": "knave",
+        "type": "hair"
+      }]
+    },
+    "clothing": {
+      "text": "Ropaje",
+      "search": [{
+        "ns": "knave",
+        "type": "clothing"
+      }]
+    },
+    "virtue": {
+      "text": "Virtud",
+      "search": [{
+        "ns": "knave",
+        "type": "virtue"
+      }]
+    },
+    "vice": {
+      "text": "Vicio",
+      "search": [{
+        "ns": "knave",
+        "type": "vice"
+      }]
+    },
+    "speech": {
+      "text": "Habla",
+      "search": [{
+        "ns": "knave",
+        "type": "speech"
+      }]
+    },
+    "background": {
+      "text": "Transforndo",
+      "search": [{
+        "ns": "knave",
+        "type": "background"
+      }]
+    },
+    "misfortune": {
+      "text": "Infortunio",
+      "search": [{
+        "ns": "knave",
+        "type": "misfortune"
+      }]
+    },
+    "alignment": {
+      "text": "Alineamiento",
+      "search": [{
+        "ns": "knave",
+        "type": "alignment"
+      }]
+    },
+    "helmet_and_shield": {
+      "text": "Casco y escudo",
+      "search": [{
+        "ns": "knave",
+        "type": "helmet_and_shield"
+      }]
+    },
+    "dungeoneering_gear": {
+      "text": "Equipo de Mazmorreo",
+      "search": [{
+        "ns": "knave",
+        "type": "dungeoneering_gear"
+      }]
+    },
+    "general_gear_1": {
+      "text": "General Gear 1",
+      "search": [{
+        "ns": "knave",
+        "type": "general_gear_1"
+      }]
+    },
+    "general_gear_2": {
+      "text": "General Gear 2",
+      "search": [{
+        "ns": "knave",
+        "type": "general_gear_2"
+      }]
+    }
+  }
+}

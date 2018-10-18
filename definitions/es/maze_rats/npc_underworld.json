@@ -1,0 +1,31 @@
+{
+  "text": "npc_underworld.npc_underworld",
+  "options": [
+    {
+      "text": "npc_underworld.npc_underworld_male",
+      "related": {
+        "male": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc_underworld_male"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "npc_underworld.npc_underworld_female",
+      "related": {
+        "female": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc_underworld_female"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

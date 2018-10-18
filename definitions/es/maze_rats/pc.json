@@ -1,0 +1,54 @@
+{
+  "text": "Personaje Jugador",
+  "related": {
+    "appearance": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "appearance"
+        }
+      ],
+      "count": 3
+    },
+    "physical": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "pc_physical"
+        }
+      ]
+    },
+    "clothes": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "clothes"
+        }
+      ]
+    },
+    "hobby": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "hobby"
+        }
+      ]
+    },
+    "mannerism": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "mannerism"
+        }
+      ]
+    },
+    "personality": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "personality"
+        }
+      ]
+    }
+  }
+}

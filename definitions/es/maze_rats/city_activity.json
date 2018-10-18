@@ -1,0 +1,145 @@
+{
+  "text": "city_activity.city_activity",
+  "options": [
+    {
+      "text": "Secuestrar"
+    },
+    {
+      "text": "Mendigar"
+    },
+    {
+      "text": "Pelear"
+    },
+    {
+      "text": "Robar"
+    },
+    {
+      "text": "Celebrar"
+    },
+    {
+      "text": "Perseguir"
+    },
+    {
+      "text": "Construir"
+    },
+    {
+      "text": "Cocinar"
+    },
+    {
+      "text": "Bailar"
+    },
+    {
+      "text": "Duelo"
+    },
+    {
+      "text": "Recorrer"
+    },
+    {
+      "text": "Ejecutar"
+    },
+    {
+      "text": "Extinguir"
+    },
+    {
+      "text": "Extorsionar"
+    },
+    {
+      "text": "Seguir"
+    },
+    {
+      "text": "Apostar"
+    },
+    {
+      "text": "%{dungeon_activity}",
+      "related": {
+        "dungeon_activity": {
+          "text": "Actividad en Mazmorra",
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "dungeon_activity"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Interrogar"
+    },
+    {
+      "text": "Matrimonio"
+    },
+    {
+      "text": "%{mission}",
+      "related": {
+        "mission": {
+          "text": "Misión",
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "mission"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Llorar muerte"
+    },
+    {
+      "text": "Festejar"
+    },
+    {
+      "text": "Patrullar"
+    },
+    {
+      "text": "Interprete"
+    },
+    {
+      "text": "Jugar"
+    },
+    {
+      "text": "Predicar"
+    },
+    {
+      "text": "Procesar"
+    },
+    {
+      "text": "Proclamar"
+    },
+    {
+      "text": "Protestar"
+    },
+    {
+      "text": "Liberar"
+    },
+    {
+      "text": "Reparar"
+    },
+    {
+      "text": "Manifestación"
+    },
+    {
+      "text": "Asaltar"
+    },
+    {
+      "text": "Buscar"
+    },
+    {
+      "text": "Vender"
+    },
+    {
+      "text": "%{wild_activity}",
+      "related": {
+        "wild_activity": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "wild_activity"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

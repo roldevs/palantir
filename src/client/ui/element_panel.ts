@@ -29,8 +29,7 @@ const panelNode: (content: VNode[]) => VNode =
 (content) => {
   return h('div', {
     class: {
-      ui: true,
-      segment: true,
+      item: true,
     },
   }, content);
 };
@@ -52,6 +51,24 @@ const elementPanel: (title: string, element: IElementDefinition | IElement | nul
   return panelTitleNode(title, content);
 };
 
+const listItem: (title: string, description: string) => VNode =
+(title, description) => {
+  return h('div', {
+    class: {
+      item: true,
+    },
+  }, [
+    h('span', {
+      class: {
+        content: true,
+      },
+    }, [
+      h('b', `${title}: `),
+      description,
+    ]),
+  ]);
+};
+
 const reduceRelated: (
   related: IRelatedElements | null,
   parent: IElementDefinition | IElement | null,
@@ -63,12 +80,14 @@ const reduceRelated: (
     if (isExtendedElement(element!)) {
       return elementPanel(title, element);
     }
-    return h('div', title);
+    return listItem(R.defaultTo(key, rel.text), elementText(element));
   }, R.defaultTo([], rel.results));
   return h('div', {
     class: {
       ui: true,
-      segments: true,
+      relaxed: true,
+      divided: true,
+      list: true,
     },
    }, panelNode(content));
 };

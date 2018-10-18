@@ -1,0 +1,53 @@
+{
+  "text": "monster.monster",
+  "related": {
+    "feature": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "monster_feature"
+        }
+      ]
+    },
+    "trait": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "monster_trait"
+        }
+      ]
+    },
+    "ability": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "monster_ability"
+        }
+      ]
+    },
+    "tactic": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "monster_tactic"
+        }
+      ]
+    },
+    "personality": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "monster_personality"
+        }
+      ]
+    },
+    "weakness": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "monster_weakness"
+        }
+      ]
+    }
+  }
+}

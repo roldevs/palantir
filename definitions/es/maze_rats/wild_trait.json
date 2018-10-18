@@ -1,0 +1,143 @@
+{
+  "text": "wild_trait.wild_trait",
+  "options": [
+    {
+      "text": "En cenizas"
+    },
+    {
+      "text": "Destruido"
+    },
+    {
+      "text": "Marchitado"
+    },
+    {
+      "text": "Roto"
+    },
+    {
+      "text": "Consumido"
+    },
+    {
+      "text": "Corrupto"
+    },
+    {
+      "text": "Progresivo"
+    },
+    {
+      "text": "Desolado"
+    },
+    {
+      "text": "%{dungeon_ruination}",
+      "related": {
+        "dungeon_ruination": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "dungeon_ruination"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Eterno"
+    },
+    {
+      "text": "%{ethereal_efect}",
+      "related": {
+        "ethereal_effect": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "ethereal_effect"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Abandonado"
+    },
+    {
+      "text": "Congelado"
+    },
+    {
+      "text": "Embrujado"
+    },
+    {
+      "text": "Aullidos"
+    },
+    {
+      "text": "Mellado"
+    },
+    {
+      "text": "Solitario"
+    },
+    {
+      "text": "Brumoso"
+    },
+    {
+      "text": "Peligroso"
+    },
+    {
+      "text": "Petrificado"
+    },
+    {
+      "text": "Fantasmal"
+    },
+    {
+      "text": "Voraz"
+    },
+    {
+      "text": "Salvaje"
+    },
+    {
+      "text": "Sombrío"
+    },
+    {
+      "text": "Movedizo"
+    },
+    {
+      "text": "Tembloroso"
+    },
+    {
+      "text": "Siniestro"
+    },
+    {
+      "text": "Hundiéndose"
+    },
+    {
+      "text": "Ahumado"
+    },
+    {
+      "text": "Sofocante"
+    },
+    {
+      "text": "Espinoso"
+    },
+    {
+      "text": "Truenos"
+    },
+    {
+      "text": "Torrencial"
+    },
+    {
+      "text": "%{physical_effect}",
+      "related": {
+        "physical_effect": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "physical_effect"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Errante"
+    },
+    {
+      "text": "Mustio"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "text": "mutation.mutation",
+  "options": [
+    {
+      "text": "Envejece"
+    },
+    {
+      "text": "Atrae pájaros"
+    },
+    {
+      "text": "Infantiliza"
+    },
+    {
+      "text": "Corpulencia"
+    },
+    {
+      "text": "Brazos %{animal}",
+      "related": {
+        "animal": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "animal"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Pelaje"
+    },
+    {
+      "text": "Ojos %{animal}",
+      "related": {
+        "animal": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "animal"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Cabeza %{animal}",
+      "related": {
+        "animal": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "animal"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Piernas %{animal}",
+      "related": {
+        "animal": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "animal"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Boca %{animal}",
+      "related": {
+        "animal": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "animal"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Piel %{animal}",
+      "related": {
+        "animal": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "animal"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Forma %{animal}",
+      "related": {
+        "animal": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "animal"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Cílope"
+    },
+    {
+      "text": "Brazos extra"
+    },
+    {
+      "text": "Ojos extra"
+    },
+    {
+      "text": "Piernas extra"
+    },
+    {
+      "text": "Lengua bífida"
+    },
+    {
+      "text": "Cambio sexo"
+    },
+    {
+      "text": "Jorobado"
+    },
+    {
+      "text": "Forma %{item}",
+      "related": {
+        "item": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "item"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Brazos largos"
+    },
+    {
+      "text": "Sin pelo"
+    },
+    {
+      "text": "Sin dientes"
+    },
+    {
+      "text": "%{monster_feature}",
+      "related": {
+        "monster_feature": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "monster_feature"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{monster_trait}",
+      "related": {
+        "monster_trait": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "monster_trait"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Sin ojos"
+    },
+    {
+      "text": "Piel %{physical_effect}",
+      "related": {
+        "physical_effect": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "physical_effect"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Segunda cara"
+    },
+    {
+      "text": "Muda la piel"
+    },
+    {
+      "text": "Encoje"
+    },
+    {
+      "text": "Deshidratado"
+    },
+    {
+      "text": "Piel hierve"
+    },
+    {
+      "text": "Rastro baboso"
+    },
+    {
+      "text": "Piel traslúcida"
+    },
+    {
+      "text": "Sin boca"
+    },
+    {
+      "text": "Llora sangre"
+    }
+  ]
+}

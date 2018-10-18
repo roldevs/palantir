@@ -1,0 +1,31 @@
+{
+  "text": "plant.plant",
+  "options": [
+    {
+      "text": "plant.edible_plant",
+      "related": {
+        "edible_plant": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "edible_plant"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "plant.poisonous_plant",
+      "related": {
+        "poisonous_plant": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "poisonous_plant"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

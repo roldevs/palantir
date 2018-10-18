@@ -1,0 +1,193 @@
+{
+  "text": "magic_ingredient.magic_ingredient",
+  "options": [
+    {
+      "text": "Licor antiguo"
+    },
+    {
+      "text": "%{animal}",
+      "related": {
+        "animal": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "animal"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Ojo ciego"
+    },
+    {
+      "text": "%{plant}",
+      "related": {
+        "plant": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "plant"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Página %{book}",
+      "related": {
+        "book": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "book"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Niebla en lata"
+    },
+    {
+      "text": "Clavo de ataúd"
+    },
+    {
+      "text": "Pelo de cadáver"
+    },
+    {
+      "text": "Último aliento"
+    },
+    {
+      "text": "Gato hervido"
+    },
+    {
+      "text": "Rayo"
+    },
+    {
+      "text": "Especia exótica"
+    },
+    {
+      "text": "Mano de asesino"
+    },
+    {
+      "text": "Diente de rey"
+    },
+    {
+      "text": "Polvo del camino"
+    },
+    {
+      "text": "Lengua mentirosa"
+    },
+    {
+      "text": "Tripas de cultista"
+    },
+    {
+      "text": "Imán"
+    },
+    {
+      "text": "Voto de monje"
+    },
+    {
+      "text": "%{monster_feature}",
+      "related": {
+        "monster_feature": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "monster_feature"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Llanto nacido"
+    },
+    {
+      "text": "Retrato aceite"
+    },
+    {
+      "text": "%{physical_element}",
+      "related": {
+        "physical_element": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "physical_element"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{poisonous_plant}",
+      "related": {
+        "poisonous_plant": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "poisonous_plant"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{potion}",
+      "related": {
+        "potion": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "potion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Brasas"
+    },
+    {
+      "text": "Abeja reina"
+    },
+    {
+      "text": "Sangre reina"
+    },
+    {
+      "text": "Lapa de barco"
+    },
+    {
+      "text": "Meteorito"
+    },
+    {
+      "text": "Dedo de ladrón"
+    },
+    {
+      "text": "Flor de tumba"
+    },
+    {
+      "text": "%{valuable_material}",
+      "related": {
+        "valuable_material": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "valuable_material"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Anillo casado"
+    },
+    {
+      "text": "Lágrima de viuda"
+    },
+    {
+      "text": "Calavera de mago"
+    }
+  ]
+}

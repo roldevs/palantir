@@ -1,0 +1,29 @@
+{
+  "text": "inn.inn",
+  "related": {
+    "adjective": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "inn_adjective"
+        }
+      ]
+    },
+    "name": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "inn_name"
+        }
+      ]
+    },
+    "quirk": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "inn_quirk"
+        }
+      ]
+    }
+  }
+}

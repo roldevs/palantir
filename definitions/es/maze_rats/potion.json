@@ -1,0 +1,223 @@
+{
+  "text": "potion.potion",
+  "options": [
+    {
+      "text": "Forma %{animal}",
+      "related": {
+        "animal": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "animal"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Cambio cuerpo"
+    },
+    {
+      "text": "Camuflaje"
+    },
+    {
+      "text": "Control animal"
+    },
+    {
+      "text": "Piel %{element}",
+      "related": {
+        "element": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "element"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Curar enfermo"
+    },
+    {
+      "text": "Detectar mal"
+    },
+    {
+      "text": "Detectar oro"
+    },
+    {
+      "text": "Voz espectral"
+    },
+    {
+      "text": "Orientacion"
+    },
+    {
+      "text": "%{insanity}",
+      "related": {
+        "insanity": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "insanity"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Forma %{element}",
+      "related": {
+        "element": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "element"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Brazo extra"
+    },
+    {
+      "text": "Volar"
+    },
+    {
+      "text": "Detectar oculto"
+    },
+    {
+      "text": "Infravisión"
+    },
+    {
+      "text": "Control %{element}",
+      "related": {
+        "element": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "element"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Invulnerable"
+    },
+    {
+      "text": "Forma %{item}",
+      "related": {
+        "item": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "item"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Visión nocturna"
+    },
+    {
+      "text": "%{magic}",
+      "related": {
+        "magic": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "magic"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Curar salud"
+    },
+    {
+      "text": "Andar sobre agua"
+    },
+    {
+      "text": "%{monster_feature}",
+      "related": {
+        "monster_feature": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "monster_feature"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{monster_trait}",
+      "related": {
+        "monster_trait": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "monster_trait"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{mutation}",
+      "related": {
+        "mutation": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "mutation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Super fuerza"
+    },
+    {
+      "text": "Telekinesis"
+    },
+    {
+      "text": "Idioma"
+    },
+    {
+      "text": "Velocidad"
+    },
+    {
+      "text": "Elástico"
+    },
+    {
+      "text": "Super salto"
+    },
+    {
+      "text": "Inmunidad magia"
+    },
+    {
+      "text": "Imagen especular"
+    },
+    {
+      "text": "%{monster_ability}",
+      "related": {
+        "monster_ability": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "monster_ability"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Respirar en agua"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "text": "Edficio",
+  "options": [
+    {
+      "text": "Edificio Clase baja",
+      "related": {
+        "city_lowerclass_building": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "city_lowerclass_building"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Edificio Clase alta",
+      "related": {
+        "city_upperclass_building": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "city_upperclass_building"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

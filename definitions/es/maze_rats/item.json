@@ -1,0 +1,70 @@
+{
+  "text": "Item",
+  "options": [
+    {
+      "related": {
+        "miscellaneous_item": {
+          "text": "Miscelánea",
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "miscellaneous_item"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "related": {
+        "worn_item": {
+          "text": "Ropajes",
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "worn_item"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "related": {
+        "weapon_item": {
+          "text": "Armas",
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "weapon_item"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "related": {
+        "tool_item": {
+          "text": "Herramientas",
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "tool_item"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "related": {
+        "treasure_item": {
+          "text": "Tesoro",
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "treasure_item"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

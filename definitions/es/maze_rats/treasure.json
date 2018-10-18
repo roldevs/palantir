@@ -1,0 +1,21 @@
+{
+  "text": "treasure.treasure",
+  "related": {
+    "item": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "treasure_item"
+        }
+      ]
+    },
+    "trait": {
+      "search": [
+        {
+          "ns": "maze_rats",
+          "type": "treasure_trait"
+        }
+      ]
+    }
+  }
+}

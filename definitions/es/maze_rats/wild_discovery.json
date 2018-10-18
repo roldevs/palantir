@@ -1,0 +1,235 @@
+{
+  "text": "wild_discovery.wild_discovery",
+  "options": [
+    {
+      "text": "Mancha sangre"
+    },
+    {
+      "text": "Huesos"
+    },
+    {
+      "text": "Armas rotas"
+    },
+    {
+      "text": "Madriguera"
+    },
+    {
+      "text": "%{city_activity}",
+      "related": {
+        "city_activity": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "city_activity"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{npc_civilized}",
+      "related": {
+        "npc_civilized": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc_civilized"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Cuerda cortada"
+    },
+    {
+      "text": "Animal muerto"
+    },
+    {
+      "text": "%{dungeon_activty}",
+      "related": {
+        "dungeon_activty": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "dungeon_activty"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Restos comida"
+    },
+    {
+      "text": "Marca tumba"
+    },
+    {
+      "text": "Cadáver"
+    },
+    {
+      "text": "%{item}",
+      "related": {
+        "item": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "item"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{npc} perdido",
+      "related": {
+        "npc": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Efecto mágico"
+    },
+    {
+      "text": "Mapa"
+    },
+    {
+      "text": "Mensaje"
+    },
+    {
+      "text": "Migración"
+    },
+    {
+      "text": "%{mutation}",
+      "related": {
+        "mutation": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "mutation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Nido"
+    },
+    {
+      "text": "Portal"
+    },
+    {
+      "text": "Recursos"
+    },
+    {
+      "text": "Grieta"
+    },
+    {
+      "text": "Planta rara"
+    },
+    {
+      "text": "%{npc} aturdido",
+      "related": {
+        "npc": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Suministros"
+    },
+    {
+      "text": "Bandera rota"
+    },
+    {
+      "text": "Rastros"
+    },
+    {
+      "text": "Trampa"
+    },
+    {
+      "text": "Tesoro"
+    },
+    {
+      "text": "%{npc_underworld}",
+      "related": {
+        "npc_underworld": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc_underworld"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{wild_landmark}",
+      "related": {
+        "wild_landmark": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "wild_landmark"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{wild_structure}",
+      "related": {
+        "wild_structure": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "wild_structure"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{npc_wilderness}",
+      "related": {
+        "npc_wilderness": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc_wilderness"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "%{wild_activity}",
+      "related": {
+        "wild_activity": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "wild_activity"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Lucha de magos"
+    }
+  ]
+}

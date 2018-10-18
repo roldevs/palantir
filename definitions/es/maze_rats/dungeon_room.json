@@ -1,0 +1,143 @@
+{
+  "text": "dungeon_room.dungeon_room",
+  "options": [
+    {
+      "text": "Armería"
+    },
+    {
+      "text": "Sala banquete"
+    },
+    {
+      "text": "Cuartel"
+    },
+    {
+      "text": "%{city_building_room}",
+      "related": {
+        "city_building_room": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "city_building_room"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Catacumbas"
+    },
+    {
+      "text": "Caverna"
+    },
+    {
+      "text": "Abismo"
+    },
+    {
+      "text": "Patio"
+    },
+    {
+      "text": "Cripta"
+    },
+    {
+      "text": "Dormitorio"
+    },
+    {
+      "text": "Pozo de lucha"
+    },
+    {
+      "text": "Forja"
+    },
+    {
+      "text": "Fuente"
+    },
+    {
+      "text": "Caseta entrada"
+    },
+    {
+      "text": "Sala de guardia"
+    },
+    {
+      "text": "Perrera"
+    },
+    {
+      "text": "%{city_lowerclass_building}",
+      "related": {
+        "city_lowerclass_building": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "city_lowerclass_building"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Laboratorio"
+    },
+    {
+      "text": "Comedor"
+    },
+    {
+      "text": "Acceso a mina"
+    },
+    {
+      "text": "Museo"
+    },
+    {
+      "text": "Cámara secreta"
+    },
+    {
+      "text": "Piscina"
+    },
+    {
+      "text": "Prisión"
+    },
+    {
+      "text": "Sala de archivo"
+    },
+    {
+      "text": "Capilla"
+    },
+    {
+      "text": "Matadero"
+    },
+    {
+      "text": "Establo"
+    },
+    {
+      "text": "Almacén"
+    },
+    {
+      "text": "Sala del trono"
+    },
+    {
+      "text": "Sala de tortura"
+    },
+    {
+      "text": "Tesorería"
+    },
+    {
+      "text": "%{city_upperclass_building}",
+      "related": {
+        "city_upperclass_building": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "city_upperclass_building"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Caja fuerte"
+    },
+    {
+      "text": "Pozo"
+    },
+    {
+      "text": "Taller"
+    }
+  ]
+}

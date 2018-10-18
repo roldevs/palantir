@@ -1,0 +1,267 @@
+{
+  "text": "npc_goal.npc_goal",
+  "options": [
+    {
+      "text": "Vida mejor"
+    },
+    {
+      "text": "Aceptación"
+    },
+    {
+      "text": "Tener %{item}",
+      "related": {
+        "item": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "item",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Forjar %{item}",
+      "related": {
+        "item": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "item",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Destruir %{faction}",
+      "related": {
+        "faction": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "faction",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Destuir %{item}",
+      "related": {
+        "item": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "item",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Conocimiento"
+    },
+    {
+      "text": "Fama"
+    },
+    {
+      "text": "Hallar %{faction}",
+      "related": {
+        "faction": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "faction",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Libertad"
+    },
+    {
+      "text": "Gloria"
+    },
+    {
+      "text": "Impresionar %{npc}",
+      "related": {
+        "npc": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Infamia"
+    },
+    {
+      "text": "Infiltrar %{faction}",
+      "related": {
+        "faction": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "faction",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Justicia"
+    },
+    {
+      "text": "Secuestro %{npc}",
+      "related": {
+        "npc": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Liderar %{faction}",
+      "related": {
+        "faction": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "faction",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Aprender"
+    },
+    {
+      "text": "Hallar %{npc}",
+      "related": {
+        "npc": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Amar"
+    },
+    {
+      "text": "Maestría"
+    },
+    {
+      "text": "Poder"
+    },
+    {
+      "text": "Alcanzar lugar"
+    },
+    {
+      "text": "Rescatar %{npc}",
+      "related": {
+        "npc": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "npc",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Zanjar disputa"
+    },
+    {
+      "text": "Restaurar %{faction}",
+      "related": {
+        "faction": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "faction",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Revelar secreto"
+    },
+    {
+      "text": "Venganza"
+    },
+    {
+      "text": "Sabotear %{faction}",
+      "related": {
+        "faction": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "faction",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Servir deidad"
+    },
+    {
+      "text": "Servir al mal"
+    },
+    {
+      "text": "Servir %{faction}",
+      "related": {
+        "faction": {
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "faction",
+              "random": "all"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Servir ideología"
+    },
+    {
+      "text": "Servir líder"
+    },
+    {
+      "text": "Servir necesitados"
+    },
+    {
+      "text": "Riqueza"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ describe('Formatter::Cli#format', () => {
         effect: {
           text: 'Trap effect',
           search: [{
-            ns: 'mr',
+            ns: 'maze_rats',
             type: 'trap_effect',
           }],
           count: 2,
@@ -27,7 +27,7 @@ describe('Formatter::Cli#format', () => {
         },
         trigger: {
           search: [{
-            ns: 'mr',
+            ns: 'maze_rats',
             type: 'trap_trigger',
           }],
           results: [{
@@ -41,7 +41,7 @@ describe('Formatter::Cli#format', () => {
         effect: {
           text: 'Trap effect',
           search: [{
-            ns: 'mr',
+            ns: 'maze_rats',
             type: 'trap_effect',
           }],
           results: [{
@@ -50,7 +50,7 @@ describe('Formatter::Cli#format', () => {
         },
         trigger: {
           search: [{
-            ns: 'mr',
+            ns: 'maze_rats',
             type: 'trap_trigger',
           }],
           results: [{
@@ -109,7 +109,7 @@ describe('Formatter::Cli#format', () => {
       related: {
         trick: {
           search: [{
-            ns: 'mr',
+            ns: 'maze_rats',
             type: 'dungeon_trick',
           }],
           results: [{
@@ -117,7 +117,7 @@ describe('Formatter::Cli#format', () => {
             related: {
               physical_effect: {
                 search: [{
-                  ns: 'mr',
+                  ns: 'maze_rats',
                   type: 'physical_effect',
                 }],
                 count: 2,

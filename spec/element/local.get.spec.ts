@@ -49,7 +49,7 @@ describe('Element#get', () => {
 
   describe('trap', () => {
     const s: ISearchDefinition[] = [{
-      ns: 'mr',
+      ns: 'maze_rats',
       type: 'trap',
     }];
 
@@ -72,7 +72,7 @@ describe('Element#get', () => {
   });
   describe('pc', () => {
     const s: ISearchDefinition[] = [{
-      ns: 'mr',
+      ns: 'maze_rats',
       type: 'pc',
     }];
 
@@ -91,7 +91,7 @@ describe('Element#get', () => {
   });
   describe('npc_underworld', () => {
     const s: ISearchDefinition[] = [{
-      ns: 'mr',
+      ns: 'maze_rats',
       type: 'npc_underworld',
     }];
 

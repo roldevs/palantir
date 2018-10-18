@@ -17,7 +17,7 @@ describe('World#get', () => {
   const connector = testConnector({
     elements: {
       es: {
-        mr: {
+        maze_rats: {
           npc_asset: {
             text: 'Npc Asset',
             options: [{
@@ -25,7 +25,7 @@ describe('World#get', () => {
               related: {
                 faction: {
                   search: [{
-                    ns: 'mr',
+                    ns: 'maze_rats',
                     type: 'faction',
                     random: ERandomOption.all,
                   }],
@@ -56,7 +56,7 @@ describe('World#get', () => {
   describe('simple search', () => {
     const search: IRelatedElement = {
       search: [{
-        ns: 'mr',
+        ns: 'maze_rats',
         type: 'faction',
       }],
       count: 1,
@@ -74,7 +74,7 @@ describe('World#get', () => {
   describe('deep search', () => {
     const search: IRelatedElement = {
       search: [{
-        ns: 'mr',
+        ns: 'maze_rats',
         type: 'npc_asset',
       }],
     };

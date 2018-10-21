@@ -14,84 +14,182 @@ import { JSONprettify } from '../../src/lib/utils';
 import worldCreator from '../../src/lib/world';
 
 describe('World#get', () => {
-  const connector = testConnector({
-    elements: {
-      es: {
-        maze_rats: {
-          npc_asset: {
-            text: 'Npc Asset',
-            options: [{
-              text: 'Lider ${faction}',
-              related: {
-                faction: {
-                  search: [{
-                    ns: 'maze_rats',
-                    type: 'faction',
-                    random: ERandomOption.all,
-                  }],
+  describe('with faction', () => {
+    const connector = testConnector({
+      elements: {
+        es: {
+          maze_rats: {
+            npc_asset: {
+              text: 'Npc Asset',
+              options: [{
+                text: 'Lider ${faction}',
+                related: {
+                  faction: {
+                    search: [{
+                      ns: 'maze_rats',
+                      type: 'faction',
+                      random: ERandomOption.all,
+                    }],
+                  },
                 },
-              },
-            }],
-          },
-          faction: {
-            text: 'Faction',
-            options: [{
-              text: 'Movimiento artístico',
-            }],
+              }],
+            },
+            faction: {
+              text: 'Faction',
+              options: [{
+                text: 'Movimiento artístico',
+              }],
+            },
           },
         },
+        en: {},
       },
-      en: {},
-    },
-  });
-  const world = worldCreator({
-    locale: 'es',
-    connector,
-    repository: testRepository({
+    });
+    const world = worldCreator({
       locale: 'es',
-      elements: {},
-    }),
-  });
+      connector,
+      repository: testRepository({
+        locale: 'es',
+        elements: {},
+      }),
+    });
 
-  describe('simple search', () => {
-    const search: IRelatedElement = {
-      search: [{
-        ns: 'maze_rats',
-        type: 'faction',
-      }],
-      count: 1,
-    };
-    it('return the only faction defined', (done) => {
-      world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
-        const element: IElementDefinition = elements[0]! as IElementDefinition;
-        expect(element).to.not.be.null;
-        expect(element.text).to.eql('Movimiento artístico');
-        done();
+    describe('simple search', () => {
+      const search: IRelatedElement = {
+        search: [{
+          ns: 'maze_rats',
+          type: 'faction',
+        }],
+        count: 1,
+      };
+      it('return the only faction defined', (done) => {
+        world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
+          const element: IElementDefinition = elements[0]! as IElementDefinition;
+          expect(element).to.not.be.null;
+          expect(element.text).to.eql('Movimiento artístico');
+          done();
+        });
+      });
+    });
+
+    describe('deep search', () => {
+      const search: IRelatedElement = {
+        search: [{
+          ns: 'maze_rats',
+          type: 'npc_asset',
+        }],
+      };
+      it('return the npc_asset with faction related', (done) => {
+        world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
+          const element: IElementDefinition = elements[0]! as IElementDefinition;
+          const related: IRelatedElement = element.related!.faction;
+
+          expect(element).to.not.be.null;
+          expect(element.text).to.eql('Lider ${faction}');
+          expect(related).to.not.be.null;
+
+          // tslint:disable-next-line:no-console
+          console.log(JSONprettify(elements));
+
+          expect(related.results).to.not.be.empty;
+          done();
+        });
       });
     });
   });
 
-  describe('deep search', () => {
-    const search: IRelatedElement = {
-      search: [{
-        ns: 'maze_rats',
-        type: 'npc_asset',
-      }],
-    };
-    it('return the npc_asset with faction related', (done) => {
-      world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
-        const element: IElementDefinition = elements[0]! as IElementDefinition;
-        const related: IRelatedElement = element.related!.faction;
+  describe('with animal', () => {
+    const connector = testConnector({
+      elements: {
+        es: {
+          maze_rats: {
+            animal: {
+              text: 'Animal',
+              options: [{
+                text: 'Animal Aéreo',
+                related: {
+                  animal_aerial: {
+                    text: 'Animal Aéreo',
+                    search: [{
+                      ns: 'maze_rats',
+                      type: 'animal_aerial',
+                    }],
+                  },
+                },
+              }, {
+                text: 'Animal Acuático',
+                related: {
+                  animal_aquatic: {
+                    text: 'Animal Acuático',
+                    search: [{
+                      ns: 'maze_rats',
+                      type: 'animal_aquatic',
+                    }],
+                  },
+                },
+              }, {
+                text: 'Animal Terrestre',
+                  related: {
+                    animal_terrestrial: {
+                      text: 'Animal Terrestre',
+                      search: [{
+                        ns: 'maze_rats',
+                        type: 'animal_terrestrial',
+                      }],
+                    },
+                  },
+                },
+              ],
+            },
+            animal_aerial: {
+              text: 'Animal aéreo',
+              options: [{
+                text: 'Albatros',
+              }],
+            },
+            animal_aquatic: {
+              text: 'Animal acuático',
+              options: [{
+                text: 'Cacodrilo',
+              }],
+            },
+            animal_terrestrial: {
+              text: 'Animal terrestre',
+              options: [{
+                text: 'Hormiga',
+              }],
+            },
+          },
+        },
+        en: {},
+      },
+    });
+    const world = worldCreator({
+      locale: 'es',
+      connector,
+      repository: testRepository({
+        locale: 'es',
+        elements: {},
+      }),
+    });
 
-        expect(element).to.not.be.null;
-        expect(element.text).to.eql('Lider ${faction}');
-        expect(related).to.not.be.null;
+    describe('deep search', () => {
+      const search: IRelatedElement = {
+        search: [{
+          ns: 'maze_rats',
+          type: 'animal',
+        }],
+      };
+      it('return the npc_asset with faction related', (done) => {
+        world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
+          const element: IElementDefinition = elements[0]! as IElementDefinition;
 
-        // tslint:disable-next-line:no-console
-        console.log(JSONprettify(elements));
+          // tslint:disable-next-line:no-console
+          console.log(JSONprettify(elements));
 
-        expect(related.results).to.not.be.empty;
-        done();
+          expect(element.text).to.eql('Animal');
+          done();
+        });
       });
     });
   });

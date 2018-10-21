@@ -37,7 +37,7 @@ const controller: (config: IResultsControllerOptions) => IResultsController =
 
   const setOptions: (options: ISelectorOptions) => void =
   (options)  => {
-    if (sameOptions(options)) {
+    if (!options.reload && sameOptions(options)) {
       return;
     }
     oldOptions = options;

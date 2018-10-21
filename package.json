@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "pretest": "npm run build",
-    "test": "node_modules/.bin/mocha -r ts-node/register spec/**/*.spec.ts spec/**/**/*.spec.ts",
+    "test": "node_modules/.bin/mocha -r ts-node/register spec/**/*.spec.ts spec/**/**/*.spec.ts -g 'with animal'",
     "run": "node_modules/.bin/ts-node index.ts",
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json",
     "prebuild": "npm run lint",
@@ -48,6 +48,7 @@
     "ramda": "^0.25.0",
     "scaleapp": "^0.4.4",
     "snabbdom": "^0.7.2",
+    "universal-analytics": "^0.4.17",
     "uuid": "^3.2.1"
   },
   "devDependencies": {
@@ -73,6 +74,7 @@
     "@types/morgan": "^1.7.35",
     "@types/node": "^10.10.1",
     "@types/ramda": "^0.25.32",
+    "@types/universal-analytics": "^0.4.2",
     "@types/uuid": "^3.4.3",
     "babel-loader": "^8.0.4",
     "babel-polyfill": "^6.26.0",

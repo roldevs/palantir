@@ -23,11 +23,6 @@ const randomPage: (
 
   const page: (locale: string, ns: string, type: string) => any =
   (locale, ns, type) => {
-    console.group('page');
-    console.log(locale, ns, type);
-    console.log(parseOptions(locale, ns, type));
-    console.groupEnd();
-
     const moduleOptions = parseOptions(locale, ns, type);
 
     return startModule(

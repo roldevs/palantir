@@ -3,6 +3,8 @@ import localConnectorCreator from '../../../lib/connectors/local';
 import repositoryCreator from '../../../lib/repository/memory';
 import worldCreator from '../../../lib/world';
 import errorHandler from '../../errorHandler';
+import trackEvent from '../../track';
+import { requestPath } from '../../util';
 
 const randomApiController = () => {
   const random = (req: any, res: any) => {
@@ -18,12 +20,14 @@ const randomApiController = () => {
       }),
     });
 
-    world.get({
-      search: [{
-        ns: req.params.ns,
-        type: req.params.type,
-      }],
-    }).then((data) => {
+    trackEvent(`/api/random/${requestPath(req)}`, 'Folders').then(() => {
+      return world.get({
+        search: [{
+          ns: req.params.ns,
+          type: req.params.type,
+        }],
+      });
+    }).then((data: any) => {
       res.json({
         succes: true,
         data,

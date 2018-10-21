@@ -22,7 +22,6 @@ const formView: (fields: VNode[]) => VNode =
     }, 'Selector de tabla'),
     h('div', {
       class: {
-        three: true,
         fields: true,
       },
     }, fields),
@@ -36,6 +35,8 @@ const fieldView: (config: {
 (config) => {
   return h('div', {
     class: {
+      five: true,
+      wide: true,
       field: true,
     },
   }, [
@@ -115,6 +116,69 @@ const dropdownType: (config: {
   disabled: config.disabled,
 });
 
+const refreshButton: (model: ISelectorModel, controller: ISelectorController) => VNode =
+(_, controller) => {
+  return h('div', {
+    class: {
+      ui: true,
+      primary: true,
+      icon: true,
+      button: true,
+    },
+    on: {
+      click: controller.refresh,
+    },
+  }, [
+    h('i', {
+      class: {
+        icon: true,
+        refresh: true,
+      },
+    }),
+  ]);
+};
+
+const typeDropdownAndRefreshButton: (model: ISelectorModel, controller: ISelectorController) => VNode =
+(model, controller) => {
+  return h('div', {
+    class: {
+      six: true,
+      wide: true,
+      field: true,
+    },
+  }, [
+    h('label', 'Tabla'),
+    h('div', {
+      class: {
+        two: true,
+        fields: true,
+      },
+    }, [
+      h('div', {
+        class: {
+          thirteen: true,
+          wide: true,
+          field: true,
+        },
+      }, [
+        dropdownType({
+          value: model.type,
+          options: mapTypeDropboxItems(model.typeList),
+          controller,
+          disabled: model.typeDisabled,
+        }),
+      ]),
+      h('div', {
+        class: {
+          two: true,
+          wide: true,
+          field: true,
+        },
+      }, refreshButton(model, controller)),
+    ]),
+  ]);
+};
+
 const viewFn: (model: ISelectorModel, controller: ISelectorController) => VNode =
 (model, controller) => {
   return formView([
@@ -136,15 +200,7 @@ const viewFn: (model: ISelectorModel, controller: ISelectorController) => VNode 
         disabled: model.nsDisabled,
       }),
     }),
-    fieldView({
-      label: 'Tabla',
-      content: dropdownType({
-        value: model.type,
-        options: mapTypeDropboxItems(model.typeList),
-        controller,
-        disabled: model.typeDisabled,
-      }),
-    }),
+    typeDropdownAndRefreshButton(model, controller),
   ]);
 };
 

@@ -16,7 +16,10 @@ const layoutModule = (sb: any) => {
     actions: actions(),
   });
 
-  const onSelectorSelect: (options: ISelectorOptions) => void = controllerHandler.setOptions;
+  const onSelectorSelect: (options: ISelectorOptions) => void =
+  (options) => {
+    controllerHandler.setOptions(options);
+  };
 
   const onModuleInit = (config: any, done: () => void) => {
     vdom = document.getElementById(config.el);

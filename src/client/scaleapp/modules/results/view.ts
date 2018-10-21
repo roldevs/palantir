@@ -11,7 +11,6 @@ import { IResultsController, IResultsState } from './controller';
 const viewFn: (model: IResultsState, controller: IResultsController) => VNode =
 (model) => {
   return h('div', [
-    h('h1', 'Results'),
     elementPanel(model),
   ]);
 };

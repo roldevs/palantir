@@ -7,6 +7,7 @@ interface ISelectorOptions {
   locale?: string;
   ns?: string;
   type?: string;
+  reload?: boolean;
 }
 
 interface ISelectorController {
@@ -14,6 +15,7 @@ interface ISelectorController {
   setLocale: (locale: string) => void;
   setNs: (ns: string) => void;
   setType: (type: string) => void;
+  refresh: () => void;
   stream$: flyd.Stream<ISelectorModel>;
 }
 
@@ -82,15 +84,9 @@ const controller: (options: ISelectorControllerOptions) => ISelectorController =
   const promiseSetType: (type: string | null | undefined) => Bluebird<ISelectorModel> =
   (type) => {
     if (type) {
+      const newModel: ISelectorModel = options.actions.setType(type);
       return new Bluebird((resolve: any) => {
-        const newModel: ISelectorModel = options.actions.setType(type);
-        const selectorOptions: ISelectorOptions = {
-          locale: newModel.locale!,
-          ns: newModel.ns!,
-          type: newModel.type!,
-        };
-
-        options.sb.emit('selector.select', selectorOptions);
+        emitType(false);
         resolve(newModel);
       });
     } else {
@@ -100,11 +96,34 @@ const controller: (options: ISelectorControllerOptions) => ISelectorController =
     }
   };
 
+  const emitType: (reload: boolean) => void =
+  (reload) => {
+    const newModel: ISelectorModel = options.actions.get();
+    if (newModel.type) {
+      options.sb.emit('selector.select', getOptions(reload));
+    }
+  };
+
+  const getOptions: (reload: boolean) => ISelectorOptions =
+  (reload) => {
+    const newModel: ISelectorModel = options.actions.get();
+    return {
+      locale: newModel.locale!,
+      ns: newModel.ns!,
+      type: newModel.type!,
+      reload,
+    };
+  };
+
+  const refresh: () => void =
+  () => emitType(true);
+
   return {
     init,
     setLocale: (locale: string) => promiseSetLocale(locale).then(stream$),
     setNs: (ns: string) => promiseSetNs(ns).then(stream$),
     setType: (type: string) => promiseSetType(type).then(stream$),
+    refresh,
     stream$,
   };
 };

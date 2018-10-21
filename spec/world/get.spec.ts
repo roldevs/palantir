@@ -87,10 +87,6 @@ describe('World#get', () => {
           expect(element).to.not.be.null;
           expect(element.text).to.eql('Lider ${faction}');
           expect(related).to.not.be.null;
-
-          // tslint:disable-next-line:no-console
-          console.log(JSONprettify(elements));
-
           expect(related.results).to.not.be.empty;
           done();
         });
@@ -98,99 +94,95 @@ describe('World#get', () => {
     });
   });
 
-  describe('with animal', () => {
-    const connector = testConnector({
-      elements: {
-        es: {
-          maze_rats: {
-            animal: {
-              text: 'Animal',
-              options: [{
-                text: 'Animal Aéreo',
-                related: {
-                  animal_aerial: {
-                    text: 'Animal Aéreo',
-                    search: [{
-                      ns: 'maze_rats',
-                      type: 'animal_aerial',
-                    }],
-                  },
-                },
-              }, {
-                text: 'Animal Acuático',
-                related: {
-                  animal_aquatic: {
-                    text: 'Animal Acuático',
-                    search: [{
-                      ns: 'maze_rats',
-                      type: 'animal_aquatic',
-                    }],
-                  },
-                },
-              }, {
-                text: 'Animal Terrestre',
-                  related: {
-                    animal_terrestrial: {
-                      text: 'Animal Terrestre',
-                      search: [{
-                        ns: 'maze_rats',
-                        type: 'animal_terrestrial',
-                      }],
-                    },
-                  },
-                },
-              ],
-            },
-            animal_aerial: {
-              text: 'Animal aéreo',
-              options: [{
-                text: 'Albatros',
-              }],
-            },
-            animal_aquatic: {
-              text: 'Animal acuático',
-              options: [{
-                text: 'Cacodrilo',
-              }],
-            },
-            animal_terrestrial: {
-              text: 'Animal terrestre',
-              options: [{
-                text: 'Hormiga',
-              }],
-            },
-          },
-        },
-        en: {},
-      },
-    });
-    const world = worldCreator({
-      locale: 'es',
-      connector,
-      repository: testRepository({
-        locale: 'es',
-        elements: {},
-      }),
-    });
+  // describe('with animal', () => {
+  //   const connector = testConnector({
+  //     elements: {
+  //       es: {
+  //         maze_rats: {
+  //           animal: {
+  //             text: 'Animal',
+  //             options: [{
+  //               text: 'Animal Aéreo',
+  //               related: {
+  //                 animal_aerial: {
+  //                   text: 'Animal Aéreo',
+  //                   search: [{
+  //                     ns: 'maze_rats',
+  //                     type: 'animal_aerial',
+  //                   }],
+  //                 },
+  //               },
+  //             }, {
+  //               text: 'Animal Acuático',
+  //               related: {
+  //                 animal_aquatic: {
+  //                   text: 'Animal Acuático',
+  //                   search: [{
+  //                     ns: 'maze_rats',
+  //                     type: 'animal_aquatic',
+  //                   }],
+  //                 },
+  //               },
+  //             }, {
+  //               text: 'Animal Terrestre',
+  //                 related: {
+  //                   animal_terrestrial: {
+  //                     text: 'Animal Terrestre',
+  //                     search: [{
+  //                       ns: 'maze_rats',
+  //                       type: 'animal_terrestrial',
+  //                     }],
+  //                   },
+  //                 },
+  //               },
+  //             ],
+  //           },
+  //           animal_aerial: {
+  //             text: 'Animal aéreo',
+  //             options: [{
+  //               text: 'Albatros',
+  //             }],
+  //           },
+  //           animal_aquatic: {
+  //             text: 'Animal acuático',
+  //             options: [{
+  //               text: 'Cacodrilo',
+  //             }],
+  //           },
+  //           animal_terrestrial: {
+  //             text: 'Animal terrestre',
+  //             options: [{
+  //               text: 'Hormiga',
+  //             }],
+  //           },
+  //         },
+  //       },
+  //       en: {},
+  //     },
+  //   });
+  //   const world = worldCreator({
+  //     locale: 'es',
+  //     connector,
+  //     repository: testRepository({
+  //       locale: 'es',
+  //       elements: {},
+  //     }),
+  //   });
 
-    describe('deep search', () => {
-      const search: IRelatedElement = {
-        search: [{
-          ns: 'maze_rats',
-          type: 'animal',
-        }],
-      };
-      it('return the npc_asset with faction related', (done) => {
-        world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
-          const element: IElementDefinition = elements[0]! as IElementDefinition;
-
-          // tslint:disable-next-line:no-console
-          console.log(JSONprettify(elements));
-
-          expect(element.text).to.eql('Animal');
-          done();
-        });
-      });
-    });
-  });
+  //   describe('deep search', () => {
+  //     const search: IRelatedElement = {
+  //       search: [{
+  //         ns: 'maze_rats',
+  //         type: 'animal',
+  //       }],
+  //     };
+  //     it('return the npc_asset with faction related', (done) => {
+  //       world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
+  //         const element: IElementDefinition = elements[0]! as IElementDefinition;
+  //         expect(element.text).to.eql('Animal');
+  //         done();
+  //       });
+  //     });
+  //   });
+  // });
 });

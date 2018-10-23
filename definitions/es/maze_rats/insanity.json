@@ -145,7 +145,18 @@
       "text": "Debe cantar"
     },
     {
-      "text": "Nueva %{personality}"
+      "text": "Locura",
+      "related": {
+        "monster_trait": {
+          "text": "Nueva Personalidad",
+          "search": [
+            {
+              "ns": "maze_rats",
+              "type": "personality"
+            }
+          ]
+        }
+      }
     },
     {
       "text": "Piensa en voz alta"

@@ -12,7 +12,7 @@
       "text": "Catástrofe",
       "related": {
         "mutation": {
-          "text": "Animales %{mutation}",
+          "text": "Mutación de Animales",
           "search": [
             {
               "ns": "maze_rats",
@@ -68,10 +68,10 @@
       "text": "Gusanos"
     },
     {
-      "text": "%{insanity} global",
+      "text": "Catástrofe",
       "related": {
         "insanity": {
-          "text": "Insanidad",
+          "text": "Locura global",
           "search": [
             {
               "ns": "maze_rats",
@@ -82,10 +82,10 @@
       }
     },
     {
-      "text": "%{mutation} masiva",
+      "text": "Catástrofe",
       "related": {
         "mutation": {
-          "text": "Mutación",
+          "text": "Mutación masiva",
           "search": [
             {
               "ns": "maze_rats",

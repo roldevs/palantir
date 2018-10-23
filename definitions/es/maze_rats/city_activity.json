@@ -50,7 +50,7 @@
       "text": "Apostar"
     },
     {
-      "text": "%{dungeon_activity}",
+      "text": "Actividad de ciudad",
       "related": {
         "dungeon_activity": {
           "text": "Actividad en Mazmorra",
@@ -70,7 +70,7 @@
       "text": "Matrimonio"
     },
     {
-      "text": "%{mission}",
+      "text": "Actividad de ciudad",
       "related": {
         "mission": {
           "text": "Misión",
@@ -129,9 +129,10 @@
       "text": "Vender"
     },
     {
-      "text": "%{wild_activity}",
+      "text": "Actividad de ciudad",
       "related": {
         "wild_activity": {
+          "text": "Actividad en la Naturaleza",
           "search": [
             {
               "ns": "maze_rats",

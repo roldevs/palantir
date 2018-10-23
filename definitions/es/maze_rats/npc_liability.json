@@ -38,9 +38,10 @@
       "text": "Impostor"
     },
     {
-      "text": "%{insanity}",
+      "text": "Lastre del PNJ",
       "related": {
         "insanity": {
+          "text": "Locura",
           "search": [
             {
               "ns": "maze_rats",

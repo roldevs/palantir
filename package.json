@@ -9,7 +9,7 @@
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json",
     "prebuild": "npm run lint",
     "build": "node_modules/.bin/tsc",
-    "postinstall": "npm run build",
+    "postinstall": "npm run client:build && npm run build",
     "server": "node dist/server.js",
     "start": "npm run client:build && npm run build && npm run server",
     "watch": "node_modules/.bin/nodemon",

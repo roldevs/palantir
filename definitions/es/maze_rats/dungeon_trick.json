@@ -1,5 +1,5 @@
 {
-  "text": "dungeon_trick.dungeon_trick",
+  "text": "Truco de la Mazmorra",
   "options": [
     {
       "text": "Absorbe"
@@ -35,9 +35,10 @@
       "text": "Duplicación"
     },
     {
-      "text": "%{ethereal_effect}",
+      "text": "Truco de la Mazmorra",
       "related": {
         "ethereal_effect": {
+          "text": "Efecto Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -63,9 +64,10 @@
       "text": "Control mental"
     },
     {
-      "text": "%{mission}",
+      "text": "Truco de la Mazmorra",
       "related": {
         "mission": {
+          "text": "Misión",
           "search": [
             {
               "ns": "maze_rats",
@@ -82,9 +84,10 @@
       "text": "Nulifica"
     },
     {
-      "text": "%{physical_effect}",
+      "text": "Truco de la Mazmorra",
       "related": {
         "physical_effect": {
+          "text": "Efecto Físico",
           "search": [
             {
               "ns": "maze_rats",

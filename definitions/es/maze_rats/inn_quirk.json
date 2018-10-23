@@ -1,5 +1,5 @@
 {
-  "text": "inn_quirk.inn_quirk",
+  "text": "Peculiaridad de la Posada",
   "options": [
     {
       "text": "100 años"
@@ -26,9 +26,10 @@
       "text": "Caníbales"
     },
     {
-      "text": "%{city_activity}",
+      "text": "Peculiaridad de la Posada",
       "related": {
         "city_activity": {
+          "text": "Actividad de Ciudad",
           "search": [
             {
               "ns": "maze_rats",
@@ -48,9 +49,10 @@
       "text": "Jefe duende"
     },
     {
-      "text": "%{dungeon_layout}",
+      "text": "Peculiaridad de la Posada",
       "related": {
         "dungeon_layout": {
+          "text": "Dsitribución de Mazmorra",
           "search": [
             {
               "ns": "maze_rats",
@@ -64,9 +66,10 @@
       "text": "Cara"
     },
     {
-      "text": "Lugar de %{faction}",
+      "text": "Peculiaridad de la Posada",
       "related": {
         "faction": {
+          "text": "Lugar de la Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -78,9 +81,10 @@
       }
     },
     {
-      "text": "%{faction_trait}",
+      "text": "Peculiaridad de la Posada",
       "related": {
         "faction_trait": {
+          "text": "Rasgo de Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -112,9 +116,10 @@
       "text": "Escondite"
     },
     {
-      "text": "%{city_building}",
+      "text": "Peculiaridad de la Posada",
       "related": {
         "city_building": {
+          "text": "Edificio de Ciudad",
           "search": [
             {
               "ns": "maze_rats",
@@ -134,9 +139,10 @@
       "text": "Sótano"
     },
     {
-      "text": "%{npc}",
+      "text": "Peculiaridad de la Posada",
       "related": {
         "npc": {
+          "text": "PNJ",
           "search": [
             {
               "ns": "maze_rats",

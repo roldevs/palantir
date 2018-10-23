@@ -1,5 +1,5 @@
 {
-  "text": "wild_trait.wild_trait",
+  "text": "Rasgo Natural",
   "options": [
     {
       "text": "En cenizas"
@@ -26,9 +26,10 @@
       "text": "Desolado"
     },
     {
-      "text": "%{dungeon_ruination}",
+      "text": "Rasgo Natural",
       "related": {
         "dungeon_ruination": {
+          "text": "Ruina de Mazmorra",
           "search": [
             {
               "ns": "maze_rats",
@@ -42,9 +43,10 @@
       "text": "Eterno"
     },
     {
-      "text": "%{ethereal_efect}",
+      "text": "Rasgo Natural",
       "related": {
         "ethereal_effect": {
+          "text": "Efecto Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -121,9 +123,10 @@
       "text": "Torrencial"
     },
     {
-      "text": "%{physical_effect}",
+      "text": "Rasgo Natural",
       "related": {
         "physical_effect": {
+          "text": "Efecto Físico",
           "search": [
             {
               "ns": "maze_rats",

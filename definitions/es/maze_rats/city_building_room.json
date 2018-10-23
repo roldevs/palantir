@@ -1,5 +1,5 @@
 {
-  "text": "city_building_room.city_building_room",
+  "text": "Habitación de Ciudad",
   "options": [
     {
       "text": "Jardín botánico"
@@ -38,9 +38,10 @@
       "text": "Vestidor"
     },
     {
-      "text": "%{dungeon_room}",
+      "text": "Habitación de Ciudad",
       "related": {
         "dungeon_room": {
+          "text": "Habitación de Mazmorra",
           "search": [
             {
               "ns": "maze_rats",

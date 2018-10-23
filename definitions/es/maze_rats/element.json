@@ -2,7 +2,7 @@
   "text": "Elemento",
   "options": [
     {
-      "text": "Elemento Etéreo",
+      "text": "Elemento",
       "related": {
         "animal_aerial": {
           "text": "Elemento Etéreo",
@@ -16,7 +16,7 @@
       }
     },
     {
-      "text": "Elemento Físico",
+      "text": "Elemento",
       "related": {
         "animal_aquatic": {
           "text": "Elemento Físico",

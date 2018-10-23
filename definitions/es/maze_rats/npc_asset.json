@@ -1,5 +1,5 @@
 {
-  "text": "npc_asset.npc_asset",
+  "text": "Bazas de PNJ",
   "options": [
     {
       "text": "Autoridad"
@@ -26,9 +26,10 @@
       "text": "Muy rico"
     },
     {
-      "text": "Lider %{faction}",
+      "text": "Bazas de PNJ",
       "related": {
         "faction": {
+          "text": "Líder de Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -40,9 +41,10 @@
       }
     },
     {
-      "text": "Miembo %{faction}",
+      "text": "Bazas de PNJ",
       "related": {
         "faction": {
+          "text": "Miembro de Facción",
           "search": [
             {
               "ns": "maze_rats",

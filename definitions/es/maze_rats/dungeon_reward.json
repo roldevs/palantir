@@ -1,5 +1,5 @@
 {
-  "text": "dungeon_reward.dungeon_reward",
+  "text": "Recompensa de la Mazmorra",
   "options": [
     {
       "text": "Saber arcano"
@@ -23,9 +23,10 @@
       "text": "Instrucciones"
     },
     {
-      "text": "Aliado %{faction}",
+      "text": "Recompensa de la Mazmorra",
       "related": {
         "faction": {
+          "text": "Aliado de Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -46,9 +47,10 @@
       "text": "Reliquia Santa"
     },
     {
-      "text": "%{item} mágico",
+      "text": "Recompensa de la Mazmorra",
       "related": {
         "item": {
+          "text": "Objeto",
           "search": [
             {
               "ns": "maze_rats",
@@ -83,9 +85,10 @@
       "text": "Obra arte"
     },
     {
-      "text": "Aliado %{monster}",
+      "text": "Recompensa de la Mazmorra",
       "related": {
         "monster": {
+          "text": "Monstruo aliado",
           "search": [
             {
               "ns": "maze_rats",
@@ -120,9 +123,10 @@
       "text": "Transporte"
     },
     {
-      "text": "%{treasure}",
+      "text": "Recompensa de la Mazmorra",
       "related": {
         "treasure": {
+          "text": "Tesoro",
           "search": [
             {
               "ns": "maze_rats",
@@ -136,9 +140,10 @@
       "text": "Muestra complot"
     },
     {
-      "text": "%{valuable_material}",
+      "text": "Recompensa de la Mazmorra",
       "related": {
         "valuable_material": {
+          "text": "Material Valioso",
           "search": [
             {
               "ns": "maze_rats",

@@ -2,7 +2,7 @@
   "text": "PNJ",
   "options": [
     {
-      "text": "PNJ Civilizado",
+      "text": "PNJ",
       "related": {
         "civilized": {
           "text": "PNJ Civilizado",
@@ -16,7 +16,7 @@
       }
     },
     {
-      "text": "PNJ Bajos Fondos",
+      "text": "PNJ",
       "related": {
         "underworld": {
           "text": "PNJ Bajos Fondos",
@@ -30,7 +30,7 @@
       }
     },
     {
-      "text": "PNJ Naturaleza",
+      "text": "PNJ",
       "related": {
         "wilderness": {
           "text": "PNJ Naturaleza",

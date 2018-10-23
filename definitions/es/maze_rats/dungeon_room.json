@@ -1,5 +1,5 @@
 {
-  "text": "dungeon_room.dungeon_room",
+  "text": "Habitación de Mazmorra",
   "options": [
     {
       "text": "Armería"
@@ -11,9 +11,10 @@
       "text": "Cuartel"
     },
     {
-      "text": "%{city_building_room}",
+      "text": "Habitación de Mazmorra",
       "related": {
         "city_building_room": {
+          "text": "Habitación de Edificio de Ciudad",
           "search": [
             {
               "ns": "maze_rats",
@@ -60,9 +61,10 @@
       "text": "Perrera"
     },
     {
-      "text": "%{city_lowerclass_building}",
+      "text": "Habitación de Mazmorra",
       "related": {
         "city_lowerclass_building": {
+          "text": "Edificio de Clase Baja",
           "search": [
             {
               "ns": "maze_rats",
@@ -118,9 +120,10 @@
       "text": "Tesorería"
     },
     {
-      "text": "%{city_upperclass_building}",
+      "text": "Habitación de Mazmorra",
       "related": {
         "city_upperclass_building": {
+          "text": "Edificio de Clase Alta",
           "search": [
             {
               "ns": "maze_rats",

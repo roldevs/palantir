@@ -3,6 +3,7 @@
   "text": "One Shot Creador de Aventuras",
   "related": {
     "exploring": {
+      "text": "Estamos explorando...",
       "search": [
         {
           "ns": "osdw",
@@ -11,6 +12,7 @@
       ]
     },
     "lies": {
+      "text": "Que yace en...",
       "search": [
         {
           "ns": "osdw",
@@ -19,6 +21,7 @@
       ]
     },
     "seeking": {
+      "text": "Buscando un...",
       "search": [
         {
           "ns": "osdw",
@@ -27,6 +30,7 @@
       ]
     },
     "we_are_here": {
+      "text": "Estamos aquí para...",
       "search": [
         {
           "ns": "osdw",
@@ -35,6 +39,7 @@
       ]
     },
     "and": {
+      "text": "Y...",
       "search": [
         {
           "ns": "osdw",
@@ -43,6 +48,7 @@
       ]
     },
     "guarded": {
+      "text": "Vigilado por...",
       "search": [
         {
           "ns": "osdw",

@@ -1,10 +1,11 @@
 {
-  "text": "npc_wilderness.npc_wilderness",
+  "text": "PNJ de la Naturaleza",
   "options": [
     {
-      "text": "npc_wilderness.npc_wilderness_male",
+      "text": "PNJ de la Naturaleza",
       "related": {
         "male": {
+          "text": "PNJ Hombre de la Naturaleza",
           "search": [
             {
               "ns": "maze_rats",
@@ -15,9 +16,10 @@
       }
     },
     {
-      "text": "npc_underworld.npc_underworld_female",
+      "text": "PNJ de la Naturaleza",
       "related": {
         "female": {
+          "text": "PNJ Mujer de la Naturaleza",
           "search": [
             {
               "ns": "maze_rats",

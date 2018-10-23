@@ -1,5 +1,5 @@
 {
-  "text": "faction_trait.faction_trait",
+  "text": "Rasgo de Facción",
   "options": [
     {
       "text": "En quiebra"
@@ -65,9 +65,10 @@
       "text": "Militar"
     },
     {
-      "text": "%{personality}",
+      "text": "Rasgo de Facción",
       "related": {
         "personality": {
+          "text": "Personalidad",
           "search": [
             {
               "ns": "maze_rats",

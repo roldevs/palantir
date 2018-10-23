@@ -1,5 +1,5 @@
 {
-  "text": "treasure_trait.treasure_trait",
+  "text": "Rasgo del Tesoro",
   "options": [
     {
       "text": "Alterado"
@@ -35,22 +35,24 @@
       "text": "Atrae enemigos"
     },
     {
-      "text": "%{effects}",
+      "text": "Rasgo del Tesoro",
       "related": {
         "effects": {
+          "text": "Efecto",
           "search": [
             {
               "ns": "maze_rats",
-              "type": "effects"
+              "type": "effect"
             }
           ]
         }
       }
     },
     {
-      "text": "%{element}",
+      "text": "Rasgo del Tesoro",
       "related": {
         "element": {
+          "text": "Elemento",
           "search": [
             {
               "ns": "maze_rats",

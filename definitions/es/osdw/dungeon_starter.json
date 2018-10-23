@@ -3,6 +3,7 @@
   "text": "One Shot Dungeon Starter",
   "related": {
     "control": {
+      "text": "Quién controla realmente esto?",
       "search": [
         {
           "ns": "osdw",
@@ -11,6 +12,7 @@
       ]
     },
     "happen": {
+      "text": "Qué es lo que está a punto de pasar?",
       "search": [
         {
           "ns": "osdw",
@@ -19,6 +21,7 @@
       ]
     },
     "happened": {
+      "text": "Qué pasó aquí hace poco?",
       "search": [
         {
           "ns": "osdw",
@@ -27,6 +30,7 @@
       ]
     },
     "useful": {
+      "text": "Qué es útil o de valor para mí aquí?",
       "search": [
         {
           "ns": "osdw",
@@ -35,6 +39,7 @@
       ]
     },
     "lookout": {
+      "text": "Qué debería estar buscando?",
       "search": [
         {
           "ns": "osdw",
@@ -43,6 +48,7 @@
       ]
     },
     "not_appear": {
+      "text": "Qué hay aquí que no es lo que parece?",
       "search": [
         {
           "ns": "osdw",

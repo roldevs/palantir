@@ -2,6 +2,7 @@
   "text": "Evento",
   "related": {
     "focus": {
+      "text": "Foco del Evento",
       "search": [
         {
           "ns": "mythic",
@@ -11,6 +12,7 @@
       ]
     },
     "meaning": {
+      "text": "Significado del Evento",
       "search": [
         {
           "ns": "mythic",

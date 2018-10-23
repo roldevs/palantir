@@ -2,9 +2,10 @@
   "text": "Magia",
   "options": [
     {
-      "text": "magic.physical_effect_physical_form",
+      "text": "Magia",
       "related": {
         "physical_effect": {
+          "text": "Efecto Físico",
           "search": [
             {
               "ns": "maze_rats",
@@ -13,6 +14,7 @@
           ]
         },
         "physical_form": {
+          "text": "Forma Física",
           "search": [
             {
               "ns": "maze_rats",
@@ -23,9 +25,10 @@
       }
     },
     {
-      "text": "Elemento físico, Efecto etéreo",
+      "text": "Magia",
       "related": {
         "physical_effect": {
+          "text": "Efecto Físico",
           "search": [
             {
               "ns": "maze_rats",
@@ -34,6 +37,7 @@
           ]
         },
         "ethereal_form": {
+          "text": "Forma Etérea",
           "search": [
             {
               "ns": "maze_rats",
@@ -44,9 +48,10 @@
       }
     },
     {
-      "text": "Efecto etéreo, Forma física",
+      "text": "Magia",
       "related": {
         "ethereal_effect": {
+          "text": "Efecto Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -55,6 +60,7 @@
           ]
         },
         "physical_form": {
+          "text": "Forma Física",
           "search": [
             {
               "ns": "maze_rats",
@@ -65,9 +71,10 @@
       }
     },
     {
-      "text": "Efecto etéreo, Forma física",
+      "text": "Magia",
       "related": {
         "ethereal_effect": {
+          "text": "Efecto Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -76,6 +83,7 @@
           ]
         },
         "ethereal_form": {
+          "text": "Forma Etérea",
           "search": [
             {
               "ns": "maze_rats",
@@ -86,9 +94,10 @@
       }
     },
     {
-      "text": "Elemento físico, Forma física",
+      "text": "Magia",
       "related": {
         "physical_element": {
+          "text": "Elemento Físico",
           "search": [
             {
               "ns": "maze_rats",
@@ -97,6 +106,7 @@
           ]
         },
         "physical_form": {
+          "text": "Forma Física",
           "search": [
             {
               "ns": "maze_rats",
@@ -107,9 +117,10 @@
       }
     },
     {
-      "text": "Elemento físico, Forma etérea",
+      "text": "Magia",
       "related": {
         "physical_element": {
+          "text": "Elemento Físico",
           "search": [
             {
               "ns": "maze_rats",
@@ -118,6 +129,7 @@
           ]
         },
         "ethereal_form": {
+          "text": "Forma Etérea",
           "search": [
             {
               "ns": "maze_rats",
@@ -128,9 +140,10 @@
       }
     },
     {
-      "text": "Elemento etéreo, Forma física",
+      "text": "Magia",
       "related": {
         "ethereal_element": {
+          "text": "Elemento Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -139,6 +152,7 @@
           ]
         },
         "physical_form": {
+          "text": "Forma Física",
           "search": [
             {
               "ns": "maze_rats",
@@ -149,9 +163,10 @@
       }
     },
     {
-      "text": "Elemento etéreo, Forma etérea",
+      "text": "Magia",
       "related": {
         "ethereal_element": {
+          "text": "Elemento Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -160,6 +175,7 @@
           ]
         },
         "ethereal_form": {
+          "text": "Forma Etérea",
           "search": [
             {
               "ns": "maze_rats",
@@ -170,9 +186,10 @@
       }
     },
     {
-      "text": "Elemento físico, Elemento físico",
+      "text": "Magia",
       "related": {
         "physical_effect": {
+          "text": "Efecto Físico",
           "search": [
             {
               "ns": "maze_rats",
@@ -181,6 +198,7 @@
           ]
         },
         "physical_element": {
+          "text": "Elemento Físico",
           "search": [
             {
               "ns": "maze_rats",
@@ -191,9 +209,10 @@
       }
     },
     {
-      "text": "Elemento físico, Elemento etéreo",
+      "text": "Magia",
       "related": {
         "physical_effect": {
+          "text": "Efecto Físico",
           "search": [
             {
               "ns": "maze_rats",
@@ -202,6 +221,7 @@
           ]
         },
         "ethereal_element": {
+          "text": "Elemento Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -212,9 +232,10 @@
       }
     },
     {
-      "text": "Efecto etéreo, Elemento físico",
+      "text": "Magia",
       "related": {
         "ethereal_effect": {
+          "text": "Efecto Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -223,6 +244,7 @@
           ]
         },
         "physical_element": {
+          "text": "Elemento Físico",
           "search": [
             {
               "ns": "maze_rats",
@@ -233,9 +255,10 @@
       }
     },
     {
-      "text": "Efecto etéreo, Elemento etéreo",
+      "text": "Magia",
       "related": {
         "ethereal_effect": {
+          "text": "Efecto Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -244,6 +267,7 @@
           ]
         },
         "ethereal_element": {
+          "text": "Elemento Etéreo",
           "search": [
             {
               "ns": "maze_rats",

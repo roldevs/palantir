@@ -1,5 +1,5 @@
 {
-  "text": "trap_effect.trap_effect",
+  "text": "Efecto de Trampa",
   "options": [
     {
       "text": "Charco ácido"
@@ -104,9 +104,10 @@
       "text": "Pozo espinado"
     },
     {
-      "text": "Libera %{monster}",
+      "text": "Efecto de Trampa",
       "related": {
         "monster": {
+          "text": "Libera Monstruo",
           "search": [
             {
               "ns": "maze_rats",

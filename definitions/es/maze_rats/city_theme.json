@@ -1,10 +1,11 @@
 {
-  "text": "city_theme.city_theme",
+  "text": "Tema de Ciudad",
   "options": [
     {
-      "text": "%{animal}",
+      "text": "Tema de Ciudad",
       "related": {
         "animal": {
+          "text": "Animal",
           "search": [
             {
               "ns": "maze_rats",
@@ -30,9 +31,10 @@
       "text": "Catacumbas"
     },
     {
-      "text": "%{city_activity}",
+      "text": "Tema de Ciudad",
       "related": {
         "city_activity": {
+          "text": "Actividad de Ciudad",
           "search": [
             {
               "ns": "maze_rats",
@@ -43,9 +45,10 @@
       }
     },
     {
-      "text": "%{city_event}",
+      "text": "Tema de Ciudad",
       "related": {
         "city_event": {
+          "text": "Evento de Ciudad",
           "search": [
             {
               "ns": "maze_rats",
@@ -62,9 +65,10 @@
       "text": "Crueldad"
     },
     {
-      "text": "%{city_district_theme}",
+      "text": "Tema de Ciudad",
       "related": {
         "city_district_theme": {
+          "text": "Temática de Distrito",
           "search": [
             {
               "ns": "maze_rats",
@@ -75,9 +79,10 @@
       }
     },
     {
-      "text": "%{divinity_domain}",
+      "text": "Tema de Ciudad",
       "related": {
         "divinity_domain": {
+          "text": "Dominio Divino",
           "search": [
             {
               "ns": "maze_rats",
@@ -88,9 +93,10 @@
       }
     },
     {
-      "text": "%{faction}",
+      "text": "Tema de Ciudad",
       "related": {
         "faction": {
+          "text": "Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -111,9 +117,10 @@
       "text": "Intriga"
     },
     {
-      "text": "%{city_lowerclass_building}",
+      "text": "Tema de Ciudad",
       "related": {
         "city_lowerclass_building": {
+          "text": "Edificio de Clase Baja",
           "search": [
             {
               "ns": "maze_rats",
@@ -130,9 +137,10 @@
       "text": "Meritocracia"
     },
     {
-      "text": "%{npc}",
+      "text": "Tema de Ciudad",
       "related": {
         "npc": {
+          "text": "PNJ",
           "search": [
             {
               "ns": "maze_rats",
@@ -147,9 +155,10 @@
       "text": "Opulencia"
     },
     {
-      "text": "%{physical_element}",
+      "text": "Tema de Ciudad",
       "related": {
         "physical_element": {
+          "text": "Elemento Físico",
           "search": [
             {
               "ns": "maze_rats",
@@ -193,9 +202,10 @@
       "text": "Tiranía"
     },
     {
-      "text": "%{city_uperclass_building}",
+      "text": "Tema de Ciudad",
       "related": {
         "city_uperclass_building": {
+          "text": "Edificio de Clase Alta",
           "search": [
             {
               "ns": "maze_rats",

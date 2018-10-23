@@ -1,5 +1,5 @@
 {
-  "text": "dungeon_ruination.dungeon_ruination",
+  "text": "Ruinas de la Mazmorra",
   "options": [
     {
       "text": "Desastre arcano"
@@ -59,9 +59,10 @@
       "text": "Hielo"
     },
     {
-      "text": "%{insanity}",
+      "text": "Ruinas de la Mazmorra",
       "related": {
         "insanity": {
+          "text": "Locuras",
           "search": [
             {
               "ns": "maze_rats",
@@ -84,9 +85,10 @@
       "text": "Ataque moustruo"
     },
     {
-      "text": "%{mutation}",
+      "text": "Ruinas de la Mazmorra",
       "related": {
         "mutation": {
+          "text": "Mutación",
           "search": [
             {
               "ns": "maze_rats",

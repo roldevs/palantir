@@ -2,7 +2,7 @@
   "text": "Animal",
   "options": [
     {
-      "text": "Animal Aéreo",
+      "text": "Animal",
       "related": {
         "animal_aerial": {
           "text": "Animal Aéreo",
@@ -16,7 +16,7 @@
       }
     },
     {
-      "text": "Animal Acuático",
+      "text": "Animal",
       "related": {
         "animal_aquatic": {
           "text": "Animal Acuático",
@@ -30,7 +30,7 @@
       }
     },
     {
-      "text": "Animal Terrestre",
+      "text": "Animal",
       "related": {
         "animal_terrestrial": {
           "text": "Animal Terrestre",

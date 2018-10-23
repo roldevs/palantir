@@ -1,29 +1,29 @@
 {
-  "text": "Planta",
+  "text": "Efecto",
   "options": [
     {
-      "text": "Planta",
+      "text": "Efecto",
       "related": {
-        "edible_plant": {
-          "text": "Planta Comestible",
+        "animal_aerial": {
+          "text": "Efecto Físico",
           "search": [
             {
               "ns": "maze_rats",
-              "type": "edible_plant"
+              "type": "physical_effect"
             }
           ]
         }
       }
     },
     {
-      "text": "Planta",
+      "text": "Efecto",
       "related": {
-        "poisonous_plant": {
-          "text": "Planta Venenosa",
+        "animal_aquatic": {
+          "text": "Efecto Etéreo",
           "search": [
             {
               "ns": "maze_rats",
-              "type": "poisonous_plant"
+              "type": "ethereal_effect"
             }
           ]
         }

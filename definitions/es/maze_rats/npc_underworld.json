@@ -1,10 +1,11 @@
 {
-  "text": "npc_underworld.npc_underworld",
+  "text": "PNJ de Bajos Fondos",
   "options": [
     {
-      "text": "npc_underworld.npc_underworld_male",
+      "text": "PNJ de Bajos Fondos",
       "related": {
         "male": {
+          "text": "PNJ Hombre de Bajos Fondos",
           "search": [
             {
               "ns": "maze_rats",
@@ -15,9 +16,10 @@
       }
     },
     {
-      "text": "npc_underworld.npc_underworld_female",
+      "text": "PNJ de Bajos Fondos",
       "related": {
         "female": {
+          "text": "PNJ Mujer de Bajos Fondos",
           "search": [
             {
               "ns": "maze_rats",

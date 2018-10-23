@@ -1,10 +1,11 @@
 {
-  "text": "divinity_domain.divinity_domain",
+  "text": "Dominio Divino",
   "options": [
     {
-      "text": "%{animal}",
+      "text": "Dominio Divino",
       "related": {
         "animal": {
+          "text": "Animal",
           "search": [
             {
               "ns": "maze_rats",
@@ -42,9 +43,10 @@
       "text": "Sueños"
     },
     {
-      "text": "%{element}",
+      "text": "Dominio Divino",
       "related": {
         "element": {
+          "text": "Elemento",
           "search": [
             {
               "ns": "maze_rats",
@@ -76,9 +78,10 @@
       "text": "Maternidad"
     },
     {
-      "text": "%{npc}",
+      "text": "Dominio Divino",
       "related": {
         "npc": {
+          "text": "PNJ",
           "search": [
             {
               "ns": "maze_rats",

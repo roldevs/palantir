@@ -1,5 +1,5 @@
 {
-  "text": "faction_goal.faction_goal",
+  "text": "Objetivo de Facción",
   "options": [
     {
       "text": "Aconsejar líder"
@@ -26,9 +26,10 @@
       "text": "Crear artefacto"
     },
     {
-      "text": "Crear %{monster}",
+      "text": "Objetivo de Facción",
       "related": {
         "monster": {
+          "text": "Crear Monstruo",
           "search": [
             {
               "ns": "maze_rats",
@@ -39,9 +40,10 @@
       }
     },
     {
-      "text": "Destruir %{faction}",
+      "text": "Objetivo de Facción",
       "related": {
         "faction": {
+          "text": "Destruir Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -74,9 +76,10 @@
       "text": "Defender frontera"
     },
     {
-      "text": "Controlar %{faction}",
+      "text": "Objetivo de Facción",
       "related": {
         "faction": {
+          "text": "Controlar Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -133,9 +136,10 @@
       "text": "Extender creencia"
     },
     {
-      "text": "Infiltrar %{faction}",
+      "text": "Objetivo de Facción",
       "related": {
         "faction": {
+          "text": "Infiltrar Facción",
           "search": [
             {
               "ns": "maze_rats",

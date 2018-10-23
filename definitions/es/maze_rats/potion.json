@@ -1,10 +1,11 @@
 {
-  "text": "potion.potion",
+  "text": "Poción",
   "options": [
     {
-      "text": "Forma %{animal}",
+      "text": "Poción",
       "related": {
         "animal": {
+          "text": "Forma Animal",
           "search": [
             {
               "ns": "maze_rats",
@@ -24,9 +25,10 @@
       "text": "Control animal"
     },
     {
-      "text": "Piel %{element}",
+      "text": "Poción",
       "related": {
         "element": {
+          "text": "Piel Elemento",
           "search": [
             {
               "ns": "maze_rats",
@@ -52,9 +54,10 @@
       "text": "Orientacion"
     },
     {
-      "text": "%{insanity}",
+      "text": "Poción",
       "related": {
         "insanity": {
+          "text": "Locura",
           "search": [
             {
               "ns": "maze_rats",
@@ -65,9 +68,10 @@
       }
     },
     {
-      "text": "Forma %{element}",
+      "text": "Poción",
       "related": {
         "element": {
+          "text": "Forma Elemento",
           "search": [
             {
               "ns": "maze_rats",
@@ -90,9 +94,10 @@
       "text": "Infravisión"
     },
     {
-      "text": "Control %{element}",
+      "text": "Poción",
       "related": {
         "element": {
+          "text": "Control Elemento",
           "search": [
             {
               "ns": "maze_rats",
@@ -106,9 +111,10 @@
       "text": "Invulnerable"
     },
     {
-      "text": "Forma %{item}",
+      "text": "Poción",
       "related": {
         "item": {
+          "text": "Forma Objeto",
           "search": [
             {
               "ns": "maze_rats",
@@ -122,9 +128,10 @@
       "text": "Visión nocturna"
     },
     {
-      "text": "%{magic}",
+      "text": "Poción",
       "related": {
         "magic": {
+          "text": "Mágica",
           "search": [
             {
               "ns": "maze_rats",
@@ -141,9 +148,10 @@
       "text": "Andar sobre agua"
     },
     {
-      "text": "%{monster_feature}",
+      "text": "Poción",
       "related": {
         "monster_feature": {
+          "text": "Característica de Monstruo",
           "search": [
             {
               "ns": "maze_rats",
@@ -154,9 +162,10 @@
       }
     },
     {
-      "text": "%{monster_trait}",
+      "text": "Poción",
       "related": {
         "monster_trait": {
+          "text": "Rasgo de Monstruo",
           "search": [
             {
               "ns": "maze_rats",
@@ -167,9 +176,10 @@
       }
     },
     {
-      "text": "%{mutation}",
+      "text": "Poción",
       "related": {
         "mutation": {
+          "text": "Mutación",
           "search": [
             {
               "ns": "maze_rats",
@@ -204,9 +214,10 @@
       "text": "Imagen especular"
     },
     {
-      "text": "%{monster_ability}",
+      "text": "Poción",
       "related": {
         "monster_ability": {
+          "text": "Habilidad de Monstruo",
           "search": [
             {
               "ns": "maze_rats",

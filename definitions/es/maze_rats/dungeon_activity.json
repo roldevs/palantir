@@ -1,5 +1,5 @@
 {
-  "text": "dungeon_activity.dungeon_activity",
+  "text": "Actividad de Mazmorra",
   "options": [
     {
       "text": "Asediar"
@@ -8,9 +8,10 @@
       "text": "Capturar"
     },
     {
-      "text": "%{city_activity}",
+      "text": "Actividad de Mazmorra",
       "related": {
         "city_activity": {
+          "text": "Actividad de Ciudad",
           "search": [
             {
               "ns": "maze_rats",
@@ -54,9 +55,10 @@
       "text": "Mina"
     },
     {
-      "text": "%{monster_tactic}",
+      "text": "Actividad de Mazmorra",
       "related": {
         "monster_tactic": {
+          "text": "Táctica de Monstruo",
           "search": [
             {
               "ns": "maze_rats",
@@ -115,9 +117,10 @@
       "text": "Vandalismo"
     },
     {
-      "text": "%{wild_activity}",
+      "text": "Actividad de Mazmorra",
       "related": {
         "wild_activity": {
+          "text": "Actividad de la Naturaleza",
           "search": [
             {
               "ns": "maze_rats",

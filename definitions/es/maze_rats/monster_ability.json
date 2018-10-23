@@ -1,5 +1,5 @@
 {
-  "text": "monster_ability.monster_ability",
+  "text": "Habilidad de Monstruo",
   "options": [
     {
       "text": "Absorbente"
@@ -29,9 +29,10 @@
       "text": "Enreda"
     },
     {
-      "text": "${ethereal_effect}",
+      "text": "Habilidad de Monstruo",
       "related": {
         "ethereal_effect": {
+          "text": "Efecto Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -78,9 +79,10 @@
       "text": "Fase (planos)"
     },
     {
-      "text": "${physical_effect}",
+      "text": "Habilidad de Monstruo",
       "related": {
         "physical_effect": {
+          "text": "Efecto Físico",
           "search": [
             {
               "ns": "maze_rats",

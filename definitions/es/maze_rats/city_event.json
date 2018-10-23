@@ -1,5 +1,5 @@
 {
-  "text": "city_event.city_event",
+  "text": "Evento de Ciudad",
   "options": [
     {
       "text": "Asesinato"
@@ -29,9 +29,10 @@
       "text": "Terremoto"
     },
     {
-      "text": "Guerra %{faction}",
+      "text": "Evento de Ciudad",
       "related": {
         "faction": {
+          "text": "Guerra con Facción",
           "search": [
             {
               "ns": "maze_rats",

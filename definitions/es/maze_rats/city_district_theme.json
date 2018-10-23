@@ -1,13 +1,14 @@
 {
-  "text": "city_district_theme.city_district_theme",
+  "text": "Temática de Dristrito",
   "options": [
     {
       "text": "Catacumbas"
     },
     {
-      "text": "%{npc_civilized}",
+      "text": "Temática de Dristrito",
       "related": {
         "npc_civilized": {
+          "text": "NPC Civilizado",
           "search": [
             {
               "ns": "maze_rats",
@@ -100,9 +101,10 @@
       "text": "Basura"
     },
     {
-      "text": "%{npc_underworld}",
+      "text": "Temática de Dristrito",
       "related": {
         "npc_underworld": {
+          "text": "NPC Bajos Fondos",
           "search": [
             {
               "ns": "maze_rats",
@@ -114,9 +116,10 @@
       }
     },
     {
-      "text": "%{city_upperclass_building}",
+      "text": "Temática de Dristrito",
       "related": {
         "city_upperclass_building": {
+          "text": "Edificio Clase Alta",
           "search": [
             {
               "ns": "maze_rats",
@@ -127,9 +130,10 @@
       }
     },
     {
-      "text": "%{city_lowerclass_building}",
+      "text": "Temática de Dristrito",
       "related": {
         "city_lowerclass_building": {
+          "text": "Edificio Clase Baja",
           "search": [
             {
               "ns": "maze_rats",
@@ -143,9 +147,10 @@
       "text": "Vicios"
     },
     {
-      "text": "%{npc_wilderness}",
+      "text": "Temática de Dristrito",
       "related": {
         "npc_wilderness": {
+          "text": "NPC Naturaleza",
           "search": [
             {
               "ns": "maze_rats",

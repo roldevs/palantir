@@ -1,6 +1,6 @@
 
 {
-  "text": "catastrophe.catastrophe",
+  "text": "Catástrofe",
   "options": [
     {
       "text": "Hierro oxida"
@@ -9,10 +9,10 @@
       "text": "Animales mutan"
     },
     {
-      "text": "Animales %{mutation}",
+      "text": "Catástrofe",
       "related": {
         "mutation": {
-          "text": "Mutación",
+          "text": "Animales %{mutation}",
           "search": [
             {
               "ns": "maze_rats",

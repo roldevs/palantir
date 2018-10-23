@@ -1,5 +1,5 @@
 {
-  "text": "npc_goal.npc_goal",
+  "text": "Objetivo del PNJ",
   "options": [
     {
       "text": "Vida mejor"
@@ -8,9 +8,10 @@
       "text": "Aceptación"
     },
     {
-      "text": "Tener %{item}",
+      "text": "Objetivo del PNJ",
       "related": {
         "item": {
+          "text": "Poseer Objeto",
           "search": [
             {
               "ns": "maze_rats",
@@ -22,9 +23,10 @@
       }
     },
     {
-      "text": "Forjar %{item}",
+      "text": "Objetivo del PNJ",
       "related": {
         "item": {
+          "text": "Forjar Objeto",
           "search": [
             {
               "ns": "maze_rats",
@@ -36,9 +38,10 @@
       }
     },
     {
-      "text": "Destruir %{faction}",
+      "text": "Objetivo del PNJ",
       "related": {
         "faction": {
+          "text": "Destruir Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -50,9 +53,10 @@
       }
     },
     {
-      "text": "Destuir %{item}",
+      "text": "Objetivo del PNJ",
       "related": {
         "item": {
+          "text": "Destruir Objeto",
           "search": [
             {
               "ns": "maze_rats",
@@ -70,9 +74,10 @@
       "text": "Fama"
     },
     {
-      "text": "Hallar %{faction}",
+      "text": "Objetivo del PNJ",
       "related": {
         "faction": {
+          "text": "Hallar Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -90,9 +95,10 @@
       "text": "Gloria"
     },
     {
-      "text": "Impresionar %{npc}",
+      "text": "Objetivo del PNJ",
       "related": {
         "npc": {
+          "text": "Impresionar PNJ",
           "search": [
             {
               "ns": "maze_rats",
@@ -107,9 +113,10 @@
       "text": "Infamia"
     },
     {
-      "text": "Infiltrar %{faction}",
+      "text": "Objetivo del PNJ",
       "related": {
         "faction": {
+          "text": "Inflirtrar Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -124,9 +131,10 @@
       "text": "Justicia"
     },
     {
-      "text": "Secuestro %{npc}",
+      "text": "Objetivo del PNJ",
       "related": {
         "npc": {
+          "text": "Secuestro de PNJ",
           "search": [
             {
               "ns": "maze_rats",
@@ -138,9 +146,10 @@
       }
     },
     {
-      "text": "Liderar %{faction}",
+      "text": "Objetivo del PNJ",
       "related": {
         "faction": {
+          "text": "Liderar Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -155,9 +164,10 @@
       "text": "Aprender"
     },
     {
-      "text": "Hallar %{npc}",
+      "text": "Objetivo del PNJ",
       "related": {
         "npc": {
+          "text": "Hallar PNJ",
           "search": [
             {
               "ns": "maze_rats",
@@ -181,9 +191,10 @@
       "text": "Alcanzar lugar"
     },
     {
-      "text": "Rescatar %{npc}",
+      "text": "Objetivo del PNJ",
       "related": {
         "npc": {
+          "text": "Rescatar PNJ",
           "search": [
             {
               "ns": "maze_rats",
@@ -198,9 +209,10 @@
       "text": "Zanjar disputa"
     },
     {
-      "text": "Restaurar %{faction}",
+      "text": "Objetivo del PNJ",
       "related": {
         "faction": {
+          "text": "Restaurar Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -218,9 +230,10 @@
       "text": "Venganza"
     },
     {
-      "text": "Sabotear %{faction}",
+      "text": "Objetivo del PNJ",
       "related": {
         "faction": {
+          "text": "Sabotear Facción",
           "search": [
             {
               "ns": "maze_rats",
@@ -238,9 +251,10 @@
       "text": "Servir al mal"
     },
     {
-      "text": "Servir %{faction}",
+      "text": "Objetivo del PNJ",
       "related": {
         "faction": {
+          "text": "Servir Facción",
           "search": [
             {
               "ns": "maze_rats",

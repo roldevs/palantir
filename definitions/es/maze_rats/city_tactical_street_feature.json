@@ -1,5 +1,5 @@
 {
-  "text": "city_tactical_street_feature.city_tactical_street_feature",
+  "text": "Elementos Tácticos de la Calle",
   "options": [
     {
       "text": "Soportales"
@@ -26,9 +26,10 @@
       "text": "Pasarelas"
     },
     {
-      "text": "%{city_activity}",
+      "text": "Elementos Tácticos de la Calle",
       "related": {
         "city_activity": {
+          "text": "Actividad de Ciudad",
           "search": [
             {
               "ns": "maze_rats",
@@ -57,9 +58,10 @@
       "text": "Lluvia intensa"
     },
     {
-      "text": "%{dungeon_activity}",
+      "text": "Elementos Tácticos de la Calle",
       "related": {
         "dungeon_activity": {
+          "text": "Actividad de Mazmorra",
           "search": [
             {
               "ns": "maze_rats",
@@ -109,9 +111,10 @@
       "text": "Resbaladizo"
     },
     {
-      "text": "%{wild_activity}",
+      "text": "Elementos Tácticos de la Calle",
       "related": {
         "wild_activity": {
+          "text": "Actividad de Naturaleza",
           "search": [
             {
               "ns": "maze_rats",

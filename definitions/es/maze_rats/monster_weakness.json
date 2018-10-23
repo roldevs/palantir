@@ -1,5 +1,5 @@
 {
-  "text": "monster_weakness.monster_weakness",
+  "text": "Debilidad del Monstruo",
   "options": [
     {
       "text": "Campanas"
@@ -50,9 +50,10 @@
       "text": "Comida casera"
     },
     {
-      "text": "%{insanity}",
+      "text": "Debilidad del Monstruo",
       "related": {
         "insanity": {
+          "text": "Locura",
           "search": [
             {
               "ns": "maze_rats",
@@ -75,9 +76,10 @@
       "text": "Música"
     },
     {
-      "text": "%{npc_method}",
+      "text": "Debilidad del Monstruo",
       "related": {
         "npc_method": {
+          "text": "Método de PNJ",
           "search": [
             {
               "ns": "maze_rats",
@@ -91,9 +93,10 @@
       "text": "Filateria"
     },
     {
-      "text": "%{physical_element}",
+      "text": "Debilidad del Monstruo",
       "related": {
         "physical_element": {
+          "text": "Elemento Físico",
           "search": [
             {
               "ns": "maze_rats",
@@ -125,9 +128,10 @@
       "text": "Nombre real"
     },
     {
-      "text": "%{valuable_material}",
+      "text": "Debilidad del Monstruo",
       "related": {
         "valuable_material": {
+          "text": "Material Valioso",
           "search": [
             {
               "ns": "maze_rats",
@@ -141,9 +145,10 @@
       "text": "Punto débil"
     },
     {
-      "text": "%{weapon_item}",
+      "text": "Debilidad del Monstruo",
       "related": {
         "weapon_item": {
+          "text": "Arma",
           "search": [
             {
               "ns": "maze_rats",

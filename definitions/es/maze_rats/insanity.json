@@ -1,5 +1,5 @@
 {
-  "text": "insanity.insanity",
+  "text": "Locura",
   "options": [
     {
       "text": "Siempre miente"
@@ -8,9 +8,10 @@
       "text": "Siempre educado"
     },
     {
-      "text": "'Forma %{animal}'",
+      "text": "Locura",
       "related": {
         "animal": {
+          "text": "Forma Animal",
           "search": [
             {
               "ns": "maze_rats",
@@ -99,9 +100,10 @@
       "text": "'Invulnerable'"
     },
     {
-      "text": "'%{monster_ability}'",
+      "text": "Locura",
       "related": {
         "monster_ability": {
+          "text": "Habilidad de Monstruo",
           "search": [
             {
               "ns": "maze_rats",
@@ -112,9 +114,10 @@
       }
     },
     {
-      "text": "'%{monster_feature}'",
+      "text": "Locura",
       "related": {
         "monster_feature": {
+          "text": "Característica de Monstruo",
           "search": [
             {
               "ns": "maze_rats",
@@ -125,9 +128,10 @@
       }
     },
     {
-      "text": "'%{monster_trait}'",
+      "text": "Locura",
       "related": {
         "monster_trait": {
+          "text": "Rasgo de Monstruo",
           "search": [
             {
               "ns": "maze_rats",

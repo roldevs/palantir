@@ -1,5 +1,5 @@
 {
-  "text": "mutation.mutation",
+  "text": "Mutación",
   "options": [
     {
       "text": "Envejece"
@@ -14,9 +14,10 @@
       "text": "Corpulencia"
     },
     {
-      "text": "Brazos %{animal}",
+      "text": "Mutación",
       "related": {
         "animal": {
+          "text": "Brazos de Animal",
           "search": [
             {
               "ns": "maze_rats",
@@ -30,9 +31,10 @@
       "text": "Pelaje"
     },
     {
-      "text": "Ojos %{animal}",
+      "text": "Mutación",
       "related": {
         "animal": {
+          "text": "Ojos de Animal",
           "search": [
             {
               "ns": "maze_rats",
@@ -43,9 +45,10 @@
       }
     },
     {
-      "text": "Cabeza %{animal}",
+      "text": "Mutación",
       "related": {
         "animal": {
+          "text": "Cabeza de Animal",
           "search": [
             {
               "ns": "maze_rats",
@@ -56,9 +59,10 @@
       }
     },
     {
-      "text": "Piernas %{animal}",
+      "text": "Mutación",
       "related": {
         "animal": {
+          "text": "Piernas de Animal",
           "search": [
             {
               "ns": "maze_rats",
@@ -69,9 +73,10 @@
       }
     },
     {
-      "text": "Boca %{animal}",
+      "text": "Mutación",
       "related": {
         "animal": {
+          "text": "Boca de Animal",
           "search": [
             {
               "ns": "maze_rats",

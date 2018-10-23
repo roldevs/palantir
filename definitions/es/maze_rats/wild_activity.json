@@ -1,5 +1,5 @@
 {
-  "text": "wild_activity.wild_activity",
+  "text": "Actividad en Naturaleza",
   "options": [
     {
       "text": "Emboscada"
@@ -20,9 +20,10 @@
       "text": "Capturar"
     },
     {
-      "text": "%{city_activity}",
+      "text": "Actividad de Naturaleza",
       "related": {
         "city_activity": {
+          "text": "Actividad de Ciudad",
           "search": [
             {
               "ns": "maze_rats",
@@ -45,9 +46,10 @@
       "text": "Duelo"
     },
     {
-      "text": "%{dungeon_activity}",
+      "text": "Actividad de Naturaleza",
       "related": {
         "dungeon_activity": {
+          "text": "Actividad de Mazmorra",
           "search": [
             {
               "ns": "maze_rats",

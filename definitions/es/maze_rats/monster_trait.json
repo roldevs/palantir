@@ -1,5 +1,5 @@
 {
-  "text": "monster_trait.monster_trait",
+  "text": "Rasgo del Monstruo",
   "options": [
     {
       "text": "Anfibio"
@@ -26,9 +26,10 @@
       "text": "Pútrido"
     },
     {
-      "text": "${ethereal_effect}",
+      "text": "Rasgo del Monstruo",
       "related": {
         "ethereal_effect": {
+          "text": "Efecto Etéreo",
           "search": [
             {
               "ns": "maze_rats",
@@ -84,9 +85,10 @@
       "text": "Mecánico"
     },
     {
-      "text": "${physical_effect}",
+      "text": "Rasgo del Monstruo",
       "related": {
         "physical_effect": {
+          "text": "Efecto Físico",
           "search": [
             {
               "ns": "maze_rats",

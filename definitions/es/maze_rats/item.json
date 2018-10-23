@@ -2,9 +2,10 @@
   "text": "Item",
   "options": [
     {
+      "text": "Item",
       "related": {
         "miscellaneous_item": {
-          "text": "Miscelánea",
+          "text": "Misceláneo",
           "search": [
             {
               "ns": "maze_rats",
@@ -15,6 +16,7 @@
       }
     },
     {
+      "text": "Item",
       "related": {
         "worn_item": {
           "text": "Ropajes",
@@ -28,6 +30,7 @@
       }
     },
     {
+      "text": "Item",
       "related": {
         "weapon_item": {
           "text": "Armas",
@@ -41,6 +44,7 @@
       }
     },
     {
+      "text": "Item",
       "related": {
         "tool_item": {
           "text": "Herramientas",
@@ -54,6 +58,7 @@
       }
     },
     {
+      "text": "Item",
       "related": {
         "treasure_item": {
           "text": "Tesoro",

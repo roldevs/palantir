@@ -1,7 +1,8 @@
 {
-  "text": "npc_lowerclass_male.npc_lowerclass_male",
+  "text": "PNJ Hombre Clase Baja",
   "related": {
     "asset": {
+      "text": "Baza",
       "search": [
         {
           "ns": "maze_rats",
@@ -10,6 +11,7 @@
       ]
     },
     "liability": {
+      "text": "Lastres",
       "search": [
         {
           "ns": "maze_rats",
@@ -18,6 +20,7 @@
       ]
     },
     "misfortune": {
+      "text": "Infortunio",
       "search": [
         {
           "ns": "maze_rats",
@@ -26,6 +29,7 @@
       ]
     },
     "goal": {
+      "text": "Objetivo",
       "search": [
         {
           "ns": "maze_rats",
@@ -34,6 +38,7 @@
       ]
     },
     "method": {
+      "text": "Método",
       "search": [
         {
           "ns": "maze_rats",
@@ -42,6 +47,7 @@
       ]
     },
     "appearance": {
+      "text": "Apariencia",
       "search": [
         {
           "ns": "maze_rats",
@@ -51,6 +57,7 @@
       "count": 3
     },
     "physical": {
+      "text": "Físico",
       "search": [
         {
           "ns": "maze_rats",
@@ -59,6 +66,7 @@
       ]
     },
     "clothes": {
+      "text": "Ropaje",
       "search": [
         {
           "ns": "maze_rats",
@@ -67,6 +75,7 @@
       ]
     },
     "personality": {
+      "text": "Personalidad",
       "search": [
         {
           "ns": "maze_rats",
@@ -75,6 +84,7 @@
       ]
     },
     "mannerism": {
+      "text": "Manierismo",
       "search": [
         {
           "ns": "maze_rats",
@@ -83,6 +93,7 @@
       ]
     },
     "hobby": {
+      "text": "Hobby",
       "search": [
         {
           "ns": "maze_rats",
@@ -91,6 +102,7 @@
       ]
     },
     "secret": {
+      "text": "Secreto",
       "search": [
         {
           "ns": "maze_rats",
@@ -99,6 +111,7 @@
       ]
     },
     "reputation": {
+      "text": "Reputación",
       "search": [
         {
           "ns": "maze_rats",
@@ -107,6 +120,7 @@
       ]
     },
     "relation": {
+      "text": "Relación",
       "search": [
         {
           "ns": "maze_rats",
@@ -115,6 +129,7 @@
       ]
     },
     "divinity_domain": {
+      "text": "Dominio Divino",
       "search": [
         {
           "ns": "maze_rats",
@@ -123,6 +138,7 @@
       ]
     },
     "male_name": {
+      "text": "Nombre",
       "search": [
         {
           "ns": "maze_rats",
@@ -131,6 +147,7 @@
       ]
     },
     "male_surname": {
+      "text": "Apellidos",
       "search": [
         {
           "ns": "maze_rats",
@@ -139,6 +156,7 @@
       ]
     },
     "occupation": {
+      "text": "Profesión",
       "search": [
         {
           "ns": "maze_rats",

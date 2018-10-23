@@ -1,10 +1,11 @@
 {
-  "text": "city_tactical_building_feature.city_tactical_building_feature",
+  "text": "Elementos Tácticos de Edificios",
   "options": [
     {
-      "text": "Nido %{animal}",
+      "text": "Elementos Tácticos de Edificios",
       "related": {
         "animal": {
+          "text": "Nido de Animal",
           "search": [
             {
               "ns": "maze_rats",

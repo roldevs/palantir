@@ -1,5 +1,5 @@
 {
-  "text": "dungeon_form.dungeon_form",
+  "text": "Forma de la Mazmorra",
   "options": [
     {
       "text": "Ruedo"
@@ -38,9 +38,10 @@
       "text": "Laboratorio"
     },
     {
-      "text": "%{city_building_room}",
+      "text": "Forma de la Mazmorra",
       "related": {
         "city_building_room": {
+          "text": "Habitación de Ciudad",
           "search": [
             {
               "ns": "maze_rats",
@@ -60,9 +61,10 @@
       "text": "Hotel"
     },
     {
-      "text": "%{city_lowerclass_building}",
+      "text": "Forma de la Mazmorra",
       "related": {
         "city_lowerclass_building": {
+          "text": "Edificio de Clase Baja",
           "search": [
             {
               "ns": "maze_rats",
@@ -73,9 +75,10 @@
       }
     },
     {
-      "text": "%{dungeon_room}",
+      "text": "Forma de la Mazmorra",
       "related": {
         "dungeon_room": {
+          "text": "Habitación de Mazmorra",
           "search": [
             {
               "ns": "maze_rats",
@@ -125,9 +128,10 @@
       "text": "Teatro"
     },
     {
-      "text": "%{city_upperclass_building}",
+      "text": "Forma de la Mazmorra",
       "related": {
         "city_upperclass_building": {
+          "text": "Edificio de Clase Alta",
           "search": [
             {
               "ns": "maze_rats",

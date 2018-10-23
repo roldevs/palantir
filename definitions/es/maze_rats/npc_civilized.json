@@ -1,10 +1,11 @@
 {
-  "text": "npc_civilized.npc_civilized",
+  "text": "PNJ Civilizado",
   "options": [
     {
-      "text": "npc_civilized.npc_civilized_male",
+      "text": "PNJ Civilizado",
       "related": {
         "male": {
+          "text": "PNJ Hombre Civilizado",
           "search": [
             {
               "ns": "maze_rats",
@@ -15,9 +16,10 @@
       }
     },
     {
-      "text": "npc_civilized.npc_civilized_female",
+      "text": "PNJ Civilizado",
       "related": {
         "female": {
+          "text": "PNJ Mujer Civilizada",
           "search": [
             {
               "ns": "maze_rats",

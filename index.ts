@@ -1,28 +1,39 @@
-// tslint:disable:no-console
-// import fs from 'fs';
-import * as R from 'ramda';
-import connectorCreator from './src/lib/connectors/local';
-import repositoryCreator from './src/lib/repository/memory';
-import {
-  IElementDefinition,
-  IOptionalElement,
-  IOptionalElementDefinition,
-  IRelatedElement,
-  IRelatedElements,
-} from './src/lib/typings';
-import { JSONprettify } from './src/lib/utils';
-import worldCreator from './src/lib/world';
+// // tslint:disable:no-console
+// // import fs from 'fs';
+// import * as R from 'ramda';
+// import connectorCreator from './src/lib/connectors/local';
+// import repositoryCreator from './src/lib/repository/memory';
+// import {
+//   IElementDefinition,
+//   IOptionalElement,
+//   IOptionalElementDefinition,
+//   IRelatedElement,
+//   IRelatedElements,
+// } from './src/lib/typings';
+// import { JSONprettify } from './src/lib/utils';
+// import worldCreator from './src/lib/world';
 
-import { join } from 'path';
-import folders from './src/lib/file/folders';
+// import { join } from 'path';
+// import folders from './src/lib/file/folders';
 
-// const f = folders(join(__dirname, 'definitions'));
-// f.folders().then(console.log);
+// // const f = folders(join(__dirname, 'definitions'));
+// // f.folders().then(console.log);
+
+// // const world = worldCreator({
+// //   locale: 'es',
+// //   connector: connectorCreator({
+// //     baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
+// //   }),
+// //   repository: repositoryCreator({
+// //     locale: 'es',
+// //     elements: {},
+// //   }),
+// // });
 
 // const world = worldCreator({
 //   locale: 'es',
 //   connector: connectorCreator({
-//     baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
+//     rootPath: './definitions',
 //   }),
 //   repository: repositoryCreator({
 //     locale: 'es',
@@ -30,48 +41,37 @@ import folders from './src/lib/file/folders';
 //   }),
 // });
 
-const world = worldCreator({
-  locale: 'es',
-  connector: connectorCreator({
-    rootPath: './definitions',
-  }),
-  repository: repositoryCreator({
-    locale: 'es',
-    elements: {},
-  }),
-});
+// const search: IRelatedElement = {
+//   search: [{
+//     ns: 'mr',
+//     type: 'npc_asset',
+//   }],
+//   count: 2,
+// };
 
-const search: IRelatedElement = {
-  search: [{
-    ns: 'mr',
-    type: 'npc_asset',
-  }],
-  count: 2,
-};
+// const checkRelated: (relatedElements: IRelatedElements) => void =
+// (relatedElements) => {
+//   R.forEach((key: string) => {
+//     const related: IRelatedElement = relatedElements[key];
+//     if (!related.results) {
+//       console.log(`- ${key}: Result not found`);
+//     }
+//     R.forEach((element: IElementDefinition) => {
+//       if (element.related) {
+//         checkRelated(element.related);
+//       }
+//     });
+//   }, R.keys(relatedElements));
+// };
 
-const checkRelated: (relatedElements: IRelatedElements) => void =
-(relatedElements) => {
-  R.forEach((key: string) => {
-    const related: IRelatedElement = relatedElements[key];
-    if (!related.results) {
-      console.log(`- ${key}: Result not found`);
-    }
-    R.forEach((element: IElementDefinition) => {
-      if (element.related) {
-        checkRelated(element.related);
-      }
-    });
-  }, R.keys(relatedElements));
-};
-
-world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
-  R.forEach((element: IOptionalElementDefinition | IOptionalElement) => {
-    if (element && element.related) {
-      checkRelated(element!.related as IRelatedElements);
-    }
-  }, elements);
-  return elements;
-}).then(R.compose(console.log, JSONprettify));
+// world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
+//   R.forEach((element: IOptionalElementDefinition | IOptionalElement) => {
+//     if (element && element.related) {
+//       checkRelated(element!.related as IRelatedElements);
+//     }
+//   }, elements);
+//   return elements;
+// }).then(R.compose(console.log, JSONprettify));
 
 // import requireDir from 'require-dir';
 // import localConnector from './lib/connectors/local';

@@ -35,7 +35,7 @@ const relatedModule: IRelatedModule =
   const processRelated: (relatedMap: IRelatedElements) => Bluebird<IRelatedElements> =
   (relatedMap) => {
     return Bluebird.map(
-      R.keys(relatedMap),
+      R.keys(relatedMap) as string[],
       (key: string) => {
         return oneRelated(relatedMap[key]).then((related: IRelatedElement) => {
           return R.set(R.lensProp(key), related, relatedMap);

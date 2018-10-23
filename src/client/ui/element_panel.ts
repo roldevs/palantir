@@ -72,7 +72,7 @@ const listItem: (title: string, description: string) => VNode =
 const reduceRelated: (
   related: IRelatedElements | null,
   parent: IElementDefinition | IElement | null,
-) => (key: string) => VNode =
+) => (key: any) => VNode =
 (related, _) => (key) => {
   const rel: IRelatedElement = related![key] as IRelatedElement;
   const content: VNode[] = R.map((element: IElementDefinition | IElement | null) => {
@@ -100,8 +100,6 @@ const relatedPanel: (element: IElementDefinition | IElement | null) => VNode[] =
 
 const panel: (model: IResultsState) => VNode =
 (model) => {
-  dg('panel', model);
-
   const content: VNode[] = R.map((element: IElementDefinition | IElement) => {
     return elementPanel(elementText(element), element);
   }, model.elements);

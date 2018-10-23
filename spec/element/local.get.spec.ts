@@ -60,7 +60,7 @@ describe('Element#get', () => {
           const trigger: any = value!.related!.trigger.results![0]!;
 
           expect(value).is.not.undefined;
-          expect(value!.text).to.eql('Trap');
+          expect(value!.text).to.eql('Trampa');
           expect(effect).is.not.undefined;
           expect(trigger).is.not.undefined;
           expect(effect.text).is.not.undefined;

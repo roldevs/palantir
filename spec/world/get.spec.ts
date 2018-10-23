@@ -179,9 +179,6 @@ describe('World#get', () => {
       it('return the npc_asset with faction related', (done) => {
         world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
           const element: IElementDefinition = elements[0]! as IElementDefinition;
-
-          // tslint:disable-next-line:no-console
-          console.log(element);
           expect(element.text).to.eql('Animal');
           done();
         });

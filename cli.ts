@@ -1,4 +1,5 @@
 #!/usr/bin/env ts-node
+// tslint:disable:no-console
 import * as R from 'ramda';
 import cliCreator from './src/lib/cli';
 import {

@@ -87,9 +87,10 @@
       }
     },
     {
-      "text": "Piel %{animal}",
+      "text": "Mutación",
       "related": {
         "animal": {
+          "text": "Piel de Animal",
           "search": [
             {
               "ns": "maze_rats",
@@ -100,9 +101,10 @@
       }
     },
     {
-      "text": "Forma %{animal}",
+      "text": "Mutación",
       "related": {
         "animal": {
+          "text": "Forma de Animal",
           "search": [
             {
               "ns": "maze_rats",
@@ -134,9 +136,10 @@
       "text": "Jorobado"
     },
     {
-      "text": "Forma %{item}",
+      "text": "Mutación",
       "related": {
         "item": {
+          "text": "Forma de Objeto",
           "search": [
             {
               "ns": "maze_rats",
@@ -156,9 +159,10 @@
       "text": "Sin dientes"
     },
     {
-      "text": "%{monster_feature}",
+      "text": "Mutación",
       "related": {
         "monster_feature": {
+          "text": "Característica de Monstruo",
           "search": [
             {
               "ns": "maze_rats",
@@ -169,9 +173,10 @@
       }
     },
     {
-      "text": "%{monster_trait}",
+      "text": "Mutación",
       "related": {
         "monster_trait": {
+          "text": "Rasgo de Monstruo",
           "search": [
             {
               "ns": "maze_rats",
@@ -185,9 +190,10 @@
       "text": "Sin ojos"
     },
     {
-      "text": "Piel %{physical_effect}",
+      "text": "Mutación",
       "related": {
         "physical_effect": {
+          "text": "Piel con Efecto Físico",
           "search": [
             {
               "ns": "maze_rats",

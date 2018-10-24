@@ -15,7 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      //'./node_modules/babel-polyfill/dist/polyfill.js',
+      './node_modules/es6-shim/es6-shim.js',
+      './node_modules/babel-polyfill/dist/polyfill.js',
       './src/lib/**/*.ts',
       {pattern: 'spec/**/*.spec.ts'},
     ],
@@ -70,7 +71,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
@@ -83,7 +84,7 @@ module.exports = function(config) {
 
     plugins: [
       'karma-global-preprocessor',
-      'karma-phantomjs-launcher',
+      'karma-chrome-launcher',
       'karma-coverage',
       'karma-mocha',
       'karma-mocha-reporter',

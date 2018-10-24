@@ -9,10 +9,11 @@ jobs:
       #CC_TEST_REPORTER_ID: 3e54...
       #HEROKU_API_KEY: abee...
       #HEROKU_APP_NAME: ...
+      CHROME_BIN: "/usr/bin/google-chrome"
 
     docker:
       # specify the version you desire here
-      - image: circleci/node:10.2.1
+      - image: circleci/node:10.2.1-browsers
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images

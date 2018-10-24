@@ -1,0 +1,17 @@
+text: Posada
+related:
+  adjective:
+    text: Adjetivo
+    search:
+      - ns: maze_rats
+        type: inn_adjective
+  name:
+    text: Nombre
+    search:
+      - ns: maze_rats
+        type: inn_name
+  quirk:
+    text: Peculiaridad
+    search:
+      - ns: maze_rats
+        type: inn_quirk

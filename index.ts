@@ -1,4 +1,98 @@
-// // tslint:disable:no-console
+// tslint:disable:no-console
+import Bluebird, { any } from 'bluebird';
+import program from 'commander';
+import * as R from 'ramda';
+import localConnectorCreator from './src/lib/connectors/local';
+import remoteConnectorCreator from './src/lib/connectors/remote';
+import formatterCreator from './src/lib/formatter/cli';
+import repositoryCreator from './src/lib/repository/memory';
+import {
+  ICliModule,
+  IElementDefinition,
+  IFormattedResult,
+  IOptionalElementDefinition,
+} from './src/lib/typings';
+import { JSONprettify, removeExtension } from './src/lib/utils';
+import worldCreator from './src/lib/world';
+
+const debug: boolean = false;
+const locale: string = 'es';
+const useConnector: number = 1;
+const count: number = 1;
+const ns: string = 'maze_rats';
+const type: string = 'animal';
+
+const connectorCreators: any = {
+  0: remoteConnectorCreator({
+    debug,
+    baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
+  }),
+  1: localConnectorCreator({
+    rootPath: './definitions',
+  }),
+};
+
+const world = worldCreator({
+  locale,
+  connector: connectorCreators[useConnector],
+  repository: repositoryCreator({
+    locale,
+    elements: {},
+  }),
+});
+
+const spaces: (n: number) => string = (n) => ' '.repeat(n);
+
+const print: (element: IElementDefinition, parent: IElementDefinition | null, depth: number ) => void =
+(element, parent, depth) => {
+  if (element.related) {
+    console.log(`${spaces(depth)} ${element.text}`);
+    R.forEach(
+      (keyRelated: any) => {
+        const related: any = element.related![keyRelated];
+        R.forEach(
+          (result: any) => {
+            print(result, related, depth + 1);
+          },
+          related.results,
+        );
+      },
+      R.keys(element.related),
+    );
+  } else {
+    if (parent) {
+      console.log(`${spaces(depth)} ${parent.text}: ${element.text}`);
+    } else {
+      console.log(`${spaces(depth)} ${element.text}`);
+    }
+  }
+};
+
+world.get({
+  search: [{ns, type}],
+  count,
+}).then((data: any) => {
+  R.forEach(
+    (element: IElementDefinition) => {
+      console.log(JSONprettify(element));
+      print(element, null, 0);
+    }, data,
+  );
+});
+
+// import { readdirSync, readFileSync, writeFileSync } from 'fs';
+// import YAML from 'yaml';
+// const testFolder = './definitions/es/osdw';
+
+// readdirSync(testFolder).forEach((file: string) => {
+//   const data: any = readFileSync(testFolder + '/' + file);
+//   const element: IOptionalElementDefinition = JSON.parse(data);
+//   writeFileSync(
+//     testFolder + '/' + removeExtension(file) + '.yml',
+//     YAML.stringify(element),
+//   );
+// });
+
 // // import fs from 'fs';
 // import * as R from 'ramda';
 // import connectorCreator from './src/lib/connectors/local';

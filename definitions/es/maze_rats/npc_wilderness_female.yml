@@ -1,0 +1,93 @@
+text: PNJ Mujer Naturaleza
+related:
+  asset:
+    text: Baza
+    search:
+      - ns: maze_rats
+        type: npc_asset
+  liability:
+    text: Lastres
+    search:
+      - ns: maze_rats
+        type: npc_liability
+  misfortune:
+    text: Infortunio
+    search:
+      - ns: maze_rats
+        type: npc_misfortune
+  goal:
+    text: Objetivo
+    search:
+      - ns: maze_rats
+        type: npc_goal
+  method:
+    text: Método
+    search:
+      - ns: maze_rats
+        type: npc_reputation
+  appearance:
+    text: Apariencia
+    search:
+      - ns: maze_rats
+        type: appearance
+    count: 3
+  physical:
+    text: Físico
+    search:
+      - ns: maze_rats
+        type: pc_physical
+  clothes:
+    text: Ropaje
+    search:
+      - ns: maze_rats
+        type: clothes
+  personality:
+    text: Personalidad
+    search:
+      - ns: maze_rats
+        type: personality
+  mannerism:
+    text: Manierismo
+    search:
+      - ns: maze_rats
+        type: mannerism
+  hobby:
+    text: Hobby
+    search:
+      - ns: maze_rats
+        type: hobby
+  secret:
+    text: Secreto
+    search:
+      - ns: maze_rats
+        type: npc_secret
+  reputation:
+    text: Reputación
+    search:
+      - ns: maze_rats
+        type: npc_reputation
+  relation:
+    text: Relación
+    search:
+      - ns: maze_rats
+        type: npc_relation
+  divinity_domain:
+    text: Dominio Divino
+    search:
+      - ns: maze_rats
+        type: divinity_domain
+  female_name:
+    text: Nombre
+    search:
+      - ns: maze_rats
+        type: female_name
+  female_surname:
+    text: Apellidos
+    search:
+      - ns: maze_rats
+        type: lowerclass_surname
+  occupation:
+    text: Profesión
+    search:
+      - ns: maze_rats
+        type: wilderness_npc

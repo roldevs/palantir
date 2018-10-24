@@ -1,0 +1,69 @@
+text: Recompensa de la Mazmorra
+options:
+  - text: Saber arcano
+  - text: Aliado animal
+  - text: Ejército
+  - text: Bendición
+  - text: Planos
+  - text: Objeto cultural
+  - text: Instrucciones
+  - text: Recompensa de la Mazmorra
+    related:
+      faction:
+        text: Aliado de Facción
+        search:
+          - ns: maze_rats
+            type: faction
+            random: all
+  - text: Premonición
+  - text: Guía
+  - text: Reliquia Santa
+  - text: Recompensa de la Mazmorra
+    related:
+      item:
+        text: Objeto
+        search:
+          - ns: maze_rats
+            type: item
+  - text: Debilidad enemigo
+  - text: Joyas
+  - text: Llave
+  - text: Fórmula perdida
+  - text: Máquina
+  - text: Aliado influyente
+  - text: Aliado mágico
+  - text: Obra arte
+  - text: Recompensa de la Mazmorra
+    related:
+      monster:
+        text: Monstruo aliado
+        search:
+          - ns: maze_rats
+            type: monster
+  - text: Oráculo
+  - text: Tesoro
+  - text: Portal planar
+  - text: Profecía
+  - text: Renombre
+  - text: Conjuro
+  - text: Transformación
+  - text: Transporte
+  - text: Recompensa de la Mazmorra
+    related:
+      treasure:
+        text: Tesoro
+        search:
+          - ns: maze_rats
+            type: treasure
+  - text: Muestra complot
+  - text: Recompensa de la Mazmorra
+    related:
+      valuable_material:
+        text: Material Valioso
+        search:
+          - ns: maze_rats
+            type: valuable_material
+  - text: Visión
+  - text: Arma
+  - text: Mapa
+  - text: Aliado marital

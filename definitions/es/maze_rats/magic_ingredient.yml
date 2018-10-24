@@ -1,0 +1,86 @@
+text: Ingrediente Mágico
+options:
+  - text: Licor antiguo
+  - text: Ingrediente Mágico
+    related:
+      animal:
+        text: Animal
+        search:
+          - ns: maze_rats
+            type: animal
+  - text: Ojo ciego
+  - text: Ingrediente Mágico
+    related:
+      plant:
+        text: Planta
+        search:
+          - ns: maze_rats
+            type: plant
+  - text: Ingrediente Mágico
+    related:
+      book:
+        text: Página del Libro
+        search:
+          - ns: maze_rats
+            type: book
+  - text: Niebla en lata
+  - text: Clavo de ataúd
+  - text: Pelo de cadáver
+  - text: Último aliento
+  - text: Gato hervido
+  - text: Rayo
+  - text: Especia exótica
+  - text: Mano de asesino
+  - text: Diente de rey
+  - text: Polvo del camino
+  - text: Lengua mentirosa
+  - text: Tripas de cultista
+  - text: Imán
+  - text: Voto de monje
+  - text: Ingrediente Mágico
+    related:
+      monster_feature:
+        text: Característica del Monstruo
+        search:
+          - ns: maze_rats
+            type: monster_feature
+  - text: Llanto nacido
+  - text: Retrato aceite
+  - text: Ingrediente Mágico
+    related:
+      physical_element:
+        text: Elemento Físico
+        search:
+          - ns: maze_rats
+            type: physical_element
+  - text: Ingrediente Mágico
+    related:
+      poisonous_plant:
+        text: Planta Venenosa
+        search:
+          - ns: maze_rats
+            type: poisonous_plant
+  - text: Ingrediente Mágico
+    related:
+      potion:
+        text: Posción
+        search:
+          - ns: maze_rats
+            type: potion
+  - text: Brasas
+  - text: Abeja reina
+  - text: Sangre reina
+  - text: Lapa de barco
+  - text: Meteorito
+  - text: Dedo de ladrón
+  - text: Flor de tumba
+  - text: Ingrediente Mágico
+    related:
+      valuable_material:
+        text: Material Valioso
+        search:
+          - ns: maze_rats
+            type: valuable_material
+  - text: Anillo casado
+  - text: Lágrima de viuda
+  - text: Calavera de mago

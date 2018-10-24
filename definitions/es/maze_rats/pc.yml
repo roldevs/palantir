@@ -1,0 +1,33 @@
+text: Personaje Jugador
+related:
+  appearance:
+    text: Apariencia
+    search:
+      - ns: maze_rats
+        type: appearance
+    count: 3
+  physical:
+    text: Físico
+    search:
+      - ns: maze_rats
+        type: pc_physical
+  clothes:
+    text: Ropaje
+    search:
+      - ns: maze_rats
+        type: clothes
+  hobby:
+    text: Hobby
+    search:
+      - ns: maze_rats
+        type: hobby
+  mannerism:
+    text: Manierismo
+    search:
+      - ns: maze_rats
+        type: mannerism
+  personality:
+    text: Personalidad
+    search:
+      - ns: maze_rats
+        type: personality

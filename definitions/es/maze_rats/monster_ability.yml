@@ -1,0 +1,50 @@
+text: Habilidad de Monstruo
+options:
+  - text: Absorbente
+  - text: Sangre ácida
+  - text: Anti-magia
+  - text: Cegador
+  - text: Arma aliento
+  - text: Camuflaje
+  - text: Duplicante
+  - text: Eléctrico
+  - text: Enreda
+  - text: Habilidad de Monstruo
+    related:
+      ethereal_effect:
+        text: Efecto Etéreo
+        search:
+          - ns: maze_rats
+            type: ethereal_effect
+  - text: Explosivo
+  - text: Volador
+  - text: Arma de mirada
+  - text: Hipnotizante
+  - text: Impermeable
+  - text: Invisible
+  - text: Drena-vida
+  - text: Magnético
+  - text: Mímico
+  - text: Telépata
+  - text: Paralizante
+  - text: Fase (planos)
+  - text: Habilidad de Monstruo
+    related:
+      physical_effect:
+        text: Efecto Físico
+        search:
+          - ns: maze_rats
+            type: physical_effect
+  - text: Venenoso
+  - text: Radioactivo/a
+  - text: Reflectante
+  - text: Regenera
+  - text: Cambiaformas
+  - text: Lanza conjuros
+  - text: Sigiloso
+  - text: Estrangulante
+  - text: Super fuerza
+  - text: Telequinético
+  - text: Teleportador
+  - text: Vampírico
+  - text: Trepamuros

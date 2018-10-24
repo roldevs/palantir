@@ -1,0 +1,12 @@
+text: Trampa
+related:
+  effect:
+    text: Efecto
+    search:
+      - ns: maze_rats
+        type: trap_effect
+  trigger:
+    text: Disparador
+    search:
+      - ns: maze_rats
+        type: trap_trigger

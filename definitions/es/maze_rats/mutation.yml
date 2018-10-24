@@ -1,0 +1,104 @@
+text: Mutación
+options:
+  - text: Envejece
+  - text: Atrae pájaros
+  - text: Infantiliza
+  - text: Corpulencia
+  - text: Mutación
+    related:
+      animal:
+        text: Brazos de Animal
+        search:
+          - ns: maze_rats
+            type: animal
+  - text: Pelaje
+  - text: Mutación
+    related:
+      animal:
+        text: Ojos de Animal
+        search:
+          - ns: maze_rats
+            type: animal
+  - text: Mutación
+    related:
+      animal:
+        text: Cabeza de Animal
+        search:
+          - ns: maze_rats
+            type: animal
+  - text: Mutación
+    related:
+      animal:
+        text: Piernas de Animal
+        search:
+          - ns: maze_rats
+            type: animal
+  - text: Mutación
+    related:
+      animal:
+        text: Boca de Animal
+        search:
+          - ns: maze_rats
+            type: animal
+  - text: Mutación
+    related:
+      animal:
+        text: Piel de Animal
+        search:
+          - ns: maze_rats
+            type: animal
+  - text: Mutación
+    related:
+      animal:
+        text: Forma de Animal
+        search:
+          - ns: maze_rats
+            type: animal
+  - text: Cílope
+  - text: Brazos extra
+  - text: Ojos extra
+  - text: Piernas extra
+  - text: Lengua bífida
+  - text: Cambio sexo
+  - text: Jorobado
+  - text: Mutación
+    related:
+      item:
+        text: Forma de Objeto
+        search:
+          - ns: maze_rats
+            type: item
+  - text: Brazos largos
+  - text: Sin pelo
+  - text: Sin dientes
+  - text: Mutación
+    related:
+      monster_feature:
+        text: Característica de Monstruo
+        search:
+          - ns: maze_rats
+            type: monster_feature
+  - text: Mutación
+    related:
+      monster_trait:
+        text: Rasgo de Monstruo
+        search:
+          - ns: maze_rats
+            type: monster_trait
+  - text: Sin ojos
+  - text: Mutación
+    related:
+      physical_effect:
+        text: Piel con Efecto Físico
+        search:
+          - ns: maze_rats
+            type: physical_effect
+  - text: Segunda cara
+  - text: Muda la piel
+  - text: Encoje
+  - text: Deshidratado
+  - text: Piel hierve
+  - text: Rastro baboso
+  - text: Piel traslúcida
+  - text: Sin boca
+  - text: Llora sangre

@@ -1,0 +1,68 @@
+text: Locura
+options:
+  - text: Siempre miente
+  - text: Siempre educado
+  - text: Locura
+    related:
+      animal:
+        text: Forma Animal
+        search:
+          - ns: maze_rats
+            type: animal
+  - text: No puede contar
+  - text: No puede mentir
+  - text: Prosopagnesia
+  - text: Teme pájaros
+  - text: Teme sangre
+  - text: Teme libros
+  - text: Teme oscuridad
+  - text: Teme fuego
+  - text: Teme oro
+  - text: Teme caballos
+  - text: Teme hierro
+  - text: Teme música
+  - text: Teme su mano
+  - text: Teme a un pj
+  - text: Teme la lluvia
+  - text: Teme ríos
+  - text: Teme silencio
+  - text: Teme sueño
+  - text: Teme luz solar
+  - text: Teme luna
+  - text: Teme árboles
+  - text: "'Genio'"
+  - text: "'Atractivo"
+  - text: Pacifista
+  - text: "'Invisible'"
+  - text: "'Invulnerable'"
+  - text: Locura
+    related:
+      monster_ability:
+        text: Habilidad de Monstruo
+        search:
+          - ns: maze_rats
+            type: monster_ability
+  - text: Locura
+    related:
+      monster_feature:
+        text: Característica de Monstruo
+        search:
+          - ns: maze_rats
+            type: monster_feature
+  - text: Locura
+    related:
+      monster_trait:
+        text: Rasgo de Monstruo
+        search:
+          - ns: maze_rats
+            type: monster_trait
+  - text: Debe cantar
+  - text: Locura
+    related:
+      monster_trait:
+        text: Nueva Personalidad
+        search:
+          - ns: maze_rats
+            type: personality
+  - text: Piensa en voz alta
+  - text: Ve muertos

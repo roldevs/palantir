@@ -1,0 +1,16 @@
+text: PNJ Civilizado
+options:
+  - text: PNJ Civilizado
+    related:
+      male:
+        text: PNJ Hombre Civilizado
+        search:
+          - ns: maze_rats
+            type: npc_civilized_male
+  - text: PNJ Civilizado
+    related:
+      female:
+        text: PNJ Mujer Civilizada
+        search:
+          - ns: maze_rats
+            type: npc_civilized_female

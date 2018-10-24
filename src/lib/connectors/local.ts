@@ -1,7 +1,9 @@
 import Bluebird from 'bluebird';
 import fs from 'fs';
+import YAML from 'yaml';
 import {
   IConnectorFactory,
+  IElementDefinition,
   ILocalConnectorOptions,
   IOptionalElementDefinition,
   ITableLocator,
@@ -10,21 +12,26 @@ import {
 const localConnector: (options: ILocalConnectorOptions) => IConnectorFactory =
 (options) => {
   const filePath: (locator: ITableLocator) => string =
-  (locator) => `${options.rootPath}/${locator.locale}/${locator.ns}/${locator.type}.json`;
+  (locator) => `${options.rootPath}/${locator.locale}/${locator.ns}/${locator.type}.yml`;
 
-  const get: (locator: ITableLocator) => Bluebird<IOptionalElementDefinition> =
-  (locator) => {
+  const readFile: (path: string) => Bluebird<any> =
+  (path) => {
     return new Bluebird((resolve: any, reject: any) => {
-      fs.readFile(filePath(locator), 'utf8', (err, data) => {
+      fs.readFile(path, 'utf8', (err, data) => {
         if (err) {
           reject(err);
         } else {
-          const element: IOptionalElementDefinition = JSON.parse(data);
-          resolve(element);
+          resolve(data);
         }
       });
     });
   };
+
+  const parseYaml: (data: any) => IElementDefinition =
+  (data) => YAML.parse(data);
+
+  const get: (locator: ITableLocator) => Bluebird<IOptionalElementDefinition> =
+  (locator) => readFile(filePath(locator)).then(parseYaml);
 
   return {
     get,

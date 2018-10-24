@@ -1,0 +1,50 @@
+text: Rasgo del Monstruo
+options:
+  - text: Anfibio
+  - text: Hinchado
+  - text: Frágil
+  - text: Canibal
+  - text: Arcilloso
+  - text: Colosal
+  - text: Cristales
+  - text: Pútrido
+  - text: Rasgo del Monstruo
+    related:
+      ethereal_effect:
+        text: Efecto Etéreo
+        search:
+          - ns: maze_rats
+            type: ethereal_effect
+  - text: Etéreo
+  - text: Siempre joven
+  - text: Sin ojos
+  - text: Sin miedo
+  - text: Mullido
+  - text: Hongo
+  - text: Gelatinoso
+  - text: Geométrico
+  - text: Duro
+  - text: Ilusorio
+  - text: Inteligente
+  - text: Irisdicente
+  - text: Luminoso
+  - text: Muchas cabezas
+  - text: Mecánico
+  - text: Rasgo del Monstruo
+    related:
+      physical_effect:
+        text: Efecto Físico
+        search:
+          - ns: maze_rats
+            type: physical_effect
+  - text: Planar
+  - text: Reflectante
+  - text: Gomoso
+  - text: Sombrío
+  - text: Miembro afilado
+  - text: Esquelético
+  - text: Gelatinoso
+  - text: Pegajoso
+  - text: Apestoso
+  - text: Diminuto
+  - text: Traslúcido

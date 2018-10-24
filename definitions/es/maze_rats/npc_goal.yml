@@ -1,0 +1,136 @@
+text: Objetivo del PNJ
+options:
+  - text: Vida mejor
+  - text: Aceptación
+  - text: Objetivo del PNJ
+    related:
+      item:
+        text: Poseer Objeto
+        search:
+          - ns: maze_rats
+            type: item
+            random: all
+  - text: Objetivo del PNJ
+    related:
+      item:
+        text: Forjar Objeto
+        search:
+          - ns: maze_rats
+            type: item
+            random: all
+  - text: Objetivo del PNJ
+    related:
+      faction:
+        text: Destruir Facción
+        search:
+          - ns: maze_rats
+            type: faction
+            random: all
+  - text: Objetivo del PNJ
+    related:
+      item:
+        text: Destruir Objeto
+        search:
+          - ns: maze_rats
+            type: item
+            random: all
+  - text: Conocimiento
+  - text: Fama
+  - text: Objetivo del PNJ
+    related:
+      faction:
+        text: Hallar Facción
+        search:
+          - ns: maze_rats
+            type: faction
+            random: all
+  - text: Libertad
+  - text: Gloria
+  - text: Objetivo del PNJ
+    related:
+      npc:
+        text: Impresionar PNJ
+        search:
+          - ns: maze_rats
+            type: npc
+            random: all
+  - text: Infamia
+  - text: Objetivo del PNJ
+    related:
+      faction:
+        text: Inflirtrar Facción
+        search:
+          - ns: maze_rats
+            type: faction
+            random: all
+  - text: Justicia
+  - text: Objetivo del PNJ
+    related:
+      npc:
+        text: Secuestro de PNJ
+        search:
+          - ns: maze_rats
+            type: npc
+            random: all
+  - text: Objetivo del PNJ
+    related:
+      faction:
+        text: Liderar Facción
+        search:
+          - ns: maze_rats
+            type: faction
+            random: all
+  - text: Aprender
+  - text: Objetivo del PNJ
+    related:
+      npc:
+        text: Hallar PNJ
+        search:
+          - ns: maze_rats
+            type: npc
+            random: all
+  - text: Amar
+  - text: Maestría
+  - text: Poder
+  - text: Alcanzar lugar
+  - text: Objetivo del PNJ
+    related:
+      npc:
+        text: Rescatar PNJ
+        search:
+          - ns: maze_rats
+            type: npc
+            random: all
+  - text: Zanjar disputa
+  - text: Objetivo del PNJ
+    related:
+      faction:
+        text: Restaurar Facción
+        search:
+          - ns: maze_rats
+            type: faction
+            random: all
+  - text: Revelar secreto
+  - text: Venganza
+  - text: Objetivo del PNJ
+    related:
+      faction:
+        text: Sabotear Facción
+        search:
+          - ns: maze_rats
+            type: faction
+            random: all
+  - text: Servir deidad
+  - text: Servir al mal
+  - text: Objetivo del PNJ
+    related:
+      faction:
+        text: Servir Facción
+        search:
+          - ns: maze_rats
+            type: faction
+            random: all
+  - text: Servir ideología
+  - text: Servir líder
+  - text: Servir necesitados
+  - text: Riqueza

@@ -1,0 +1,44 @@
+text: Lastre del PNJ
+options:
+  - text: Adicto
+  - text: Alcohólico
+  - text: Aliado corrupto
+  - text: Cobarde
+  - text: Decadente
+  - text: Amor prohivido
+  - text: Jugador
+  - text: Glotón
+  - text: Avaricioso
+  - text: Hereje
+  - text: Gran deuda
+  - text: Impostor
+  - text: Lastre del PNJ
+    related:
+      insanity:
+        text: Locura
+        search:
+          - ns: maze_rats
+            type: insanity
+  - text: Celoso
+  - text: Deja evidencias
+  - text: Muchos rivales
+  - text: Desinformado
+  - text: Rastro dinero
+  - text: Narcisista
+  - text: Usa medicina
+  - text: TOC
+  - text: Paranoico
+  - text: Fiestero
+  - text: Malos objetos
+  - text: Protector
+  - text: Escandaloso
+  - text: Blando
+  - text: Rutinario
+  - text: Supersticioso
+  - text: Suspicaz
+  - text: Carácter
+  - text: Confiado
+  - text: Vulnerable
+  - text: Buscado
+  - text: Sin voluntad
+  - text: Despreciado

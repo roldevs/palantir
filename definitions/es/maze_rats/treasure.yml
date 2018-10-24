@@ -1,0 +1,12 @@
+text: Tesoro
+related:
+  item:
+    text: Objeto
+    search:
+      - ns: maze_rats
+        type: treasure_item
+  trait:
+    text: Rasgo
+    search:
+      - ns: maze_rats
+        type: treasure_trait

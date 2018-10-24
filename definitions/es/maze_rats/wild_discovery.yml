@@ -1,0 +1,112 @@
+text: Descubrimiento en Naturaleza
+options:
+  - text: Mancha sangre
+  - text: Huesos
+  - text: Armas rotas
+  - text: Madriguera
+  - text: Descubrimiento en Naturaleza
+    related:
+      city_activity:
+        text: Actividad de Ciudad
+        search:
+          - ns: maze_rats
+            type: city_activity
+  - text: Descubrimiento en Naturaleza
+    related:
+      npc_civilized:
+        text: PNJ Civilizado
+        search:
+          - ns: maze_rats
+            type: npc_civilized
+  - text: Cuerda cortada
+  - text: Animal muerto
+  - text: Descubrimiento en Naturaleza
+    related:
+      dungeon_activty:
+        text: Actividad de Mazmorra
+        search:
+          - ns: maze_rats
+            type: dungeon_activty
+  - text: Restos comida
+  - text: Marca tumba
+  - text: Cadáver
+  - text: Descubrimiento en Naturaleza
+    related:
+      item:
+        text: Objeto
+        search:
+          - ns: maze_rats
+            type: item
+  - text: Descubrimiento en Naturaleza
+    related:
+      npc:
+        text: PNJ Perdido
+        search:
+          - ns: maze_rats
+            type: npc
+            random: all
+  - text: Efecto mágico
+  - text: Mapa
+  - text: Mensaje
+  - text: Migración
+  - text: Descubrimiento en Naturaleza
+    related:
+      mutation:
+        text: Mutación
+        search:
+          - ns: maze_rats
+            type: mutation
+  - text: Nido
+  - text: Portal
+  - text: Recursos
+  - text: Grieta
+  - text: Planta rara
+  - text: Descubrimiento en Naturaleza
+    related:
+      npc:
+        text: PNJ Aturdido
+        search:
+          - ns: maze_rats
+            type: npc
+            random: all
+  - text: Suministros
+  - text: Bandera rota
+  - text: Rastros
+  - text: Trampa
+  - text: Tesoro
+  - text: Descubrimiento en Naturaleza
+    related:
+      npc_underworld:
+        text: PNJ Bajos Fondos
+        search:
+          - ns: maze_rats
+            type: npc_underworld
+  - text: Descubrimiento en Naturaleza
+    related:
+      wild_landmark:
+        text: Lugar Natural
+        search:
+          - ns: maze_rats
+            type: wild_landmark
+  - text: Descubrimiento en Naturaleza
+    related:
+      wild_structure:
+        text: Estructura Natural
+        search:
+          - ns: maze_rats
+            type: wild_structure
+  - text: Descubrimiento en Naturaleza
+    related:
+      npc_wilderness:
+        text: PNJ de la Naturaleza
+        search:
+          - ns: maze_rats
+            type: npc_wilderness
+  - text: Descubrimiento en Naturaleza
+    related:
+      wild_activity:
+        text: Actividad Natural
+        search:
+          - ns: maze_rats
+            type: wild_activity
+  - text: Lucha de magos

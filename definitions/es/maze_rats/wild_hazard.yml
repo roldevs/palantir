@@ -1,0 +1,38 @@
+text: Peligro Natural
+options:
+  - text: Avalancha
+  - text: Ventisca
+  - text: Fuego matojo
+  - text: Chaparrón
+  - text: Ciclón
+  - text: Niebla densa
+  - text: Lluvia
+  - text: Llovizna
+  - text: Ola de calor
+  - text: Terremoto
+  - text: Erupción
+  - text: Inundación
+  - text: Fuego bosque
+  - text: Granizo
+  - text: Tormenta de arena
+  - text: Huracán
+  - text: Tormenta de hielo
+  - text: Niebla ligera
+  - text: Miles langostas
+  - text: Flujo magma
+  - text: Meteorito
+  - text: Monzón
+  - text: Río barro
+  - text: Embarrado
+  - text: Depredador
+  - text: Arena movediza
+  - text: Lluvia ranas
+  - text: Avalancha roca
+  - text: Torbellino
+  - text: Aguanieve
+  - text: Nieve
+  - text: Estampida
+  - text: Truenos
+  - text: Tsunami
+  - text: Tormenta polvo
+  - text: Fuertes vientos

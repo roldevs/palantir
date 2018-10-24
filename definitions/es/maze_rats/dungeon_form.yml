@@ -1,0 +1,62 @@
+text: Forma de la Mazmorra
+options:
+  - text: Ruedo
+  - text: Asilo
+  - text: Aviario
+  - text: Banco
+  - text: Baños
+  - text: Cuerpo
+  - text: Forja
+  - text: Casino
+  - text: Catacumbas
+  - text: Cueva
+  - text: Tribunal
+  - text: Laboratorio
+  - text: Forma de la Mazmorra
+    related:
+      city_building_room:
+        text: Habitación de Ciudad
+        search:
+          - ns: maze_rats
+            type: city_building_room
+  - text: Jardín
+  - text: Escondite
+  - text: Hotel
+  - text: Forma de la Mazmorra
+    related:
+      city_lowerclass_building:
+        text: Edificio de Clase Baja
+        search:
+          - ns: maze_rats
+            type: city_lowerclass_building
+  - text: Forma de la Mazmorra
+    related:
+      dungeon_room:
+        text: Habitación de Mazmorra
+        search:
+          - ns: maze_rats
+            type: dungeon_room
+  - text: Biblioteca
+  - text: Mercado
+  - text: Mina
+  - text: Monasterio
+  - text: Museo
+  - text: Enfermería
+  - text: Orfanato
+  - text: Palacio
+  - text: Alcantarilla
+  - text: Barco
+  - text: Pozo esclavos
+  - text: Templo
+  - text: Teatro
+  - text: Forma de la Mazmorra
+    related:
+      city_upperclass_building:
+        text: Edificio de Clase Alta
+        search:
+          - ns: maze_rats
+            type: city_upperclass_building
+  - text: Universidad
+  - text: Bóveda
+  - text: Zoo
+  - text: Prisión

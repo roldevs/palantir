@@ -1,0 +1,162 @@
+text: Clue
+options:
+  - text: Abadoned horse and cart
+  - text: Abandoned well with rune etchings
+  - text: Animal prints across a marble floor
+  - text: Animal prints turn into footprints
+  - text: Arcane tome on an ordinary shelf
+  - text: Blood trail…
+  - text: Bloody tunic
+  - text: Book of ciphers and codes
+  - text: Book with notes written into end pages
+  - text: Branded livestock far from home
+  - text: Broken door or door handle
+  - text: Broken walking stick handle or knob
+  - text: Broken spear tips discarded in a firepit
+  - text: Broken strongbox, emptied save one gem
+  - text: Building is burned down
+  - text: Burned or desecrated holy/unholy symbol
+  - text: Burned page with eight words still legible
+  - text: Bust of a noted or famous local figure
+  - text: Carpet (rolled up) with blood stain
+  - text: Complex ritual (on scroll) written in elven
+  - text: Courier's package (with address)
+  - text: Cracked magnifying lens
+  - text: Cryptic and/or dangerous bible/prayer book
+  - text: Crude directions drawn on stone
+  - text: Crude map drawn in mud or firepit ashes
+  - text: Crushed monocle with intricate design
+  - text: Custom fixture or craftsmanship
+  - text: Dead animal or guard dog
+  - text: Dead bodies of mysterious foreigners
+  - text: Dead body (see tables 5–75, 5–76, and 5–77)
+  - text: Dead ranger, peppered with arrows
+  - text: Deed to abandoned land or cottage
+  - text: Dictionary of herbal remedies
+  - text: Disguise kit in private wardrobe
+  - text: Drawing of a fortification or remote village
+  - text: Dwarven hammer with owner's name
+  - text: Dwarven tools with clan symbols
+  - text: Dying man's last words
+  - text: Elven arrows with glyphs and runes
+  - text: Empty vial with number code or initials
+  - text: Enveloped closed with mysterious wax stamp
+  - text: Esoteric dreams or visions
+  - text: Especially dark (black) cloak
+  - text: Exectutioner's hood tucked into pocket
+  - text: Folded scrap of paper inside bookbinding
+  - text: Footprints suddenly stop or change shape
+  - text: Fortune teller reads the “bones”
+  - text: Frayed or severed rope
+  - text: Gem that blocks scrying devices
+  - text: Gold chain with locket and painting inside
+  - text: Gold coins with strange markings
+  - text: Gravestone with dates and epithets
+  - text: Guard logs with discrepancies/inaccuracies
+  - text: Hidden basement under floor
+  - text: Hidden panel in floor/wall reveals diary
+  - text: Holy/unholy symbol from a dangerous order
+  - text: Hotel ledger with names and dates
+  - text: Household tool with end shaped as key
+  - text: Incomplete order form or manifest
+  - text: Inexplicable hatchet where it does not belong
+  - text: Inexplicable lights in the darkness
+  - text: Ivory cameo depicting someone important
+  - text: Jar filled with brine and ringed fingers
+  - text: Journal of calculations
+  - text: Journal listing contacts, dates, and locations
+  - text: Key marked with a number
+  - text: Large collection of weapons
+  - text: Large, inexplicable money cache
+  - text: Ledger filled with meeting places and times
+  - text: Ledger of names of local “services”
+  - text: Ledger with dates and numbers
+  - text: Letter (see tables 3–100 and 3–101)
+  - text: Letters or runes stitched into a cloak
+  - text: Lock of hair tied with colored twine
+  - text: Locked journal filled with “alibis”
+  - text: Locked swordcane with intricate mechanism
+  - text: Lockpick set in private coffer
+  - text: Loose brick in fireplace hides a message
+  - text: Magic circle drawn on the floor
+  - text: Magic guarding an otherwise mundance place
+  - text: Mausoleum with runes on archway
+  - text: Merchant house symbol branded on crate
+  - text: Merchantile ledger with delivery dates
+  - text: Merchantile ledger with exports and imports
+  - text: Message hidden inside of a glove
+  - text: Message left at tavern from stranger
+  - text: Message written in blood (scene of slaughter)
+  - text: Misplaced fireplace poker
+  - text: Muddy leather shoe or missing shoe
+  - text: Note in orcish handwriting
+  - text: Omen written in foreign language or runes
+  - text: Oracle or medium found murdered
+  - text: Overly-detailed bill from a tavern or inn
+  - text: Overly-detailed shipping manifest
+  - text: Overturned and emptied desk
+  - text: Overturned chairs and broken tables
+  - text: Page of formulas ripped from book
+  - text: Page of notes ripped from journal
+  - text: Page of spells ripped from spellbook
+  - text: Patron seen with mysterious stranger
+  - text: Personal journal with suspicious notes
+  - text: Playing cards or specially-marked dice
+  - text: Pile of broken glass no where near a window
+  - text: Poem with mysterious gaps in structure
+  - text: Potion that allows someone to lie, unchecked
+  - text: Prisoner who is covered in tattoos
+  - text: Prisoner who is dead
+  - text: Prisoner who speaks a foreign language
+  - text: Prisoner who is unable to speable
+  - text: Prisoner with vital information
+  - text: Private (angry) diary filled with specifics
+  - text: Prophecy written on a tattered scroll
+  - text: Ransom note with names and locations
+  - text: Recently-corrected inventory forms
+  - text: Recently-used magical staff with maker's rune
+  - text: Receipt for recent “donations”
+  - text: Remains of a ritual slaughter
+  - text: Request for reinforcements in orcish
+  - text: Ring of jailer's keys
+  - text: Ring with arcane runes inside the band
+  - text: Ring with gemstone missing
+  - text: Ring with poison dispenser (now empty)
+  - text: Robe of a notorious and murderous cult
+  - text: Scalp or other barbaric trophy
+  - text: Scroll beyond a normal person's power
+  - text: Scroll with instructions for a curse
+  - text: Scraps of bone and food
+  - text: Secret words painted on church wall
+  - text: Severed ear or nose in teak box
+  - text: Shadowy figure follows person of importance
+  - text: Shattered potion vial
+  - text: Shield bearing symbol of baron's armor
+  - text: Shoes with lifts inside them
+  - text: Signed request for money (prominent person)
+  - text: Signed tapestry of haunted ruins
+  - text: Signet ring with king's heraldry
+  - text: Silver chain with monogram pendant
+  - text: Small dart or poisoned blade stuck in wall
+  - text: Smashed crystal ball
+  - text: Someone returns to the scene of the crime
+  - text: Specially-ordered perfume/cologne
+  - text: Specific book missing from library
+  - text: Spell book with wizard's private sigil
+  - text: Spell components for a specific charm
+  - text: Spell components for a specific illusion
+  - text: Tattoo indicates affiliation or magic
+  - text: Torn banner with clan symbol or heraldry
+  - text: Torn scroll with address
+  - text: Unfinished letter to loved one
+  - text: Unfinished novel with locations and names
+  - text: Unfinished painting with hidden meaning
+  - text: Unfinished song on an old parchment
+  - text: Urn with message painted around lip
+  - text: Visit from a mysterious interloper
+  - text: Wagon wheel tracks lead up to wall
+  - text: Water spills between cracks in stone floor
+  - text: Wax impression of a key
+  - text: Wax stamp with monogram or heraldry
+  - text: Well-made, custom mask or disguise
+  - text: Withered old map to someone's home

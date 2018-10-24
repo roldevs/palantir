@@ -1,0 +1,44 @@
+text: Elementos Tácticos de Edificios
+options:
+  - text: Elementos Tácticos de Edificios
+    related:
+      animal:
+        text: Nido de Animal
+        search:
+          - ns: maze_rats
+            type: animal
+  - text: Balcones
+  - text: Acceso sótano
+  - text: Muy iluminada
+  - text: Mueble roto
+  - text: Cristal roto
+  - text: Gabinete
+  - text: Suelos alfombrados
+  - text: Candelabros
+  - text: Falso suelo
+  - text: Drenajes
+  - text: Montaplatos
+  - text: Mármol eco
+  - text: Suelo enmoquetado
+  - text: Chimenea enorme
+  - text: Pasillo estrecho
+  - text: Ventanas abiertas
+  - text: Arma ornamental
+  - text: Malas hierbas
+  - text: Patrullas
+  - text: Columnas
+  - text: Techo podrido
+  - text: Biombos
+  - text: Muro podrido
+  - text: Estantería alta
+  - text: Oscuro
+  - text: Nichos oscuros
+  - text: Escaleras
+  - text: Claraboya
+  - text: Mirilla
+  - text: Pasillo sirviente
+  - text: Acceso alcantarilla
+  - text: Perros guardianes
+  - text: Montón basura
+  - text: Suelo podrido
+  - text: Cortinas

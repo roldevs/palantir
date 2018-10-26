@@ -20,7 +20,7 @@ const locale: string = 'es';
 const useConnector: number = 1;
 const count: number = 1;
 const ns: string = 'maze_rats';
-const type: string = 'animal';
+const type: string = 'npc';
 
 const connectorCreators: any = {
   0: remoteConnectorCreator({
@@ -43,16 +43,21 @@ const world = worldCreator({
 
 const spaces: (n: number) => string = (n) => ' '.repeat(n);
 
-const print: (element: IElementDefinition, parent: IElementDefinition | null, depth: number ) => void =
-(element, parent, depth) => {
+interface IOutInfo {
+  depth: number;
+  text: string;
+}
+
+const print: (element: IElementDefinition, parent: IElementDefinition | null, depth: number, acc: IOutInfo[] ) => void =
+(element, parent, depth, acc) => {
   if (element.related) {
-    console.log(`${spaces(depth)} ${element.text}`);
+    acc.push({depth, text: `${element.text}`});
     R.forEach(
       (keyRelated: any) => {
         const related: any = element.related![keyRelated];
         R.forEach(
           (result: any) => {
-            print(result, related, depth + 1);
+            print(result, related, depth + 1, acc);
           },
           related.results,
         );
@@ -61,12 +66,12 @@ const print: (element: IElementDefinition, parent: IElementDefinition | null, de
     );
   } else {
     if (parent) {
-      console.log(`${spaces(depth)} ${parent.text}: ${element.text}`);
-    } else {
-      console.log(`${spaces(depth)} ${element.text}`);
+      acc.push({depth, text: `${parent.text}: ${element.text}`});
     }
   }
 };
+
+const accumulator: IOutInfo[] = [];
 
 world.get({
   search: [{ns, type}],
@@ -75,9 +80,11 @@ world.get({
   R.forEach(
     (element: IElementDefinition) => {
       console.log(JSONprettify(element));
-      print(element, null, 0);
+      print(element, null, 0, accumulator);
     }, data,
   );
+
+  R.forEach((info: IOutInfo) => console.log(`${spaces(info.depth)} ${info.text}`), accumulator);
 });
 
 // import { readdirSync, readFileSync, writeFileSync } from 'fs';

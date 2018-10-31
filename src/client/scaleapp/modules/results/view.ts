@@ -2,7 +2,7 @@ import * as R from 'ramda';
 import {h} from 'snabbdom';
 import {VNode} from 'snabbdom/vnode';
 import {
-  IElement, IElementDefinition,
+  IElementFormatted,
 } from '../../../../lib/typings';
 import { IResultsController, IResultsState } from './controller';
 
@@ -34,32 +34,13 @@ const definitionNode: (key: string, text: string) => VNode =
   ]);
 };
 
-const generateRelated: (element: IElementDefinition, parent: IElementDefinition | null, depth: number) =>
-  (keyRelated: any) => VNode =
-(element, _, depth) => (keyRelated) => {
-  const related: any = element.related![keyRelated];
-  return h('div', {
-    class: {
-      item: true,
-    },
-  }, R.map(generateResults(related, depth + 1), related.results));
-};
-
-const generateResults: (parent: IElementDefinition | null, depth: number) => (element: IElementDefinition) => VNode =
-(parent, depth) => (element) => {
-  if (element.related) {
-    const content: VNode[] = R.map(
-      generateRelated(element, parent, depth),
-      R.keys(element.related),
-    );
-    return titleNode(`${element.text}`, content);
-  } else {
-    if (parent) {
-      return definitionNode(parent.text, element.text);
-    } else {
-      return titleNode(`${element.text}`, []);
-    }
+const generateResults: (parent: IElementFormatted | null, depth: number) => (element: IElementFormatted) => VNode =
+(_, depth) => (element) => {
+  if (element.children) {
+    return titleNode(`${element.title}`, R.map(generateResults(element, depth + 1), element.children));
   }
+
+  return definitionNode(element.title!, element.text!);
 };
 
 const viewFn: (model: IResultsState, controller: IResultsController) => VNode =

@@ -54,6 +54,12 @@ interface IElement {
   };
 }
 
+interface IElementFormatted {
+  title?: string;
+  text?: string;
+  children?: IElementFormatted[];
+}
+
 type IOptionalElement = IElement | null | undefined;
 
 type ISearchResult = Array<IElement | IElementDefinition>;
@@ -106,7 +112,7 @@ interface IWorldDefinition {
 }
 
 type IWorldModule = (world: IWorldDefinition) => {
-  get: (search: IRelatedElement) => Bluebird<Array<IOptionalElementDefinition | IOptionalElement>>;
+  get: (search: IRelatedElement) => Bluebird<IElementFormatted[]>;
 };
 
 type IElementModule = (world: IWorldDefinition) => {
@@ -186,6 +192,7 @@ export {
   IFolderModule,
   IFormattedResult,
   IFormattedResults,
+  IElementFormatted,
   ERandomOption, //
   IElementDefinition,
   IWorldDefinition,

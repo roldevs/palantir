@@ -4,51 +4,44 @@ options:
   - text: Atrae pájaros
   - text: Infantiliza
   - text: Corpulencia
-  - text: Mutación
-    related:
+  - related:
       animal:
         text: Brazos de Animal
         search:
           - ns: maze_rats
             type: animal
   - text: Pelaje
-  - text: Mutación
-    related:
+  - related:
       animal:
         text: Ojos de Animal
         search:
           - ns: maze_rats
             type: animal
-  - text: Mutación
-    related:
+  - related:
       animal:
         text: Cabeza de Animal
         search:
           - ns: maze_rats
             type: animal
-  - text: Mutación
-    related:
+  - related:
       animal:
         text: Piernas de Animal
         search:
           - ns: maze_rats
             type: animal
-  - text: Mutación
-    related:
+  - related:
       animal:
         text: Boca de Animal
         search:
           - ns: maze_rats
             type: animal
-  - text: Mutación
-    related:
+  - related:
       animal:
         text: Piel de Animal
         search:
           - ns: maze_rats
             type: animal
-  - text: Mutación
-    related:
+  - related:
       animal:
         text: Forma de Animal
         search:
@@ -61,8 +54,7 @@ options:
   - text: Lengua bífida
   - text: Cambio sexo
   - text: Jorobado
-  - text: Mutación
-    related:
+  - related:
       item:
         text: Forma de Objeto
         search:
@@ -71,23 +63,20 @@ options:
   - text: Brazos largos
   - text: Sin pelo
   - text: Sin dientes
-  - text: Mutación
-    related:
+  - related:
       monster_feature:
         text: Característica de Monstruo
         search:
           - ns: maze_rats
             type: monster_feature
-  - text: Mutación
-    related:
+  - related:
       monster_trait:
         text: Rasgo de Monstruo
         search:
           - ns: maze_rats
             type: monster_trait
   - text: Sin ojos
-  - text: Mutación
-    related:
+  - related:
       physical_effect:
         text: Piel con Efecto Físico
         search:

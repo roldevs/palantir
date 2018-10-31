@@ -1,16 +1,12 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import testConnector from '../../src/lib/connectors/test';
-import relatedModule from '../../src/lib/element/related';
 import testRepository from '../../src/lib/repository/memory';
 import {
   ERandomOption,
-  IElementDefinition,
-  IOptionalElement,
-  IOptionalElementDefinition,
+  IElementFormatted,
   IRelatedElement,
 } from '../../src/lib/typings';
-import { JSONprettify } from '../../src/lib/utils';
 import worldCreator from '../../src/lib/world';
 
 describe('World#get', () => {
@@ -63,8 +59,8 @@ describe('World#get', () => {
         count: 1,
       };
       it('return the only faction defined', (done) => {
-        world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
-          const element: IElementDefinition = elements[0]! as IElementDefinition;
+        world.get(search).then((elements: IElementFormatted[]) => {
+          const element: IElementFormatted = elements[0]!;
           expect(element).to.not.be.null;
           expect(element.text).to.eql('Movimiento artístico');
           done();
@@ -80,14 +76,12 @@ describe('World#get', () => {
         }],
       };
       it('return the npc_asset with faction related', (done) => {
-        world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
-          const element: IElementDefinition = elements[0]! as IElementDefinition;
-          const related: IRelatedElement = element.related!.faction;
+        world.get(search).then((elements: IElementFormatted[]) => {
+          const element: IElementFormatted = elements[0]!;
 
           expect(element).to.not.be.null;
-          expect(element.text).to.eql('Lider ${faction}');
-          expect(related).to.not.be.null;
-          expect(related.results).to.not.be.empty;
+          expect(element.title).to.eql('Lider ${faction}');
+          expect(element.children).to.not.be.empty;
           done();
         });
       });
@@ -177,9 +171,52 @@ describe('World#get', () => {
         }],
       };
       it('return the npc_asset with faction related', (done) => {
-        world.get(search).then((elements: Array<IOptionalElementDefinition | IOptionalElement>) => {
-          const element: IElementDefinition = elements[0]! as IElementDefinition;
-          expect(element.text).to.eql('Animal');
+        world.get(search).then((elements: IElementFormatted[]) => {
+          const element: IElementFormatted = elements[0]!;
+          expect(element.title).to.eql('Animal');
+          done();
+        });
+      });
+    });
+  });
+
+  describe('with options', () => {
+    const connector = testConnector({
+      elements: {
+        es: {
+          maze_rats: {
+            mutation: {
+              text: 'Mutación',
+              options: [{
+                text: 'Envejece',
+              }],
+            },
+          },
+        },
+        en: {},
+      },
+    });
+    const world = worldCreator({
+      locale: 'es',
+      connector,
+      repository: testRepository({
+        locale: 'es',
+        elements: {},
+      }),
+    });
+
+    describe('deep search', () => {
+      const search: IRelatedElement = {
+        search: [{
+          ns: 'maze_rats',
+          type: 'mutation',
+        }],
+      };
+      it('return the element with default title', (done) => {
+        world.get(search).then((elements: IElementFormatted[]) => {
+          const element: IElementFormatted = elements[0]!;
+          expect(element.text).to.eql('Envejece');
+          expect(element.title).to.eql('Mutación');
           done();
         });
       });

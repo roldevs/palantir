@@ -12,6 +12,5 @@ router.route('/types.json').get(foldersApiController(localeFolder()).index);
 router.route('/types/:locale.json').get(foldersApiController(nsFolder()).index);
 router.route('/types/:locale/:ns.json').get(foldersApiController(typeFolder()).index);
 router.route('/random/:locale/:ns/:type.json').get(randomController.randomJson);
-router.route('/random/:locale/:ns/:type.txt').get(randomController.randomTxt);
 
 export default router;

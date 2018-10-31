@@ -1,11 +1,11 @@
 import flyd from 'flyd';
 import * as R from 'ramda';
-import { IElementDefinition } from '../../../../lib/typings';
+import { IElementDefinition, IElementFormatted } from '../../../../lib/typings';
 import { ISelectorOptions } from '../selector/controller';
 import { IResultsActions } from './model';
 
 interface IResultsState {
-  elements: IElementDefinition[];
+  elements: IElementFormatted[];
   options: ISelectorOptions;
 }
 

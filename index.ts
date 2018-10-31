@@ -77,14 +77,16 @@ world.get({
   search: [{ns, type}],
   count,
 }).then((data: any) => {
-  R.forEach(
-    (element: IElementDefinition) => {
-      console.log(JSONprettify(element));
-      print(element, null, 0, accumulator);
-    }, data,
-  );
+  console.log(JSONprettify(data));
 
-  R.forEach((info: IOutInfo) => console.log(`${spaces(info.depth)} ${info.text}`), accumulator);
+  // R.forEach(
+  //   (element: IElementDefinition) => {
+  //     console.log(JSONprettify(element));
+  //     print(element, null, 0, accumulator);
+  //   }, data,
+  // );
+
+  // R.forEach((info: IOutInfo) => console.log(`${spaces(info.depth)} ${info.text}`), accumulator);
 });
 
 // import { readdirSync, readFileSync, writeFileSync } from 'fs';

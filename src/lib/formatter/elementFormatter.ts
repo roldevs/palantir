@@ -41,8 +41,7 @@ const elementFormatter: IRandomJsonFormatter =
         R.keys(element.related),
       );
       return {
-        title: element!.text,
-        text: element.text,
+        title: parent!.text,
         children,
       };
     }

@@ -18,9 +18,10 @@ describe('World#get', () => {
             npc_asset: {
               text: 'Npc Asset',
               options: [{
-                text: 'Lider ${faction}',
+                text: 'Npc Asset 1',
                 related: {
                   faction: {
+                    text: 'Lider ${faction}',
                     search: [{
                       ns: 'maze_rats',
                       type: 'faction',
@@ -78,10 +79,13 @@ describe('World#get', () => {
       it('return the npc_asset with faction related', (done) => {
         world.get(search).then((elements: IElementFormatted[]) => {
           const element: IElementFormatted = elements[0]!;
-
           expect(element).to.not.be.null;
-          expect(element.title).to.eql('Lider ${faction}');
+          expect(element.title).to.eql('Npc Asset');
           expect(element.children).to.not.be.empty;
+
+          const child: IElementFormatted = element.children![0]!;
+          expect(child).to.not.be.null;
+          expect(child.title).to.eql('Lider ${faction}');
           done();
         });
       });

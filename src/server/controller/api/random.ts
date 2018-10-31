@@ -5,6 +5,7 @@ import worldCreator from '../../../lib/world';
 import errorHandler from '../../errorHandler';
 import trackEvent from '../../track';
 import { requestPath } from '../../util';
+import { textFormatter } from './random/textFormater';
 
 const randomApiController = () => {
   const random = (req: any, res: any) => {
@@ -20,23 +21,34 @@ const randomApiController = () => {
       }),
     });
 
-    trackEvent(`/api/random/${requestPath(req)}`, 'Folders').then(() => {
+    return trackEvent(`/api/random/${requestPath(req)}`, 'Folders').then(() => {
       return world.get({
         search: [{
           ns: req.params.ns,
           type: req.params.type,
         }],
       });
-    }).then((data: any) => {
+    }).catch(errorHandler(res, process.env).error);
+  };
+
+  const randomTxt = (req: any, res: any) => {
+    return random(req, res).then((data: any) => {
+      res.send(textFormatter(data).format());
+    });
+  };
+
+  const randomJson = (req: any, res: any) => {
+    return random(req, res).then((data: any) => {
       res.json({
         succes: true,
         data,
       });
-    }).catch(errorHandler(res, process.env).error);
+    });
   };
 
   return {
-    random,
+    randomTxt,
+    randomJson,
   };
 };
 

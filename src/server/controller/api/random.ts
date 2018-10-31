@@ -40,7 +40,7 @@ const randomApiController = () => {
   const randomJson = (req: any, res: any) => {
     return random(req, res).then((data: any) => {
       res.json({
-        succes: true,
+        success: true,
         data,
       });
     });

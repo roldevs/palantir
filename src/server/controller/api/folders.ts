@@ -12,7 +12,7 @@ const localeApiController = (queryFolder: any) => {
       ).folders();
     }).then((data: any) => {
       res.json({
-        succes: true,
+        success: true,
         data,
       });
     }).catch(errorHandler(res, process.env).error);

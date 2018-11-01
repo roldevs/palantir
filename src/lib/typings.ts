@@ -26,10 +26,13 @@ interface IRelatedElements {
   [details: string]: IRelatedElement;
 }
 
+type IDiceDefinition = string;
+
 interface IElementDefinition {
   text: string;
   options?: IElementDefinition[];
   related?: IRelatedElements;
+  dice?: IDiceDefinition;
 }
 
 interface IFormattedResults {
@@ -120,13 +123,15 @@ type IElementModule = (world: IWorldDefinition) => {
 };
 
 type IOptionsModule = (world: IWorldDefinition) => {
-  hasOptions: (element: IOptionalElementDefinition) => boolean,
   random: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
 };
 
 type IRelatedModule = (world: IWorldDefinition) => {
-  hasRelated: (element: IOptionalElementDefinition) => boolean,
   fetch: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
+};
+
+type IDiceModule = (world: IWorldDefinition) => {
+  roll: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
 };
 
 type ISearchModule = (world: IWorldDefinition) => {
@@ -183,6 +188,7 @@ export {
   IElementModule,
   IOptionsModule,
   IRelatedModule,
+  IDiceModule,
   ISearchModule,
   ISearchByTypeModule,
   IRandomModule,
@@ -195,6 +201,7 @@ export {
   IElementFormatted,
   ERandomOption, //
   IElementDefinition,
+  IDiceDefinition,
   IWorldDefinition,
   ISearchDefinition,
   ISearchResult,

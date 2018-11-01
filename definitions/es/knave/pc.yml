@@ -1,5 +1,35 @@
 text: PC
 related:
+  strength:
+    text: Fuerza
+    search:
+      - ns: knave
+        type: strength
+  dexterity:
+    text: Destreza
+    search:
+      - ns: knave
+        type: dexterity
+  constitution:
+    text: Constitución
+    search:
+      - ns: knave
+        type: constitution
+  intelligence:
+    text: Inteligencia
+    search:
+      - ns: knave
+        type: intelligence
+  wisdom:
+    text: Conocimiento
+    search:
+      - ns: knave
+        type: wisdom
+  charisma:
+    text: Carisma
+    search:
+      - ns: knave
+        type: charisma
   physique:
     text: Físico
     search:

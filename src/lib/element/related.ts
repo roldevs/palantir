@@ -11,14 +11,12 @@ import {
   ISearchDefinition,
 } from '../typings';
 import { compactArray, deepMerge } from '../utils';
+import { hasRelated } from './utili';
 
 const relatedModule: IRelatedModule =
 (world) => {
   const optionCount: (relatedElement: IRelatedElement) => any =
     R.compose(R.defaultTo(1), R.view(R.lensProp('count')));
-
-  const hasRelated: (element: IOptionalElementDefinition) => boolean =
-    (element) => !!(element && element!.related);
 
   const searchElement: (search: ISearchDefinition[]) => Bluebird<IOptionalElementDefinition> =
     (search) => randomModule(world).random(search).then(elementModule(world).get);
@@ -60,7 +58,6 @@ const relatedModule: IRelatedModule =
   };
 
   return {
-    hasRelated,
     fetch,
   };
 };

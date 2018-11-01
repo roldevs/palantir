@@ -6,12 +6,10 @@ import {
   IOptionsModule,
 } from '../typings';
 import { randomFromArray } from '../utils';
+import { hasOptions } from './utili';
 
 const optionsModule: IOptionsModule =
 (world) => {
-  const hasOptions: (element: IOptionalElementDefinition) => boolean =
-    (element) => !!(element && element!.options);
-
   const getElement: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition> =
     (element) => {
       if (R.isNil(element)) {
@@ -29,7 +27,6 @@ const optionsModule: IOptionsModule =
     (element) => hasOptions(element) ? get(element) : Bluebird.resolve(null);
 
   return {
-    hasOptions,
     random, // Returns a random element from the passed options
   };
 };

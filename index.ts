@@ -19,8 +19,8 @@ const debug: boolean = false;
 const locale: string = 'es';
 const useConnector: number = 1;
 const count: number = 1;
-const ns: string = 'maze_rats';
-const type: string = 'npc';
+const ns: string = 'knave';
+const type: string = 'pc';
 
 const connectorCreators: any = {
   0: remoteConnectorCreator({

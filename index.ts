@@ -1,91 +1,92 @@
-// tslint:disable:no-console
-import Bluebird, { any } from 'bluebird';
-import program from 'commander';
-import * as R from 'ramda';
-import localConnectorCreator from './src/lib/connectors/local';
-import remoteConnectorCreator from './src/lib/connectors/remote';
-import repositoryCreator from './src/lib/repository/memory';
-import {
-  ICliModule,
-  IElementDefinition,
-  IOptionalElementDefinition,
-} from './src/lib/typings';
-import { JSONprettify, removeExtension } from './src/lib/utils';
-import worldCreator from './src/lib/world';
+// // tslint:disable:no-console
+// import Bluebird, { any } from 'bluebird';
+// import program from 'commander';
+// import * as R from 'ramda';
+// import localConnectorCreator from './src/lib/connectors/local';
+// import remoteConnectorCreator from './src/lib/connectors/remote';
+// import repositoryCreator from './src/lib/repository/memory';
+// import {
+//   ICliModule,
+//   IElementDefinition,
+//   IOptionalElementDefinition,
+// } from './src/lib/typings';
+// import { JSONprettify, removeExtension } from './src/lib/utils';
+// import worldCreator from './src/lib/world';
 
-const debug: boolean = false;
-const locale: string = 'en';
-const useConnector: number = 1;
-const count: number = 1;
-const ns: string = 'ultbx';
-const type: string = 'names';
+// const debug: boolean = false;
+// const locale: string = 'en';
+// const useConnector: number = 1;
+// const count: number = 1;
+// const ns: string = 'ultbx';
+// const type: string = 'names';
 
-const connectorCreators: any = {
-  0: remoteConnectorCreator({
-    debug,
-    baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
-  }),
-  1: localConnectorCreator({
-    rootPath: './definitions',
-  }),
-};
+// const connectorCreators: any = {
+//   0: remoteConnectorCreator({
+//     debug,
+//     baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
+//   }),
+//   1: localConnectorCreator({
+//     rootPath: './definitions',
+//   }),
+// };
 
-const world = worldCreator({
-  locale,
-  connector: connectorCreators[useConnector],
-  repository: repositoryCreator({
-    locale,
-    elements: {},
-  }),
-});
+// const world = worldCreator({
+//   locale,
+//   connector: connectorCreators[useConnector],
+//   repository: repositoryCreator({
+//     locale,
+//     elements: {},
+//   }),
+// });
 
-const spaces: (n: number) => string = (n) => ' '.repeat(n);
+// const spaces: (n: number) => string = (n) => ' '.repeat(n);
 
-interface IOutInfo {
-  depth: number;
-  text: string;
-}
+// interface IOutInfo {
+//   depth: number;
+//   text: string;
+// }
 
-const print: (element: IElementDefinition, parent: IElementDefinition | null, depth: number, acc: IOutInfo[] ) => void =
-(element, parent, depth, acc) => {
-  if (element.related) {
-    acc.push({depth, text: `${element.text}`});
-    R.forEach(
-      (keyRelated: any) => {
-        const related: any = element.related![keyRelated];
-        R.forEach(
-          (result: any) => {
-            print(result, related, depth + 1, acc);
-          },
-          related.results,
-        );
-      },
-      R.keys(element.related),
-    );
-  } else {
-    if (parent) {
-      acc.push({depth, text: `${parent.text}: ${element.text}`});
-    }
-  }
-};
+// const print: (element: IElementDefinition, parent: IElementDefinition | null, depth: number, acc: IOutInfo[] )
+// => void =
+// (element, parent, depth, acc) => {
+//   if (element.related) {
+//     acc.push({depth, text: `${element.text}`});
+//     R.forEach(
+//       (keyRelated: any) => {
+//         const related: any = element.related![keyRelated];
+//         R.forEach(
+//           (result: any) => {
+//             print(result, related, depth + 1, acc);
+//           },
+//           related.results,
+//         );
+//       },
+//       R.keys(element.related),
+//     );
+//   } else {
+//     if (parent) {
+//       acc.push({depth, text: `${parent.text}: ${element.text}`});
+//     }
+//   }
+// };
 
-const accumulator: IOutInfo[] = [];
+// const accumulator: IOutInfo[] = [];
 
-world.get({
-  search: [{ns, type}],
-  count,
-}).then((data: any) => {
-  console.log(JSONprettify(data));
+// world.get({
+//   search: [{ns, type}],
+//   count,
+// }).then((data: any) => {
+//   console.log(JSONprettify(data));
 
-  // R.forEach(
-  //   (element: IElementDefinition) => {
-  //     console.log(JSONprettify(element));
-  //     print(element, null, 0, accumulator);
-  //   }, data,
-  // );
+//   // R.forEach(
+//   //   (element: IElementDefinition) => {
+//   //     console.log(JSONprettify(element));
+//   //     print(element, null, 0, accumulator);
+//   //   }, data,
+//   // );
 
-  // R.forEach((info: IOutInfo) => console.log(`${spaces(info.depth)} ${info.text}`), accumulator);
-});
+//   // R.forEach((info: IOutInfo) => console.log(`${spaces(info.depth)} ${info.text}`), accumulator);
+// });
 
 // import { readdirSync, readFileSync, writeFileSync } from 'fs';
 // import YAML from 'yaml';

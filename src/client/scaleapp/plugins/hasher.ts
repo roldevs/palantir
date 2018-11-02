@@ -3,20 +3,6 @@ import * as R from 'ramda';
 import * as scaleApp from 'scaleapp';
 
 const pluginFn: scaleApp.IPluginInitFn = function(core: any) {
-  'use strict';
-
-  /* Inicializar el plugin
-   */
-  const onPluginInit = function() {
-    // function placeholder
-  };
-
-  /* Liberar medios
-   */
-  const onPluginDestroy = function() {
-    // function placeholder
-  };
-
   const setHashWithoutNavigate: (path: string) => any = function(path) {
     hasher.changed.active = false; // disable changed signal
     hasher.setHash(path); // set hash without dispatching changed signal
@@ -51,8 +37,8 @@ const pluginFn: scaleApp.IPluginInitFn = function(core: any) {
   core.Sandbox.prototype.hasher = hashMap;
 
   return {
-    init: onPluginInit,
-    destroy: onPluginDestroy,
+    init: () => { /* Empty method placeholder */ },
+    destroy: () => { /* Empty method placeholder */ },
   };
 };
 

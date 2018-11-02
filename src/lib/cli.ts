@@ -6,24 +6,26 @@ import localConnectorCreator from './connectors/local';
 import remoteConnectorCreator from './connectors/remote';
 import repositoryCreator from './repository/memory';
 import {
-  ICliModule, IElementFormatted,
+  ICliModule, IConnectorFactory, IElementFormatted,
 } from './typings';
 import worldCreator from './world';
 
-const cliModule: ICliModule =
-(args) => {
-  const params: IParserOptions = argsParser(args);
-  const connectorCreators: any = {
-    0: remoteConnectorCreator({
-      debug: params.debug,
-      baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
-    }),
-    1: localConnectorCreator({
-      rootPath: './definitions',
-    }),
-  };
+const remoteConnector: (debug: boolean) => IConnectorFactory = (debug) => remoteConnectorCreator({
+  debug,
+  baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
+});
 
-  const world = worldCreator({
+const localConnector: () => IConnectorFactory = () => localConnectorCreator({
+  rootPath: './definitions',
+});
+
+const getWorld: (params: IParserOptions) => any =
+(params) => {
+  const connectorCreators: any = {
+    0: remoteConnector(params.debug),
+    1: localConnector(),
+  };
+  return worldCreator({
     locale: params.locale,
     connector: connectorCreators[params.connector],
     repository: repositoryCreator({
@@ -31,6 +33,12 @@ const cliModule: ICliModule =
       elements: {},
     }),
   });
+};
+
+const cliModule: ICliModule =
+(args) => {
+  const params: IParserOptions = argsParser(args);
+  const world = getWorld(params);
 
   const get: () => Bluebird<IElementFormatted[]> =
   () => {

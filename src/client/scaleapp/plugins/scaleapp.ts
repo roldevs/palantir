@@ -4,20 +4,6 @@ import * as scaleApp from 'scaleapp';
 import {VNode} from 'snabbdom/vnode';
 
 const pluginFn: scaleApp.IPluginInitFn = function(core: any) {
-  'use strict';
-
-  /* Inicializar el plugin
-   */
-  const onPluginInit = () => {
-    // function placeholder
-  };
-
-  /* Liberar medios
-   */
-  const onPluginDestroy = () => {
-    // function placeholder
-  };
-
   const moduleStart: (module: string, config: {}) => any =
   (module, config) => new Bluebird((resolve: any) => core.start(module, config, resolve));
 
@@ -107,8 +93,8 @@ const pluginFn: scaleApp.IPluginInitFn = function(core: any) {
   };
 
   return {
-    init: onPluginInit,
-    destroy: onPluginDestroy,
+    init: () => { /* Empty method placeholder */ },
+    destroy: () => { /* Empty method placeholder */ },
   };
 };
 

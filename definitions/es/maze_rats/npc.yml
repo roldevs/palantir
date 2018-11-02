@@ -3,21 +3,18 @@ options:
   - text: PNJ
     related:
       civilized:
-        text: PNJ Civilizado
         search:
           - ns: maze_rats
             type: npc_civilized
   - text: PNJ
     related:
       underworld:
-        text: PNJ Bajos Fondos
         search:
           - ns: maze_rats
             type: npc_underworld
   - text: PNJ
     related:
       wilderness:
-        text: PNJ Naturaleza
         search:
           - ns: maze_rats
             type: npc_wilderness

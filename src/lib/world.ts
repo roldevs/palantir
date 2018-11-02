@@ -1,9 +1,7 @@
 import Bluebird from 'bluebird';
 import * as R from 'ramda';
 import elementCreator from './element';
-import {
-  elementFormatter,
-} from './formatter/elementFormatter';
+import { elementFormatter } from './formatter/elementFormatter';
 import randomCreator from './random';
 import {
   IElementFormatted,

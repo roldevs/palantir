@@ -103,7 +103,6 @@ describe('World#get', () => {
                 text: 'Animal',
                 related: {
                   animal_aerial: {
-                    text: 'Animal Aéreo',
                     search: [{
                       ns: 'maze_rats',
                       type: 'animal_aerial',
@@ -114,7 +113,6 @@ describe('World#get', () => {
                 text: 'Animal',
                 related: {
                   animal_aquatic: {
-                    text: 'Animal Acuático',
                     search: [{
                       ns: 'maze_rats',
                       type: 'animal_aquatic',
@@ -125,7 +123,6 @@ describe('World#get', () => {
                 text: 'Animal',
                   related: {
                     animal_terrestrial: {
-                      text: 'Animal Terrestre',
                       search: [{
                         ns: 'maze_rats',
                         type: 'animal_terrestrial',
@@ -174,10 +171,13 @@ describe('World#get', () => {
           type: 'animal',
         }],
       };
-      it('return the npc_asset with faction related', (done) => {
+      it('return the animal related', (done) => {
         world.get(search).then((elements: IElementFormatted[]) => {
           const element: IElementFormatted = elements[0]!;
           expect(element.title).to.eql('Animal');
+
+          const child: IElementFormatted = element.children![0];
+          expect(child.title).to.be.oneOf(['Animal aéreo', 'Animal acuático', 'Animal terrestre']);
           done();
         });
       });

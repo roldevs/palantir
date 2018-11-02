@@ -77,20 +77,14 @@ describe('Related#fetch', () => {
 
         related.fetch(element).then((data: IOptionalElementDefinition) => {
           expect(data).to.not.be.null;
-          expect(data).to.eql({
-            text: 'Test',
-            related: {
-              key: {
-                search: [{
-                  ns: 'ns2',
-                  type: 'item2',
-                }],
-                results: [{
-                  text: 'ns1.item12',
-                }],
-              },
-            },
-          });
+          // tslint:disable-next-line:no-console
+          console.log(data!.related!.key.results);
+          expect(data!.text).to.eql('Test');
+          expect(data!.related!.key.search).to.eql([{
+            ns: 'ns2',
+            type: 'item2',
+          }]);
+          expect(data!.related!.key.results![0].text).to.eql('ns1.item12');
           done();
         });
       });

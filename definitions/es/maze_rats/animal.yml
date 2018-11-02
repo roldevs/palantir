@@ -2,19 +2,16 @@ text: Animal
 options:
   - related:
       animal_aerial:
-        text: Animal Aéreo
         search:
           - ns: maze_rats
             type: animal_aerial
   - related:
       animal_aquatic:
-        text: Animal Acuático
         search:
           - ns: maze_rats
             type: animal_aquatic
   - related:
       animal_terrestrial:
-        text: Animal Terrestre
         search:
           - ns: maze_rats
             type: animal_terrestrial

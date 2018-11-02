@@ -30,6 +30,7 @@ type IDiceDefinition = string;
 
 interface IElementDefinition {
   text: string;
+  parent?: IElementDefinition;
   options?: IElementDefinition[];
   related?: IRelatedElements;
   dice?: IDiceDefinition;
@@ -42,6 +43,7 @@ interface IElement {
   type: string;
   guid: uuid;
   text: string;
+  parent?: IElement;
   related?: {
     [key: string]: string; // Related to a IElement.GUID
   };

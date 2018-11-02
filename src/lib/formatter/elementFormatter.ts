@@ -46,7 +46,7 @@ const elementFormatter: IRandomJsonFormatter =
       };
     }
     return {
-      title: parent!.text! || element!.text,
+      title: parent!.text! || element!.parent!.text || element!.text,
       text: element.text,
     };
   };

@@ -1,512 +1,367 @@
 text: names
-options:
-  -related:
-      names_anglo_saxon_female:
-          text: names_anglo_saxon_female
-          search:
-              - ns: ultbx
-              - type: names_anglo_saxon_female
-options:
-  -related:
-      names_arabic_female:
-          text: names_arabic_female
-          search:
-              - ns: ultbx
-              - type: names_arabic_female
-options:
-  -related:
-      names_arabic_male:
-          text: names_arabic_male
-          search:
-              - ns: ultbx
-              - type: names_arabic_male
-options:
-  -related:
-      names_aztec_female:
-          text: names_aztec_female
-          search:
-              - ns: ultbx
-              - type: names_aztec_female
-options:
-  -related:
-      names_aztec_male:
-          text: names_aztec_male
-          search:
-              - ns: ultbx
-              - type: names_aztec_male
-options:
-  -related:
-      names_basque_female:
-          text: names_basque_female
-          search:
-              - ns: ultbx
-              - type: names_basque_female
-options:
-  -related:
-      names_basque_male:
-          text: names_basque_male
-          search:
-              - ns: ultbx
-              - type: names_basque_male
-options:
-  -related:
-      names_bulgarian_female:
-          text: names_bulgarian_female
-          search:
-              - ns: ultbx
-              - type: names_bulgarian_female
-options:
-  -related:
-      names_bulgarian_male:
-          text: names_bulgarian_male
-          search:
-              - ns: ultbx
-              - type: names_bulgarian_male
-options:
-  -related:
-      names_chinese_female:
-          text: names_chinese_female
-          search:
-              - ns: ultbx
-              - type: names_chinese_female
-options:
-  -related:
-      names_chinese_male:
-          text: names_chinese_male
-          search:
-              - ns: ultbx
-              - type: names_chinese_male
-options:
-  -related:
-      names_dutch_female:
-          text: names_dutch_female
-          search:
-              - ns: ultbx
-              - type: names_dutch_female
-options:
-  -related:
-      names_dutch_male:
-          text: names_dutch_male
-          search:
-              - ns: ultbx
-              - type: names_dutch_male
-options:
-  -related:
-      names_dwarf_female:
-          text: names_dwarf_female
-          search:
-              - ns: ultbx
-              - type: names_dwarf_female
-options:
-  -related:
-      names_dwarf_male:
-          text: names_dwarf_male
-          search:
-              - ns: ultbx
-              - type: names_dwarf_male
-options:
-  -related:
-      names_east_african_female:
-          text: names_east_african_female
-          search:
-              - ns: ultbx
-              - type: names_east_african_female
-options:
-  -related:
-      names_east_african_male:
-          text: names_east_african_male
-          search:
-              - ns: ultbx
-              - type: names_east_african_male
-options:
-  -related:
-      names_egyptian_female:
-          text: names_egyptian_female
-          search:
-              - ns: ultbx
-              - type: names_egyptian_female
-options:
-  -related:
-      names_egyptian_male:
-          text: names_egyptian_male
-          search:
-              - ns: ultbx
-              - type: names_egyptian_male
-options:
-  -related:
-      names_elf_female:
-          text: names_elf_female
-          search:
-              - ns: ultbx
-              - type: names_elf_female
-options:
-  -related:
-      names_elf_male:
-          text: names_elf_male
-          search:
-              - ns: ultbx
-              - type: names_elf_male
-options:
-  -related:
-      names_finnish_female:
-          text: names_finnish_female
-          search:
-              - ns: ultbx
-              - type: names_finnish_female
-options:
-  -related:
-      names_finnish_male:
-          text: names_finnish_male
-          search:
-              - ns: ultbx
-              - type: names_finnish_male
-options:
-  -related:
-      names_french_female:
-          text: names_french_female
-          search:
-              - ns: ultbx
-              - type: names_french_female
-options:
-  -related:
-      names_french_male:
-          text: names_french_male
-          search:
-              - ns: ultbx
-              - type: names_french_male
-options:
-  -related:
-      names_gaelic_female:
-          text: names_gaelic_female
-          search:
-              - ns: ultbx
-              - type: names_gaelic_female
-options:
-  -related:
-      names_gaelic_male:
-          text: names_gaelic_male
-          search:
-              - ns: ultbx
-              - type: names_gaelic_male
-options:
-  -related:
-      names_generic_sylvan:
-          text: names_generic_sylvan
-          search:
-              - ns: ultbx
-              - type: names_generic_sylvan
-options:
-  -related:
-      names_germanic_female:
-          text: names_germanic_female
-          search:
-              - ns: ultbx
-              - type: names_germanic_female
-options:
-  -related:
-      names_germanic_male:
-          text: names_germanic_male
-          search:
-              - ns: ultbx
-              - type: names_germanic_male
-options:
-  -related:
-      names_greek_female:
-          text: names_greek_female
-          search:
-              - ns: ultbx
-              - type: names_greek_female
-options:
-  -related:
-      names_greek_male:
-          text: names_greek_male
-          search:
-              - ns: ultbx
-              - type: names_greek_male
-options:
-  -related:
-      names_hebrew_female:
-          text: names_hebrew_female
-          search:
-              - ns: ultbx
-              - type: names_hebrew_female
-options:
-  -related:
-      names_hebrew_male:
-          text: names_hebrew_male
-          search:
-              - ns: ultbx
-              - type: names_hebrew_male
-options:
-  -related:
-      names_indian_female:
-          text: names_indian_female
-          search:
-              - ns: ultbx
-              - type: names_indian_female
-options:
-  -related:
-      names_indian_male:
-          text: names_indian_male
-          search:
-              - ns: ultbx
-              - type: names_indian_male
-options:
-  -related:
-      names_italian_female:
-          text: names_italian_female
-          search:
-              - ns: ultbx
-              - type: names_italian_female
-options:
-  -related:
-      names_italian_male:
-          text: names_italian_male
-          search:
-              - ns: ultbx
-              - type: names_italian_male
-options:
-  -related:
-      names_japanese_female:
-          text: names_japanese_female
-          search:
-              - ns: ultbx
-              - type: names_japanese_female
-options:
-  -related:
-      names_japanese_male:
-          text: names_japanese_male
-          search:
-              - ns: ultbx
-              - type: names_japanese_male
-options:
-  -related:
-      names_korean_female:
-          text: names_korean_female
-          search:
-              - ns: ultbx
-              - type: names_korean_female
-options:
-  -related:
-      names_korean_male:
-          text: names_korean_male
-          search:
-              - ns: ultbx
-              - type: names_korean_male
-options:
-  -related:
-      names_latin_female:
-          text: names_latin_female
-          search:
-              - ns: ultbx
-              - type: names_latin_female
-options:
-  -related:
-      names_latin_male:
-          text: names_latin_male
-          search:
-              - ns: ultbx
-              - type: names_latin_male
-options:
-  -related:
-      names_native_american_female:
-          text: names_native_american_female
-          search:
-              - ns: ultbx
-              - type: names_native_american_female
-options:
-  -related:
-      names_native_american_male:
-          text: names_native_american_male
-          search:
-              - ns: ultbx
-              - type: names_native_american_male
-options:
-  -related:
-      names_native_american_other:
-          text: names_native_american_other
-          search:
-              - ns: ultbx
-              - type: names_native_american_other
-options:
-  -related:
-      names_norse_female:
-          text: names_norse_female
-          search:
-              - ns: ultbx
-              - type: names_norse_female
-options:
-  -related:
-      names_norse_male:
-          text: names_norse_male
-          search:
-              - ns: ultbx
-              - type: names_norse_male
-options:
-  -related:
-      names_persian_female:
-          text: names_persian_female
-          search:
-              - ns: ultbx
-              - type: names_persian_female
-options:
-  -related:
-      names_persian_male:
-          text: names_persian_male
-          search:
-              - ns: ultbx
-              - type: names_persian_male
-options:
-  -related:
-      names_romanian_female:
-          text: names_romanian_female
-          search:
-              - ns: ultbx
-              - type: names_romanian_female
-options:
-  -related:
-      names_romanian_male:
-          text: names_romanian_male
-          search:
-              - ns: ultbx
-              - type: names_romanian_male
-options:
-  -related:
-      names_russian_female:
-          text: names_russian_female
-          search:
-              - ns: ultbx
-              - type: names_russian_female
-options:
-  -related:
-      names_russian_male:
-          text: names_russian_male
-          search:
-              - ns: ultbx
-              - type: names_russian_male
-options:
-  -related:
-      names_scottish_female:
-          text: names_scottish_female
-          search:
-              - ns: ultbx
-              - type: names_scottish_female
-options:
-  -related:
-      names_scottish_male:
-          text: names_scottish_male
-          search:
-              - ns: ultbx
-              - type: names_scottish_male
-options:
-  -related:
-      names_south_african_female:
-          text: names_south_african_female
-          search:
-              - ns: ultbx
-              - type: names_south_african_female
-options:
-  -related:
-      names_south_african_male:
-          text: names_south_african_male
-          search:
-              - ns: ultbx
-              - type: names_south_african_male
-options:
-  -related:
-      names_spanish_female:
-          text: names_spanish_female
-          search:
-              - ns: ultbx
-              - type: names_spanish_female
-options:
-  -related:
-      names_spanish_male:
-          text: names_spanish_male
-          search:
-              - ns: ultbx
-              - type: names_spanish_male
-options:
-  -related:
-      names_traditional_female:
-          text: names_traditional_female
-          search:
-              - ns: ultbx
-              - type: names_traditional_female
-options:
-  -related:
-      names_traditional_male:
-          text: names_traditional_male
-          search:
-              - ns: ultbx
-              - type: names_traditional_male
-options:
-  -related:
-      names_tribal:
-          text: names_tribal
-          search:
-              - ns: ultbx
-              - type: names_tribal
-options:
-  -related:
-      names_tribal_exotic:
-          text: names_tribal_exotic
-          search:
-              - ns: ultbx
-              - type: names_tribal_exotic
-options:
-  -related:
-      names_turkish_female:
-          text: names_turkish_female
-          search:
-              - ns: ultbx
-              - type: names_turkish_female
-options:
-  -related:
-      names_turkish_male:
-          text: names_turkish_male
-          search:
-              - ns: ultbx
-              - type: names_turkish_male
-options:
-  -related:
-      names_ukranian_female:
-          text: names_ukranian_female
-          search:
-              - ns: ultbx
-              - type: names_ukranian_female
-options:
-  -related:
-      names_ukranian_male:
-          text: names_ukranian_male
-          search:
-              - ns: ultbx
-              - type: names_ukranian_male
-options:
-  -related:
-      names_welsh_female:
-          text: names_welsh_female
-          search:
-              - ns: ultbx
-              - type: names_welsh_female
-options:
-  -related:
-      names_welsh_male:
-          text: names_welsh_male
-          search:
-              - ns: ultbx
-              - type: names_welsh_male
-options:
-  -related:
-      names_west_african_female:
-          text: names_west_african_female
-          search:
-              - ns: ultbx
-              - type: names_west_african_female
-options:
-  -related:
-      names_west_african_male:
-          text: names_west_african_male
-          search:
-              - ns: ultbx
-              - type: names_west_african_male
+- related:
+  names_anglo_saxon_female:
+    text: names_anglo_saxon_female
+    search:
+      - ns: ultbx
+      - type: names_anglo_saxon_female
+  names_arabic_female:
+    text: names_arabic_female
+    search:
+      - ns: ultbx
+      - type: names_arabic_female
+  names_arabic_male:
+    text: names_arabic_male
+    search:
+      - ns: ultbx
+      - type: names_arabic_male
+  names_aztec_female:
+    text: names_aztec_female
+    search:
+      - ns: ultbx
+      - type: names_aztec_female
+  names_aztec_male:
+    text: names_aztec_male
+    search:
+      - ns: ultbx
+      - type: names_aztec_male
+  names_basque_female:
+    text: names_basque_female
+    search:
+      - ns: ultbx
+      - type: names_basque_female
+  names_basque_male:
+    text: names_basque_male
+    search:
+      - ns: ultbx
+      - type: names_basque_male
+  names_bulgarian_female:
+    text: names_bulgarian_female
+    search:
+      - ns: ultbx
+      - type: names_bulgarian_female
+  names_bulgarian_male:
+    text: names_bulgarian_male
+    search:
+      - ns: ultbx
+      - type: names_bulgarian_male
+  names_chinese_female:
+    text: names_chinese_female
+    search:
+      - ns: ultbx
+      - type: names_chinese_female
+  names_chinese_male:
+    text: names_chinese_male
+    search:
+      - ns: ultbx
+      - type: names_chinese_male
+  names_dutch_female:
+    text: names_dutch_female
+    search:
+      - ns: ultbx
+      - type: names_dutch_female
+  names_dutch_male:
+    text: names_dutch_male
+    search:
+      - ns: ultbx
+      - type: names_dutch_male
+  names_dwarf_female:
+    text: names_dwarf_female
+    search:
+      - ns: ultbx
+      - type: names_dwarf_female
+  names_dwarf_male:
+    text: names_dwarf_male
+    search:
+      - ns: ultbx
+      - type: names_dwarf_male
+  names_east_african_female:
+    text: names_east_african_female
+    search:
+      - ns: ultbx
+      - type: names_east_african_female
+  names_east_african_male:
+    text: names_east_african_male
+    search:
+      - ns: ultbx
+      - type: names_east_african_male
+  names_egyptian_female:
+    text: names_egyptian_female
+    search:
+      - ns: ultbx
+      - type: names_egyptian_female
+  names_egyptian_male:
+    text: names_egyptian_male
+    search:
+      - ns: ultbx
+      - type: names_egyptian_male
+  names_elf_female:
+    text: names_elf_female
+    search:
+      - ns: ultbx
+      - type: names_elf_female
+  names_elf_male:
+    text: names_elf_male
+    search:
+      - ns: ultbx
+      - type: names_elf_male
+  names_finnish_female:
+    text: names_finnish_female
+    search:
+      - ns: ultbx
+      - type: names_finnish_female
+  names_finnish_male:
+    text: names_finnish_male
+    search:
+      - ns: ultbx
+      - type: names_finnish_male
+  names_french_female:
+    text: names_french_female
+    search:
+      - ns: ultbx
+      - type: names_french_female
+  names_french_male:
+    text: names_french_male
+    search:
+      - ns: ultbx
+      - type: names_french_male
+  names_gaelic_female:
+    text: names_gaelic_female
+    search:
+      - ns: ultbx
+      - type: names_gaelic_female
+  names_gaelic_male:
+    text: names_gaelic_male
+    search:
+      - ns: ultbx
+      - type: names_gaelic_male
+  names_generic_sylvan:
+    text: names_generic_sylvan
+    search:
+      - ns: ultbx
+      - type: names_generic_sylvan
+  names_germanic_female:
+    text: names_germanic_female
+    search:
+      - ns: ultbx
+      - type: names_germanic_female
+  names_germanic_male:
+    text: names_germanic_male
+    search:
+      - ns: ultbx
+      - type: names_germanic_male
+  names_greek_female:
+    text: names_greek_female
+    search:
+      - ns: ultbx
+      - type: names_greek_female
+  names_greek_male:
+    text: names_greek_male
+    search:
+      - ns: ultbx
+      - type: names_greek_male
+  names_hebrew_female:
+    text: names_hebrew_female
+    search:
+      - ns: ultbx
+      - type: names_hebrew_female
+  names_hebrew_male:
+    text: names_hebrew_male
+    search:
+      - ns: ultbx
+      - type: names_hebrew_male
+  names_indian_female:
+    text: names_indian_female
+    search:
+      - ns: ultbx
+      - type: names_indian_female
+  names_indian_male:
+    text: names_indian_male
+    search:
+      - ns: ultbx
+      - type: names_indian_male
+  names_italian_female:
+    text: names_italian_female
+    search:
+      - ns: ultbx
+      - type: names_italian_female
+  names_italian_male:
+    text: names_italian_male
+    search:
+      - ns: ultbx
+      - type: names_italian_male
+  names_japanese_female:
+    text: names_japanese_female
+    search:
+      - ns: ultbx
+      - type: names_japanese_female
+  names_japanese_male:
+    text: names_japanese_male
+    search:
+      - ns: ultbx
+      - type: names_japanese_male
+  names_korean_female:
+    text: names_korean_female
+    search:
+      - ns: ultbx
+      - type: names_korean_female
+  names_korean_male:
+    text: names_korean_male
+    search:
+      - ns: ultbx
+      - type: names_korean_male
+  names_latin_female:
+    text: names_latin_female
+    search:
+      - ns: ultbx
+      - type: names_latin_female
+  names_latin_male:
+    text: names_latin_male
+    search:
+      - ns: ultbx
+      - type: names_latin_male
+  names_native_american_female:
+    text: names_native_american_female
+    search:
+      - ns: ultbx
+      - type: names_native_american_female
+  names_native_american_male:
+    text: names_native_american_male
+    search:
+      - ns: ultbx
+      - type: names_native_american_male
+  names_native_american_other:
+    text: names_native_american_other
+    search:
+      - ns: ultbx
+      - type: names_native_american_other
+  names_norse_female:
+    text: names_norse_female
+    search:
+      - ns: ultbx
+      - type: names_norse_female
+  names_norse_male:
+    text: names_norse_male
+    search:
+      - ns: ultbx
+      - type: names_norse_male
+  names_persian_female:
+    text: names_persian_female
+    search:
+      - ns: ultbx
+      - type: names_persian_female
+  names_persian_male:
+    text: names_persian_male
+    search:
+      - ns: ultbx
+      - type: names_persian_male
+  names_romanian_female:
+    text: names_romanian_female
+    search:
+      - ns: ultbx
+      - type: names_romanian_female
+  names_romanian_male:
+    text: names_romanian_male
+    search:
+      - ns: ultbx
+      - type: names_romanian_male
+  names_russian_female:
+    text: names_russian_female
+    search:
+      - ns: ultbx
+      - type: names_russian_female
+  names_russian_male:
+    text: names_russian_male
+    search:
+      - ns: ultbx
+      - type: names_russian_male
+  names_scottish_female:
+    text: names_scottish_female
+    search:
+      - ns: ultbx
+      - type: names_scottish_female
+  names_scottish_male:
+    text: names_scottish_male
+    search:
+      - ns: ultbx
+      - type: names_scottish_male
+  names_south_african_female:
+    text: names_south_african_female
+    search:
+      - ns: ultbx
+      - type: names_south_african_female
+  names_south_african_male:
+    text: names_south_african_male
+    search:
+      - ns: ultbx
+      - type: names_south_african_male
+  names_spanish_female:
+    text: names_spanish_female
+    search:
+      - ns: ultbx
+      - type: names_spanish_female
+  names_spanish_male:
+    text: names_spanish_male
+    search:
+      - ns: ultbx
+      - type: names_spanish_male
+  names_traditional_female:
+    text: names_traditional_female
+    search:
+      - ns: ultbx
+      - type: names_traditional_female
+  names_traditional_male:
+    text: names_traditional_male
+    search:
+      - ns: ultbx
+      - type: names_traditional_male
+  names_tribal:
+    text: names_tribal
+    search:
+      - ns: ultbx
+      - type: names_tribal
+  names_tribal_exotic:
+    text: names_tribal_exotic
+    search:
+      - ns: ultbx
+      - type: names_tribal_exotic
+  names_turkish_female:
+    text: names_turkish_female
+    search:
+      - ns: ultbx
+      - type: names_turkish_female
+  names_turkish_male:
+    text: names_turkish_male
+    search:
+      - ns: ultbx
+      - type: names_turkish_male
+  names_ukranian_female:
+    text: names_ukranian_female
+    search:
+      - ns: ultbx
+      - type: names_ukranian_female
+  names_ukranian_male:
+    text: names_ukranian_male
+    search:
+      - ns: ultbx
+      - type: names_ukranian_male
+  names_welsh_female:
+    text: names_welsh_female
+    search:
+      - ns: ultbx
+      - type: names_welsh_female
+  names_welsh_male:
+    text: names_welsh_male
+    search:
+      - ns: ultbx
+      - type: names_welsh_male
+  names_west_african_female:
+    text: names_west_african_female
+    search:
+      - ns: ultbx
+      - type: names_west_african_female
+  names_west_african_male:
+    text: names_west_african_male
+    search:
+      - ns: ultbx
+      - type: names_west_african_male

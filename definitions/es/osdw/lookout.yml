@@ -1,8 +1,11 @@
-text: Qué debería estar buscando?
-options:
-  - text: Banda itinerante de carroñeros
-  - text: Soldados haciendo cumplir la ley marcial
-  - text: Espías por todos lados
-  - text: Un paisaje ensuciado con trampas arcanas
-  - text: Portadores de enfermedades desagradables
-  - text: Alimentos contaminados y suministros de agua
+meta:
+  system: One Shot Dungeon World
+data:
+  text: Qué debería estar buscando?
+  options:
+    - text: Banda itinerante de carroñeros
+    - text: Soldados haciendo cumplir la ley marcial
+    - text: Espías por todos lados
+    - text: Un paisaje ensuciado con trampas arcanas
+    - text: Portadores de enfermedades desagradables
+    - text: Alimentos contaminados y suministros de agua

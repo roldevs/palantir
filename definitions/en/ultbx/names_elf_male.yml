@@ -1,22 +1,25 @@
-text: Male Elf Names
-options:
-  - text: Athath Brimdormar
-  - text: Cirmardon Thanentor
-  - text: Coanor Ethilfin
-  - text: Elnar Allylan
-  - text: Ethilmar Loruen
-  - text: Eysion Rilnor
-  - text: Hinrond Eloltor
-  - text: Lirlir Lini
-  - text: Lorath Ralordor
-  - text: Merrieth Ninnal
-  - text: Nimfin Elogol
-  - text: Rilial Elliael
-  - text: Riyal Narlir
-  - text: Rinarril Lan
-  - text: Ronial Synirlen
-  - text: Rynlenial Erylor
-  - text: Rylael Anion
-  - text: Synnal Niela
-  - text: Suelinar Enishal
-  - text: Tricalis Shothonora
+meta:
+  system: Ultimate Toolbox
+data:
+  text: Male Elf Names
+  options:
+    - text: Athath Brimdormar
+    - text: Cirmardon Thanentor
+    - text: Coanor Ethilfin
+    - text: Elnar Allylan
+    - text: Ethilmar Loruen
+    - text: Eysion Rilnor
+    - text: Hinrond Eloltor
+    - text: Lirlir Lini
+    - text: Lorath Ralordor
+    - text: Merrieth Ninnal
+    - text: Nimfin Elogol
+    - text: Rilial Elliael
+    - text: Riyal Narlir
+    - text: Rinarril Lan
+    - text: Ronial Synirlen
+    - text: Rynlenial Erylor
+    - text: Rylael Anion
+    - text: Synnal Niela
+    - text: Suelinar Enishal
+    - text: Tricalis Shothonora

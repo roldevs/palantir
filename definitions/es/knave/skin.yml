@@ -1,22 +1,25 @@
-text: Piel
-options:
-  - text: Cicatriz guerra
-  - text: Marca nacimiento
-  - text: Quemadura
-  - text: Oscura
-  - text: Maquillada
-  - text: Aceitosa
-  - text: Pálida
-  - text: Perfecta
-  - text: Piercings
-  - text: Marcas de viruela
-  - text: Hedionda
-  - text: Tatuada
-  - text: Rosada
-  - text: Rugosa
-  - text: Cetrina
-  - text: Quemada al sol
-  - text: Bronceada
-  - text: Pintura guerra
-  - text: Curtida
-  - text: Cicatriz látigo
+meta:
+  system: Knave
+data:
+  text: Piel
+  options:
+    - text: Cicatriz guerra
+    - text: Marca nacimiento
+    - text: Quemadura
+    - text: Oscura
+    - text: Maquillada
+    - text: Aceitosa
+    - text: Pálida
+    - text: Perfecta
+    - text: Piercings
+    - text: Marcas de viruela
+    - text: Hedionda
+    - text: Tatuada
+    - text: Rosada
+    - text: Rugosa
+    - text: Cetrina
+    - text: Quemada al sol
+    - text: Bronceada
+    - text: Pintura guerra
+    - text: Curtida
+    - text: Cicatriz látigo

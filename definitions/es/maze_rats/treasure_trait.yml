@@ -1,50 +1,53 @@
-text: Rasgo del Tesoro
-options:
-  - text: Alterado
-  - text: Antiguo
-  - text: Bendito
-  - text: Voluminoso
-  - text: Compacto
-  - text: Consumible
-  - text: Valor cultural
-  - text: Maldito
-  - text: Dañado
-  - text: Escondido
-  - text: Atrae enemigos
-  - text: Rasgo del Tesoro
-    related:
-      effects:
-        text: Efecto
-        search:
-          - ns: maze_rats
-            type: effect
-  - text: Rasgo del Tesoro
-    related:
-      element:
-        text: Elemento
-        search:
-          - ns: maze_rats
-            type: element
-  - text: Embellecido
-  - text: Críptico
-  - text: Exótico
-  - text: Extra-planar
-  - text: Famoso
-  - text: Prohibido
-  - text: Frágil
-  - text: Pesado
-  - text: Inmóvil
-  - text: Inalcanzable
-  - text: Telekinesis
-  - text: Inteligente
-  - text: Obra arte
-  - text: Valor militar
-  - text: No humano
-  - text: En propiedad
-  - text: Indestructible
-  - text: Valor político
-  - text: Valor religioso
-  - text: Reparado
-  - text: Real
-  - text: Tóxico
-  - text: Vil
+meta:
+  system: Maze Rats
+data:
+  text: Rasgo del Tesoro
+  options:
+    - text: Alterado
+    - text: Antiguo
+    - text: Bendito
+    - text: Voluminoso
+    - text: Compacto
+    - text: Consumible
+    - text: Valor cultural
+    - text: Maldito
+    - text: Dañado
+    - text: Escondido
+    - text: Atrae enemigos
+    - text: Rasgo del Tesoro
+      related:
+        effects:
+          text: Efecto
+          search:
+            - ns: maze_rats
+              type: effect
+    - text: Rasgo del Tesoro
+      related:
+        element:
+          text: Elemento
+          search:
+            - ns: maze_rats
+              type: element
+    - text: Embellecido
+    - text: Críptico
+    - text: Exótico
+    - text: Extra-planar
+    - text: Famoso
+    - text: Prohibido
+    - text: Frágil
+    - text: Pesado
+    - text: Inmóvil
+    - text: Inalcanzable
+    - text: Telekinesis
+    - text: Inteligente
+    - text: Obra arte
+    - text: Valor militar
+    - text: No humano
+    - text: En propiedad
+    - text: Indestructible
+    - text: Valor político
+    - text: Valor religioso
+    - text: Reparado
+    - text: Real
+    - text: Tóxico
+    - text: Vil

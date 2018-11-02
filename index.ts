@@ -1,4 +1,4 @@
-// // tslint:disable:no-console
+// tslint:disable:no-console
 // import Bluebird, { any } from 'bluebird';
 // import program from 'commander';
 // import * as R from 'ramda';
@@ -88,18 +88,26 @@
 //   // R.forEach((info: IOutInfo) => console.log(`${spaces(info.depth)} ${info.text}`), accumulator);
 // });
 
-// import { readdirSync, readFileSync, writeFileSync } from 'fs';
-// import YAML from 'yaml';
-// const testFolder = './definitions/es/osdw';
+import { readdirSync, readFileSync, writeFileSync } from 'fs';
+import YAML from 'yaml';
+const testFolder = './definitions/en/ultbx';
 
-// readdirSync(testFolder).forEach((file: string) => {
-//   const data: any = readFileSync(testFolder + '/' + file);
-//   const element: IOptionalElementDefinition = JSON.parse(data);
-//   writeFileSync(
-//     testFolder + '/' + removeExtension(file) + '.yml',
-//     YAML.stringify(element),
-//   );
-// });
+readdirSync(testFolder).forEach((file: string) => {
+  console.log(testFolder + '/' + file);
+  const data: any = readFileSync(testFolder + '/' + file, 'utf8');
+  console.log('read');
+  const element: any = YAML.parse(data);
+  console.log('write');
+  writeFileSync(
+    testFolder + '/' + file,
+    YAML.stringify({
+      meta: {
+        system: 'Ultimate Toolbox',
+      },
+      data: element,
+    }),
+  );
+});
 
 // // import fs from 'fs';
 // import * as R from 'ramda';

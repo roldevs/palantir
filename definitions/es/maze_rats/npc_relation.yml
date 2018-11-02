@@ -1,38 +1,41 @@
-text: Relación PNJ
-options:
-  - text: Consejero
-  - text: Chantajista
-  - text: Socio
-  - text: Competencia
-  - text: Comprador
-  - text: Captor
-  - text: Cliente
-  - text: Confidente
-  - text: Deudor
-  - text: Discípulo
-  - text: Guardian
-  - text: Esbirro
-  - text: Idolo
-  - text: Informante
-  - text: Señor
-  - text: Mentor
-  - text: Némesis
-  - text: Descendencia
-  - text: Padre
-  - text: Patrón
-  - text: Rival político
-  - text: Prisionero
-  - text: Protegido
-  - text: Disputa
-  - text: Mano derecha
-  - text: Rival amoroso
-  - text: Sirviente
-  - text: Familiar
-  - text: Rival social
-  - text: Cónyuge
-  - text: Acosador
-  - text: Pretendiente
-  - text: Solicitante
-  - text: Suministrador
-  - text: Enamorado
-  - text: No corresponde
+meta:
+  system: Maze Rats
+data:
+  text: Relación PNJ
+  options:
+    - text: Consejero
+    - text: Chantajista
+    - text: Socio
+    - text: Competencia
+    - text: Comprador
+    - text: Captor
+    - text: Cliente
+    - text: Confidente
+    - text: Deudor
+    - text: Discípulo
+    - text: Guardian
+    - text: Esbirro
+    - text: Idolo
+    - text: Informante
+    - text: Señor
+    - text: Mentor
+    - text: Némesis
+    - text: Descendencia
+    - text: Padre
+    - text: Patrón
+    - text: Rival político
+    - text: Prisionero
+    - text: Protegido
+    - text: Disputa
+    - text: Mano derecha
+    - text: Rival amoroso
+    - text: Sirviente
+    - text: Familiar
+    - text: Rival social
+    - text: Cónyuge
+    - text: Acosador
+    - text: Pretendiente
+    - text: Solicitante
+    - text: Suministrador
+    - text: Enamorado
+    - text: No corresponde

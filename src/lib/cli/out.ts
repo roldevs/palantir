@@ -1,4 +1,3 @@
-import Bluebird from 'bluebird';
 import * as R from 'ramda';
 import {
   ICliOutModule,
@@ -9,25 +8,19 @@ import { spaces } from '../utils';
 
 const cliOutModule: ICliOutModule =
 (logger: any) => {
-  const generateResults: (parent: IElementFormatted | null, depth: number) =>
-    (element: IElementFormatted) => void =
-  (parent, depth) => (element) => {
+  const generateResults: (depth: number) => (element: IElementFormatted) => void =
+  (depth) => (element) => {
     if (element.children) {
       logger(`${spaces(depth)} ${element.title}`);
-      R.map(generateResults(element, depth + 1), element.children);
+      R.map(generateResults(depth + 1), element.children);
+      return;
     }
 
-    if (parent) {
-      logger(`${spaces(depth)} ${parent!.title!}: ${element.text!}`);
-    }
+    logger(`${spaces(depth)} ${element.title!}: ${element.text!}`);
   };
 
-  const output: (elements: IElementFormatted[]) => void =
-  // tslint:disable-next-line:no-console
-  (elements) => R.map(generateResults(null, 0), elements);
-
   return {
-    output,
+    output: R.map(generateResults(0)),
   };
 };
 

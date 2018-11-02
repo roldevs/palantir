@@ -1,22 +1,25 @@
-text: Vicio
-options:
-  - text: Agresivo
-  - text: Arrogante
-  - text: Amargado
-  - text: Cobarde
-  - text: Cruel
-  - text: Mentiroso
-  - text: Poco serio
-  - text: Glotón
-  - text: Engreído
-  - text: Irascible
-  - text: Perezoso
-  - text: Nervioso
-  - text: Parcial
-  - text: Temerario
-  - text: Rudo
-  - text: Sospechoso
-  - text: Vano
-  - text: Vengativo
-  - text: Derrochador
-  - text: Quejumbroso
+meta:
+  system: Knave
+data:
+  text: Vicio
+  options:
+    - text: Agresivo
+    - text: Arrogante
+    - text: Amargado
+    - text: Cobarde
+    - text: Cruel
+    - text: Mentiroso
+    - text: Poco serio
+    - text: Glotón
+    - text: Engreído
+    - text: Irascible
+    - text: Perezoso
+    - text: Nervioso
+    - text: Parcial
+    - text: Temerario
+    - text: Rudo
+    - text: Sospechoso
+    - text: Vano
+    - text: Vengativo
+    - text: Derrochador
+    - text: Quejumbroso

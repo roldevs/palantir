@@ -1,38 +1,41 @@
-text: Reputación PNJ
-options:
-  - text: Ambicioso
-  - text: Autoritario
-  - text: Patán
-  - text: Pide prestado
-  - text: Celebridad
-  - text: Caritativo
-  - text: Estafador
-  - text: Peligroso
-  - text: Artista
-  - text: Chismoso
-  - text: Trabaja duro
-  - text: Sagrado
-  - text: Honesto
-  - text: Hipocondríaco
-  - text: Idiota
-  - text: Influyente
-  - text: Perezoso
-  - text: Líder
-  - text: Misántropo
-  - text: Mísero
-  - text: Buen vecino
-  - text: Loco
-  - text: Desagradable
-  - text: Sobreeducado
-  - text: Fiestero
-  - text: Piadoso
-  - text: Correcto
-  - text: Alarmista
-  - text: Repulsivo
-  - text: Respetado
-  - text: Chusma
-  - text: Escandaloso
-  - text: Canalla
-  - text: Terrorífico
-  - text: Raro
-  - text: Sabio
+meta:
+  system: Maze Rats
+data:
+  text: Reputación PNJ
+  options:
+    - text: Ambicioso
+    - text: Autoritario
+    - text: Patán
+    - text: Pide prestado
+    - text: Celebridad
+    - text: Caritativo
+    - text: Estafador
+    - text: Peligroso
+    - text: Artista
+    - text: Chismoso
+    - text: Trabaja duro
+    - text: Sagrado
+    - text: Honesto
+    - text: Hipocondríaco
+    - text: Idiota
+    - text: Influyente
+    - text: Perezoso
+    - text: Líder
+    - text: Misántropo
+    - text: Mísero
+    - text: Buen vecino
+    - text: Loco
+    - text: Desagradable
+    - text: Sobreeducado
+    - text: Fiestero
+    - text: Piadoso
+    - text: Correcto
+    - text: Alarmista
+    - text: Repulsivo
+    - text: Respetado
+    - text: Chusma
+    - text: Escandaloso
+    - text: Canalla
+    - text: Terrorífico
+    - text: Raro
+    - text: Sabio

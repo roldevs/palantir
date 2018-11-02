@@ -1,38 +1,41 @@
-text: Objeto Común
-options:
-  - text: Bol
-  - text: Campanilla
-  - text: Broche
-  - text: Figurita de madera
-  - text: Copa
-  - text: Baraja cartas
-  - text: Dibujo
-  - text: Cajita
-  - text: Pieza juego
-  - text: Monóculo
-  - text: Frasco cristal
-  - text: Diadema
-  - text: Pañuelo
-  - text: Moneda extranjera
-  - text: Reloj de arena
-  - text: Diente humano
-  - text: Cuerno de caza
-  - text: Dado trucado
-  - text: Tenedor largo
-  - text: Llave numerada
-  - text: Lámpara de aceite
-  - text: Muñeca vieja
-  - text: Bote pintura
-  - text: Carboncillo
-  - text: Monedero
-  - text: Pluma
-  - text: Ungüento
-  - text: Tijeras
-  - text: Pergamino
-  - text: Carta sellada
-  - text: Aguja de coser
-  - text: Cuchilla afeitar
-  - text: Botón de plata
-  - text: Calavera
-  - text: Pipa de tabaco
-  - text: Botella de vino
+meta:
+  system: Maze Rats
+data:
+  text: Objeto Común
+  options:
+    - text: Bol
+    - text: Campanilla
+    - text: Broche
+    - text: Figurita de madera
+    - text: Copa
+    - text: Baraja cartas
+    - text: Dibujo
+    - text: Cajita
+    - text: Pieza juego
+    - text: Monóculo
+    - text: Frasco cristal
+    - text: Diadema
+    - text: Pañuelo
+    - text: Moneda extranjera
+    - text: Reloj de arena
+    - text: Diente humano
+    - text: Cuerno de caza
+    - text: Dado trucado
+    - text: Tenedor largo
+    - text: Llave numerada
+    - text: Lámpara de aceite
+    - text: Muñeca vieja
+    - text: Bote pintura
+    - text: Carboncillo
+    - text: Monedero
+    - text: Pluma
+    - text: Ungüento
+    - text: Tijeras
+    - text: Pergamino
+    - text: Carta sellada
+    - text: Aguja de coser
+    - text: Cuchilla afeitar
+    - text: Botón de plata
+    - text: Calavera
+    - text: Pipa de tabaco
+    - text: Botella de vino

@@ -1,38 +1,41 @@
-text: PNJ de la Naturaleza
-options:
-  - text: Apicultor
-  - text: Bandido
-  - text: Guardia Caravanas
-  - text: Caravnero
-  - text: Druida
-  - text: Exiliado
-  - text: Explorador
-  - text: Granjero
-  - text: Pescador
-  - text: Forrajeador
-  - text: Fugitivo
-  - text: Herborista
-  - text: Hermitaño
-  - text: Cazador
-  - text: Mensajero
-  - text: Juglar
-  - text: Monje
-  - text: Cazamonstruos
-  - text: Forastero
-  - text: Zapador
-  - text: Peregrino
-  - text: Furtivo
-  - text: Invasor
-  - text: Guardabosques
-  - text: Sabio
-  - text: Cazatesoros
-  - text: Rastreador
-  - text: Pastor
-  - text: Vidente
-  - text: Cartógrafo
-  - text: Hojalatero
-  - text: Saqueatumbas
-  - text: Mercadoer
-  - text: Trampero
-  - text: Bruja
-  - text: Leñador
+meta:
+  system: Maze Rats
+data:
+  text: PNJ de la Naturaleza
+  options:
+    - text: Apicultor
+    - text: Bandido
+    - text: Guardia Caravanas
+    - text: Caravnero
+    - text: Druida
+    - text: Exiliado
+    - text: Explorador
+    - text: Granjero
+    - text: Pescador
+    - text: Forrajeador
+    - text: Fugitivo
+    - text: Herborista
+    - text: Hermitaño
+    - text: Cazador
+    - text: Mensajero
+    - text: Juglar
+    - text: Monje
+    - text: Cazamonstruos
+    - text: Forastero
+    - text: Zapador
+    - text: Peregrino
+    - text: Furtivo
+    - text: Invasor
+    - text: Guardabosques
+    - text: Sabio
+    - text: Cazatesoros
+    - text: Rastreador
+    - text: Pastor
+    - text: Vidente
+    - text: Cartógrafo
+    - text: Hojalatero
+    - text: Saqueatumbas
+    - text: Mercadoer
+    - text: Trampero
+    - text: Bruja
+    - text: Leñador

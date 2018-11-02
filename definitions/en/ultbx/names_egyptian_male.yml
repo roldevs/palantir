@@ -1,22 +1,25 @@
-text: Egyptian Male
-options:
-  - text: Abayomi
-  - text: Abubakar
-  - text: Amun
-  - text: An-Her
-  - text: Atsu
-  - text: Baruti
-  - text: Cheops
-  - text: Fenuku
-  - text: Gahiji
-  - text: Ishaq
-  - text: Khaldun
-  - text: Khepri
-  - text: Lukman
-  - text: Mbizi
-  - text: Nuru
-  - text: Sekani
-  - text: Sethos
-  - text: Sifiye
-  - text: Sobk
-  - text: Tum
+meta:
+  system: Ultimate Toolbox
+data:
+  text: Egyptian Male
+  options:
+    - text: Abayomi
+    - text: Abubakar
+    - text: Amun
+    - text: An-Her
+    - text: Atsu
+    - text: Baruti
+    - text: Cheops
+    - text: Fenuku
+    - text: Gahiji
+    - text: Ishaq
+    - text: Khaldun
+    - text: Khepri
+    - text: Lukman
+    - text: Mbizi
+    - text: Nuru
+    - text: Sekani
+    - text: Sethos
+    - text: Sifiye
+    - text: Sobk
+    - text: Tum

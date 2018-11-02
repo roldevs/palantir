@@ -1,38 +1,41 @@
-text: Tipo de Facción
-options:
-  - text: Movimiento artístico
-  - text: Gremio mendigos
-  - text: Mercado negro
-  - text: Hermandad
-  - text: Guardia ciudad
-  - text: Conspiración
-  - text: Gremio artesanos
-  - text: Familia crimen
-  - text: Banda crimen
-  - text: Culto oscuro
-  - text: Club exploradores
-  - text: Compañía libre
-  - text: Club gourmet
-  - text: Atracadores
-  - text: Secta herética
-  - text: Alto concilio
-  - text: Asesinos a sueldo
-  - text: Milicia local
-  - text: Iglesia nacional
-  - text: Casa noble
-  - text: Clan extranjeros
-  - text: Banda forajidos
-  - text: Partido político
-  - text: Orden religiosa
-  - text: Secta religiosa
-  - text: Resistencia
-  - text: Armada real
-  - text: Casa real
-  - text: Círculo erudito
-  - text: Sociedad secreta
-  - text: Red de espías
-  - text: Artistas callejeros
-  - text: Banda callejera
-  - text: Músicos callejeros
-  - text: Tropa treatal
-  - text: Grupo mercader
+meta:
+  system: Maze Rats
+data:
+  text: Tipo de Facción
+  options:
+    - text: Movimiento artístico
+    - text: Gremio mendigos
+    - text: Mercado negro
+    - text: Hermandad
+    - text: Guardia ciudad
+    - text: Conspiración
+    - text: Gremio artesanos
+    - text: Familia crimen
+    - text: Banda crimen
+    - text: Culto oscuro
+    - text: Club exploradores
+    - text: Compañía libre
+    - text: Club gourmet
+    - text: Atracadores
+    - text: Secta herética
+    - text: Alto concilio
+    - text: Asesinos a sueldo
+    - text: Milicia local
+    - text: Iglesia nacional
+    - text: Casa noble
+    - text: Clan extranjeros
+    - text: Banda forajidos
+    - text: Partido político
+    - text: Orden religiosa
+    - text: Secta religiosa
+    - text: Resistencia
+    - text: Armada real
+    - text: Casa real
+    - text: Círculo erudito
+    - text: Sociedad secreta
+    - text: Red de espías
+    - text: Artistas callejeros
+    - text: Banda callejera
+    - text: Músicos callejeros
+    - text: Tropa treatal
+    - text: Grupo mercader

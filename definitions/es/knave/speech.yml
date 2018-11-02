@@ -1,22 +1,25 @@
-text: Habla
-options:
-  - text: Contundente
-  - text: Vozarrón
-  - text: Entrecortada
-  - text: Críptica
-  - text: Arrastrada
-  - text: Ahogada
-  - text: Florida
-  - text: Formal
-  - text: Grave
-  - text: Ronca
-  - text: Murmurosa
-  - text: Precisa
-  - text: Pintoresca
-  - text: Divagante
-  - text: Trepidante
-  - text: Dialecto
-  - text: Lenta
-  - text: Chirriante
-  - text: Tartamudeo
-  - text: Susurro
+meta:
+  system: Knave
+data:
+  text: Habla
+  options:
+    - text: Contundente
+    - text: Vozarrón
+    - text: Entrecortada
+    - text: Críptica
+    - text: Arrastrada
+    - text: Ahogada
+    - text: Florida
+    - text: Formal
+    - text: Grave
+    - text: Ronca
+    - text: Murmurosa
+    - text: Precisa
+    - text: Pintoresca
+    - text: Divagante
+    - text: Trepidante
+    - text: Dialecto
+    - text: Lenta
+    - text: Chirriante
+    - text: Tartamudeo
+    - text: Susurro

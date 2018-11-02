@@ -1,45 +1,48 @@
-text: Evento de Ciudad
-options:
-  - text: Asesinato
-  - text: Carnaval
-  - text: Conscripción
-  - text: Coronación
-  - text: Gope estado
-  - text: Actividad culto
-  - text: Toque queda
-  - text: Descubrimiento
-  - text: Terremoto
-  - text: Evento de Ciudad
-    related:
-      faction:
-        text: Guerra con Facción
-        search:
-          - ns: maze_rats
-            type: faction
-            random: all
-  - text: Histeria
-  - text: Fuego
-  - text: Inundación
-  - text: Niebla pesada
-  - text: Altos impuestos
-  - text: Día sagrado
-  - text: Tendencia moda
-  - text: Inquisición
-  - text: Insurrección
-  - text: Invasión
-  - text: Fuga prisión
-  - text: Juegos públicos
-  - text: Perdón masivo
-  - text: Negociaciones
-  - text: Plaga
-  - text: Proclamación
-  - text: Prohibición
-  - text: Escasez
-  - text: Refugiados
-  - text: Disturbios
-  - text: Arresto político
-  - text: Escándalo
-  - text: Asesino serie
-  - text: Desalojo masivo
-  - text: Torneo
-  - text: Juicio
+meta:
+  system: Maze Rats
+data:
+  text: Evento de Ciudad
+  options:
+    - text: Asesinato
+    - text: Carnaval
+    - text: Conscripción
+    - text: Coronación
+    - text: Gope estado
+    - text: Actividad culto
+    - text: Toque queda
+    - text: Descubrimiento
+    - text: Terremoto
+    - text: Evento de Ciudad
+      related:
+        faction:
+          text: Guerra con Facción
+          search:
+            - ns: maze_rats
+              type: faction
+              random: all
+    - text: Histeria
+    - text: Fuego
+    - text: Inundación
+    - text: Niebla pesada
+    - text: Altos impuestos
+    - text: Día sagrado
+    - text: Tendencia moda
+    - text: Inquisición
+    - text: Insurrección
+    - text: Invasión
+    - text: Fuga prisión
+    - text: Juegos públicos
+    - text: Perdón masivo
+    - text: Negociaciones
+    - text: Plaga
+    - text: Proclamación
+    - text: Prohibición
+    - text: Escasez
+    - text: Refugiados
+    - text: Disturbios
+    - text: Arresto político
+    - text: Escándalo
+    - text: Asesino serie
+    - text: Desalojo masivo
+    - text: Torneo
+    - text: Juicio

@@ -1,38 +1,41 @@
-text: Estructura Natural
-options:
-  - text: Altar
-  - text: Acueducto
-  - text: Cripta
-  - text: Campo batalla
-  - text: Hoguera
-  - text: Puente
-  - text: Majón
-  - text: Cruce caminos
-  - text: Patíbulo
-  - text: Presa
-  - text: Dungeon
-  - text: Granja
-  - text: Vado
-  - text: Fortaleza
-  - text: Campamento bandidos
-  - text: Tumba
-  - text: Cerco setos
-  - text: Campamento cazadores
-  - text: Posada
-  - text: Campamento leñador
-  - text: Mina
-  - text: Monasterio
-  - text: Monumento
-  - text: Huerta
-  - text: Puesto fronterizo
-  - text: Pasto
-  - text: Ruinas
-  - text: Retiro
-  - text: Cabaña
-  - text: Santuario
-  - text: Menhir
-  - text: Templo
-  - text: Aldea
-  - text: Muro
-  - text: Torre vigía
-  - text: Piedra guía
+meta:
+  system: Maze Rats
+data:
+  text: Estructura Natural
+  options:
+    - text: Altar
+    - text: Acueducto
+    - text: Cripta
+    - text: Campo batalla
+    - text: Hoguera
+    - text: Puente
+    - text: Majón
+    - text: Cruce caminos
+    - text: Patíbulo
+    - text: Presa
+    - text: Dungeon
+    - text: Granja
+    - text: Vado
+    - text: Fortaleza
+    - text: Campamento bandidos
+    - text: Tumba
+    - text: Cerco setos
+    - text: Campamento cazadores
+    - text: Posada
+    - text: Campamento leñador
+    - text: Mina
+    - text: Monasterio
+    - text: Monumento
+    - text: Huerta
+    - text: Puesto fronterizo
+    - text: Pasto
+    - text: Ruinas
+    - text: Retiro
+    - text: Cabaña
+    - text: Santuario
+    - text: Menhir
+    - text: Templo
+    - text: Aldea
+    - text: Muro
+    - text: Torre vigía
+    - text: Piedra guía

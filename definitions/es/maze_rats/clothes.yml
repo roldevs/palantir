@@ -1,38 +1,41 @@
-text: Ropajes
-options:
-  - text: Anticuado
-  - text: Rota en batalla
-  - text: Sucio
-  - text: Ensangrenatdo
-  - text: Ceremoniosa
-  - text: Envejecida
-  - text: Deteriorada
-  - text: Excéntrica
-  - text: Desgastada
-  - text: Elegante
-  - text: Bordada
-  - text: Exótica
-  - text: Moderna
-  - text: Extravagante
-  - text: Manchas comida
-  - text: Fomral
-  - text: Raída
-  - text: Desaliñada
-  - text: Llamativa
-  - text: Mugrienta
-  - text: Alta costura
-  - text: Con lazos
-  - text: Uniforme
-  - text: Embarrado
-  - text: Ostentoso
-  - text: Talla grande
-  - text: Parcheada
-  - text: Con patrones
-  - text: Perfumada
-  - text: Práctica
-  - text: Arrugada
-  - text: Inscrita
-  - text: Chamuscada
-  - text: Insipida
-  - text: Apretada
-  - text: Manchas vino
+meta:
+  system: Maze Rats
+data:
+  text: Ropajes
+  options:
+    - text: Anticuado
+    - text: Rota en batalla
+    - text: Sucio
+    - text: Ensangrenatdo
+    - text: Ceremoniosa
+    - text: Envejecida
+    - text: Deteriorada
+    - text: Excéntrica
+    - text: Desgastada
+    - text: Elegante
+    - text: Bordada
+    - text: Exótica
+    - text: Moderna
+    - text: Extravagante
+    - text: Manchas comida
+    - text: Fomral
+    - text: Raída
+    - text: Desaliñada
+    - text: Llamativa
+    - text: Mugrienta
+    - text: Alta costura
+    - text: Con lazos
+    - text: Uniforme
+    - text: Embarrado
+    - text: Ostentoso
+    - text: Talla grande
+    - text: Parcheada
+    - text: Con patrones
+    - text: Perfumada
+    - text: Práctica
+    - text: Arrugada
+    - text: Inscrita
+    - text: Chamuscada
+    - text: Insipida
+    - text: Apretada
+    - text: Manchas vino

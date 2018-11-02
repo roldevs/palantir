@@ -1,38 +1,41 @@
-text: Ropaje
-options:
-  - text: Cinturón
-  - text: Blusa
-  - text: Botas
-  - text: Brazalete
-  - text: Peto
-  - text: Cota placas
-  - text: Cinto
-  - text: Capa
-  - text: Abrigo
-  - text: Vestido
-  - text: Pendiente
-  - text: Parche
-  - text: Guantelete
-  - text: Guante
-  - text: Camison
-  - text: Sombrero
-  - text: Yelmo
-  - text: Calzas
-  - text: Peto de cuero
-  - text: Medallón
-  - text: Cota de malla
-  - text: Calcetines
-  - text: Pantalones
-  - text: Velo
-  - text: Cota escamada
-  - text: Anillo
-  - text: Túnica
-  - text: Colgante
-  - text: Cota acolchada
-  - text: Máscara
-  - text: Zapatos
-  - text: Falda
-  - text: Sandalias
-  - text: Bufanda
-  - text: Camisa
-  - text: Pantuflas
+meta:
+  system: Maze Rats
+data:
+  text: Ropaje
+  options:
+    - text: Cinturón
+    - text: Blusa
+    - text: Botas
+    - text: Brazalete
+    - text: Peto
+    - text: Cota placas
+    - text: Cinto
+    - text: Capa
+    - text: Abrigo
+    - text: Vestido
+    - text: Pendiente
+    - text: Parche
+    - text: Guantelete
+    - text: Guante
+    - text: Camison
+    - text: Sombrero
+    - text: Yelmo
+    - text: Calzas
+    - text: Peto de cuero
+    - text: Medallón
+    - text: Cota de malla
+    - text: Calcetines
+    - text: Pantalones
+    - text: Velo
+    - text: Cota escamada
+    - text: Anillo
+    - text: Túnica
+    - text: Colgante
+    - text: Cota acolchada
+    - text: Máscara
+    - text: Zapatos
+    - text: Falda
+    - text: Sandalias
+    - text: Bufanda
+    - text: Camisa
+    - text: Pantuflas

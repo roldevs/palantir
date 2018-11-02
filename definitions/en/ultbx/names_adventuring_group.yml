@@ -1,22 +1,25 @@
-text: Adventuring Group Names
-options:
-  - text: Band of Strength
-  - text: Ebon Boarsmen
-  - text: Emerald Delvers
-  - text: Emissars of Justice
-  - text: Fellowship of the Skull
-  - text: Friends of Chaos
-  - text: Glorious Adventurers
-  - text: Golden Adventurers
-  - text: Keepers of Bloody Coins
-  - text: Laughing Warriors
-  - text: Lucky Knights
-  - text: Mercenaries of Light
-  - text: Mysterious Vagabonds
-  - text: Mystic Followers
-  - text: Raiders of Shining Secrets
-  - text: Seekers of Truth
-  - text: Strangers of Fangs
-  - text: Travelers of the Road
-  - text: Unlikely Company
-  - text: Vagabonds of the Standard
+meta:
+  system: Ultimate Toolbox
+data:
+  text: Adventuring Group Names
+  options:
+    - text: Band of Strength
+    - text: Ebon Boarsmen
+    - text: Emerald Delvers
+    - text: Emissars of Justice
+    - text: Fellowship of the Skull
+    - text: Friends of Chaos
+    - text: Glorious Adventurers
+    - text: Golden Adventurers
+    - text: Keepers of Bloody Coins
+    - text: Laughing Warriors
+    - text: Lucky Knights
+    - text: Mercenaries of Light
+    - text: Mysterious Vagabonds
+    - text: Mystic Followers
+    - text: Raiders of Shining Secrets
+    - text: Seekers of Truth
+    - text: Strangers of Fangs
+    - text: Travelers of the Road
+    - text: Unlikely Company
+    - text: Vagabonds of the Standard

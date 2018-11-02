@@ -1,6 +1,9 @@
-text: Casco y Escudo
-options:
-  - text: Nada
-  - text: Casco
-  - text: Escudo
-  - text: Casco y escudo
+meta:
+  system: Knave
+data:
+  text: Casco y Escudo
+  options:
+    - text: Nada
+    - text: Casco
+    - text: Escudo
+    - text: Casco y escudo

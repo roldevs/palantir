@@ -1,22 +1,25 @@
-text: Pelo
-options:
-  - text: Calvo
-  - text: Trenzado
-  - text: Erizado
-  - text: Recortado
-  - text: Ensortijado
-  - text: Despeinado
-  - text: Rastas
-  - text: Sucio
-  - text: Rizado
-  - text: Grasiento
-  - text: Flácido
-  - text: Largo
-  - text: Lujoso
-  - text: Cresta
-  - text: Aceitoso
-  - text: Coleta
-  - text: Sedoso
-  - text: Moño
-  - text: Ondulado
-  - text: Ralo
+meta:
+  system: Knave
+data:
+  text: Pelo
+  options:
+    - text: Calvo
+    - text: Trenzado
+    - text: Erizado
+    - text: Recortado
+    - text: Ensortijado
+    - text: Despeinado
+    - text: Rastas
+    - text: Sucio
+    - text: Rizado
+    - text: Grasiento
+    - text: Flácido
+    - text: Largo
+    - text: Lujoso
+    - text: Cresta
+    - text: Aceitoso
+    - text: Coleta
+    - text: Sedoso
+    - text: Moño
+    - text: Ondulado
+    - text: Ralo

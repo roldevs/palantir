@@ -1,5 +1,8 @@
-text: Alineamiento
-options:
-  - text: Leal
-  - text: Neutral
-  - text: Caos
+meta:
+  system: Knave
+data:
+  text: Alineamiento
+  options:
+    - text: Leal
+    - text: Neutral
+    - text: Caos

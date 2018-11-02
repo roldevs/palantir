@@ -1,68 +1,71 @@
-text: Debilidad del Monstruo
-options:
-  - text: Campanas
-  - text: Canto pájaro
-  - text: Niños
-  - text: Frío
-  - text: Hierro frío
-  - text: Competición
-  - text: Conversación
-  - text: Debilidad
-  - text: Halagos
-  - text: Flores
-  - text: Regalos
-  - text: Oro
-  - text: Calor
-  - text: Símbolo divino
-  - text: Agua bendita
-  - text: Comida casera
-  - text: Debilidad del Monstruo
-    related:
-      insanity:
-        text: Locura
-        search:
-          - ns: maze_rats
-            type: insanity
-  - text: Espejos
-  - text: Muérdago
-  - text: Luz de luna
-  - text: Música
-  - text: Debilidad del Monstruo
-    related:
-      npc_method:
-        text: Método de PNJ
-        search:
-          - ns: maze_rats
-            type: npc_method
-  - text: Filateria
-  - text: Debilidad del Monstruo
-    related:
-      physical_element:
-        text: Elemento Físico
-        search:
-          - ns: maze_rats
-            type: physical_element
-  - text: Puzzles
-  - text: Acertijos
-  - text: Rituales
-  - text: Plata
-  - text: Luz del sol
-  - text: Lágrimas
-  - text: Nombre real
-  - text: Debilidad del Monstruo
-    related:
-      valuable_material:
-        text: Material Valioso
-        search:
-          - ns: maze_rats
-            type: valuable_material
-  - text: Punto débil
-  - text: Debilidad del Monstruo
-    related:
-      weapon_item:
-        text: Arma
-        search:
-          - ns: maze_rats
-            type: weapon_item
-  - text: Vino
-  - text: Ajenjo
+meta:
+  system: Maze Rats
+data:
+  text: Debilidad del Monstruo
+  options:
+    - text: Campanas
+    - text: Canto pájaro
+    - text: Niños
+    - text: Frío
+    - text: Hierro frío
+    - text: Competición
+    - text: Conversación
+    - text: Debilidad
+    - text: Halagos
+    - text: Flores
+    - text: Regalos
+    - text: Oro
+    - text: Calor
+    - text: Símbolo divino
+    - text: Agua bendita
+    - text: Comida casera
+    - text: Debilidad del Monstruo
+      related:
+        insanity:
+          text: Locura
+          search:
+            - ns: maze_rats
+              type: insanity
+    - text: Espejos
+    - text: Muérdago
+    - text: Luz de luna
+    - text: Música
+    - text: Debilidad del Monstruo
+      related:
+        npc_method:
+          text: Método de PNJ
+          search:
+            - ns: maze_rats
+              type: npc_method
+    - text: Filateria
+    - text: Debilidad del Monstruo
+      related:
+        physical_element:
+          text: Elemento Físico
+          search:
+            - ns: maze_rats
+              type: physical_element
+    - text: Puzzles
+    - text: Acertijos
+    - text: Rituales
+    - text: Plata
+    - text: Luz del sol
+    - text: Lágrimas
+    - text: Nombre real
+    - text: Debilidad del Monstruo
+      related:
+        valuable_material:
+          text: Material Valioso
+          search:
+            - ns: maze_rats
+              type: valuable_material
+    - text: Punto débil
+    - text: Debilidad del Monstruo
+      related:
+        weapon_item:
+          text: Arma
+          search:
+            - ns: maze_rats
+              type: weapon_item
+    - text: Vino
+    - text: Ajenjo

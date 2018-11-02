@@ -1,22 +1,25 @@
-text: Cara
-options:
-  - text: Hinchada
-  - text: Franca
-  - text: Huesuda
-  - text: Cincelada
-  - text: Delicada
-  - text: Alargada
-  - text: De patricio
-  - text: Picada
-  - text: Aguileña
-  - text: Rota
-  - text: Traviesa
-  - text: Delgada
-  - text: Ratuna
-  - text: Redonda
-  - text: Hundida
-  - text: Afilada
-  - text: Suave
-  - text: Cuadrada
-  - text: Ancha
-  - text: Lobuna
+meta:
+  system: Knave
+data:
+  text: Cara
+  options:
+    - text: Hinchada
+    - text: Franca
+    - text: Huesuda
+    - text: Cincelada
+    - text: Delicada
+    - text: Alargada
+    - text: De patricio
+    - text: Picada
+    - text: Aguileña
+    - text: Rota
+    - text: Traviesa
+    - text: Delgada
+    - text: Ratuna
+    - text: Redonda
+    - text: Hundida
+    - text: Afilada
+    - text: Suave
+    - text: Cuadrada
+    - text: Ancha
+    - text: Lobuna

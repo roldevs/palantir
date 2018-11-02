@@ -1,56 +1,59 @@
-text: Truco de la Mazmorra
-options:
-  - text: Absorbe
-  - text: Activa
-  - text: Anima
-  - text: Bendice
-  - text: Comunicación
-  - text: Confusión
-  - text: Consumir
-  - text: Crea
-  - text: Maldice
-  - text: Engaña
-  - text: Duplicación
-  - text: Truco de la Mazmorra
-    related:
-      ethereal_effect:
-        text: Efecto Etéreo
-        search:
-          - ns: maze_rats
-            type: ethereal_effect
-  - text: Intercambia
-  - text: Encierra
-  - text: Instrucciones
-  - text: Interrogación
-  - text: Control mental
-  - text: Truco de la Mazmorra
-    related:
-      mission:
-        text: Misión
-        search:
-          - ns: maze_rats
-            type: mission
-  - text: Altera el humor
-  - text: Nulifica
-  - text: Truco de la Mazmorra
-    related:
-      physical_effect:
-        text: Efecto Físico
-        search:
-          - ns: maze_rats
-            type: physical_effect
-  - text: Cambio plano
-  - text: Protección
-  - text: Rejuvenece
-  - text: Libera
-  - text: Invierte
-  - text: Rotación
-  - text: Predice
-  - text: Altera tamaño
-  - text: Invoca
-  - text: Roba
-  - text: Altera tiempo
-  - text: Transformación
-  - text: Transmuta
-  - text: Transporta
-  - text: Maravilla
+meta:
+  system: Maze Rats
+data:
+  text: Truco de la Mazmorra
+  options:
+    - text: Absorbe
+    - text: Activa
+    - text: Anima
+    - text: Bendice
+    - text: Comunicación
+    - text: Confusión
+    - text: Consumir
+    - text: Crea
+    - text: Maldice
+    - text: Engaña
+    - text: Duplicación
+    - text: Truco de la Mazmorra
+      related:
+        ethereal_effect:
+          text: Efecto Etéreo
+          search:
+            - ns: maze_rats
+              type: ethereal_effect
+    - text: Intercambia
+    - text: Encierra
+    - text: Instrucciones
+    - text: Interrogación
+    - text: Control mental
+    - text: Truco de la Mazmorra
+      related:
+        mission:
+          text: Misión
+          search:
+            - ns: maze_rats
+              type: mission
+    - text: Altera el humor
+    - text: Nulifica
+    - text: Truco de la Mazmorra
+      related:
+        physical_effect:
+          text: Efecto Físico
+          search:
+            - ns: maze_rats
+              type: physical_effect
+    - text: Cambio plano
+    - text: Protección
+    - text: Rejuvenece
+    - text: Libera
+    - text: Invierte
+    - text: Rotación
+    - text: Predice
+    - text: Altera tamaño
+    - text: Invoca
+    - text: Roba
+    - text: Altera tiempo
+    - text: Transformación
+    - text: Transmuta
+    - text: Transporta
+    - text: Maravilla

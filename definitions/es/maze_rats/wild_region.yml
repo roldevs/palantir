@@ -1,38 +1,41 @@
-text: Región Natural
-options:
-  - text: Ceniciento
-  - text: Páramos
-  - text: Bahía
-  - text: Playa
-  - text: Delta
-  - text: Desierto
-  - text: Tierra seca
-  - text: Mar de dunas
-  - text: Polvorienta
-  - text: Fiordos
-  - text: Marismas
-  - text: Estribaciones
-  - text: Bosque
-  - text: Glaciares
-  - text: Brezal
-  - text: Tierras altas
-  - text: Colinas
-  - text: Tierra helada
-  - text: Jungla
-  - text: Tierras bajas
-  - text: Meseta
-  - text: Pantano
-  - text: Montañas
-  - text: Bosque pétreo
-  - text: Llanuras
-  - text: Selva
-  - text: Entreríos
-  - text: Salinas
-  - text: Sabana
-  - text: Estepa
-  - text: Taiga
-  - text: Espesura
-  - text: Tundra
-  - text: Linde volcánica
-  - text: Humedales
-  - text: Arboleda
+meta:
+  system: Maze Rats
+data:
+  text: Región Natural
+  options:
+    - text: Ceniciento
+    - text: Páramos
+    - text: Bahía
+    - text: Playa
+    - text: Delta
+    - text: Desierto
+    - text: Tierra seca
+    - text: Mar de dunas
+    - text: Polvorienta
+    - text: Fiordos
+    - text: Marismas
+    - text: Estribaciones
+    - text: Bosque
+    - text: Glaciares
+    - text: Brezal
+    - text: Tierras altas
+    - text: Colinas
+    - text: Tierra helada
+    - text: Jungla
+    - text: Tierras bajas
+    - text: Meseta
+    - text: Pantano
+    - text: Montañas
+    - text: Bosque pétreo
+    - text: Llanuras
+    - text: Selva
+    - text: Entreríos
+    - text: Salinas
+    - text: Sabana
+    - text: Estepa
+    - text: Taiga
+    - text: Espesura
+    - text: Tundra
+    - text: Linde volcánica
+    - text: Humedales
+    - text: Arboleda

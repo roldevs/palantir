@@ -1,38 +1,41 @@
-text: Tesoro
-options:
-  - text: Receta Alquimista
-  - text: Amuleto
-  - text: Astrolabio
-  - text: Planos
-  - text: Caligrafía
-  - text: Alfombra
-  - text: Brújula
-  - text: Contrato
-  - text: Corona
-  - text: Cristal
-  - text: Microscopio
-  - text: Bordado
-  - text: Porcelana
-  - text: Licor
-  - text: Instrumento
-  - text: Libro Mágico
-  - text: Registro propiedad
-  - text: Caja de música
-  - text: Planetario
-  - text: Cuadro
-  - text: Perfume
-  - text: Libro religioso
-  - text: Imprenta
-  - text: Anillo sello
-  - text: Ropas reales
-  - text: Reliquia santa
-  - text: Marfil tallado
-  - text: Sextante
-  - text: Partitura
-  - text: Mapa tesoro
-  - text: Platería
-  - text: Especias
-  - text: Catalejo
-  - text: Tapete
-  - text: Telescopio
-  - text: Tela excepcional
+meta:
+  system: Maze Rats
+data:
+  text: Tesoro
+  options:
+    - text: Receta Alquimista
+    - text: Amuleto
+    - text: Astrolabio
+    - text: Planos
+    - text: Caligrafía
+    - text: Alfombra
+    - text: Brújula
+    - text: Contrato
+    - text: Corona
+    - text: Cristal
+    - text: Microscopio
+    - text: Bordado
+    - text: Porcelana
+    - text: Licor
+    - text: Instrumento
+    - text: Libro Mágico
+    - text: Registro propiedad
+    - text: Caja de música
+    - text: Planetario
+    - text: Cuadro
+    - text: Perfume
+    - text: Libro religioso
+    - text: Imprenta
+    - text: Anillo sello
+    - text: Ropas reales
+    - text: Reliquia santa
+    - text: Marfil tallado
+    - text: Sextante
+    - text: Partitura
+    - text: Mapa tesoro
+    - text: Platería
+    - text: Especias
+    - text: Catalejo
+    - text: Tapete
+    - text: Telescopio
+    - text: Tela excepcional

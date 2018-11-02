@@ -1,14 +1,17 @@
-text: Evento
-related:
-  focus:
-    text: Foco del Evento
-    search:
-      - ns: mythic
-        type: event_focus
-        random: ramdom
-  meaning:
-    text: Significado del Evento
-    search:
-      - ns: mythic
-        type: event_meaning
-        random: ramdom
+meta:
+  system: Mythic GM Emulator
+data:
+  text: Evento
+  related:
+    focus:
+      text: Foco del Evento
+      search:
+        - ns: mythic
+          type: event_focus
+          random: ramdom
+    meaning:
+      text: Significado del Evento
+      search:
+        - ns: mythic
+          type: event_meaning
+          random: ramdom

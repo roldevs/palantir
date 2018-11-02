@@ -1,44 +1,47 @@
-text: Habitación de Ciudad
-options:
-  - text: Jardín botánico
-  - text: Atrio
-  - text: Ático
-  - text: Pajarera
-  - text: Sala de baile
-  - text: Baños
-  - text: Dormitorio
-  - text: Gabinete
-  - text: Capilla
-  - text: Guardarropa
-  - text: Comedor
-  - text: Vestidor
-  - text: Habitación de Ciudad
-    related:
-      dungeon_room:
-        text: Habitación de Mazmorra
-        search:
-          - ns: maze_rats
-            type: dungeon_room
-  - text: Jardín
-  - text: Desván
-  - text: Invernadero
-  - text: Trastero
-  - text: Cocina
-  - text: Despensa
-  - text: Librería
-  - text: Sala de mapas
-  - text: Sala de juegos
-  - text: Caballeriza
-  - text: Enfermería
-  - text: Almacén
-  - text: Salón
-  - text: Letrina
-  - text: Sótano
-  - text: Jamonera
-  - text: Trascocina
-  - text: Fumadero
-  - text: Sala de especias
-  - text: Sala de té
-  - text: Estudio
-  - text: Sala de trofeos
-  - text: Ropero
+meta:
+  system: Maze Rats
+data:
+  text: Habitación de Ciudad
+  options:
+    - text: Jardín botánico
+    - text: Atrio
+    - text: Ático
+    - text: Pajarera
+    - text: Sala de baile
+    - text: Baños
+    - text: Dormitorio
+    - text: Gabinete
+    - text: Capilla
+    - text: Guardarropa
+    - text: Comedor
+    - text: Vestidor
+    - text: Habitación de Ciudad
+      related:
+        dungeon_room:
+          text: Habitación de Mazmorra
+          search:
+            - ns: maze_rats
+              type: dungeon_room
+    - text: Jardín
+    - text: Desván
+    - text: Invernadero
+    - text: Trastero
+    - text: Cocina
+    - text: Despensa
+    - text: Librería
+    - text: Sala de mapas
+    - text: Sala de juegos
+    - text: Caballeriza
+    - text: Enfermería
+    - text: Almacén
+    - text: Salón
+    - text: Letrina
+    - text: Sótano
+    - text: Jamonera
+    - text: Trascocina
+    - text: Fumadero
+    - text: Sala de especias
+    - text: Sala de té
+    - text: Estudio
+    - text: Sala de trofeos
+    - text: Ropero

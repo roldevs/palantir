@@ -1,16 +1,19 @@
-text: Edficio
-options:
-  - text: Edficio
-    related:
-      city_lowerclass_building:
-        text: Edificio Clase baja
-        search:
-          - ns: maze_rats
-            type: city_lowerclass_building
-  - text: Edficio
-    related:
-      city_upperclass_building:
-        text: Edificio Clase alta
-        search:
-          - ns: maze_rats
-            type: city_upperclass_building
+meta:
+  system: Maze Rats
+data:
+  text: Edficio
+  options:
+    - text: Edficio
+      related:
+        city_lowerclass_building:
+          text: Edificio Clase baja
+          search:
+            - ns: maze_rats
+              type: city_lowerclass_building
+    - text: Edficio
+      related:
+        city_upperclass_building:
+          text: Edificio Clase alta
+          search:
+            - ns: maze_rats
+              type: city_upperclass_building

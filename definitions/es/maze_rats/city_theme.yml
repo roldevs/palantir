@@ -1,100 +1,103 @@
-text: Tema de Ciudad
-options:
-  - text: Tema de Ciudad
-    related:
-      animal:
-        text: Animal
-        search:
-          - ns: maze_rats
-            type: animal
-  - text: Aristocracia
-  - text: Arte
-  - text: Burocracia
-  - text: Castas
-  - text: Catacumbas
-  - text: Tema de Ciudad
-    related:
-      city_activity:
-        text: Actividad de Ciudad
-        search:
-          - ns: maze_rats
-            type: city_activity
-  - text: Tema de Ciudad
-    related:
-      city_event:
-        text: Evento de Ciudad
-        search:
-          - ns: maze_rats
-            type: city_event
-  - text: Rencillas
-  - text: Crueldad
-  - text: Tema de Ciudad
-    related:
-      city_district_theme:
-        text: Temática de Distrito
-        search:
-          - ns: maze_rats
-            type: city_district_theme
-  - text: Tema de Ciudad
-    related:
-      divinity_domain:
-        text: Dominio Divino
-        search:
-          - ns: maze_rats
-            type: divinity_domain
-  - text: Tema de Ciudad
-    related:
-      faction:
-        text: Facción
-        search:
-          - ns: maze_rats
-            type: faction
-            random: all
-  - text: Festivales
-  - text: Familias crimen
-  - text: Intriga
-  - text: Tema de Ciudad
-    related:
-      city_lowerclass_building:
-        text: Edificio de Clase Baja
-        search:
-          - ns: maze_rats
-            type: city_lowerclass_building
-  - text: Ley marcial
-  - text: Meritocracia
-  - text: Tema de Ciudad
-    related:
-      npc:
-        text: PNJ
-        search:
-          - ns: maze_rats
-            type: npc
-            random: all
-  - text: Opulencia
-  - text: Tema de Ciudad
-    related:
-      physical_element:
-        text: Elemento Físico
-        search:
-          - ns: maze_rats
-            type: physical_element
-  - text: Peregrinos
-  - text: Piratería
-  - text: Plutocracia
-  - text: Pobreza
-  - text: Rituales
-  - text: Esclavitud
-  - text: Especias
-  - text: Teocracia
-  - text: Ladrones y robos
-  - text: Comercio
-  - text: Tiranía
-  - text: Tema de Ciudad
-    related:
-      city_uperclass_building:
-        text: Edificio de Clase Alta
-        search:
-          - ns: maze_rats
-            type: city_upperclass_building
-  - text: Brujería
-  - text: Xenofobia
+meta:
+  system: Maze Rats
+data:
+  text: Tema de Ciudad
+  options:
+    - text: Tema de Ciudad
+      related:
+        animal:
+          text: Animal
+          search:
+            - ns: maze_rats
+              type: animal
+    - text: Aristocracia
+    - text: Arte
+    - text: Burocracia
+    - text: Castas
+    - text: Catacumbas
+    - text: Tema de Ciudad
+      related:
+        city_activity:
+          text: Actividad de Ciudad
+          search:
+            - ns: maze_rats
+              type: city_activity
+    - text: Tema de Ciudad
+      related:
+        city_event:
+          text: Evento de Ciudad
+          search:
+            - ns: maze_rats
+              type: city_event
+    - text: Rencillas
+    - text: Crueldad
+    - text: Tema de Ciudad
+      related:
+        city_district_theme:
+          text: Temática de Distrito
+          search:
+            - ns: maze_rats
+              type: city_district_theme
+    - text: Tema de Ciudad
+      related:
+        divinity_domain:
+          text: Dominio Divino
+          search:
+            - ns: maze_rats
+              type: divinity_domain
+    - text: Tema de Ciudad
+      related:
+        faction:
+          text: Facción
+          search:
+            - ns: maze_rats
+              type: faction
+              random: all
+    - text: Festivales
+    - text: Familias crimen
+    - text: Intriga
+    - text: Tema de Ciudad
+      related:
+        city_lowerclass_building:
+          text: Edificio de Clase Baja
+          search:
+            - ns: maze_rats
+              type: city_lowerclass_building
+    - text: Ley marcial
+    - text: Meritocracia
+    - text: Tema de Ciudad
+      related:
+        npc:
+          text: PNJ
+          search:
+            - ns: maze_rats
+              type: npc
+              random: all
+    - text: Opulencia
+    - text: Tema de Ciudad
+      related:
+        physical_element:
+          text: Elemento Físico
+          search:
+            - ns: maze_rats
+              type: physical_element
+    - text: Peregrinos
+    - text: Piratería
+    - text: Plutocracia
+    - text: Pobreza
+    - text: Rituales
+    - text: Esclavitud
+    - text: Especias
+    - text: Teocracia
+    - text: Ladrones y robos
+    - text: Comercio
+    - text: Tiranía
+    - text: Tema de Ciudad
+      related:
+        city_uperclass_building:
+          text: Edificio de Clase Alta
+          search:
+            - ns: maze_rats
+              type: city_upperclass_building
+    - text: Brujería
+    - text: Xenofobia

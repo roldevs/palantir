@@ -1,12 +1,15 @@
-text: Estamos aquí para...
-options:
-  - text: Encontrar un artefacto antiguo
-  - text: Buscar una cura
-  - text: Rescatar a alguien en peligro
-  - text: Usar un lugar sagrado
-  - text: Llevar a un villano ante la justicia
-  - text: Encontrar al que es perseguido
-  - text: Salvar nuestras almas
-  - text: Parar la liberación de un antiguo mal
-  - text: Encontrar un conocimiento antiguo
-  - text: Cerrar un portal impío
+meta:
+  system: One Shot Dungeon World
+data:
+  text: Estamos aquí para...
+  options:
+    - text: Encontrar un artefacto antiguo
+    - text: Buscar una cura
+    - text: Rescatar a alguien en peligro
+    - text: Usar un lugar sagrado
+    - text: Llevar a un villano ante la justicia
+    - text: Encontrar al que es perseguido
+    - text: Salvar nuestras almas
+    - text: Parar la liberación de un antiguo mal
+    - text: Encontrar un conocimiento antiguo
+    - text: Cerrar un portal impío

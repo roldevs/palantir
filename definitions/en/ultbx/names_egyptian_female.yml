@@ -1,22 +1,25 @@
-text: Egyptian Female
-options:
-  - text: Chione
-  - text: Hatshepsut
-  - text: Ife
-  - text: Isis
-  - text: Maibe
-  - text: Monifa
-  - text: Mukamutara
-  - text: Mumatra
-  - text: Nathifa
-  - text: Nekhbet
-  - text: Nephthys
-  - text: Oni
-  - text: Oseye
-  - text: Sabah
-  - text: Subira
-  - text: Tefnut
-  - text: Yaminah
-  - text: Zalika
-  - text: Zaliki
-  - text: Zesiro
+meta:
+  system: Ultimate Toolbox
+data:
+  text: Egyptian Female
+  options:
+    - text: Chione
+    - text: Hatshepsut
+    - text: Ife
+    - text: Isis
+    - text: Maibe
+    - text: Monifa
+    - text: Mukamutara
+    - text: Mumatra
+    - text: Nathifa
+    - text: Nekhbet
+    - text: Nephthys
+    - text: Oni
+    - text: Oseye
+    - text: Sabah
+    - text: Subira
+    - text: Tefnut
+    - text: Yaminah
+    - text: Zalika
+    - text: Zaliki
+    - text: Zesiro

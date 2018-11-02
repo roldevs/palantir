@@ -1,12 +1,15 @@
-text: PNJ de Bajos Fondos
-options:
-  - related:
-      male:
-        search:
-          - ns: maze_rats
-            type: npc_underworld_male
-  - related:
-      female:
-        search:
-          - ns: maze_rats
-            type: npc_underworld_female
+meta:
+  system: Maze Rats
+data:
+  text: PNJ de Bajos Fondos
+  options:
+    - related:
+        male:
+          search:
+            - ns: maze_rats
+              type: npc_underworld_male
+    - related:
+        female:
+          search:
+            - ns: maze_rats
+              type: npc_underworld_female

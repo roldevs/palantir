@@ -1,16 +1,19 @@
-text: PNJ de la Naturaleza
-options:
-  - text: PNJ de la Naturaleza
-    related:
-      male:
-        text: PNJ Hombre de la Naturaleza
-        search:
-          - ns: maze_rats
-            type: npc_wilderness_male
-  - text: PNJ de la Naturaleza
-    related:
-      female:
-        text: PNJ Mujer de la Naturaleza
-        search:
-          - ns: maze_rats
-            type: npc_wilderness_female
+meta:
+  system: Maze Rats
+data:
+  text: PNJ de la Naturaleza
+  options:
+    - text: PNJ de la Naturaleza
+      related:
+        male:
+          text: PNJ Hombre de la Naturaleza
+          search:
+            - ns: maze_rats
+              type: npc_wilderness_male
+    - text: PNJ de la Naturaleza
+      related:
+        female:
+          text: PNJ Mujer de la Naturaleza
+          search:
+            - ns: maze_rats
+              type: npc_wilderness_female

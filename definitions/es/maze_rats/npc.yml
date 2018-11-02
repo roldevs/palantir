@@ -1,20 +1,23 @@
-text: PNJ
-options:
-  - text: PNJ
-    related:
-      civilized:
-        search:
-          - ns: maze_rats
-            type: npc_civilized
-  - text: PNJ
-    related:
-      underworld:
-        search:
-          - ns: maze_rats
-            type: npc_underworld
-  - text: PNJ
-    related:
-      wilderness:
-        search:
-          - ns: maze_rats
-            type: npc_wilderness
+meta:
+  system: Maze Rats
+data:
+  text: PNJ
+  options:
+    - text: PNJ
+      related:
+        civilized:
+          search:
+            - ns: maze_rats
+              type: npc_civilized
+    - text: PNJ
+      related:
+        underworld:
+          search:
+            - ns: maze_rats
+              type: npc_underworld
+    - text: PNJ
+      related:
+        wilderness:
+          search:
+            - ns: maze_rats
+              type: npc_wilderness

@@ -1,38 +1,41 @@
-text: Animal acuático
-options:
-  - text: Cacodrilo
-  - text: Ameba
-  - text: Rape
-  - text: Castor
-  - text: Almeja
-  - text: Cangrejo
-  - text: Delfín
-  - text: Anguila
-  - text: Rana
-  - text: Hipopótamo
-  - text: Medusa
-  - text: Sanguijuela
-  - text: Langosta
-  - text: Manatí
-  - text: Manta raya
-  - text: Morsa
-  - text: Cachalote
-  - text: Tritón
-  - text: Pulpo
-  - text: Nutria
-  - text: Pinguino
-  - text: Ornitorrinco
-  - text: Pez globo
-  - text: Salamandra
-  - text: Anémona
-  - text: Erizo mar
-  - text: Caballo mar
-  - text: León marino
-  - text: Tiburón
-  - text: Gamba
-  - text: Calamar
-  - text: Pez espada
-  - text: Renacuajo
-  - text: Tortuga
-  - text: Ballena
-  - text: Tiburón ballena
+meta:
+  system: Maze Rats
+data:
+  text: Animal acuático
+  options:
+    - text: Cacodrilo
+    - text: Ameba
+    - text: Rape
+    - text: Castor
+    - text: Almeja
+    - text: Cangrejo
+    - text: Delfín
+    - text: Anguila
+    - text: Rana
+    - text: Hipopótamo
+    - text: Medusa
+    - text: Sanguijuela
+    - text: Langosta
+    - text: Manatí
+    - text: Manta raya
+    - text: Morsa
+    - text: Cachalote
+    - text: Tritón
+    - text: Pulpo
+    - text: Nutria
+    - text: Pinguino
+    - text: Ornitorrinco
+    - text: Pez globo
+    - text: Salamandra
+    - text: Anémona
+    - text: Erizo mar
+    - text: Caballo mar
+    - text: León marino
+    - text: Tiburón
+    - text: Gamba
+    - text: Calamar
+    - text: Pez espada
+    - text: Renacuajo
+    - text: Tortuga
+    - text: Ballena
+    - text: Tiburón ballena

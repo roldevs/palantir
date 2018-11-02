@@ -1,38 +1,41 @@
-text: Detalle de Habitación de Mazmorra
-options:
-  - text: Bajo relieve
-  - text: Rastro sangre
-  - text: Huesos
-  - text: Cadenas
-  - text: Marca tiza
-  - text: Marca garras
-  - text: Cadáveres
-  - text: Vigas rotas
-  - text: Comida pasada
-  - text: Nido podrido
-  - text: Gotas de agua
-  - text: Muros rotos
-  - text: Murales gastados
-  - text: Brisa ligera
-  - text: Huellas
-  - text: Columnas caídas
-  - text: Hongos
-  - text: Muebles
-  - text: Pintadas
-  - text: Mosaicos
-  - text: Estalactitas
-  - text: Libros podridos
-  - text: Basura
-  - text: Piel mudada
-  - text: Rastro viscoso
-  - text: Telarañas
-  - text: Olor inusual
-  - text: Mal olor
-  - text: Chamuscada
-  - text: Polvo denso
-  - text: Ropas arrancadas
-  - text: Raíces árboles
-  - text: Recién reparado
-  - text: Vibraciones
-  - text: Hiedra
-  - text: Susurros
+meta:
+  system: Maze Rats
+data:
+  text: Detalle de Habitación de Mazmorra
+  options:
+    - text: Bajo relieve
+    - text: Rastro sangre
+    - text: Huesos
+    - text: Cadenas
+    - text: Marca tiza
+    - text: Marca garras
+    - text: Cadáveres
+    - text: Vigas rotas
+    - text: Comida pasada
+    - text: Nido podrido
+    - text: Gotas de agua
+    - text: Muros rotos
+    - text: Murales gastados
+    - text: Brisa ligera
+    - text: Huellas
+    - text: Columnas caídas
+    - text: Hongos
+    - text: Muebles
+    - text: Pintadas
+    - text: Mosaicos
+    - text: Estalactitas
+    - text: Libros podridos
+    - text: Basura
+    - text: Piel mudada
+    - text: Rastro viscoso
+    - text: Telarañas
+    - text: Olor inusual
+    - text: Mal olor
+    - text: Chamuscada
+    - text: Polvo denso
+    - text: Ropas arrancadas
+    - text: Raíces árboles
+    - text: Recién reparado
+    - text: Vibraciones
+    - text: Hiedra
+    - text: Susurros

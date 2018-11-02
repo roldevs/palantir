@@ -1,203 +1,206 @@
-text: Significado del evento
-options:
-  - text: Attainment of goals.
-  - text: The founding of a fellowship.
-  - text: Neglect of the environment.
-  - text: Blight.
-  - text: The beginning of an enterprise which may harm others.
-  - text: Ecstasy to the point of divorce from reality.
-  - text: Conquest by force.
-  - text: Macho excess.
-  - text: Willpower.
-  - text: The recruitment of allies.
-  - text: The triumph of an evil cause.
-  - text: Physical and emotional violation.
-  - text: Weakness in the face of opposition.
-  - text: Force applied with deliberate malice.
-  - text: A declaration of war.
-  - text: Persecution of the innocent.
-  - text: Love.
-  - text: Abandonment of the spiritual.
-  - text: Instant gratification.
-  - text: Intellectual inquiry.
-  - text: Antagonism towards new ideas.
-  - text: Joy and laughter.
-  - text: Written messages.
-  - text: Movement.
-  - text: Wasteful dispersal of energies.
-  - text: Truce.
-  - text: Balance disturbed.
-  - text: Tension released.
-  - text: Disloyalty.
-  - text: Friendship.
-  - text: Physical attraction.
-  - text: Love for the wrong reasons.
-  - text: Passion which interferes with judgment.
-  - text: A physical challenge.
-  - text: Desertion of a project.
-  - text: Domination.
-  - text: Procrastination.
-  - text: Acclaim.
-  - text: A journey which causes temporary separation.
-  - text: Loss.
-  - text: A matter concluded in plenty.
-  - text: Healing.
-  - text: Excessive devotion to the pleasures of the senses.
-  - text: Swiftness in bringing a matter to its conclusion.
-  - text: Delay in obtaining material possessions.
-  - text: Delay.
-  - text: Prosperity.
-  - text: Material difficulties.
-  - text: Cessation of benefits.
-  - text: Temporary companionship.
-  - text: Loss due to the machinations of another.
-  - text: Lies made public.
-  - text: Spite.
-  - text: A situation does not live up to expectations.
-  - text: Defeat.
-  - text: Return of an old friend.
-  - text: New alliances.
-  - text: Imitation of reality.
-  - text: Confusion in legal matters.
-  - text: Bureaucracy.
-  - text: Unfairness in a business matter.
-  - text: Journey by water.
-  - text: A path away from difficulties.
-  - text: A temporary respite in struggle.
-  - text: Stalemate.
-  - text: Publicity.
-  - text: Public recognition for one's efforts.
-  - text: Good news.
-  - text: Bad news.
-  - text: Indefinite postponement by another of a project.
-  - text: Cause for anxiety due to exterior factors.
-  - text: Delay in achieving one's goal.
-  - text: Theft.
-  - text: A journey by land.
-  - text: Good advice from an expert.
-  - text: The exposure and consequent failure of a plot.
-  - text: A project about to reach completion.
-  - text: Intellectual competition.
-  - text: Haggling.
-  - text: Imprisonment.
-  - text: Illness.
-  - text: Release.
-  - text: Opposition collapses.
-  - text: A matter believed to be of great importance is actually of small
-      consequence.
-  - text: Loss of interest.
-  - text: Celebration of a success.
-  - text: Rapid development of an undertaking.
-  - text: Travel by air.
-  - text: Non-arrival of an expected communication.
-  - text: Jealousy.
-  - text: Dispute among par tners.
-  - text: A project does not work out.
-  - text: The possible loss of home.
-  - text: An investment proves worthless.
-  - text: Suffering.
-  - text: Mental imprisonment.
-  - text: Debasement.
-  - text: Material desires are wholly fulfilled.
-  - text: Overindulgence.
-  - text: Wishes fall short.
-  - text: Delaying tactics.
-  - text: Stalemate leading to adjournment.
-  - text: Adversity, but not insurmountable.
-  - text: Gambling.
-  - text: Lack of solidity.
-  - text: Misfortune.
-  - text: The death of a dream.
-  - text: Disruption.
-  - text: Temporary success.
-  - text: Usurped power.
-  - text: A balance is made, but it is temporary.
-  - text: Failure of a partnership.
-  - text: Possible loss of friendship.
-  - text: Betrayal.
-  - text: Abuse of power.
-  - text: Becoming a burden to another.
-  - text: Oppression of the few by the many.
-  - text: Intrigues.
-  - text: Resentment.
-  - text: Fears realized.
-  - text: A student.
-  - text: Messages.
-  - text: The bearer of bad news.
-  - text: Fears proven unfounded.
-  - text: A sentinel.
-  - text: Inspection or scrutiny.
-  - text: Ambush.
-  - text: Spying.
-  - text: Mutiny.
-  - text: News.
-  - text: Attachment to the point of obsession.
-  - text: The affairs of the world.
-  - text: Unexpected aid.
-  - text: A bearer of intelligence.
-  - text: Rumor.
-  - text: Old wounds reopened.
-  - text: Carelessness.
-  - text: Friendship strained.
-  - text: Guerrilla warfare.
-  - text: Ruin.
-  - text: Unwise extravagance.
-  - text: Dirty tricks.
-  - text: Arrival of a friend.
-  - text: Propositions.
-  - text: Fraud.
-  - text: Rivalry.
-  - text: A spiritual representative.
-  - text: Triumph over adversities.
-  - text: Travel by air.
-  - text: Frustration.
-  - text: Division.
-  - text: The refusal to listen to views at variance to one's own.
-  - text: Motherly figure.
-  - text: Opulence.
-  - text: Ill-natured gossip.
-  - text: Mistrust of those near.
-  - text: Liberty.
-  - text: Deceit.
-  - text: Cruelty from intolerance.
-  - text: A person not to be trusted.
-  - text: Excitement from activity.
-  - text: Someone of assistance.
-  - text: Father figure.
-  - text: A dull individual.
-  - text: Military.
-  - text: A judge.
-  - text: A wise counselor.
-  - text: The mundane.
-  - text: A teacher.
-  - text: Trials overcome.
-  - text: Frenzy.
-  - text: Negligence.
-  - text: Duality.
-  - text: Passion
-  - text: Hard work.
-  - text: The control of masses.
-  - text: Alliance as a formality, not sincere.
-  - text: Attraction to an object or person.
-  - text: Travel by vehicle.
-  - text: Success in an artistic or spiritual pursuit.
-  - text: Vengeance.
-  - text: An unethical victory.
-  - text: Judicial proceedings.
-  - text: Dispute.
-  - text: Legal punishment.
-  - text: Guidance from an elder.
-  - text: A journey.
-  - text: Good fortune.
-  - text: Too much of a good thing.
-  - text: The spiritual over the material.
-  - text: The material over the spiritual.
-  - text: Transformation and change.
-  - text: Disunion.
-  - text: Amassment of riches.
-  - text: Overthrow of the existing order.
-  - text: Communication by technological means.
-  - text: Oppression.
-  - text: Hope.
-  - text: Hope deceived, daydreams fail.
-  - text: Change of place.
+meta:
+  system: Mythic GM Emulator
+data:
+  text: Significado del evento
+  options:
+    - text: Attainment of goals.
+    - text: The founding of a fellowship.
+    - text: Neglect of the environment.
+    - text: Blight.
+    - text: The beginning of an enterprise which may harm others.
+    - text: Ecstasy to the point of divorce from reality.
+    - text: Conquest by force.
+    - text: Macho excess.
+    - text: Willpower.
+    - text: The recruitment of allies.
+    - text: The triumph of an evil cause.
+    - text: Physical and emotional violation.
+    - text: Weakness in the face of opposition.
+    - text: Force applied with deliberate malice.
+    - text: A declaration of war.
+    - text: Persecution of the innocent.
+    - text: Love.
+    - text: Abandonment of the spiritual.
+    - text: Instant gratification.
+    - text: Intellectual inquiry.
+    - text: Antagonism towards new ideas.
+    - text: Joy and laughter.
+    - text: Written messages.
+    - text: Movement.
+    - text: Wasteful dispersal of energies.
+    - text: Truce.
+    - text: Balance disturbed.
+    - text: Tension released.
+    - text: Disloyalty.
+    - text: Friendship.
+    - text: Physical attraction.
+    - text: Love for the wrong reasons.
+    - text: Passion which interferes with judgment.
+    - text: A physical challenge.
+    - text: Desertion of a project.
+    - text: Domination.
+    - text: Procrastination.
+    - text: Acclaim.
+    - text: A journey which causes temporary separation.
+    - text: Loss.
+    - text: A matter concluded in plenty.
+    - text: Healing.
+    - text: Excessive devotion to the pleasures of the senses.
+    - text: Swiftness in bringing a matter to its conclusion.
+    - text: Delay in obtaining material possessions.
+    - text: Delay.
+    - text: Prosperity.
+    - text: Material difficulties.
+    - text: Cessation of benefits.
+    - text: Temporary companionship.
+    - text: Loss due to the machinations of another.
+    - text: Lies made public.
+    - text: Spite.
+    - text: A situation does not live up to expectations.
+    - text: Defeat.
+    - text: Return of an old friend.
+    - text: New alliances.
+    - text: Imitation of reality.
+    - text: Confusion in legal matters.
+    - text: Bureaucracy.
+    - text: Unfairness in a business matter.
+    - text: Journey by water.
+    - text: A path away from difficulties.
+    - text: A temporary respite in struggle.
+    - text: Stalemate.
+    - text: Publicity.
+    - text: Public recognition for one's efforts.
+    - text: Good news.
+    - text: Bad news.
+    - text: Indefinite postponement by another of a project.
+    - text: Cause for anxiety due to exterior factors.
+    - text: Delay in achieving one's goal.
+    - text: Theft.
+    - text: A journey by land.
+    - text: Good advice from an expert.
+    - text: The exposure and consequent failure of a plot.
+    - text: A project about to reach completion.
+    - text: Intellectual competition.
+    - text: Haggling.
+    - text: Imprisonment.
+    - text: Illness.
+    - text: Release.
+    - text: Opposition collapses.
+    - text: A matter believed to be of great importance is actually of small
+        consequence.
+    - text: Loss of interest.
+    - text: Celebration of a success.
+    - text: Rapid development of an undertaking.
+    - text: Travel by air.
+    - text: Non-arrival of an expected communication.
+    - text: Jealousy.
+    - text: Dispute among par tners.
+    - text: A project does not work out.
+    - text: The possible loss of home.
+    - text: An investment proves worthless.
+    - text: Suffering.
+    - text: Mental imprisonment.
+    - text: Debasement.
+    - text: Material desires are wholly fulfilled.
+    - text: Overindulgence.
+    - text: Wishes fall short.
+    - text: Delaying tactics.
+    - text: Stalemate leading to adjournment.
+    - text: Adversity, but not insurmountable.
+    - text: Gambling.
+    - text: Lack of solidity.
+    - text: Misfortune.
+    - text: The death of a dream.
+    - text: Disruption.
+    - text: Temporary success.
+    - text: Usurped power.
+    - text: A balance is made, but it is temporary.
+    - text: Failure of a partnership.
+    - text: Possible loss of friendship.
+    - text: Betrayal.
+    - text: Abuse of power.
+    - text: Becoming a burden to another.
+    - text: Oppression of the few by the many.
+    - text: Intrigues.
+    - text: Resentment.
+    - text: Fears realized.
+    - text: A student.
+    - text: Messages.
+    - text: The bearer of bad news.
+    - text: Fears proven unfounded.
+    - text: A sentinel.
+    - text: Inspection or scrutiny.
+    - text: Ambush.
+    - text: Spying.
+    - text: Mutiny.
+    - text: News.
+    - text: Attachment to the point of obsession.
+    - text: The affairs of the world.
+    - text: Unexpected aid.
+    - text: A bearer of intelligence.
+    - text: Rumor.
+    - text: Old wounds reopened.
+    - text: Carelessness.
+    - text: Friendship strained.
+    - text: Guerrilla warfare.
+    - text: Ruin.
+    - text: Unwise extravagance.
+    - text: Dirty tricks.
+    - text: Arrival of a friend.
+    - text: Propositions.
+    - text: Fraud.
+    - text: Rivalry.
+    - text: A spiritual representative.
+    - text: Triumph over adversities.
+    - text: Travel by air.
+    - text: Frustration.
+    - text: Division.
+    - text: The refusal to listen to views at variance to one's own.
+    - text: Motherly figure.
+    - text: Opulence.
+    - text: Ill-natured gossip.
+    - text: Mistrust of those near.
+    - text: Liberty.
+    - text: Deceit.
+    - text: Cruelty from intolerance.
+    - text: A person not to be trusted.
+    - text: Excitement from activity.
+    - text: Someone of assistance.
+    - text: Father figure.
+    - text: A dull individual.
+    - text: Military.
+    - text: A judge.
+    - text: A wise counselor.
+    - text: The mundane.
+    - text: A teacher.
+    - text: Trials overcome.
+    - text: Frenzy.
+    - text: Negligence.
+    - text: Duality.
+    - text: Passion
+    - text: Hard work.
+    - text: The control of masses.
+    - text: Alliance as a formality, not sincere.
+    - text: Attraction to an object or person.
+    - text: Travel by vehicle.
+    - text: Success in an artistic or spiritual pursuit.
+    - text: Vengeance.
+    - text: An unethical victory.
+    - text: Judicial proceedings.
+    - text: Dispute.
+    - text: Legal punishment.
+    - text: Guidance from an elder.
+    - text: A journey.
+    - text: Good fortune.
+    - text: Too much of a good thing.
+    - text: The spiritual over the material.
+    - text: The material over the spiritual.
+    - text: Transformation and change.
+    - text: Disunion.
+    - text: Amassment of riches.
+    - text: Overthrow of the existing order.
+    - text: Communication by technological means.
+    - text: Oppression.
+    - text: Hope.
+    - text: Hope deceived, daydreams fail.
+    - text: Change of place.

@@ -1,32 +1,35 @@
-text: Mazmorra
-related:
-  entrance:
-    text: Entrada
-    search:
-      - ns: maze_rats
-        type: dungeon_entrance
-  form:
-    text: Forma
-    search:
-      - ns: maze_rats
-        type: dungeon_form
-  layout:
-    text: Disposición
-    search:
-      - ns: maze_rats
-        type: dungeon_layout
-  ruination:
-    text: Ruinas
-    search:
-      - ns: maze_rats
-        type: dungeon_ruination
-  reward:
-    text: Recompensas
-    search:
-      - ns: maze_rats
-        type: dungeon_reward
-  trick:
-    text: Truco
-    search:
-      - ns: maze_rats
-        type: dungeon_trick
+meta:
+  system: Maze Rats
+data:
+  text: Mazmorra
+  related:
+    entrance:
+      text: Entrada
+      search:
+        - ns: maze_rats
+          type: dungeon_entrance
+    form:
+      text: Forma
+      search:
+        - ns: maze_rats
+          type: dungeon_form
+    layout:
+      text: Disposición
+      search:
+        - ns: maze_rats
+          type: dungeon_layout
+    ruination:
+      text: Ruinas
+      search:
+        - ns: maze_rats
+          type: dungeon_ruination
+    reward:
+      text: Recompensas
+      search:
+        - ns: maze_rats
+          type: dungeon_reward
+    trick:
+      text: Truco
+      search:
+        - ns: maze_rats
+          type: dungeon_trick

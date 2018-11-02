@@ -1,37 +1,40 @@
-text: Item
-options:
-  - text: Item
-    related:
-      miscellaneous_item:
-        text: Misceláneo
-        search:
-          - ns: maze_rats
-            type: miscellaneous_item
-  - text: Item
-    related:
-      worn_item:
-        text: Ropajes
-        search:
-          - ns: maze_rats
-            type: worn_item
-  - text: Item
-    related:
-      weapon_item:
-        text: Armas
-        search:
-          - ns: maze_rats
-            type: weapon_item
-  - text: Item
-    related:
-      tool_item:
-        text: Herramientas
-        search:
-          - ns: maze_rats
-            type: tool_item
-  - text: Item
-    related:
-      treasure_item:
-        text: Tesoro
-        search:
-          - ns: maze_rats
-            type: treasure_item
+meta:
+  system: Maze Rats
+data:
+  text: Item
+  options:
+    - text: Item
+      related:
+        miscellaneous_item:
+          text: Misceláneo
+          search:
+            - ns: maze_rats
+              type: miscellaneous_item
+    - text: Item
+      related:
+        worn_item:
+          text: Ropajes
+          search:
+            - ns: maze_rats
+              type: worn_item
+    - text: Item
+      related:
+        weapon_item:
+          text: Armas
+          search:
+            - ns: maze_rats
+              type: weapon_item
+    - text: Item
+      related:
+        tool_item:
+          text: Herramientas
+          search:
+            - ns: maze_rats
+              type: tool_item
+    - text: Item
+      related:
+        treasure_item:
+          text: Tesoro
+          search:
+            - ns: maze_rats
+              type: treasure_item

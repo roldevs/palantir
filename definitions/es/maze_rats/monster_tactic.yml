@@ -1,38 +1,41 @@
-text: Táctica del Monstruo
-options:
-  - text: Emboscada
-  - text: Llamada de auxilio
-  - text: Captura
-  - text: Carga
-  - text: Trepa enemigos
-  - text: Obliga a adorar
-  - text: Crea barrera
-  - text: Engaña
-  - text: Exige duelo
-  - text: Desorienta
-  - text: Rodea
-  - text: Escapa
-  - text: Bandas
-  - text: Acumula fuerza
-  - text: Furia
-  - text: Hostiga
-  - text: Lanza enemigos
-  - text: Inmoviliza
-  - text: Manipula
-  - text: Se burla
-  - text: Monólogo
-  - text: Ordena a esbirro
-  - text: Protege lider
-  - text: Auto protege
-  - text: Separa enemigos
-  - text: Sigue enemigos
-  - text: Roba a enemigos
-  - text: Enjambre
-  - text: Ataca al insolente
-  - text: Ataca líder
-  - text: Ataca cercano
-  - text: Ataca más rico
-  - text: Ataca al fuerte
-  - text: Ataca al débil
-  - text: Juega con
-  - text: Usa el terreno
+meta:
+  system: Maze Rats
+data:
+  text: Táctica del Monstruo
+  options:
+    - text: Emboscada
+    - text: Llamada de auxilio
+    - text: Captura
+    - text: Carga
+    - text: Trepa enemigos
+    - text: Obliga a adorar
+    - text: Crea barrera
+    - text: Engaña
+    - text: Exige duelo
+    - text: Desorienta
+    - text: Rodea
+    - text: Escapa
+    - text: Bandas
+    - text: Acumula fuerza
+    - text: Furia
+    - text: Hostiga
+    - text: Lanza enemigos
+    - text: Inmoviliza
+    - text: Manipula
+    - text: Se burla
+    - text: Monólogo
+    - text: Ordena a esbirro
+    - text: Protege lider
+    - text: Auto protege
+    - text: Separa enemigos
+    - text: Sigue enemigos
+    - text: Roba a enemigos
+    - text: Enjambre
+    - text: Ataca al insolente
+    - text: Ataca líder
+    - text: Ataca cercano
+    - text: Ataca más rico
+    - text: Ataca al fuerte
+    - text: Ataca al débil
+    - text: Juega con
+    - text: Usa el terreno

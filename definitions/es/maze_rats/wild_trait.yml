@@ -1,56 +1,59 @@
-text: Rasgo Natural
-options:
-  - text: En cenizas
-  - text: Destruido
-  - text: Marchitado
-  - text: Roto
-  - text: Consumido
-  - text: Corrupto
-  - text: Progresivo
-  - text: Desolado
-  - text: Rasgo Natural
-    related:
-      dungeon_ruination:
-        text: Ruina de Mazmorra
-        search:
-          - ns: maze_rats
-            type: dungeon_ruination
-  - text: Eterno
-  - text: Rasgo Natural
-    related:
-      ethereal_effect:
-        text: Efecto Etéreo
-        search:
-          - ns: maze_rats
-            type: ethereal_effect
-  - text: Abandonado
-  - text: Congelado
-  - text: Embrujado
-  - text: Aullidos
-  - text: Mellado
-  - text: Solitario
-  - text: Brumoso
-  - text: Peligroso
-  - text: Petrificado
-  - text: Fantasmal
-  - text: Voraz
-  - text: Salvaje
-  - text: Sombrío
-  - text: Movedizo
-  - text: Tembloroso
-  - text: Siniestro
-  - text: Hundiéndose
-  - text: Ahumado
-  - text: Sofocante
-  - text: Espinoso
-  - text: Truenos
-  - text: Torrencial
-  - text: Rasgo Natural
-    related:
-      physical_effect:
-        text: Efecto Físico
-        search:
-          - ns: maze_rats
-            type: physical_effect
-  - text: Errante
-  - text: Mustio
+meta:
+  system: Maze Rats
+data:
+  text: Rasgo Natural
+  options:
+    - text: En cenizas
+    - text: Destruido
+    - text: Marchitado
+    - text: Roto
+    - text: Consumido
+    - text: Corrupto
+    - text: Progresivo
+    - text: Desolado
+    - text: Rasgo Natural
+      related:
+        dungeon_ruination:
+          text: Ruina de Mazmorra
+          search:
+            - ns: maze_rats
+              type: dungeon_ruination
+    - text: Eterno
+    - text: Rasgo Natural
+      related:
+        ethereal_effect:
+          text: Efecto Etéreo
+          search:
+            - ns: maze_rats
+              type: ethereal_effect
+    - text: Abandonado
+    - text: Congelado
+    - text: Embrujado
+    - text: Aullidos
+    - text: Mellado
+    - text: Solitario
+    - text: Brumoso
+    - text: Peligroso
+    - text: Petrificado
+    - text: Fantasmal
+    - text: Voraz
+    - text: Salvaje
+    - text: Sombrío
+    - text: Movedizo
+    - text: Tembloroso
+    - text: Siniestro
+    - text: Hundiéndose
+    - text: Ahumado
+    - text: Sofocante
+    - text: Espinoso
+    - text: Truenos
+    - text: Torrencial
+    - text: Rasgo Natural
+      related:
+        physical_effect:
+          text: Efecto Físico
+          search:
+            - ns: maze_rats
+              type: physical_effect
+    - text: Errante
+    - text: Mustio

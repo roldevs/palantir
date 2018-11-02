@@ -1,6 +1,9 @@
-text: Armadura
-options:
-  - text: Sin armadura
-  - text: Cuero
-  - text: Acolchada
-  - text: Cota de mallas
+meta:
+  system: Knave
+data:
+  text: Armadura
+  options:
+    - text: Sin armadura
+    - text: Cuero
+    - text: Acolchada
+    - text: Cota de mallas

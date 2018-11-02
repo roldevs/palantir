@@ -1,22 +1,25 @@
-text: Ukranian Female
-options:
-  - text: Anastasiya
-  - text: Bohdana
-  - text: Bohuslava
-  - text: Boyka
-  - text: Daniela
-  - text: Daryna
-  - text: Kalyna
-  - text: Kateryna
-  - text: Lyudmyla
-  - text: Mikhaila
-  - text: Mykhaila
-  - text: Nataliya
-  - text: Natalka
-  - text: Oksana
-  - text: Olena
-  - text: Oxana
-  - text: Sofiya
-  - text: Vasylna
-  - text: Viktoriya
-  - text: Wasylyna
+meta:
+  system: Ultimate Toolbox
+data:
+  text: Ukranian Female
+  options:
+    - text: Anastasiya
+    - text: Bohdana
+    - text: Bohuslava
+    - text: Boyka
+    - text: Daniela
+    - text: Daryna
+    - text: Kalyna
+    - text: Kateryna
+    - text: Lyudmyla
+    - text: Mikhaila
+    - text: Mykhaila
+    - text: Nataliya
+    - text: Natalka
+    - text: Oksana
+    - text: Olena
+    - text: Oxana
+    - text: Sofiya
+    - text: Vasylna
+    - text: Viktoriya
+    - text: Wasylyna

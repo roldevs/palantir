@@ -1,17 +1,20 @@
-text: Animal
-options:
-  - related:
-      animal_aerial:
-        search:
-          - ns: maze_rats
-            type: animal_aerial
-  - related:
-      animal_aquatic:
-        search:
-          - ns: maze_rats
-            type: animal_aquatic
-  - related:
-      animal_terrestrial:
-        search:
-          - ns: maze_rats
-            type: animal_terrestrial
+meta:
+  system: Maze Rats
+data:
+  text: Animal
+  options:
+    - related:
+        animal_aerial:
+          search:
+            - ns: maze_rats
+              type: animal_aerial
+    - related:
+        animal_aquatic:
+          search:
+            - ns: maze_rats
+              type: animal_aquatic
+    - related:
+        animal_terrestrial:
+          search:
+            - ns: maze_rats
+              type: animal_terrestrial

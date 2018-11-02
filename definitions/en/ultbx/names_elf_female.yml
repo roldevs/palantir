@@ -1,22 +1,25 @@
-text: Female Elf Names
-options:
-  - text: Aral Elari
-  - text: Aerlan Lirisen
-  - text: Allith Nielynlynlan
-  - text: Dorathor Githmar
-  - text: Eien Myrareirion
-  - text: Elroana Sordia
-  - text: Gilthani Thanmar
-  - text: Linlith Aslan
-  - text: Linly Meryon
-  - text: Lorauen Thieldel
-  - text: Lyri Farsil
-  - text: Lyrlith Niellyn
-  - text: Merion Rinor
-  - text: Meryrian Syliri
-  - text: Nielial Linlal
-  - text: Seldalerya Ignirya
-  - text: Silry Lyrri
-  - text: Sortha Condia
-  - text: Synarian Narril
-  - text: Synril Yilian
+meta:
+  system: Ultimate Toolbox
+data:
+  text: Female Elf Names
+  options:
+    - text: Aral Elari
+    - text: Aerlan Lirisen
+    - text: Allith Nielynlynlan
+    - text: Dorathor Githmar
+    - text: Eien Myrareirion
+    - text: Elroana Sordia
+    - text: Gilthani Thanmar
+    - text: Linlith Aslan
+    - text: Linly Meryon
+    - text: Lorauen Thieldel
+    - text: Lyri Farsil
+    - text: Lyrlith Niellyn
+    - text: Merion Rinor
+    - text: Meryrian Syliri
+    - text: Nielial Linlal
+    - text: Seldalerya Ignirya
+    - text: Silry Lyrri
+    - text: Sortha Condia
+    - text: Synarian Narril
+    - text: Synril Yilian

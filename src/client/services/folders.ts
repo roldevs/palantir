@@ -1,4 +1,6 @@
 import axios from 'axios';
+import * as R from 'ramda';
+import { compactArray } from '../../lib/utils';
 
 const folderServices: (
   config?: any,
@@ -12,19 +14,18 @@ function(_) {
     },
   ) => any =
   function(options) {
-    if (options.type) {
-      return axios.get(`/api/types/${options.locale}/${options.ns}/${options.type}.json`);
+    const params: string = R.join('/', compactArray([
+      options.locale!,
+      options.ns!,
+      options.type!,
+    ]));
+
+    if (R.isEmpty(params)) {
+      return axios.get(`/api/types.json`);
     }
 
-    if (options.ns) {
-      return axios.get(`/api/types/${options.locale}/${options.ns}.json`);
-    }
-
-    if (options.locale) {
-      return axios.get(`/api/types/${options.locale}.json`);
-    }
-    return axios.get(`/api/types.json`);
-   };
+    return axios.get(`/api/types/${params}.json`);
+  };
 
   return {
      index,

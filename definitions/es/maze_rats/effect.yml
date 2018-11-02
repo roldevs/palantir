@@ -1,16 +1,19 @@
-text: Efecto
-options:
-  - text: Efecto
-    related:
-      animal_aerial:
-        text: Efecto Físico
-        search:
-          - ns: maze_rats
-            type: physical_effect
-  - text: Efecto
-    related:
-      animal_aquatic:
-        text: Efecto Etéreo
-        search:
-          - ns: maze_rats
-            type: ethereal_effect
+meta:
+  system: Maze Rats
+data:
+  text: Efecto
+  options:
+    - text: Efecto
+      related:
+        animal_aerial:
+          text: Efecto Físico
+          search:
+            - ns: maze_rats
+              type: physical_effect
+    - text: Efecto
+      related:
+        animal_aquatic:
+          text: Efecto Etéreo
+          search:
+            - ns: maze_rats
+              type: ethereal_effect

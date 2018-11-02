@@ -1,22 +1,25 @@
-text: Ropaje
-options:
-  - text: Antiguo
-  - text: Ensangrentado
-  - text: Ceremonial
-  - text: Decorado
-  - text: Excéntrico
-  - text: Elegante
-  - text: A la moda
-  - text: Inmundo
-  - text: Extravagante
-  - text: Manchado
-  - text: Extranjero
-  - text: Raído
-  - text: Desaliñado
-  - text: Librea
-  - text: Sobredimensionado
-  - text: Remendado
-  - text: Perfumado
-  - text: Rancio
-  - text: Rasgado
-  - text: Estrecho
+meta:
+  system: Knave
+data:
+  text: Ropaje
+  options:
+    - text: Antiguo
+    - text: Ensangrentado
+    - text: Ceremonial
+    - text: Decorado
+    - text: Excéntrico
+    - text: Elegante
+    - text: A la moda
+    - text: Inmundo
+    - text: Extravagante
+    - text: Manchado
+    - text: Extranjero
+    - text: Raído
+    - text: Desaliñado
+    - text: Librea
+    - text: Sobredimensionado
+    - text: Remendado
+    - text: Perfumado
+    - text: Rancio
+    - text: Rasgado
+    - text: Estrecho

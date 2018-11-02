@@ -1,76 +1,79 @@
-text: Peculiaridad de la Posada
-options:
-  - text: 100 años
-  - text: Siempre noche
-  - text: Pelea animales
-  - text: Duelo bardos
-  - text: Interior más grande
-  - text: Mercado negro
-  - text: Nueva
-  - text: Caníbales
-  - text: Peculiaridad de la Posada
-    related:
-      city_activity:
-        text: Actividad de Ciudad
-        search:
-          - ns: maze_rats
-            type: city_activity
-  - text: Fiesta constante
-  - text: Duelo de baile
-  - text: Jefe duende
-  - text: Peculiaridad de la Posada
-    related:
-      dungeon_layout:
-        text: Dsitribución de Mazmorra
-        search:
-          - ns: maze_rats
-            type: dungeon_layout
-  - text: Cara
-  - text: Peculiaridad de la Posada
-    related:
-      faction:
-        text: Lugar de la Facción
-        search:
-          - ns: maze_rats
-            type: faction
-            random: all
-  - text: Peculiaridad de la Posada
-    related:
-      faction_trait:
-        text: Rasgo de Facción
-        search:
-          - ns: maze_rats
-            type: faction_trait
-  - text: Chef famoso
-  - text: Oculta cadáveres
-  - text: Club lucha
-  - text: Cinco plantas
-  - text: Mercenarios
-  - text: Embrujada
-  - text: Escondite
-  - text: Peculiaridad de la Posada
-    related:
-      city_building:
-        text: Edificio de Ciudad
-        search:
-          - ns: maze_rats
-            type: city_building
-  - text: Espada mágica
-  - text: Cuadro habla
-  - text: Sótano
-  - text: Peculiaridad de la Posada
-    related:
-      npc:
-        text: PNJ
-        search:
-          - ns: maze_rats
-            type: npc
-            random: all
-  - text: Predicadores
-  - text: Almacén
-  - text: Personal infantil
-  - text: Se mueve (magia)
-  - text: Personal fantasma
-  - text: Lugar VIP
-  - text: Voz en pozo
-  - text: Sólo mujeres
+meta:
+  system: Maze Rats
+data:
+  text: Peculiaridad de la Posada
+  options:
+    - text: 100 años
+    - text: Siempre noche
+    - text: Pelea animales
+    - text: Duelo bardos
+    - text: Interior más grande
+    - text: Mercado negro
+    - text: Nueva
+    - text: Caníbales
+    - text: Peculiaridad de la Posada
+      related:
+        city_activity:
+          text: Actividad de Ciudad
+          search:
+            - ns: maze_rats
+              type: city_activity
+    - text: Fiesta constante
+    - text: Duelo de baile
+    - text: Jefe duende
+    - text: Peculiaridad de la Posada
+      related:
+        dungeon_layout:
+          text: Dsitribución de Mazmorra
+          search:
+            - ns: maze_rats
+              type: dungeon_layout
+    - text: Cara
+    - text: Peculiaridad de la Posada
+      related:
+        faction:
+          text: Lugar de la Facción
+          search:
+            - ns: maze_rats
+              type: faction
+              random: all
+    - text: Peculiaridad de la Posada
+      related:
+        faction_trait:
+          text: Rasgo de Facción
+          search:
+            - ns: maze_rats
+              type: faction_trait
+    - text: Chef famoso
+    - text: Oculta cadáveres
+    - text: Club lucha
+    - text: Cinco plantas
+    - text: Mercenarios
+    - text: Embrujada
+    - text: Escondite
+    - text: Peculiaridad de la Posada
+      related:
+        city_building:
+          text: Edificio de Ciudad
+          search:
+            - ns: maze_rats
+              type: city_building
+    - text: Espada mágica
+    - text: Cuadro habla
+    - text: Sótano
+    - text: Peculiaridad de la Posada
+      related:
+        npc:
+          text: PNJ
+          search:
+            - ns: maze_rats
+              type: npc
+              random: all
+    - text: Predicadores
+    - text: Almacén
+    - text: Personal infantil
+    - text: Se mueve (magia)
+    - text: Personal fantasma
+    - text: Lugar VIP
+    - text: Voz en pozo
+    - text: Sólo mujeres

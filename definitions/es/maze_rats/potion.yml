@@ -1,104 +1,107 @@
-text: Poción
-options:
-  - text: Poción
-    related:
-      animal:
-        text: Forma Animal
-        search:
-          - ns: maze_rats
-            type: animal
-  - text: Cambio cuerpo
-  - text: Camuflaje
-  - text: Control animal
-  - text: Poción
-    related:
-      element:
-        text: Piel Elemento
-        search:
-          - ns: maze_rats
-            type: element
-  - text: Curar enfermo
-  - text: Detectar mal
-  - text: Detectar oro
-  - text: Voz espectral
-  - text: Orientacion
-  - text: Poción
-    related:
-      insanity:
-        text: Locura
-        search:
-          - ns: maze_rats
-            type: insanity
-  - text: Poción
-    related:
-      element:
-        text: Forma Elemento
-        search:
-          - ns: maze_rats
-            type: element
-  - text: Brazo extra
-  - text: Volar
-  - text: Detectar oculto
-  - text: Infravisión
-  - text: Poción
-    related:
-      element:
-        text: Control Elemento
-        search:
-          - ns: maze_rats
-            type: element
-  - text: Invulnerable
-  - text: Poción
-    related:
-      item:
-        text: Forma Objeto
-        search:
-          - ns: maze_rats
-            type: item
-  - text: Visión nocturna
-  - text: Poción
-    related:
-      magic:
-        text: Mágica
-        search:
-          - ns: maze_rats
-            type: magic
-  - text: Curar salud
-  - text: Andar sobre agua
-  - text: Poción
-    related:
-      monster_feature:
-        text: Característica de Monstruo
-        search:
-          - ns: maze_rats
-            type: monster_feature
-  - text: Poción
-    related:
-      monster_trait:
-        text: Rasgo de Monstruo
-        search:
-          - ns: maze_rats
-            type: monster_trait
-  - text: Poción
-    related:
-      mutation:
-        text: Mutación
-        search:
-          - ns: maze_rats
-            type: mutation
-  - text: Super fuerza
-  - text: Telekinesis
-  - text: Idioma
-  - text: Velocidad
-  - text: Elástico
-  - text: Super salto
-  - text: Inmunidad magia
-  - text: Imagen especular
-  - text: Poción
-    related:
-      monster_ability:
-        text: Habilidad de Monstruo
-        search:
-          - ns: maze_rats
-            type: monster_ability
-  - text: Respirar en agua
+meta:
+  system: Maze Rats
+data:
+  text: Poción
+  options:
+    - text: Poción
+      related:
+        animal:
+          text: Forma Animal
+          search:
+            - ns: maze_rats
+              type: animal
+    - text: Cambio cuerpo
+    - text: Camuflaje
+    - text: Control animal
+    - text: Poción
+      related:
+        element:
+          text: Piel Elemento
+          search:
+            - ns: maze_rats
+              type: element
+    - text: Curar enfermo
+    - text: Detectar mal
+    - text: Detectar oro
+    - text: Voz espectral
+    - text: Orientacion
+    - text: Poción
+      related:
+        insanity:
+          text: Locura
+          search:
+            - ns: maze_rats
+              type: insanity
+    - text: Poción
+      related:
+        element:
+          text: Forma Elemento
+          search:
+            - ns: maze_rats
+              type: element
+    - text: Brazo extra
+    - text: Volar
+    - text: Detectar oculto
+    - text: Infravisión
+    - text: Poción
+      related:
+        element:
+          text: Control Elemento
+          search:
+            - ns: maze_rats
+              type: element
+    - text: Invulnerable
+    - text: Poción
+      related:
+        item:
+          text: Forma Objeto
+          search:
+            - ns: maze_rats
+              type: item
+    - text: Visión nocturna
+    - text: Poción
+      related:
+        magic:
+          text: Mágica
+          search:
+            - ns: maze_rats
+              type: magic
+    - text: Curar salud
+    - text: Andar sobre agua
+    - text: Poción
+      related:
+        monster_feature:
+          text: Característica de Monstruo
+          search:
+            - ns: maze_rats
+              type: monster_feature
+    - text: Poción
+      related:
+        monster_trait:
+          text: Rasgo de Monstruo
+          search:
+            - ns: maze_rats
+              type: monster_trait
+    - text: Poción
+      related:
+        mutation:
+          text: Mutación
+          search:
+            - ns: maze_rats
+              type: mutation
+    - text: Super fuerza
+    - text: Telekinesis
+    - text: Idioma
+    - text: Velocidad
+    - text: Elástico
+    - text: Super salto
+    - text: Inmunidad magia
+    - text: Imagen especular
+    - text: Poción
+      related:
+        monster_ability:
+          text: Habilidad de Monstruo
+          search:
+            - ns: maze_rats
+              type: monster_ability
+    - text: Respirar en agua

@@ -1,5 +1,6 @@
 import Bluebird from 'bluebird';
 import fs from 'fs';
+import * as R from 'ramda';
 import YAML from 'yaml';
 import {
   IConnectorFactory,
@@ -27,11 +28,9 @@ const localConnector: (options: ILocalConnectorOptions) => IConnectorFactory =
     });
   };
 
-  const parseYaml: (data: any) => IElementDefinition =
-  (data) => YAML.parse(data);
-
+  const fetchData: (data: any) => IElementDefinition = R.prop('data');
   const get: (locator: ITableLocator) => Bluebird<IOptionalElementDefinition> =
-  (locator) => readFile(filePath(locator)).then(parseYaml);
+  (locator) => readFile(filePath(locator)).then(YAML.parse).then(fetchData);
 
   return {
     get,

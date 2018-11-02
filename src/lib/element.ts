@@ -1,4 +1,5 @@
 import Bluebird from 'bluebird';
+import * as R from 'ramda';
 import diceModule from './element/dice';
 import optionsModule from './element/options';
 import relatedModule from './element/related';
@@ -7,27 +8,38 @@ import {
   IElementModule,
   IOptionalElement,
   IOptionalElementDefinition,
+  IWorldDefinition,
 } from './typings';
+
+const factories: (world: IWorldDefinition) => any =
+(world) => {
+  return [{
+    test: hasRelated,
+    promise: relatedModule(world).fetch,
+  }, {
+    test: hasOptions,
+    promise: optionsModule(world).random,
+  }, {
+    test: hasDice,
+    promise: diceModule(world).roll,
+  }];
+};
+
+const getPromise: (world: IWorldDefinition, element: IOptionalElementDefinition | IOptionalElement) => any =
+(world, element) => {
+  const factory: any = R.find((f: any) => f.test(element), factories(world));
+  if (factory) {
+    return factory.promise;
+  }
+  return Bluebird.resolve;
+};
 
 const elementModule: IElementModule =
 (world) => {
-  const options = optionsModule(world);
-  const related = relatedModule(world);
-  const dice = diceModule(world);
-
-  const get: (element: IOptionalElementDefinition | IOptionalElement) => Bluebird<IOptionalElementDefinition> =
+  const get: (element: IOptionalElementDefinition | IOptionalElement) =>
+    Bluebird<IOptionalElementDefinition> =
   (element) => {
-    // TODO: IOptionalElement
-    if (hasRelated(element as IOptionalElementDefinition)) {
-      return related.fetch(element as IOptionalElementDefinition);
-    }
-    if (hasOptions(element as IOptionalElementDefinition)) {
-      return options.random(element as IOptionalElementDefinition);
-    }
-    if (hasDice(element as IOptionalElementDefinition)) {
-      return dice.roll(element as IOptionalElementDefinition);
-    }
-    return Bluebird.resolve(element as IOptionalElementDefinition);
+    return getPromise(world, element)(element);
   };
 
   return {

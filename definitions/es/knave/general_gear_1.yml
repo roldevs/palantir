@@ -1,22 +1,25 @@
-text: Equipo general 1
-options:
-  - text: Vejiga de aire
-  - text: Trampa de osos
-  - text: Pala
-  - text: Fuelle
-  - text: Grasa
-  - text: Sierra
-  - text: Cubo
-  - text: Abrojos
-  - text: Cincel
-  - text: Barrena
-  - text: Caña de pescar
-  - text: Canicas
-  - text: Pegamento
-  - text: Ganzúa
-  - text: Reloj de arena
-  - text: Red
-  - text: Tenazas
-  - text: Candado
-  - text: Lima
-  - text: Clavos
+meta:
+  system: Knave
+data:
+  text: Equipo general 1
+  options:
+    - text: Vejiga de aire
+    - text: Trampa de osos
+    - text: Pala
+    - text: Fuelle
+    - text: Grasa
+    - text: Sierra
+    - text: Cubo
+    - text: Abrojos
+    - text: Cincel
+    - text: Barrena
+    - text: Caña de pescar
+    - text: Canicas
+    - text: Pegamento
+    - text: Ganzúa
+    - text: Reloj de arena
+    - text: Red
+    - text: Tenazas
+    - text: Candado
+    - text: Lima
+    - text: Clavos

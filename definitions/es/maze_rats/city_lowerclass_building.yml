@@ -1,38 +1,41 @@
-text: Edificio de Clase Baja
-options:
-  - text: Apotecario
-  - text: Asilo
-  - text: Panadero
-  - text: Destilería
-  - text: Carnicero
-  - text: Candelero
-  - text: Catacumbas
-  - text: Quesero
-  - text: Base criminal
-  - text: Taller cuero
-  - text: Muelle
-  - text: Pozo peleas
-  - text: Forja
-  - text: Vidente
-  - text: Casino
-  - text: Curiosidades
-  - text: Mercado
-  - text: Mansión
-  - text: Molino
-  - text: Prestamista
-  - text: Orfanato
-  - text: Camisero
-  - text: Prisión
-  - text: Costurero
-  - text: Astilleros
-  - text: Capilla
-  - text: Corral
-  - text: Talla piedra
-  - text: Tatuador
-  - text: Taberna
-  - text: Teatro
-  - text: Veterinario
-  - text: Almacén
-  - text: Torre vigía
-  - text: Telar
-  - text: Taller
+meta:
+  system: Maze Rats
+data:
+  text: Edificio de Clase Baja
+  options:
+    - text: Apotecario
+    - text: Asilo
+    - text: Panadero
+    - text: Destilería
+    - text: Carnicero
+    - text: Candelero
+    - text: Catacumbas
+    - text: Quesero
+    - text: Base criminal
+    - text: Taller cuero
+    - text: Muelle
+    - text: Pozo peleas
+    - text: Forja
+    - text: Vidente
+    - text: Casino
+    - text: Curiosidades
+    - text: Mercado
+    - text: Mansión
+    - text: Molino
+    - text: Prestamista
+    - text: Orfanato
+    - text: Camisero
+    - text: Prisión
+    - text: Costurero
+    - text: Astilleros
+    - text: Capilla
+    - text: Corral
+    - text: Talla piedra
+    - text: Tatuador
+    - text: Taberna
+    - text: Teatro
+    - text: Veterinario
+    - text: Almacén
+    - text: Torre vigía
+    - text: Telar
+    - text: Taller

@@ -1,38 +1,41 @@
-text: Peligro de Mazmorra
-options:
-  - text: Goteo ácido
-  - text: Sanguijuelas
-  - text: Trampa pozo
-  - text: Polvo asfixiante
-  - text: Petróleo
-  - text: Cristales rotos
-  - text: Ruido agudo
-  - text: Niebla densa
-  - text: Enredaderas
-  - text: Suelo dormido
-  - text: Inundación
-  - text: Congelante
-  - text: Geiser
-  - text: Magma
-  - text: Campo magnético
-  - text: Flujo de barro
-  - text: Borde estrecho
-  - text: Paisaje estrecho
-  - text: Moco pegajoso
-  - text: Planta venenosa
-  - text: Precipicio
-  - text: Arena movediza
-  - text: Radiación
-  - text: Avalancha roca
-  - text: Techo podrido
-  - text: Suelo podrido
-  - text: Pozo profundo
-  - text: Rampa resbala
-  - text: Telarañas
-  - text: Esporas
-  - text: Bolsas de vapor
-  - text: Vientos fuertes
-  - text: Pozo de brea
-  - text: Paredes estrechas
-  - text: Objeto tambalea
-  - text: Gases tóxicos
+meta:
+  system: Maze Rats
+data:
+  text: Peligro de Mazmorra
+  options:
+    - text: Goteo ácido
+    - text: Sanguijuelas
+    - text: Trampa pozo
+    - text: Polvo asfixiante
+    - text: Petróleo
+    - text: Cristales rotos
+    - text: Ruido agudo
+    - text: Niebla densa
+    - text: Enredaderas
+    - text: Suelo dormido
+    - text: Inundación
+    - text: Congelante
+    - text: Geiser
+    - text: Magma
+    - text: Campo magnético
+    - text: Flujo de barro
+    - text: Borde estrecho
+    - text: Paisaje estrecho
+    - text: Moco pegajoso
+    - text: Planta venenosa
+    - text: Precipicio
+    - text: Arena movediza
+    - text: Radiación
+    - text: Avalancha roca
+    - text: Techo podrido
+    - text: Suelo podrido
+    - text: Pozo profundo
+    - text: Rampa resbala
+    - text: Telarañas
+    - text: Esporas
+    - text: Bolsas de vapor
+    - text: Vientos fuertes
+    - text: Pozo de brea
+    - text: Paredes estrechas
+    - text: Objeto tambalea
+    - text: Gases tóxicos

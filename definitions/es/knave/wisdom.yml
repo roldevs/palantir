@@ -1,2 +1,5 @@
-text: Conocimiento
-dice: 3d6kl1
+meta:
+  system: Knave
+data:
+  text: Conocimiento
+  dice: 3d6kl1

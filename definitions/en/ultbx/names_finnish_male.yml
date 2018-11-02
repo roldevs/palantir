@@ -1,22 +1,25 @@
-text: Finnish Male
-options:
-  - text: Antti
-  - text: Eljas
-  - text: Heikki
-  - text: Ilmari
-  - text: Jarvi
-  - text: Jussi
-  - text: Kaarlo
-  - text: Kirkkomaki
-  - text: Kivi
-  - text: Leevi
-  - text: Mustanen
-  - text: Rikkard
-  - text: Santtu
-  - text: Seppanen
-  - text: Severi
-  - text: Talo
-  - text: Tapio
-  - text: Tuomas
-  - text: Tarlid
-  - text: Yrjo
+meta:
+  system: Ultimate Toolbox
+data:
+  text: Finnish Male
+  options:
+    - text: Antti
+    - text: Eljas
+    - text: Heikki
+    - text: Ilmari
+    - text: Jarvi
+    - text: Jussi
+    - text: Kaarlo
+    - text: Kirkkomaki
+    - text: Kivi
+    - text: Leevi
+    - text: Mustanen
+    - text: Rikkard
+    - text: Santtu
+    - text: Seppanen
+    - text: Severi
+    - text: Talo
+    - text: Tapio
+    - text: Tuomas
+    - text: Tarlid
+    - text: Yrjo

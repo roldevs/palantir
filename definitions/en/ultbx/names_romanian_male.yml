@@ -1,22 +1,25 @@
-text: Romanian Male
-options:
-  - text: Andrei
-  - text: Artur
-  - text: Bogdan
-  - text: Claudiu
-  - text: Dionisie
-  - text: Dorin
-  - text: Emil
-  - text: Fane
-  - text: Gavril
-  - text: Horia
-  - text: Ilie
-  - text: Lucian
-  - text: Marcel
-  - text: Mitica
-  - text: Nelu
-  - text: Petru
-  - text: Remus
-  - text: Sebastian
-  - text: Stefan
-  - text: Viorel
+meta:
+  system: Ultimate Toolbox
+data:
+  text: Romanian Male
+  options:
+    - text: Andrei
+    - text: Artur
+    - text: Bogdan
+    - text: Claudiu
+    - text: Dionisie
+    - text: Dorin
+    - text: Emil
+    - text: Fane
+    - text: Gavril
+    - text: Horia
+    - text: Ilie
+    - text: Lucian
+    - text: Marcel
+    - text: Mitica
+    - text: Nelu
+    - text: Petru
+    - text: Remus
+    - text: Sebastian
+    - text: Stefan
+    - text: Viorel

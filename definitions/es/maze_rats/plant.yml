@@ -1,16 +1,19 @@
-text: Planta
-options:
-  - text: Planta
-    related:
-      edible_plant:
-        text: Planta Comestible
-        search:
-          - ns: maze_rats
-            type: edible_plant
-  - text: Planta
-    related:
-      poisonous_plant:
-        text: Planta Venenosa
-        search:
-          - ns: maze_rats
-            type: poisonous_plant
+meta:
+  system: Maze Rats
+data:
+  text: Planta
+  options:
+    - text: Planta
+      related:
+        edible_plant:
+          text: Planta Comestible
+          search:
+            - ns: maze_rats
+              type: edible_plant
+    - text: Planta
+      related:
+        poisonous_plant:
+          text: Planta Venenosa
+          search:
+            - ns: maze_rats
+              type: poisonous_plant

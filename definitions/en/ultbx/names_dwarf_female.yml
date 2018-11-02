@@ -1,22 +1,25 @@
-text: Female Dwarf Names
-options:
-  - text: Barynd Goldsure
-  - text: Dalshar Shielddeath
-  - text: Duerif Fanghigh
-  - text: Eldred Redblade
-  - text: Eraral Deathflame
-  - text: Farinkyr Clawsinger
-  - text: Glandred Flamewind
-  - text: Glanser Highlion
-  - text: Glimjak Wiseheart
-  - text: Gloril Stormstone
-  - text: Harlynd Starbane
-  - text: Helgunmalk Shieldstrong
-  - text: Marfhig Hearthammer
-  - text: Marismek Hornflame
-  - text: Nalanest Bearshadow
-  - text: Obryn Fangweaver
-  - text: Reiaerg Shadowgold
-  - text: Therhildvin Runewise
-  - text: Vongyth Bonechanger
-  - text: Werdrid Cleaverhorn
+meta:
+  system: Ultimate Toolbox
+data:
+  text: Female Dwarf Names
+  options:
+    - text: Barynd Goldsure
+    - text: Dalshar Shielddeath
+    - text: Duerif Fanghigh
+    - text: Eldred Redblade
+    - text: Eraral Deathflame
+    - text: Farinkyr Clawsinger
+    - text: Glandred Flamewind
+    - text: Glanser Highlion
+    - text: Glimjak Wiseheart
+    - text: Gloril Stormstone
+    - text: Harlynd Starbane
+    - text: Helgunmalk Shieldstrong
+    - text: Marfhig Hearthammer
+    - text: Marismek Hornflame
+    - text: Nalanest Bearshadow
+    - text: Obryn Fangweaver
+    - text: Reiaerg Shadowgold
+    - text: Therhildvin Runewise
+    - text: Vongyth Bonechanger
+    - text: Werdrid Cleaverhorn

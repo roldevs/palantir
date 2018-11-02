@@ -35,16 +35,6 @@ interface IElementDefinition {
   dice?: IDiceDefinition;
 }
 
-interface IFormattedResults {
-  [key: string]: IFormattedResult;
-}
-
-interface IFormattedResult {
-  text?: string;
-  related?: IFormattedResults;
-  results?: IFormattedResult[];
-}
-
 type IOptionalElementDefinition = IElementDefinition | null | undefined;
 
 interface IElement {
@@ -147,15 +137,15 @@ type IRandomModule = (world: IWorldDefinition) => {
 };
 
 type ICliModule = (args: string[]) => {
-  get: () => Bluebird<IFormattedResult[]>;
-};
-
-type IFormatterModule = () => {
-  format: (elements: IElementDefinition[]) => Bluebird<IFormattedResult[]>;
+  get: () => Bluebird<IElementFormatted[]>;
 };
 
 type IFolderModule = (rootPath: string) => {
   folders: () => Bluebird<string[]>;
+};
+
+type ICliOutModule = (logger: any) => {
+  output: (elements: IElementFormatted[]) => void;
 };
 
 /////////////////////////////////////////////////////////
@@ -194,11 +184,9 @@ export {
   IRandomModule,
   IWorldModule,
   ICliModule,
-  IFormatterModule,
   IFolderModule,
-  IFormattedResult,
-  IFormattedResults,
   IElementFormatted,
+  ICliOutModule,
   ERandomOption, //
   IElementDefinition,
   IDiceDefinition,

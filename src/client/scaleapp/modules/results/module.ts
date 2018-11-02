@@ -1,9 +1,8 @@
 import flyd from 'flyd';
-import { IElementDefinition, IFormattedResult } from '../../../../lib/typings';
 import snabbdomPatch from '../../../snabbdom_renderer';
 import { ISelectorOptions } from '../selector/controller';
 import { controller, IResultsController, IResultsState } from './controller';
-import { actions, IResultsModel } from './model';
+import { actions } from './model';
 import viewFn from './view';
 
 const layoutModule = (sb: any) => {

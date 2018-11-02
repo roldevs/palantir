@@ -1,8 +1,8 @@
 import * as R from 'ramda';
-import { IFormattedResult } from '../../../../lib/typings';
+import { IElementFormatted } from '../../../../lib/typings';
 
 interface IResultsModel {
-  result: IFormattedResult | null;
+  result: IElementFormatted | null;
 }
 
 interface IResultsActions {

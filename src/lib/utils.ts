@@ -30,6 +30,8 @@ const dg: (group: string, obj: any) => void =
 const removeExtension: (filename: string) => string =
 (filename) => filename.substr(0, filename.lastIndexOf('.'));
 
+const spaces: (n: number) => string = (n) => ' '.repeat(n);
+
 export {
   compactArray,
   defaultToEmptyArray,
@@ -40,4 +42,5 @@ export {
   JSONprettify,
   dg,
   removeExtension,
+  spaces,
 };

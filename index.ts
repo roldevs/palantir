@@ -4,23 +4,21 @@ import program from 'commander';
 import * as R from 'ramda';
 import localConnectorCreator from './src/lib/connectors/local';
 import remoteConnectorCreator from './src/lib/connectors/remote';
-import formatterCreator from './src/lib/formatter/cli';
 import repositoryCreator from './src/lib/repository/memory';
 import {
   ICliModule,
   IElementDefinition,
-  IFormattedResult,
   IOptionalElementDefinition,
 } from './src/lib/typings';
 import { JSONprettify, removeExtension } from './src/lib/utils';
 import worldCreator from './src/lib/world';
 
 const debug: boolean = false;
-const locale: string = 'es';
+const locale: string = 'en';
 const useConnector: number = 1;
 const count: number = 1;
-const ns: string = 'knave';
-const type: string = 'pc';
+const ns: string = 'ultbx';
+const type: string = 'names';
 
 const connectorCreators: any = {
   0: remoteConnectorCreator({

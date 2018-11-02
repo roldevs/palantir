@@ -29,6 +29,19 @@ const processRelated: (element: IElement | IElementDefinition, depth: number, ch
   );
 };
 
+const title: (element: IElementDefinition | IElement, parent: IOptionalElementDefinition | IOptionalElement)
+  => string =
+(element, parent) => {
+  if (parent && parent.text) {
+    return parent.text;
+  }
+
+  if (element.parent && element.parent.text) {
+    return element.parent.text;
+  }
+  return element.text;
+};
+
 const traverse: (
   element: IElementDefinition  | IElement,
   parent: IElementDefinition | IElement | null | undefined,
@@ -38,9 +51,9 @@ const traverse: (
   if (element.related) {
     const children: IElementFormatted[] = [];
     R.forEach(processRelated(element, depth, children), R.keys(element.related));
-    return { title: parent!.text, children };
+    return { title: title(element, parent), children };
   }
-  return { title: parent!.text! || element!.parent!.text || element!.text, text: element.text };
+  return { title: title(element, parent), text: element.text };
 };
 
 const elementFormatter: IRandomJsonFormatter =

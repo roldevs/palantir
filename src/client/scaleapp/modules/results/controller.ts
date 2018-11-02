@@ -1,3 +1,4 @@
+import Bluebird from 'bluebird';
 import flyd from 'flyd';
 import * as R from 'ramda';
 import { IElementDefinition, IElementFormatted } from '../../../../lib/typings';
@@ -20,36 +21,43 @@ interface IResultsControllerOptions {
   actions: IResultsActions;
 }
 
+const sameOptions: (options: ISelectorOptions, oldOptions: ISelectorOptions) => boolean =
+(options, oldOptions) => {
+  if (!oldOptions) {
+    return false;
+  }
+  return options.locale === oldOptions.locale &&
+    options.ns === oldOptions.ns &&
+    options.type === oldOptions.type;
+};
+
+const streamOptions: (
+  config: IResultsControllerOptions,
+  options: ISelectorOptions,
+) => Bluebird<IResultsState> =
+(config, options) => {
+  if (options.type && options.ns && options.locale) {
+    return config.sb.services.random.index(options).then(R.prop('data')).then(
+      (elements: IElementDefinition[]) => {
+        return { elements, options };
+      },
+    );
+  }
+  return Bluebird.resolve({elements: [], options});
+};
+
 const controller: (config: IResultsControllerOptions) => IResultsController =
 (config) => {
   const stream$: flyd.Stream<IResultsState> = flyd.stream();
   let oldOptions: ISelectorOptions;
 
-  const sameOptions: (options: ISelectorOptions) => boolean =
-  (options) => {
-    if (!oldOptions) {
-      return false;
-    }
-    return options.locale === oldOptions.locale &&
-      options.ns === oldOptions.ns &&
-      options.type === oldOptions.type;
-  };
-
   const setOptions: (options: ISelectorOptions) => void =
   (options)  => {
-    if (!options.reload && sameOptions(options)) {
+    if (!options.reload && sameOptions(options, oldOptions)) {
       return;
     }
     oldOptions = options;
-    if (options.type && options.ns && options.locale) {
-      config.sb.services.random.index(options).then(R.prop('data')).then(
-        (elements: IElementDefinition[]) => {
-          return { elements, options };
-        },
-      ).then(stream$);
-      return;
-    }
-    stream$({elements: [], options});
+    streamOptions(config, options).then(stream$);
   };
 
   const init: (options: ISelectorOptions) => void = setOptions;

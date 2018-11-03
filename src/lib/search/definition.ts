@@ -11,7 +11,7 @@ import {
   compactArray,
 } from '../utils';
 import {
-  isSearchType,
+  isSearchType, isSearchTypeOrAll,
 } from './util';
 
 const searchDefinitionModule: ISearchByTypeModule =
@@ -30,10 +30,7 @@ const searchDefinitionModule: ISearchByTypeModule =
 
   const find: (search: ISearchDefinition) => Bluebird<ISearchResult> =
   (search) => {
-    if (
-      isSearchType(search, ERandomOption.definition) ||
-      isSearchType(search, ERandomOption.all)
-    ) {
+    if (isSearchTypeOrAll(search, ERandomOption.definition)) {
       return doSearch(search);
     }
     return Bluebird.resolve([]);

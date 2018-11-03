@@ -1,6 +1,7 @@
 import Bluebird from 'bluebird';
 import * as R from 'ramda';
 import elementCreator from './element';
+import { optionCount } from './element/utili';
 import { elementFormatter } from './formatter/elementFormatter';
 import randomCreator from './random';
 import {
@@ -10,14 +11,11 @@ import {
   IRelatedElement,
   IWorldModule,
 } from './typings';
-import { compactArray, randomFromArray } from './utils';
+import { compactArray } from './utils';
 
 const worldModule: IWorldModule =
 (world) => {
   const elementObject = elementCreator(world);
-
-  const optionCount: (relatedElement: IRelatedElement) => any =
-    R.compose(R.defaultTo(1), R.view(R.lensProp('count')));
 
   const getOne: (search: IRelatedElement) => () => Bluebird<IElementFormatted | null> =
   (search) => () => {

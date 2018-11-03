@@ -38,6 +38,8 @@ interface IElementDefinition {
 
 type IOptionalElementDefinition = IElementDefinition | null | undefined;
 
+type IPromisfyElementDefinition = (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
+
 interface IElement {
   ns: string;
   type: string;
@@ -115,15 +117,15 @@ type IElementModule = (world: IWorldDefinition) => {
 };
 
 type IOptionsModule = (world: IWorldDefinition) => {
-  random: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
+  random: IPromisfyElementDefinition;
 };
 
 type IRelatedModule = (world: IWorldDefinition) => {
-  fetch: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
+  fetch: IPromisfyElementDefinition;
 };
 
 type IDiceModule = (world: IWorldDefinition) => {
-  roll: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition>;
+  roll: IPromisfyElementDefinition;
 };
 
 type ISearchModule = (world: IWorldDefinition) => {

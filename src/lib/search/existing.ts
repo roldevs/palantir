@@ -12,7 +12,7 @@ import {
   randomFromArray,
 } from '../utils';
 import {
-  isSearchType,
+  isSearchType, isSearchTypeOrAll,
 } from './util';
 
 const searchExistingModule: ISearchByTypeModule =
@@ -24,10 +24,7 @@ const searchExistingModule: ISearchByTypeModule =
 
   const find: (search: ISearchDefinition) => Bluebird<ISearchResult> =
   (search) => {
-    if (
-      isSearchType(search, ERandomOption.existing) ||
-      isSearchType(search, ERandomOption.all)
-    ) {
+    if (isSearchTypeOrAll(search, ERandomOption.existing)) {
       return doSearch(search);
     }
     return Bluebird.resolve([]);

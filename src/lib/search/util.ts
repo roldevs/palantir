@@ -18,7 +18,11 @@ const searchType: (search: ISearchDefinition) => string =
 const isSearchType: (search: ISearchDefinition, type: ERandomOption) => boolean =
 (search, type) => R.equals(searchType(search), type);
 
+const isSearchTypeOrAll: (search: ISearchDefinition, type: ERandomOption) => boolean =
+(search, type) => isSearchType(search, type) || isSearchType(search, ERandomOption.all);
+
 export {
   searchType,
   isSearchType,
+  isSearchTypeOrAll,
 };

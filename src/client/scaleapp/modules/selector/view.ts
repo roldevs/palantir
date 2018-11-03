@@ -45,6 +45,13 @@ const fieldView: (config: {
   ]);
 };
 
+interface IDropdownViewConfig {
+  value: string | null;
+  options: IDropdownItem[];
+  controller: ISelectorController;
+  disabled: boolean;
+}
+
 const dropdownView: (config: {
   id: string,
   placeholder: string,
@@ -65,12 +72,7 @@ const dropdownView: (config: {
   }).render();
 };
 
-const dropdownLocale: (config: {
-  value: string | null,
-  options: IDropdownItem[],
-  controller: ISelectorController,
-  disabled: boolean,
-}) => VNode =
+const dropdownLocale: (config: IDropdownViewConfig) => VNode =
 (config) => dropdownView({
   id: 'dropdown_locale',
   placeholder: 'Idioma',
@@ -82,12 +84,7 @@ const dropdownLocale: (config: {
   disabled: config.disabled,
 });
 
-const dropdownNs: (config: {
-  value: string | null,
-  options: IDropdownItem[],
-  controller: ISelectorController,
-  disabled: boolean,
-}) => VNode =
+const dropdownNs: (config: IDropdownViewConfig) => VNode =
 (config) => dropdownView({
   id: 'dropdown_ns',
   placeholder: 'Sistema',
@@ -99,12 +96,7 @@ const dropdownNs: (config: {
   disabled: config.disabled,
 });
 
-const dropdownType: (config: {
-  value: string | null,
-  options: IDropdownItem[],
-  controller: ISelectorController,
-  disabled: boolean,
-}) => VNode =
+const dropdownType: (config: IDropdownViewConfig) => VNode =
 (config) => dropdownView({
   id: 'dropdown_type',
   placeholder: 'Tabla',

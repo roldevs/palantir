@@ -55,56 +55,60 @@ const items: (
   }, config.options);
 };
 
-const dropdown: TDropdown =
+const dropDropDownMenu: (config: IDropdownConfig) => VNode[] =
 (config) => {
-  const render: () => VNode =
-  () => {
-    return h('div', {
+  return [
+    h('i', {
       class: {
-        ui: true,
-        fluid: true,
-        selection: true,
         dropdown: true,
-        disabled: config.disabled,
+        icon: true,
       },
-      hook: {
-        insert: (vnode: VNode) => {
-          const $elm: any = $(vnode.elm!);
-          $elm.dropdown({
-            action: 'hide',
-            onChange: doEvent(config),
-          });
-        },
-        update: (vnode: VNode) => {
-          const $elm: any = $(vnode.elm!);
-          $elm.dropdown({
-            action: 'hide',
-            onChange: doEvent(config),
-          });
-        },
+    }),
+    h('div', {
+      class: {
+        default: true,
+        text: true,
       },
-    }, [
-      h('i', {
-        class: {
-          dropdown: true,
-          icon: true,
-        },
-      }),
-      h('div', {
-        class: {
-          default: true,
-          text: true,
-        },
-      }, config.value || config.placeholder),
-      h('div', {
-        class: {
-          menu: true,
-        },
-      }, items({
-        options: config.options,
-      })),
-    ]);
-  };
+    }, config.value || config.placeholder),
+    h('div', {
+      class: {
+        menu: true,
+      },
+    }, items({
+      options: config.options,
+    })),
+  ];
+};
+
+const dropdownHook: (config: IDropdownConfig) => (vnode: VNode) => any =
+(config) => (vnode) => {
+  const $elm: any = $(vnode.elm!);
+  $elm.dropdown({
+    action: 'hide',
+    onChange: doEvent(config),
+  });
+};
+
+const dropDropDown: (config: IDropdownConfig) => VNode =
+(config) => {
+  return h('div', {
+    class: {
+      ui: true,
+      fluid: true,
+      selection: true,
+      dropdown: true,
+      disabled: config.disabled,
+    },
+    hook: {
+      insert: dropdownHook(config),
+      update: dropdownHook(config),
+    },
+  }, dropDropDownMenu(config));
+};
+
+const dropdown: TDropdown = (config) => {
+  const render: () => VNode = () => dropDropDown(config);
+
   return {
     render,
   };

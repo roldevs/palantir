@@ -7,18 +7,11 @@ import viewFn from './view';
 
 const layoutModule = (sb: any) => {
   let vdom: any;
-  const subscriptions = {
-    selector: null,
-  };
-  const controllerHandler: IResultsController = controller({
-    sb,
-    actions: actions(),
-  });
+  const subscriptions = { selector: null };
+  const controllerHandler: IResultsController = controller({ sb, actions: actions() });
 
   const onSelectorSelect: (options: ISelectorOptions) => void =
-  (options) => {
-    controllerHandler.setOptions(options);
-  };
+  (options) => controllerHandler.setOptions(options);
 
   const onModuleInit = (config: any, done: () => void) => {
     vdom = document.getElementById(config.el);
@@ -33,15 +26,11 @@ const layoutModule = (sb: any) => {
     done();
   };
 
-  const render: (model: IResultsState) => void =
-  (model) => {
+  const render: (model: IResultsState) => void = (model) => {
     vdom = snabbdomPatch(vdom, viewFn(model, controllerHandler));
   };
 
-  return {
-    init: onModuleInit,
-    destroy: onModuleDestroy,
-  };
+  return { init: onModuleInit, destroy: onModuleDestroy };
 };
 
 export default layoutModule;

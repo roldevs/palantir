@@ -23,28 +23,29 @@ interface ISelectorActions {
   setTypeList: (list: string[]) => ISelectorModel;
 }
 
+const initModel: () => ISelectorModel = R.always({
+  locale: null,
+  localeList: [],
+  localeDisabled: true,
+  ns: null,
+  nsList: [],
+  nsDisabled: true,
+  type: null,
+  typeList: [],
+  typeDisabled: true,
+});
+
+const checkDisabled: (model: ISelectorModel) => ISelectorModel =
+(model) => {
+  model = R.set(R.lensProp('localeDisabled'), R.isEmpty(model.localeList), model);
+  model = R.set(R.lensProp('nsDisabled'), R.isEmpty(model.nsList), model);
+  return R.set(R.lensProp('typeDisabled'), R.isEmpty(model.typeList), model);
+};
+
 const actions: () => ISelectorActions = () => {
-  const init: () => ISelectorModel = R.always({
-    locale: null,
-    localeList: [],
-    localeDisabled: true,
-    ns: null,
-    nsList: [],
-    nsDisabled: true,
-    type: null,
-    typeList: [],
-    typeDisabled: true,
-  });
-  let state: ISelectorModel = init();
+  let state: ISelectorModel = initModel();
 
   const get: () => ISelectorModel = () => checkDisabled(state);
-
-  const checkDisabled: (model: ISelectorModel) => ISelectorModel =
-  (model) => {
-    model = R.set(R.lensProp('localeDisabled'), R.isEmpty(model.localeList), model);
-    model = R.set(R.lensProp('nsDisabled'), R.isEmpty(model.nsList), model);
-    return R.set(R.lensProp('typeDisabled'), R.isEmpty(model.typeList), model);
-  };
 
   const setField: (field: string) => (value: any) => ISelectorModel =
   (field) => (value) =>  {
@@ -53,7 +54,7 @@ const actions: () => ISelectorActions = () => {
   };
 
   return {
-    init,
+    init: initModel,
     get,
     setLocale: setField('locale'),
     setLocaleList: setField('localeList'),

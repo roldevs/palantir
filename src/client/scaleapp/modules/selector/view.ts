@@ -130,7 +130,34 @@ const refreshButton: (model: ISelectorModel, controller: ISelectorController) =>
   ]);
 };
 
-const typeDropdownAndRefreshButton: (model: ISelectorModel, controller: ISelectorController) => VNode =
+const typeDropdownAndRefreshButton: (model: ISelectorModel, controller: ISelectorController) => VNode[] =
+(model, controller) => {
+  return [
+    h('div', {
+      class: {
+        thirteen: true,
+        wide: true,
+        field: true,
+      },
+    }, [
+      dropdownType({
+        value: model.type,
+        options: mapTypeDropboxItems(model.typeList),
+        controller,
+        disabled: model.typeDisabled,
+      }),
+    ]),
+    h('div', {
+      class: {
+        two: true,
+        wide: true,
+        field: true,
+      },
+    }, refreshButton(model, controller)),
+  ];
+};
+
+const typeDropdownLabelAndRefreshButton: (model: ISelectorModel, controller: ISelectorController) => VNode =
 (model, controller) => {
   return h('div', {
     class: {
@@ -145,29 +172,7 @@ const typeDropdownAndRefreshButton: (model: ISelectorModel, controller: ISelecto
         two: true,
         fields: true,
       },
-    }, [
-      h('div', {
-        class: {
-          thirteen: true,
-          wide: true,
-          field: true,
-        },
-      }, [
-        dropdownType({
-          value: model.type,
-          options: mapTypeDropboxItems(model.typeList),
-          controller,
-          disabled: model.typeDisabled,
-        }),
-      ]),
-      h('div', {
-        class: {
-          two: true,
-          wide: true,
-          field: true,
-        },
-      }, refreshButton(model, controller)),
-    ]),
+    }, typeDropdownAndRefreshButton(model, controller) ),
   ]);
 };
 
@@ -192,7 +197,7 @@ const viewFn: (model: ISelectorModel, controller: ISelectorController) => VNode 
         disabled: model.nsDisabled,
       }),
     }),
-    typeDropdownAndRefreshButton(model, controller),
+    typeDropdownLabelAndRefreshButton(model, controller),
   ]);
 };
 

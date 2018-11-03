@@ -10,9 +10,7 @@ const layoutModule = (_: any) => {
     done();
   };
 
-  const onModuleDestroy = (done: () => void) => {
-    done();
-  };
+  const onModuleDestroy = (done: () => void) =>  done();
 
   return {
     init: onModuleInit,

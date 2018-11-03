@@ -1,19 +1,30 @@
 import flyd from 'flyd';
+import { compactArray } from '../../../../lib/utils';
 import snabbdomPatch from '../../../snabbdom_renderer';
 import { controller, ISelectorController } from './controller';
 import {
   actions,
-  ISelectorActions,
   ISelectorModel,
 } from './model';
 import viewFn from './view';
 
+const setHasher: (sb: any, model: ISelectorModel) => void =
+(sb, model) => {
+  const hash: string[] = ['random'];
+  hash.push(model.locale!);
+  hash.push(model.ns!);
+  hash.push(model.type!);
+
+  sb.hasher.setHashWithoutNavigate(
+    compactArray(
+      hash,
+    ).join('/'),
+  );
+};
+
 const layoutModule = (sb: any) => {
   let vdom: any;
-  const controllerHandler: ISelectorController = controller({
-    sb,
-    actions: actions(),
-  });
+  const controllerHandler: ISelectorController = controller({ sb, actions: actions() });
 
   const onModuleInit = (config: any, done: () => void) => {
     vdom = document.getElementById(config.el);
@@ -22,33 +33,11 @@ const layoutModule = (sb: any) => {
     done();
   };
 
-  const onModuleDestroy = (done: () => void) => {
-    done();
-  };
+  const onModuleDestroy = (done: () => void) => done();
 
-  const render: (model: ISelectorModel) => void =
-  (model) => {
+  const render: (model: ISelectorModel) => void = (model) => {
     vdom = snabbdomPatch(vdom, viewFn(model, controllerHandler));
-    setHasher(model);
-  };
-
-  const setHasher: (model: ISelectorModel) => void =
-  (model) => {
-    const hash: string[] = ['random'];
-
-    if (model.locale) {
-      hash.push(model.locale);
-    }
-
-    if (model.ns) {
-      hash.push(model.ns);
-    }
-
-    if (model.type) {
-      hash.push(model.type);
-    }
-
-    sb.hasher.setHashWithoutNavigate(hash.join('/'));
+    setHasher(sb, model);
   };
 
   return {

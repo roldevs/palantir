@@ -16,19 +16,13 @@ const ls = (core: any) => {
 };
 
 const lsPlugins = (core: any) => {
-  let p: any;
-  let i: any;
-  let len: any;
   let ref: any;
   let ref1: any;
-  let results: any;
-  ref = core._plugins;
-  results = [];
-  for (i = 0, len = ref.length; i < len; i++) {
-    p = ref[i];
-    ref1 = p.plugin;
+  const results: any = [];
+  for (ref of core._plugins) {
+    ref1 = ref.plugin;
     if ((ref1 != null ? ref1.id : void 0) != null) {
-      results.push(p.plugin.id);
+      results.push(ref.plugin.id);
     }
   }
   return results;

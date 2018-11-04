@@ -1,0 +1,88 @@
+meta:
+  system: Páramos Aventurados
+data:
+  options:
+    - text: Mazmorra Pequeña
+      related:
+        constructor:
+          text: Constructor
+          search:
+            - ns: perilous
+              type: dungeon_constructor
+        function:
+          text: Función
+          search:
+            - ns: perilous
+              type: dungeon_function
+        themes:
+          text: Temas
+          search:
+            - ns: perilous
+              type: dungeon_subjects
+          count: d4
+        areas:
+          text: Areas
+          dice: d6+2
+    - text: Mazmorra Mediana
+      related:
+        constructor:
+          text: Constructor
+          search:
+            - ns: perilous
+              type: dungeon_constructor
+        function:
+          text: Función
+          search:
+            - ns: perilous
+              type: dungeon_function
+        themes:
+          text: Temas
+          search:
+            - ns: perilous
+              type: dungeon_subjects
+          count: d6
+        areas:
+          text: Areas
+          dice: 2d6+4
+    - text: Mazmorra Grande
+      related:
+        constructor:
+          text: Constructor
+          search:
+            - ns: perilous
+              type: dungeon_constructor
+        function:
+          text: Función
+          search:
+            - ns: perilous
+              type: dungeon_function
+        themes:
+          text: Temas
+          search:
+            - ns: perilous
+              type: dungeon_subjects
+          count: d6+1
+        areas:
+          text: Areas
+          dice: 3d6+6
+    - text: Mazmorra Enorme
+      related:
+        constructor:
+          text: Constructor
+          search:
+            - ns: perilous
+              type: dungeon_constructor
+        function:
+          text: Función
+          search:
+            - ns: perilous
+              type: dungeon_function
+        themes:
+          text: Temas
+          search:
+            - ns: perilous
+              type: dungeon_subjects
+          count: d6+2
+        areas:
+          text: Areas
+          dice: 4d6+10

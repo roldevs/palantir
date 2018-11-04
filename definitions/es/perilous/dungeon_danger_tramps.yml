@@ -1,0 +1,16 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Peligros Trampa de la Mazmorra
+  options:
+    - text: Alarma
+    - text: Atrapante/paralizante
+    - text: Foso
+    - text: Aplastante
+    - text: Perforante/trinchante
+    - text: Cortante/apuñaladora
+    - text: Confusión (laberinto...)
+    - text: Gas (veneno, etc.)
+    - text: Elemento #
+    - text: Emboscada
+    - text: Mágica

@@ -1,0 +1,65 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Descubrimiento de Mazmorra
+  options:
+    - related:
+        dungeon_dressing_discoveries1:
+          search:
+            - ns: perilous
+              type: dungeon_dressing_discoveries
+    - related:
+        dungeon_dressing_discoveries2:
+          search:
+            - ns: perilous
+              type: dungeon_dressing_discoveries
+    - related:
+        dungeon_dressing_discoveries3:
+          search:
+            - ns: perilous
+              type: dungeon_dressing_discoveries
+    - related:
+        dungeon_element_discoveries4:
+          search:
+            - ns: perilous
+              type: dungeon_element_discoveries
+    - related:
+        dungeon_element_discoveries5:
+          search:
+            - ns: perilous
+              type: dungeon_element_discoveries
+    - related:
+        dungeon_element_discoveries6:
+          search:
+            - ns: perilous
+              type: dungeon_element_discoveries
+    - related:
+        dungeon_element_discoveries7:
+          search:
+            - ns: perilous
+              type: dungeon_element_discoveries
+    - related:
+        dungeon_element_discoveries8:
+          search:
+            - ns: perilous
+              type: dungeon_element_discoveries
+    - related:
+        dungeon_element_discoveries9:
+          search:
+            - ns: perilous
+              type: dungeon_element_discoveries
+    - related:
+        dungeon_find_discoveries10:
+          search:
+            - ns: perilous
+              type: dungeon_find_discoveries
+    - related:
+        dungeon_find_discoveries11:
+          search:
+            - ns: perilous
+              type: dungeon_find_discoveries
+    - related:
+        dungeon_find_discoveries12:
+          search:
+            - ns: perilous
+              type: dungeon_find_discoveries

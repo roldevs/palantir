@@ -226,4 +226,67 @@ describe('World#get', () => {
       });
     });
   });
+  describe('with two faction', () => {
+    const connector = testConnector({
+      elements: {
+        es: {
+          maze_rats: {
+            npc_asset: {
+              text: 'Npc Asset',
+              options: [{
+                text: 'Npc Asset 1',
+                related: {
+                  faction: {
+                    text: 'Lider ${faction}',
+                    search: [{
+                      ns: 'maze_rats',
+                      type: 'faction',
+                      random: ERandomOption.all,
+                    }],
+                  },
+                },
+              }, {
+                text: 'Npc Asset 2',
+              }],
+            },
+            faction: {
+              text: 'Faction',
+              options: [{
+                text: 'Movimiento artístico',
+              }],
+            },
+          },
+        },
+        en: {},
+      },
+    });
+    const world = worldCreator({
+      locale: 'es',
+      connector,
+      repository: testRepository({
+        locale: 'es',
+        elements: {},
+      }),
+    });
+
+    describe('random search', () => {
+      const search: IRelatedElement = {
+        search: [{
+          ns: 'maze_rats',
+          type: 'faction',
+        }],
+        count: 'd2',
+      };
+      it('return the one or two factions', (done) => {
+        world.get(search).then((elements: IElementFormatted[]) => {
+          expect(elements.length).to.be.oneOf([1, 2]);
+
+          const element: IElementFormatted = elements[0]!;
+          expect(element).to.not.be.null;
+          expect(element.text).to.be.oneOf(['Movimiento artístico', 'Npc Asset 2']);
+          done();
+        });
+      });
+    });
+  });
 });

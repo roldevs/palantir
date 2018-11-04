@@ -1,0 +1,65 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Peligros de Mazmorra
+  options:
+    - related:
+        dungeon_danger_tramps1:
+          search:
+            - ns: perilous
+              type: dungeon_danger_tramps
+    - related:
+        dungeon_danger_tramps2:
+          search:
+            - ns: perilous
+              type: dungeon_danger_tramps
+    - related:
+        dungeon_danger_tramps3:
+          search:
+            - ns: perilous
+              type: dungeon_danger_tramps
+    - related:
+        dungeon_danger_tramps4:
+          search:
+            - ns: perilous
+              type: dungeon_danger_tramps
+    - related:
+        dungeon_danger_creatures5:
+          search:
+            - ns: perilous
+              type: dungeon_danger_creatures
+    - related:
+        dungeon_danger_creatures6:
+          search:
+            - ns: perilous
+              type: dungeon_danger_creatures
+    - related:
+        dungeon_danger_creatures7:
+          search:
+            - ns: perilous
+              type: dungeon_danger_creatures
+    - related:
+        dungeon_danger_creatures8:
+          search:
+            - ns: perilous
+              type: dungeon_danger_creatures
+    - related:
+        dungeon_danger_creatures9:
+          search:
+            - ns: perilous
+              type: dungeon_danger_creatures
+    - related:
+        dungeon_danger_creatures10:
+          search:
+            - ns: perilous
+              type: dungeon_danger_creatures
+    - related:
+        dungeon_danger_creatures11:
+          search:
+            - ns: perilous
+              type: dungeon_danger_creatures
+    - related:
+        dungeon_danger_entities12:
+          search:
+            - ns: perilous
+              type: dungeon_danger_entities

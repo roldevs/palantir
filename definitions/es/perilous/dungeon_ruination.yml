@@ -1,0 +1,16 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Ruina de Mazmorra
+  options:
+    - text: Desastre arcano
+    - text: Perdición/maldición
+    - text: Terremoto/incendio/inundación
+    - text: Terremoto/incendio/inundación
+    - text: Plaga/hambruna/sequia
+    - text: Plaga/hambruna/sequia
+    - text: Manifestación de monstruos
+    - text: Guerra/invasión
+    - text: Guerra/invasión
+    - text: Recursos agotados
+    - text: Mejores opciones en otro lugar

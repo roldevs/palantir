@@ -6,7 +6,7 @@ import {
   IOptionsModule,
 } from '../typings';
 import { randomFromArray } from '../utils';
-import { hasOptions } from './utili';
+import { hasOptions } from './utils';
 
 const optionsModule: IOptionsModule =
 (world) => {

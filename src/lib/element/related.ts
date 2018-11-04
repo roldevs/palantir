@@ -1,48 +1,42 @@
 import Bluebird from 'bluebird';
 import * as R from 'ramda';
-import elementModule from '../element';
-import randomModule from '../random';
 import {
   IElementDefinition,
   IOptionalElementDefinition,
   IRelatedElement,
   IRelatedElements,
   IRelatedModule,
-  ISearchDefinition,
-  IWorldDefinition,
 } from '../typings';
-import { compactArray, deepMerge } from '../utils';
-import { hasRelated, optionCount } from './utili';
-
-const searchElement: (world: IWorldDefinition, search: ISearchDefinition[]) => Bluebird<IOptionalElementDefinition> =
-  (world, search) => randomModule(world).random(search).then(elementModule(world).get);
-
-const oneRelated: (world: IWorldDefinition, related: IRelatedElement) => Bluebird<IRelatedElement> =
-(world, related) => {
-  return Bluebird.all(
-    R.times(() => searchElement(world, related.search), optionCount(related)),
-  ).then((results: IOptionalElementDefinition[]) => {
-    return R.set(R.lensProp('results'), compactArray(results), related);
-  });
-};
-
-const processRelated: (world: IWorldDefinition, relatedMap: IRelatedElements) => Bluebird<IRelatedElements> =
-(world, relatedMap) => {
-  return Bluebird.map(
-    R.keys(relatedMap) as string[],
-    (key: string) => {
-      return oneRelated(world, relatedMap[key]).then((related: IRelatedElement) => {
-        return R.set(R.lensProp(key), related, relatedMap);
-      });
-    },
-  ).then(deepMerge);
-};
+import { deepMerge } from '../utils';
+import relatedDiceModule from './related/dice';
+import relatedSearchModule from './related/search';
+import { hasRelated, relatedHasDice } from './utils';
 
 const relatedModule: IRelatedModule =
 (world) => {
+  const relatedPromise: (related: IRelatedElement, parent: IElementDefinition) => Bluebird<IRelatedElement> =
+  (related, parent) => {
+    if (relatedHasDice(related)) {
+      return relatedDiceModule(world).get(related);
+    }
+    return relatedSearchModule(world).get(related, parent);
+  };
+
+  const processRelated: (relatedMap: IRelatedElements, parent: IElementDefinition) => Bluebird<IRelatedElements> =
+  (relatedMap, parent) => {
+    return Bluebird.map(
+      R.keys(relatedMap) as string[],
+      (key: string) => {
+        return relatedPromise(relatedMap[key], parent).then((related: IRelatedElement) => {
+          return R.set(R.lensProp(key), related, relatedMap);
+        });
+      },
+    ).then(deepMerge);
+  };
+
   const getElement: (element: IElementDefinition) => Bluebird<IElementDefinition> =
   (element) => {
-    return processRelated(world, element!.related!).then((related: IRelatedElements) => {
+    return processRelated(element!.related!, element).then((related: IRelatedElements) => {
       return R.set(R.lensProp('related'), related, element);
     });
   };

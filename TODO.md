@@ -1,6 +1,12 @@
 
 ## Mejoras
 
+* Related puede ser el resultado de un dado y no necesitar ir a otra tabla para calcularlo
+* Count de search puede depender de dado
+* Sistema de pesos
+
+
+
 * Uglify client javascript
 
 

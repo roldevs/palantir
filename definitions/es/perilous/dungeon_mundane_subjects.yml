@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Tema Mundano de la Mazmorra
+  options:
+    - text: Descomposición/deterioro
+    - text: Tortura/agonía
+    - text: Locura
+    - text: Todo está perdido
+    - text: Noble sacrificio
+    - text: Furia salvaje
+    - text: Supervivencia
+    - text: Actividad criminal
+    - text: Secretos/traición
+    - text: Engaños y trampas
+    - text: Investación/infestación
+    - text: Facciones de guerra

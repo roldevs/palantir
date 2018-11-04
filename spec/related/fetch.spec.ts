@@ -89,5 +89,42 @@ describe('Related#fetch', () => {
         });
       });
     });
+
+    describe('with dice', () => {
+      const connector = testConnector({
+        elements: {
+          es: {},
+          en: {},
+        },
+      });
+
+      const world: IWorldDefinition = {
+        locale: 'es',
+        connector,
+        repository,
+      };
+
+      it('return the dice element', (done) => {
+        const element: IOptionalElementDefinition = {
+          text: 'Test',
+          related: {
+            key: {
+              dice: 'd6+2',
+            },
+          },
+        };
+
+        const related = relatedModule(world);
+
+        related.fetch(element).then((data: IOptionalElementDefinition) => {
+          expect(data).to.not.be.null;
+          // tslint:disable-next-line:no-console
+          console.log(data!.related!.key.results);
+          expect(data!.text).to.eql('Test');
+          expect(data!.related!.key.results![0].text).to.be.oneOf(['3', '4', '5', '6', '7', '8']);
+          done();
+        });
+      });
+    });
   });
 });

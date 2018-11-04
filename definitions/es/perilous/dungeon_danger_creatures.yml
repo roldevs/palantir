@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Peligros Criatura de la Mazmorra
+  options:
+    - text: Esperando emboscar
+    - text: Luchando/discutiendo
+    - text: Merodeando/patrullando
+    - text: Buscando alimento
+    - text: Comiendo/descansando
+    - text: Protegiendo algo
+    - text: Trasladándose
+    - text: Buscando/hurgando
+    - text: De vuelta a su madriguera
+    - text: Planeando algo
+    - text: Durmiendo
+    - text: Agonizando

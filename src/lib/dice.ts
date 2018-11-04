@@ -7,20 +7,35 @@ import {
   IOptionalElementDefinition,
 } from './typings';
 
-const diceResult: (result: DiceResult) => IOptionalElementDefinition =
-(result) => {
-  if (R.isEmpty(result.errors)) {
-    return { text: result.total.toString() };
-  }
-  return { text: result.errors.toString() };
-};
-
-const rollDice: (diceDef: string) => Bluebird<IOptionalElementDefinition> =
+const diceModule: IDiceModule =
 (diceDef) => {
-  const result: DiceResult = (new Dice()).roll(diceDef);
-  return Bluebird.resolve(diceResult(result));
+  const diceResult: (result: DiceResult) => IOptionalElementDefinition =
+  (result) => {
+    if (R.isEmpty(result.errors)) {
+      return { text: result.total.toString() };
+    }
+    return { text: result.errors.toString() };
+  };
+
+  const roll: () => number | null =
+  () => {
+    const result: DiceResult = (new Dice()).roll(diceDef);
+    if (R.isEmpty(result.errors)) {
+      return result.total;
+    }
+    return null;
+  };
+
+  const rollElement: () => Bluebird<IOptionalElementDefinition> =
+  () => {
+    const result: DiceResult = (new Dice()).roll(diceDef);
+    return Bluebird.resolve(diceResult(result));
+  };
+
+  return {
+    roll,
+    rollElement,
+  };
 };
 
-export {
-  rollDice,
-};
+export default diceModule;

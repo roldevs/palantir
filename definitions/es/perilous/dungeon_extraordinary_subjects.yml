@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Tema Extraordinario de la Mazmorra
+  options:
+    - text: Mal intrigante
+    - text: Adivinación/escrudiñamiento
+    - text: Blasfemia
+    - text: Investigación arcana
+    - text: Fuerzas ocultas
+    - text: Una antigua maldición
+    - text: Mutación
+    - text: Los muertos sin reposo
+    - text: Hambre insaciable
+    - text: Increíble poder
+    - text: Horrores innombrables
+    - text: Guerra sagrada

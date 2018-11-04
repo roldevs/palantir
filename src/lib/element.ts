@@ -3,7 +3,7 @@ import * as R from 'ramda';
 import diceModule from './element/dice';
 import optionsModule from './element/options';
 import relatedModule from './element/related';
-import { hasDice, hasOptions, hasRelated } from './element/utili';
+import { hasDice, hasOptions, hasRelated } from './element/utils';
 import {
   IElementModule,
   IOptionalElement,

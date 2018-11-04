@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Tema Inusual de la Mazmorra
+  options:
+    - text: Creación/invención
+    - text: Elemento #
+    - text: Conocimiento/aprendizaje
+    - text: Crecimiento/expansión
+    - text: Crecimiento misterio
+    - text: Transformación/cambio
+    - text: Caos y destrucción
+    - text: Fuerzas oscuras
+    - text: Conocimiento prohibido
+    - text: Veneno/enfermedad
+    - text: Corrupción/plaga
+    - text: Desastre inminente

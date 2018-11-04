@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Constructor de la Mazmorra
+  options:
+    - text: Raza olvidado
+    - text: Semidiós/demonio
+    - text: Natural (cuevas)
+    - text: Natural (cuevas)
+    - text: Orden religiosa/secta
+    - text: Humanoide #
+    - text: Humanoide #
+    - text: Enanos/gnomos
+    - text: Enanos/gnomos
+    - text: Elfos
+    - text: Mago/demente
+    - text: Monarca/caudillo

@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Peligros Entidad de la Mazmorra
+  options:
+    - text: Intruso extraño
+    - text: Señor de la Plaga
+    - text: Amo del crimen
+    - text: Señor de la Guerra
+    - text: Sumo Sacerdote
+    - text: Oráculo
+    - text: Mago/bruja/alquimista
+    - text: Monstruo #
+    - text: Espíritu malavado/fantasma
+    - text: Señor no muerto
+    - text: Demonio
+    - text: Dios oscuro

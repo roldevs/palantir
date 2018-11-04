@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Descubrimiento Atrezo
+  options:
+    - text: Basura/escombro
+    - text: Huellas/marcas
+    - text: Señales de batalla
+    - text: Escritos/tallas
+    - text: Advertencia
+    - text: Criatura muerta #
+    - text: Huesos/restos
+    - text: Libros/pergaminos/mapas
+    - text: Puerta (o pared) rota
+    - text: Brisa/viento/aroma
+    - text: Liquen/musgo/hongos
+    - text: Rareza #

@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Función de la Mazmorra
+  options:
+    - text: Fuente/portal
+    - text: Mina
+    - text: Tumba/cripta
+    - text: Tumba/cripta
+    - text: Prisión
+    - text: Cubil/madriguera/guarida
+    - text: Cubil/madriguera/guarida
+    - text: Fortaleza/santuario
+    - text: Fortaleza/santuario
+    - text: Capilla/templo/oráculo
+    - text: Archivo/biblioteca
+    - text: Desconosida/misteriosa

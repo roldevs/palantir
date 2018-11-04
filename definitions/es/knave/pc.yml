@@ -5,34 +5,22 @@ data:
   related:
     strength:
       text: Fuerza
-      search:
-        - ns: knave
-          type: strength
+      dice: 3d6kl1
     dexterity:
       text: Destreza
-      search:
-        - ns: knave
-          type: dexterity
+      dice: 3d6kl1
     constitution:
       text: Constitución
-      search:
-        - ns: knave
-          type: constitution
+      dice: 3d6kl1
     intelligence:
       text: Inteligencia
-      search:
-        - ns: knave
-          type: intelligence
+      dice: 3d6kl1
     wisdom:
       text: Conocimiento
-      search:
-        - ns: knave
-          type: wisdom
+      dice: 3d6kl1
     charisma:
       text: Carisma
-      search:
-        - ns: knave
-          type: charisma
+      dice: 3d6kl1
     physique:
       text: Físico
       search:

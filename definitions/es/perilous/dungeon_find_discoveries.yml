@@ -1,0 +1,16 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Descubrimiento Hallazgo
+  options:
+    - text: Baratijas
+    - text: Herramientas
+    - text: Armas o armaduras
+    - text: Suministro/mercancías
+    - text: Monedas/gemas/joyería
+    - text: Venenos/pociones
+    - text: Aventurero/prisionero
+    - text: Objeto mágico
+    - text: Pergamino/libro
+    - text: Arma o armadura mágica
+    - text: Artefacto

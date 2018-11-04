@@ -17,9 +17,10 @@ interface ISearchDefinition {
 
 interface IRelatedElement {
   text?: string;
-  search: ISearchDefinition[];
+  search?: ISearchDefinition[];
+  dice?: string; // Dice result is given in results also
   results?: Array<IElementDefinition | IElement>; // Here is save the result
-  count?: number;
+  count?: number | string; // If string is passed it is taken as a dice expression
 }
 
 interface IRelatedElements {
@@ -116,6 +117,14 @@ type IElementModule = (world: IWorldDefinition) => {
   get: (element: IOptionalElementDefinition | IOptionalElement) => Bluebird<IOptionalElementDefinition>;
 };
 
+type IRelatedSearchModule = (world: IWorldDefinition) => {
+  get: (related: IRelatedElement, parent: IElementDefinition) => Bluebird<IRelatedElement>;
+};
+
+type IRelatedDiceModule = (world: IWorldDefinition) => {
+  get: (related: IRelatedElement) => Bluebird<IRelatedElement>;
+};
+
 type IOptionsModule = (world: IWorldDefinition) => {
   random: IPromisfyElementDefinition;
 };
@@ -124,7 +133,7 @@ type IRelatedModule = (world: IWorldDefinition) => {
   fetch: IPromisfyElementDefinition;
 };
 
-type IDiceModule = (world: IWorldDefinition) => {
+type IElementDiceModule = (world: IWorldDefinition) => {
   roll: IPromisfyElementDefinition;
 };
 
@@ -150,6 +159,15 @@ type IFolderModule = (rootPath: string) => {
 
 type ICliOutModule = (logger: any) => {
   output: (elements: IElementFormatted[]) => void;
+};
+
+type IDiceModule = (diceDef: string) => {
+  roll: () => number | null;
+  rollElement: () => Bluebird<IOptionalElementDefinition>;
+};
+
+type ICounterModule = (countDef: string | number | null | undefined) => {
+  get: () => number;
 };
 
 /////////////////////////////////////////////////////////
@@ -180,8 +198,11 @@ export {
   ITestConnectorOptions,
   IRepositoryOptions,
   IElementModule,
+  IRelatedSearchModule,
+  IRelatedDiceModule,
   IOptionsModule,
   IRelatedModule,
+  IElementDiceModule,
   IDiceModule,
   ISearchModule,
   ISearchByTypeModule,
@@ -191,6 +212,7 @@ export {
   IFolderModule,
   IElementFormatted,
   ICliOutModule,
+  ICounterModule,
   ERandomOption, //
   IElementDefinition,
   IDiceDefinition,

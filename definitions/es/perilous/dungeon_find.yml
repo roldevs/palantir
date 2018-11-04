@@ -1,0 +1,87 @@
+meta:
+  system: Páramos Aventurados
+data:
+  options:
+    - text: Sin Tema, Común, vacía
+    - text: Sin Tema, Común, Peligro
+      related:
+        dungeon_dangers:
+          search:
+            - ns: perilous
+              type: dungeon_dangers
+    - text: Sin Tema, Común, Peligro y Descubrimiento
+      related:
+        dungeon_dangers:
+          search:
+            - ns: perilous
+              type: dungeon_dangers
+        dungeon_discoveries:
+          search:
+            - ns: perilous
+              type: dungeon_discoveries
+    - text: Sin Tema, Común, Peligro y Descubrimiento
+      related:
+        dungeon_dangers:
+          search:
+            - ns: perilous
+              type: dungeon_dangers
+        dungeon_discoveries:
+          search:
+            - ns: perilous
+              type: dungeon_discoveries
+    - text: Sin Tema, Común, Descubrimiento
+      related:
+        dungeon_discoveries:
+          search:
+            - ns: perilous
+              type: dungeon_discoveries
+    - text: Sin Tema, Común, Descubrimiento
+      related:
+        dungeon_discoveries:
+          search:
+            - ns: perilous
+              type: dungeon_discoveries
+    - text: Con Tema, Común, Peligro
+      related:
+        dungeon_dangers:
+          search:
+            - ns: perilous
+              type: dungeon_dangers
+    - text: Con Tema, Común, Peligro y Descubrimiento
+      related:
+        dungeon_dangers:
+          search:
+            - ns: perilous
+              type: dungeon_dangers
+        dungeon_discoveries:
+          search:
+            - ns: perilous
+              type: dungeon_discoveries
+    - text: Con Tema, Común, Descubrimiento
+      related:
+        dungeon_discoveries:
+          search:
+            - ns: perilous
+              type: dungeon_discoveries
+    - text: Con Tema, Única, Peligro
+      related:
+        dungeon_dangers:
+          search:
+            - ns: perilous
+              type: dungeon_dangers
+    - text: Con Tema, Única, Peligro y Descubrimiento
+      related:
+        dungeon_dangers:
+          search:
+            - ns: perilous
+              type: dungeon_dangers
+        dungeon_discoveries:
+          search:
+            - ns: perilous
+              type: dungeon_discoveries
+    - text: Con Tema, Única, Descubrimiento
+      related:
+        dungeon_discoveries:
+          search:
+            - ns: perilous
+              type: dungeon_discoveries

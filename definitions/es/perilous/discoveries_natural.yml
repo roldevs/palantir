@@ -1,0 +1,46 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Descubrimiento Natural
+    options:
+      - text: Guarida
+        options:
+          - text: Madriguera
+          - text: Caverna/túneles
+          - text: Nido/casa colgante
+          - text: Colmena
+          - text: Ruinas
+      - text: Obstáculo
+        options:
+          - text: Terreno obstaculizado (según tipo de rerreno)
+          - text: Precipicio/grieta/cañón
+          - text: Barranco/garganta
+          - text: Rareza
+      - text: Cambio en el terreno
+        options:
+          - text: Zona concreta con otro tipo de terreno
+          - text: Sima/agujero/foso/cueva
+          - text: Cambio de altitud
+          - text: Cañón/valle
+          - text: Subida/cima en la distancia
+      - text: Característica
+        options:
+          - text: Manatial/aguas termales
+          - text: Cascada/géiser
+          - text: Arroyo/riachuelo
+          - text: Estanque/lago
+          - text: Río
+          - text: Mar/océano
+      - text: Hito
+        options:
+          - text: Acuático (cascada, géiser, etc.)
+          - text: Vegetal (árbol anciano, flores gigantes, etc.)
+          - text: Terrestre (formación rocosa, cima, cráter...)
+          - text: Rareza
+      - text: Recurso
+        options:
+          - text: Caza/frutos/vegetales
+          - text: Hierbas/especias/tintes naturales
+          - text: Madera/roca
+          - text: Mineral (cobre, hierro, etc.)
+          - text: Metales preciosos, gemas

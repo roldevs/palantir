@@ -1,0 +1,11 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Cementerio/religioso
+  options:
+    - text: Lápida/túmulo
+    - text: Camposanto/necróplis
+    - text: Tumba/cripta
+    - text: Santuario
+    - text: Templo/lugar de retiro
+    - text: Gran templo

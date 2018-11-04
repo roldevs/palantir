@@ -1,0 +1,25 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Descubrimiento no natural
+    options:
+      - text: Arcana
+        options:
+          - text: Residuo
+          - text: Plaga
+          - text: Alteración/mutación
+          - text: Encantamiento
+          - text: Fuente/almacén
+      - text: Planar
+        options:
+          - text: Deformación/distorsión
+          - text: Portal/puerta
+          - text: Fisura/rasgadura
+          - text: Avanzada
+      - text: Divina
+        options:
+          - text: Marca/sello
+          - text: Lugar maldito
+          - text: Lugar encantado
+          - text: Lugar vigilado
+          - text: Presencia

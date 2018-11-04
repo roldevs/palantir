@@ -1,0 +1,27 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Evidencia
+    options:
+      - text: Huellas/Rastro
+        options:
+          - text: Poco claro/profundo
+          - text: Obvio y claro
+          - text: Múltiple
+          - text: Indicios de violencia
+          - text: Rastro de sangre (u otro tipo)
+      - text: Restos/Despojos
+        options:
+          - text: Huesos
+          - text: Cadáver (humano o no)
+          - text: Algo violento ocurrió ahí
+          - text: Chatarra/desperdicios
+          - text: Suministros o mercancía extraviada
+          - text: Herramientas/armas o armaduras
+      - text: Escondrijo/Alijo
+        options:
+          - text: Baratijas/monedas
+          - text: Herramientas/armas o armaduras
+          - text: Mapa
+          - text: Comida/suministro
+          - text: Tesoro #

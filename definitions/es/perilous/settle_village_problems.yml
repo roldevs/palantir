@@ -1,0 +1,12 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Problemas de la Aldea
+  options:
+    - text: 'Sobre terrenos áridos o no cultivables: Necesidad (comida)'
+    - text: 'Dedicada a una deidad: Religion (esa deidad), Enemistad (asentamiento de otra deidad)'
+    - text: 'Implicada en batalla reciente: -Población, -Prosperidad si lucharon sin tregua, -Defensas si perdieron'
+    - text: 'Problema con un monstruo: Plaga (ese monstruo), Necesidad (aventureros)'
+    - text: 'Ha absorbido otra aldea: +Población, Sin ley'
+    - text: 'Remota o poco hospitalaria: -Prosperidad, Enano, Élfico u otra no humana'
+

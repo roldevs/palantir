@@ -1,0 +1,10 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Morada
+  options:
+    - text: Campamento
+    - text: Choza/cabaña
+    - text: Granja
+    - text: Posada/albergue
+    - text: Torre/fortaleza/finca

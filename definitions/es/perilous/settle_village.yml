@@ -1,0 +1,14 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Aldea
+  related:
+    property:
+      search:
+        - ns: perilous
+          type: settle_village_properties
+    problem:
+      search:
+        - ns: perilous
+          type: settle_village_problems
+

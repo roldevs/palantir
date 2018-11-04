@@ -1,0 +1,36 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Estructura
+    options:
+      - text: Enigmática
+        options:
+          - text: Excavación
+          - text: Megalito
+          - text: Estatua/ídolo/tótem
+          - text: Rareza
+      - related:
+          infraestructure:
+            search:
+              - ns: perilous
+                type: discoveries_structure_infraestructure
+      - related:
+          burial:
+            search:
+              - ns: perilous
+                type: discoveries_structure_burial
+      - related:
+          dwelling:
+            search:
+              - ns: perilous
+                type: discoveries_structure_dwelling
+      - related:
+          settle:
+            search:
+              - ns: perilous
+                type: settle
+      - related:
+          ruins:
+            search:
+              - ns: perilous
+                type: discoveries_structure_ruins

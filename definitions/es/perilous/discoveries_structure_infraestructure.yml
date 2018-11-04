@@ -1,0 +1,10 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Infraestructura
+  options:
+    - text: Vía/sendero
+    - text: Carretera
+    - text: Puente/vado
+    - text: Mina/cantera
+    - text: Acueducto/canal/portal

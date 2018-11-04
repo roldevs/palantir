@@ -1,0 +1,12 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Característica de la Aldea
+  options:
+    - text: 'Defensas naturales: Segura, -Defensas'
+    - text: 'Recursos abundantes: +Prosperidad, Recurso (defínelo), Enemistad (defínela)'
+    - text: 'Protegida por otro asentamiento: Juramento (a ese asentamiento), +Defensas'
+    - text: 'En un camino importante: Comercio (defínelo), +Prosperidad'
+    - text: 'Cerca de la torre de un mago: Personalidad (mago), Plaga (criaturas mágicas)'
+    - text: 'En un sitio de importancia religiosa: Divino, Historia (defínela)'
+

@@ -1,0 +1,26 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Ruinas
+    options:
+      - related:
+          infraestructure:
+            search:
+              - ns: perilous
+                type: discoveries_structure_infraestructure
+      - related:
+          burial:
+            search:
+              - ns: perilous
+                type: discoveries_structure_burial
+      - related:
+          dwelling:
+            search:
+              - ns: perilous
+                type: discoveries_structure_dwelling
+      - text: Asentamiento #
+      - related:
+          dungeon:
+            search:
+              - ns: perilous
+                type: dungeon

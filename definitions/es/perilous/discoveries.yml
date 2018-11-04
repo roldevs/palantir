@@ -1,0 +1,29 @@
+meta:
+  system: Páramos Aventurados
+data:
+  options:
+    - text: Descubrimientos no naturales
+      related:
+        discoveries_no_natural:
+          search:
+            - ns: perilous
+              type: discoveries_no_natural
+    - text: Descubrimientos naturales
+      related:
+        discoveries_natural:
+          search:
+            - ns: perilous
+              type: discoveries_natural
+    - text: Evidencias
+      related:
+        discoveries_evidences:
+          search:
+            - ns: perilous
+              type: discoveries_evidence
+    - text: Criatura #
+    - text: Estructura
+      related:
+        discoveries_structure:
+          search:
+            - ns: perilous
+              type: discoveries_structure

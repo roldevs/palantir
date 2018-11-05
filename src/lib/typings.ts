@@ -35,6 +35,7 @@ interface IElementDefinition {
   options?: IElementDefinition[];
   related?: IRelatedElements;
   dice?: IDiceDefinition;
+  weight?: number; // Number of appearances of this option to randomly choose (defaults to 1)
 }
 
 type IOptionalElementDefinition = IElementDefinition | null | undefined;
@@ -145,6 +146,10 @@ type ISearchByTypeModule = (world: IWorldDefinition) => {
   find: (search: ISearchDefinition) => Bluebird<ISearchResult>;
 };
 
+type IDistributeModule = (options: IElementDefinition[]) => {
+  get: () => IElementDefinition[];
+};
+
 type IRandomModule = (world: IWorldDefinition) => {
   random: (search: ISearchDefinition[]) => Bluebird<IOptionalElement | IOptionalElementDefinition>;
 };
@@ -213,6 +218,7 @@ export {
   IElementFormatted,
   ICliOutModule,
   ICounterModule,
+  IDistributeModule,
   ERandomOption, //
   IElementDefinition,
   IDiceDefinition,

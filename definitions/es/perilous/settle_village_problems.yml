@@ -4,9 +4,15 @@ data:
   text: Problemas de la Aldea
   options:
     - text: 'Sobre terrenos áridos o no cultivables: Necesidad (comida)'
+      weight: 2
     - text: 'Dedicada a una deidad: Religion (esa deidad), Enemistad (asentamiento de otra deidad)'
+      weight: 2
     - text: 'Implicada en batalla reciente: -Población, -Prosperidad si lucharon sin tregua, -Defensas si perdieron'
+      weight: 2
     - text: 'Problema con un monstruo: Plaga (ese monstruo), Necesidad (aventureros)'
+      weight: 2
     - text: 'Ha absorbido otra aldea: +Población, Sin ley'
+      weight: 2
     - text: 'Remota o poco hospitalaria: -Prosperidad, Enano, Élfico u otra no humana'
+      weight: 2
 

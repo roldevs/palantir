@@ -6,11 +6,12 @@ data:
     - text: Desastre arcano
     - text: Perdición/maldición
     - text: Terremoto/incendio/inundación
-    - text: Terremoto/incendio/inundación
+      weight: 2
     - text: Plaga/hambruna/sequia
-    - text: Plaga/hambruna/sequia
-    - text: Manifestación de monstruos
+      weight: 2
+    - text: Infestación de monstruos
+      weight: 2
     - text: Guerra/invasión
-    - text: Guerra/invasión
+      weight: 2
     - text: Recursos agotados
     - text: Mejores opciones en otro lugar

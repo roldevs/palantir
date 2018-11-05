@@ -9,12 +9,14 @@ data:
           - text: Megalito
           - text: Estatua/ídolo/tótem
           - text: Rareza
-      - related:
+      - weight: 2
+        related:
           infraestructure:
             search:
               - ns: perilous
                 type: discoveries_structure_infraestructure
-      - related:
+      - weight: 2
+        related:
           burial:
             search:
               - ns: perilous
@@ -24,12 +26,14 @@ data:
             search:
               - ns: perilous
                 type: discoveries_structure_dwelling
-      - related:
+      - weight: 2
+        related:
           settle:
             search:
               - ns: perilous
                 type: settle
-      - related:
+      - weight: 4
+        related:
           ruins:
             search:
               - ns: perilous

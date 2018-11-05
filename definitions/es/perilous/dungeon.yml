@@ -3,6 +3,7 @@ meta:
 data:
   options:
     - text: Mazmorra Pequeña
+      weight: 3
       related:
         constructor:
           text: Constructor
@@ -28,6 +29,7 @@ data:
           text: Areas
           dice: d6+2
     - text: Mazmorra Mediana
+      weight: 6
       related:
         constructor:
           text: Constructor
@@ -53,6 +55,7 @@ data:
           text: Areas
           dice: 2d6+4
     - text: Mazmorra Grande
+      weight: 2
       related:
         constructor:
           text: Constructor

@@ -4,7 +4,12 @@ data:
   text: Morada
   options:
     - text: Campamento
+      weight: 3
     - text: Choza/cabaña
+      weight: 3
     - text: Granja
+      weight: 2
     - text: Posada/albergue
+      weight: 2
     - text: Torre/fortaleza/finca
+      weight: 2

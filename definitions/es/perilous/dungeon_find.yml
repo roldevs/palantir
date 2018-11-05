@@ -10,6 +10,7 @@ data:
             - ns: perilous
               type: dungeon_dangers
     - text: Sin Tema, Común, Peligro y Descubrimiento
+      weight: 2
       related:
         dungeon_dangers:
           search:
@@ -20,6 +21,7 @@ data:
             - ns: perilous
               type: dungeon_discoveries
     - text: Sin Tema, Común, Peligro y Descubrimiento
+      weight: 2
       related:
         dungeon_dangers:
           search:

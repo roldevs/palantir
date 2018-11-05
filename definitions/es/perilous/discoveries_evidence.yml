@@ -4,24 +4,40 @@ data:
   - text: Evidencia
     options:
       - text: Huellas/Rastro
+        weight: 6
         options:
           - text: Poco claro/profundo
+            weight: 3
           - text: Obvio y claro
+            weight: 3
           - text: Múltiple
+            weight: 2
           - text: Indicios de violencia
+            weight: 2
           - text: Rastro de sangre (u otro tipo)
+            weight: 2
       - text: Restos/Despojos
+        weight: 4
         options:
           - text: Huesos
+            weight: 4
           - text: Cadáver (humano o no)
+            weight: 3
           - text: Algo violento ocurrió ahí
+            weight: 2
           - text: Chatarra/desperdicios
           - text: Suministros o mercancía extraviada
           - text: Herramientas/armas o armaduras
       - text: Escondrijo/Alijo
+        weight: 2
         options:
           - text: Baratijas/monedas
+            weight: 3
           - text: Herramientas/armas o armaduras
+            weight: 2
           - text: Mapa
+            weight: 2
           - text: Comida/suministro
+            weight: 2
           - text: Tesoro #
+            weight: 3

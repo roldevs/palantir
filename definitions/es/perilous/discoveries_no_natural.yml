@@ -4,22 +4,37 @@ data:
   - text: Descubrimiento no natural
     options:
       - text: Arcana
+        weight: 9
         options:
           - text: Residuo
+            weight: 2
           - text: Plaga
+            weight: 3
           - text: Alteración/mutación
+            weight: 2
           - text: Encantamiento
+            weight: 3
           - text: Fuente/almacén
+            weight: 2
       - text: Planar
+        weight: 2
         options:
           - text: Deformación/distorsión
+            weight: 4
           - text: Portal/puerta
+            weight: 4
           - text: Fisura/rasgadura
+            weight: 2
           - text: Avanzada
+            weight: 2
       - text: Divina
         options:
           - text: Marca/sello
+            weight: 3
           - text: Lugar maldito
+            weight: 3
           - text: Lugar encantado
+            weight: 3
           - text: Lugar vigilado
+            weight: 2
           - text: Presencia

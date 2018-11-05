@@ -3,27 +3,32 @@ meta:
 data:
   - text: Ruinas
     options:
-      - related:
+      - weight: 2
+        related:
           infraestructure:
             search:
               - ns: perilous
                 type: discoveries_structure_infraestructure
-      - related:
+      - weight: 2
+        related:
           burial:
             search:
               - ns: perilous
                 type: discoveries_structure_burial
-      - related:
+      - weight: 2
+        related:
           dwelling:
             search:
               - ns: perilous
                 type: discoveries_structure_dwelling
-      - related:
+      - weight: 2
+        related:
           settle:
             search:
               - ns: perilous
                 type: settle
-      - related:
+      - weight: 4
+        related:
           dungeon:
             search:
               - ns: perilous

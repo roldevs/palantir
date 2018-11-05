@@ -6,12 +6,12 @@ data:
     - text: Fuente/portal
     - text: Mina
     - text: Tumba/cripta
-    - text: Tumba/cripta
+      weight: 2
     - text: Prisión
     - text: Cubil/madriguera/guarida
-    - text: Cubil/madriguera/guarida
+      weight: 2
     - text: Fortaleza/santuario
-    - text: Fortaleza/santuario
+      weight: 2
     - text: Capilla/templo/oráculo
     - text: Archivo/biblioteca
     - text: Desconosida/misteriosa

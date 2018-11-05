@@ -4,9 +4,13 @@ data:
   text: Característica de la Aldea
   options:
     - text: 'Defensas naturales: Segura, -Defensas'
+      weight: 3
     - text: 'Recursos abundantes: +Prosperidad, Recurso (defínelo), Enemistad (defínela)'
+      weight: 3
     - text: 'Protegida por otro asentamiento: Juramento (a ese asentamiento), +Defensas'
+      weight: 2
     - text: 'En un camino importante: Comercio (defínelo), +Prosperidad'
+      weight: 2
     - text: 'Cerca de la torre de un mago: Personalidad (mago), Plaga (criaturas mágicas)'
     - text: 'En un sitio de importancia religiosa: Divino, Historia (defínela)'
 

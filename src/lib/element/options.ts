@@ -1,5 +1,6 @@
 import Bluebird from 'bluebird';
 import * as R from 'ramda';
+import distributeModule from '../distribute';
 import elementModule from '../element';
 import {
   IOptionalElementDefinition,
@@ -20,7 +21,7 @@ const optionsModule: IOptionsModule =
 
   const get: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition> =
     (element) => Bluebird.resolve(randomFromArray(
-      element!.options!,
+      distributeModule(element!.options!).get(),
     )).then((option: IOptionalElementDefinition) => {
       return getElement(R.set(R.lensProp('parent'), element, option));
     });

@@ -9,12 +9,14 @@ data:
             - ns: perilous
               type: discoveries_no_natural
     - text: Descubrimientos naturales
+      weight: 3
       related:
         discoveries_natural:
           search:
             - ns: perilous
               type: discoveries_natural
     - text: Evidencias
+      weight: 2
       related:
         discoveries_evidences:
           search:
@@ -22,6 +24,7 @@ data:
               type: discoveries_evidence
     - text: Criatura #
     - text: Estructura
+      weight: 4
       related:
         discoveries_structure:
           search:

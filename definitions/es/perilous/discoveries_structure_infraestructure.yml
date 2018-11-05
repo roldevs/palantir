@@ -4,7 +4,10 @@ data:
   text: Infraestructura
   options:
     - text: Vía/sendero
+      weight: 4
     - text: Carretera
+      weight: 4
     - text: Puente/vado
+      weight: 2
     - text: Mina/cantera
     - text: Acueducto/canal/portal

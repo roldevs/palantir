@@ -4,43 +4,73 @@ data:
   - text: Descubrimiento Natural
     options:
       - text: Guarida
+        weight: 2
         options:
           - text: Madriguera
+            weight: 3
           - text: Caverna/túneles
+            weight: 4
           - text: Nido/casa colgante
+            weight: 2
           - text: Colmena
           - text: Ruinas
+            weight: 2
       - text: Obstáculo
+        weight: 2
         options:
           - text: Terreno obstaculizado (según tipo de rerreno)
+            weight: 5
           - text: Precipicio/grieta/cañón
+            weight: 2
           - text: Barranco/garganta
+            weight: 2
           - text: Rareza
+            weight: 2
       - text: Cambio en el terreno
+        weight: 3
         options:
           - text: Zona concreta con otro tipo de terreno
+            weight: 4
           - text: Sima/agujero/foso/cueva
+            weight: 2
           - text: Cambio de altitud
+            weight: 2
           - text: Cañón/valle
+            weight: 2
           - text: Subida/cima en la distancia
+            weight: 2
       - text: Característica
+        weight: 2
         options:
           - text: Manatial/aguas termales
           - text: Cascada/géiser
           - text: Arroyo/riachuelo
+            weight: 3
           - text: Estanque/lago
+            weight: 2
           - text: Río
+            weight: 2
           - text: Mar/océano
+            weight: 2
       - text: Hito
+        weight: 2
         options:
           - text: Acuático (cascada, géiser, etc.)
+            weight: 3
           - text: Vegetal (árbol anciano, flores gigantes, etc.)
+            weight: 3
           - text: Terrestre (formación rocosa, cima, cráter...)
+            weight: 4
           - text: Rareza
+            weight: 2
       - text: Recurso
         options:
           - text: Caza/frutos/vegetales
+            weight: 4
           - text: Hierbas/especias/tintes naturales
+            weight: 2
           - text: Madera/roca
+            weight: 3
           - text: Mineral (cobre, hierro, etc.)
+            weight: 2
           - text: Metales preciosos, gemas

@@ -6,12 +6,12 @@ data:
     - text: Raza olvidado
     - text: Semidiós/demonio
     - text: Natural (cuevas)
-    - text: Natural (cuevas)
+      weight: 2
     - text: Orden religiosa/secta
     - text: Humanoide #
-    - text: Humanoide #
+      weight: 2
     - text: Enanos/gnomos
-    - text: Enanos/gnomos
+      weight: 2
     - text: Elfos
     - text: Mago/demente
     - text: Monarca/caudillo

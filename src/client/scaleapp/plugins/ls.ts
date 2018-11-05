@@ -16,16 +16,9 @@ const ls = (core: any) => {
 };
 
 const lsPlugins = (core: any) => {
-  let ref: any;
-  let ref1: any;
-  const results: any = [];
-  for (ref of core._plugins) {
-    ref1 = ref.plugin;
-    if ((ref1 != null ? ref1.id : void 0) != null) {
-      results.push(ref.plugin.id);
-    }
-  }
-  return results;
+  return R.reject((ref: any) => {
+    return R.isNil(ref.plugin != null ? ref.plugin.id : void 0);
+  }, core._plugins);
 };
 
 const pluginFn: scaleApp.IPluginInitFn = (core: any) => {

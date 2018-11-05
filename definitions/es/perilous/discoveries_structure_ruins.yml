@@ -18,7 +18,11 @@ data:
             search:
               - ns: perilous
                 type: discoveries_structure_dwelling
-      - text: Asentamiento #
+      - related:
+          settle:
+            search:
+              - ns: perilous
+                type: settle
       - related:
           dungeon:
             search:

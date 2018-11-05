@@ -14,6 +14,10 @@ data:
           search:
             - ns: perilous
               type: dungeon_function
+        ruination:
+          search:
+            - ns: perilous
+              type: dungeon_ruination
         themes:
           text: Temas
           search:
@@ -35,6 +39,10 @@ data:
           search:
             - ns: perilous
               type: dungeon_function
+        ruination:
+          search:
+            - ns: perilous
+              type: dungeon_ruination
         themes:
           text: Temas
           search:
@@ -56,6 +64,10 @@ data:
           search:
             - ns: perilous
               type: dungeon_function
+        ruination:
+          search:
+            - ns: perilous
+              type: dungeon_ruination
         themes:
           text: Temas
           search:
@@ -77,6 +89,10 @@ data:
           search:
             - ns: perilous
               type: dungeon_function
+        ruination:
+          search:
+            - ns: perilous
+              type: dungeon_ruination
         themes:
           text: Temas
           search:

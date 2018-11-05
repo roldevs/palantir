@@ -45,21 +45,16 @@ const fieldView: (config: {
   ]);
 };
 
-interface IDropdownViewConfig {
+interface IDropdownViewOptions {
+  id: string;
+  placeholder: string;
   value: string | null;
   options: IDropdownItem[];
-  controller: ISelectorController;
+  callback: (option: IDropdownItem) => void;
   disabled: boolean;
 }
 
-const dropdownView: (config: {
-  id: string,
-  placeholder: string,
-  value: string | null,
-  options: IDropdownItem[],
-  callback: (option: IDropdownItem) => void,
-  disabled: boolean,
-}) => VNode =
+const dropdownView: (config: IDropdownViewOptions) => VNode =
 (config) => {
   return dropdown({
     id: config.id,
@@ -72,41 +67,59 @@ const dropdownView: (config: {
   }).render();
 };
 
+interface IDropdownViewConfig {
+  value: string | null;
+  options: IDropdownItem[];
+  controller: ISelectorController;
+  disabled: boolean;
+}
+
+const getOptions: (
+  config: IDropdownViewConfig,
+  id: string,
+  placeholder: string,
+  callback: (option: IDropdownItem) => void,
+) => IDropdownViewOptions =
+(config, id, placeholder, callback) => {
+  return {
+    id,
+    placeholder,
+    value: config.value,
+    options: config.options,
+    callback,
+    disabled: config.disabled,
+  };
+};
+
 const dropdownLocale: (config: IDropdownViewConfig) => VNode =
-(config) => dropdownView({
-  id: 'dropdown_locale',
-  placeholder: 'Idioma',
-  value: config.value,
-  options: config.options,
-  callback: (option: IDropdownItem) => {
-    config.controller.setLocale(option.value);
-  },
-  disabled: config.disabled,
-});
+(config) => dropdownView(
+  getOptions(
+    config,
+    'dropdown_locale',
+    'Idioma',
+    (option: IDropdownItem) => config.controller.setLocale(option.value),
+  ),
+);
 
 const dropdownNs: (config: IDropdownViewConfig) => VNode =
-(config) => dropdownView({
-  id: 'dropdown_ns',
-  placeholder: 'Sistema',
-  value: config.value,
-  options: config.options,
-  callback: (option: IDropdownItem) => {
-    config.controller.setNs(option.value);
-  },
-  disabled: config.disabled,
-});
+(config) => dropdownView(
+  getOptions(
+    config,
+    'dropdown_ns',
+    'Sistema',
+    (option: IDropdownItem) => config.controller.setNs(option.value),
+  ),
+);
 
 const dropdownType: (config: IDropdownViewConfig) => VNode =
-(config) => dropdownView({
-  id: 'dropdown_type',
-  placeholder: 'Tabla',
-  value: config.value,
-  options: config.options,
-  callback: (option: IDropdownItem) => {
-    config.controller.setType(option.value);
-  },
-  disabled: config.disabled,
-});
+(config) => dropdownView(
+  getOptions(
+    config,
+    'dropdown_type',
+    'Tabla',
+    (option: IDropdownItem) => config.controller.setType(option.value),
+  ),
+);
 
 const refreshButton: (model: ISelectorModel, controller: ISelectorController) => VNode =
 (_, controller) => {

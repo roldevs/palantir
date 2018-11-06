@@ -63,6 +63,18 @@ type IOptionalElement = IElement | null | undefined;
 
 type ISearchResult = Array<IElement | IElementDefinition>;
 
+interface IMeta {
+  system: string;
+  id?: string;
+  locator?: ITableLocator;
+}
+
+interface IMetaDefinition {
+  ids: {
+    [id: string]: ITableLocator;
+  };
+}
+
 interface ITableLocator {
   locale: string;
   ns: string;
@@ -82,7 +94,10 @@ interface ITestConnectorOptions {
   elements: {
     [locale: string]: {
       [ns: string]: {
-        [type: string]: IElementDefinition;
+        [type: string]: {
+          data: IElementDefinition;
+          meta?: IMeta;
+        };
       };
     };
   };
@@ -95,8 +110,14 @@ interface IRepositoryOptions {
   };
 }
 
+interface IMetaModuleOptions {
+  rootPath: string;
+  metaFilePath: string;
+}
+
 interface IConnectorFactory {
   get: (locator: ITableLocator) => Bluebird<IOptionalElementDefinition>;
+  meta: (locator: ITableLocator) => Bluebird<IMeta>;
 }
 
 interface IRepositoryFactory {
@@ -175,6 +196,16 @@ type ICounterModule = (countDef: string | number | null | undefined) => {
   get: () => number;
 };
 
+type IMetaModule = (options: IMetaModuleOptions) => {
+  generate: () => Bluebird<IMetaDefinition>;
+  write: () => Bluebird<IMetaDefinition>;
+  read: () => Bluebird<IMetaDefinition>;
+};
+
+type IMetaIdModule = (metaDefinition: IMetaDefinition) => {
+  get: (id: string) => ITableLocator;
+};
+
 /////////////////////////////////////////////////////////
 
 interface IAliasDefinition {
@@ -202,6 +233,9 @@ export {
   IRemoteConnectorOptions,
   ITestConnectorOptions,
   IRepositoryOptions,
+  IMetaModuleOptions,
+  IMeta,
+  IMetaDefinition,
   IElementModule,
   IRelatedSearchModule,
   IRelatedDiceModule,
@@ -219,6 +253,8 @@ export {
   ICliOutModule,
   ICounterModule,
   IDistributeModule,
+  IMetaModule,
+  IMetaIdModule,
   ERandomOption, //
   IElementDefinition,
   IDiceDefinition,

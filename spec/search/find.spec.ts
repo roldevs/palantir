@@ -22,18 +22,26 @@ describe('Search#find', () => {
       es: {
         ns1: {
           item1: {
-            text: 'ns1.item1',
+            data: {
+              text: 'ns1.item1',
+            },
           },
           item2: {
-            text: 'ns1.item2',
+            data: {
+              text: 'ns1.item2',
+            },
           },
         },
         ns2: {
           item1: {
-            text: 'ns2.item1',
+            data: {
+              text: 'ns2.item1',
+            },
           },
           item2: {
-            text: 'ns2.item2',
+            data: {
+              text: 'ns2.item2',
+            },
           },
         },
       },

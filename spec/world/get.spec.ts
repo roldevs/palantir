@@ -16,26 +16,30 @@ describe('World#get', () => {
         es: {
           maze_rats: {
             npc_asset: {
-              text: 'Npc Asset',
-              options: [{
-                text: 'Npc Asset 1',
-                related: {
-                  faction: {
-                    text: 'Lider ${faction}',
-                    search: [{
-                      ns: 'maze_rats',
-                      type: 'faction',
-                      random: ERandomOption.all,
-                    }],
+              data: {
+                text: 'Npc Asset',
+                options: [{
+                  text: 'Npc Asset 1',
+                  related: {
+                    faction: {
+                      text: 'Lider ${faction}',
+                      search: [{
+                        ns: 'maze_rats',
+                        type: 'faction',
+                        random: ERandomOption.all,
+                      }],
+                    },
                   },
-                },
-              }],
+                }],
+              },
             },
             faction: {
-              text: 'Faction',
-              options: [{
-                text: 'Movimiento artístico',
-              }],
+              data: {
+                text: 'Faction',
+                options: [{
+                  text: 'Movimiento artístico',
+                }],
+              },
             },
           },
         },
@@ -98,57 +102,65 @@ describe('World#get', () => {
         es: {
           maze_rats: {
             animal: {
-              text: 'Animal',
-              options: [{
+              data: {
                 text: 'Animal',
-                related: {
-                  animal_aerial: {
-                    search: [{
-                      ns: 'maze_rats',
-                      type: 'animal_aerial',
-                    }],
-                  },
-                },
-              }, {
-                text: 'Animal',
-                related: {
-                  animal_aquatic: {
-                    search: [{
-                      ns: 'maze_rats',
-                      type: 'animal_aquatic',
-                    }],
-                  },
-                },
-              }, {
-                text: 'Animal',
+                options: [{
+                  text: 'Animal',
                   related: {
-                    animal_terrestrial: {
+                    animal_aerial: {
                       search: [{
                         ns: 'maze_rats',
-                        type: 'animal_terrestrial',
+                        type: 'animal_aerial',
                       }],
                     },
                   },
-                },
-              ],
+                }, {
+                  text: 'Animal',
+                  related: {
+                    animal_aquatic: {
+                      search: [{
+                        ns: 'maze_rats',
+                        type: 'animal_aquatic',
+                      }],
+                    },
+                  },
+                }, {
+                  text: 'Animal',
+                    related: {
+                      animal_terrestrial: {
+                        search: [{
+                          ns: 'maze_rats',
+                          type: 'animal_terrestrial',
+                        }],
+                      },
+                    },
+                  },
+                ],
+              },
             },
             animal_aerial: {
-              text: 'Animal aéreo',
-              options: [{
-                text: 'Albatros',
-              }],
+              data: {
+                text: 'Animal aéreo',
+                options: [{
+                  text: 'Albatros',
+                }],
+              },
             },
             animal_aquatic: {
-              text: 'Animal acuático',
-              options: [{
-                text: 'Cacodrilo',
-              }],
+              data: {
+                text: 'Animal acuático',
+                options: [{
+                  text: 'Cacodrilo',
+                }],
+              },
             },
             animal_terrestrial: {
-              text: 'Animal terrestre',
-              options: [{
-                text: 'Hormiga',
-              }],
+              data: {
+                text: 'Animal terrestre',
+                options: [{
+                  text: 'Hormiga',
+                }],
+              },
             },
           },
         },
@@ -190,10 +202,12 @@ describe('World#get', () => {
         es: {
           maze_rats: {
             mutation: {
-              text: 'Mutación',
-              options: [{
-                text: 'Envejece',
-              }],
+              data: {
+                text: 'Mutación',
+                options: [{
+                  text: 'Envejece',
+                }],
+              },
             },
           },
         },
@@ -232,28 +246,32 @@ describe('World#get', () => {
         es: {
           maze_rats: {
             npc_asset: {
-              text: 'Npc Asset',
-              options: [{
-                text: 'Npc Asset 1',
-                related: {
-                  faction: {
-                    text: 'Lider ${faction}',
-                    search: [{
-                      ns: 'maze_rats',
-                      type: 'faction',
-                      random: ERandomOption.all,
-                    }],
+              data: {
+                text: 'Npc Asset',
+                options: [{
+                  text: 'Npc Asset 1',
+                  related: {
+                    faction: {
+                      text: 'Lider ${faction}',
+                      search: [{
+                        ns: 'maze_rats',
+                        type: 'faction',
+                        random: ERandomOption.all,
+                      }],
+                    },
                   },
-                },
-              }, {
-                text: 'Npc Asset 2',
-              }],
+                }, {
+                  text: 'Npc Asset 2',
+                }],
+              },
             },
             faction: {
-              text: 'Faction',
-              options: [{
-                text: 'Movimiento artístico',
-              }],
+              data: {
+                text: 'Faction',
+                options: [{
+                  text: 'Movimiento artístico',
+                }],
+              },
             },
           },
         },

@@ -9,14 +9,14 @@
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json",
     "prebuild": "npm run lint",
     "build": "node_modules/.bin/tsc",
-    "postinstall": "npm run client:build && npm run build",
     "server": "node dist/server.js",
-    "start": "npm run client:build && npm run build && npm run server",
+    "start": "npm run meta:generate && npm run client:build && npm run build && npm run server",
     "watch": "node_modules/.bin/nodemon",
     "heroku:log": " heroku logs -a hall --tail",
     "heroku:push": "git push https://heroku:abee4578-ec40-4e9a-9597-17381eccab25@git.heroku.com/hall.git master",
     "client:build": "npm run lint && node_modules/.bin/webpack-cli --config src/client/webpack.config.js",
-    "client:watch": "node_modules/.bin/webpack-cli --config src/client/webpack.config.js --watch"
+    "client:watch": "node_modules/.bin/webpack-cli --config src/client/webpack.config.js --watch",
+    "meta:generate": "node_modules/.bin/ts-node meta.ts"
   },
   "keywords": [
     "rpg",

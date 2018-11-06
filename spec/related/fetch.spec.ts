@@ -21,32 +21,40 @@ describe('Related#fetch', () => {
           es: {
             ns1: {
               item1: {
-                text: 'ns1.item1',
-                options: [{
-                  text: 'ns1.item11',
-                }],
+                data: {
+                  text: 'ns1.item1',
+                  options: [{
+                    text: 'ns1.item11',
+                  }],
+                },
               },
               item2: {
-                text: 'ns1.item2',
-                options: [{
-                  text: 'ns1.item22',
-                }],
+                data: {
+                  text: 'ns1.item2',
+                  options: [{
+                    text: 'ns1.item22',
+                  }],
+                },
               },
             },
             ns2: {
               item1: {
-                text: 'ns2.item1',
-                options: [{
-                  text: 'ns1.item11',
-                }, {
-                  text: 'ns1.item11',
-                }],
+                data: {
+                  text: 'ns2.item1',
+                  options: [{
+                    text: 'ns1.item11',
+                  }, {
+                    text: 'ns1.item11',
+                  }],
+                },
               },
               item2: {
-                text: 'ns2.item2',
-                options: [{
-                  text: 'ns1.item12',
-                }],
+                data: {
+                  text: 'ns2.item2',
+                  options: [{
+                    text: 'ns1.item12',
+                  }],
+                },
               },
             },
           },
@@ -77,8 +85,6 @@ describe('Related#fetch', () => {
 
         related.fetch(element).then((data: IOptionalElementDefinition) => {
           expect(data).to.not.be.null;
-          // tslint:disable-next-line:no-console
-          console.log(data!.related!.key.results);
           expect(data!.text).to.eql('Test');
           expect(data!.related!.key.search).to.eql([{
             ns: 'ns2',
@@ -118,8 +124,6 @@ describe('Related#fetch', () => {
 
         related.fetch(element).then((data: IOptionalElementDefinition) => {
           expect(data).to.not.be.null;
-          // tslint:disable-next-line:no-console
-          console.log(data!.related!.key.results);
           expect(data!.text).to.eql('Test');
           expect(data!.related!.key.results![0].text).to.be.oneOf(['3', '4', '5', '6', '7', '8']);
           done();

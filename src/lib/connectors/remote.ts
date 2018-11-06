@@ -1,12 +1,25 @@
-import axios from 'axios';
+import axios, { AxiosInstance } from 'axios';
 import Bluebird from 'bluebird';
 import * as R from 'ramda';
 import {
   IConnectorFactory,
+  IMeta,
   IOptionalElementDefinition,
   IRemoteConnectorOptions,
   ITableLocator,
 } from '../typings';
+import {
+  fetchData,
+  fetchMeta,
+  locatorUrl,
+} from './utili';
+
+const getResult: (instance: AxiosInstance, locator: ITableLocator) => Bluebird<IOptionalElementDefinition> =
+(instance, locator) => {
+  return new Bluebird((resolve: any, reject: any) => {
+    instance.get(locatorUrl(locator)).then(resolve).catch(reject);
+  });
+};
 
 const remoteConnector: (options: IRemoteConnectorOptions) => IConnectorFactory =
 (options) => {
@@ -23,20 +36,15 @@ const remoteConnector: (options: IRemoteConnectorOptions) => IConnectorFactory =
     });
   }
 
-  const url: (locator: ITableLocator) => string =
-  (locator) => `/${locator.locale}/${locator.ns}/${locator.type}.json`;
-
   const get: (locator: ITableLocator) => Bluebird<IOptionalElementDefinition> =
-  (locator) => {
-    return new Bluebird((resolve: any, reject: any) => {
-      instance.get(url(locator)).then(
-        R.compose(resolve, R.prop('data')),
-      ).catch(reject);
-    });
-  };
+  (locator) => getResult(instance, locator).then(fetchData);
+
+  const meta: (locator: ITableLocator) => Bluebird<IMeta> =
+  (locator) => getResult(instance, locator).then(fetchMeta);
 
   return {
     get,
+    meta,
   };
 };
 

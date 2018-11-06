@@ -24,64 +24,74 @@ describe('Element#get', () => {
       es: {
         ns1: {
           person: {
-            text: 'ns1.person',
-            related: {
-              face: {
-                search: [{
-                  ns: 'ns1',
-                  type: 'face',
-                }],
-              },
-              body: {
-                search: [{
-                  ns: 'ns1',
-                  type: 'body',
-                }],
+            data: {
+              text: 'ns1.person',
+              related: {
+                face: {
+                  search: [{
+                    ns: 'ns1',
+                    type: 'face',
+                  }],
+                },
+                body: {
+                  search: [{
+                    ns: 'ns1',
+                    type: 'body',
+                  }],
+                },
               },
             },
           },
           face: {
-            text: 'face',
-            options: [{
-              text: 'red',
-            }, {
-              text: 'yellow',
-            }, {
-              text: 'black',
-            }],
+            data: {
+              text: 'face',
+              options: [{
+                text: 'red',
+              }, {
+                text: 'yellow',
+              }, {
+                text: 'black',
+              }],
+            },
           },
           body: {
-            text: 'body',
-            related: {
-              arms: {
-                search: [{
-                  ns: 'ns1',
-                  type: 'arms',
-                }],
-              },
-              legs: {
-                search: [{
-                  ns: 'ns1',
-                  type: 'legs',
-                }],
+            data: {
+              text: 'body',
+              related: {
+                arms: {
+                  search: [{
+                    ns: 'ns1',
+                    type: 'arms',
+                  }],
+                },
+                legs: {
+                  search: [{
+                    ns: 'ns1',
+                    type: 'legs',
+                  }],
+                },
               },
             },
           },
           arms: {
-            text: 'arms',
-            options: [{
-              text: 'arm_left',
-            }, {
-              text: 'arm_right',
-            }],
+            data: {
+              text: 'arms',
+              options: [{
+                text: 'arm_left',
+              }, {
+                text: 'arm_right',
+              }],
+            },
           },
           legs: {
-            text: 'legs',
-            options: [{
-              text: 'leg_left',
-            }, {
-              text: 'leg_right',
-            }],
+            data: {
+              text: 'legs',
+              options: [{
+                text: 'leg_left',
+              }, {
+                text: 'leg_right',
+              }],
+            },
           },
         },
       },

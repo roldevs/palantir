@@ -8,7 +8,6 @@ import {
   IMeta,
   IMetaDefinition,
   IMetaModule,
-  IMetaModuleOptions,
 } from './typings';
 import {
   removeExtension,

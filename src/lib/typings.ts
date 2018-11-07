@@ -125,14 +125,20 @@ interface IRepositoryFactory {
   search: (search: ISearchDefinition) => Bluebird<IElement[]>;
 }
 
+interface IMetaFactory {
+  getById: (id: string) => Bluebird<ITableLocator>;
+}
+
 interface IWorldDefinition {
   locale: string;
+  meta: IMetaFactory;
   connector: IConnectorFactory;
   repository: IRepositoryFactory;
 }
 
 type IWorldModule = (world: IWorldDefinition) => {
   get: (search: IRelatedElement) => Bluebird<IElementFormatted[]>;
+  getById: (id: string) => Bluebird<IElementFormatted[]>;
 };
 
 type IElementModule = (world: IWorldDefinition) => {
@@ -202,10 +208,6 @@ type IMetaModule = (options: IMetaModuleOptions) => {
   read: () => Bluebird<IMetaDefinition>;
 };
 
-type IMetaIdModule = (metaDefinition: IMetaDefinition) => {
-  get: (id: string) => ITableLocator;
-};
-
 /////////////////////////////////////////////////////////
 
 interface IAliasDefinition {
@@ -254,7 +256,7 @@ export {
   ICounterModule,
   IDistributeModule,
   IMetaModule,
-  IMetaIdModule,
+  IMetaFactory,
   ERandomOption, //
   IElementDefinition,
   IDiceDefinition,

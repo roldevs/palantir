@@ -9,36 +9,40 @@ import {
   IOptionalElement,
   IOptionalElementDefinition,
   IRelatedElement,
+  IWorldDefinition,
   IWorldModule,
 } from './typings';
 import { compactArray } from './utils';
+import metaModule from './meta';
+
+const compact: (elements: Array<IElementFormatted | null>) => IElementFormatted[] = compactArray;
+
+const getOne: (world: IWorldDefinition, search: IRelatedElement) => () => Bluebird<IElementFormatted | null> =
+(world, search) => () => randomCreator(world).random(search.search!).then(
+  (option: IOptionalElement | IOptionalElementDefinition ) => {
+    return elementCreator(world).get(option).then(
+      (element: IOptionalElementDefinition) => elementFormatter().format(element!, option),
+    );
+  },
+);
 
 const worldModule: IWorldModule =
 (world) => {
-  const elementObject = elementCreator(world);
-
-  const getOne: (search: IRelatedElement) => () => Bluebird<IElementFormatted | null> =
-  (search) => () => {
-    return randomCreator(world).random(search.search!).then(
-      (option: IOptionalElement | IOptionalElementDefinition ) => {
-        return elementObject.get(option).then(
-          (element: IOptionalElementDefinition) => elementFormatter().format(element!, option),
-        );
-      },
-    );
-  };
-
-  const compact: (elements: Array<IElementFormatted | null>) => IElementFormatted[] = compactArray;
-
   const get: (search: IRelatedElement) => Bluebird<IElementFormatted[]> =
   (search) => {
     return Bluebird.all(
-      R.times(getOne(search), counterModule(search.count).get()),
+      R.times(getOne(world, search), counterModule(search.count).get()),
     ).then(compact);
+  };
+
+  const getById: (id: string) => Bluebird<IElementFormatted[]> =
+  (id) => {
+    world.meta.getById()
   };
 
   return {
     get,
+    getById,
   };
 };
 

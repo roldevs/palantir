@@ -31,14 +31,10 @@ const unlinkFile: (path: string) => Bluebird<string> =
 (path) => {
   return new Bluebird((resolve: any, reject: any) => {
     fs.unlink(path, (err) => {
-      if (err) {
-        if (err.code === 'ENOENT') {
-          resolve(path);
-          return;
-        }
-        reject(err);
-      } else {
+      if (!err || err.code === 'ENOENT') {
         resolve(path);
+      } else {
+        reject(err);
       }
     });
   });

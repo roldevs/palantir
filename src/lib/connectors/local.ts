@@ -17,9 +17,7 @@ import {
 } from './utili';
 
 const getResult: (rootPath: string, locator: ISearchDefinition) => Bluebird<IOptionalElementDefinition> =
-(rootPath, locator) => readFile(filePath(rootPath, locator)).then(YAML.parse).catch((error: any) => {
-  dg(error.toString(), locator);
-});
+(rootPath, locator) => readFile(filePath(rootPath, locator)).then(YAML.parse);
 
 const localConnector: (options: ILocalConnectorOptions) => IConnectorFactory =
 (options) => {

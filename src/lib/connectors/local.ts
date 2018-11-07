@@ -7,23 +7,26 @@ import {
   ILocalConnectorOptions,
   IMeta,
   IOptionalElementDefinition,
-  ITableLocator,
+  ISearchDefinition,
 } from '../typings';
+import { dg } from '../utils';
 import {
   fetchData,
   fetchMeta,
   filePath,
 } from './utili';
 
-const getResult: (rootPath: string, locator: ITableLocator) => Bluebird<IOptionalElementDefinition> =
-(rootPath, locator) => readFile(filePath(rootPath, locator)).then(YAML.parse);
+const getResult: (rootPath: string, locator: ISearchDefinition) => Bluebird<IOptionalElementDefinition> =
+(rootPath, locator) => readFile(filePath(rootPath, locator)).then(YAML.parse).catch((error: any) => {
+  dg(error.toString(), locator);
+});
 
 const localConnector: (options: ILocalConnectorOptions) => IConnectorFactory =
 (options) => {
-  const get: (locator: ITableLocator) => Bluebird<IOptionalElementDefinition> =
+  const get: (locator: ISearchDefinition) => Bluebird<IOptionalElementDefinition> =
   (locator) => getResult(options.rootPath, locator).then(fetchData);
 
-  const meta: (locator: ITableLocator) => Bluebird<IMeta> =
+  const meta: (locator: ISearchDefinition) => Bluebird<IMeta> =
   (locator) => getResult(options.rootPath, locator).then(fetchMeta);
 
   return {

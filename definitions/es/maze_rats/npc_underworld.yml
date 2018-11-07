@@ -6,10 +6,12 @@ data:
     - related:
         male:
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_underworld_male
     - related:
         female:
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_underworld_female

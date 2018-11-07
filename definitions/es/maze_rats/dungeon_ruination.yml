@@ -27,7 +27,8 @@ data:
         insanity:
           text: Locuras
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: insanity
     - text: Flujo lava
     - text: Sueño mágico
@@ -38,7 +39,8 @@ data:
         mutation:
           text: Mutación
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: mutation
     - text: Alienígenas
     - text: Malas hierbas

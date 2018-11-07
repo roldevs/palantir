@@ -6,10 +6,12 @@ data:
     item:
       text: Objeto
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: treasure_item
     trait:
       text: Rasgo
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: treasure_trait

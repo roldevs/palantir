@@ -10,7 +10,6 @@ import {
 
 describe('Options#random', () => {
   const world: IWorldDefinition = {
-    locale: 'es',
     connector: testConnector({
       elements: {},
     }),

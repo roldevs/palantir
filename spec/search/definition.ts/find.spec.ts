@@ -51,7 +51,6 @@ describe('Search::definition#find', () => {
 
   describe('with es locale', () => {
     const search = searchModule({
-      locale: 'es',
       connector,
       repository,
     });
@@ -59,6 +58,7 @@ describe('Search::definition#find', () => {
     describe('with one element search', () => {
       it('return the ns1:item2', (done) => {
         const searchDef: ISearchDefinition = {
+          locale: 'es',
           ns: 'ns1',
           type: 'item2',
         };
@@ -73,6 +73,7 @@ describe('Search::definition#find', () => {
 
       it('return the ns2:item1', (done) => {
         const searchDef: ISearchDefinition = {
+          locale: 'es',
           ns: 'ns2',
           type: 'item1',
         };
@@ -87,6 +88,7 @@ describe('Search::definition#find', () => {
 
       it('bad ns should return empty array', (done) => {
         const searchDef: ISearchDefinition = {
+          locale: 'es',
           ns: 'ns3',
           type: 'item1',
         };
@@ -99,6 +101,7 @@ describe('Search::definition#find', () => {
 
       it('bad item should return empty array', (done) => {
         const searchDef: ISearchDefinition = {
+          locale: 'es',
           ns: 'ns1',
           type: 'item4',
         };
@@ -113,12 +116,12 @@ describe('Search::definition#find', () => {
 
   describe('with en locale', () => {
     const search = searchModule({
-      locale: 'en',
       connector,
       repository,
     });
     it('should return empty array', (done) => {
       const searchDef: ISearchDefinition = {
+        locale: 'es',
         ns: 'ns1',
         type: 'item3',
       };

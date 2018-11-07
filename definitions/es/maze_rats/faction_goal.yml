@@ -16,14 +16,16 @@ data:
         monster:
           text: Crear Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster
     - text: Objetivo de Facción
       related:
         faction:
           text: Destruir Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Enriquecerse
@@ -38,7 +40,8 @@ data:
         faction:
           text: Controlar Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Cambiar bienes
@@ -61,7 +64,8 @@ data:
         faction:
           text: Infiltrar Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Transportar bienes

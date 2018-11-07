@@ -8,142 +8,166 @@ data:
         physical_effect:
           text: Efecto Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_effect
         physical_form:
           text: Forma Física
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_form
     - text: Magia
       related:
         physical_effect:
           text: Efecto Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_effect
         ethereal_form:
           text: Forma Etérea
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_form
     - text: Magia
       related:
         ethereal_effect:
           text: Efecto Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_effect
         physical_form:
           text: Forma Física
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_form
     - text: Magia
       related:
         ethereal_effect:
           text: Efecto Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_effect
         ethereal_form:
           text: Forma Etérea
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_form
     - text: Magia
       related:
         physical_element:
           text: Elemento Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_element
         physical_form:
           text: Forma Física
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_form
     - text: Magia
       related:
         physical_element:
           text: Elemento Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_element
         ethereal_form:
           text: Forma Etérea
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_form
     - text: Magia
       related:
         ethereal_element:
           text: Elemento Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_element
         physical_form:
           text: Forma Física
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_form
     - text: Magia
       related:
         ethereal_element:
           text: Elemento Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_element
         ethereal_form:
           text: Forma Etérea
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_form
     - text: Magia
       related:
         physical_effect:
           text: Efecto Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_effect
         physical_element:
           text: Elemento Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_element
     - text: Magia
       related:
         physical_effect:
           text: Efecto Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_effect
         ethereal_element:
           text: Elemento Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_element
     - text: Magia
       related:
         ethereal_effect:
           text: Efecto Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_effect
         physical_element:
           text: Elemento Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_element
     - text: Magia
       related:
         ethereal_effect:
           text: Efecto Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_effect
         ethereal_element:
           text: Elemento Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_element

@@ -24,7 +24,8 @@ data:
         dungeon_activity:
           text: Actividad en Mazmorra
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: dungeon_activity
     - text: Interrogar
     - text: Matrimonio
@@ -33,7 +34,8 @@ data:
         mission:
           text: Misión
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: mission
     - text: Llorar muerte
     - text: Festejar
@@ -55,5 +57,6 @@ data:
         wild_activity:
           text: Actividad en la Naturaleza
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: wild_activity

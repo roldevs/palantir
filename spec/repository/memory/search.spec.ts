@@ -17,6 +17,7 @@ describe('Repository::Memory#search', () => {
       elements: {},
     });
     const search: ISearchDefinition = {
+      locale: 'es',
       ns: 'ns',
       type: 'items1',
       random: ERandomOption.existing,
@@ -56,6 +57,7 @@ describe('Repository::Memory#search', () => {
       },
     });
     const search: ISearchDefinition = {
+      locale: 'es',
       ns: 'ns1',
       type: 'item1',
       random: ERandomOption.existing,

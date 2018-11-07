@@ -29,12 +29,14 @@ describe('Element#get', () => {
               related: {
                 face: {
                   search: [{
+                    locale: 'es',
                     ns: 'ns1',
                     type: 'face',
                   }],
                 },
                 body: {
                   search: [{
+                    locale: 'es',
                     ns: 'ns1',
                     type: 'body',
                   }],
@@ -60,12 +62,14 @@ describe('Element#get', () => {
               related: {
                 arms: {
                   search: [{
+                    locale: 'es',
                     ns: 'ns1',
                     type: 'arms',
                   }],
                 },
                 legs: {
                   search: [{
+                    locale: 'es',
                     ns: 'ns1',
                     type: 'legs',
                   }],
@@ -98,18 +102,17 @@ describe('Element#get', () => {
     },
   });
   const element = elementModule({
-    locale: 'es',
     connector,
     repository,
   });
   const search = searchModule({
-    locale: 'es',
     connector,
     repository,
   });
 
   describe('arms', () => {
     const s: ISearchDefinition[] = [{
+      locale: 'es',
       ns: 'ns1',
       type: 'arms',
     }];
@@ -126,6 +129,7 @@ describe('Element#get', () => {
   });
   describe('legs', () => {
     const s: ISearchDefinition[] = [{
+      locale: 'es',
       ns: 'ns1',
       type: 'legs',
     }];
@@ -142,6 +146,7 @@ describe('Element#get', () => {
   });
   describe('body', () => {
     const s: ISearchDefinition[] = [{
+      locale: 'es',
       ns: 'ns1',
       type: 'body',
     }];
@@ -163,6 +168,7 @@ describe('Element#get', () => {
   });
   describe('person', () => {
     const s: ISearchDefinition[] = [{
+      locale: 'es',
       ns: 'ns1',
       type: 'person',
     }];

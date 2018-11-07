@@ -10,7 +10,8 @@ data:
         city_activity:
           text: Actividad de Ciudad
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: city_activity
     - text: Acumular
     - text: Construir
@@ -28,7 +29,8 @@ data:
         monster_tactic:
           text: Táctica de Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster_tactic
     - text: Negociar
     - text: Patrullar
@@ -51,7 +53,8 @@ data:
         wild_activity:
           text: Actividad de la Naturaleza
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: wild_activity
     - text: Adorar
     - text: Alimentar

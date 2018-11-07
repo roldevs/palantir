@@ -19,14 +19,16 @@ data:
         effects:
           text: Efecto
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: effect
     - text: Rasgo del Tesoro
       related:
         element:
           text: Elemento
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: element
     - text: Embellecido
     - text: Críptico

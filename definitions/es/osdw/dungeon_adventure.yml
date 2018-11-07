@@ -6,30 +6,36 @@ data:
     exploring:
       text: Estamos explorando...
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: exploring
     lies:
       text: Que yace en...
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: lies
     seeking:
       text: Buscando un...
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: seeking
     we_are_here:
       text: Estamos aquí para...
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: we_are_here
     and:
       text: Y...
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: and
     guarded:
       text: Vigilado por...
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: guarded

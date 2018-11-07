@@ -11,44 +11,51 @@ data:
         animal:
           text: Brazos de Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - text: Pelaje
     - related:
         animal:
           text: Ojos de Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - related:
         animal:
           text: Cabeza de Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - related:
         animal:
           text: Piernas de Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - related:
         animal:
           text: Boca de Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - related:
         animal:
           text: Piel de Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - related:
         animal:
           text: Forma de Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - text: Cílope
     - text: Brazos extra
@@ -61,7 +68,8 @@ data:
         item:
           text: Forma de Objeto
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: item
     - text: Brazos largos
     - text: Sin pelo
@@ -70,20 +78,23 @@ data:
         monster_feature:
           text: Característica de Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster_feature
     - related:
         monster_trait:
           text: Rasgo de Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster_trait
     - text: Sin ojos
     - related:
         physical_effect:
           text: Piel con Efecto Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_effect
     - text: Segunda cara
     - text: Muda la piel

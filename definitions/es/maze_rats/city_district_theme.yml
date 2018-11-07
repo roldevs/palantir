@@ -9,7 +9,8 @@ data:
         npc_civilized:
           text: NPC Civilizado
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_civilized
               random: all
     - text: Construcción
@@ -44,7 +45,8 @@ data:
         npc_underworld:
           text: NPC Bajos Fondos
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_underworld
               random: all
     - text: Temática de Dristrito
@@ -52,14 +54,16 @@ data:
         city_upperclass_building:
           text: Edificio Clase Alta
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: city_upperclass_building
     - text: Temática de Dristrito
       related:
         city_lowerclass_building:
           text: Edificio Clase Baja
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: city_lowerclass_building
     - text: Vicios
     - text: Temática de Dristrito
@@ -67,7 +71,8 @@ data:
         npc_wilderness:
           text: NPC Naturaleza
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_wilderness
               random: all
     - text: Brujería

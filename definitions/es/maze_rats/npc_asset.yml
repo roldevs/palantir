@@ -16,7 +16,8 @@ data:
         faction:
           text: Líder de Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Bazas de PNJ
@@ -24,7 +25,8 @@ data:
         faction:
           text: Miembro de Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Temido

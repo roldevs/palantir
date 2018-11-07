@@ -15,7 +15,8 @@ data:
         faction:
           text: Aliado de Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Premonición
@@ -26,7 +27,8 @@ data:
         item:
           text: Objeto
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: item
     - text: Debilidad enemigo
     - text: Joyas
@@ -41,7 +43,8 @@ data:
         monster:
           text: Monstruo aliado
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster
     - text: Oráculo
     - text: Tesoro
@@ -56,7 +59,8 @@ data:
         treasure:
           text: Tesoro
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: treasure
     - text: Muestra complot
     - text: Recompensa de la Mazmorra
@@ -64,7 +68,8 @@ data:
         valuable_material:
           text: Material Valioso
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: valuable_material
     - text: Visión
     - text: Arma

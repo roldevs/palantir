@@ -20,7 +20,8 @@ data:
         insanity:
           text: Locura
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: insanity
     - text: Celoso
     - text: Deja evidencias

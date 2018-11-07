@@ -5,10 +5,12 @@ data:
   related:
     property:
       search:
-        - ns: perilous
+        - locale: es
+          ns: perilous
           type: settle_village_properties
     problem:
       search:
-        - ns: perilous
+        - locale: es
+          ns: perilous
           type: settle_village_problems
 

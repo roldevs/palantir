@@ -13,28 +13,33 @@ data:
         related:
           infraestructure:
             search:
-              - ns: perilous
+              - locale: es
+                ns: perilous
                 type: discoveries_structure_infraestructure
       - weight: 2
         related:
           burial:
             search:
-              - ns: perilous
+              - locale: es
+                ns: perilous
                 type: discoveries_structure_burial
       - related:
           dwelling:
             search:
-              - ns: perilous
+              - locale: es
+                ns: perilous
                 type: discoveries_structure_dwelling
       - weight: 2
         related:
           settle:
             search:
-              - ns: perilous
+              - locale: es
+                ns: perilous
                 type: settle
       - weight: 4
         related:
           ruins:
             search:
-              - ns: perilous
+              - locale: es
+                ns: perilous
                 type: discoveries_structure_ruins

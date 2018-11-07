@@ -10,7 +10,8 @@ data:
         item:
           text: Poseer Objeto
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: item
               random: all
     - text: Objetivo del PNJ
@@ -18,7 +19,8 @@ data:
         item:
           text: Forjar Objeto
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: item
               random: all
     - text: Objetivo del PNJ
@@ -26,7 +28,8 @@ data:
         faction:
           text: Destruir Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Objetivo del PNJ
@@ -34,7 +37,8 @@ data:
         item:
           text: Destruir Objeto
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: item
               random: all
     - text: Conocimiento
@@ -44,7 +48,8 @@ data:
         faction:
           text: Hallar Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Libertad
@@ -54,7 +59,8 @@ data:
         npc:
           text: Impresionar PNJ
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc
               random: all
     - text: Infamia
@@ -63,7 +69,8 @@ data:
         faction:
           text: Inflirtrar Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Justicia
@@ -72,7 +79,8 @@ data:
         npc:
           text: Secuestro de PNJ
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc
               random: all
     - text: Objetivo del PNJ
@@ -80,7 +88,8 @@ data:
         faction:
           text: Liderar Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Aprender
@@ -89,7 +98,8 @@ data:
         npc:
           text: Hallar PNJ
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc
               random: all
     - text: Amar
@@ -101,7 +111,8 @@ data:
         npc:
           text: Rescatar PNJ
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc
               random: all
     - text: Zanjar disputa
@@ -110,7 +121,8 @@ data:
         faction:
           text: Restaurar Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Revelar secreto
@@ -120,7 +132,8 @@ data:
         faction:
           text: Sabotear Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Servir deidad
@@ -130,7 +143,8 @@ data:
         faction:
           text: Servir Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Servir ideología

@@ -3,6 +3,7 @@ import * as R from 'ramda';
 import counterModule from './counter';
 import elementCreator from './element';
 import { elementFormatter } from './formatter/elementFormatter';
+import metaModule from './meta';
 import randomCreator from './random';
 import {
   IElementFormatted,
@@ -13,7 +14,6 @@ import {
   IWorldModule,
 } from './typings';
 import { compactArray } from './utils';
-import metaModule from './meta';
 
 const compact: (elements: Array<IElementFormatted | null>) => IElementFormatted[] = compactArray;
 
@@ -36,8 +36,8 @@ const worldModule: IWorldModule =
   };
 
   const getById: (id: string) => Bluebird<IElementFormatted[]> =
-  (id) => {
-    world.meta.getById()
+  (_) => {
+    return Bluebird.resolve([]);
   };
 
   return {

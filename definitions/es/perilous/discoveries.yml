@@ -6,21 +6,24 @@ data:
       related:
         discoveries_no_natural:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: discoveries_no_natural
     - text: Descubrimientos naturales
       weight: 3
       related:
         discoveries_natural:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: discoveries_natural
     - text: Evidencias
       weight: 2
       related:
         discoveries_evidences:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: discoveries_evidence
     - text: Criatura #
     - text: Estructura
@@ -28,5 +31,6 @@ data:
       related:
         discoveries_structure:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: discoveries_structure

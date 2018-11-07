@@ -10,6 +10,7 @@ enum ERandomOption {
 }
 
 interface ISearchDefinition {
+  locale: string;
   ns: string;
   type: string;
   random?: ERandomOption;
@@ -66,19 +67,13 @@ type ISearchResult = Array<IElement | IElementDefinition>;
 interface IMeta {
   system: string;
   id?: string;
-  locator?: ITableLocator;
+  locator?: ISearchDefinition;
 }
 
 interface IMetaDefinition {
   ids: {
-    [id: string]: ITableLocator;
+    [id: string]: ISearchDefinition;
   };
-}
-
-interface ITableLocator {
-  locale: string;
-  ns: string;
-  type: string;
 }
 
 interface ILocalConnectorOptions {
@@ -116,8 +111,8 @@ interface IMetaModuleOptions {
 }
 
 interface IConnectorFactory {
-  get: (locator: ITableLocator) => Bluebird<IOptionalElementDefinition>;
-  meta: (locator: ITableLocator) => Bluebird<IMeta>;
+  get: (locator: ISearchDefinition) => Bluebird<IOptionalElementDefinition>;
+  meta: (locator: ISearchDefinition) => Bluebird<IMeta>;
 }
 
 interface IRepositoryFactory {
@@ -126,12 +121,10 @@ interface IRepositoryFactory {
 }
 
 interface IMetaFactory {
-  getById: (id: string) => Bluebird<ITableLocator>;
+  getById: (id: string) => Bluebird<ISearchDefinition>;
 }
 
 interface IWorldDefinition {
-  locale: string;
-  meta: IMetaFactory;
   connector: IConnectorFactory;
   repository: IRepositoryFactory;
 }
@@ -228,7 +221,6 @@ interface IPersistanceSave {
 export {
   uuid,
   IOptionalElementDefinition,
-  ITableLocator,
   IConnectorFactory,
   IRepositoryFactory,
   ILocalConnectorOptions,

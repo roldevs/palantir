@@ -16,7 +16,8 @@ data:
         dungeon_ruination:
           text: Ruina de Mazmorra
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: dungeon_ruination
     - text: Eterno
     - text: Rasgo Natural
@@ -24,7 +25,8 @@ data:
         ethereal_effect:
           text: Efecto Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_effect
     - text: Abandonado
     - text: Congelado
@@ -53,7 +55,8 @@ data:
         physical_effect:
           text: Efecto Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_effect
     - text: Errante
     - text: Mustio

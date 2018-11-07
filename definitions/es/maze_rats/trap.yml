@@ -5,9 +5,11 @@ data:
   related:
     effect:
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: trap_effect
     trigger:
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: trap_trigger

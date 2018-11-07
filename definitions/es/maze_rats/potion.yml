@@ -8,7 +8,8 @@ data:
         animal:
           text: Forma Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - text: Cambio cuerpo
     - text: Camuflaje
@@ -18,7 +19,8 @@ data:
         element:
           text: Piel Elemento
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: element
     - text: Curar enfermo
     - text: Detectar mal
@@ -30,14 +32,16 @@ data:
         insanity:
           text: Locura
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: insanity
     - text: Poción
       related:
         element:
           text: Forma Elemento
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: element
     - text: Brazo extra
     - text: Volar
@@ -48,7 +52,8 @@ data:
         element:
           text: Control Elemento
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: element
     - text: Invulnerable
     - text: Poción
@@ -56,7 +61,8 @@ data:
         item:
           text: Forma Objeto
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: item
     - text: Visión nocturna
     - text: Poción
@@ -64,7 +70,8 @@ data:
         magic:
           text: Mágica
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: magic
     - text: Curar salud
     - text: Andar sobre agua
@@ -73,21 +80,24 @@ data:
         monster_feature:
           text: Característica de Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster_feature
     - text: Poción
       related:
         monster_trait:
           text: Rasgo de Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster_trait
     - text: Poción
       related:
         mutation:
           text: Mutación
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: mutation
     - text: Super fuerza
     - text: Telekinesis
@@ -102,6 +112,7 @@ data:
         monster_ability:
           text: Habilidad de Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster_ability
     - text: Respirar en agua

@@ -26,7 +26,6 @@ const getWorld: (params: IParserOptions) => any =
     1: localConnector(),
   };
   return worldCreator({
-    locale: params.locale,
     connector: connectorCreators[params.connector],
     repository: repositoryCreator({
       locale: params.locale,
@@ -48,6 +47,7 @@ const cliModule: ICliModule =
 
     return world.get({
       search: [{
+        locale: params.locale,
         ns: program.namespace,
         type: program.type,
       }],

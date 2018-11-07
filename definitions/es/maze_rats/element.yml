@@ -8,12 +8,14 @@ data:
         animal_aerial:
           text: Elemento Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_element
     - text: Elemento
       related:
         animal_aquatic:
           text: Elemento Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_element

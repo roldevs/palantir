@@ -6,30 +6,36 @@ data:
     feature:
       text: Característica
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: monster_feature
     trait:
       text: Rasgo
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: monster_trait
     ability:
       text: Habilidad
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: monster_ability
     tactic:
       text: Táctica
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: monster_tactic
     personality:
       text: Personalidad
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: monster_personality
     weakness:
       text: Debilidad
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: monster_weakness

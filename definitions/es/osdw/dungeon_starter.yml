@@ -6,30 +6,36 @@ data:
     control:
       text: Quién controla realmente esto?
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: control
     happen:
       text: Qué es lo que está a punto de pasar?
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: happen
     happened:
       text: Qué pasó aquí hace poco?
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: happened
     useful:
       text: Qué es útil o de valor para mí aquí?
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: useful
     lookout:
       text: Qué debería estar buscando?
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: lookout
     not_appear:
       text: Qué hay aquí que no es lo que parece?
       search:
-        - ns: osdw
+        - locale: es
+          ns: osdw
           type: not_appear

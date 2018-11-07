@@ -7,11 +7,13 @@ data:
         male:
           text: PNJ Hombre Civilizado
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_civilized_male
     - related:
         female:
           text: PNJ Mujer Civilizada
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_civilized_female

@@ -2,12 +2,12 @@
 // import * as R from 'ramda';
 // import {
 //   IMetaIdModule,
-//   ITableLocator,
+//   ISearchDefinition,
 // } from '../typings';
 
 // const metaIdModule: IMetaIdModule =
 // (metaDefinition) => {
-//   const get: (id: string) => ITableLocator =
+//   const get: (id: string) => ISearchDefinition =
 //   (id) => R.view(R.lensPath(['ids', id]), metaDefinition);
 
 //   return {

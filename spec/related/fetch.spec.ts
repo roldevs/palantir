@@ -63,7 +63,6 @@ describe('Related#fetch', () => {
       });
 
       const world: IWorldDefinition = {
-        locale: 'es',
         connector,
         repository,
       };
@@ -74,6 +73,7 @@ describe('Related#fetch', () => {
           related: {
             key: {
               search: [{
+                locale: 'es',
                 ns: 'ns2',
                 type: 'item2',
               }],
@@ -87,6 +87,7 @@ describe('Related#fetch', () => {
           expect(data).to.not.be.null;
           expect(data!.text).to.eql('Test');
           expect(data!.related!.key.search).to.eql([{
+            locale: 'es',
             ns: 'ns2',
             type: 'item2',
           }]);
@@ -105,7 +106,6 @@ describe('Related#fetch', () => {
       });
 
       const world: IWorldDefinition = {
-        locale: 'es',
         connector,
         repository,
       };

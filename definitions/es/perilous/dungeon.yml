@@ -8,21 +8,25 @@ data:
         constructor:
           text: Constructor
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_constructor
         function:
           text: Función
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_function
         ruination:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_ruination
         themes:
           text: Temas
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_subjects
           count: d4
         areas:
@@ -34,21 +38,25 @@ data:
         constructor:
           text: Constructor
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_constructor
         function:
           text: Función
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_function
         ruination:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_ruination
         themes:
           text: Temas
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_subjects
           count: d6
         areas:
@@ -60,21 +68,25 @@ data:
         constructor:
           text: Constructor
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_constructor
         function:
           text: Función
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_function
         ruination:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_ruination
         themes:
           text: Temas
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_subjects
           count: d6+1
         areas:
@@ -85,21 +97,25 @@ data:
         constructor:
           text: Constructor
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_constructor
         function:
           text: Función
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_function
         ruination:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_ruination
         themes:
           text: Temas
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_subjects
           count: d6+2
         areas:

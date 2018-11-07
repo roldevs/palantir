@@ -21,7 +21,6 @@ const ns: string = 'perilous';
 const type: string = 'dungeon';
 
 const world = worldCreator({
-  locale,
   connector: localConnectorCreator({
     rootPath: './definitions',
   }),
@@ -32,7 +31,7 @@ const world = worldCreator({
 });
 
 world.get({
-  search: [{ns, type}],
+  search: [{locale, ns, type}],
   count,
 }).then((data: any) => {
   console.log(JSONprettify(data));

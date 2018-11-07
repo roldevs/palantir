@@ -24,7 +24,8 @@ data:
         insanity:
           text: Locura
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: insanity
     - text: Espejos
     - text: Muérdago
@@ -35,7 +36,8 @@ data:
         npc_method:
           text: Método de PNJ
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_method
     - text: Filateria
     - text: Debilidad del Monstruo
@@ -43,7 +45,8 @@ data:
         physical_element:
           text: Elemento Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_element
     - text: Puzzles
     - text: Acertijos
@@ -57,7 +60,8 @@ data:
         valuable_material:
           text: Material Valioso
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: valuable_material
     - text: Punto débil
     - text: Debilidad del Monstruo
@@ -65,7 +69,8 @@ data:
         weapon_item:
           text: Arma
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: weapon_item
     - text: Vino
     - text: Ajenjo

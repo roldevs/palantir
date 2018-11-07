@@ -8,7 +8,8 @@ data:
         animal:
           text: Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - text: Equilibrio
     - text: Traición
@@ -24,7 +25,8 @@ data:
         element:
           text: Elemento
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: element
     - text: Portal
     - text: Juicio
@@ -38,7 +40,8 @@ data:
         npc:
           text: PNJ
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc
               random: all
     - text: Juramentos

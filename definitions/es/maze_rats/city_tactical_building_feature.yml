@@ -8,7 +8,8 @@ data:
         animal:
           text: Nido de Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - text: Balcones
     - text: Acceso sótano

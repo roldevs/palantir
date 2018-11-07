@@ -42,6 +42,7 @@ data:
         monster:
           text: Libera Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster
     - text: Muro espinado

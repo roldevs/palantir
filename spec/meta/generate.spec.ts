@@ -8,7 +8,6 @@ import {
   IOptionalElementDefinition,
   ISearchDefinition,
   ISearchResult,
-  ITableLocator,
 } from '../../src/lib/typings';
 
 describe('Meta#generate', () => {
@@ -21,7 +20,7 @@ describe('Meta#generate', () => {
     meta.generate().then((definition: IMetaDefinition) => {
       expect(definition.ids['1']).to.not.be.undefined.and.not.be.null;
 
-      const search: ITableLocator = definition.ids['1'];
+      const search: ISearchDefinition = definition.ids['1'];
       expect(search.locale).to.eql('es');
       expect(search.ns).to.eql('knave');
       expect(search.type).to.eql('pc');

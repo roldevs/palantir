@@ -19,7 +19,8 @@ data:
         ethereal_effect:
           text: Efecto Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_effect
     - text: Intercambia
     - text: Encierra
@@ -31,7 +32,8 @@ data:
         mission:
           text: Misión
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: mission
     - text: Altera el humor
     - text: Nulifica
@@ -40,7 +42,8 @@ data:
         physical_effect:
           text: Efecto Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_effect
     - text: Cambio plano
     - text: Protección

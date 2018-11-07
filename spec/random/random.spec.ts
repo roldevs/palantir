@@ -50,7 +50,6 @@ describe('Random#random', () => {
 
   describe('with es locale', () => {
     const random = randomModule({
-      locale: 'es',
       connector,
       repository,
     });
@@ -58,6 +57,7 @@ describe('Random#random', () => {
     describe('with one element search', () => {
       it('return the ns1:item2', (done) => {
         const searchDef: ISearchDefinition[] = [{
+          locale: 'es',
           ns: 'ns1',
           type: 'item2',
         }];
@@ -71,6 +71,7 @@ describe('Random#random', () => {
 
       it('return the ns2:item1', (done) => {
         const searchDef: ISearchDefinition[] = [{
+          locale: 'es',
           ns: 'ns2',
           type: 'item1',
         }];
@@ -84,6 +85,7 @@ describe('Random#random', () => {
 
       it('bad ns should return empty array', (done) => {
         const searchDef: ISearchDefinition[] = [{
+          locale: 'es',
           ns: 'ns3',
           type: 'item1',
         }];
@@ -96,6 +98,7 @@ describe('Random#random', () => {
 
       it('bad item should return empty array', (done) => {
         const searchDef: ISearchDefinition[] = [{
+          locale: 'es',
           ns: 'ns1',
           type: 'item4',
         }];
@@ -110,9 +113,11 @@ describe('Random#random', () => {
     describe('with two element search', () => {
       it('return the ns1:item2 or ns2.item1', (done) => {
         const searchDef: ISearchDefinition[] = [{
+          locale: 'es',
           ns: 'ns1',
           type: 'item2',
         }, {
+          locale: 'es',
           ns: 'ns2',
           type: 'item1',
         }];
@@ -127,9 +132,11 @@ describe('Random#random', () => {
       describe('with one unexistant element', () => {
         it('return the ns1:item2', (done) => {
           const searchDef: ISearchDefinition[] = [{
+            locale: 'es',
             ns: 'ns1',
             type: 'item2',
           }, {
+            locale: 'es',
             ns: 'ns1',
             type: 'item4',
           }];

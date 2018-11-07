@@ -14,7 +14,8 @@ data:
         city_activity:
           text: Actividad de Ciudad
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: city_activity
     - text: Convocar
     - text: Demolición
@@ -25,7 +26,8 @@ data:
         dungeon_activity:
           text: Actividad de Mazmorra
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: dungeon_activity
     - text: Comer
     - text: Excavar

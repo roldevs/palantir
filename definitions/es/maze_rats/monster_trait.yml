@@ -16,7 +16,8 @@ data:
         ethereal_effect:
           text: Efecto Etéreo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: ethereal_effect
     - text: Etéreo
     - text: Siempre joven
@@ -38,7 +39,8 @@ data:
         physical_effect:
           text: Efecto Físico
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: physical_effect
     - text: Planar
     - text: Reflectante

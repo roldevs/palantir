@@ -24,6 +24,7 @@ describe('World#get', () => {
                     faction: {
                       text: 'Lider ${faction}',
                       search: [{
+                        locale: 'es',
                         ns: 'maze_rats',
                         type: 'faction',
                         random: ERandomOption.all,
@@ -47,7 +48,6 @@ describe('World#get', () => {
       },
     });
     const world = worldCreator({
-      locale: 'es',
       connector,
       repository: testRepository({
         locale: 'es',
@@ -58,6 +58,7 @@ describe('World#get', () => {
     describe('simple search', () => {
       const search: IRelatedElement = {
         search: [{
+          locale: 'es',
           ns: 'maze_rats',
           type: 'faction',
         }],
@@ -76,6 +77,7 @@ describe('World#get', () => {
     describe('deep search', () => {
       const search: IRelatedElement = {
         search: [{
+          locale: 'es',
           ns: 'maze_rats',
           type: 'npc_asset',
         }],
@@ -109,6 +111,7 @@ describe('World#get', () => {
                   related: {
                     animal_aerial: {
                       search: [{
+                        locale: 'es',
                         ns: 'maze_rats',
                         type: 'animal_aerial',
                       }],
@@ -119,6 +122,7 @@ describe('World#get', () => {
                   related: {
                     animal_aquatic: {
                       search: [{
+                        locale: 'es',
                         ns: 'maze_rats',
                         type: 'animal_aquatic',
                       }],
@@ -129,6 +133,7 @@ describe('World#get', () => {
                     related: {
                       animal_terrestrial: {
                         search: [{
+                          locale: 'es',
                           ns: 'maze_rats',
                           type: 'animal_terrestrial',
                         }],
@@ -168,7 +173,6 @@ describe('World#get', () => {
       },
     });
     const world = worldCreator({
-      locale: 'es',
       connector,
       repository: testRepository({
         locale: 'es',
@@ -179,6 +183,7 @@ describe('World#get', () => {
     describe('deep search', () => {
       const search: IRelatedElement = {
         search: [{
+          locale: 'es',
           ns: 'maze_rats',
           type: 'animal',
         }],
@@ -215,7 +220,6 @@ describe('World#get', () => {
       },
     });
     const world = worldCreator({
-      locale: 'es',
       connector,
       repository: testRepository({
         locale: 'es',
@@ -226,6 +230,7 @@ describe('World#get', () => {
     describe('deep search', () => {
       const search: IRelatedElement = {
         search: [{
+          locale: 'es',
           ns: 'maze_rats',
           type: 'mutation',
         }],
@@ -254,6 +259,7 @@ describe('World#get', () => {
                     faction: {
                       text: 'Lider ${faction}',
                       search: [{
+                        locale: 'es',
                         ns: 'maze_rats',
                         type: 'faction',
                         random: ERandomOption.all,
@@ -279,7 +285,6 @@ describe('World#get', () => {
       },
     });
     const world = worldCreator({
-      locale: 'es',
       connector,
       repository: testRepository({
         locale: 'es',
@@ -290,6 +295,7 @@ describe('World#get', () => {
     describe('random search', () => {
       const search: IRelatedElement = {
         search: [{
+          locale: 'es',
           ns: 'maze_rats',
           type: 'faction',
         }],

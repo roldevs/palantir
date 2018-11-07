@@ -7,29 +7,34 @@ data:
         related:
           infraestructure:
             search:
-              - ns: perilous
+              - locale: es
+                ns: perilous
                 type: discoveries_structure_infraestructure
       - weight: 2
         related:
           burial:
             search:
-              - ns: perilous
+              - locale: es
+                ns: perilous
                 type: discoveries_structure_burial
       - weight: 2
         related:
           dwelling:
             search:
-              - ns: perilous
+              - locale: es
+                ns: perilous
                 type: discoveries_structure_dwelling
       - weight: 2
         related:
           settle:
             search:
-              - ns: perilous
+              - locale: es
+                ns: perilous
                 type: settle
       - weight: 4
         related:
           dungeon:
             search:
-              - ns: perilous
+              - locale: es
+                ns: perilous
                 type: dungeon

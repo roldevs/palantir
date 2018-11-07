@@ -29,7 +29,8 @@ data:
         personality:
           text: Personalidad
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: personality
     - text: Piadosa
     - text: Popular

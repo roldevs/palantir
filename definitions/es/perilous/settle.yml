@@ -5,6 +5,7 @@ data:
   related:
     settle:
       search:
-        - ns: perilous
+        - locale: es
+          ns: perilous
           type: settle_village
 

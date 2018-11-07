@@ -6,12 +6,14 @@ data:
     focus:
       text: Foco del Evento
       search:
-        - ns: mythic
+        - locale: es
+          ns: mythic
           type: event_focus
           random: ramdom
     meaning:
       text: Significado del Evento
       search:
-        - ns: mythic
+        - locale: es
+          ns: mythic
           type: event_meaning
           random: ramdom

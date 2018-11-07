@@ -6,7 +6,7 @@ import {
   IMeta,
   IOptionalElementDefinition,
   IRemoteConnectorOptions,
-  ITableLocator,
+  ISearchDefinition,
 } from '../typings';
 import {
   fetchData,
@@ -14,7 +14,7 @@ import {
   locatorUrl,
 } from './utili';
 
-const getResult: (instance: AxiosInstance, locator: ITableLocator) => Bluebird<IOptionalElementDefinition> =
+const getResult: (instance: AxiosInstance, locator: ISearchDefinition) => Bluebird<IOptionalElementDefinition> =
 (instance, locator) => {
   return new Bluebird((resolve: any, reject: any) => {
     instance.get(locatorUrl(locator)).then(resolve).catch(reject);
@@ -36,10 +36,10 @@ const remoteConnector: (options: IRemoteConnectorOptions) => IConnectorFactory =
     });
   }
 
-  const get: (locator: ITableLocator) => Bluebird<IOptionalElementDefinition> =
+  const get: (locator: ISearchDefinition) => Bluebird<IOptionalElementDefinition> =
   (locator) => getResult(instance, locator).then(fetchData);
 
-  const meta: (locator: ITableLocator) => Bluebird<IMeta> =
+  const meta: (locator: ISearchDefinition) => Bluebird<IMeta> =
   (locator) => getResult(instance, locator).then(fetchMeta);
 
   return {

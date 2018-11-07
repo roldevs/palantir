@@ -9,7 +9,6 @@ import { requestPath } from '../../util';
 const randomRequest = (req: any, res: any) => {
   const locale: string = R.defaultTo('es', req.params.locale);
   const world = worldCreator({
-    locale,
     connector: localConnectorCreator({
       rootPath: './definitions',
     }),
@@ -22,6 +21,7 @@ const randomRequest = (req: any, res: any) => {
   return trackEvent(`/api/random/${requestPath(req)}`, 'Folders').then(() => {
     return world.get({
       search: [{
+        locale: 'es',
         ns: req.params.ns,
         type: req.params.type,
       }],

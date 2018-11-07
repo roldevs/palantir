@@ -10,7 +10,8 @@ data:
         animal:
           text: Forma Animal
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: animal
     - text: No puede contar
     - text: No puede mentir
@@ -43,21 +44,24 @@ data:
         monster_ability:
           text: Habilidad de Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster_ability
     - text: Locura
       related:
         monster_feature:
           text: Característica de Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster_feature
     - text: Locura
       related:
         monster_trait:
           text: Rasgo de Monstruo
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: monster_trait
     - text: Debe cantar
     - text: Locura
@@ -65,7 +69,8 @@ data:
         monster_trait:
           text: Nueva Personalidad
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: personality
     - text: Piensa en voz alta
     - text: Ve muertos

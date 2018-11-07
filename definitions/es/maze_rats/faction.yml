@@ -6,15 +6,18 @@ data:
     type:
       text: Tipo
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: faction_type
     trait:
       text: Trato
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: faction_trait
     goal:
       text: Objetivo
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: faction_goal

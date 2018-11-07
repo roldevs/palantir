@@ -22,18 +22,17 @@ describe('Element#get', () => {
     rootPath: path.resolve(__dirname, '../../definitions'),
   });
   const element = elementModule({
-    locale: 'es',
     connector,
     repository,
   });
   const search = searchModule({
-    locale: 'es',
     connector,
     repository,
   });
 
   describe('no definition', () => {
     const s: ISearchDefinition[] = [{
+      locale: 'es',
       ns: 'ns1',
       type: 'fake',
     }];
@@ -49,6 +48,7 @@ describe('Element#get', () => {
 
   describe('trap', () => {
     const s: ISearchDefinition[] = [{
+      locale: 'es',
       ns: 'maze_rats',
       type: 'trap',
     }];
@@ -72,6 +72,7 @@ describe('Element#get', () => {
   });
   describe('pc', () => {
     const s: ISearchDefinition[] = [{
+      locale: 'es',
       ns: 'maze_rats',
       type: 'pc',
     }];
@@ -91,6 +92,7 @@ describe('Element#get', () => {
   });
   describe('npc_underworld', () => {
     const s: ISearchDefinition[] = [{
+      locale: 'es',
       ns: 'maze_rats',
       type: 'npc_underworld',
     }];
@@ -105,7 +107,7 @@ describe('Element#get', () => {
           expect(related.text).is.not.undefined;
           done();
         });
-      }).catch(done);
+      });
     });
   });
 });

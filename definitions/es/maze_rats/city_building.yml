@@ -8,12 +8,14 @@ data:
         city_lowerclass_building:
           text: Edificio Clase baja
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: city_lowerclass_building
     - text: Edficio
       related:
         city_upperclass_building:
           text: Edificio Clase alta
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: city_upperclass_building

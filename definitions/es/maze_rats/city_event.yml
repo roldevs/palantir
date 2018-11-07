@@ -17,7 +17,8 @@ data:
         faction:
           text: Guerra con Facción
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: faction
               random: all
     - text: Histeria

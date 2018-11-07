@@ -9,7 +9,8 @@ data:
         mutation:
           text: Mutación de Animales
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: mutation
     - text: Pájaros atacan
     - text: Ciudad aparece
@@ -30,13 +31,15 @@ data:
         insanity:
           text: Locura global
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: insanity
     - related:
         mutation:
           text: Mutación masiva
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: mutation
     - text: Sueño masivo
     - text: Meteorito

@@ -6,60 +6,72 @@ data:
     - related:
         dungeon_mundane_subjects1:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_mundane_subjects
     - related:
         dungeon_mundane_subjects2:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_mundane_subjects
     - related:
         dungeon_mundane_subjects3:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_mundane_subjects
     - related:
         dungeon_mundane_subjects4:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_mundane_subjects
     - related:
         dungeon_mundane_subjects5:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_mundane_subjects
     - related:
         dungeon_inusual_subjects6:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_inusual_subjects
     - related:
         dungeon_inusual_subjects7:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_inusual_subjects
     - related:
         dungeon_inusual_subjects8:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_inusual_subjects
     - related:
         dungeon_inusual_subjects9:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_inusual_subjects
     - related:
         dungeon_extraordinary_subjects10:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_extraordinary_subjects
     - related:
         dungeon_extraordinary_subjects11:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_extraordinary_subjects
     - related:
         dungeon_extraordinary_subjects12:
           search:
-            - ns: perilous
+            - locale: es
+              ns: perilous
               type: dungeon_extraordinary_subjects

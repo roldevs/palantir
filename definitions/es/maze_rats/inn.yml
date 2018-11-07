@@ -6,15 +6,18 @@ data:
     adjective:
       text: Adjetivo
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: inn_adjective
     name:
       text: Nombre
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: inn_name
     quirk:
       text: Peculiaridad
       search:
-        - ns: maze_rats
+        - locale: es
+          ns: maze_rats
           type: inn_quirk

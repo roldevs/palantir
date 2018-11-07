@@ -7,17 +7,20 @@ data:
       related:
         civilized:
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_civilized
     - text: PNJ
       related:
         underworld:
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_underworld
     - text: PNJ
       related:
         wilderness:
           search:
-            - ns: maze_rats
+            - locale: es
+              ns: maze_rats
               type: npc_wilderness

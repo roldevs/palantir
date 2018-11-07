@@ -21,7 +21,7 @@ const randomRequest = (req: any, res: any) => {
   return trackEvent(`/api/random/${requestPath(req)}`, 'Folders').then(() => {
     return world.get({
       search: [{
-        locale: 'es',
+        locale: req.params.locale,
         ns: req.params.ns,
         type: req.params.type,
       }],

@@ -7,4 +7,7 @@ console.log('Generating meta file');
 metaPersistenceModule({
   rootPath: './definitions',
   metaFilePath: './meta.yml',
-}).write().then(() => console.log('-> Meta file generated'));
+}).write().then(() => console.log('-> Meta file generated')).catch((error: any) => {
+  // tslint:disable-next-line:no-console
+  console.log(error);
+});

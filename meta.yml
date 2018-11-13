@@ -1,9 +1,0 @@
-ids:
-  "1":
-    locale: es
-    ns: knave
-    type: pc
-  undefined:
-    locale: es
-    ns: perilous
-    type: settle_village_properties

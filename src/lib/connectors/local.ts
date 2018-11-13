@@ -3,13 +3,11 @@ import YAML from 'yaml';
 import { readFile } from '../file';
 import {
   IConnectorFactory,
-  IElementDefinition,
   ILocalConnectorOptions,
   IMeta,
   IOptionalElementDefinition,
   ISearchDefinition,
 } from '../typings';
-import { dg } from '../utils';
 import {
   fetchData,
   fetchMeta,

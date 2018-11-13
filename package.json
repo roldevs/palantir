@@ -14,8 +14,8 @@
     "watch": "node_modules/.bin/nodemon",
     "heroku:log": " heroku logs -a hall --tail",
     "heroku:push": "git push https://heroku:abee4578-ec40-4e9a-9597-17381eccab25@git.heroku.com/hall.git master",
-    "client:build": "npm run lint && node_modules/.bin/webpack-cli --config src/client/webpack.config.js",
-    "client:watch": "node_modules/.bin/webpack-cli --config src/client/webpack.config.js --watch",
+    "client:build": "npm run lint && node_modules/.bin/webpack --config src/client/webpack.config.js",
+    "client:watch": "node_modules/.bin/webpack --config src/client/webpack.config.js --watch",
     "meta:generate": "node_modules/.bin/ts-node meta.ts"
   },
   "keywords": [
@@ -27,15 +27,15 @@
   "author": "Roberto M. Oliva",
   "license": "MIT",
   "dependencies": {
-    "@sentry/node": "^4.2.4",
+    "@sentry/node": "^4.3.0",
     "axios": "^0.18.0",
-    "bluebird": "^3.5.2",
+    "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
     "chalk": "^2.4.1",
     "commander": "^2.19.0",
     "compression": "^1.7.3",
     "crossroads": "^0.12.2",
-    "cryptiles": ">=4.1.2",
+    "cryptiles": ">=4.1.3",
     "dice-typescript": "^1.6.1",
     "dotenv": "^6.1.0",
     "errorhandler": "^1.5.0",
@@ -52,11 +52,11 @@
     "snabbdom": "^0.7.2",
     "universal-analytics": "^0.4.20",
     "uuid": "^3.3.2",
-    "yaml": "^1.0.0"
+    "yaml": "^1.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
     "@types/axios": "^0.14.0",
     "@types/bluebird": "^3.5.24",
     "@types/body-parser": "^1.17.0",
@@ -65,7 +65,7 @@
     "@types/commander": "^2.12.2",
     "@types/compression": "0.0.36",
     "@types/crossroads": "0.0.30",
-    "@types/dotenv": "^4.0.3",
+    "@types/dotenv": "^6.1.0",
     "@types/errorhandler": "0.0.32",
     "@types/express": "^4.16.0",
     "@types/express-session": "^1.15.11",
@@ -75,7 +75,7 @@
     "@types/lusca": "^1.5.0",
     "@types/mocha": "^5.2.5",
     "@types/morgan": "^1.7.35",
-    "@types/node": "^10.12.2",
+    "@types/node": "^10.12.7",
     "@types/ramda": "^0.26.0",
     "@types/universal-analytics": "^0.4.2",
     "@types/uuid": "^3.4.4",
@@ -96,12 +96,13 @@
     "karma-typescript": "^3.0.13",
     "mocha": "^5.2.0",
     "mocha-junit-reporter": "^1.18.0",
-    "nodemon": "^1.18.5",
+    "nodemon": "^1.18.6",
     "ts-loader": "^5.3.0",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "typescript": "^3.1.6",
-    "webpack": "^4.24.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
   }
 }

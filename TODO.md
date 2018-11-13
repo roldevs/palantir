@@ -13,6 +13,3 @@
 * Terminar la implementacion de la persistencia en repositorio
 * Dar un nombre a los elementos guardados
 * Categorizar las definiciones, añadirles iconos y tener una API para acceder a ellas y así generar la UI dinámicamente.
-* Seleccion aleatoria con pesos
-
-gtVrDuiDfck831PqWsLEZy5gyDz1cltogtVrDuiDfck831PqWsLEZy5gyDz1clto

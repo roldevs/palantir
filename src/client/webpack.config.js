@@ -1,4 +1,9 @@
-var path = require('path');
+const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 // var webpack = require('webpack');
 // var WebpackNotifierPlugin = require('webpack-notifier');
 // var UnusedFilesWebpackPlugin = require('unused-files-webpack-plugin')['default'];
@@ -42,6 +47,16 @@ module.exports = {
     }]
   },
   plugins: [
+    new UglifyJsPlugin({
+      cache: true,
+      parallel: true,
+      sourceMap: (process.env.ENVIRONMENT === 'development'),
+      uglifyOptions: {
+        output: {
+          comments: false
+        }
+      },
+    }),
     // new WebpackNotifierPlugin({
     //   alwaysNotify: true
     // }),

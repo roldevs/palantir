@@ -2,10 +2,33 @@ meta:
   system: Páramos Aventurados
 data:
   text: Asentamiento
-  related:
-    settle:
-      search:
-        - locale: es
-          ns: perilous
-          type: settle_village
+  options:
+    - weight: 5
+      related:
+        settle:
+          search:
+            - locale: es
+              ns: perilous
+              type: settle_village
+    - weight: 3
+      related:
+        town:
+          search:
+            - locale: es
+              ns: perilous
+              type: settle_town
 
+    - weight: 3
+      related:
+        keep:
+          search:
+            - locale: es
+              ns: perilous
+              type: settle_keep
+    - weight: 1
+      related:
+        keep:
+          search:
+            - locale: es
+              ns: perilous
+              type: settle_city

@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Elemento
+  options:
+    - text: Aire
+      weight: 2
+    - text: Tierra
+      weight: 2
+    - text: Fuego
+      weight: 2
+    - text: Agua
+      weight: 2
+    - text: Vida
+      weight: 2
+    - text: Muerte
+      weight: 2

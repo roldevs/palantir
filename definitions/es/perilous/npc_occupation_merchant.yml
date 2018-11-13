@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Ocupación PNJ Mercader
+  options:
+    - text: Mercancías generales/proveedor
+      weight: 2
+    - text: Materias primas
+    - text: Grano/ganado
+    - text: Cerveza/vino/licor
+    - text: Ropa/joyería
+    - text: Armas/armadura
+    - text: Especias/tabaco
+    - text: Mano de obra/esclavos
+    - text: Libros/pergaminos
+    - text: Ingredientes u objetos mágicos
+

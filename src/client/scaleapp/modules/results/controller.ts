@@ -37,7 +37,11 @@ const streamOptions: (
 ) => Bluebird<IResultsState> =
 (config, options) => {
   if (options.type && options.ns && options.locale) {
-    return config.sb.services.random.index(options).then(R.prop('data')).then(
+    return config.sb.services.random.index(options).then(
+      R.prop('data'),
+    // ).then(
+    //   R.map(R.prop('format')),
+    ).then(
       (elements: IElementDefinition[]) => {
         return { elements, options };
       },

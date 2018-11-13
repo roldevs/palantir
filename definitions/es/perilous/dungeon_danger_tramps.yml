@@ -11,6 +11,11 @@ data:
     - text: Cortante/apuñaladora
     - text: Confusión (laberinto...)
     - text: Gas (veneno, etc.)
-    - text: Elemento #
+    - related:
+        element:
+          search:
+            - locale: es
+              ns: perilous
+              type: element
     - text: Emboscada
     - text: Mágica

@@ -1,0 +1,37 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Entidad antinatural
+    options:
+      - text: No muerto
+        weight: 8
+        options:
+          - text: Aparición/fuego fatuo
+            weight: 4
+          - text: Fantasma/espectro
+            weight: 4
+          - text: Banshee
+          - text: Sombra/devorador
+            weight: 2
+          - text: Señor/Maestro de espíritus
+      - text: Planar
+        weight: 3
+        options:
+          - text: Diablillo (pequeño)
+            weight: 3
+          - text: Elemental menor
+            weight: 3
+          - text: Demonio/horror menor
+            weight: 3
+          - text: Elemental mayor
+          - text: Demonio/horror mayor
+          - text: Señor Diablo/elemental
+      - text: Divina
+        options:
+          - text: Agente
+            weight: 5
+          - text: Campeón
+            weight: 4
+          - text: Ejército (horda)
+            weight: 2
+          - text: Avatar

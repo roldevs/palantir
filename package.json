@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "pretest": "npm run build",
     "test": "node_modules/.bin/mocha -r ts-node/register spec/**/*.spec.ts spec/**/**/*.spec.ts",
     "run": "node_modules/.bin/ts-node index.ts",
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json",
@@ -11,7 +10,7 @@
     "build": "node_modules/.bin/tsc",
     "postinstall": "npm run meta:generate && npm run client:build && npm run build",
     "server": "node dist/server.js",
-    "start": "npm run server",
+    "start": "npm run build && npm run server",
     "watch": "node_modules/.bin/nodemon",
     "heroku:log": " heroku logs -a hall --tail",
     "heroku:push": "git push https://heroku:abee4578-ec40-4e9a-9597-17381eccab25@git.heroku.com/hall.git master",

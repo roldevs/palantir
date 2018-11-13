@@ -1,0 +1,16 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Rareza
+  options:
+    - text: Extraño color/olor/sonido
+    - text: Geométrico
+    - text: Red/interconectado/sistema
+    - text: Cristalino/vítreo
+    - text: Fúngico
+    - text: Gaseoso/humeante
+    - text: Espejismo/ilusión
+    - text: Volcánico/explosivo
+    - text: Magnético/repulsivo
+    - text: Desprovisto de vida
+    - text: Inesperadamente con vida

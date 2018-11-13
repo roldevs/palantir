@@ -1,0 +1,50 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Inusual
+  options:
+    - text: Planta/hongo
+      weight: 3
+    - text: Humano no muerto
+      weight: 2
+    - related:
+        humanoid:
+          text: Humanoide no muerto
+          search:
+            - locale: es
+              ns: perilous
+              type: humanoid
+    - text: Bestia + bestia
+      weight: 2
+      related:
+        beast:
+          search:
+            - locale: es
+              ns: perilous
+              type: beast
+    - text: Bestia + habilidad
+      weight: 2
+      related:
+        beast:
+          search:
+            - locale: es
+              ns: perilous
+              type: beast
+        ability:
+          search:
+            - locale: es
+              ns: perilous
+              type: ability
+    - text: Bestia + característica
+      weight: 2
+      related:
+        beast:
+          search:
+            - locale: es
+              ns: perilous
+              type: beast
+        feature:
+          search:
+            - locale: es
+              ns: perilous
+              type: feature

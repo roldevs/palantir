@@ -1,0 +1,23 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Peculiaridad de PNJ
+    options:
+      - text: Inseguro/racista/xenófobo
+      - text: Adicto (dulces, drogas, sexo, etc.)
+      - text: Fobia (araás, fuego, oscuridad, etc.)
+      - text: Alérgico/asmático/enfermo crónico
+      - text: Escéptico/paranoide
+      - text: Supersticioso/devoto/fanático
+      - text: Tacaño/acaparador
+      - text: Derrochador/gandul
+      - text: Pedante/sabelotodo
+      - text: Artístico/soñador/fantasioso
+      - text: Cándido/idealista
+      - related:
+          quirk:
+            text: Resulta ser [peculiaridad] a pesar de
+            search:
+              - locale: es
+                ns: perilous
+                type: npc_quirk

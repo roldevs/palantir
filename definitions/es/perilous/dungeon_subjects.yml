@@ -3,74 +3,23 @@ meta:
 data:
   text: Tema de la Mazmorra
   options:
-    - related:
+    - weight: 5
+      related:
         dungeon_mundane_subjects1:
           search:
             - locale: es
               ns: perilous
               type: dungeon_mundane_subjects
-    - related:
-        dungeon_mundane_subjects2:
-          search:
-            - locale: es
-              ns: perilous
-              type: dungeon_mundane_subjects
-    - related:
-        dungeon_mundane_subjects3:
-          search:
-            - locale: es
-              ns: perilous
-              type: dungeon_mundane_subjects
-    - related:
-        dungeon_mundane_subjects4:
-          search:
-            - locale: es
-              ns: perilous
-              type: dungeon_mundane_subjects
-    - related:
-        dungeon_mundane_subjects5:
-          search:
-            - locale: es
-              ns: perilous
-              type: dungeon_mundane_subjects
-    - related:
+    - weight: 4
+      related:
         dungeon_inusual_subjects6:
           search:
             - locale: es
               ns: perilous
               type: dungeon_inusual_subjects
-    - related:
-        dungeon_inusual_subjects7:
-          search:
-            - locale: es
-              ns: perilous
-              type: dungeon_inusual_subjects
-    - related:
-        dungeon_inusual_subjects8:
-          search:
-            - locale: es
-              ns: perilous
-              type: dungeon_inusual_subjects
-    - related:
-        dungeon_inusual_subjects9:
-          search:
-            - locale: es
-              ns: perilous
-              type: dungeon_inusual_subjects
-    - related:
+    - weight: 3
+      related:
         dungeon_extraordinary_subjects10:
-          search:
-            - locale: es
-              ns: perilous
-              type: dungeon_extraordinary_subjects
-    - related:
-        dungeon_extraordinary_subjects11:
-          search:
-            - locale: es
-              ns: perilous
-              type: dungeon_extraordinary_subjects
-    - related:
-        dungeon_extraordinary_subjects12:
           search:
             - locale: es
               ns: perilous

@@ -1,0 +1,16 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Pueblo
+  related:
+    property:
+      search:
+        - locale: es
+          ns: perilous
+          type: settle_town_properties
+    problem:
+      search:
+        - locale: es
+          ns: perilous
+          type: settle_town_problems
+

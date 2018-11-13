@@ -4,9 +4,11 @@ import path from 'path';
 import * as R from 'ramda';
 import localConnector from '../../src/lib/connectors/local';
 import elementModule from '../../src/lib/element';
+import metaTestModule from '../../src/lib/meta/test';
 import testRepository from '../../src/lib/repository/memory';
 import searchModule from '../../src/lib/search';
 import {
+  IMetaFactory,
   IOptionalElementDefinition,
   ISearchDefinition,
   ISearchResult,
@@ -21,13 +23,19 @@ describe('Element#get', () => {
   const connector = localConnector({
     rootPath: path.resolve(__dirname, '../../definitions'),
   });
+
+  const meta: IMetaFactory = metaTestModule();
+
   const element = elementModule({
     connector,
     repository,
+    meta,
   });
+
   const search = searchModule({
     connector,
     repository,
+    meta,
   });
 
   describe('no definition', () => {

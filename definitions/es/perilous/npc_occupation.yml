@@ -1,0 +1,41 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Ocupación del PNJ
+  options:
+    - related:
+        commoner:
+          search:
+            - locale: es
+              ns: perilous
+              type: npc_occupation_commoner
+    - related:
+        criminal:
+          search:
+            - locale: es
+              ns: perilous
+              type: npc_occupation_criminal
+    - related:
+        merchant:
+          search:
+            - locale: es
+              ns: perilous
+              type: npc_occupation_merchant
+    - related:
+        official:
+          search:
+            - locale: es
+              ns: perilous
+              type: npc_occupation_official
+    - related:
+        specialist:
+          search:
+            - locale: es
+              ns: perilous
+              type: npc_occupation_specialist
+    - related:
+        tradesperson:
+          search:
+            - locale: es
+              ns: perilous
+              type: npc_occupation_tradesperson

@@ -1,0 +1,16 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Fortaleza
+  related:
+    property:
+      search:
+        - locale: es
+          ns: perilous
+          type: settle_keep_properties
+    problem:
+      search:
+        - locale: es
+          ns: perilous
+          type: settle_keep_problems
+

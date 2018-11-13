@@ -1,0 +1,27 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Apariencia física de PNJ
+  options:
+    - text: Desfigurado (faltan dientes, un ojo, etc)
+      weight: 3
+    - text: Lesión crónica (pierna o brazo torpe, etc)
+      weight: 2
+    - text: Tatuado/picado de viruelas/con cicatrices
+      weight: 2
+    - text: Desarreglado/andrajoso/mugriento
+      weight: 2
+    - text: Grande/grueso/fornido
+      weight: 2
+    - text: Pelo destacable (de punta, largo, ninguno, etc.)
+    - text: Nariz destacable (grande, aguileña, etc.)
+    - text: Ojos destacables (azules, enrojecidos, etc.)
+    - text: Pulcro/bien vestido/acicalado
+    - text: Atractivo/guapo/despampanante
+    - related:
+        appearance:
+          text: Es [apariencia] a pesar de
+          search:
+            - locale: es
+              ns: perilous
+              type: npc_appearance

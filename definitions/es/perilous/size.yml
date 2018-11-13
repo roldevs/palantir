@@ -1,0 +1,13 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Tamaño
+  options:
+    - text: Diminuto
+    - text: Pequeño
+      weight: 2
+    - text: Tamaño medio (humano)
+      weight: 6
+    - text: Grande
+      weight: 2
+    - text: Enorme

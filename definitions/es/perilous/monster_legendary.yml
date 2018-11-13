@@ -1,0 +1,45 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Legendario
+  options:
+    - text: Dragón/coloso (enorme)
+      weight: 3
+    - weight: 3
+      related:
+        monster_unusual:
+          text: Inusual + enorme
+          search:
+            - locale: es
+              ns: perilous
+              type: monster_unusual
+    - weight: 3
+      related:
+        monster_rare:
+          text: Raro + enorme
+          search:
+            - locale: es
+              ns: perilous
+              type: monster_rare
+    - weight: 3
+      related:
+        beast:
+          text: Bestia + dragón
+          search:
+            - locale: es
+              ns: perilous
+              type: beast
+    - related:
+        monster_unusual:
+          text: Inusual + dragón
+          search:
+            - locale: es
+              ns: perilous
+              type: monster_unusual
+    - related:
+        monster_rare:
+          text: Rare + dragón
+          search:
+            - locale: es
+              ns: perilous
+              type: monster_rare

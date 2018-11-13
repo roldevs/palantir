@@ -10,7 +10,12 @@ data:
     - text: Sumo Sacerdote
     - text: Oráculo
     - text: Mago/bruja/alquimista
-    - text: Monstruo #
+    - related:
+        monster:
+          search:
+            - locale: es
+              ns: perilous
+              type: monster
     - text: Espíritu malavado/fantasma
     - text: Señor no muerto
     - text: Demonio

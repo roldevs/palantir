@@ -1,18 +1,19 @@
-// import Bluebird from 'bluebird';
-// import * as R from 'ramda';
-// import {
-//   IMetaIdModule,
-//   ISearchDefinition,
-// } from '../typings';
+import Bluebird from 'bluebird';
+import * as R from 'ramda';
+import {
+  IMetaIdModule,
+  ISearchDefinition,
+} from '../typings';
+import { compactArray } from '../utils';
 
-// const metaIdModule: IMetaIdModule =
-// (metaDefinition) => {
-//   const get: (id: string) => ISearchDefinition =
-//   (id) => R.view(R.lensPath(['ids', id]), metaDefinition);
+const metaIdModule: IMetaIdModule =
+(metaDefinition) => {
+  const search: (id: string) => ISearchDefinition[] =
+  (id) => compactArray([R.view(R.lensPath(['ids', id]), metaDefinition)]);
 
-//   return {
-//     get,
-//   };
-// };
+  return {
+    search,
+  };
+};
 
-// export default metaIdModule;
+export default metaIdModule;

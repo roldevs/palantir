@@ -2,16 +2,20 @@
 import { expect } from 'chai';
 import * as R from 'ramda';
 import testConnector from '../../src/lib/connectors/test';
+import metaTestModule from '../../src/lib/meta/test';
 import testRepository from '../../src/lib/repository/memory';
 import searchModule from '../../src/lib/search';
 import {
   IElement,
   IElementDefinition,
+  IMetaFactory,
   ISearchDefinition,
   ISearchResult,
 } from '../../src/lib/typings';
 
 describe('Search#find', () => {
+  const meta: IMetaFactory = metaTestModule();
+
   const repository = testRepository({
     locale: 'es',
     elements: {},
@@ -53,6 +57,7 @@ describe('Search#find', () => {
     const search = searchModule({
       connector,
       repository,
+      meta,
     });
 
     describe('with one element search', () => {
@@ -161,6 +166,7 @@ describe('Search#find', () => {
     const search = searchModule({
       connector,
       repository,
+      meta,
     });
     it('should return empty array', (done) => {
       const searchDef: ISearchDefinition[] = [{

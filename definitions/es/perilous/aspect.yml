@@ -1,0 +1,21 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Aspecto
+  options:
+    - text: Poder/fuerza
+    - text: Engaño/destreza
+    - text: Tiempo/constitución
+    - text: Conocimiento/inteligencia
+    - text: Naturaleza/sabiduría
+    - text: Cultura/carisma
+    - text: Guerra/mentiras/discordia
+    - text: Paz/verdad/equilibrio
+    - text: Odio/envidia
+    - text: Amor/admiración
+    - related:
+        element:
+          search:
+            - locale: es
+              ns: perilous
+              type: element

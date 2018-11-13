@@ -1,0 +1,15 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Condición
+  options:
+    - text: Naciendo/siendo creado
+    - text: Intacto/saludable/estable
+      weight: 3
+    - text: Ocupado/activo/alerta
+      weight: 3
+    - text: Agotado/cansado/débil
+      weight: 2
+    - text: Desocupado/perdido
+    - text: Ruinoso/estropeado/moribundo
+    - text: Desaparecido/muerto

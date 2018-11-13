@@ -1,0 +1,26 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Peligro
+    options:
+      - weight: 1
+        related:
+          unnatural:
+            search:
+              - locale: es
+                ns: perilous
+                type: danger_unnatural
+      - weight: 5
+        related:
+          hazard:
+            search:
+              - locale: es
+                ns: perilous
+                type: danger_hazard
+      - weight: 6
+        related:
+          criature:
+            search:
+              - locale: es
+                ns: perilous
+                type: creature

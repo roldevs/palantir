@@ -39,5 +39,10 @@ data:
             weight: 2
           - text: Comida/suministro
             weight: 2
-          - text: Tesoro #
-            weight: 3
+          - weight: 3
+            related:
+              treasure:
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: treasure

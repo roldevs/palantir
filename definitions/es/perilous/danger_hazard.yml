@@ -1,0 +1,46 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Riesgo
+    options:
+      - text: Antinatural
+        weight: 2
+        options:
+          - text: Corrupcción/plaga/maldición
+            weight: 3
+          - text: Trampa/efecto arcano
+            weight: 5
+          - text: Trampa/efecto planar
+            weight: 3
+          - text: Divino
+      - text: Natural
+        weight: 8
+        options:
+          - text: Neblina/niebla cegadora
+            weight: 2
+          - text: Pantano/lodazal/arenas movedizas
+            weight: 2
+          - text: Escollo/sumidero/sima
+            weight: 3
+          - text: Veneno/enfermedad
+            weight: 2
+          - text: Inundación/incendio/tornado
+            weight: 2
+          - related:
+              oddity:
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: oddity
+      - text: Trampa
+        weight: 2
+        options:
+          - text: Alarma
+            weight: 2
+          - text: Atrapante/paralizante
+            weight: 3
+          - text: Dañina (foso, etc.)
+            weight: 3
+          - text: Gas/fuego/veneno
+          - text: Emboscada
+            weight: 3

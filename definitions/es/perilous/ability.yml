@@ -1,0 +1,29 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Habilidad
+  options:
+    - text: Bendecir/maldecir
+    - text: Enmarañar/Apresar/atrapar
+    - text: Veneno/enfermedad
+    - text: Paralizar/petrificar
+    - text: Imitar forma/camuflaje
+    - text: Seducir/hipnotizar
+    - text: Disolver/desintegrar
+    - related:
+        magic:
+          text: Magia
+          search:
+            - locale: es
+              ns: perilous
+              type: magic_type
+    - text: Drenar vida/magia
+    - related:
+        element:
+          text: Inumidad a Elemento
+          search:
+            - locale: es
+              ns: perilous
+              type: element
+    - text: Leer/controlar mentes
+    - text: Agonizando

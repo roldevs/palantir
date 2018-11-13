@@ -1,0 +1,29 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Monstruo
+    options:
+      - weight: 7
+        related:
+          monster_unusual:
+            text: Monstruo Inusual
+            search:
+              - locale: es
+                ns: perilous
+                type: monster_unusual
+      - weight: 3
+        related:
+          monster_rare:
+            text: Monstruo Raro
+            search:
+              - locale: es
+                ns: perilous
+                type: monster_rare
+      - weight: 2
+        related:
+          monster_legendary:
+            text: Monstruo Legendario
+            search:
+              - locale: es
+                ns: perilous
+                type: monster_legendary

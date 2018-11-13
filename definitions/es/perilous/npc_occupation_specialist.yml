@@ -1,0 +1,18 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Ocupación PNJ Especialista
+  options:
+    - text: Entrerrador
+    - text: Erudito/sabio/mago
+    - text: Escritor/ilustrador de códices
+    - text: Perfumista
+    - text: Arquitecto/ingeniero
+    - text: Cerrajero/relojero
+    - text: Galeno/apotecario
+    - text: Navegante/guía
+    - text: Alquimista/astrólogo
+    - text: Espía/diplomático
+    - text: Cartógrafo
+    - text: Inventor
+

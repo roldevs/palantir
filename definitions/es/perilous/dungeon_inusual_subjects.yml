@@ -4,7 +4,12 @@ data:
   text: Tema Inusual de la Mazmorra
   options:
     - text: Creación/invención
-    - text: Elemento #
+    - related:
+        element:
+          search:
+            - locale: es
+              ns: perilous
+              type: element
     - text: Conocimiento/aprendizaje
     - text: Crecimiento/expansión
     - text: Crecimiento misterio

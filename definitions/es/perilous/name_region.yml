@@ -1,0 +1,91 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Nombre Región
+    options:
+      - weight: 4
+        text: '[Adjetivo] [Terreno]'
+        related:
+          adjective:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_adjective
+          terrain:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_terrain
+      - weight: 2
+        text: '[Terreno] de(l) [Nombre]'
+        related:
+          terrain:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_terrain
+          name:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_name
+      - weight: 2
+        text: 'El [Terreno] [Adjetivo]'
+        related:
+          terrain:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_terrain
+          adjective:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_adjective
+      - weight: 2
+        text: '[Nombre] [Terreno]'
+        related:
+          name:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_name
+          terrain:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_terrain
+      - text: '[Terreno] [Adjetivo] de [Nombre]'
+        related:
+          terrain:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_terrain
+          adjective:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_adjective
+          name:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_name
+      - text: '[Adjetivo] [Terreno] de(l) [Nombre]'
+        related:
+          adjective:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_adjective
+          terrain:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_terrain
+          name:
+            search:
+              - locale: es
+                ns: perilous
+                type: name_region_name

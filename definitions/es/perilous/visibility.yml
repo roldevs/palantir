@@ -1,0 +1,14 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Visibilidad
+  options:
+    - text: Enterrado/casi invisible/camuflado
+      weight: 2
+    - text: Cobertura parcial/cubierto/oculto
+      weight: 4
+    - text: Obvio/a simple vista
+      weight: 3
+    - text: Visible a corta distancia
+      weight: 2
+    - text: Visible desde una gran distancia

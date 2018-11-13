@@ -1,0 +1,23 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Personalidad de PNJ
+    options:
+      - text: Solitario/aislado/antisocial
+      - text: Cruel/beligerante/abusón
+      - text: Ansioso/miedoso/cobarde
+      - text: Envidioso/codicioso/avaricioso
+      - text: Frío/altanero/arrogante
+      - text: Torpe/tímido/se odia a sí mismo
+      - text: Metódico/compulsivo/controlador
+      - text: Seguro/impulsivo/imprudente
+      - text: Amable/generoso/compasivo
+      - text: Despreocupado/relajado/pacífico
+      - text: Alegre/feliz/optimista
+      - related:
+          personality:
+            text: Es [personality] a pesar de
+            search:
+              - locale: es
+                ns: perilous
+                type: npc_personality

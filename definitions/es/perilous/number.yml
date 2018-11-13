@@ -1,0 +1,8 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Número
+  options:
+    - text: Solitario
+    - text: Grupo (1d6+2)
+    - text: Horda (4d6 por oleada)

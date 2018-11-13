@@ -1,0 +1,15 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Alineamiento
+  options:
+    - text: Caótico
+      weight: 2
+    - text: Malvado
+      weight: 2
+    - text: Neutral
+      weight: 4
+    - text: Bueno
+      weight: 2
+    - text: Legal
+      weight: 2

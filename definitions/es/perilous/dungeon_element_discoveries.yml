@@ -8,10 +8,10 @@ data:
     - text: Pilares/columnas
     - text: Puerta o verja cerrada
     - text: Huecos/nichos
-    - text: Puente/escalera/rampa #
+    - text: Puente/escalera/rampa
     - text: Fuente/pozo/estanque
     - text: Acertijo
     - text: Altar/estrado/tribuna
     - text: Estatua/ídolo
     - text: Estanque, estatua o ídolos (mágicos)
-    - text: Conexión a otra mazmorra #
+    - text: Conexión a otra mazmorra

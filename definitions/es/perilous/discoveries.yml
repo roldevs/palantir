@@ -25,7 +25,12 @@ data:
             - locale: es
               ns: perilous
               type: discoveries_evidence
-    - text: Criatura #
+    - related:
+        creature:
+          search:
+            - locale: es
+              ns: perilous
+              type: creature
     - text: Estructura
       weight: 4
       related:

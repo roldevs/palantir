@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Orientación
+  options:
+    - text: Abajo/hacia tierra
+      weight: 2
+    - text: Norte
+    - text: Noroeste
+    - text: Este
+    - text: Sureste
+    - text: Sur
+    - text: Suroeste
+    - text: Oeste
+    - text: Noroeste
+    - text: Arriba/hacia el cielo
+      weight: 2

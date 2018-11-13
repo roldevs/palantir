@@ -1,0 +1,18 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Ocupación PNJ Criminal
+  options:
+    - text: Bandido/forajido/rufián
+      weight: 2
+    - text: Ladrón
+      weight: 2
+    - text: Guardespaldas/matón
+      weight: 2
+    - text: Ratero
+      weight: 2
+    - text: Traficante/perista
+    - text: Estafador
+    - text: Lugarteniente
+    - text: Jefazo
+

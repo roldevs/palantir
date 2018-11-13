@@ -2,15 +2,19 @@
 import { expect } from 'chai';
 import * as R from 'ramda';
 import testConnector from '../../src/lib/connectors/test';
+import metaTestModule from '../../src/lib/meta/test';
 import randomModule from '../../src/lib/random';
 import testRepository from '../../src/lib/repository/memory';
 import {
+  IMetaFactory,
   IOptionalElement,
   IOptionalElementDefinition,
   ISearchDefinition,
 } from '../../src/lib/typings';
 
 describe('Random#random', () => {
+  const meta: IMetaFactory = metaTestModule();
+
   const repository = testRepository({
     locale: 'es',
     elements: {},
@@ -52,6 +56,7 @@ describe('Random#random', () => {
     const random = randomModule({
       connector,
       repository,
+      meta,
     });
 
     describe('with one element search', () => {

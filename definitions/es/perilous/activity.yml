@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Actividad
+  options:
+    - text: Preparando una trampa/emboscada
+    - text: Luchando/en guerra
+    - text: Merodeando/de patrulla
+    - text: Cazando/buscando comida
+    - text: Comiendo/descansando
+    - text: Trabajando/rezando
+    - text: Viajando/trasladándose
+    - text: Explorando/perdido
+    - text: Volviendo a casa
+    - text: Construyendo/excavando
+    - text: Durmiendo
+    - text: Agonizando

@@ -1,16 +1,12 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import path from 'path';
-import * as R from 'ramda';
-import metaModule from '../../src/lib/meta';
+import metaModule from '../../../src/lib/meta/persistence';
 import {
   IMetaDefinition,
-  IOptionalElementDefinition,
   ISearchDefinition,
-  ISearchResult,
-} from '../../src/lib/typings';
+} from '../../../src/lib/typings';
 
-describe('Meta#generate', () => {
+describe('MetaPersistence#generate', () => {
   const meta = metaModule({
     rootPath: './definitions',
     metaFilePath: 'meta.yml',

@@ -11,6 +11,7 @@ const randomController = randomApiController();
 router.route('/types.json').get(foldersApiController(localeFolder()).index);
 router.route('/types/:locale.json').get(foldersApiController(nsFolder()).index);
 router.route('/types/:locale/:ns.json').get(foldersApiController(typeFolder()).index);
-router.route('/random/:locale/:ns/:type.json').get(randomController.randomJson);
+router.route('/random/:locale/:ns/:type.json').get(randomController.index);
+router.route('/random/:id.json').get(randomController.byId);
 
 export default router;

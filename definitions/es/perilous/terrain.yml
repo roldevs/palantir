@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Terreno
+  options:
+    - text: Erial/desierto
+    - text: Llanura/planicie
+    - text: Humedal/marjal/pantano
+    - text: Selva/bosque/jungla
+    - text: Tierras altas/colinas
+    - text: Montañas
+    - related:
+        oddity:
+          search:
+            - locale: es
+              ns: perilous
+              type: oddity

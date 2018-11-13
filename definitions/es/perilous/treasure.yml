@@ -1,0 +1,35 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Tesoro
+    options:
+      - text: Objeto útil
+        weight: 8
+        options:
+          - text: Llave/ganzúa
+          - text: Poción/comida
+          - text: Ropajes/cama
+          - text: Jarra/vasija/copa
+          - text: Cesta/cajón/cofre
+          - text: Instrumento/herramienta
+          - text: Libro/pergamino
+          - text: Arma/bastón/varita
+          - text: Armadura/escudo/yelmo
+          - text: Espejo/reloj de arena
+          - text: Mascota/montura
+          - text: Aparato/constructo
+      - text: Obra de arte
+        weight: 8
+        options:
+          - text: Baratija/dije
+          - text: Pintura/cerámica
+          - text: Anillo/guantes
+          - text: Alfombra/tapete
+          - text: Estatuilla/ídolo
+          - text: Bandera/estandarte
+          - text: Pulsera/brazalete
+          - text: Colgante/amuleto
+          - text: Cinturón/arnés
+          - text: Sombrero/máscara
+          - text: Orbe/sello/báculo
+          - text: Corona/cetro

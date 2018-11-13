@@ -1,0 +1,18 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Problemas del Pueblo
+  options:
+    - text: 'Se ha vuelto demasiado grande y carece de un recurso importante: Necesidad (ese recurso), Comercio (un asentamiento con el recurso)'
+      weight: 2
+    - text: 'Presta defensa a otros: Juramento (Defínelo), -Defensas'
+      weight: 2
+    - text: 'Se rumorea que un forajido vive en él: Personalidad (el forajido), Enemistad (asentamiento en el que cometió sus crímenes)'
+      weight: 2
+    - text: 'Ha copado el comercio de un bien/servicio: Exótico (Ese bien/servicio), Enemistad (asentamiento que lo ambiciona)'
+      weight: 2
+    - text: 'Sufre una enfermedad: -Población'
+      weight: 2
+    - text: 'Conocido punto de encuentro: +Población, Sin ley'
+      weight: 2
+

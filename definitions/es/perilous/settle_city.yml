@@ -1,0 +1,16 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Ciudad
+  related:
+    property:
+      search:
+        - locale: es
+          ns: perilous
+          type: settle_city_properties
+    problem:
+      search:
+        - locale: es
+          ns: perilous
+          type: settle_city_problems
+

@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Causa de ruina
+  options:
+    - text: Desastre arcano
+    - text: Maldición/maleficio
+    - text: Terremoto/incendio/inundación
+      weight: 2
+    - text: Plaga/hambruna/sequía
+      weight: 2
+    - text: Infestación de monstruos
+      weight: 2
+    - text: Guerra/invasión
+      weight: 2
+    - text: Recursos agotados
+    - text: Mejores expectativas en otro lugar

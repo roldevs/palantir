@@ -1,0 +1,15 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Característica de la Ciudad
+  options:
+    - text: 'Defensas permanentes, como muros: +Defensas, Juramento (defínelo)'
+      weight: 3
+    - text: 'Gobernada por una única persona: Personalidad (el gobernante), Poder (político)'
+      weight: 3
+    - text: 'Multicultural: Enana, Élfica o ambas'
+    - text: 'Centro de comercio: Comercio (con todos los asentamientos cercanos), +Prosperidad'
+      weight: 3
+    - text: 'Antigua, construida sobre las ruinas de sí misma: Historia (defínela), Divina'
+    - text: 'Centro de cultura: Arcano, Manufactura (defínela), Poder (arcano)'
+

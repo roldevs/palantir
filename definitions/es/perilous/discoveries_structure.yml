@@ -8,7 +8,12 @@ data:
           - text: Excavación
           - text: Megalito
           - text: Estatua/ídolo/tótem
-          - text: Rareza
+          - related:
+              oddity:
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: oddity
       - weight: 2
         related:
           infraestructure:

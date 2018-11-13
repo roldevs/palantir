@@ -1,0 +1,61 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Nombre de Región
+  options:
+    - related:
+      name:
+        search:
+          - locale: en
+            ns: ultbx
+            type: names
+    - text: Bruja
+    - text: Calavera
+    - text: Ceniza
+    - text: Cielo
+    - text: Demonio
+    - text: Desesperación
+    - text: Desolación
+    - text: Destino
+    - text: Dios
+    - text: Dragón
+    - text: Esperanza
+    - text: Espina
+    - text: Fantasma
+    - text: Fuego
+    - text: Furia
+    - text: Gigante
+    - text: Honor
+    - text: Horror
+    - text: Hueso
+    - text: Humo
+    - text: Infierno
+    - text: Lluvia
+    - text: Luz
+    - text: Maldición
+    - text: Miedo
+    - text: Muerte
+    - text: Muerto
+    - text: Niebla
+    - text: Oro
+    - text: Oscuridad
+    - text: Paraíso
+    - text: Peligro
+    - text: Pesadumbre
+    - text: Plata
+    - text: Refugio
+    - text: Reina
+    - text: Rey
+    - text: Salvador
+    - text: Señor
+    - text: Serpiente
+    - text: Sol
+    - text: Sombra
+    - text: Tormenta
+    - text: Traidor
+    - text: Tristeza
+    - text: Trol
+    - text: Trueno
+    - text: Victoria
+    - text: Vida
+

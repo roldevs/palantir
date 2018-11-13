@@ -8,10 +8,21 @@ data:
     - text: Señales de batalla
     - text: Escritos/tallas
     - text: Advertencia
-    - text: Criatura muerta #
+    - related:
+        creature:
+          text: Criatura muerta
+          search:
+            - locale: es
+              ns: perilous
+              type: creature
     - text: Huesos/restos
     - text: Libros/pergaminos/mapas
     - text: Puerta (o pared) rota
     - text: Brisa/viento/aroma
     - text: Liquen/musgo/hongos
-    - text: Rareza #
+    - related:
+        oddity:
+          search:
+            - locale: es
+              ns: perilous
+              type: oddity

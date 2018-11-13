@@ -1,0 +1,50 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Bestia
+    options:
+      - text: Terrestre
+        weight: 7
+        options:
+          - text: Termita/pulga/liendre
+          - text: Caracol/babosa/gusano
+          - text: Hormiga/ciempiés/escorpión
+          - text: Serpiente/lagarto
+          - text: Ratón/rata/comadreja
+          - text: Jabalí/cerdo
+          - text: Perro/zorro/lobo
+          - text: Gato/león/pantera
+          - text: Ciervo/caballo/camello
+          - text: Buey/rinoceronte
+          - text: Oso/simio/gorila
+          - text: Mamut/dinosaurio
+      - text: Aérea
+        weight: 3
+        options:
+          - text: Mosquito/luciérnaga
+          - text: Langosta/libélula/polilla
+          - text: Abeja/avispa
+          - text: Pollo/pato/ganso
+          - text: Pájaro cantor/loro
+          - text: Gaviota/ave acuática
+          - text: Garza/grulla/cigüeña
+          - text: Cuervo/grajo
+          - text: Halcón/cernícalo
+          - text: Águila/búho
+          - text: Cóndor
+          - text: Ptenarodon
+      - text: Acuática
+        weight: 2
+        options:
+          - text: Insecto
+          - text: Medusa/anémona
+          - text: Almeja/ostra/caracol
+          - text: Anguila/serpiente
+          - text: Rana/sapo
+          - text: Pez
+          - text: Cangrejo/langosta
+          - text: Tortuga
+          - text: Caimán/cocodrilo
+          - text: Delfín/tiburón
+          - text: Calamar/pulpo
+          - text: Ballena

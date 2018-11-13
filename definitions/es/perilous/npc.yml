@@ -1,0 +1,34 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: PNJ
+  related:
+    context:
+      text: Trasfondo
+      search:
+        - locale: es
+          ns: perilous
+          type: npc_context
+    activity:
+      text: Actividad
+      search:
+        - locale: es
+          ns: perilous
+          type: activity
+    alignment:
+      search:
+        - locale: es
+          ns: perilous
+          type: alignment
+    occupation:
+      text: Ocupación
+      search:
+        - locale: es
+          ns: perilous
+          type: npc_occupation
+    trait:
+      text: Rasgo
+      search:
+        - locale: es
+          ns: perilous
+          type: npc_trait

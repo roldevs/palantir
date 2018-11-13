@@ -8,8 +8,13 @@ data:
     - text: Natural (cuevas)
       weight: 2
     - text: Orden religiosa/secta
-    - text: Humanoide #
-      weight: 2
+    - weight: 2
+      related:
+        humanoid:
+          search:
+            - locale: es
+              ns: perilous
+              type: humanoid
     - text: Enanos/gnomos
       weight: 2
     - text: Elfos

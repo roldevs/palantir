@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Adjetivo
+  options:
+    - text: Resbaladizo/baboso
+    - text: Áspero/duro/puntiagudo
+    - text: Liso/suave/romo
+    - text: Corroído/oxidado
+    - text: Podrido/decadente
+    - text: Roto/quebradizo
+    - text: Apestoso/maloliente
+    - text: Débil/delgado/exhausto
+    - text: Fuerte/gordo/lleno
+    - text: Pálido/pobre/superficial
+    - text: Oscuro/rico/profundo
+    - text: Colorido

@@ -1,0 +1,15 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Actitud
+  options:
+    - text: Atacando
+    - text: Hostil/agresivo
+      weight: 3
+    - text: Precavido/dubitativo
+      weight: 2
+    - text: Temeroso/huidizo
+    - text: Neutral
+      weight: 2
+    - text: Curioso/confiado
+    - text: Amistoso

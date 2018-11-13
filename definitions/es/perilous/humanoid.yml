@@ -1,0 +1,57 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Humanoide
+    options:
+      - text: Común
+        weight: 7
+        options:
+          - text: Mediano (pequeño)
+            weight: 3
+          - text: Goblin/kobold (pequeño)
+            weight: 2
+          - text: Enano/gnomo (pequeño)
+            weight: 2
+          - text: Orco/trasgo/gnoll
+            weight: 2
+          - text: Semielfo/semiorco...
+            weight: 2
+          - text: Elfo
+      - text: Infrecuente
+        weight: 3
+        options:
+          - text: Hada (diminuto)
+          - text: Félido/cánido
+            weight: 2
+          - text: Hombre lagarto/tritón
+            weight: 3
+          - text: Aviano
+          - text: Ogro/troll (Grande)
+            weight: 3
+          - text: Cíclope/gigante (Grande)
+            weight: 2
+      - text: Híbrido
+        weight: 2
+        options:
+          - text: Centauro
+          - text: Hombre lobo/hombre oso
+          - text: Cambiaformas (humano + bestia)
+          - related:
+              beast:
+                text: Humano + bestia
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: beast
+          - text: Humano + 2 bestias
+            related:
+              beast1:
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: beast
+              beast2:
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: beast

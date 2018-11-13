@@ -1,13 +1,12 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import * as R from 'ramda';
 import testConnector from '../../src/lib/connectors/test';
 import elementModule from '../../src/lib/element';
+import metaTestModule from '../../src/lib/meta/test';
 import testRepository from '../../src/lib/repository/memory';
 import searchModule from '../../src/lib/search';
 import {
-  IElement,
-  IElementDefinition,
+  IMetaFactory,
   IOptionalElementDefinition,
   ISearchDefinition,
   ISearchResult,
@@ -101,13 +100,19 @@ describe('Element#get', () => {
       },
     },
   });
+
+  const meta: IMetaFactory = metaTestModule();
+
   const element = elementModule({
     connector,
     repository,
+    meta,
   });
+
   const search = searchModule({
     connector,
     repository,
+    meta,
   });
 
   describe('arms', () => {

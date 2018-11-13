@@ -1,0 +1,25 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Raro
+  options:
+    - text: Limo/cieno (amorfo)
+      weight: 3
+    - text: Creación (constructo)
+      weight: 3
+    - text: Bestia + rareza
+      weight: 3
+      related:
+        oddity:
+          search:
+            - locale: es
+              ns: perilous
+              type: oddity
+    - weight: 3
+      related:
+        danger_unnatural:
+          text: Entidad antinatural
+          search:
+            - locale: es
+              ns: perilous
+              type: danger_unnatural

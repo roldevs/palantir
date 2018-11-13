@@ -1,0 +1,37 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Característica
+  options:
+    - text: Blindado
+    - text: Alado/volador
+      weight: 2
+    - text: Múltiples cabezas
+    - text: Muchos ojos/un ojo
+    - text: Múltiples extremidades/colas
+    - text: Tentáculos/apéndices
+    - related:
+        aspect:
+          search:
+            - locale: es
+              ns: perilous
+              type: aspect
+    - related:
+        element:
+          search:
+            - locale: es
+              ns: perilous
+              type: element
+    - related:
+        magic:
+          text: Magia
+          search:
+            - locale: es
+              ns: perilous
+              type: magic_type
+    - related:
+        oddity:
+          search:
+            - locale: es
+              ns: perilous
+              type: oddity

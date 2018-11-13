@@ -1,47 +1,32 @@
 import * as R from 'ramda';
-import localConnectorCreator from '../../../lib/connectors/local';
-import repositoryCreator from '../../../lib/repository/memory';
-import worldCreator from '../../../lib/world';
-import errorHandler from '../../errorHandler';
-import trackEvent from '../../track';
-import { requestPath } from '../../util';
+import { IWorldElement } from '../../../lib/typings';
+import randomByIdRequest from './random/byId';
+import randomIndexRequest from './random/index';
 
-const randomRequest = (req: any, res: any) => {
-  const locale: string = R.defaultTo('es', req.params.locale);
-  const world = worldCreator({
-    connector: localConnectorCreator({
-      rootPath: './definitions',
-    }),
-    repository: repositoryCreator({
-      locale,
-      elements: {},
-    }),
-  });
-
-  return trackEvent(`/api/random/${requestPath(req)}`, 'Folders').then(() => {
-    return world.get({
-      search: [{
-        locale: req.params.locale,
-        ns: req.params.ns,
-        type: req.params.type,
-      }],
-    });
-  }).catch(errorHandler(res, process.env).error);
-};
-
-const randomApiController = () => {
-  const randomJson = (req: any, res: any) => {
-    return randomRequest(req, res).then((data: any) => {
+const indexRandomApiController = () => {
+  const index = (req: any, res: any) => {
+    return randomIndexRequest(req, res).then((data: IWorldElement[]) => {
       res.json({
         success: true,
-        data,
+        data: R.map(R.prop('format'), data),
+        // data: R.map(R.pick(['format']), data),
+      });
+    });
+  };
+
+  const byId = (req: any, res: any) => {
+    return randomByIdRequest(req, res).then((data: IWorldElement[]) => {
+      res.json({
+        success: true,
+        data: R.map(R.pick(['format']), data),
       });
     });
   };
 
   return {
-    randomJson,
+    index,
+    byId,
   };
 };
 
-export default randomApiController;
+export default indexRandomApiController;

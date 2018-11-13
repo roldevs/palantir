@@ -1,0 +1,11 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Tipo de Magia
+  options:
+    - text: Adivinación
+    - text: Encantamiento
+    - text: Evocación
+    - text: Ilusión
+    - text: Nigromancia
+    - text: Invocación

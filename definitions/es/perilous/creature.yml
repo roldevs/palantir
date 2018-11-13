@@ -1,0 +1,86 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Criatura
+  options:
+    - weight: 4
+      related:
+        beast:
+          search:
+            - locale: es
+              ns: perilous
+              type: beast
+        activity:
+          search:
+            - locale: es
+              ns: perilous
+              type: activity
+        disposition:
+          search:
+            - locale: es
+              ns: perilous
+              type: disposition
+        number:
+          search:
+            - locale: es
+              ns: perilous
+              type: number
+        size:
+          search:
+            - locale: es
+              ns: perilous
+              type: size
+    - weight: 3
+      related:
+        humanoid:
+          search:
+            - locale: es
+              ns: perilous
+              type: humanoid
+        activity:
+          search:
+            - locale: es
+              ns: perilous
+              type: activity
+        disposition:
+          search:
+            - locale: es
+              ns: perilous
+              type: disposition
+        number:
+          search:
+            - locale: es
+              ns: perilous
+              type: number
+    - weight: 3
+      related:
+        monster:
+          search:
+            - locale: es
+              ns: perilous
+              type: monster
+        activity:
+          search:
+            - locale: es
+              ns: perilous
+              type: activity
+        disposition:
+          search:
+            - locale: es
+              ns: perilous
+              type: disposition
+        alignment:
+          search:
+            - locale: es
+              ns: perilous
+              type: alignment
+        number:
+          search:
+            - locale: es
+              ns: perilous
+              type: number
+        size:
+          search:
+            - locale: es
+              ns: perilous
+              type: size

@@ -1,0 +1,18 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Ocupación PNJ Cargo Oficial
+  options:
+    - text: Pregonero
+    - text: Recaudador de impuestos
+    - text: Escudero/aristócrata
+      weight: 2
+    - text: Alguacil/sheriff/jefe de guardia
+    - text: Alcalde/magistrado
+    - text: Sacerdote/obispo/abad
+    - text: Maestro gremial
+    - text: Caballero/templario
+    - text: Sumo sacerdote
+    - text: Noble (barón, etc.)
+    - text: Alta nobleza/rey/reina
+

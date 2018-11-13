@@ -1,0 +1,16 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Problemas de la Ciudad
+  options:
+    - text: 'Ha crecido más que sus recursos: +Población, Necesidad (comida)'
+      weight: 3
+    - text: 'Tiene planes para el territorio cercano: Enemistad (asentamientos cercanos), +Defensas'
+      weight: 3
+    - text: 'Gobernada por una teocracia: -Defensas, Poder (divino)'
+      weight: 2
+    - text: 'Gobernada por sus gentes: -Defensas, +Población'
+      weight: 2
+    - text: 'Tiene defensas sobrenaturales: +Defensas, Plaga (relacionada con las criaturas sobrenaturales)'
+    - text: 'Está en un lugar de poder: Arcana, Personalidad (quienquiera que vigile el lugar de poder), Poder (criaturas mágicas)'
+

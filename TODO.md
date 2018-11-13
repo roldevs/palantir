@@ -1,10 +1,9 @@
 
 ## Mejoras
 
-* Related puede ser el resultado de un dado y no necesitar ir a otra tabla para calcularlo
-* Count de search puede depender de dado
-* Sistema de pesos
 
+* Las ISearchRelated pueden tener el locale y el sistema opcional porque coinciden con la propia tabla
+* Poder buscar todas las tablas con un mismo tipo, idependientemente del sistema/idioma
 
 
 * Uglify client javascript
@@ -15,3 +14,5 @@
 * Dar un nombre a los elementos guardados
 * Categorizar las definiciones, añadirles iconos y tener una API para acceder a ellas y así generar la UI dinámicamente.
 * Seleccion aleatoria con pesos
+
+gtVrDuiDfck831PqWsLEZy5gyDz1cltogtVrDuiDfck831PqWsLEZy5gyDz1clto

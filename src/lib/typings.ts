@@ -105,7 +105,7 @@ interface IRepositoryOptions {
   };
 }
 
-interface IMetaModuleOptions {
+interface IMetaOptions {
   rootPath: string;
   metaFilePath: string;
 }
@@ -121,18 +121,27 @@ interface IRepositoryFactory {
 }
 
 interface IMetaFactory {
-  getById: (id: string) => Bluebird<ISearchDefinition>;
+  getById: (id: string) => Bluebird<ISearchDefinition[]>;
+}
+
+interface IWorldFactory {
+  get: (search: IRelatedElement) => Bluebird<IWorldElement[]>;
+  getById: (id: string) => Bluebird<IWorldElement[]>;
 }
 
 interface IWorldDefinition {
   connector: IConnectorFactory;
   repository: IRepositoryFactory;
+  meta: IMetaFactory;
 }
 
-type IWorldModule = (world: IWorldDefinition) => {
-  get: (search: IRelatedElement) => Bluebird<IElementFormatted[]>;
-  getById: (id: string) => Bluebird<IElementFormatted[]>;
-};
+interface IWorldElement {
+  meta?: IMetaDefinition;
+  data?: IElementDefinition[];
+  format: IElementFormatted | null;
+}
+
+type IWorldModule = (world: IWorldDefinition) => IWorldFactory;
 
 type IElementModule = (world: IWorldDefinition) => {
   get: (element: IOptionalElementDefinition | IOptionalElement) => Bluebird<IOptionalElementDefinition>;
@@ -175,7 +184,7 @@ type IRandomModule = (world: IWorldDefinition) => {
 };
 
 type ICliModule = (args: string[]) => {
-  get: () => Bluebird<IElementFormatted[]>;
+  get: () => Bluebird<IWorldElement[]>;
 };
 
 type IFolderModule = (rootPath: string) => {
@@ -195,10 +204,18 @@ type ICounterModule = (countDef: string | number | null | undefined) => {
   get: () => number;
 };
 
-type IMetaModule = (options: IMetaModuleOptions) => {
+type IMetaTestModule = () => IMetaFactory;
+
+type IMetaModule = (options: IMetaOptions) => IMetaFactory;
+
+type IMetaPersistenceModule = (options: IMetaOptions) => {
   generate: () => Bluebird<IMetaDefinition>;
   write: () => Bluebird<IMetaDefinition>;
   read: () => Bluebird<IMetaDefinition>;
+};
+
+type IMetaIdModule = (options: IMetaDefinition) => {
+  search: (id: string) => ISearchDefinition[];
 };
 
 /////////////////////////////////////////////////////////
@@ -227,9 +244,10 @@ export {
   IRemoteConnectorOptions,
   ITestConnectorOptions,
   IRepositoryOptions,
-  IMetaModuleOptions,
+  IMetaOptions,
   IMeta,
   IMetaDefinition,
+  IWorldElement,
   IElementModule,
   IRelatedSearchModule,
   IRelatedDiceModule,
@@ -241,6 +259,7 @@ export {
   ISearchByTypeModule,
   IRandomModule,
   IWorldModule,
+  IWorldFactory,
   ICliModule,
   IFolderModule,
   IElementFormatted,
@@ -248,6 +267,9 @@ export {
   ICounterModule,
   IDistributeModule,
   IMetaModule,
+  IMetaTestModule,
+  IMetaPersistenceModule,
+  IMetaIdModule,
   IMetaFactory,
   ERandomOption, //
   IElementDefinition,

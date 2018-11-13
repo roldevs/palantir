@@ -1,0 +1,18 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Característica de la Fortaleza
+  options:
+    - text: 'Pertenece a una familia noble: +Prosperidad, Poder (político)'
+      weight: 2
+    - text: 'Gobernada por un comandante hábil: Personalidad (el comandante), +Defensas'
+      weight: 2
+    - text: 'Vigila un camino comercial: +Prosperidad, Gremio (comerciantes)'
+      weight: 2
+    - text: 'Utilizada para entrenar tropas especiales: Arcana, -Población'
+      weight: 2
+    - text: 'Rodeada de tierra fértil: elimina Necesidad (suministros)'
+      weight: 2
+    - text: 'Situada en una frontera: +Defensas, Enemistad (un asentamiento al otro lado de la frontera)'
+      weight: 2
+

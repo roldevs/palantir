@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Problemas de la Fortaleza
+  options:
+    - text: 'Construida en una posición fácilmente defendible: Segura, -Población'
+      weight: 2
+    - text: 'Previamente conquistada por otra fuerza: Enemistad (asentamientos aliados con dicha fuerza)'
+    - text: 'Refugio seguro para forajidos: Sin ley'
+    - text: 'Construidad para defenderse de una amenaza concreta: Plaga (esa amenaza)'
+    - text: 'Ha vivido una sangrienta y horrible guerra: Historia (batalla), Plaga (espíritus sin descanso)'
+    - text: 'Dotada con lo peor de lo peor: Necesidad (reclutas hábiles)'
+    - text: 'Sufre una enfermedad: -Población'
+      weight: 2
+    - text: 'Conocido punto de encuentro: +Población, Sin ley'
+      weight: 2
+

@@ -2,13 +2,16 @@
 import { expect } from 'chai';
 import testConnector from '../../src/lib/connectors/test';
 import relatedModule from '../../src/lib/element/related';
+import metaTestModule from '../../src/lib/meta/test';
 import testRepository from '../../src/lib/repository/memory';
 import {
+  IMetaFactory,
   IOptionalElementDefinition,
   IWorldDefinition,
 } from '../../src/lib/typings';
 
 describe('Related#fetch', () => {
+  const meta: IMetaFactory = metaTestModule();
   describe('with repository empty', () => {
     const repository = testRepository({
       locale: 'es',
@@ -65,6 +68,7 @@ describe('Related#fetch', () => {
       const world: IWorldDefinition = {
         connector,
         repository,
+        meta,
       };
 
       it('return the ns2:item2 option', (done) => {
@@ -108,6 +112,7 @@ describe('Related#fetch', () => {
       const world: IWorldDefinition = {
         connector,
         repository,
+        meta,
       };
 
       it('return the dice element', (done) => {

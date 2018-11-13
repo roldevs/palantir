@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Característica del Pueblo
+  options:
+    - text: 'Floreciente: Floreciente, sin ley'
+    - text: 'En un cruce de caminos: Mercado, +Prosperidad'
+      weight: 2
+    - text: 'Defendido por otro asentamiento: Juramento (con ese asentamiento), +Defensas'
+      weight: 2
+    - text: 'Construido en torno a una iglesia: Poder (divino)'
+      weight: 2
+    - text: 'En torno a una manufactura importante: Manufactura (defínela), Recurso (algo necesario para su fabricación)'
+      weight: 3
+    - text: 'En torno a un emplazamiento militar +Defensas'
+      weight: 2
+

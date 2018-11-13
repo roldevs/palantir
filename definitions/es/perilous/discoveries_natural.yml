@@ -23,9 +23,14 @@ data:
           - text: Precipicio/grieta/cañón
             weight: 2
           - text: Barranco/garganta
-            weight: 2
-          - text: Rareza
-            weight: 2
+            weight: 3
+          - weight: 2
+            related:
+              oddity:
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: oddity
       - text: Cambio en el terreno
         weight: 3
         options:
@@ -61,8 +66,13 @@ data:
             weight: 3
           - text: Terrestre (formación rocosa, cima, cráter...)
             weight: 4
-          - text: Rareza
+          - related:
             weight: 2
+              oddity:
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: oddity
       - text: Recurso
         options:
           - text: Caza/frutos/vegetales

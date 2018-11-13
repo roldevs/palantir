@@ -1,0 +1,132 @@
+meta:
+  system: Páramos Aventurados
+data:
+  - text: Trasfondo del PNJ
+    options:
+      - text: Natural
+        weight: 3
+        options:
+          - weight: 2
+            related:
+              criminal:
+                text: Criminal
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_criminal
+          - text: Aventurero/explorador
+            weight: 2
+          - text: Cazador/recolector
+            weight: 2
+          - weight: 2
+            related:
+              commoner:
+                text: Plebeyo
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_commoner
+          - text: Explorador/rasteador
+            weight: 3
+          - weight: 2
+            related:
+              official:
+                text: Oficial
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_official
+      - text: Rural
+        weight: 6
+        options:
+          - text: Mendigo/pillo
+            weight: 2
+          - weight: 2
+            related:
+              criminal:
+                text: Criminal
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_criminal
+          - text: Aventurero/explorador
+            weight: 3
+          - text: Cazador/recolector
+            weight: 2
+          - text: Plebeyo
+            weight: 2
+          - weight: 2
+            related:
+              merchant:
+                text: Mercader
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_merchant
+          - weight: 2
+            related:
+              tradesperson:
+                text: Comerciante
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_tradesperson
+          - text: Miliciano/soldado/guardia
+          - weight: 2
+            related:
+              official:
+                text: Oficial
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_official
+      - text: Urbano
+        weight: 2
+        options:
+          - text: Mendigo/pillo
+            weight: 2
+          - weight: 2
+            related:
+              criminal:
+                text: Criminal
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_criminal
+          - weight: 3
+            related:
+              commoner:
+                text: Plebeyo
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_commoner
+          - related:
+              tradesperson:
+                text: Comerciante
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_tradesperson
+          - related:
+              merchant:
+                text: Mercader
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_merchant
+          - related:
+              specialist:
+                text: Oficio
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_specialist
+          - text: Miliciano/soldado/guardia
+          - related:
+              official:
+                text: Oficial
+                search:
+                  - locale: es
+                    ns: perilous
+                    type: npc_occupation_official

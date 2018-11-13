@@ -1,0 +1,16 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Etiqueta de Criatura
+  options:
+    - text: Amorfo
+    - text: Cauteloso
+    - text: Cosntructo
+    - text: Taimado
+    - text: Inteligente
+    - text: Mágico
+    - text: Organizado
+      weight: 2
+    - text: Planar
+    - text: Sigiloso
+    - text: Terrorífico

@@ -4,10 +4,12 @@ import program from 'commander';
 import * as R from 'ramda';
 import localConnectorCreator from './src/lib/connectors/local';
 import remoteConnectorCreator from './src/lib/connectors/remote';
+import metaModule from './src/lib/meta';
 import repositoryCreator from './src/lib/repository/memory';
 import {
   ICliModule,
   IElementDefinition,
+  IMetaFactory,
   IOptionalElementDefinition,
 } from './src/lib/typings';
 import { JSONprettify, removeExtension } from './src/lib/utils';
@@ -19,6 +21,10 @@ const useConnector: number = 1;
 const count: number = 1;
 const ns: string = 'perilous';
 const type: string = 'dungeon';
+const meta: IMetaFactory = metaModule({
+  rootPath: './definitions',
+  metaFilePath: './meta.yml',
+});
 
 const world = worldCreator({
   connector: localConnectorCreator({
@@ -28,6 +34,7 @@ const world = worldCreator({
     locale,
     elements: {},
   }),
+  meta,
 });
 
 world.get({

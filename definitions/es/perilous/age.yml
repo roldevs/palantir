@@ -1,0 +1,15 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Edad
+  options:
+    - text: Nacido/siendo creado
+    - text: Joven/reciente
+      weight: 3
+    - text: De mediana edad
+      weight: 3
+    - text: Viejo
+      weight: 2
+    - text: Anciano
+      weight: 2
+    - text: Prehistórico

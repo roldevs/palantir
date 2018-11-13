@@ -1,15 +1,21 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import testConnector from '../../src/lib/connectors/test';
+import metaTestModule from '../../src/lib/meta/test';
 import testRepository from '../../src/lib/repository/memory';
 import {
   ERandomOption,
   IElementFormatted,
+  IMetaFactory,
+  IMetaOptions,
   IRelatedElement,
+  IWorldElement,
 } from '../../src/lib/typings';
 import worldCreator from '../../src/lib/world';
 
 describe('World#get', () => {
+  const meta: IMetaFactory = metaTestModule();
+
   describe('with faction', () => {
     const connector = testConnector({
       elements: {
@@ -53,6 +59,7 @@ describe('World#get', () => {
         locale: 'es',
         elements: {},
       }),
+      meta,
     });
 
     describe('simple search', () => {
@@ -65,8 +72,8 @@ describe('World#get', () => {
         count: 1,
       };
       it('return the only faction defined', (done) => {
-        world.get(search).then((elements: IElementFormatted[]) => {
-          const element: IElementFormatted = elements[0]!;
+        world.get(search).then((elements: IWorldElement[]) => {
+          const element: IElementFormatted = elements[0]!.format!;
           expect(element).to.not.be.null;
           expect(element.text).to.eql('Movimiento artístico');
           done();
@@ -83,8 +90,8 @@ describe('World#get', () => {
         }],
       };
       it('return the npc_asset with faction related', (done) => {
-        world.get(search).then((elements: IElementFormatted[]) => {
-          const element: IElementFormatted = elements[0]!;
+        world.get(search).then((elements: IWorldElement[]) => {
+          const element: IElementFormatted = elements[0]!.format!;
           expect(element).to.not.be.null;
           expect(element.title).to.eql('Npc Asset');
           expect(element.children).to.not.be.empty;
@@ -178,6 +185,7 @@ describe('World#get', () => {
         locale: 'es',
         elements: {},
       }),
+      meta,
     });
 
     describe('deep search', () => {
@@ -189,8 +197,8 @@ describe('World#get', () => {
         }],
       };
       it('return the animal related', (done) => {
-        world.get(search).then((elements: IElementFormatted[]) => {
-          const element: IElementFormatted = elements[0]!;
+        world.get(search).then((elements: IWorldElement[]) => {
+          const element: IElementFormatted = elements[0]!.format!;
           expect(element.title).to.eql('Animal');
 
           const child: IElementFormatted = element.children![0];
@@ -225,6 +233,7 @@ describe('World#get', () => {
         locale: 'es',
         elements: {},
       }),
+      meta,
     });
 
     describe('deep search', () => {
@@ -236,8 +245,8 @@ describe('World#get', () => {
         }],
       };
       it('return the element with default title', (done) => {
-        world.get(search).then((elements: IElementFormatted[]) => {
-          const element: IElementFormatted = elements[0]!;
+        world.get(search).then((elements: IWorldElement[]) => {
+          const element: IElementFormatted = elements[0]!.format!;
           expect(element.text).to.eql('Envejece');
           expect(element.title).to.eql('Mutación');
           done();
@@ -290,6 +299,7 @@ describe('World#get', () => {
         locale: 'es',
         elements: {},
       }),
+      meta,
     });
 
     describe('random search', () => {
@@ -302,10 +312,10 @@ describe('World#get', () => {
         count: 'd2',
       };
       it('return the one or two factions', (done) => {
-        world.get(search).then((elements: IElementFormatted[]) => {
+        world.get(search).then((elements: IWorldElement[]) => {
           expect(elements.length).to.be.oneOf([1, 2]);
 
-          const element: IElementFormatted = elements[0]!;
+          const element: IElementFormatted = elements[0]!.format!;
           expect(element).to.not.be.null;
           expect(element.text).to.be.oneOf(['Movimiento artístico', 'Npc Asset 2']);
           done();

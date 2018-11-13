@@ -1,0 +1,19 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Ocupación PNJ Comerciante
+  options:
+    - text: Zapatero/peletero/sastre
+    - text: Tejedor/canastero
+    - text: Alfarero/carpintero
+    - text: Peón/repostero/candelero
+    - text: Tonelero/carretero
+    - text: Curtidor/cordelero
+    - text: Herrero/hojalatero
+    - text: Mozo de cuadra/herborista
+    - text: Viticultor/joyero
+    - text: Posadero/tabernero
+    - text: Artista/actor/juglar
+    - text: Armero
+
+

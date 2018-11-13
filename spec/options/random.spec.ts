@@ -2,13 +2,17 @@
 import { expect } from 'chai';
 import testConnector from '../../src/lib/connectors/test';
 import optionsModule from '../../src/lib/element/options';
+import metaTestModule from '../../src/lib/meta/test';
 import testRepository from '../../src/lib/repository/memory';
 import {
+  IMetaFactory,
   IOptionalElementDefinition,
   IWorldDefinition,
 } from '../../src/lib/typings';
 
 describe('Options#random', () => {
+  const meta: IMetaFactory = metaTestModule();
+
   const world: IWorldDefinition = {
     connector: testConnector({
       elements: {},
@@ -17,6 +21,7 @@ describe('Options#random', () => {
       locale: 'es',
       elements: {},
     }),
+    meta,
   };
 
   describe('table with options', () => {

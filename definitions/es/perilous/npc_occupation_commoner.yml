@@ -1,0 +1,17 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Ocupación PNJ Plebeyo
+  options:
+    - text: Ama de casa/esposo
+    - text: Cazador/recolector
+      weight: 2
+    - text: Granjero/pastor
+      weight: 3
+    - text: Jornalero/sirviente
+      weight: 2
+    - text: Cochero/portero/guía
+    - text: Marinero/soldado/guardia
+    - text: Clero/monje
+    - text: Aprendiz/aventurero
+

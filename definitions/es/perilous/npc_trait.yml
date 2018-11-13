@@ -1,0 +1,23 @@
+meta:
+  system: Páramos Aventurados
+data:
+  text: Ocupación del PNJ
+  options:
+    - related:
+        appearance:
+          search:
+            - locale: es
+              ns: perilous
+              type: npc_appearance
+    - related:
+        personality:
+          search:
+            - locale: es
+              ns: perilous
+              type: npc_personality
+    - related:
+        quirk:
+          search:
+            - locale: es
+              ns: perilous
+              type: npc_quirk

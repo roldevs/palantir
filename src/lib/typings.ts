@@ -129,6 +129,10 @@ interface IWorldFactory {
   getById: (id: string) => Bluebird<IWorldElement[]>;
 }
 
+interface IElementFactory {
+  get: (element: IOptionalElementDefinition | IOptionalElement) => Bluebird<IOptionalElementDefinition>;
+}
+
 interface IWorldDefinition {
   connector: IConnectorFactory;
   repository: IRepositoryFactory;
@@ -143,9 +147,7 @@ interface IWorldElement {
 
 type IWorldModule = (world: IWorldDefinition) => IWorldFactory;
 
-type IElementModule = (world: IWorldDefinition) => {
-  get: (element: IOptionalElementDefinition | IOptionalElement) => Bluebird<IOptionalElementDefinition>;
-};
+type IElementModule = (world: IWorldDefinition) => IElementFactory;
 
 type IRelatedSearchModule = (world: IWorldDefinition) => {
   get: (related: IRelatedElement, parent: IElementDefinition) => Bluebird<IRelatedElement>;
@@ -260,6 +262,7 @@ export {
   IRandomModule,
   IWorldModule,
   IWorldFactory,
+  IElementFactory,
   ICliModule,
   IFolderModule,
   IElementFormatted,

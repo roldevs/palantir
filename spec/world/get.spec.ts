@@ -5,16 +5,251 @@ import metaTestModule from '../../src/lib/meta/test';
 import testRepository from '../../src/lib/repository/memory';
 import {
   ERandomOption,
+  IConnectorFactory,
   IElementFormatted,
-  IMetaFactory,
-  IMetaOptions,
   IRelatedElement,
   IWorldElement,
+  IWorldFactory,
 } from '../../src/lib/typings';
 import worldCreator from '../../src/lib/world';
 
+const getWorld: (connector: IConnectorFactory) => IWorldFactory =
+(connector) => worldCreator({
+    connector,
+    repository: testRepository({
+      locale: 'es',
+      elements: {},
+    }),
+    meta: metaTestModule(),
+  });
+
 describe('World#get', () => {
-  const meta: IMetaFactory = metaTestModule();
+  // describe('title analysis', () => {
+  //   describe('in root element', () => {
+  //     const world: IWorldFactory = getWorld(
+  //       testConnector({
+  //         elements: {
+  //           es: {
+  //             ns1: {
+  //               type1: {
+  //                 data: {
+  //                   text: 'Title',
+  //                   options: [{
+  //                     text: 'option1',
+  //                   }, {
+  //                     text: 'option2',
+  //                   }],
+  //                 },
+  //               },
+  //             },
+  //           },
+  //           en: {},
+  //         },
+  //       }),
+  //     );
+
+  //     it('sets the title accordingly', (done) => {
+  //       const search: IRelatedElement = {
+  //         search: [{
+  //           locale: 'es',
+  //           ns: 'ns1',
+  //           type: 'type1',
+  //         }],
+  //         count: 1,
+  //       };
+  //       world.get(search).then((element: IWorldElement[]) => {
+  //         const formatted: IElementFormatted = element[0].format!;
+  //         expect(formatted.title).to.eql('Title');
+  //         expect(formatted.text).to.be.oneOf(['option1', 'option2']);
+  //         done();
+  //       });
+  //     });
+  //   });
+
+  //   describe('with related directly in root table', () => {
+  //     describe('title in related table', () => {
+  //       const world: IWorldFactory = getWorld(
+  //         testConnector({
+  //           elements: {
+  //             es: {
+  //               ns1: {
+  //                 type1: {
+  //                   data: {
+  //                     text: 'Title 1',
+  //                     related: {
+  //                       key: {
+  //                         search: [{
+  //                           locale: 'es',
+  //                           ns: 'ns1',
+  //                           type: 'type2',
+  //                         }],
+  //                       },
+  //                     },
+  //                   },
+  //                 },
+  //                 type2: {
+  //                   data: {
+  //                     text: 'Title 2',
+  //                     options: [{
+  //                       text: 'option1',
+  //                     }, {
+  //                       text: 'option2',
+  //                     }],
+  //                   },
+  //                 },
+  //               },
+  //             },
+  //             en: {},
+  //           },
+  //         }),
+  //       );
+
+  //       it('sets the title accordingly', (done) => {
+  //         const search: IRelatedElement = {
+  //           search: [{
+  //             locale: 'es',
+  //             ns: 'ns1',
+  //             type: 'type1',
+  //           }],
+  //           count: 1,
+  //         };
+  //         world.get(search).then((element: IWorldElement[]) => {
+  //           const formatted: IElementFormatted = element[0].format!;
+  //           expect(formatted.title).to.eql('Title 1');
+  //           expect(formatted.text).to.be.undefined;
+
+  //           const child: IElementFormatted = formatted.children![0];
+  //           expect(child.title).to.eql('Title 2');
+  //           expect(child.text).to.be.oneOf(['option1', 'option2']);
+  //           done();
+  //         });
+  //       });
+  //     });
+  //     describe('title in related item', () => {
+  //       const world: IWorldFactory = getWorld(
+  //         testConnector({
+  //           elements: {
+  //             es: {
+  //               ns1: {
+  //                 type1: {
+  //                   data: {
+  //                     text: 'Title 1',
+  //                     related: {
+  //                       key: {
+  //                         text: 'Title R',
+  //                         search: [{
+  //                           locale: 'es',
+  //                           ns: 'ns1',
+  //                           type: 'type2',
+  //                         }],
+  //                       },
+  //                     },
+  //                   },
+  //                 },
+  //                 type2: {
+  //                   data: {
+  //                     text: 'Title 2',
+  //                     options: [{
+  //                       text: 'option1',
+  //                     }, {
+  //                       text: 'option2',
+  //                     }],
+  //                   },
+  //                 },
+  //               },
+  //             },
+  //             en: {},
+  //           },
+  //         }),
+  //       );
+
+  //       it('sets the title accordingly', (done) => {
+  //         const search: IRelatedElement = {
+  //           search: [{
+  //             locale: 'es',
+  //             ns: 'ns1',
+  //             type: 'type1',
+  //           }],
+  //           count: 1,
+  //         };
+  //         world.get(search).then((element: IWorldElement[]) => {
+  //           const formatted: IElementFormatted = element[0].format!;
+  //           expect(formatted.title).to.eql('Title 1');
+  //           expect(formatted.text).to.be.undefined;
+
+  //           const child: IElementFormatted = formatted.children![0];
+  //           expect(child.title).to.eql('Title R');
+  //           expect(child.text).to.be.oneOf(['option1', 'option2']);
+  //           done();
+  //         });
+  //       });
+  //     });
+  //   });
+
+  //   describe('with related in options table', () => {
+  //     describe('title in related item', () => {
+  //       const world: IWorldFactory = getWorld(
+  //         testConnector({
+  //           elements: {
+  //             es: {
+  //               ns1: {
+  //                 type1: {
+  //                   data: {
+  //                     text: 'Title 1',
+  //                     options: [{
+  //                       text: 'Title R',
+  //                       related: {
+  //                         key: {
+  //                           search: [{
+  //                             locale: 'es',
+  //                             ns: 'ns1',
+  //                             type: 'type2',
+  //                           }],
+  //                         },
+  //                       },
+  //                     }],
+  //                   },
+  //                 },
+  //                 type2: {
+  //                   data: {
+  //                     text: 'Title 2',
+  //                     options: [{
+  //                       text: 'option1',
+  //                     }, {
+  //                       text: 'option2',
+  //                     }],
+  //                   },
+  //                 },
+  //               },
+  //             },
+  //             en: {},
+  //           },
+  //         }),
+  //       );
+
+  //       it('sets the title accordingly', (done) => {
+  //         const search: IRelatedElement = {
+  //           search: [{
+  //             locale: 'es',
+  //             ns: 'ns1',
+  //             type: 'type1',
+  //           }],
+  //           count: 1,
+  //         };
+  //         world.get(search).then((element: IWorldElement[]) => {
+  //           const formatted: IElementFormatted = element[0].format!;
+  //           expect(formatted.title).to.eql('Title 1');
+  //           expect(formatted.text).to.be.undefined;
+
+  //           const child: IElementFormatted = formatted.children![0];
+  //           expect(child.title).to.eql('Title R');
+  //           expect(child.text).to.be.oneOf(['option1', 'option2']);
+  //           done();
+  //         });
+  //       });
+  //     });
+  //   });
+  // });
 
   describe('with faction', () => {
     const connector = testConnector({
@@ -53,15 +288,7 @@ describe('World#get', () => {
         en: {},
       },
     });
-    const world = worldCreator({
-      connector,
-      repository: testRepository({
-        locale: 'es',
-        elements: {},
-      }),
-      meta,
-    });
-
+    const world = getWorld(connector);
     describe('simple search', () => {
       const search: IRelatedElement = {
         search: [{
@@ -96,9 +323,13 @@ describe('World#get', () => {
           expect(element.title).to.eql('Npc Asset');
           expect(element.children).to.not.be.empty;
 
-          const child: IElementFormatted = element.children![0]!;
-          expect(child).to.not.be.null;
-          expect(child.title).to.eql('Lider ${faction}');
+          const child1: IElementFormatted = element.children![0]!;
+          expect(child1).to.not.be.null;
+          expect(child1.title).to.eql('Npc Asset 1');
+
+          const child2: IElementFormatted = child1.children![0]!;
+          expect(child2).to.not.be.null;
+          expect(child2.title).to.eql('Lider ${faction}');
           done();
         });
       });
@@ -114,7 +345,7 @@ describe('World#get', () => {
               data: {
                 text: 'Animal',
                 options: [{
-                  text: 'Animal',
+                  text: 'Animal 1',
                   related: {
                     animal_aerial: {
                       search: [{
@@ -125,7 +356,7 @@ describe('World#get', () => {
                     },
                   },
                 }, {
-                  text: 'Animal',
+                  text: 'Animal 2',
                   related: {
                     animal_aquatic: {
                       search: [{
@@ -136,18 +367,17 @@ describe('World#get', () => {
                     },
                   },
                 }, {
-                  text: 'Animal',
-                    related: {
-                      animal_terrestrial: {
-                        search: [{
-                          locale: 'es',
-                          ns: 'maze_rats',
-                          type: 'animal_terrestrial',
-                        }],
-                      },
+                  text: 'Animal 3',
+                  related: {
+                    animal_terrestrial: {
+                      search: [{
+                        locale: 'es',
+                        ns: 'maze_rats',
+                        type: 'animal_terrestrial',
+                      }],
                     },
                   },
-                ],
+                }],
               },
             },
             animal_aerial: {
@@ -179,15 +409,7 @@ describe('World#get', () => {
         en: {},
       },
     });
-    const world = worldCreator({
-      connector,
-      repository: testRepository({
-        locale: 'es',
-        elements: {},
-      }),
-      meta,
-    });
-
+    const world = getWorld(connector);
     describe('deep search', () => {
       const search: IRelatedElement = {
         search: [{
@@ -201,8 +423,11 @@ describe('World#get', () => {
           const element: IElementFormatted = elements[0]!.format!;
           expect(element.title).to.eql('Animal');
 
-          const child: IElementFormatted = element.children![0];
-          expect(child.title).to.be.oneOf(['Animal aéreo', 'Animal acuático', 'Animal terrestre']);
+          const child1: IElementFormatted = element.children![0];
+          expect(child1.title).to.be.oneOf(['Animal 1', 'Animal 2', 'Animal 3']);
+
+          const child2: IElementFormatted = child1.children![0];
+          expect(child2.title).to.be.oneOf(['Animal aéreo', 'Animal acuático', 'Animal terrestre']);
           done();
         });
       });
@@ -227,15 +452,7 @@ describe('World#get', () => {
         en: {},
       },
     });
-    const world = worldCreator({
-      connector,
-      repository: testRepository({
-        locale: 'es',
-        elements: {},
-      }),
-      meta,
-    });
-
+    const world = getWorld(connector);
     describe('deep search', () => {
       const search: IRelatedElement = {
         search: [{
@@ -293,15 +510,7 @@ describe('World#get', () => {
         en: {},
       },
     });
-    const world = worldCreator({
-      connector,
-      repository: testRepository({
-        locale: 'es',
-        elements: {},
-      }),
-      meta,
-    });
-
+    const world = getWorld(connector);
     describe('random search', () => {
       const search: IRelatedElement = {
         search: [{

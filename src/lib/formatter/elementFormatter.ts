@@ -42,18 +42,33 @@ const title: (element: IElementDefinition | IElement, parent: IOptionalElementDe
   return element.text;
 };
 
+const toFormatted: (
+  element: IElementDefinition | IElement,
+  parent: IElementDefinition | IElement | null | undefined,
+  children: IElementFormatted[],
+) => IElementFormatted =
+(element, parent, children) => {
+  if (!element.related) {
+    return { title: title(element, parent), text: element.text };
+  }
+
+  if (element.text && element.parent) {
+    return { title: title(element, parent), children: [{ title: element.text, children }] };
+  }
+  return { title: title(element, parent), children };
+};
+
 const traverse: (
-  element: IElementDefinition  | IElement,
+  element: IElementDefinition | IElement,
   parent: IElementDefinition | IElement | null | undefined,
   depth: number,
-) => IElementFormatted | null =
+) => IElementFormatted =
 (element, parent, depth) => {
+  const children: IElementFormatted[] = [];
   if (element.related) {
-    const children: IElementFormatted[] = [];
     R.forEach(processRelated(element, depth, children), R.keys(element.related));
-    return { title: title(element, parent), children };
   }
-  return { title: title(element, parent), text: element.text };
+  return toFormatted(element, parent, children);
 };
 
 const elementFormatter: IRandomJsonFormatter =

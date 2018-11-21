@@ -3,18 +3,14 @@ meta:
 data:
   text: PNJ de la Naturaleza
   options:
-    - text: PNJ de la Naturaleza
-      related:
+    - related:
         male:
-          text: PNJ Hombre de la Naturaleza
           search:
             - locale: es
               ns: maze_rats
               type: npc_wilderness_male
-    - text: PNJ de la Naturaleza
-      related:
+    - related:
         female:
-          text: PNJ Mujer de la Naturaleza
           search:
             - locale: es
               ns: maze_rats

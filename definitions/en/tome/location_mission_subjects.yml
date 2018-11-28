@@ -1,0 +1,30 @@
+meta:
+  system: Tome of Adventure Design
+data:
+  text: Location Mission Subject
+  options:
+    - text: Archaeological dig
+    - text: Caravan
+    - text: Castle
+    - text: Caves
+    - text: Cottage
+    - text: Dungeon
+    - text: Encampment
+    - text: Extra-planar area
+    - text: Flying Structure
+    - text: Flying Vehicle
+    - text: Forest
+    - text: Fort
+    - text: Fortified building or manor
+    - text: Grove
+    - text: Oasis
+    - text: Prison
+    - text: Ruins
+    - text: Ship
+    - text: Stockade
+    - text: Swamp
+    - text: Tavern
+    - text: Temple
+    - text: Village
+    - text: Warehouse
+    - text: Wharfs or Docks

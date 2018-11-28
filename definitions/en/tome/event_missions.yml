@@ -1,0 +1,25 @@
+meta:
+  system: Tome of Adventure Design
+data:
+  text: Event Mission
+  options:
+    - text: Destroy results of
+    - text: Escape from
+    - text: Solve bizarre mystery arising from
+    - text: Expose someone involved in
+      weigth: 2
+    - text: Hide evidence of what really happened in a recent
+    - text: Infiltrate group involved in
+      weigth: 2
+    - text: Investigate events of a recent
+    - text: Investigate events of an ancient
+    - text: Lead or coordinate
+    - text: Plan and execute
+    - text: Prevent
+      weigth: 2
+    - text: Protect someone involved in
+      weigth: 2
+    - text: Sabotage
+    - text: Survive or overcome
+      weigth: 2
+    - text: Take leadership in

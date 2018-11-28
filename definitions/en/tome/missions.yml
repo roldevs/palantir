@@ -1,0 +1,49 @@
+meta:
+  system: Tome of Adventure Design
+data:
+  text: Mission
+  options:
+    - related:
+        event_mission:
+          search:
+            - locale: en
+              ns: tome
+              type: event_missions
+        event_mission_subject:
+          search:
+            - locale: en
+              ns: tome
+              type: event_mission_subjects
+    - related:
+        individual_mission:
+          search:
+            - locale: en
+              ns: tome
+              type: individual_missions
+        individual_mission_subject:
+          search:
+            - locale: en
+              ns: tome
+              type: individual_mission_subjects
+    - related:
+        item_mission:
+          search:
+            - locale: en
+              ns: tome
+              type: item_missions
+        item_mission_subject:
+          search:
+            - locale: en
+              ns: tome
+              type: item_mission_subjects
+    - related:
+        location_mission:
+          search:
+            - locale: en
+              ns: tome
+              type: location_missions
+        location_mission_subject:
+          search:
+            - locale: en
+              ns: tome
+              type: location_mission_subjects

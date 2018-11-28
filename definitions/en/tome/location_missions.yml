@@ -1,0 +1,30 @@
+meta:
+  system: Tome of Adventure Design
+data:
+  text: Location Mission
+  options:
+    - text: Assault
+      weigth: 2
+    - text: Break siege of
+    - text: Capture and hold
+    - text: Defend from attack
+      weigth: 2
+    - text: Destroy
+    - text: Escape from
+    - text: Explore
+    - text: Find or locate
+    - text: Get supplies to
+    - text: Infiltrate and control
+    - text: Infiltrate and spy upon
+    - text: Liberate
+    - text: Locate intruder/spy
+    - text: Loot
+      weigth: 2
+    - text: Protect from infiltration
+    - text: Reinforce
+    - text: Rescue hostages from
+      weigth: 2
+    - text: Retake
+    - text: Secretly return
+    - text: Stage raid upon
+      weigth: 2

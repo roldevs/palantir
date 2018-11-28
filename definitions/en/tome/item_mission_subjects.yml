@@ -1,0 +1,25 @@
+meta:
+  system: Tome of Adventure Design
+data:
+  text: Item Mission Subject
+  options:
+    - text: Body or corpse
+    - text: Cargo
+    - text: Cattle or livestock
+    - text: Clue
+    - text: Evidence of crime
+    - text: Evidence of innocence
+    - text: Gold or jewelry
+    - text: Magic item
+    - text: Map
+    - text: Message or letter
+    - text: Monster
+    - text: Mysterious sealed container
+    - text: Ownership documents
+    - text: Religious item
+    - text: Ship
+    - text: Statue or idol (portable)
+    - text: Symbol of authority
+    - text: Unusual animal (familiar, mascot, pet, prize cow, etc.)
+    - text: Vehicles with cargo
+    - text: Weapon (siege engine, famous sword, etc)

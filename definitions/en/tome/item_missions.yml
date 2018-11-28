@@ -1,0 +1,25 @@
+meta:
+  system: Tome of Adventure Design
+data:
+  text: Item Mission
+  options:
+    - text: Attack to obtain
+    - text: Conceal
+    - text: Defend
+    - text: Deliver or transport
+    - text: Destroy
+    - text: Fake existence of
+    - text: Find or locate
+    - text: Guard or protect
+    - text: Hide
+    - text: Hijack
+    - text: Prevent delivery of
+    - text: Prevent sabotage of
+    - text: Raid to obtain
+    - text: Retake or repossess
+    - text: Sabotage
+    - text: Salvage from dangerous place
+    - text: Smuggle
+    - text: Steal from within location
+    - text: Steal while in transit
+    - text: Swap fake imitation

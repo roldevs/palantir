@@ -1,0 +1,17 @@
+meta:
+  system: Tome of Adventure Design
+data:
+  text: Individual Mission Subject
+  options:
+    - text: Adventurer(s)
+    - text: Agent or diplomat
+    - text: Cleric or religious leader
+    - text: Criminal/outlaw
+    - text: Intelligent monster
+    - text: Local noble
+    - text: Magic-user
+    - text: Messenger
+    - text: Saboteur
+    - text: Secret agent or spy
+    - text: Patrons & Targets
+      weight: 10

@@ -1,0 +1,25 @@
+meta:
+  system: Tome of Adventure Design
+data:
+  text: Event Mission Subject
+  options:
+    - text: Archaeological dig
+    - text: Arena or gladiatorial battle
+    - text: Arrest or trial
+    - text: Assassination
+    - text: Cattle drive through a dangerous area
+    - text: Coronation or transfer of power
+    - text: Coup d’etat or rebellion
+    - text: Criminal conspiracy
+    - text: Disruption of ceremony
+    - text: Duel
+    - text: Execution or imprisonment
+    - text: Exploration/mapping expedition
+    - text: Furtive, stealthy raid
+    - text: Military assault
+    - text: Murder or attempted murder
+    - text: Natural disaster
+    - text: Swindle
+    - text: Theft
+    - text: Trailblazing attempt into new area
+    - text: Treason and aftermath

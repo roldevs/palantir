@@ -1,0 +1,25 @@
+meta:
+  system: Tome of Adventure Design
+data:
+  text: Individual Mission
+  options:
+    - text: Bribe or negotiate with
+    - text: Bring message to
+    - text: Capture or arrest
+    - text: Conceal/smuggle
+    - text: Deliver/transport
+    - text: Discover identity of
+    - text: Distract, decoy, or deceive
+    - text: Entrap or sting
+    - text: Extort from
+    - text: Find missing
+    - text: Get help from
+    - text: Guard/protect
+    - text: Incriminate or frame
+    - text: Kidnap
+    - text: Kill/assassinate
+    - text: Rescue
+    - text: Sabotage efforts of
+    - text: Spy upon
+    - text: Steal item from
+    - text: Waylay

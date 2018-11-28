@@ -1,7 +1,7 @@
 meta:
   system: Ultimate Toolbox
 data:
-  text: names
+  text: Name
   options:
     - related:
         names_anglo_saxon_female:

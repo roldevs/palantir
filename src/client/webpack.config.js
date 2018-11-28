@@ -1,5 +1,7 @@
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const R = require('ramda');
+// const MinifyPlugin = require('uglifyjs-webpack-plugin');
+const MinifyPlugin = require('babel-minify-webpack-plugin');
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -8,64 +10,56 @@ dotenv.config();
 // var WebpackNotifierPlugin = require('webpack-notifier');
 // var UnusedFilesWebpackPlugin = require('unused-files-webpack-plugin')['default'];
 
-module.exports = {
-  context: __dirname,
-  mode: 'development',
-  entry: './app',
-  output: {
-    path: path.join(__dirname, '../../public'),
-    filename: 'app.js',
-    libraryTarget: 'var',
-    library: 'Hall'
-  },
-  // Turn on sourcemaps
-  devtool: 'source-map-inline',
-  resolve: {
-    extensions: ['.ts', '.js', '.json'],
+module.exports = (() => {
+  const config = {
+    context: __dirname,
+    mode: 'development',
+    entry: './app',
+    output: {
+      path: path.join(__dirname, '../../public'),
+      filename: 'app.js',
+      libraryTarget: 'var',
+      library: 'Hall'
+    },
+    // Turn on sourcemaps
+    devtool: (process.env.ENVIRONMENT === 'development') ? 'source-map-inline' : false,
+    resolve: {
+      extensions: ['.ts', '.js', '.json'],
 
-    // Make sure root is src
-    // root: __dirname,
+      // Make sure root is src
+      // root: __dirname,
 
-    // remove other default values
-    modules: ['../../node_modules']
-  },
-  module: {
-    // preLoaders: [{
-    //   test: /\.js$/,
-    //   loader: 'source-map-loader'
-    // }],
-    rules: [{
-      test: /\.ts$/,
-      use: [{
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env']
-        },
-      }, {
-        loader: 'ts-loader'
+      // remove other default values
+      modules: ['../../node_modules']
+    },
+    module: {
+      // preLoaders: [{
+      //   test: /\.js$/,
+      //   loader: 'source-map-loader'
+      // }],
+      rules: [{
+        test: /\.ts$/,
+        use: [{
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          },
+        }, {
+          loader: 'ts-loader'
+        }]
       }]
-    }]
-  },
-  plugins: [
-    new UglifyJsPlugin({
-      cache: true,
-      parallel: true,
-      sourceMap: (process.env.ENVIRONMENT === 'development'),
-      uglifyOptions: {
-        output: {
-          comments: false
-        }
-      },
-    }),
-    // new WebpackNotifierPlugin({
-    //   alwaysNotify: true
-    // }),
-    // new UnusedFilesWebpackPlugin({
-    //   pattern: 'src/**/*.ts',
-    //   ignore: [
-    //     'src/**/*.spec.ts',
-    //     'src/webpack.config.js'
-    //   ]
-    // })
-  ]
-};
+    },
+    plugins: [],
+  };
+
+  if (process.env.ENVIRONMENT === 'development') {
+    return config;
+  }
+
+  // Add plugin for production environment
+  return R.set(
+    R.lensProp('plugins'),
+    [new MinifyPlugin({}, { sourceMap: false, comments: false })],
+    config
+  );
+})();

@@ -13,7 +13,7 @@ import worldCreator from './world';
 
 const remoteConnector: (debug: boolean) => IConnectorFactory = (debug) => remoteConnectorCreator({
   debug,
-  baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
+  baseURL: 'https://raw.githubusercontent.com/roldevs/palantir/master/definitions/',
 });
 
 const localConnector: () => IConnectorFactory = () => localConnectorCreator({

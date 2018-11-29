@@ -1,11 +1,11 @@
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/d5f52e978c0e15daacc4/maintainability)](https://codeclimate.com/github/rmoliva/orion/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d5f52e978c0e15daacc4/test_coverage)](https://codeclimate.com/github/rmoliva/orion/test_coverage) [![CircleCI](https://circleci.com/gh/rmoliva/orion.svg?style=svg)](https://circleci.com/gh/rmoliva/orion)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d5f52e978c0e15daacc4/maintainability)](https://codeclimate.com/github/roldevs/palantir/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d5f52e978c0e15daacc4/test_coverage)](https://codeclimate.com/github/roldevs/palantir/test_coverage) [![CircleCI](https://circleci.com/gh/roldevs/palantir.svg?style=svg)](https://circleci.com/gh/roldevs/palantir)
 
 
 
 ## Introducción
 
-Orion es una libería de Node para generar datos aleatorios para partidas de Rol.
+Palantir es una libería de Node para generar datos aleatorios para partidas de Rol.
 
 Basándose inicialmente en las tablas de [Maze Rats](http://questingblog.com/maze-rats/), se ha intentado hacer un sistema muy flexible y que se pueda ampliar con otras tablas aleatorias.
 
@@ -54,7 +54,7 @@ const search: ISearchDefinition[] = [{
 const world = worldCreator({
   locale: 'es',
   connector: connectorCreator({
-    baseURL: 'https://raw.githubusercontent.com/rmoliva/orion/master/definitions/',
+    baseURL: 'https://raw.githubusercontent.com/roldevs/palantir/master/definitions/',
   }),
   repository: repositoryCreator({
     locale: 'es',

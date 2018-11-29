@@ -6,7 +6,7 @@
     {
       "identifier": "typescript",
       "type": "typescript",
-      "tsconfig": "orion/tsconfig.json",
+      "tsconfig": "palantir/tsconfig.json",
       "problemMatcher": [
         "$tsc"
       ]

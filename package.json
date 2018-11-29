@@ -1,5 +1,5 @@
 {
-  "name": "orion",
+  "name": "palantir",
   "version": "0.0.1",
   "description": "",
   "scripts": {
@@ -21,8 +21,7 @@
   "keywords": [
     "rpg",
     "rol",
-    "generate",
-    "maze_rats"
+    "generate"
   ],
   "author": "Roberto M. Oliva",
   "license": "MIT",

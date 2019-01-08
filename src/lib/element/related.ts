@@ -10,16 +10,28 @@ import {
 } from '../typings';
 import { deepMerge } from '../utils';
 import relatedDiceModule from './related/dice';
+import relatedOptionsModule from './related/options';
 import relatedSearchModule from './related/search';
-import { hasRelated, relatedHasDice } from './utils';
+import {
+  hasRelated,
+  relatedHasDice,
+  relatedHasOptions,
+  relatedHasSearch,
+} from './utils';
 
 const relatedPromise: (world: IWorldDefinition, related: IRelatedElement, parent: IElementDefinition) =>
-  Bluebird<IRelatedElement> =
+  Bluebird<IRelatedElement | null> =
 (world, related, parent) => {
   if (relatedHasDice(related)) {
-    return relatedDiceModule(world).get(related);
+    return relatedDiceModule(world).get(related, parent);
   }
-  return relatedSearchModule(world).get(related, parent);
+  if (relatedHasOptions(related)) {
+    return relatedOptionsModule(world).get(related, parent);
+  }
+  if (relatedHasSearch(related)) {
+    return relatedSearchModule(world).get(related, parent);
+  }
+  return Bluebird.resolve(null);
 };
 
 const processRelated: (world: IWorldDefinition, relatedMap: IRelatedElements, parent: IElementDefinition) =>
@@ -28,7 +40,7 @@ const processRelated: (world: IWorldDefinition, relatedMap: IRelatedElements, pa
   return Bluebird.map(
     R.keys(relatedMap) as string[],
     (key: string) => {
-      return relatedPromise(world, relatedMap[key], parent).then((related: IRelatedElement) => {
+      return relatedPromise(world, relatedMap[key], parent).then((related: IRelatedElement | null) => {
         return R.set(R.lensProp(key), related, relatedMap);
       });
     },

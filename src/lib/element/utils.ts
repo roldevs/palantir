@@ -16,10 +16,14 @@ const relatedHasSearch: (related: IRelatedElement) => boolean =
 const relatedHasDice: (related: IRelatedElement) => boolean =
   (related) => !!(related && related!.dice);
 
+const relatedHasOptions: (related: IRelatedElement) => boolean =
+  (related) => !!(related && related!.options);
+
 export {
   hasOptions,
   hasRelated,
   hasDice,
   relatedHasSearch,
   relatedHasDice,
+  relatedHasOptions,
 };

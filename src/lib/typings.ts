@@ -22,6 +22,7 @@ interface IRelatedElement {
   dice?: string; // Dice result is given in results also
   results?: Array<IElementDefinition | IElement>; // Here is save the result
   count?: number | string; // If string is passed it is taken as a dice expression
+  options?: IElementDefinition[];
 }
 
 interface IRelatedElements {
@@ -154,7 +155,11 @@ type IRelatedSearchModule = (world: IWorldDefinition) => {
 };
 
 type IRelatedDiceModule = (world: IWorldDefinition) => {
-  get: (related: IRelatedElement) => Bluebird<IRelatedElement>;
+  get: (related: IRelatedElement, parent: IElementDefinition) => Bluebird<IRelatedElement>;
+};
+
+type IRelatedOptionsModule = (world: IWorldDefinition) => {
+  get: (related: IRelatedElement, parent: IElementDefinition) => Bluebird<IRelatedElement>;
 };
 
 type IOptionsModule = (world: IWorldDefinition) => {
@@ -253,6 +258,7 @@ export {
   IElementModule,
   IRelatedSearchModule,
   IRelatedDiceModule,
+  IRelatedOptionsModule,
   IOptionsModule,
   IRelatedModule,
   IElementDiceModule,

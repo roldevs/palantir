@@ -1,0 +1,75 @@
+# Table 3-11
+meta:
+  system: Tome of Adventure Design
+data:
+  text: Coded and Deliberate Messages
+  related:
+    from:
+      text: Coded and Deliberate Messages From Whom
+      options:
+        - text: Controller or powerful figure in the location
+        - text: Slave
+        - text: Monster
+        - text: Prisoner
+        - text: Insane person
+        - text: Religious leader
+        - text: An Adventurer
+        - text: Second in command
+        - text: Protector in adventure area
+        - text: One who is hidden or guarded
+        - text: Someone held for ransom
+        - text: One who is believed dead
+        - text: One who cannot write; a scribe was involved
+        - text: A person who was cheated
+        - text: One who is afraid for his life
+        - text: A fugitive
+        - text: Performer or artist
+        - text: One who is sick or on the verge of death
+        - text: An architect or engineer involved in construction
+        - text: One who has been cursed or influenced by spell
+    to:
+      text: Coded and Deliberate Messages To Whom
+      options:
+        - text: An enemy
+        - text: Patron elsewhere
+        - text: A friend
+        - text: An ally
+        - text: A potential rescuer (not necessarily a rescuer of the person writing)
+        - text: Relative, clan member, or family
+        - text: An employer
+        - text: Another member of same racial group
+        - text: One who is believed dead
+        - text: One who provides supplies of some kind
+        - text: A historian or sage
+        - text: A war leader
+        - text: A skilled negotiator or possible intermediary
+        - text: A devoutly religious person or zealot
+        - text: A thief or thieves’ guild
+        - text: A wizard
+        - text: A healer
+        - text: A wanton hussy
+        - text: A person seeking vengeance
+        - text: A spy
+    interest:
+      text: Coded and Deliberate Messages Content of Interest to Adventurers
+      options:
+        - text: 'How to avoid or disarm a trap'
+        - text: 'How to find another important piece of information (such as a map or a diary)'
+        - text: 'How to open a trick door or secret door'
+        - text: 'How to operate a piece of machinery (an elevator to another level, the lava channels, the ghoul vats, the potion-brewing machine, etc).'
+        - text: 'How to work a particular trick most beneficially'
+        - text: 'Information about a major monster: how to avoid it'
+        - text: 'Information about a significant monster: how to negotiate with it or keep it from attacking'
+        - text: 'Information about a significant monster: what it is'
+        - text: 'Information about backstory: what happened to make the place dangerous'
+        - text: 'Information about backstory: who built the place'
+        - text: 'Information about backstory: who lived here'
+        - text: 'Information about backstory: why the place was originally built'
+        - text: Location of a key
+        - text: Location of a level change
+        - text: Location of a particular room being sought (the prison, the privy, the library, etc).
+        - text: Location of a secret door
+        - text: Location of a trap
+        - text: Location of a treasure
+        - text: Part of a map
+        - text: Why an unusual room is built the way it is

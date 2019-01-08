@@ -1,24 +1,26 @@
 import Bluebird from 'bluebird';
 import * as R from 'ramda';
 import counterModule from '../../counter';
-import diceModule from '../../dice';
 import {
   IElementDefinition,
   IOptionalElementDefinition,
-  IRelatedDiceModule,
   IRelatedElement,
+  IRelatedOptionsModule,
 } from '../../typings';
 import { compactArray } from '../../utils';
+import optionsModule from '../options';
 
-const relatedDiceModule: IRelatedDiceModule =
-(_) => {
-  const rollElement: (diceDef: string) => Bluebird<IOptionalElementDefinition> =
-    (diceDef) => diceModule(diceDef).rollElement();
+const relatedOptionsModule: IRelatedOptionsModule =
+(world) => {
+  const getOption: (element: IRelatedElement) => Bluebird<IOptionalElementDefinition> =
+  (element) => {
+    return optionsModule(world).random(element as IElementDefinition);
+  };
 
   const get: (related: IRelatedElement, parent: IElementDefinition) => Bluebird<IRelatedElement> =
   (related) => {
     return Bluebird.all(
-      R.times(() => rollElement(related.dice!), counterModule(related.count).get()),
+      R.times(() => getOption(related), counterModule(related.count).get()),
     ).then((results: IOptionalElementDefinition[]) => {
       return R.set(R.lensProp('results'), compactArray(results), related);
     });
@@ -29,4 +31,4 @@ const relatedDiceModule: IRelatedDiceModule =
   };
 };
 
-export default relatedDiceModule;
+export default relatedOptionsModule;

@@ -24,233 +24,6 @@ const getWorld: (connector: IConnectorFactory) => IWorldFactory =
   });
 
 describe('World#get', () => {
-  // describe('title analysis', () => {
-  //   describe('in root element', () => {
-  //     const world: IWorldFactory = getWorld(
-  //       testConnector({
-  //         elements: {
-  //           es: {
-  //             ns1: {
-  //               type1: {
-  //                 data: {
-  //                   text: 'Title',
-  //                   options: [{
-  //                     text: 'option1',
-  //                   }, {
-  //                     text: 'option2',
-  //                   }],
-  //                 },
-  //               },
-  //             },
-  //           },
-  //           en: {},
-  //         },
-  //       }),
-  //     );
-
-  //     it('sets the title accordingly', (done) => {
-  //       const search: IRelatedElement = {
-  //         search: [{
-  //           locale: 'es',
-  //           ns: 'ns1',
-  //           type: 'type1',
-  //         }],
-  //         count: 1,
-  //       };
-  //       world.get(search).then((element: IWorldElement[]) => {
-  //         const formatted: IElementFormatted = element[0].format!;
-  //         expect(formatted.title).to.eql('Title');
-  //         expect(formatted.text).to.be.oneOf(['option1', 'option2']);
-  //         done();
-  //       });
-  //     });
-  //   });
-
-  //   describe('with related directly in root table', () => {
-  //     describe('title in related table', () => {
-  //       const world: IWorldFactory = getWorld(
-  //         testConnector({
-  //           elements: {
-  //             es: {
-  //               ns1: {
-  //                 type1: {
-  //                   data: {
-  //                     text: 'Title 1',
-  //                     related: {
-  //                       key: {
-  //                         search: [{
-  //                           locale: 'es',
-  //                           ns: 'ns1',
-  //                           type: 'type2',
-  //                         }],
-  //                       },
-  //                     },
-  //                   },
-  //                 },
-  //                 type2: {
-  //                   data: {
-  //                     text: 'Title 2',
-  //                     options: [{
-  //                       text: 'option1',
-  //                     }, {
-  //                       text: 'option2',
-  //                     }],
-  //                   },
-  //                 },
-  //               },
-  //             },
-  //             en: {},
-  //           },
-  //         }),
-  //       );
-
-  //       it('sets the title accordingly', (done) => {
-  //         const search: IRelatedElement = {
-  //           search: [{
-  //             locale: 'es',
-  //             ns: 'ns1',
-  //             type: 'type1',
-  //           }],
-  //           count: 1,
-  //         };
-  //         world.get(search).then((element: IWorldElement[]) => {
-  //           const formatted: IElementFormatted = element[0].format!;
-  //           expect(formatted.title).to.eql('Title 1');
-  //           expect(formatted.text).to.be.undefined;
-
-  //           const child: IElementFormatted = formatted.children![0];
-  //           expect(child.title).to.eql('Title 2');
-  //           expect(child.text).to.be.oneOf(['option1', 'option2']);
-  //           done();
-  //         });
-  //       });
-  //     });
-  //     describe('title in related item', () => {
-  //       const world: IWorldFactory = getWorld(
-  //         testConnector({
-  //           elements: {
-  //             es: {
-  //               ns1: {
-  //                 type1: {
-  //                   data: {
-  //                     text: 'Title 1',
-  //                     related: {
-  //                       key: {
-  //                         text: 'Title R',
-  //                         search: [{
-  //                           locale: 'es',
-  //                           ns: 'ns1',
-  //                           type: 'type2',
-  //                         }],
-  //                       },
-  //                     },
-  //                   },
-  //                 },
-  //                 type2: {
-  //                   data: {
-  //                     text: 'Title 2',
-  //                     options: [{
-  //                       text: 'option1',
-  //                     }, {
-  //                       text: 'option2',
-  //                     }],
-  //                   },
-  //                 },
-  //               },
-  //             },
-  //             en: {},
-  //           },
-  //         }),
-  //       );
-
-  //       it('sets the title accordingly', (done) => {
-  //         const search: IRelatedElement = {
-  //           search: [{
-  //             locale: 'es',
-  //             ns: 'ns1',
-  //             type: 'type1',
-  //           }],
-  //           count: 1,
-  //         };
-  //         world.get(search).then((element: IWorldElement[]) => {
-  //           const formatted: IElementFormatted = element[0].format!;
-  //           expect(formatted.title).to.eql('Title 1');
-  //           expect(formatted.text).to.be.undefined;
-
-  //           const child: IElementFormatted = formatted.children![0];
-  //           expect(child.title).to.eql('Title R');
-  //           expect(child.text).to.be.oneOf(['option1', 'option2']);
-  //           done();
-  //         });
-  //       });
-  //     });
-  //   });
-
-  //   describe('with related in options table', () => {
-  //     describe('title in related item', () => {
-  //       const world: IWorldFactory = getWorld(
-  //         testConnector({
-  //           elements: {
-  //             es: {
-  //               ns1: {
-  //                 type1: {
-  //                   data: {
-  //                     text: 'Title 1',
-  //                     options: [{
-  //                       text: 'Title R',
-  //                       related: {
-  //                         key: {
-  //                           search: [{
-  //                             locale: 'es',
-  //                             ns: 'ns1',
-  //                             type: 'type2',
-  //                           }],
-  //                         },
-  //                       },
-  //                     }],
-  //                   },
-  //                 },
-  //                 type2: {
-  //                   data: {
-  //                     text: 'Title 2',
-  //                     options: [{
-  //                       text: 'option1',
-  //                     }, {
-  //                       text: 'option2',
-  //                     }],
-  //                   },
-  //                 },
-  //               },
-  //             },
-  //             en: {},
-  //           },
-  //         }),
-  //       );
-
-  //       it('sets the title accordingly', (done) => {
-  //         const search: IRelatedElement = {
-  //           search: [{
-  //             locale: 'es',
-  //             ns: 'ns1',
-  //             type: 'type1',
-  //           }],
-  //           count: 1,
-  //         };
-  //         world.get(search).then((element: IWorldElement[]) => {
-  //           const formatted: IElementFormatted = element[0].format!;
-  //           expect(formatted.title).to.eql('Title 1');
-  //           expect(formatted.text).to.be.undefined;
-
-  //           const child: IElementFormatted = formatted.children![0];
-  //           expect(child.title).to.eql('Title R');
-  //           expect(child.text).to.be.oneOf(['option1', 'option2']);
-  //           done();
-  //         });
-  //       });
-  //     });
-  //   });
-  // });
-
   describe('with faction', () => {
     const connector = testConnector({
       elements: {
@@ -532,4 +305,59 @@ describe('World#get', () => {
       });
     });
   });
+
+  // describe('default locale and system', () => {
+  //   describe('in related element', () => {
+  //     const connector = testConnector({
+  //       elements: {
+  //         es: {
+  //           ns: {
+  //             type1: {
+  //               data: {
+  //                 text: 'Type1',
+  //                 related: {
+  //                   faction: {
+  //                     search: [{
+  //                       type: 'type2',
+  //                     }],
+  //                   },
+  //                 },
+  //               },
+  //             },
+  //             type2: {
+  //               data: {
+  //                 text: 'Type 2',
+  //                 options: [{
+  //                   text: 'Option 1',
+  //                 }, {
+  //                   text: 'Option 2',
+  //                 }],
+  //               },
+  //             },
+  //           },
+  //         },
+  //         en: {},
+  //       },
+  //     });
+  //     const world = getWorld(connector);
+
+  //     describe('random search', () => {
+  //       const search: IRelatedElement = {
+  //         search: [{
+  //           locale: 'es',
+  //           ns: 'ns',
+  //           type: 'type1',
+  //         }],
+  //       };
+  //       it('return the type2 option correctly', (done) => {
+  //         world.get(search).then((elements: IWorldElement[]) => {
+  //           const element: IElementFormatted = elements[0]!.format!;
+  //           expect(element).to.not.be.null;
+  //           expect(element.text).to.be.oneOf(['Option 1', 'Option 2']);
+  //           done();
+  //         });
+  //       });
+  //     });
+  //   });
+  // });
 });

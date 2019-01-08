@@ -101,6 +101,53 @@ describe('Related#fetch', () => {
       });
     });
 
+    describe('related options', () => {
+      const connector = testConnector({
+        elements: {
+          es: {},
+          en: {},
+        },
+      });
+
+      const world: IWorldDefinition = {
+        connector,
+        repository,
+        meta,
+      };
+
+      it('return the ns2:item2 option', (done) => {
+        const element: IOptionalElementDefinition = {
+          text: 'Test',
+          related: {
+            key1: {
+              options: [{
+                text: 'item11',
+              }, {
+                text: 'item12',
+              }],
+            },
+            key2: {
+              options: [{
+                text: 'item21',
+              }, {
+                text: 'item22',
+              }],
+            },
+          },
+        };
+
+        const related = relatedModule(world);
+
+        related.fetch(element).then((data: IOptionalElementDefinition) => {
+          expect(data).to.not.be.null;
+          expect(data!.text).to.eql('Test');
+          expect(data!.related!.key1.results![0].text).to.be.oneOf(['item11', 'item12']);
+          expect(data!.related!.key2.results![0].text).to.be.oneOf(['item21', 'item22']);
+          done();
+        });
+      });
+    });
+
     describe('with dice', () => {
       const connector = testConnector({
         elements: {

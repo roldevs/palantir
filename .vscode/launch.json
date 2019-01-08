@@ -11,16 +11,16 @@
       "program": "${workspaceFolder}/index.ts"
     },
     {
-      "type": "node",
-      "request": "launch",
-      "name": "Debug TypeScript in Node.js",
-      "preLaunchTask": "typescript",
-      "program": "${workspaceFolder}/index.ts",
-      "cwd": "${workspaceFolder}",
-      "protocol": "inspector",
-      "outFiles": [
-        "${workspaceFolder}/dist/**/*.js"
-      ]
+        "name": "Launch index.ts",
+        "type": "node",
+        "request": "launch",
+        "runtimeArgs": [
+            "-r",
+            "ts-node/register"
+        ],
+        "args": [
+            "${workspaceFolder}/server.ts"
+        ]
     },
     {
       "type": "node",

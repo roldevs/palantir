@@ -1,5 +1,7 @@
 meta:
   system: Páramos Aventurados
+  categories:
+    - dashboard
 data:
   - text: Peligro
     options:

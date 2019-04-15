@@ -15,43 +15,55 @@ import {
 import { JSONprettify, removeExtension } from './src/lib/utils';
 import worldCreator from './src/lib/world';
 
-const debug: boolean = false;
-const locale: string = 'es';
-const useConnector: number = 1;
-const count: number = 1;
-const ns: string = 'perilous';
-const type: string = 'dungeon';
-const meta: IMetaFactory = metaModule({
-  rootPath: './definitions',
-  metaFilePath: './meta.yml',
-});
+import FileListModule from './src/lib/file/list';
+import { MetaProcessorModule } from './src/lib/meta/processor';
 
-const world = worldCreator({
-  connector: localConnectorCreator({
-    rootPath: './definitions',
-  }),
-  repository: repositoryCreator({
-    locale,
-    elements: {},
-  }),
-  meta,
-});
+const connector = localConnectorCreator({ rootPath: './definitions' });
 
-world.get({
-  search: [{locale, ns, type}],
-  count,
-}).then((data: any) => {
-  console.log(JSONprettify(data));
+connector.list().then(
+  MetaProcessorModule(
+    connector,
+    {ids: {}, categories: {}},
+  ).process,
+).then(console.log);
 
-//   // R.forEach(
-//   //   (element: IElementDefinition) => {
-//   //     console.log(JSONprettify(element));
-//   //     print(element, null, 0, accumulator);
-//   //   }, data,
-//   // );
+// const debug: boolean = false;
+// const locale: string = 'es';
+// const useConnector: number = 1;
+// const count: number = 1;
+// const ns: string = 'perilous';
+// const type: string = 'dungeon';
+// const meta: IMetaFactory = metaModule({
+//   rootPath: './definitions',
+//   metaFilePath: './meta.yml',
+// });
 
-//   // R.forEach((info: IOutInfo) => console.log(`${spaces(info.depth)} ${info.text}`), accumulator);
-});
+// const world = worldCreator({
+//   connector: localConnectorCreator({
+//     rootPath: './definitions',
+//   }),
+//   repository: repositoryCreator({
+//     locale,
+//     elements: {},
+//   }),
+//   meta,
+// });
+
+// world.get({
+//   search: [{locale, ns, type}],
+//   count,
+// }).then((data: any) => {
+//   console.log(JSONprettify(data));
+
+// //   // R.forEach(
+// //   //   (element: IElementDefinition) => {
+// //   //     console.log(JSONprettify(element));
+// //   //     print(element, null, 0, accumulator);
+// //   //   }, data,
+// //   // );
+
+// //   // R.forEach((info: IOutInfo) => console.log(`${spaces(info.depth)} ${info.text}`), accumulator);
+// });
 
 // import { readdirSync, readFileSync, writeFileSync } from 'fs';
 // import YAML from 'yaml';

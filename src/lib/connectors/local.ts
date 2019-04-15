@@ -1,6 +1,7 @@
 import Bluebird from 'bluebird';
 import YAML from 'yaml';
 import { readFile } from '../file';
+import FileListModule from '../file/list';
 import {
   IConnectorFactory,
   ILocalConnectorOptions,
@@ -25,7 +26,11 @@ const localConnector: (options: ILocalConnectorOptions) => IConnectorFactory =
   const meta: (locator: ISearchDefinition) => Bluebird<IMeta> =
   (locator) => getResult(options.rootPath, locator).then(fetchMeta);
 
+  const list: () => Bluebird<ISearchDefinition[]> =
+  () => FileListModule(options.rootPath).list();
+
   return {
+    list,
     get,
     meta,
   };

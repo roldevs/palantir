@@ -68,12 +68,16 @@ type ISearchResult = Array<IElement | IElementDefinition>;
 interface IMeta {
   system: string;
   id?: string;
+  categories?: string[];
   locator?: ISearchDefinition;
 }
 
 interface IMetaDefinition {
   ids: {
     [id: string]: ISearchDefinition;
+  };
+  categories: {
+    [page: string]: ISearchDefinition[];
   };
 }
 
@@ -107,11 +111,12 @@ interface IRepositoryOptions {
 }
 
 interface IMetaOptions {
-  rootPath: string;
+  connector: IConnectorFactory;
   metaFilePath: string;
 }
 
 interface IConnectorFactory {
+  list: () => Bluebird<ISearchDefinition[]>;
   get: (locator: ISearchDefinition) => Bluebird<IOptionalElementDefinition>;
   meta: (locator: ISearchDefinition) => Bluebird<IMeta>;
 }

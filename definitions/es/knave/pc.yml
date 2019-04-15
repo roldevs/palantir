@@ -1,6 +1,8 @@
 meta:
   system: Knave
   id: '1'
+  categories:
+    - dashboard
 data:
   text: PC
   related:

@@ -15,6 +15,7 @@ describe('MetaId#get', () => {
         type: 'type1',
       },
     },
+    categories: {},
   });
 
   it('id 1 return es/ns1/type1', () => {

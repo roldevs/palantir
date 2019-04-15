@@ -1,7 +1,6 @@
 import Bluebird from 'bluebird';
 import fs from 'fs';
-import * as R from 'ramda';
-import YAML from 'yaml';
+import path from 'path';
 
 const writeFile: (filePath: string, content: string) => Bluebird<string> =
 (filePath, content) => new Bluebird((resolve, reject) => {
@@ -27,10 +26,10 @@ const readFile: (filePath: string) => Bluebird<string> =
   });
 };
 
-const unlinkFile: (path: string) => Bluebird<string> =
-(path) => {
+const unlinkFile: (filePath: string) => Bluebird<string> =
+(filePath) => {
   return new Bluebird((resolve: any, reject: any) => {
-    fs.unlink(path, (err) => {
+    fs.unlink(filePath, (err) => {
       if (!err || err.code === 'ENOENT') {
         resolve(path);
       } else {
@@ -40,7 +39,15 @@ const unlinkFile: (path: string) => Bluebird<string> =
   });
 };
 
+const getAllFiles: (rootDir: string) => string[] = (rootDir) =>
+  fs.readdirSync(rootDir).reduce((files: string[], file: string) => {
+    const name = path.join(rootDir, file);
+    const isDirectory = fs.statSync(name).isDirectory();
+    return isDirectory ? [...files, ...getAllFiles(name)] : [...files, name];
+  }, []);
+
 export {
+  getAllFiles,
   readFile,
   writeFile,
   unlinkFile,

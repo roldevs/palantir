@@ -41,9 +41,47 @@ const testConnector: (options: ITestConnectorOptions) => IConnectorFactory =
   const meta: (locator: ISearchDefinition) =>
     Bluebird<IMeta> = getResult(options, getMeta);
 
+  const toSearchDefinition: (locale: string, ns: string, type: string) =>
+    ISearchDefinition =
+    (locale, ns, type) => {
+      return {
+        locale, ns, type,
+      };
+    };
+
+  const addLocators: (locale: string | number, ns: string | number) =>
+    (acc: ISearchDefinition[], type: string | number) => ISearchDefinition[] =
+    (locale, ns) => (acc, type) => R.flatten(
+      R.append(
+        toSearchDefinition(locale as string, ns as string, type as string),
+        acc,
+      ),
+    );
+
+  const addNs: (locale: string | number) => (acc: ISearchDefinition[], ns: string | number) =>
+    ISearchDefinition[] =
+    (locale) => (acc, ns) => R.reduce(
+      addLocators(locale, ns),
+      acc,
+      R.keys(options.elements[locale][ns]),
+    );
+
+  const addLocales: (acc: ISearchDefinition[], locale: string | number) => ISearchDefinition[] =
+    (acc, locale) => R.reduce(
+      addNs(locale),
+      acc,
+      R.keys(options.elements[locale]),
+    );
+
+  const list: () => Bluebird<ISearchDefinition[]> =
+    () => Bluebird.resolve(R.reduce<string, ISearchDefinition[]>(
+      addLocales, [], R.keys(options.elements) as string[]),
+    );
+
   return {
     get,
     meta,
+    list,
   };
 };
 

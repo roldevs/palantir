@@ -1,5 +1,7 @@
 meta:
   system: Páramos Aventurados
+  pages:
+    - dashboard
 data:
   text: Criatura
   options:

@@ -9,16 +9,17 @@ const getWorld: (config: {
   locale: string;
 }) => IWorldFactory =
 (config) => {
+  const connector = localConnectorCreator({
+      rootPath: './definitions',
+  });
   const locale: string = R.defaultTo('es', config.locale);
   const meta: IMetaFactory = metaModule({
-    rootPath: './definitions',
+    connector,
     metaFilePath: './meta.yml',
   });
 
   return worldCreator({
-    connector: localConnectorCreator({
-      rootPath: './definitions',
-    }),
+    connector,
     repository: repositoryCreator({
       locale,
       elements: {},

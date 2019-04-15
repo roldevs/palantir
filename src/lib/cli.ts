@@ -22,15 +22,16 @@ const localConnector: () => IConnectorFactory = () => localConnectorCreator({
 
 const getWorld: (params: IParserOptions) => any =
 (params) => {
-  const meta: IMetaFactory = metaModule({
-    rootPath: './definitions',
-    metaFilePath: './meta.yml',
-  });
-
   const connectorCreators: any = {
     0: remoteConnector(params.debug),
     1: localConnector(),
   };
+
+  const meta: IMetaFactory = metaModule({
+    connector: connectorCreators[params.connector],
+    metaFilePath: './meta.yml',
+  });
+
   return worldCreator({
     connector: connectorCreators[params.connector],
     repository: repositoryCreator({

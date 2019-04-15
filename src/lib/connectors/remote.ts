@@ -42,9 +42,17 @@ const remoteConnector: (options: IRemoteConnectorOptions) => IConnectorFactory =
   const meta: (locator: ISearchDefinition) => Bluebird<IMeta> =
   (locator) => getResult(instance, locator).then(fetchMeta);
 
+  const list: () => Bluebird<ISearchDefinition[]> =
+    () => {
+      // tslint:disable-next-line:no-console
+      console.error('Remote connector cannot list file definitions');
+      return Bluebird.resolve([]);
+    };
+
   return {
     get,
     meta,
+    list,
   };
 };
 

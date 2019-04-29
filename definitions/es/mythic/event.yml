@@ -1,5 +1,7 @@
 meta:
   system: Mythic GM Emulator
+  categories:
+    - plot
 data:
   text: Evento
   related:

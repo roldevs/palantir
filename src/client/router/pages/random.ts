@@ -15,10 +15,6 @@ const parseOptions: (locale: string, ns: string, type: string) => any =
 
 const startModule: (options: { core: any }, name: string, el: string, moduleOptions: any) => Bluebird<void> =
 (options, name, el, moduleOptions) => {
-  if (options.core.scaleApp.isModuleRunning(name)) {
-    return Bluebird.resolve();
-  }
-
   return options.core.scaleApp.moduleStart(name, {
     options: R.merge({el}, moduleOptions),
   });
@@ -35,11 +31,13 @@ const randomPage: (
   (locale, ns, type) => {
     const moduleOptions = parseOptions(locale, ns, type);
 
-    return startModule(options, 'layout', 'application', moduleOptions,
-    ).then(() => {
-      return startModule(options, 'selector', 'selector', moduleOptions);
-    }).then(() => {
-      return startModule(options, 'results', 'results', moduleOptions);
+    return options.core.scaleApp.stopAllModules().then(() => {
+      return startModule(options, 'layout', 'application', moduleOptions,
+      ).then(() => {
+        return startModule(options, 'selector', 'header', moduleOptions);
+      }).then(() => {
+        return startModule(options, 'results', 'body', moduleOptions);
+      });
     });
   };
 

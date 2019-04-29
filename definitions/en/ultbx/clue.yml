@@ -1,5 +1,7 @@
 meta:
   system: Ultimate Toolbox
+  categories:
+    - plot
 data:
   text: Clue
   options:

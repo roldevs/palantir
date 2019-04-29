@@ -3,6 +3,7 @@ meta:
   id: '1'
   categories:
     - dashboard
+    - pc
 data:
   text: PC
   related:

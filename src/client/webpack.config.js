@@ -14,10 +14,12 @@ module.exports = (() => {
   const config = {
     context: __dirname,
     mode: 'development',
-    entry: './app',
+    entry: {
+      home: './home',
+    },
     output: {
       path: path.join(__dirname, '../../public'),
-      filename: 'app.js',
+      filename: "[name].js",
       libraryTarget: 'var',
       library: 'Hall'
     },

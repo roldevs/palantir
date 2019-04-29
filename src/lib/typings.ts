@@ -128,11 +128,15 @@ interface IRepositoryFactory {
 
 interface IMetaFactory {
   getById: (id: string) => Bluebird<ISearchDefinition[]>;
+  cathegories: () => Bluebird<Array<number | string>>;
+  getCathegory: (cathegory: string) => Bluebird<IMetaCathegoryResult[]>;
 }
 
 interface IWorldFactory {
   get: (search: IRelatedElement) => Bluebird<IWorldElement[]>;
   getById: (id: string) => Bluebird<IWorldElement[]>;
+  cathegories: () => Bluebird<Array<number | string>>;
+  getCathegory: (cathegory: string) => Bluebird<IMetaCathegoryResult[]>;
 }
 
 interface IElementFactory {
@@ -204,7 +208,7 @@ type IFolderModule = (rootPath: string) => {
 };
 
 type ICliOutModule = (logger: any) => {
-  output: (elements: IElementFormatted[]) => void;
+  output: (elements: Array<IElementFormatted | null>) => void;
 };
 
 type IDiceModule = (diceDef: string) => {
@@ -228,6 +232,20 @@ type IMetaPersistenceModule = (options: IMetaOptions) => {
 
 type IMetaIdModule = (options: IMetaDefinition) => {
   search: (id: string) => ISearchDefinition[];
+};
+
+interface IMetaCathegoryModuleOptions {
+  definition: IMetaDefinition;
+}
+
+interface IMetaCathegoryResult {
+  ns: string;
+  locators: ISearchDefinition[];
+}
+
+type IMetaCathegoryModule = (options: IMetaCathegoryModuleOptions) => {
+  search: (id: string) => Bluebird<IMetaCathegoryResult[]>;
+  list: () => Bluebird<Array<string | number>>;
 };
 
 /////////////////////////////////////////////////////////
@@ -284,6 +302,8 @@ export {
   IMetaTestModule,
   IMetaPersistenceModule,
   IMetaIdModule,
+  IMetaCathegoryModule,
+  IMetaCathegoryResult,
   IMetaFactory,
   ERandomOption, //
   IElementDefinition,

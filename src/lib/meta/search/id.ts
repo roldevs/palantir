@@ -3,8 +3,8 @@ import * as R from 'ramda';
 import {
   IMetaIdModule,
   ISearchDefinition,
-} from '../typings';
-import { compactArray } from '../utils';
+} from '../../typings';
+import { compactArray } from '../../utils';
 
 const metaIdModule: IMetaIdModule =
 (metaDefinition) => {

@@ -8,8 +8,12 @@ import { spaces } from '../utils';
 
 const cliOutModule: ICliOutModule =
 (logger: any) => {
-  const generateResults: (depth: number) => (element: IElementFormatted) => void =
+  const generateResults: (depth: number) => (element: IElementFormatted | null) => void =
   (depth) => (element) => {
+    if (!element) {
+      return;
+    }
+
     if (element.children) {
       logger(`${spaces(depth)} ${element.title}`);
       R.map(generateResults(depth + 1), element.children);

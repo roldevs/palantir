@@ -1,5 +1,7 @@
 meta:
   system: Maze Rats
+  categories:
+    - pc
 data:
   text: Personaje Jugador
   related:

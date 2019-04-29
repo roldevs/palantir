@@ -12,6 +12,9 @@ const formView: (fields: VNode[]) => VNode =
       ui: true,
       form: true,
     },
+    props: {
+      id: 'header',
+    },
   }, [
     h('div', {
       class: {

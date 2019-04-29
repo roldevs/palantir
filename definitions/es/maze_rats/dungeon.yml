@@ -1,5 +1,7 @@
 meta:
   system: Maze Rats
+  categories:
+    - dungeon
 data:
   text: Mazmorra
   related:

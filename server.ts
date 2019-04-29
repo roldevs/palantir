@@ -12,9 +12,12 @@ import morgan from 'morgan';
 import path from 'path';
 import routes from './src/server/routes';
 
+const title = process.env.APP_NAME;
+const dsn: string = process.env.SENTRY_DNS!;
+
 dotenv.config();
 
-Sentry.init({ dsn: process.env.SENTRY_DNS });
+// Sentry.init({  dsn });
 
 process.env.PWD = process.cwd();
 const staticsFolder = path.join(process.env.PWD!, '/public');
@@ -43,11 +46,7 @@ app.use(
 
 app.use('/api', routes);
 
-app.get('/', (_, res: any) => {
-  res.render('home', {
-    title: process.env.APP_NAME,
-  });
-});
+app.get('/', (_, res: any) => res.render('home', { title }));
 
 app.listen(app.get('port'), () => {
   console.log(staticsFolder);

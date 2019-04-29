@@ -1,5 +1,7 @@
 meta:
   system: One Shot Dungeon World
+  categories:
+    - plot
 data:
   text: One Shot Dungeon Starter
   related:

@@ -2,6 +2,7 @@ meta:
   system: Páramos Aventurados
   categories:
     - dashboard
+    - npc
 data:
   text: PNJ
   related:

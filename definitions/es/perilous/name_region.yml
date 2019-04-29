@@ -1,5 +1,7 @@
 meta:
   system: Páramos Aventurados
+  categories:
+    - names
 data:
   - text: Nombre Región
     options:

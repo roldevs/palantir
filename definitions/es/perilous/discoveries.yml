@@ -2,6 +2,7 @@ meta:
   system: Páramos Aventurados
   categories:
     - dashboard
+    - discoveries
 data:
   text: Descubrimientos
   options:

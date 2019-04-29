@@ -44,8 +44,10 @@ const generateResults: (parent: IElementFormatted | null, depth: number) => (ele
 };
 
 const viewFn: (model: IResultsState, controller: IResultsController) => VNode =
-(model) => {
-  return h('div', R.map(generateResults(null, 0), model.elements));
-};
+(model) => h('div', {
+    props: {
+      id: 'body',
+    },
+  }, R.map(generateResults(null, 0), model.elements));
 
 export default viewFn;

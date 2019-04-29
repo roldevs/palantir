@@ -2,6 +2,7 @@ meta:
   system: Páramos Aventurados
   categories:
     - dashboard
+    - dungeon
 data:
   options:
     - text: Mazmorra Pequeña

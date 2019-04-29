@@ -1,5 +1,7 @@
 meta:
   system: Ultimate Toolbox
+  categories:
+    - names
 data:
   text: Name
   options:

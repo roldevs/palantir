@@ -2,6 +2,7 @@ meta:
   system: Páramos Aventurados
   categories:
     - dashboard
+    - treasure
 data:
   - text: Tesoro
     options:

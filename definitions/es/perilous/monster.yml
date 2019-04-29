@@ -2,6 +2,7 @@ meta:
   system: Páramos Aventurados
   categories:
     - dashboard
+    - monster
 data:
   - text: Monstruo
     options:

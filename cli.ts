@@ -11,7 +11,7 @@ import { JSONprettify } from './src/lib/utils';
 
 const cli = cliCreator(process.argv);
 
-const logElements: (elements: IWorldElement[]) => Bluebird<IElementFormatted[]> =
+const logElements: (elements: IWorldElement[]) => Bluebird<Array<IElementFormatted | null>> =
 (elements) => {
   console.log(JSONprettify(elements));
   return Bluebird.resolve(R.map(R.prop('format'), elements));

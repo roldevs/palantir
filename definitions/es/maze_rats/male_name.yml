@@ -1,5 +1,7 @@
 meta:
   system: Maze Rats
+  categories:
+    - names
 data:
   text: Nombre Masculino
   options:

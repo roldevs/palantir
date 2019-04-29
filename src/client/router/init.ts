@@ -1,7 +1,9 @@
 // tslint:disable:no-console
 import crossroads from 'crossroads';
 import * as hasher from 'hasher';
-import randomPage from './pages/main';
+import cathegoriesIndexPage from './pages/cathegories/index';
+import cathegoriesShowPage from './pages/cathegories/show';
+import randomPage from './pages/random';
 
 const bypassed: (request: any) => void =
 (request) => {
@@ -42,6 +44,8 @@ const initRouter: (config: {
   () => {
     addRoute('', randomPage({core: config.core}).page);
     addRoute('/random/:locale:/:ns:/:type:', randomPage({core: config.core}).page);
+    addRoute('/cathegories', cathegoriesIndexPage({core: config.core}).page);
+    addRoute('/cathegories/:cathegory:', cathegoriesShowPage({core: config.core}).page);
     initHasher();
   };
 

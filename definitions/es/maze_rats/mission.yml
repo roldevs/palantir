@@ -1,5 +1,7 @@
 meta:
   system: Maze Rats
+  categories:
+    - plot
 data:
   text: Misión
   options:

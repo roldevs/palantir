@@ -1,10 +1,10 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import metaIdModule from '../../../src/lib/meta/id';
+import metaIdModule from '../../../../src/lib/meta/search/id';
 import {
   IMetaDefinition,
   ISearchDefinition,
-} from '../../../src/lib/typings';
+} from '../../../../src/lib/typings';
 
 describe('MetaId#get', () => {
   const metaId = metaIdModule({

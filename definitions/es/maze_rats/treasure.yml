@@ -1,5 +1,7 @@
 meta:
   system: Maze Rats
+  categories:
+    - treasure
 data:
   text: Tesoro
   related:

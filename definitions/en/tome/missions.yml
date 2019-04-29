@@ -1,5 +1,7 @@
 meta:
   system: Tome of Adventure Design
+  categories:
+    - plot
 data:
   text: Mission
   options:

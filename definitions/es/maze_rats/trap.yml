@@ -1,5 +1,7 @@
 meta:
   system: Maze Rats
+  categories:
+    - trap
 data:
   text: Trampa
   related:

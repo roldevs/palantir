@@ -1,8 +1,6 @@
 import Bluebird from 'bluebird';
 import {
-  IMetaDefinition,
-  IMetaFactory,
-  IMetaOptions,
+  IMetaCathegoryResult,
   IMetaTestModule,
   ISearchDefinition,
 } from '../typings';
@@ -10,10 +8,18 @@ import {
 const metaTestModule: IMetaTestModule =
 () => {
   const getById: (id: string) => Bluebird<ISearchDefinition[]> =
-  (_) =>  Bluebird.resolve([]);
+    (_) =>  Bluebird.resolve([]);
+
+  const cathegories: () => Bluebird<Array<number | string>> =
+    () =>  Bluebird.resolve([]);
+
+  const getCathegory: (cathegory: string) => Bluebird<IMetaCathegoryResult[]> =
+    (_) =>  Bluebird.resolve([]);
 
   return {
     getById,
+    cathegories,
+    getCathegory,
   };
 };
 

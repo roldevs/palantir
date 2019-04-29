@@ -1,5 +1,7 @@
 meta:
   system: Maze Rats
+  categories:
+    - npc
 data:
   text: PNJ
   options:

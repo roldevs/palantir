@@ -5,6 +5,7 @@ import elementCreator from './element';
 import { elementFormatter } from './formatter/elementFormatter';
 import randomCreator from './random';
 import {
+  IMetaCathegoryResult,
   IOptionalElement,
   IOptionalElementDefinition,
   IRelatedElement,
@@ -51,9 +52,16 @@ const worldModule: IWorldModule =
 
   const getById: (id: string) => Bluebird<IWorldElement[]> = getSearchById(world);
 
+  const cathegories: () => Bluebird<Array<number | string>> = world.meta.cathegories;
+
+  const getCathegory: (cathegory: string) => Bluebird<IMetaCathegoryResult[]> =
+    world.meta.getCathegory;
+
   return {
     get,
     getById,
+    getCathegory,
+    cathegories,
   };
 };
 

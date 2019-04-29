@@ -1,5 +1,7 @@
 meta:
   system: Maze Rats
+  categories:
+    - monster
 data:
   text: Monstruo
   related:

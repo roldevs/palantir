@@ -1,5 +1,5 @@
 import flyd from 'flyd';
-import { IMetaCathegoryResult } from '../../../../../lib/typings';
+import { IMetaCategoryResult } from '../../../../../lib/typings';
 import snabbdomPatch from '../../../../snabbdom_renderer';
 import { controller, IResultsController } from './controller';
 import { actions } from './model';
@@ -13,7 +13,7 @@ const layoutModule = (sb: any) => {
   const onModuleInit = (config: any, done: () => void) => {
     vdom = document.getElementById(config.el);
     flyd.on(render, controllerHandler.stream$);
-    controllerHandler.init(config.cathegory);
+    controllerHandler.init(config.category);
     done();
   };
 
@@ -22,7 +22,7 @@ const layoutModule = (sb: any) => {
     done();
   };
 
-  const render: (model: IMetaCathegoryResult[]) => void = (model) => {
+  const render: (model: IMetaCategoryResult[]) => void = (model) => {
     vdom = snabbdomPatch(vdom, viewFn(model, controllerHandler));
   };
 

@@ -2,7 +2,7 @@
 import axios from 'axios';
 import * as Bluebird from 'bluebird';
 import * as R from 'ramda';
-import Cathegories from './cathegories';
+import Categories from './categories';
 import Folders from './folders';
 import Random from './random';
 
@@ -62,7 +62,7 @@ const services: (
   }
 
   return {
-    cathegories: Cathegories(options),
+    categories: Categories(options),
     folders: Folders(options),
     random: Random(options),
   };

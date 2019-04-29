@@ -1,9 +1,9 @@
 import Bluebird from 'bluebird';
 import metaPersistenceModule from './meta/persistence';
-import metaCathegoryModule from './meta/search/cathegory';
+import metaCategoryModule from './meta/search/category';
 import metaIdModule from './meta/search/id';
 import {
-  IMetaCathegoryResult,
+  IMetaCategoryResult,
   IMetaDefinition,
   IMetaFactory,
   IMetaOptions,
@@ -19,20 +19,20 @@ const metaModule: (options: IMetaOptions) => IMetaFactory =
       return metaIdModule(metaDefinition).search(id);
     });
 
-  const cathegories: () => Bluebird<Array<number | string>> =
+  const categories: () => Bluebird<Array<number | string>> =
     () => persistence.read().then((definition: IMetaDefinition) => {
-      return metaCathegoryModule({ definition }).list();
+      return metaCategoryModule({ definition }).list();
     });
 
-  const getCathegory: (cathegory: string) => Bluebird<IMetaCathegoryResult[]> =
-    (cathegory) => persistence.read().then((definition: IMetaDefinition) => {
-      return metaCathegoryModule({ definition }).search(cathegory);
+  const getCategory: (category: string) => Bluebird<IMetaCategoryResult[]> =
+    (category) => persistence.read().then((definition: IMetaDefinition) => {
+      return metaCategoryModule({ definition }).search(category);
     });
 
   return {
     getById,
-    cathegories,
-    getCathegory,
+    categories,
+    getCategory,
   };
 };
 

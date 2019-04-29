@@ -25,7 +25,7 @@ const viewFn: () => VNode =
         class: {
           content: true,
         },
-      }, 'Cathegories' ),
+      }, 'Categories' ),
     ]),
   ]);
 };

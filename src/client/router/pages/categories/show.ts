@@ -1,12 +1,12 @@
 import Bluebird from 'bluebird';
 import * as R from 'ramda';
 
-const parseOptions: (cathegory: string) => any =
-(cathegory) => {
+const parseOptions: (category: string) => any =
+(category) => {
   // Crossroads envía los parametros de la ruta como
   // un array de valores, hay que mapearlos a un objeto para
   // pasarselo al modulo
-  return { cathegory };
+  return { category };
 };
 
 const startModule: (options: { core: any }, name: string, el: string, moduleOptions: any) => Bluebird<void> =
@@ -17,21 +17,21 @@ const startModule: (options: { core: any }, name: string, el: string, moduleOpti
 };
 
 // Esta page es llamada con /random[/:locale[/:ns[/:type]]]:
-const cathegoriesPage: (
+const categoriesPage: (
   options: {
     core: any,
   },
 ) => any =
 (options) => {
-  const page: (cathegory: string) => any =
-  (cathegory) => {
-    const moduleOptions = parseOptions(cathegory);
+  const page: (category: string) => any =
+  (category) => {
+    const moduleOptions = parseOptions(category);
 
     return options.core.scaleApp.stopAllModules().then(() => {
       return startModule(options, 'layout', 'application', moduleOptions).then(() => {
         return Promise.all([
-          startModule(options, 'cathegories.title', 'header', moduleOptions),
-          startModule(options, 'cathegories.show', 'body', moduleOptions),
+          startModule(options, 'categories.title', 'header', moduleOptions),
+          startModule(options, 'categories.show', 'body', moduleOptions),
         ]);
       });
     });
@@ -42,4 +42,4 @@ const cathegoriesPage: (
   };
 };
 
-export default cathegoriesPage;
+export default categoriesPage;

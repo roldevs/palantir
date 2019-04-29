@@ -2,14 +2,13 @@
 import { expect } from 'chai';
 import R from 'ramda';
 import testConnector from '../../../../src/lib/connectors/test';
-import metaCathegoryModule from '../../../../src/lib/meta/search/cathegory';
+import metaCategoryModule from '../../../../src/lib/meta/search/category';
 import {
-  IMetaCathegoryResult,
+  IMetaCategoryResult,
   IMetaDefinition,
-  ISearchDefinition,
 } from '../../../../src/lib/typings';
 
-describe('MetaCathegoryModule#search', () => {
+describe('MetaCategoryModule#search', () => {
   const connector = testConnector({
     elements: {
       es: {
@@ -87,11 +86,11 @@ describe('MetaCathegoryModule#search', () => {
     },
   };
 
-  const metaCathegory = metaCathegoryModule({ definition });
+  const metaCategory = metaCategoryModule({ definition });
 
   it('cat1 returns two systems (ns1, ns3)', (done) => {
-    metaCathegory.search('cat1').then((result: IMetaCathegoryResult[]) => {
-      let test1result: IMetaCathegoryResult;
+    metaCategory.search('cat1').then((result: IMetaCategoryResult[]) => {
+      let test1result: IMetaCategoryResult;
       test1result = R.find(R.propEq('ns', 'ns1'), result)!;
       expect(test1result).to.not.be.null;
       expect(test1result.locators).that.have.lengthOf(1);
@@ -112,8 +111,8 @@ describe('MetaCathegoryModule#search', () => {
     });
   });
   it('cat2 returns two systems (ns2, ns3)', (done) => {
-    metaCathegory.search('cat2').then((result: IMetaCathegoryResult[]) => {
-      let test1result: IMetaCathegoryResult;
+    metaCategory.search('cat2').then((result: IMetaCategoryResult[]) => {
+      let test1result: IMetaCategoryResult;
       test1result = R.find(R.propEq('ns', 'ns2'), result)!;
       expect(test1result).to.not.be.null;
       expect(test1result.locators).that.have.lengthOf(1);

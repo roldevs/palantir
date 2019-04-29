@@ -1,23 +1,23 @@
 import * as R from 'ramda';
 import {h} from 'snabbdom';
 import {VNode} from 'snabbdom/vnode';
-import { IMetaCathegoryResult, ISearchDefinition } from '../../../../../lib/typings';
+import { IMetaCategoryResult, ISearchDefinition } from '../../../../../lib/typings';
 import { IResultsController } from './controller';
 
-const cathegoryLocatorItem: (locator: ISearchDefinition) => VNode =
+const categoryLocatorItem: (locator: ISearchDefinition) => VNode =
 (locator) => {
   return h('li', [
     h('a', { attrs: { href: `#/random/${locator.locale}/${locator.ns}/${locator.type}`} }, locator.type),
   ]);
 };
 
-const cathegoryLocators: (locators: ISearchDefinition[]) => VNode =
+const categoryLocators: (locators: ISearchDefinition[]) => VNode =
 (locators) => {
-  return h('ul', R.map(cathegoryLocatorItem, locators));
+  return h('ul', R.map(categoryLocatorItem, locators));
 };
 
-const cathegoryBlock: (cathegoryResult: IMetaCathegoryResult) => VNode =
-(cathegoryResult) => {
+const categoryBlock: (categoryResult: IMetaCategoryResult) => VNode =
+(categoryResult) => {
   return h('div', {
     class: {
       ui: true,
@@ -36,21 +36,21 @@ const cathegoryBlock: (cathegoryResult: IMetaCathegoryResult) => VNode =
           dividing: true,
           header: true,
         },
-      }, cathegoryResult.ns ),
+      }, categoryResult.ns ),
       h('div', {
         class: {
           ui: true,
           content: true,
         },
-      }, cathegoryLocators(cathegoryResult.locators)),
+      }, categoryLocators(categoryResult.locators)),
     ]),
   ]);
 };
 
-const viewFn: (model: IMetaCathegoryResult[], controller: IResultsController) => VNode =
+const viewFn: (model: IMetaCategoryResult[], controller: IResultsController) => VNode =
   (model) => h('div', {
     attrs: { id: 'body' },
     class: { ui: true, two: true, column: true, grid: true, basic: true, segment: true },
-  }, R.map(cathegoryBlock, model));
+  }, R.map(categoryBlock, model));
 
 export default viewFn;

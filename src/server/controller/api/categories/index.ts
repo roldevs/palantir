@@ -5,13 +5,13 @@ import errorHandler from '../../../errorHandler';
 import trackEvent from '../../../track';
 import getWorld from '../world';
 
-const cathegoryIndexRequest: (req: any, res: any) => Bluebird<Array<string | number>> =
+const categoryIndexRequest: (req: any, res: any) => Bluebird<Array<string | number>> =
   (req, res) => {
-    return trackEvent('/api/cathegories', 'Cathegories').then(() => {
+    return trackEvent('/api/categories', 'Categories').then(() => {
       return getWorld({
         locale: req.params.locale,
-      }).cathegories();
+      }).categories();
     }).catch(errorHandler(res, process.env).error);
   };
 
-export default cathegoryIndexRequest;
+export default categoryIndexRequest;

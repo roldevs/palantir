@@ -1,35 +1,35 @@
 import * as R from 'ramda';
 import { IElementFormatted } from '../../../../../lib/typings';
 
-type TCathegories = Array<string | number>;
+type TCategories = Array<string | number>;
 
 interface IResultsModel {
-  cathegories: TCathegories;
+  categories: TCategories;
 }
 
 interface IResultsActions {
   init: () => IResultsModel;
   get: () => IResultsModel;
-  setCathegories: (cathegories: TCathegories) => void;
+  setCategories: (categories: TCategories) => void;
 }
 
 const actions: () => IResultsActions =
 () => {
   const init: () => IResultsModel = R.always({
-    cathegories: [],
+    categories: [],
   });
   const state: IResultsModel = init();
 
   const get: () => IResultsModel = () => state;
 
-  const setCathegories: (cathegories: TCathegories) => void =
-  (cathegories) =>  R.set(R.lensProp('cathegories'), cathegories, state);
+  const setCategories: (categories: TCategories) => void =
+  (categories) =>  R.set(R.lensProp('categories'), categories, state);
 
   return {
     init,
     get,
-    setCathegories,
+    setCategories,
   };
 };
 
-export { actions, IResultsModel, IResultsActions, TCathegories };
+export { actions, IResultsModel, IResultsActions, TCategories };

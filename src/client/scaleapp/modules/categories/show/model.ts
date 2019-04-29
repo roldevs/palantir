@@ -1,27 +1,27 @@
 import * as R from 'ramda';
-import { IElementFormatted, IMetaCathegoryResult } from '../../../../../lib/typings';
+import { IMetaCategoryResult } from '../../../../../lib/typings';
 
 interface IResultsModel {
-  cathegories: IMetaCathegoryResult[];
+  categories: IMetaCategoryResult[];
 }
 
 interface IResultsActions {
   init: () => IResultsModel;
   get: () => IResultsModel;
-  setResults: (cathegories: IMetaCathegoryResult[]) => void;
+  setResults: (categories: IMetaCategoryResult[]) => void;
 }
 
 const actions: () => IResultsActions =
 () => {
   const init: () => IResultsModel = R.always({
-    cathegories: [],
+    categories: [],
   });
   const state: IResultsModel = init();
 
   const get: () => IResultsModel = () => state;
 
-  const setResults: (cathegories: IMetaCathegoryResult[]) => void =
-  (cathegories) =>  R.set(R.lensProp('cathegories'), cathegories, state);
+  const setResults: (categories: IMetaCategoryResult[]) => void =
+  (categories) =>  R.set(R.lensProp('categories'), categories, state);
 
   return {
     init,

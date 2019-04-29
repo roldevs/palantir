@@ -58,8 +58,8 @@ const menuDropdown: () => VNode =
     link: '#/random',
     label: 'Table Selector',
   }, {
-    link: '#/cathegories',
-    label: 'Cathegories',
+    link: '#/categories',
+    label: 'Categories',
   }]);
 
 const localeDropdown: () => VNode =

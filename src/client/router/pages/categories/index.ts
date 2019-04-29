@@ -17,7 +17,7 @@ const startModule: (options: { core: any }, name: string, el: string, moduleOpti
 };
 
 // Esta page es llamada con /random[/:locale[/:ns[/:type]]]:
-const cathegoriesPage: (
+const categoriesPage: (
   options: {
     core: any,
   },
@@ -30,8 +30,8 @@ const cathegoriesPage: (
     return options.core.scaleApp.stopAllModules().then(() => {
       return startModule(options, 'layout', 'application', moduleOptions).then(() => {
         return Promise.all([
-          startModule(options, 'cathegories.title', 'header', moduleOptions),
-          startModule(options, 'cathegories.index', 'body', moduleOptions),
+          startModule(options, 'categories.title', 'header', moduleOptions),
+          startModule(options, 'categories.index', 'body', moduleOptions),
         ]);
       });
     });
@@ -42,4 +42,4 @@ const cathegoriesPage: (
   };
 };
 
-export default cathegoriesPage;
+export default categoriesPage;

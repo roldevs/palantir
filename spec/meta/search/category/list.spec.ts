@@ -1,12 +1,12 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
 import testConnector from '../../../../src/lib/connectors/test';
-import metaCathegoryModule from '../../../../src/lib/meta/search/cathegory';
+import metaCategoryModule from '../../../../src/lib/meta/search/category';
 import {
   IMetaDefinition,
 } from '../../../../src/lib/typings';
 
-describe('MetaCathegoryModule#list', () => {
+describe('MetaCategoryModule#list', () => {
   const connector = testConnector({
     elements: {
       es: {},
@@ -22,10 +22,10 @@ describe('MetaCathegoryModule#list', () => {
     },
   };
 
-  const metaCathegory = metaCathegoryModule({ definition });
+  const metaCategory = metaCategoryModule({ definition });
 
-  it('list returns three cathegories (cat1, cat2)', (done) => {
-    metaCathegory.list().then((results: Array<string | number>) => {
+  it('list returns three categories (cat1, cat2)', (done) => {
+    metaCategory.list().then((results: Array<string | number>) => {
       expect(results).to.eql(['cat1', 'cat2']);
       done();
     });

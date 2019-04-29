@@ -128,15 +128,15 @@ interface IRepositoryFactory {
 
 interface IMetaFactory {
   getById: (id: string) => Bluebird<ISearchDefinition[]>;
-  cathegories: () => Bluebird<Array<number | string>>;
-  getCathegory: (cathegory: string) => Bluebird<IMetaCathegoryResult[]>;
+  categories: () => Bluebird<Array<number | string>>;
+  getCategory: (category: string) => Bluebird<IMetaCategoryResult[]>;
 }
 
 interface IWorldFactory {
   get: (search: IRelatedElement) => Bluebird<IWorldElement[]>;
   getById: (id: string) => Bluebird<IWorldElement[]>;
-  cathegories: () => Bluebird<Array<number | string>>;
-  getCathegory: (cathegory: string) => Bluebird<IMetaCathegoryResult[]>;
+  categories: () => Bluebird<Array<number | string>>;
+  getCategory: (category: string) => Bluebird<IMetaCategoryResult[]>;
 }
 
 interface IElementFactory {
@@ -234,17 +234,17 @@ type IMetaIdModule = (options: IMetaDefinition) => {
   search: (id: string) => ISearchDefinition[];
 };
 
-interface IMetaCathegoryModuleOptions {
+interface IMetaCategoryModuleOptions {
   definition: IMetaDefinition;
 }
 
-interface IMetaCathegoryResult {
+interface IMetaCategoryResult {
   ns: string;
   locators: ISearchDefinition[];
 }
 
-type IMetaCathegoryModule = (options: IMetaCathegoryModuleOptions) => {
-  search: (id: string) => Bluebird<IMetaCathegoryResult[]>;
+type IMetaCategoryModule = (options: IMetaCategoryModuleOptions) => {
+  search: (id: string) => Bluebird<IMetaCategoryResult[]>;
   list: () => Bluebird<Array<string | number>>;
 };
 
@@ -302,8 +302,8 @@ export {
   IMetaTestModule,
   IMetaPersistenceModule,
   IMetaIdModule,
-  IMetaCathegoryModule,
-  IMetaCathegoryResult,
+  IMetaCategoryModule,
+  IMetaCategoryResult,
   IMetaFactory,
   ERandomOption, //
   IElementDefinition,

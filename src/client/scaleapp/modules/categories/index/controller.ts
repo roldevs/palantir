@@ -14,14 +14,14 @@ interface IResultsControllerOptions {
 }
 
 const loadList: (options: IResultsControllerOptions) => Bluebird<string[]> =
-(options) => options.sb.services.cathegories.index().then(R.prop('data'));
+(options) => options.sb.services.categories.index().then(R.prop('data'));
 
 const controller: (config: IResultsControllerOptions) => IResultsController =
 (config) => {
   const stream$: flyd.Stream<IResultsModel> = flyd.stream();
 
-  const init: () => void = () => loadList(config).then((cathegories) => {
-    stream$({cathegories});
+  const init: () => void = () => loadList(config).then((categories) => {
+    stream$({categories});
   });
 
   return {

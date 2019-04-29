@@ -1,16 +1,16 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
-import metaProcessorCathegory from '../../../src/lib/meta/processors/cathegory';
+import metaProcessorCategory from '../../../src/lib/meta/processors/category';
 import {
   IMeta,
   IMetaDefinition,
   ISearchDefinition,
 } from '../../../src/lib/typings';
 
-describe('metaProcessorCathegory#process', () => {
+describe('metaProcessorCategory#process', () => {
   describe('process first meta', () => {
-    it('should add cathegory', () => {
-      const processor = metaProcessorCathegory({ ids: {}, categories: {} });
+    it('should add category', () => {
+      const processor = metaProcessorCategory({ ids: {}, categories: {} });
       const locator: ISearchDefinition = {
         locale: 'locale',
         ns: 'ns',
@@ -55,8 +55,8 @@ describe('metaProcessorCathegory#process', () => {
           'page3',
         ],
       };
-      let definition = metaProcessorCathegory(meta).process(header1, locator1);
-      definition = metaProcessorCathegory(definition).process(header2, locator2);
+      let definition = metaProcessorCategory(meta).process(header1, locator1);
+      definition = metaProcessorCategory(definition).process(header2, locator2);
       expect(definition.categories.page1).to.eql([locator1]);
       expect(definition.categories.page2).to.eql([locator1, locator2]);
       expect(definition.categories.page3).to.eql([locator2]);

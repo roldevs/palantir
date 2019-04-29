@@ -5,7 +5,7 @@ import {
   IMetaDefinition,
   ISearchDefinition,
 } from '../typings';
-import MetaProcessorCathegory from './processors/cathegory';
+import MetaProcessorCategory from './processors/category';
 import MetaProcessorId from './processors/id';
 
 type TMetaProcessorFunction = (metaHeader: IMeta, locator: ISearchDefinition) => IMetaDefinition;
@@ -27,7 +27,7 @@ const MetaProcessorModule: TMetaProcessorModule =
 (connector, metaDefinition) => {
   const processors: TMetaProcessor[] = [
     MetaProcessorId,
-    MetaProcessorCathegory,
+    MetaProcessorCategory,
   ];
 
   const processDefinition: (

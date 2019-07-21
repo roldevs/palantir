@@ -1,0 +1,23 @@
+meta:
+  system: The Solitary GM
+data:
+  text: Player
+  related:
+    primary:
+      text: Primary
+      search:
+        - locale: en
+          ns: solitary_gm
+          type: player_types
+    secondary:
+      text: Secondary
+      search:
+        - locale: en
+          ns: solitary_gm
+          type: player_types
+    terciary:
+      text: Terciary
+      search:
+        - locale: en
+          ns: solitary_gm
+          type: player_types

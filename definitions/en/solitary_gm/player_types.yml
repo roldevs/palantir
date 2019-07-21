@@ -1,0 +1,11 @@
+meta:
+  system: The Solitary GM
+data:
+  text: Tipos de Jugador
+  options:
+    - text: Power Gamer
+    - text: Butt-Kicker
+    - text: Tactician
+    - text: Ninja
+    - text: Method Actor
+    - text: Storyteller

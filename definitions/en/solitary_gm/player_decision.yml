@@ -1,0 +1,11 @@
+meta:
+  system: The Solitary GM
+data:
+  text: Player Decision
+  related:
+    decision:
+      text: Decision
+      search:
+        - locale: en
+          ns: solitary_gm
+          type: player_types

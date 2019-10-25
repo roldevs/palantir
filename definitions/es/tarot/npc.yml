@@ -1,0 +1,92 @@
+meta:
+  system: Tarot
+  categories:
+    - dashboard
+    - npc
+data:
+  text: PNJ
+  related:
+    mother:
+      text: La madre del personaje
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    father:
+      text: El padre del personaje
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    parent_strenght:
+      text: El punto fuerte de la relación de sus padres
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    parent_trouble:
+      text: El problema de la relación de sus padres
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    birth_ciscumstances:
+      text: Circunstancias de su nacimiento
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    birth_troubles:
+      text: Complicaciones del nacimiento
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    universe_influence:
+      text: Influencia del universo en su naturaleza
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    early_strengths:
+      text: Fortalezas tempranas
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    early_weaknesses:
+      text: Debilidades tempranas
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    education:
+      text: Educación
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    beliefs:
+      text: Creencias
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    rememberings:
+      text: Un recuerdo
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    breaking_experience:
+      text: Una experiencia reciente que le cambió la vida
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    current_status:
+      text: Estado actual del personaje
+      search:
+        - locale: es
+          ns: tarot
+          type: card

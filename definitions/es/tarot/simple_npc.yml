@@ -1,0 +1,49 @@
+meta:
+  system: Tarot
+  categories:
+    - npc
+data:
+  text: PNJ
+  related:
+    nature:
+      text: Naturaleza del personaje
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    universe_influence:
+      text: Incluencia del universo en el personaje
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    weaknesses:
+      text: Su debilidad
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    parent_influence:
+      text: Influencia de sus amigos y familiares
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    passion:
+      text: Pasión
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    destiny:
+      text: Destino del personaje
+      search:
+        - locale: es
+          ns: tarot
+          type: card
+    destiny_blocker:
+      text: Qué se interpone entre el personaje y su destino
+      search:
+        - locale: es
+          ns: tarot
+          type: card

@@ -1,0 +1,38 @@
+meta:
+  system: Universal NPC Emulator
+data:
+  text: NPC Focus
+  options:
+    - text: current scene
+    - text: last story
+    - text: equipment
+    - text: parents
+    - text: history
+    - text: retainers
+    - text: wealth
+    - text: relics
+    - text: last action
+    - text: skills
+    - text: superiors
+    - text: fame
+    - text: campaign
+    - text: future action
+    - text: friends
+    - text: allies
+    - text: last scene
+    - text: contacts
+    - text: flaws
+    - text: antagonist
+    - text: rewards
+    - text: experience
+    - text: knowledge
+    - text: recent scene
+    - text: community
+    - text: treasure
+    - text: the character
+    - text: current story
+    - text: family
+    - text: power
+    - text: weapons
+    - text: previous scene
+    - text: enemy

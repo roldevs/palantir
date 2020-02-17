@@ -1,0 +1,116 @@
+meta:
+  system: Universal NPC Emulator
+data:
+  - options:
+      - text: Loved
+        options:
+          - text: Withdraw
+            weight: 1
+          - text: Guarded
+            weight: 4
+          - text: Cautious
+            weight: 9
+          - text: Neutral
+            weight: 14
+          - text: Sociable
+            weight: 38
+          - text: Helpful
+            weight: 14
+          - text: Forthcoming
+            weight: 14
+      - text: Friendly
+        options:
+          - text: Withdraw
+            weight: 2
+          - text: Guarded
+            weight: 5
+          - text: Cautious
+            weight: 11
+          - text: Neutral
+            weight: 19
+          - text: Sociable
+            weight: 35
+          - text: Helpful
+            weight: 12
+          - text: Forthcoming
+            weight: 10
+      - text: Peaceful
+        options:
+          - text: Withdraw
+            weight: 3
+          - text: Guarded
+            weight: 7
+          - text: Cautious
+            weight: 13
+          - text: Neutral
+            weight: 29
+          - text: Sociable
+            weight: 26
+          - text: Helpful
+            weight: 10
+          - text: Forthcoming
+            weight: 6
+      - text: Neutral
+        options:
+          - text: Withdraw
+            weight: 5
+          - text: Guarded
+            weight: 9
+          - text: Cautious
+            weight: 14
+          - text: Neutral
+            weight: 29
+          - text: Sociable
+            weight: 14
+          - text: Helpful
+            weight: 9
+          - text: Forthcoming
+            weight: 4
+      - text: Distrustful
+        options:
+          - text: Withdraw
+            weight: 7
+          - text: Guarded
+            weight: 10
+          - text: Cautious
+            weight: 27
+          - text: Neutral
+            weight: 29
+          - text: Sociable
+            weight: 13
+          - text: Helpful
+            weight: 6
+          - text: Forthcoming
+            weight: 2
+      - text: Hostile
+        options:
+          - text: Withdraw
+            weight: 11
+          - text: Guarded
+            weight: 12
+          - text: Cautious
+            weight: 36
+          - text: Neutral
+            weight: 19
+          - text: Sociable
+            weight: 11
+          - text: Helpful
+            weight: 4
+          - text: Forthcoming
+            weight: 2
+      - text: Hated
+        options:
+          - text: Withdraw
+            weight: 15
+          - text: Guarded
+            weight: 14
+          - text: Cautious
+            weight: 38
+          - text: Neutral
+            weight: 14
+          - text: Sociable
+            weight: 9
+          - text: Helpful
+            weight: 4
+          - text: Forthcoming
+            weight: 1

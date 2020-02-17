@@ -1,0 +1,103 @@
+meta:
+  system: Universal NPC Emulator
+data:
+  - options:
+      - text: Scheming
+        options:
+          - text: intent
+          - text: bargain
+          - text: means
+          - text: proposition
+          - text: plan
+          - text: compromise
+          - text: agenda
+          - text: arrangement
+          - text: negotiation
+          - text: plot
+      - text: Insane
+        options:
+          - text: madness
+          - text: fear
+          - text: accident
+          - text: chaos
+          - text: idiocy
+          - text: illusion
+          - text: turmoil
+          - text: confusion
+          - text: façade
+          - text: bewilderment
+      - text: Friendly
+        options:
+          - text: alliance
+          - text: comfort
+          - text: gratitude
+          - text: shelter
+          - text: happiness
+          - text: support
+          - text: promise
+          - text: delight
+          - text: aid
+          - text: celebration
+      - text: Hostile
+        options:
+          - text: death
+          - text: capture
+          - text: judgment
+          - text: combat
+          - text: surrender
+          - text: rage
+          - text: resentment
+          - text: submission
+          - text: injury
+          - text: destruction
+      - text: Inquisitive
+        options:
+          - text: questions
+          - text: investigation
+          - text: interest
+          - text: demand
+          - text: suspicion
+          - text: request
+          - text: curiosity
+          - text: skepticism
+          - text: command
+          - text: petition
+      - text: Knowing
+        options:
+          - text: report
+          - text: effects
+          - text: examination
+          - text: records
+          - text: account
+          - text: news
+          - text: history
+          - text: telling
+          - text: discourse
+          - text: speech
+      - text: Misterious
+        options:
+          - text: rumor
+          - text: uncertainty
+          - text: secrets
+          - text: misdirection
+          - text: whispers
+          - text: lies
+          - text: shadows
+          - text: enigma
+          - text: obscurity
+          - text: conundrum
+      - text: Prejudiced
+        options:
+          - text: reputation
+          - text: doubt
+          - text: bias
+          - text: dislike
+          - text: partiality
+          - text: belief
+          - text: view
+          - text: discrimination
+          - text: assessment
+          - text: difference
+
+
+

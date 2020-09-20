@@ -15,7 +15,7 @@ const generateElements: (element: IElementDefinition) => IElementDefinition[] =
 const distributeModule: IDistributeModule =
 (elements) => {
   const get: () => IElementDefinition[] =
-  () => R.flatten<IElementDefinition>(R.map(generateElements, elements));
+  () => R.flatten(R.map(generateElements, elements)) as IElementDefinition[];
 
   return {
     get,

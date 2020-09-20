@@ -20,7 +20,7 @@ const searchDefinitionModule: ISearchByTypeModule =
   (search) => {
     return world.connector.get(search).then((element: IOptionalElementDefinition) => {
       // Transform to array
-      return compactArray([element]);
+      return compactArray([element]) as ISearchResult;
     });
   };
 

@@ -1,6 +1,6 @@
 // tslint:disable:no-console
 import * as R from 'ramda';
-import uuidv1 from 'uuid/v1';
+import { v4 as uuidv4 } from 'uuid';;
 import { uuid } from './typings';
 
 const compactArray = R.reject(R.isNil);
@@ -15,7 +15,7 @@ R.reduce((acc: any, element: any) => {
   return R.mergeDeepLeft(acc, element);
 }, {});
 
-const getUUID: () => uuid = uuidv1;
+const getUUID: () => uuid = uuidv4;
 
 const JSONprettify: (obj: any) => string =
 (obj) => JSON.stringify(obj, null, 2);

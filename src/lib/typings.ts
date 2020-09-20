@@ -20,7 +20,7 @@ interface IRelatedElement {
   text?: string;
   search?: ISearchDefinition[];
   dice?: string; // Dice result is given in results also
-  results?: Array<IElementDefinition | IElement>; // Here is save the result
+  results?: (IElementDefinition | IElement)[]; // Here is save the result
   count?: number | string; // If string is passed it is taken as a dice expression
   options?: IElementDefinition[];
 }
@@ -63,7 +63,7 @@ interface IElementFormatted {
 
 type IOptionalElement = IElement | null | undefined;
 
-type ISearchResult = Array<IElement | IElementDefinition>;
+type ISearchResult = (IElement | IElementDefinition)[];
 
 interface IMeta {
   system: string;
@@ -79,6 +79,7 @@ interface IMetaDefinition {
   categories: {
     [page: string]: ISearchDefinition[];
   };
+  directory: ISearchDefinition[];
 }
 
 interface ILocalConnectorOptions {
@@ -128,14 +129,16 @@ interface IRepositoryFactory {
 
 interface IMetaFactory {
   getById: (id: string) => Bluebird<ISearchDefinition[]>;
-  categories: () => Bluebird<Array<number | string>>;
+  getByTerm: (term: string) => Bluebird<ISearchDefinition[]>;
+  categories: () => Bluebird<(number | string)[]>;
   getCategory: (category: string) => Bluebird<IMetaCategoryResult[]>;
 }
 
 interface IWorldFactory {
-  get: (search: IRelatedElement) => Bluebird<IWorldElement[]>;
-  getById: (id: string) => Bluebird<IWorldElement[]>;
-  categories: () => Bluebird<Array<number | string>>;
+  get: (search: IRelatedElement) => Bluebird<(IWorldElement | null)[]>;
+  getById: (id: string) => Bluebird<(IWorldElement | null)[]>;
+  getByTerm: (term: string) => Bluebird<ISearchDefinition[]>;
+  categories: () => Bluebird<(number | string) []>;
   getCategory: (category: string) => Bluebird<IMetaCategoryResult[]>;
 }
 
@@ -208,7 +211,7 @@ type IFolderModule = (rootPath: string) => {
 };
 
 type ICliOutModule = (logger: any) => {
-  output: (elements: Array<IElementFormatted | null>) => void;
+  output: (elements: (IElementFormatted | null)[]) => void;
 };
 
 type IDiceModule = (diceDef: string) => {
@@ -245,7 +248,11 @@ interface IMetaCategoryResult {
 
 type IMetaCategoryModule = (options: IMetaCategoryModuleOptions) => {
   search: (id: string) => Bluebird<IMetaCategoryResult[]>;
-  list: () => Bluebird<Array<string | number>>;
+  list: () => Bluebird<(string | number)[]>;
+};
+
+type IMetaTermModule = (options: IMetaDefinition) => {
+  search: (id: string) => ISearchDefinition[];
 };
 
 /////////////////////////////////////////////////////////
@@ -305,6 +312,7 @@ export {
   IMetaCategoryModule,
   IMetaCategoryResult,
   IMetaFactory,
+  IMetaTermModule,
   ERandomOption, //
   IElementDefinition,
   IDiceDefinition,

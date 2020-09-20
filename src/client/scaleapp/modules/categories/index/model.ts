@@ -1,7 +1,7 @@
 import * as R from 'ramda';
 import { IElementFormatted } from '../../../../../lib/typings';
 
-type TCategories = Array<string | number>;
+type TCategories = (string | number)[];
 
 interface IResultsModel {
   categories: TCategories;

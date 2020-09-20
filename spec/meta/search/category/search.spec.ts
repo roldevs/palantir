@@ -84,6 +84,7 @@ describe('MetaCategoryModule#search', () => {
         type: 'type3',
       }],
     },
+    directory: [],
   };
 
   const metaCategory = metaCategoryModule({ definition });

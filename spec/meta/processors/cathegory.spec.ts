@@ -6,11 +6,13 @@ import {
   IMetaDefinition,
   ISearchDefinition,
 } from '../../../src/lib/typings';
+import testConnector from '../../../src/lib/connectors/test';
 
 describe('metaProcessorCategory#process', () => {
   describe('process first meta', () => {
     it('should add category', () => {
-      const processor = metaProcessorCategory({ ids: {}, categories: {} });
+      const connector = testConnector({ elements: {} });
+      const processor = metaProcessorCategory({ ids: {}, categories: {}, directory: [] });
       const locator: ISearchDefinition = {
         locale: 'locale',
         ns: 'ns',
@@ -23,13 +25,15 @@ describe('metaProcessorCategory#process', () => {
           'page2',
         ],
       };
-      const definition = processor.process(header, locator);
-      expect(definition.categories.page1).to.eql([locator]);
-      expect(definition.categories.page2).to.eql([locator]);
+      processor.process(header, locator, connector).then((definition: IMetaDefinition) => {
+        expect(definition.categories.page1).to.eql([locator]);
+        expect(definition.categories.page2).to.eql([locator]);
+      });
     });
   });
   describe('process two metas', () => {
     it('should add categories', () => {
+      const connector = testConnector({ elements: {} });
       const locator1: ISearchDefinition = {
         locale: 'locale1',
         ns: 'ns1',
@@ -40,7 +44,7 @@ describe('metaProcessorCategory#process', () => {
         ns: 'ns2',
         type: 'type2',
       };
-      const meta: IMetaDefinition = { ids: {}, categories: {} };
+      const meta: IMetaDefinition = { ids: {}, categories: {}, directory: [] };
       const header1 = {
         system: 'test',
         categories: [
@@ -55,11 +59,15 @@ describe('metaProcessorCategory#process', () => {
           'page3',
         ],
       };
-      let definition = metaProcessorCategory(meta).process(header1, locator1);
-      definition = metaProcessorCategory(definition).process(header2, locator2);
-      expect(definition.categories.page1).to.eql([locator1]);
-      expect(definition.categories.page2).to.eql([locator1, locator2]);
-      expect(definition.categories.page3).to.eql([locator2]);
+      metaProcessorCategory(meta).process(header1, locator1, connector).then(
+        (definition1: IMetaDefinition) => {
+          metaProcessorCategory(definition1).process(header2, locator2, connector).then(
+          (definition2: IMetaDefinition) => {
+            expect(definition2.categories.page1).to.eql([locator1]);
+            expect(definition2.categories.page2).to.eql([locator1, locator2]);
+            expect(definition2.categories.page3).to.eql([locator2]);
+          });
+      });
     });
   });
 });

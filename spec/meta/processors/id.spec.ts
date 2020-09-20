@@ -7,11 +7,13 @@ import {
   IMetaDefinition,
   ISearchDefinition,
 } from '../../../src/lib/typings';
+import testConnector from '../../../src/lib/connectors/test';
 
 describe('MetaProcessorId#process', () => {
   describe('process first meta', () => {
     it('should add id', () => {
-      const processor = metaProcessorId({ ids: {}, categories: {} });
+      const connector = testConnector({ elements: {} });
+      const processor = metaProcessorId({ ids: {}, categories: {}, directory: [] });
       const locator: ISearchDefinition = {
         locale: 'locale',
         ns: 'ns',
@@ -21,12 +23,14 @@ describe('MetaProcessorId#process', () => {
         system: 'test',
         id: '1',
       };
-      const definition = processor.process(header, locator);
-      expect(definition.ids['1']).to.eql(locator);
+      processor.process(header, locator, connector).then((definition: IMetaDefinition) => {
+        expect(definition.ids['1']).to.eql(locator);
+      });
     });
   });
   describe('process add meta', () => {
     it('should add id', () => {
+      const connector = testConnector({ elements: {} });
       const locator1: ISearchDefinition = {
         locale: 'locale1',
         ns: 'ns1',
@@ -37,16 +41,17 @@ describe('MetaProcessorId#process', () => {
         ns: 'ns2',
         type: 'type2',
       };
-      const meta: IMetaDefinition = { ids: {}, categories: {} };
+      const meta: IMetaDefinition = { ids: {}, categories: {}, directory: [] };
       meta.ids['1'] = locator1;
       const processor = metaProcessorId(meta);
       const header = {
         system: 'test',
         id: '2',
       };
-      const definition = processor.process(header, locator2);
-      expect(definition.ids['1']).to.eql(locator1);
-      expect(definition.ids['2']).to.eql(locator2);
+      processor.process(header, locator2, connector).then((definition: IMetaDefinition) => {
+        expect(definition.ids['1']).to.eql(locator1);
+        expect(definition.ids['2']).to.eql(locator2);
+      });
     });
   });
 });

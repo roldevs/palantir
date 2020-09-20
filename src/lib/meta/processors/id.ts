@@ -1,24 +1,25 @@
-import Bluebird from 'bluebird';
 import R from 'ramda';
 import {
   IMeta,
   IMetaDefinition,
-  IMetaFactory,
-  IMetaOptions,
-  IMetaTestModule,
   ISearchDefinition,
-  ISearchResult,
+  IConnectorFactory,
 } from '../../typings';
 import {
   TMetaProcessor,
 } from '../processor';
+import Bluebird from 'bluebird';
 
 const MetaProcessorId: TMetaProcessor =
 (metaDefinition) => {
-  const process: (metaHeader: IMeta, locator: ISearchDefinition) => IMetaDefinition =
-  (metaHeader, locator) => {
-    return R.set(R.lensPath(['ids', metaHeader.id!]), locator, metaDefinition);
-  };
+  const process: (
+    metaHeader: IMeta,
+    locator: ISearchDefinition,
+    connector: IConnectorFactory,
+  ) => Bluebird<IMetaDefinition> =
+  (metaHeader, locator, _connector) => Bluebird.resolve(
+    R.set(R.lensPath(['ids', metaHeader.id!]), locator, metaDefinition),
+  );
 
   return {
     process,

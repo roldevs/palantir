@@ -10,7 +10,10 @@ const metaTestModule: IMetaTestModule =
   const getById: (id: string) => Bluebird<ISearchDefinition[]> =
     (_) =>  Bluebird.resolve([]);
 
-  const categories: () => Bluebird<Array<number | string>> =
+  const getByTerm: (term: string) => Bluebird<ISearchDefinition[]> =
+    (_) =>  Bluebird.resolve([]);
+
+  const categories: () => Bluebird<(number | string)[]> =
     () =>  Bluebird.resolve([]);
 
   const getCategory: (category: string) => Bluebird<IMetaCategoryResult[]> =
@@ -18,6 +21,7 @@ const metaTestModule: IMetaTestModule =
 
   return {
     getById,
+    getByTerm,
     categories,
     getCategory,
   };

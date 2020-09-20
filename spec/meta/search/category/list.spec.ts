@@ -7,25 +7,19 @@ import {
 } from '../../../../src/lib/typings';
 
 describe('MetaCategoryModule#list', () => {
-  const connector = testConnector({
-    elements: {
-      es: {},
-      en: {},
-    },
-  });
-
   const definition: IMetaDefinition = {
     ids: { },
     categories: {
       cat1: [],
       cat2: [],
     },
+    directory: [],
   };
 
   const metaCategory = metaCategoryModule({ definition });
 
   it('list returns three categories (cat1, cat2)', (done) => {
-    metaCategory.list().then((results: Array<string | number>) => {
+    metaCategory.list().then((results: (string | number)[]) => {
       expect(results).to.eql(['cat1', 'cat2']);
       done();
     });

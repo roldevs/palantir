@@ -23,7 +23,7 @@ const connector = localConnectorCreator({ rootPath: './definitions' });
 connector.list().then(
   MetaProcessorModule(
     connector,
-    {ids: {}, categories: {}},
+    {ids: {}, categories: {}, directory: []},
   ).process,
 ).then(console.log);
 

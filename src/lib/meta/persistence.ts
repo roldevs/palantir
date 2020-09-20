@@ -14,7 +14,7 @@ const metaPersistenceModule: IMetaPersistenceModule =
     return options.connector.list().then(
       MetaProcessorModule(
         options.connector,
-        {ids: {}, categories: {}},
+        {ids: {}, categories: {}, directory: []},
       ).process,
     );
   };

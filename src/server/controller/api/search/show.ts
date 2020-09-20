@@ -1,17 +1,16 @@
 import Bluebird from 'bluebird';
-import R from 'ramda';
-import { IWorldElement } from '../../../../lib/typings';
+import { ISearchDefinition } from '../../../../lib/typings';
 import errorHandler from '../../../errorHandler';
 import trackEvent from '../../../track';
 import getWorld from '../world';
 
-const categoryIndexRequest: (req: any, res: any) => Bluebird<(string | number)[]> =
+const searchShowRequest: (req: any, res: any) => Bluebird<ISearchDefinition[]> =
   (req, res) => {
-    return trackEvent('/api/categories', 'Categories').then(() => {
+    return trackEvent(`/api/search/${req.params.term}`, 'Search').then(() => {
       return getWorld({
         locale: req.params.locale,
-      }).categories();
+      }).getByTerm(req.params.term);
     }).catch(errorHandler(res, process.env).error);
   };
 
-export default categoryIndexRequest;
+export default searchShowRequest;

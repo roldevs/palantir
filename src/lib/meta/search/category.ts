@@ -51,12 +51,12 @@ const metaCategoryModule: IMetaCategoryModule =
       unpackedResult(category),
     );
 
-  const getCategories: () => Array<string | number> = () => R.keys(options.definition.categories);
+  const getCategories: () => (string | number)[] = () => R.keys(options.definition.categories);
 
   const search: (category: string) => Bluebird<IMetaCategoryResult[]> =
     (category) => Bluebird.resolve(searchResult(category));
 
-  const list: () => Bluebird<Array<string | number>> =
+  const list: () => Bluebird<(string | number)[]> =
     () => Bluebird.resolve(getCategories());
 
   return {

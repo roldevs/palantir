@@ -7,8 +7,13 @@ import {
 } from '../typings';
 import MetaProcessorCategory from './processors/category';
 import MetaProcessorId from './processors/id';
+import MetaProcessorDirectory from './processors/directory';
 
-type TMetaProcessorFunction = (metaHeader: IMeta, locator: ISearchDefinition) => IMetaDefinition;
+type TMetaProcessorFunction = (
+  metaHeader: IMeta,
+  locator: ISearchDefinition,
+  connector: IConnectorFactory,
+) => Bluebird<IMetaDefinition>;
 
 type TMetaProcessor = (
   metaDefinition: IMetaDefinition,
@@ -28,6 +33,7 @@ const MetaProcessorModule: TMetaProcessorModule =
   const processors: TMetaProcessor[] = [
     MetaProcessorId,
     MetaProcessorCategory,
+    MetaProcessorDirectory,
   ];
 
   const processDefinition: (
@@ -35,8 +41,8 @@ const MetaProcessorModule: TMetaProcessorModule =
     locator: ISearchDefinition,
     processor: TMetaProcessor,
   ) =>
-    (meta: IMeta) => IMetaDefinition =
-    (definition, locator, processor) => (meta) => processor(definition).process(meta, locator);
+    (meta: IMeta) => Bluebird<IMetaDefinition> =
+    (definition, locator, processor) => (meta) => processor(definition).process(meta, locator, connector);
 
   const processMetaDefinition: (locator: ISearchDefinition) =>
     (acc: IMetaDefinition, processFn: TMetaProcessor) =>

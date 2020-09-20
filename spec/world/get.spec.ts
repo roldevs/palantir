@@ -72,7 +72,7 @@ describe('World#get', () => {
         count: 1,
       };
       it('return the only faction defined', (done) => {
-        world.get(search).then((elements: IWorldElement[]) => {
+        world.get(search).then((elements: (IWorldElement | null)[]) => {
           const element: IElementFormatted = elements[0]!.format!;
           expect(element).to.not.be.null;
           expect(element.text).to.eql('Movimiento artístico');
@@ -90,7 +90,7 @@ describe('World#get', () => {
         }],
       };
       it('return the npc_asset with faction related', (done) => {
-        world.get(search).then((elements: IWorldElement[]) => {
+        world.get(search).then((elements: (IWorldElement | null)[]) => {
           const element: IElementFormatted = elements[0]!.format!;
           expect(element).to.not.be.null;
           expect(element.title).to.eql('Npc Asset');
@@ -192,7 +192,7 @@ describe('World#get', () => {
         }],
       };
       it('return the animal related', (done) => {
-        world.get(search).then((elements: IWorldElement[]) => {
+        world.get(search).then((elements: (IWorldElement | null)[]) => {
           const element: IElementFormatted = elements[0]!.format!;
           expect(element.title).to.eql('Animal');
 
@@ -235,7 +235,7 @@ describe('World#get', () => {
         }],
       };
       it('return the element with default title', (done) => {
-        world.get(search).then((elements: IWorldElement[]) => {
+        world.get(search).then((elements: (IWorldElement | null)[]) => {
           const element: IElementFormatted = elements[0]!.format!;
           expect(element.text).to.eql('Envejece');
           expect(element.title).to.eql('Mutación');
@@ -294,7 +294,7 @@ describe('World#get', () => {
         count: 'd2',
       };
       it('return the one or two factions', (done) => {
-        world.get(search).then((elements: IWorldElement[]) => {
+        world.get(search).then((elements: (IWorldElement | null)[]) => {
           expect(elements.length).to.be.oneOf([1, 2]);
 
           const element: IElementFormatted = elements[0]!.format!;

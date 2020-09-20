@@ -4,7 +4,7 @@ import categoriesShowRequest from './categories/show';
 
 const categoriesApiController = () => {
   const index = (req: any, res: any) => {
-    return categoriesIndexRequest(req, res).then((data: Array<number | string>) => {
+    return categoriesIndexRequest(req, res).then((data: (number | string)[]) => {
       res.json({
         success: true,
         data,

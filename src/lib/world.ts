@@ -16,7 +16,7 @@ import {
 } from './typings';
 import { compactArray } from './utils';
 
-const compact: (elements: Array<IWorldElement | null>) => IWorldElement[] = compactArray;
+// const compact: (elements: (IWorldElement | null)[]) => IWorldElement[] = compactArray;
 
 const getOne: (world: IWorldDefinition, search: ISearchDefinition[]) => () => Bluebird<IWorldElement | null> =
 (world, search) => () => randomCreator(world).random(search).then(
@@ -32,7 +32,7 @@ const getOne: (world: IWorldDefinition, search: ISearchDefinition[]) => () => Bl
   },
 );
 
-const getSearchById: (world: IWorldDefinition) => (id: string) => Bluebird<IWorldElement[]> =
+const getSearchById: (world: IWorldDefinition) => (id: string) => Bluebird<(IWorldElement | null)[]> =
 (world) => (id) => {
   return world.meta.getById(id).then((search: ISearchDefinition[]) => {
     return getOne(world, search)();
@@ -43,16 +43,17 @@ const getSearchById: (world: IWorldDefinition) => (id: string) => Bluebird<IWorl
 
 const worldModule: IWorldModule =
 (world) => {
-  const get: (search: IRelatedElement) => Bluebird<IWorldElement[]> =
+  const get: (search: IRelatedElement) => Bluebird<(IWorldElement | null)[]> =
   (search) => {
     return Bluebird.all(
       R.times(getOne(world, search.search!), counterModule(search.count).get()),
-    ).then(compact);
+    ).then(compactArray);
   };
 
-  const getById: (id: string) => Bluebird<IWorldElement[]> = getSearchById(world);
+  const getById: (id: string) => Bluebird<(IWorldElement | null)[]> = getSearchById(world);
+  const getByTerm: (term: string) => Bluebird<ISearchDefinition[]> = world.meta.getByTerm;
 
-  const categories: () => Bluebird<Array<number | string>> = world.meta.categories;
+  const categories: () => Bluebird<(number | string)[]> = world.meta.categories;
 
   const getCategory: (category: string) => Bluebird<IMetaCategoryResult[]> =
     world.meta.getCategory;
@@ -60,6 +61,7 @@ const worldModule: IWorldModule =
   return {
     get,
     getById,
+    getByTerm,
     getCategory,
     categories,
   };

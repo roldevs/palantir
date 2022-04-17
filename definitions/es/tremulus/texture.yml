@@ -1,0 +1,19 @@
+meta:
+  system: Trémulus
+data:
+  - text: Texturas
+    options:
+    - text: Amor
+    - text: Amor Prohibido
+    - text: Ascenso
+    - text: Descenso
+    - text: Exceso Miserable
+    - text: Huida
+    - text: Maduración
+    - text: Metamorfosis
+    - text: Persecución
+    - text: Rescate
+    - text: Rivalidad
+    - text: Tentación
+    - text: Transformación
+    - text: Venganza

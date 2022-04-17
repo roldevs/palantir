@@ -1,0 +1,31 @@
+meta:
+  system: Tremulus
+  categories:
+    - plot
+data:
+  - text: Hilo
+    related:
+      danger1:
+        text: Peligo Central
+        search:
+          - locale: es
+            ns: tremulus
+            type: danger
+      texture:
+        text: Textura
+        search:
+          - locale: es
+            ns: tremulus
+            type: texture
+      danger2:
+        text: Peligro Secundario
+        search:
+          - locale: es
+            ns: tremulus
+            type: danger
+      danger3:
+        text: Peligro Secundario
+        search:
+          - locale: es
+            ns: tremulus
+            type: danger

@@ -1,0 +1,46 @@
+meta:
+  system: Trémulus
+data:
+  - text: Peligro
+    related:
+      danger:
+        options:
+        - text: Líderes
+          options:
+          - text: Coleccionista
+          - text: Dictador
+          - text: Iluminado
+          - text: Protector
+        - text: Lugareños
+          options:
+          - text: Manada de Caza
+          - text: Turba
+          - text: Matones
+          - text: Sibaritas
+          - text: Culto
+          - text: Familia
+        - text: Paisajes
+          options:
+          - text: Criadero
+          - text: Espejismo
+          - text: Fortaleza
+          - text: Horno
+          - text: Laberinto
+          - text: Prisión
+        - text: Raros
+          options:
+          - text: Caníbal
+          - text: Magalómano
+          - text: Paria
+          - text: Perversión
+          - text: Portador de Enfermedad
+          - text: Sadomasoquista
+        - text: Fatalidad
+          options:
+          - text: Condición
+          - text: Enfermedad
+          - text: Engaño
+          - text: Mitos
+          - text: Ostáculo
+          - text: Sacrificio
+          - text: Tradición

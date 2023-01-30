@@ -23,7 +23,7 @@ const MetaProcessorDirectory: TMetaProcessor =
   ) => Bluebird<IMetaDefinition> =
   (_metaHeader, _locator, connector) => {
     return connector.list().then((definition: ISearchDefinition[]) => {
-      return R.merge(metaDefinition, { directory: definition});
+      return R.mergeLeft(metaDefinition, { directory: definition});
     });
   };
 

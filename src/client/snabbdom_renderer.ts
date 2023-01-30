@@ -1,10 +1,14 @@
-import {init} from 'snabbdom';
-import AttrsModule from 'snabbdom/modules/attributes';
-import ClassModule from 'snabbdom/modules/class';
-import EventListenersModule from 'snabbdom/modules/eventlisteners';
-import PropsModule from 'snabbdom/modules/props';
-import StyleModule from 'snabbdom/modules/style';
-import {VNode} from 'snabbdom/vnode';
+
+import {
+  init,
+  attributesModule,
+  classModule,
+  propsModule,
+  styleModule,
+  eventListenersModule,
+  VNode,
+} from 'snabbdom';
+
 
 const render: (
   oldVNode: VNode | HTMLElement,
@@ -13,11 +17,11 @@ const render: (
 function(oldVNode, vnode) {
   // Init patch function with choosen modules
   const patch: any = init([
-    ClassModule,
-    AttrsModule,
-    PropsModule,
-    StyleModule,
-    EventListenersModule,
+    classModule,
+    attributesModule,
+    propsModule,
+    styleModule,
+    eventListenersModule,
   ]);
   return patch(oldVNode, vnode);
 };

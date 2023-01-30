@@ -64,10 +64,9 @@ describe('Element#get', () => {
     it('effect and trigger', (done) => {
       search.find(s).then((result: ISearchResult) => {
         element.get(result![0]).then((value: IOptionalElementDefinition) => {
-          const effect: any = value!.related!.effect.results![0]!;
-          const trigger: any = value!.related!.trigger.results![0]!;
+          const effect: any = value!.related!.effect!.results![0]!;
+          const trigger: any = value!.related!.trigger!.results![0]!;
 
-          expect(value).is.not.undefined;
           expect(value!.text).to.eql('Trampa');
           expect(effect).is.not.undefined;
           expect(trigger).is.not.undefined;

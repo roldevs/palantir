@@ -7,8 +7,8 @@ import { compactArray } from '../../utils';
 const metaTermModule: IMetaTermModule =
 (metaDefinition) => {
 
-  const definitionValue: (field: string) => (definition: ISearchDefinition) => string
-    = (field) => (definition) => R.view(R.lensProp(field), definition);
+  const definitionValue: (field: string) => (definition: ISearchDefinition) => any
+    = (field) => R.prop(field);
 
   const hasValue: (field: string, value: string) => (definition: ISearchDefinition) => boolean =
     (field, value) => R.compose(R.includes(value), definitionValue(field));

@@ -1,5 +1,5 @@
-import {h} from 'snabbdom';
-import {VNode} from 'snabbdom/vnode';
+
+import { h, VNode } from 'snabbdom';
 import { dropdown, IDropdownItem } from '../../../ui/dropdown';
 import { ISelectorController } from './controller';
 import { ISelectorModel } from './model';

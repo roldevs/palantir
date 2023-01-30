@@ -6,7 +6,7 @@ const requestPath: (req: any) => string =
   pathParts.push(req.params.locale);
   pathParts.push(req.params.ns);
   pathParts.push(req.params.type);
-  return R.join('/', R.filter(R.identity, pathParts));
+  return R.join('/', R.filter(R.T, pathParts));
 };
 
 export {

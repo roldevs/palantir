@@ -20,7 +20,7 @@ const actions: () => IResultsActions =
 
   const get: () => IResultsModel = () => state;
 
-  const setResults: (result: IResultsModel) => void =
+  const setResults: (result: any) => void =
   (result) =>  {
     return R.set(R.lensProp('result'), result, state);
   };

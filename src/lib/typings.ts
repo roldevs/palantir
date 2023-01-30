@@ -1,5 +1,6 @@
 
 import Bluebird from 'bluebird';
+import { Dictionary } from 'ramda';
 
 type uuid = string;
 
@@ -26,7 +27,7 @@ interface IRelatedElement {
 }
 
 interface IRelatedElements {
-  [details: string]: IRelatedElement;
+  [details: string]: IRelatedElement | null;
 }
 
 type IDiceDefinition = string;
@@ -135,7 +136,7 @@ interface IMetaFactory {
 }
 
 interface IWorldFactory {
-  get: (search: IRelatedElement) => Bluebird<(IWorldElement | null)[]>;
+  get: (search: IRelatedElement) => Bluebird<Dictionary<any>>;
   getById: (id: string) => Bluebird<(IWorldElement | null)[]>;
   getByTerm: (term: string) => Bluebird<ISearchDefinition[]>;
   categories: () => Bluebird<(number | string) []>;

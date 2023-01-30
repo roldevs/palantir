@@ -23,7 +23,8 @@ const optionsModule: IOptionsModule =
     (element) => Bluebird.resolve(randomFromArray(
       distributeModule(element!.options!).get(),
     )).then((option: IOptionalElementDefinition) => {
-      return getElement(R.set(R.lensProp('parent'), element, option));
+      if (!option) return Bluebird.resolve(null);
+      return element ? getElement(R.set(R.lensProp('parent'), element, option)) : getElement(option);
     });
 
   const random: (element: IOptionalElementDefinition) => Bluebird<IOptionalElementDefinition> =

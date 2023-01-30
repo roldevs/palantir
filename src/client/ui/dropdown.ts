@@ -1,6 +1,5 @@
 import * as R from 'ramda';
-import {h} from 'snabbdom';
-import {VNode} from 'snabbdom/vnode';
+import { h, VNode } from 'snabbdom';
 
 interface IDropdownItem {
   id: string;

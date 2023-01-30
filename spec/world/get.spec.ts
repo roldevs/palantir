@@ -1,5 +1,6 @@
 /* tslint:disable no-unused-expression */
 import { expect } from 'chai';
+import { Dictionary } from 'ramda';
 import testConnector from '../../src/lib/connectors/test';
 import metaTestModule from '../../src/lib/meta/test';
 import testRepository from '../../src/lib/repository/memory';
@@ -72,7 +73,7 @@ describe('World#get', () => {
         count: 1,
       };
       it('return the only faction defined', (done) => {
-        world.get(search).then((elements: (IWorldElement | null)[]) => {
+        world.get(search).then((elements: Dictionary<any>) => {
           const element: IElementFormatted = elements[0]!.format!;
           expect(element).to.not.be.null;
           expect(element.text).to.eql('Movimiento artístico');
@@ -90,7 +91,7 @@ describe('World#get', () => {
         }],
       };
       it('return the npc_asset with faction related', (done) => {
-        world.get(search).then((elements: (IWorldElement | null)[]) => {
+        world.get(search).then((elements: Dictionary<any>) => {
           const element: IElementFormatted = elements[0]!.format!;
           expect(element).to.not.be.null;
           expect(element.title).to.eql('Npc Asset');
@@ -192,7 +193,7 @@ describe('World#get', () => {
         }],
       };
       it('return the animal related', (done) => {
-        world.get(search).then((elements: (IWorldElement | null)[]) => {
+        world.get(search).then((elements: Dictionary<any>) => {
           const element: IElementFormatted = elements[0]!.format!;
           expect(element.title).to.eql('Animal');
 
@@ -235,7 +236,7 @@ describe('World#get', () => {
         }],
       };
       it('return the element with default title', (done) => {
-        world.get(search).then((elements: (IWorldElement | null)[]) => {
+        world.get(search).then((elements: Dictionary<any>) => {
           const element: IElementFormatted = elements[0]!.format!;
           expect(element.text).to.eql('Envejece');
           expect(element.title).to.eql('Mutación');
@@ -294,7 +295,7 @@ describe('World#get', () => {
         count: 'd2',
       };
       it('return the one or two factions', (done) => {
-        world.get(search).then((elements: (IWorldElement | null)[]) => {
+        world.get(search).then((elements: Dictionary<any>) => {
           expect(elements.length).to.be.oneOf([1, 2]);
 
           const element: IElementFormatted = elements[0]!.format!;

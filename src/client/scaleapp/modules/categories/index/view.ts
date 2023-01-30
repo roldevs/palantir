@@ -1,6 +1,6 @@
 import * as R from 'ramda';
 import {h} from 'snabbdom';
-import {VNode} from 'snabbdom/vnode';
+import {VNode} from 'snabbdom';
 import { IResultsController } from './controller';
 import { IResultsModel } from './model';
 

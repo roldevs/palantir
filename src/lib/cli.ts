@@ -1,5 +1,5 @@
 import Bluebird from 'bluebird';
-import program from 'commander';
+import { program } from 'commander';
 import * as R from 'ramda';
 import { argsParser, IParserOptions } from './cli/parser';
 import localConnectorCreator from './connectors/local';
@@ -49,15 +49,16 @@ const cliModule: ICliModule =
 
   const get: () => Bluebird<IWorldElement[]> =
   () => {
-    if (R.isNil(program.namespace) || R.isNil(program.type)) {
+    const options = program.opts();
+    if (R.isNil(options.namespace) || R.isNil(options.type)) {
       return Bluebird.reject('Argument missing');
     }
 
     return world.get({
       search: [{
         locale: params.locale,
-        ns: program.namespace,
-        type: program.type,
+        ns: options.namespace,
+        type: options.type,
       }],
       count: params.count,
     });

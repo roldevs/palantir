@@ -1,7 +1,7 @@
 const path = require('path');
 const R = require('ramda');
-// const MinifyPlugin = require('uglifyjs-webpack-plugin');
-const MinifyPlugin = require('babel-minify-webpack-plugin');
+// // const MinifyPlugin = require('uglifyjs-webpack-plugin');
+// const MinifyPlugin = require('babel-minify-webpack-plugin');
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -24,7 +24,7 @@ module.exports = (() => {
       library: 'Hall'
     },
     // Turn on sourcemaps
-    devtool: (process.env.ENVIRONMENT === 'development') ? 'source-map-inline' : false,
+    devtool: (process.env.ENVIRONMENT === 'development') ? 'source-map' : false,
     resolve: {
       extensions: ['.ts', '.js', '.json'],
 
@@ -59,9 +59,10 @@ module.exports = (() => {
   }
 
   // Add plugin for production environment
-  return R.set(
-    R.lensProp('plugins'),
-    [new MinifyPlugin({}, { sourceMap: false, comments: false })],
-    config
-  );
+  return config;
+  // R.set(
+  //   R.lensProp('plugins'),
+  //   [new MinifyPlugin({}, { sourceMap: false, comments: false })],
+  //   config
+  // );
 })();

@@ -1,7 +1,6 @@
 
-import program from 'commander';
+import { program } from 'commander';
 import * as R from 'ramda';
-
 interface IParserOptions {
   locale: string;
   count: number;
@@ -20,12 +19,13 @@ const argsParser: (args: string[]) => IParserOptions =
     .option('-d, --debug [debug]', 'Debug (defaults to false)')
     .option('-s, --connector [connector]', '0-Remote, 1-Local (defaults to 0)')
     .parse(args);
+  const options = program.opts();
 
   return {
-    locale: R.defaultTo('es', program.locale),
-    count: R.defaultTo(1, program.count),
-    debug: R.defaultTo(false, program.debug) === 'true',
-    connector: R.defaultTo(0, program.connector),
+    locale: R.defaultTo('es', options.locale),
+    count: R.defaultTo(1, options.count),
+    debug: R.defaultTo(false, options.debug) === 'true',
+    connector: R.defaultTo(0, options.connector),
   };
 };
 

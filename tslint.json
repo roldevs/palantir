@@ -4,8 +4,7 @@
         "tslint:recommended"
     ],
     "jsRules": {},
-    "rules": { 
-        "quotemark": [ true, "single", "avoid-escape" ],
+    "rules": {
         "object-literal-sort-keys": false,
         "only-arrow-functions": false
     },

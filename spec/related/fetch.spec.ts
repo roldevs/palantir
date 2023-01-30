@@ -90,12 +90,12 @@ describe('Related#fetch', () => {
         related.fetch(element).then((data: IOptionalElementDefinition) => {
           expect(data).to.not.be.null;
           expect(data!.text).to.eql('Test');
-          expect(data!.related!.key.search).to.eql([{
+          expect(data!.related!.key!.search).to.eql([{
             locale: 'es',
             ns: 'ns2',
             type: 'item2',
           }]);
-          expect(data!.related!.key.results![0].text).to.eql('ns1.item12');
+          expect(data!.related!.key!.results![0].text).to.eql('ns1.item12');
           done();
         });
       });
@@ -141,8 +141,8 @@ describe('Related#fetch', () => {
         related.fetch(element).then((data: IOptionalElementDefinition) => {
           expect(data).to.not.be.null;
           expect(data!.text).to.eql('Test');
-          expect(data!.related!.key1.results![0].text).to.be.oneOf(['item11', 'item12']);
-          expect(data!.related!.key2.results![0].text).to.be.oneOf(['item21', 'item22']);
+          expect(data!.related!.key1!.results![0].text).to.be.oneOf(['item11', 'item12']);
+          expect(data!.related!.key2!.results![0].text).to.be.oneOf(['item21', 'item22']);
           done();
         });
       });
@@ -177,7 +177,7 @@ describe('Related#fetch', () => {
         related.fetch(element).then((data: IOptionalElementDefinition) => {
           expect(data).to.not.be.null;
           expect(data!.text).to.eql('Test');
-          expect(data!.related!.key.results![0].text).to.be.oneOf(['3', '4', '5', '6', '7', '8']);
+          expect(data!.related!.key!.results![0].text).to.be.oneOf(['3', '4', '5', '6', '7', '8']);
           done();
         });
       });

@@ -1,5 +1,6 @@
 import Bluebird from 'bluebird';
 import * as R from 'ramda';
+import { Dictionary } from 'ramda';
 import counterModule from './counter';
 import elementCreator from './element';
 import { elementFormatter } from './formatter/elementFormatter';
@@ -43,7 +44,7 @@ const getSearchById: (world: IWorldDefinition) => (id: string) => Bluebird<(IWor
 
 const worldModule: IWorldModule =
 (world) => {
-  const get: (search: IRelatedElement) => Bluebird<(IWorldElement | null)[]> =
+  const get: (search: IRelatedElement) => Bluebird<Dictionary<any>> =
   (search) => {
     return Bluebird.all(
       R.times(getOne(world, search.search!), counterModule(search.count).get()),

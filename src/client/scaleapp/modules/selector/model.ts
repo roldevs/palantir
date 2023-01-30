@@ -43,7 +43,7 @@ const checkDisabled: (model: ISelectorModel) => ISelectorModel =
 };
 
 const actions: () => ISelectorActions = () => {
-  let state: ISelectorModel = initModel();
+  let state: any = initModel();
 
   const get: () => ISelectorModel = () => checkDisabled(state);
 

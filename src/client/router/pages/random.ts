@@ -16,7 +16,7 @@ const parseOptions: (locale: string, ns: string, type: string) => any =
 const startModule: (options: { core: any }, name: string, el: string, moduleOptions: any) => Bluebird<void> =
 (options, name, el, moduleOptions) => {
   return options.core.scaleApp.moduleStart(name, {
-    options: R.merge({el}, moduleOptions),
+    options: R.mergeLeft({el}, moduleOptions),
   });
 };
 

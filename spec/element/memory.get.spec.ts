@@ -159,8 +159,8 @@ describe('Element#get', () => {
     it('arm and leg results', (done) => {
       search.find(s).then((result: ISearchResult) => {
         element.get(result![0]).then((value: IOptionalElementDefinition) => {
-          const arms: any = value!.related!.arms.results![0]!;
-          const legs: any = value!.related!.legs.results![0]!;
+          const arms: any = value!.related!.arms!.results![0]!;
+          const legs: any = value!.related!.legs!.results![0]!;
 
           expect(value).is.not.null;
           expect(value!.text).to.be.eql('body');
@@ -181,8 +181,8 @@ describe('Element#get', () => {
     it('person results', (done) => {
       search.find(s).then((result: ISearchResult) => {
         element.get(result![0]).then((value: IOptionalElementDefinition) => {
-          const face: any = value!.related!.face.results![0]!;
-          const body: any = value!.related!.body.results![0]!;
+          const face: any = value!.related!.face!.results![0]!;
+          const body: any = value!.related!.body!.results![0]!;
           const arms: any = body.related!.arms.results![0]!;
           const legs: any = body.related!.legs.results![0]!;
 
